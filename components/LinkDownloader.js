@@ -36,14 +36,6 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
 
   useEffect(() => () => clearTimeout(pollRef.current), []);
 
-  if (!DOWNLOADER_URL) {
-    return (
-      <div className="link-box">
-        <p className="q-meta">Link downloads are not set up yet. Please upload a file instead.</p>
-      </div>
-    );
-  }
-
   const options = info ? info.options[type] || [] : [];
 
   const pickType = (t, inf = info) => {
@@ -57,6 +49,11 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
     e && e.preventDefault();
     const link = url.trim();
     if (!link) return;
+    if (!DOWNLOADER_URL) {
+      // The download server (downloader/) is not connected: NEXT_PUBLIC_DOWNLOADER_URL is not set.
+      setError('Link downloads are temporarily unavailable. Please try again later, or download the file and use Upload.');
+      return;
+    }
     clearTimeout(pollRef.current);
     setError('');
     setInfo(null);
