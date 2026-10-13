@@ -140,7 +140,8 @@ function friendlyError(stderr = '') {
   const s = stderr.toLowerCase();
   if (s.includes('confirm your age') || s.includes('age-restricted') || s.includes('inappropriate for some users'))
     return 'This video is age-restricted and cannot be downloaded.';
-  if (s.includes('sign in to confirm') || s.includes('http error 429') || s.includes('too many requests'))
+  if (s.includes('sign in to confirm') || s.includes('http error 429') || s.includes('too many requests') ||
+      s.includes('http error 403') || s.includes('forbidden') || s.includes('po token'))
     return 'The website is temporarily blocking downloads from our server. Please try again in a few minutes.';
   if (s.includes('private video') || s.includes('members-only') || s.includes('join this channel'))
     return 'This video is private or for members only, so it cannot be downloaded.';
@@ -295,7 +296,10 @@ async function handleInfo(req, res, ip) {
   const { url } = await readJson(req);
   const target = await checkUrl(url);
   const result = await run([...baseArgs(), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
-  if (result.code !== 0) return send(res, 422, { error: friendlyError(result.stderr) });
+  if (result.code !== 0) {
+    log('info failed', new URL(target).hostname, result.code, result.stderr.split('\n').filter(Boolean).slice(-3).join(' | '));
+    return send(res, 422, { error: friendlyError(result.stderr) });
+  }
   let info;
   try {
     info = JSON.parse(result.stdout);
