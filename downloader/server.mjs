@@ -20,6 +20,9 @@ const CONFIG = {
   ytdlp: env.YTDLP_BIN || 'yt-dlp',
   jsRuntime: env.YTDLP_JS_RUNTIME ?? 'node', // YouTube needs a JS runtime; '' disables the flag
   proxy: env.YTDLP_PROXY || '',
+  // Only route these sites through the proxy (comma separated). Empty = every link uses the proxy.
+  proxyDomains: (env.YTDLP_PROXY_DOMAINS || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean),
+  extractorArgs: env.YTDLP_EXTRACTOR_ARGS || '',
   cookies: env.YTDLP_COOKIES || '',
   maxDuration: Number(env.MAX_DURATION_SECONDS || 3 * 60 * 60),
   maxFilesize: env.MAX_FILESIZE || '1500M',
@@ -127,21 +130,34 @@ async function checkUrl(input) {
   return url.toString();
 }
 
-function baseArgs() {
+function baseArgs(target) {
   const args = ['--no-playlist', '--no-warnings', '--no-progress', '--socket-timeout', '20', '--retries', '3'];
   if (CONFIG.jsRuntime) args.push('--js-runtimes', CONFIG.jsRuntime);
-  if (CONFIG.proxy) args.push('--proxy', CONFIG.proxy);
+  if (CONFIG.proxy && useProxyFor(target)) args.push('--proxy', CONFIG.proxy);
   if (CONFIG.cookies) args.push('--cookies', CONFIG.cookies);
+  if (CONFIG.extractorArgs) args.push('--extractor-args', CONFIG.extractorArgs);
   return args;
+}
+
+function useProxyFor(target) {
+  if (!CONFIG.proxyDomains.length) return true;
+  let host = '';
+  try {
+    host = new URL(target).hostname.toLowerCase();
+  } catch {}
+  return CONFIG.proxyDomains.some((d) => host === d || host.endsWith(`.${d}`));
 }
 
 /** Turns yt-dlp's stderr into something a visitor can understand. */
 function friendlyError(stderr = '') {
   const s = stderr.toLowerCase();
+  if (s.includes('proxy') || s.includes('tunnel connection failed'))
+    return 'Our download server is having trouble connecting right now. Please try again in a few minutes.';
   if (s.includes('confirm your age') || s.includes('age-restricted') || s.includes('inappropriate for some users'))
     return 'This video is age-restricted and cannot be downloaded.';
   if (s.includes('sign in to confirm') || s.includes('http error 429') || s.includes('too many requests') ||
-      s.includes('http error 403') || s.includes('forbidden') || s.includes('po token'))
+      s.includes('http error 403') || s.includes('forbidden') || s.includes('po token') ||
+      s.includes('failed to extract any player response'))
     return 'The website is temporarily blocking downloads from our server. Please try again in a few minutes.';
   if (s.includes('private video') || s.includes('members-only') || s.includes('join this channel'))
     return 'This video is private or for members only, so it cannot be downloaded.';
@@ -217,7 +233,7 @@ async function startJob(job) {
   await mkdir(out, { recursive: true });
 
   const args = [
-    ...baseArgs(),
+    ...baseArgs(job.url),
     '--newline',
     '--progress',
     '--progress-template', 'download:PROGRESS %(progress._percent_str)s',
@@ -295,7 +311,7 @@ async function handleInfo(req, res, ip) {
   if (rateLimited(ip, 'info', CONFIG.infoPerHour)) return send(res, 429, { error: 'Too many requests. Please wait a little and try again.' });
   const { url } = await readJson(req);
   const target = await checkUrl(url);
-  const result = await run([...baseArgs(), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
+  const result = await run([...baseArgs(target), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
   if (result.code !== 0) {
     log('info failed', new URL(target).hostname, result.code, result.stderr.split('\n').filter(Boolean).slice(-3).join(' | '));
     return send(res, 422, { error: friendlyError(result.stderr) });

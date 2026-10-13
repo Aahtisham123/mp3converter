@@ -35,8 +35,9 @@ for links you are asked to remove.
 ## Keeping it working
 - yt-dlp updates itself each time the container starts. Restart daily with cron:
   `0 4 * * * cd /root/mp3converter/downloader && docker compose restart downloader`
-- If YouTube shows "Sign in to confirm you're not a bot", the server IP is being blocked.
-  Set `YTDLP_PROXY` to a residential proxy and run `docker compose up -d`.
+- If the logs show "Sign in to confirm you're not a bot" or "Failed to extract any player response",
+  YouTube is blocking the server's IP. Set `YTDLP_PROXY` to a residential proxy and
+  `YTDLP_PROXY_DOMAINS=youtube.com,youtu.be` so only YouTube uses (and is billed through) the proxy.
 - Logs: `docker compose logs -f downloader`
 
 ## Local testing
