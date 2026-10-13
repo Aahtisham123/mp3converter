@@ -13,6 +13,11 @@ The website (on Vercel) calls it from the visitor's browser.
 | `GET` | `/api/jobs/:id/file` | the finished file (deleted after `FILE_TTL_MINUTES`) |
 | `GET` | `/health` | health check |
 
+Built-in reliability: automatic retries when a site blocks a request (`BLOCK_RETRIES`), a file cache so
+popular videos are fetched once and served instantly (`CACHE_TTL_MINUTES`, `CACHE_MAX_MB`; all YouTube link
+forms share one cache entry), a video-info cache (`INFO_CACHE_MINUTES`) and sharing of identical requests
+that are in progress.
+
 Built-in protection: single videos only (no playlists or live streams), maximum length and file size,
 per-IP rate limits, a concurrency limit, blocking of private/internal addresses, and a `BLOCKLIST`
 for links you are asked to remove.

@@ -3,9 +3,9 @@
 // and serves the result for a limited time. No dependencies beyond Node 20+, yt-dlp and FFmpeg.
 
 import { spawn } from 'node:child_process';
-import { randomUUID } from 'node:crypto';
+import { createHash, randomUUID } from 'node:crypto';
 import { createReadStream } from 'node:fs';
-import { chmod, copyFile, mkdir, readdir, rm, stat } from 'node:fs/promises';
+import { chmod, copyFile, mkdir, readdir, rename, rm, stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { lookup } from 'node:dns/promises';
 import { isIP } from 'node:net';
@@ -35,6 +35,12 @@ const CONFIG = {
   trustProxy: env.TRUST_PROXY === '1',
   allowPrivate: env.ALLOW_PRIVATE_URLS === '1', // testing only
   blocklist: (env.BLOCKLIST || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean),
+  // Extra attempts when a site blocks us. With a rotating proxy every attempt gets a new IP.
+  blockRetries: Number(env.BLOCK_RETRIES ?? 2),
+  // Reuse finished files for the same video/format/quality. 0 disables the cache.
+  cacheTtlMs: Number(env.CACHE_TTL_MINUTES ?? 360) * 60_000,
+  cacheMaxBytes: Number(env.CACHE_MAX_MB ?? 1000) * 1024 * 1024,
+  infoCacheTtlMs: Number(env.INFO_CACHE_MINUTES ?? 30) * 60_000,
 };
 
 const MP3_QUALITIES = [128, 192, 256, 320];
@@ -172,6 +178,67 @@ function friendlyError(stderr = '') {
   return 'Something went wrong while fetching this video. Please check the link and try again.';
 }
 
+function isBlocked(stderr = '') {
+  const s = stderr.toLowerCase();
+  return s.includes('sign in to confirm you') || s.includes('http error 429') || s.includes('too many requests') ||
+    s.includes('http error 403') || s.includes('failed to extract any player response') || s.includes('po token');
+}
+
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+/** Runs yt-dlp and retries when the site blocks the request. `beforeRetry` can clean up partial files. */
+async function runWithRetry(args, opts = {}, beforeRetry) {
+  let result;
+  for (let attempt = 0; attempt <= CONFIG.blockRetries; attempt++) {
+    if (attempt > 0) {
+      log('blocked, retrying', `attempt ${attempt + 1}/${CONFIG.blockRetries + 1}`);
+      if (beforeRetry) await beforeRetry();
+      await sleep(1000 * attempt);
+    }
+    result = await run(args, opts);
+    if (result.code === 0 || !isBlocked(result.stderr)) return result;
+  }
+  return result;
+}
+
+// ---------------------------------------------------------------- cache
+/** Stable key for a link: YouTube links with the same video id share one key. */
+function mediaKey(target) {
+  try {
+    const u = new URL(target);
+    const host = u.hostname.replace(/^(www\.|m\.|music\.)/, '');
+    let id = null;
+    if (host === 'youtu.be') id = u.pathname.slice(1).split('/')[0];
+    else if (host === 'youtube.com' || host === 'youtube-nocookie.com') {
+      id = u.searchParams.get('v') || (/^\/(shorts|embed|live|v)\/([\w-]{6,})/.exec(u.pathname) || [])[2];
+    }
+    if (id && /^[\w-]{6,20}$/.test(id)) return `yt:${id}`;
+    u.hash = '';
+    return u.toString();
+  } catch {
+    return target;
+  }
+}
+
+const infoCache = new Map(); // key -> { data, at }
+const fileCache = new Map(); // key|type|quality -> { path, size, at }
+const inflight = new Map(); // key|type|quality -> job id
+const cacheDir = () => join(CONFIG.workDir, '_cache');
+
+async function pruneCache() {
+  const now = Date.now();
+  for (const [k, v] of infoCache) if (now - v.at > CONFIG.infoCacheTtlMs) infoCache.delete(k);
+  let total = 0;
+  const entries = [...fileCache.entries()].sort((a, b) => b[1].at - a[1].at); // newest first
+  for (const [k, v] of entries) {
+    total += v.size;
+    if (now - v.at > CONFIG.cacheTtlMs || total > CONFIG.cacheMaxBytes) {
+      fileCache.delete(k);
+      await rm(v.path, { force: true });
+    }
+  }
+}
+
 function run(args, { timeoutMs = 60_000, onLine } = {}) {
   return new Promise((resolve) => {
     const child = spawn(CONFIG.ytdlp, args, { stdio: ['ignore', 'pipe', 'pipe'] });
@@ -229,6 +296,7 @@ function publicJob(job) {
 
 async function startJob(job) {
   running++;
+  job.counted = true;
   job.status = 'downloading';
   const out = join(CONFIG.workDir, job.id);
   await mkdir(out, { recursive: true });
@@ -257,7 +325,15 @@ async function startJob(job) {
   args.push('--', job.url);
 
   let files = 0;
-  const result = await run(args, {
+  const resetForRetry = async () => {
+    files = 0;
+    job.lastPct = 0;
+    job.progress = 0;
+    job.status = 'downloading';
+    await rm(out, { recursive: true, force: true });
+    await mkdir(out, { recursive: true });
+  };
+  const result = await runWithRetry(args, {
     timeoutMs: CONFIG.jobTimeoutMs,
     onLine: (line) => {
       const m = /^PROGRESS\s+([\d.]+)%/.exec(line.trim());
@@ -274,8 +350,10 @@ async function startJob(job) {
         job.progress = Math.max(job.progress, 95);
       }
     },
-  });
+  }, resetForRetry);
   running--;
+  job.counted = false;
+  inflight.delete(job.cacheKey);
 
   const produced = (await readdir(out).catch(() => [])).filter((f) => f.startsWith('media.') && f.endsWith(`.${job.type}`));
   if (result.code !== 0 || !produced.length) {
@@ -287,6 +365,18 @@ async function startJob(job) {
   }
   job.path = join(out, produced[0]);
   job.size = (await stat(job.path)).size;
+  if (CONFIG.cacheTtlMs > 0) {
+    // Keep the file so the next request for the same video, format and quality is instant.
+    const cached = join(cacheDir(), `${createHash('sha1').update(job.cacheKey).digest('hex')}.${job.type}`);
+    try {
+      await rename(job.path, cached);
+      job.path = cached;
+      fileCache.set(job.cacheKey, { path: cached, size: job.size, at: Date.now() });
+      pruneCache().catch(() => {});
+    } catch (err) {
+      log('cache store failed', err.message);
+    }
+  }
   job.filename = safeFilename(job.title, job.type);
   job.status = 'done';
   job.progress = 100;
@@ -305,6 +395,7 @@ setInterval(async () => {
     }
   }
   for (const [key, list] of hits) if (!list.some((t) => now - t < 3_600_000)) hits.delete(key);
+  await pruneCache().catch(() => {});
 }, 60_000).unref();
 
 // ---------------------------------------------------------------- routes
@@ -312,7 +403,10 @@ async function handleInfo(req, res, ip) {
   if (rateLimited(ip, 'info', CONFIG.infoPerHour)) return send(res, 429, { error: 'Too many requests. Please wait a little and try again.' });
   const { url } = await readJson(req);
   const target = await checkUrl(url);
-  const result = await run([...baseArgs(target), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
+  const key = mediaKey(target);
+  const hit = infoCache.get(key);
+  if (hit && Date.now() - hit.at < CONFIG.infoCacheTtlMs) return send(res, 200, hit.data);
+  const result = await runWithRetry([...baseArgs(target), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
   if (result.code !== 0) {
     log('info failed', new URL(target).hostname, result.code, result.stderr.split('\n').filter(Boolean).slice(-3).join(' | '));
     return send(res, 422, { error: friendlyError(result.stderr) });
@@ -341,7 +435,7 @@ async function handleInfo(req, res, ip) {
   if (!hasAudio && !hasVideo) hasAudio = true; // unknown direct file: let the job try
   const maxH = Math.max(0, ...heights);
   const mp4 = hasVideo ? MP4_QUALITIES.filter((q, i) => i === 0 || q <= maxH || !maxH) : [];
-  send(res, 200, {
+  const data = {
     title: info.title || info.id || 'Video',
     thumbnail: info.thumbnail || null,
     duration: info.duration || null,
@@ -349,7 +443,9 @@ async function handleInfo(req, res, ip) {
     site: info.extractor_key && info.extractor_key !== 'Generic' ? info.extractor_key : null,
     url: info.webpage_url || target,
     options: { mp3: hasAudio || hasVideo ? MP3_QUALITIES : [], mp4 },
-  });
+  };
+  if (CONFIG.infoCacheTtlMs > 0) infoCache.set(key, { data, at: Date.now() });
+  send(res, 200, data);
 }
 
 async function handleCreateJob(req, res, ip) {
@@ -359,21 +455,52 @@ async function handleCreateJob(req, res, ip) {
   if (!['mp3', 'mp4'].includes(type) || !(type === 'mp3' ? MP3_QUALITIES : MP4_QUALITIES).includes(q)) {
     return send(res, 400, { error: 'Please choose a valid format and quality.' });
   }
-  if (running >= CONFIG.maxConcurrent) return send(res, 503, { error: 'Our server is busy right now. Please try again in a minute.' });
   if (rateLimited(ip, 'job', CONFIG.jobsPerHour)) return send(res, 429, { error: 'You have reached the hourly download limit. Please try again later.' });
+  const cacheKey = `${mediaKey(target)}|${type}|${q}`;
+  const safeTitle = typeof title === 'string' ? title.slice(0, 200) : 'download'; // only used for the file name
+
+  // Same video, format and quality already being prepared: share that job.
+  const sharedId = inflight.get(cacheKey);
+  if (sharedId && jobs.has(sharedId)) return send(res, 202, publicJob(jobs.get(sharedId)));
+
+  // Already converted recently: serve the cached file straight away.
+  const cached = fileCache.get(cacheKey);
+  if (cached) {
+    try {
+      const size = (await stat(cached.path)).size;
+      cached.at = Date.now();
+      const job = {
+        id: randomUUID(), url: target, type, quality: q, title: safeTitle, cacheKey,
+        status: 'done', progress: 100, path: cached.path, size,
+        filename: safeFilename(safeTitle, type), createdAt: Date.now(), finishedAt: Date.now(),
+      };
+      jobs.set(job.id, job);
+      log('cache hit', cacheKey);
+      return send(res, 202, publicJob(job));
+    } catch {
+      fileCache.delete(cacheKey);
+    }
+  }
+
+  if (running >= CONFIG.maxConcurrent) return send(res, 503, { error: 'Our server is busy right now. Please try again in a minute.' });
   const job = {
     id: randomUUID(),
     url: target,
     type,
     quality: q,
-    title: typeof title === 'string' ? title.slice(0, 200) : 'download', // only used for the file name
+    title: safeTitle,
+    cacheKey,
     status: 'queued',
     progress: 0,
     lastPct: 0,
     createdAt: Date.now(),
   };
   jobs.set(job.id, job);
+  inflight.set(cacheKey, job.id);
   startJob(job).catch((err) => {
+    inflight.delete(cacheKey);
+    if (job.counted) running--;
+    job.counted = false;
     job.status = 'error';
     job.error = friendlyError(String(err));
   });
@@ -408,7 +535,7 @@ const server = createServer(async (req, res) => {
   const ip = clientIp(req);
   const { pathname } = new URL(req.url, 'http://localhost');
   try {
-    if (req.method === 'GET' && pathname === '/health') return send(res, 200, { ok: true, running, jobs: jobs.size });
+    if (req.method === 'GET' && pathname === '/health') return send(res, 200, { ok: true, running, jobs: jobs.size, cached: fileCache.size });
     if (req.method === 'POST' && pathname === '/api/info') return await handleInfo(req, res, ip);
     if (req.method === 'POST' && pathname === '/api/jobs') return await handleCreateJob(req, res, ip);
     const m = /^\/api\/jobs\/([0-9a-f-]{36})(\/file)?$/.exec(pathname);
@@ -426,7 +553,7 @@ const server = createServer(async (req, res) => {
 });
 
 await rm(CONFIG.workDir, { recursive: true, force: true });
-await mkdir(CONFIG.workDir, { recursive: true });
+await mkdir(cacheDir(), { recursive: true });
 
 // Hosts such as Render mount secret files read-only, but yt-dlp writes refreshed cookies back to the
 // file. Work on a private writable copy.
