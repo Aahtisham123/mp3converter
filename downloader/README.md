@@ -38,6 +38,11 @@ for links you are asked to remove.
 - If the logs show "Sign in to confirm you're not a bot" or "Failed to extract any player response",
   YouTube is blocking the server's IP. Set `YTDLP_PROXY` to a residential proxy and
   `YTDLP_PROXY_DOMAINS=youtube.com,youtu.be` so only YouTube uses (and is billed through) the proxy.
+- If logs still show "Sign in to confirm you're not a bot" with a proxy, the proxy IP is flagged too.
+  Use a residential proxy, or give yt-dlp YouTube cookies: export `cookies.txt` from a spare Google
+  account (see the yt-dlp wiki "Exporting YouTube cookies"), add it as a secret file
+  (Render: Environment → Secret Files → `cookies.txt`) and set `YTDLP_COOKIES=/etc/secrets/cookies.txt`.
+  The server works on a private writable copy of the file. Never use your main Google account.
 - Logs: `docker compose logs -f downloader`
 
 ## Local testing

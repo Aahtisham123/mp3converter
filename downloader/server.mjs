@@ -5,11 +5,12 @@
 import { spawn } from 'node:child_process';
 import { randomUUID } from 'node:crypto';
 import { createReadStream } from 'node:fs';
-import { mkdir, readdir, rm, stat } from 'node:fs/promises';
+import { chmod, copyFile, mkdir, readdir, rm, stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { lookup } from 'node:dns/promises';
 import { isIP } from 'node:net';
 import { join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 // ---------------------------------------------------------------- config
 const env = process.env;
@@ -426,4 +427,20 @@ const server = createServer(async (req, res) => {
 
 await rm(CONFIG.workDir, { recursive: true, force: true });
 await mkdir(CONFIG.workDir, { recursive: true });
+
+// Hosts such as Render mount secret files read-only, but yt-dlp writes refreshed cookies back to the
+// file. Work on a private writable copy.
+if (CONFIG.cookies) {
+  const copy = join(tmpdir(), 'yt-cookies.txt');
+  try {
+    await rm(copy, { force: true });
+    await copyFile(CONFIG.cookies, copy);
+    await chmod(copy, 0o600); // the original may be read-only; the copy must be writable
+    CONFIG.cookies = copy;
+    log('using cookies file');
+  } catch (err) {
+    log('cookies file not readable, continuing without cookies:', err.message);
+    CONFIG.cookies = '';
+  }
+}
 server.listen(CONFIG.port, () => log(`downloader listening on :${CONFIG.port}`));
