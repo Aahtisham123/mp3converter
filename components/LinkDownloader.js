@@ -17,7 +17,19 @@ async function api(path, options) {
       headers: options && options.body ? { 'Content-Type': 'application/json' } : undefined,
     });
   } catch {
-    throw new Error('Could not reach the download server. Please check your connection and try again.');
+    // Tell the site owner (browser console) why the request failed.
+    try {
+      await fetch(`${DOWNLOADER_URL}/health`, { mode: 'no-cors', cache: 'no-store' });
+      console.error(
+        `[MP3 Converter] The download server at ${DOWNLOADER_URL} is running but refused this website. ` +
+          `Add "${window.location.origin}" to ALLOWED_ORIGINS on the download server.`,
+      );
+      throw new Error('Link downloads are not available on this website address yet. Please try again later.');
+    } catch (err) {
+      if (err.message.startsWith('Link downloads')) throw err;
+      console.error(`[MP3 Converter] The download server at ${DOWNLOADER_URL} is not responding. Is it running?`);
+    }
+    throw new Error('Could not reach the download server. It may be starting up, so please wait a minute and try again.');
   }
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
