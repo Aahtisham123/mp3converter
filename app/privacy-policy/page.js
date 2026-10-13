@@ -13,15 +13,25 @@ export default function Privacy() {
       <section className="section">
         <h2>The short version</h2>
         <p>
-          The files you convert, cut, compress, join or record on {SITE.url.replace('https://', '')} are processed inside your own
-          browser. They are not uploaded to, stored on or viewed by our servers.
+          Files you upload, record, cut, compress or join on {SITE.url.replace('https://', '')} are processed inside your own
+          browser and are never sent to us. When you paste a link, our download server fetches that link for you and
+          deletes the result after 30 minutes.
         </p>
       </section>
       <section className="section">
-        <h2>Files and recordings</h2>
+        <h2>Files and recordings on your device</h2>
         <p>
           When you choose a file or record with your microphone, the audio is read and converted in your browser’s memory.
           The resulting MP3 is offered to you as a download. When you close or reload the page, this data is cleared.
+        </p>
+      </section>
+      <section className="section">
+        <h2>Links you paste</h2>
+        <p>
+          To download from a link, we send the link to our download server, which fetches the video from the website and,
+          if you choose, converts it to MP3. The finished file is stored only so you can download it and is deleted
+          automatically after 30 minutes. We keep the IP address of each request in memory for up to one hour to apply
+          fair-use limits, and our server logs record technical errors without the content of the files.
         </p>
       </section>
       <section className="section">

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import LinkDownloader from './LinkDownloader';
 import { BitrateSelect, PrivacyNote, ProgressBar, STANDARD_BITRATES, Toggle, overallProgress, stageText } from './tool-ui';
 import { ACCEPT, MAX_BYTES, baseName, decodeFile, encodeMp3, extOf, formatBytes, formatTime, toMono } from '@/lib/audio-engine';
 
@@ -15,6 +16,7 @@ export default function Converter({
   defaultMono = false,
   initialMode = 'upload',
   showRecord = true,
+  showLink = false,
   compress = false,
   buttonLabel = 'Choose Files',
 }) {
@@ -223,6 +225,11 @@ export default function Converter({
           <button type="button" role="tab" id="tab-upload" aria-controls="panel-converter" aria-selected={mode === 'upload'} className="mode-tab" onClick={() => setMode('upload')} disabled={recState === 'recording'}>
             <Icon name="music" /> Upload
           </button>
+          {showLink && (
+            <button type="button" role="tab" id="tab-link" aria-controls="panel-converter" aria-selected={mode === 'link'} className="mode-tab" onClick={() => setMode('link')} disabled={recState === 'recording'}>
+              <Icon name="link" /> Paste Link
+            </button>
+          )}
           <button type="button" role="tab" id="tab-record" aria-controls="panel-converter" aria-selected={mode === 'record'} className="mode-tab" onClick={() => setMode('record')}>
             <Icon name="mic" /> Record
           </button>
@@ -232,7 +239,7 @@ export default function Converter({
       <div
         id="panel-converter"
         role={showRecord ? 'tabpanel' : 'region'}
-        aria-labelledby={showRecord ? (mode === 'upload' ? 'tab-upload' : 'tab-record') : undefined}
+        aria-labelledby={showRecord ? `tab-${mode}` : undefined}
         aria-label={showRecord ? undefined : 'MP3 converter'}
         className={`converter${dragover ? ' is-dragover' : ''}`}
         {...dropProps}
@@ -279,11 +286,17 @@ export default function Converter({
 
         <div className="converter__icon" aria-hidden="true">
           <span>
-            <Icon name={mode === 'upload' ? 'upload' : 'mic'} />
+            <Icon name={mode === 'upload' ? 'upload' : mode === 'link' ? 'link' : 'mic'} />
           </span>
         </div>
 
-        {mode === 'upload' ? (
+        {mode === 'link' ? (
+          <>
+            <h2>Paste a video link to download it or convert it to MP3.</h2>
+            <p className="converter__formats">Works with YouTube, Vimeo, Dailymotion, direct video links and many more sites</p>
+            <LinkDownloader />
+          </>
+        ) : mode === 'upload' ? (
           <>
             <h2>{heading}</h2>
             <p className="converter__formats">
@@ -333,12 +346,16 @@ export default function Converter({
           </>
         )}
 
-        <div className="converter__options">
-          <BitrateSelect value={bitrate} onChange={setBitrate} options={bitrates} />
-          <span className="opt-divider" aria-hidden="true" />
-          <Toggle label="Mono (smaller file):" checked={mono} onChange={setMono} />
-        </div>
-        <PrivacyNote />
+        {mode !== 'link' && (
+          <>
+            <div className="converter__options">
+              <BitrateSelect value={bitrate} onChange={setBitrate} options={bitrates} />
+              <span className="opt-divider" aria-hidden="true" />
+              <Toggle label="Mono (smaller file):" checked={mono} onChange={setMono} />
+            </div>
+            <PrivacyNote />
+          </>
+        )}
       </div>
     </div>
   );

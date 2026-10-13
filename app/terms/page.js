@@ -19,9 +19,17 @@ export default function Terms() {
       <section className="section">
         <h2>Your content and copyright</h2>
         <p>
-          You are responsible for the files you process. Only convert, cut, compress or join content that you own, that you
-          have permission to use, or that the law allows you to copy. Do not use the tools to infringe copyright or to get
-          around copy protection.
+          You are responsible for the files and links you process. Only convert, download, cut, compress or join content
+          that you own, that is openly licensed, that you have permission to use, or that the law allows you to copy. Do
+          not use the tools to infringe copyright, to get around copy protection, or in breach of another website’s
+          terms of service. See our <a href="/copyright">Copyright &amp; DMCA Policy</a>.
+        </p>
+      </section>
+      <section className="section">
+        <h2>Fair use of the link downloader</h2>
+        <p>
+          To keep the service available for everyone, we limit how many downloads each visitor can start per hour, the
+          length of videos and the size of files. Automated or bulk use is not allowed. We may block access in case of abuse.
         </p>
       </section>
       <section className="section">
@@ -34,7 +42,8 @@ export default function Terms() {
       <section className="section">
         <h2>Open-source software</h2>
         <p>
-          The site uses LAME (via lamejs, LGPL) for MP3 encoding and FFmpeg (via ffmpeg.wasm) for decoding some formats. These
+          The site uses LAME (via lamejs, LGPL) for MP3 encoding, FFmpeg (via ffmpeg.wasm and on our server) for decoding and
+          converting, and yt-dlp (Unlicense) for fetching media from links. These
           projects remain the property of their authors and are used under their licences.
         </p>
       </section>

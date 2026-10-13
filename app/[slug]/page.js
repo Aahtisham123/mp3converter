@@ -71,12 +71,21 @@ export default async function ToolPage({ params }) {
         </nav>
         <h1 id="page-title">{t.h1}</h1>
         <p className="hero__lead">{t.lead}</p>
-        <ul className="badges">
-          <li><Icon name="shield" /> 100% Private</li>
-          <li><Icon name="infinity" /> No Limits</li>
-          <li><Icon name="tag" /> Free</li>
-          <li><Icon name="phone" /> Any Device</li>
-        </ul>
+        {t.kind === 'link' ? (
+          <ul className="badges">
+            <li><Icon name="tag" /> Free</li>
+            <li><Icon name="shield" /> No Sign-up</li>
+            <li><Icon name="zap" /> MP3 up to 320 kbps</li>
+            <li><Icon name="video" /> MP4 up to 1080p</li>
+          </ul>
+        ) : (
+          <ul className="badges">
+            <li><Icon name="shield" /> 100% Private</li>
+            <li><Icon name="infinity" /> No Limits</li>
+            <li><Icon name="tag" /> Free</li>
+            <li><Icon name="phone" /> Any Device</li>
+          </ul>
+        )}
         <ToolWidget kind={t.kind} tool={t.tool} />
       </section>
 
@@ -134,7 +143,7 @@ export default async function ToolPage({ params }) {
         <div className="grid grid-4">
           {t.related.map((r) => TOOL_MAP[r]).filter(Boolean).map((r) => (
             <Link key={r.slug} href={`/${r.slug}`} className="card format-card">
-              <span className="card__icon"><Icon name={r.kind === 'cut' ? 'scissors' : r.kind === 'join' ? 'layers' : 'fileAudio'} /></span>
+              <span className="card__icon"><Icon name={r.kind === 'cut' ? 'scissors' : r.kind === 'join' ? 'layers' : r.kind === 'link' ? 'link' : 'fileAudio'} /></span>
               <strong>{r.nav}</strong>
             </Link>
           ))}

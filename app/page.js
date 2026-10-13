@@ -58,7 +58,7 @@ const FAQS = [
   },
   {
     q: 'Are my files uploaded to your server?',
-    a: 'No. Your browser reads the file, decodes the audio and builds the MP3 right on your device. Nothing is sent to us, which is why the tool keeps working even on a slow connection once the page has loaded.',
+    a: 'Files you upload are never sent to us. Your browser reads the file, decodes the audio and builds the MP3 right on your device. Only when you paste a link does our server fetch that video for you, and the result is deleted after 30 minutes.',
   },
   {
     q: 'Can I convert a video to MP3?',
@@ -146,16 +146,16 @@ export default function HomePage() {
           MP3 Converter – Convert Audio &amp; Video to <span className="grad">MP3 Free Online</span>
         </h1>
         <p className="hero__lead">
-          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks. No sign-up, no
-          upload and no limits on how many files you convert.
+          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks, or paste a video
+          link to download it. No sign-up, and files you upload never leave your device.
         </p>
         <ul className="badges">
-          <li><Icon name="shield" /> 100% Private</li>
-          <li><Icon name="infinity" /> Unlimited Conversions</li>
+          <li><Icon name="shield" /> Private &amp; Secure</li>
+          <li><Icon name="infinity" /> Unlimited File Conversions</li>
           <li><Icon name="tag" /> Free to Use</li>
           <li><Icon name="zap" /> Up to 320 kbps</li>
         </ul>
-        <Converter />
+        <Converter showLink />
       </section>
 
       {/* ---------- Popular conversions ---------- */}
@@ -466,7 +466,7 @@ export default function HomePage() {
             browser hands the finished file straight back to you.
           </p>
           <ul className="checklist">
-            <li>No file is uploaded, stored or shared by us.</li>
+            <li>Files you upload never leave your device. Videos fetched from a link are deleted from our server after 30 minutes.</li>
             <li>No software to install, so there is no risk of bundled adware.</li>
             <li>No account, which means no personal data to protect or leak.</li>
             <li>Close the tab, and every converted file in memory is cleared.</li>

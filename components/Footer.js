@@ -39,12 +39,13 @@ export default function Footer() {
             <li><Link href="/contact">Contact</Link></li>
             <li><Link href="/privacy-policy">Privacy Policy</Link></li>
             <li><Link href="/terms">Terms of Use</Link></li>
+            <li><Link href="/copyright">Copyright &amp; DMCA</Link></li>
           </ul>
         </nav>
       </div>
       <div className="footer__bottom">
         <span>© {year} mp3convert.tools. All rights reserved.</span>
-        <span>Please only convert files you own or have permission to use.</span>
+        <span>Not affiliated with YouTube or Google. Please only download content you own or may use.</span>
       </div>
     </footer>
   );

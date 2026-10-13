@@ -1,0 +1,5 @@
+# Automatic HTTPS for the download service.
+{$DOMAIN} {
+	encode gzip
+	reverse_proxy downloader:8080
+}

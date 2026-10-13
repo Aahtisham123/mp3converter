@@ -6,13 +6,14 @@ files are never uploaded to a server.
 ## Tools
 | Route | Tool |
 | --- | --- |
-| `/` | MP3 converter for any audio/video file + voice recorder |
+| `/` | MP3 converter for any audio/video file, paste-a-link downloader and voice recorder |
+| `/youtube-to-mp3`, `/youtube-to-mp4`, `/online-video-downloader` | Paste a link → download MP4 or convert to MP3 (needs the download service) |
 | `/mp4-to-mp3`, `/video-to-mp3`, `/wav-to-mp3`, `/m4a-to-mp3`, `/flac-to-mp3`, `/aac-to-mp3`, `/ogg-to-mp3`, `/opus-to-mp3`, `/webm-to-mp3`, `/mov-to-mp3`, `/mkv-to-mp3`, `/podcast-to-mp3` | Format-specific converter pages |
 | `/voice-to-mp3` | Microphone recorder → MP3 |
 | `/mp3-cutter` | Waveform trimmer: keep/remove selection, fade in/out, preview |
 | `/mp3-compressor` | Re-encode at 32–160 kbps, shows size saved |
 | `/audio-joiner` | Merge files in any order with optional gaps |
-| `/about`, `/contact`, `/privacy-policy`, `/terms` | Info pages |
+| `/about`, `/contact`, `/privacy-policy`, `/terms`, `/copyright` | Info and legal pages |
 
 ## How it works (`lib/audio-engine.js`)
 1. **Decode** with the browser's Web Audio API (fast path).
@@ -21,6 +22,16 @@ files are never uploaded to a server.
 3. **Encode** MP3 with LAME ([lamejs](https://github.com/zhuker/lamejs), LGPL-3.0) in a Web Worker (`public/mp3-worker.js`).
 
 Files are processed one at a time to keep memory use low; the limit is 500 MB per file.
+
+## Link downloads (separate server)
+Browsers cannot fetch videos from other websites, so link downloads use a small service in
+[`downloader/`](downloader/README.md) (Node + yt-dlp + FFmpeg, Docker, automatic HTTPS with Caddy).
+Run it on a VPS, then set this environment variable in Vercel and redeploy:
+
+```
+NEXT_PUBLIC_DOWNLOADER_URL=https://dl.mp3convert.tools
+```
+Without it, the "Paste Link" tools show a friendly "not set up yet" message and everything else keeps working.
 
 ## Development
 ```bash
