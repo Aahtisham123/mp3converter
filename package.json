@@ -4,12 +4,15 @@
   "private": true,
   "description": "MP3 Converter — free online tool to convert audio and video files to MP3 in the browser (mp3convert.tools).",
   "scripts": {
+    "postinstall": "node scripts/copy-ffmpeg.mjs",
+    "predev": "node scripts/copy-ffmpeg.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/copy-ffmpeg.mjs",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
+    "@ffmpeg/core": "0.12.10",
     "next": "16.4.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"

@@ -82,7 +82,7 @@ const FAQS = [
   },
   {
     q: 'Why did my file fail to convert?',
-    a: 'Each browser supports a slightly different set of audio codecs. If a file will not convert, it usually uses a rare codec, has no sound track, or is damaged. Try a different browser such as Chrome or Firefox, or export the file in a common format first.',
+    a: 'The converter first uses your browser’s own decoder. If that cannot read the file, it loads a built-in FFmpeg decoder that handles almost every format. A file will usually only fail if it has no sound track (for example a silent screen recording), is copy protected (DRM) or is damaged.',
   },
   {
     q: 'Is it legal to convert files to MP3?',
@@ -146,7 +146,7 @@ export default function HomePage() {
           MP3 Converter – Convert Audio &amp; Video to <span className="grad">MP3 Free Online</span>
         </h1>
         <p className="hero__lead">
-          Turn WAV, M4A, FLAC, MP4, MOV and many other files into clean MP3 audio in a few clicks. No sign-up, no
+          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks. No sign-up, no
           upload and no limits on how many files you convert.
         </p>
         <ul className="badges">
@@ -460,9 +460,10 @@ export default function HomePage() {
           <h2 id="privacy">Is this online MP3 converter safe?</h2>
           <p>
             Yes, and here is how it works behind the scenes, so you do not have to take our word for it. When you add
-            a file, your browser uses its built-in Web Audio engine to read the sound. Then a well-known open-source
-            MP3 encoder, LAME, running as a small script in the page, compresses it into an MP3. Finally, your browser
-            hands the finished file straight back to you.
+            a file, your browser uses its built-in Web Audio engine to read the sound. For formats the browser cannot
+            open, such as MKV, AVI or WMA, the page loads FFmpeg, a trusted open-source media library, compiled to run
+            inside your browser. Then the well-known LAME encoder compresses the sound into an MP3. Finally, your
+            browser hands the finished file straight back to you.
           </p>
           <ul className="checklist">
             <li>No file is uploaded, stored or shared by us.</li>
