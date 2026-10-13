@@ -41,6 +41,7 @@ const CONFIG = {
   cacheTtlMs: Number(env.CACHE_TTL_MINUTES ?? 360) * 60_000,
   cacheMaxBytes: Number(env.CACHE_MAX_MB ?? 1000) * 1024 * 1024,
   infoCacheTtlMs: Number(env.INFO_CACHE_MINUTES ?? 30) * 60_000,
+  fragments: Number(env.CONCURRENT_FRAGMENTS || 4), // parallel pieces per download
 };
 
 const MP3_QUALITIES = [128, 192, 256, 320];
@@ -310,6 +311,7 @@ async function startJob(job) {
     '--match-filter', `!is_live & duration <=? ${CONFIG.maxDuration}`,
     '--no-mtime',
     '--restrict-filenames',
+    '--concurrent-fragments', String(CONFIG.fragments),
     '-o', join(out, 'media.%(ext)s'),
   ];
   if (job.type === 'mp3') {
@@ -333,7 +335,7 @@ async function startJob(job) {
     await rm(out, { recursive: true, force: true });
     await mkdir(out, { recursive: true });
   };
-  const result = await runWithRetry(args, {
+  const runOpts = {
     timeoutMs: CONFIG.jobTimeoutMs,
     onLine: (line) => {
       const m = /^PROGRESS\s+([\d.]+)%/.exec(line.trim());
@@ -345,12 +347,21 @@ async function startJob(job) {
         const weight = job.type === 'mp4' ? (files === 0 ? 0.85 : 0.1) : 0.9;
         const offset = job.type === 'mp4' && files > 0 ? 85 : 0;
         job.progress = Math.min(95, Math.round(offset + pct * weight));
-      } else if (/\[(ExtractAudio|Merger|VideoRemuxer|FixupM3u8)\]/.test(line)) {
+      } else if (/\[(ExtractAudio|Merger|VideoRemuxer|VideoConvertor|FixupM3u8)\]/.test(line)) {
         job.status = 'converting';
         job.progress = Math.max(job.progress, 95);
       }
     },
-  }, resetForRetry);
+  };
+  let result = await runWithRetry(args, runOpts, resetForRetry);
+  // Some videos (e.g. VP8 in WebM) cannot simply be repackaged as MP4; convert them instead.
+  if (job.type === 'mp4' && result.code !== 0 && /error opening output files|not currently supported in container|could not find tag for codec/i.test(result.stderr)) {
+    log('remux failed, re-encoding to mp4', job.id);
+    await resetForRetry();
+    const i = args.indexOf('--remux-video');
+    if (i !== -1) args[i] = '--recode-video';
+    result = await runWithRetry(args, runOpts, resetForRetry);
+  }
   running--;
   job.counted = false;
   inflight.delete(job.cacheKey);
@@ -381,7 +392,7 @@ async function startJob(job) {
   job.status = 'done';
   job.progress = 100;
   job.finishedAt = Date.now();
-  log('job done', job.id, job.type, job.quality, job.size);
+  log('job done', job.id, job.type, job.quality, job.size, `${((Date.now() - job.createdAt) / 1000).toFixed(1)}s`);
 }
 
 // Remove old jobs and their files.
@@ -406,7 +417,9 @@ async function handleInfo(req, res, ip) {
   const key = mediaKey(target);
   const hit = infoCache.get(key);
   if (hit && Date.now() - hit.at < CONFIG.infoCacheTtlMs) return send(res, 200, hit.data);
-  const result = await runWithRetry([...baseArgs(target), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 45_000 });
+  const t0 = Date.now();
+  const result = await runWithRetry([...baseArgs(target), '--dump-single-json', '--skip-download', '--', target], { timeoutMs: 90_000 });
+  log('info', new URL(target).hostname, result.code === 0 ? 'ok' : 'failed', `${((Date.now() - t0) / 1000).toFixed(1)}s`);
   if (result.code !== 0) {
     log('info failed', new URL(target).hostname, result.code, result.stderr.split('\n').filter(Boolean).slice(-3).join(' | '));
     return send(res, 422, { error: friendlyError(result.stderr) });
