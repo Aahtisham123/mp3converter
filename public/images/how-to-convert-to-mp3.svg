@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="t d">
+  <title id="t">How to convert a file to MP3 in three steps</title>
+  <desc id="d">Step one, upload a file. Step two, choose the MP3 quality. Step three, download your MP3.</desc>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".13"/>
+    </filter>
+  </defs>
+  <rect width="960" height="300" rx="28" fill="#f7f6ff"/>
+  <path d="M0 230c140-40 260 30 420 10s280-70 540-20v80H0z" fill="#ece8ff"/>
+  <g font-family="Inter, Arial, sans-serif" text-anchor="middle">
+    <g filter="url(#s)">
+      <rect x="60" y="50" width="220" height="190" rx="24" fill="#fff"/>
+      <rect x="370" y="50" width="220" height="190" rx="24" fill="#fff"/>
+      <rect x="680" y="50" width="220" height="190" rx="24" fill="#fff"/>
+    </g>
+    <circle cx="170" cy="118" r="38" fill="url(#b)"/>
+    <path d="M154 126a12 12 0 0 1 2-23 16 16 0 0 1 30 4 10 10 0 0 1-1 19m-15 4v-18m-7 7l7-7 7 7" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="170" y="190" font-size="20" font-weight="700" fill="#111827">1. Upload</text>
+    <text x="170" y="215" font-size="14" fill="#6b7280">Pick audio or video</text>
+
+    <circle cx="480" cy="118" r="38" fill="url(#b)"/>
+    <path d="M462 106h36m-36 12h36m-36 12h36" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="472" cy="106" r="5" fill="#fff"/><circle cx="490" cy="118" r="5" fill="#fff"/><circle cx="478" cy="130" r="5" fill="#fff"/>
+    <text x="480" y="190" font-size="20" font-weight="700" fill="#111827">2. Choose quality</text>
+    <text x="480" y="215" font-size="14" fill="#6b7280">128 to 320 kbps</text>
+
+    <circle cx="790" cy="118" r="38" fill="url(#b)"/>
+    <path d="M790 100v28m-11-11l11 11 11-11m-22 19h22" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="790" y="190" font-size="20" font-weight="700" fill="#111827">3. Download</text>
+    <text x="790" y="215" font-size="14" fill="#6b7280">Save your MP3</text>
+  </g>
+  <g stroke="#a78bfa" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 10">
+    <path d="M292 145h66"/><path d="M602 145h66"/>
+  </g>
+  <path d="M352 139l8 6-8 6M662 139l8 6-8 6" stroke="#8b5cf6" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
