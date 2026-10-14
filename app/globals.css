@@ -450,3 +450,5 @@ tr:last-child td { border-bottom: 0; }
 .soon-card { text-align: center; }
 .soon-card .link-input { opacity: .6; }
 .soon-card .link-input input { cursor: not-allowed; }
+.direction-tabs .mode-tab { font-variant-numeric: tabular-nums; letter-spacing: .01em; }
+.reverse-note { flex-basis: 100%; margin: 0; font-size: .85rem; color: var(--text-3); text-align: center; }

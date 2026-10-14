@@ -1,5 +1,7 @@
-/* Fallback decoder: turns any audio/video file the browser cannot read into 16-bit WAV
-   using FFmpeg compiled to WebAssembly (https://ffmpegwasm.netlify.app, LGPL/GPL). */
+/* FFmpeg compiled to WebAssembly (https://ffmpegwasm.netlify.app, LGPL/GPL), used for two jobs:
+   1. decode: turn any audio/video file the browser cannot read into 16-bit WAV;
+   2. convert: create other formats (WMA, AC3, ALAC, FLAC, OGG, ...) from an MP3 or other audio file.
+   Everything runs inside the visitor's browser. */
 let core = null;
 
 async function load() {
@@ -11,9 +13,16 @@ async function load() {
   return core;
 }
 
+function remove(ff, name) {
+  try {
+    ff.FS.unlink(name);
+  } catch {}
+}
+
 self.onmessage = async (e) => {
-  const { id, file, ext } = e.data;
+  const { id, type = 'decode', file, ext, args, out } = e.data;
   const input = `input.${ext || 'bin'}`;
+  const output = type === 'convert' ? out : 'output.wav';
   try {
     const ff = await load();
     self.postMessage({ id, type: 'loaded' });
@@ -22,18 +31,29 @@ self.onmessage = async (e) => {
     });
     ff.FS.writeFile(input, new Uint8Array(await file.arrayBuffer()));
     ff.setTimeout(-1);
-    ff.exec('-hide_banner', '-i', input, '-vn', '-sn', '-dn', '-ac', '2', '-ar', '44100', '-c:a', 'pcm_s16le', '-bitexact', '-f', 'wav', 'output.wav');
+    if (type === 'convert') {
+      // `args` uses the placeholder "IN" for the input file; the output file name is appended.
+      ff.exec('-hide_banner', '-y', ...args.map((a) => (a === 'IN' ? input : a)), output);
+    } else {
+      ff.exec('-hide_banner', '-i', input, '-vn', '-sn', '-dn', '-ac', '2', '-ar', '44100', '-c:a', 'pcm_s16le', '-bitexact', '-f', 'wav', output);
+    }
     const ret = ff.ret;
     ff.reset();
-    try { ff.FS.unlink(input); } catch {}
-    if (ret !== 0) throw new Error('No readable audio track found');
-    const out = ff.FS.readFile('output.wav');
-    try { ff.FS.unlink('output.wav'); } catch {}
-    self.postMessage({ id, type: 'done', data: out }, [out.buffer]);
+    remove(ff, input);
+    if (ret !== 0) {
+      remove(ff, output);
+      throw new Error(type === 'convert' ? 'Conversion failed' : 'No readable audio track found');
+    }
+    const data = ff.FS.readFile(output);
+    remove(ff, output);
+    self.postMessage({ id, type: 'done', data }, [data.buffer]);
   } catch (err) {
-    try { core && core.FS.unlink(input); } catch {}
+    if (core) {
+      remove(core, input);
+      remove(core, output);
+    }
     // A crashed WebAssembly instance cannot be reused, so start fresh next time.
-    if (!(err && err.message === 'No readable audio track found')) core = null;
+    if (!(err && /No readable audio track|Conversion failed/.test(err.message))) core = null;
     self.postMessage({ id, type: 'error', message: (err && err.message) || String(err) });
   }
 };

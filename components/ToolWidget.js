@@ -2,6 +2,7 @@
 
 import Converter from './Converter';
 import Cutter from './Cutter';
+import FormatConverter from './FormatConverter';
 import Icon from './Icon';
 import Joiner from './Joiner';
 import LinkDownloader from './LinkDownloader';
@@ -58,6 +59,8 @@ export default function ToolWidget({ kind, tool = {} }) {
       </div>
     );
   }
-  const { bitrates, ...rest } = tool;
-  return <Converter {...rest} bitrates={bitrates === 'compress' ? COMPRESS_BITRATES : STANDARD_BITRATES} />;
+  const { bitrates, reverse, ...rest } = tool;
+  const converterProps = { ...rest, bitrates: bitrates === 'compress' ? COMPRESS_BITRATES : STANDARD_BITRATES };
+  if (reverse) return <FormatConverter reverse={reverse} converterProps={converterProps} />;
+  return <Converter {...converterProps} />;
 }
