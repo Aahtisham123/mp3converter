@@ -7,12 +7,16 @@ import { DOWNLOADER_URL } from '@/lib/site';
 
 const QUALITIES = {
   mp3: [
+    { value: 64, label: '64 kbps (smallest)' },
+    { value: 96, label: '96 kbps' },
     { value: 128, label: '128 kbps' },
-    { value: 192, label: '192 kbps' },
+    { value: 160, label: '160 kbps' },
+    { value: 192, label: '192 kbps (recommended)' },
     { value: 256, label: '256 kbps' },
     { value: 320, label: '320 kbps (best)' },
   ],
   mp4: [
+    { value: 240, label: '240p (smallest)' },
     { value: 360, label: '360p' },
     { value: 480, label: '480p' },
     { value: 720, label: '720p HD' },
@@ -20,6 +24,41 @@ const QUALITIES = {
   ],
 };
 const DEFAULT_QUALITY = { mp3: 192, mp4: 720 };
+
+const YOUTUBE_HOSTS = ['youtube.com', 'youtu.be', 'youtube-nocookie.com'];
+const TIKTOK_HOSTS = ['tiktok.com'];
+
+function hostOf(link) {
+  try {
+    return new URL(link).hostname.toLowerCase();
+  } catch {
+    return '';
+  }
+}
+const matches = (host, list) => list.some((d) => host === d || host.endsWith(`.${d}`));
+
+/** Parses "1:23", "01:02:03" or "83" into seconds. Empty input returns null. */
+function parseTime(value) {
+  const v = String(value || '').trim();
+  if (!v) return null;
+  if (!/^\d{1,3}(:\d{1,2}){0,2}$/.test(v)) return NaN;
+  return v.split(':').reduce((sum, part) => sum * 60 + Number(part), 0);
+}
+
+/** Checks a link against the page's rules. Returns null or { message, href, label }. */
+function siteProblem(link, sites) {
+  const host = hostOf(link);
+  if (sites === 'youtube' && !matches(host, YOUTUBE_HOSTS)) {
+    return { message: 'This tool works with YouTube links only. For other websites, use our Online Video Downloader.', href: '/online-video-downloader', label: 'Open Online Video Downloader' };
+  }
+  if (sites === 'other' && matches(host, YOUTUBE_HOSTS)) {
+    return { message: 'For YouTube links, please use our dedicated YouTube tools.', href: '/youtube-to-mp3', label: 'Open YouTube to MP3' };
+  }
+  if (sites === 'other' && matches(host, TIKTOK_HOSTS)) {
+    return { message: 'TikTok support is coming soon. Please check back shortly.', href: '/tiktok-to-mp3', label: 'About TikTok to MP3' };
+  }
+  return null;
+}
 
 async function api(path, options) {
   let res;
@@ -82,12 +121,24 @@ function ProgressRing({ percent, spinning, label }) {
   );
 }
 
-export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Paste a video link, e.g. https://www.youtube.com/watch?v=…' }) {
+export default function LinkDownloader({
+  formats = ['mp3', 'mp4'],
+  sites = 'any', // 'any' | 'youtube' | 'other'
+  advanced = false, // MP3 extras: mono and trim
+  defaultType,
+  placeholder = 'Paste a video or audio link…',
+}) {
+  const initialType = defaultType && formats.includes(defaultType) ? defaultType : formats[0];
   const [url, setUrl] = useState('');
-  const [type, setType] = useState(defaultType);
-  const [quality, setQuality] = useState(DEFAULT_QUALITY[defaultType]);
+  const [type, setType] = useState(initialType);
+  const [quality, setQuality] = useState(DEFAULT_QUALITY[initialType]);
+  const [mono, setMono] = useState(false);
+  const [trimOn, setTrimOn] = useState(false);
+  const [trimStart, setTrimStart] = useState('');
+  const [trimEnd, setTrimEnd] = useState('');
   const [job, setJob] = useState(null);
   const [error, setError] = useState('');
+  const [hint, setHint] = useState(null);
   const pollRef = useRef(null);
   const runRef = useRef(0);
 
@@ -134,9 +185,30 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
     const link = url.trim();
     if (!link || busy) return;
     setError('');
+    setHint(null);
     if (!/^https?:\/\//i.test(link)) {
       setError('Please paste a full link that starts with http:// or https://');
       return;
+    }
+    const problem = siteProblem(link, sites);
+    if (problem) {
+      setError(problem.message);
+      setHint(problem);
+      return;
+    }
+    const extras = {};
+    if (advanced && type === 'mp3') {
+      if (mono) extras.mono = true;
+      if (trimOn) {
+        const a = parseTime(trimStart) ?? 0;
+        const b = parseTime(trimEnd);
+        if (Number.isNaN(a) || b == null || Number.isNaN(b) || b <= a) {
+          setError('Please enter a start and end time like 1:20 and 2:45 (the end must be after the start).');
+          return;
+        }
+        extras.start = a;
+        extras.end = b;
+      }
     }
     if (!DOWNLOADER_URL) {
       // The download server (downloader/) is not connected: NEXT_PUBLIC_DOWNLOADER_URL is not set.
@@ -147,7 +219,7 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
     const run = ++runRef.current;
     setJob({ status: 'queued', progress: 0 });
     try {
-      const data = await api('/api/jobs', { method: 'POST', body: JSON.stringify({ url: link, type, quality }) });
+      const data = await api('/api/jobs', { method: 'POST', body: JSON.stringify({ url: link, type, quality, ...extras }) });
       if (run !== runRef.current) return;
       setJob(data);
       if (data.status !== 'done') poll(data.id, run);
@@ -210,14 +282,16 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
           </div>
 
           <div className="link-options">
-            <div className="seg-control" role="group" aria-label="Format">
-              <button type="button" aria-pressed={type === 'mp3'} onClick={() => pickType('mp3')}>
-                <Icon name="music" className="icon icon-sm" /> MP3 audio
-              </button>
-              <button type="button" aria-pressed={type === 'mp4'} onClick={() => pickType('mp4')}>
-                <Icon name="video" className="icon icon-sm" /> MP4 video
-              </button>
-            </div>
+            {formats.length > 1 && (
+              <div className="seg-control" role="group" aria-label="Format">
+                <button type="button" aria-pressed={type === 'mp3'} onClick={() => pickType('mp3')}>
+                  <Icon name="music" className="icon icon-sm" /> MP3 audio
+                </button>
+                <button type="button" aria-pressed={type === 'mp4'} onClick={() => pickType('mp4')}>
+                  <Icon name="video" className="icon icon-sm" /> MP4 video
+                </button>
+              </div>
+            )}
             <span className="select-wrap">
               <Icon name="sliders" />
               <select value={quality} onChange={(e) => setQuality(Number(e.target.value))} aria-label="Quality">
@@ -228,13 +302,54 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
             </span>
           </div>
 
+          {advanced && type === 'mp3' && (
+            <div className="link-advanced">
+              <label className="opt">
+                Mono:
+                <span className="switch">
+                  <input type="checkbox" role="switch" checked={mono} onChange={(e) => setMono(e.target.checked)} />
+                  <span />
+                </span>
+              </label>
+              <label className="opt">
+                Cut a part:
+                <span className="switch">
+                  <input type="checkbox" role="switch" checked={trimOn} onChange={(e) => setTrimOn(e.target.checked)} />
+                  <span />
+                </span>
+              </label>
+              {trimOn && (
+                <div className="link-trim">
+                  <label className="time-field">
+                    From
+                    <input type="text" inputMode="numeric" placeholder="0:00" value={trimStart} onChange={(e) => setTrimStart(e.target.value)} aria-label="Start time" />
+                  </label>
+                  <label className="time-field">
+                    To
+                    <input type="text" inputMode="numeric" placeholder="2:30" value={trimEnd} onChange={(e) => setTrimEnd(e.target.value)} aria-label="End time" />
+                  </label>
+                </div>
+              )}
+            </div>
+          )}
+
           <button type="submit" className="btn-grad link-convert" disabled={!url.trim()}>
             <Icon name="zap" /> Convert to {type.toUpperCase()}
           </button>
         </form>
       )}
 
-      {error && <p className="q-meta is-error link-error" role="alert">{error}</p>}
+      {error && (
+        <p className="q-meta is-error link-error" role="alert">
+          {error}
+          {hint && hint.href && (
+            <>
+              {' '}
+              <a href={hint.href}>{hint.label} →</a>
+            </>
+          )}
+        </p>
+      )}
 
       {(busy || done) && (
         <div className="link-stage" aria-live="polite">
@@ -249,7 +364,13 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
               <div style={{ minWidth: 0 }}>
                 <div className="q-name" title={meta.title}>{meta.title || 'Your video'}</div>
                 <div className="q-meta">
-                  {[meta.uploader, meta.duration ? formatTime(meta.duration) : null, `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label || ''}`]
+                  {[
+                    meta.uploader,
+                    meta.duration ? formatTime(meta.duration) : null,
+                    `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label.replace(/ \(.*\)/, '') || ''}`,
+                    advanced && type === 'mp3' && mono ? 'Mono' : null,
+                    advanced && type === 'mp3' && trimOn && trimEnd ? `${trimStart || '0:00'}–${trimEnd}` : null,
+                  ]
                     .filter(Boolean)
                     .join(' · ')}
                 </div>

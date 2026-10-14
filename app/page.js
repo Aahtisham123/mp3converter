@@ -146,8 +146,8 @@ export default function HomePage() {
           MP3 Converter – Convert Audio &amp; Video to <span className="grad">MP3 Free Online</span>
         </h1>
         <p className="hero__lead">
-          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks, or paste a video
-          link to download it. No sign-up, and files you upload never leave your device.
+          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks. Upload a file,
+          paste a media link or record your voice. No sign-up, and files you upload never leave your device.
         </p>
         <ul className="badges">
           <li><Icon name="shield" /> Private &amp; Secure</li>

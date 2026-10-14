@@ -57,7 +57,10 @@ export default function AppShell({ children }) {
       title={item.label}
     >
       <Icon name={item.icon} />
-      <span className="label">{item.label}</span>
+      <span className="label">
+        {item.label}
+        {item.soon && <span className="soon-badge">Soon</span>}
+      </span>
     </Link>
   );
 

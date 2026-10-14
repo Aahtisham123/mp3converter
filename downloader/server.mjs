@@ -44,8 +44,8 @@ const CONFIG = {
   fragments: Number(env.CONCURRENT_FRAGMENTS || 4), // parallel pieces per download
 };
 
-const MP3_QUALITIES = [128, 192, 256, 320];
-const MP4_QUALITIES = [360, 480, 720, 1080];
+const MP3_QUALITIES = [64, 96, 128, 160, 192, 256, 320];
+const MP4_QUALITIES = [240, 360, 480, 720, 1080];
 
 // ---------------------------------------------------------------- helpers
 const log = (...a) => console.log(new Date().toISOString(), ...a);
@@ -271,6 +271,12 @@ function run(args, { timeoutMs = 60_000, onLine } = {}) {
   });
 }
 
+function clipTitle(title, trim) {
+  if (!trim) return title;
+  const t = (x) => `${Math.floor(x / 60)}m${String(x % 60).padStart(2, '0')}s`;
+  return `${title} (${t(trim[0])}-${t(trim[1])})`;
+}
+
 function safeFilename(title, ext) {
   const clean = String(title || 'download')
     .replace(/[\\/:*?"<>|\u0000-\u001f]+/g, ' ')
@@ -321,11 +327,12 @@ async function startJob(job) {
     '--no-simulate',
     '-o', join(out, 'media.%(ext)s'),
   ];
+  if (job.trim) args.push('--download-sections', `*${job.trim[0]}-${job.trim[1]}`);
   if (job.type === 'mp3') {
     args.push(
       '-f', 'bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', `${job.quality}K`,
       // Faster LAME setting: about 20% less CPU, no audible difference at these bitrates.
-      '--postprocessor-args', 'ExtractAudio:-compression_level 7',
+      '--postprocessor-args', `ExtractAudio:-compression_level 7${job.mono ? ' -ac 1' : ''}`,
     );
   } else {
     args.push(
@@ -408,7 +415,7 @@ async function startJob(job) {
       log('cache store failed', err.message);
     }
   }
-  job.filename = safeFilename(job.title, job.type);
+  job.filename = safeFilename(clipTitle(job.title, job.trim), job.type);
   job.status = 'done';
   job.progress = 100;
   job.finishedAt = Date.now();
@@ -482,14 +489,25 @@ async function handleInfo(req, res, ip) {
 }
 
 async function handleCreateJob(req, res, ip) {
-  const { url, type, quality, title } = await readJson(req);
+  const { url, type, quality, title, start, end, mono } = await readJson(req);
   const target = await checkUrl(url);
   const q = Number(quality);
   if (!['mp3', 'mp4'].includes(type) || !(type === 'mp3' ? MP3_QUALITIES : MP4_QUALITIES).includes(q)) {
     return send(res, 400, { error: 'Please choose a valid format and quality.' });
   }
+  // Optional trim (seconds) and mono (MP3 only).
+  let trim = null;
+  if (start != null || end != null) {
+    const a = Math.max(0, Math.floor(Number(start) || 0));
+    const b = Math.floor(Number(end));
+    if (!Number.isFinite(b) || b - a < 1 || b > CONFIG.maxDuration) {
+      return send(res, 400, { error: 'Please choose a valid start and end time (the end must be after the start).' });
+    }
+    trim = [a, b];
+  }
+  const toMono = type === 'mp3' && mono === true;
   if (rateLimited(ip, 'job', CONFIG.jobsPerHour)) return send(res, 429, { error: 'You have reached the hourly download limit. Please try again later.' });
-  const cacheKey = `${mediaKey(target)}|${type}|${q}`;
+  const cacheKey = `${mediaKey(target)}|${type}|${q}${toMono ? '|mono' : ''}${trim ? `|${trim[0]}-${trim[1]}` : ''}`;
   const safeTitle = typeof title === 'string' && title.trim() ? title.slice(0, 200) : 'download'; // file name until the real title is known
 
   // Same video, format and quality already being prepared: share that job.
@@ -503,9 +521,9 @@ async function handleCreateJob(req, res, ip) {
       const size = (await stat(cached.path)).size;
       cached.at = Date.now();
       const job = {
-        id: randomUUID(), url: target, type, quality: q, title: cached.title || safeTitle, cacheKey, meta: cached.meta,
+        id: randomUUID(), url: target, type, quality: q, title: cached.title || safeTitle, cacheKey, meta: cached.meta, trim,
         status: 'done', progress: 100, path: cached.path, size,
-        filename: safeFilename(cached.title || safeTitle, type), createdAt: Date.now(), finishedAt: Date.now(),
+        filename: safeFilename(clipTitle(cached.title || safeTitle, trim), type), createdAt: Date.now(), finishedAt: Date.now(),
       };
       jobs.set(job.id, job);
       log('cache hit', cacheKey);
@@ -523,6 +541,8 @@ async function handleCreateJob(req, res, ip) {
     quality: q,
     title: safeTitle,
     cacheKey,
+    trim,
+    mono: toMono,
     status: 'queued',
     progress: 0,
     lastPct: 0,

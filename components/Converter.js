@@ -17,6 +17,7 @@ export default function Converter({
   initialMode = 'upload',
   showRecord = true,
   showLink = false,
+  linkProps = {},
   compress = false,
   buttonLabel = 'Choose Files',
 }) {
@@ -215,12 +216,13 @@ export default function Converter({
     return stageText(it.stage, it.pct);
   };
 
+  const hasTabs = showRecord || showLink;
   const doneCount = items.filter((it) => it.stage === 'done').length;
   const busy = items.some((it) => !['done', 'error'].includes(it.stage));
 
   return (
     <div className="converter-wrap" id="converter">
-      {showRecord && (
+      {hasTabs && (
         <div className="mode-tabs" role="tablist" aria-label="Choose input">
           <button type="button" role="tab" id="tab-upload" aria-controls="panel-converter" aria-selected={mode === 'upload'} className="mode-tab" onClick={() => setMode('upload')} disabled={recState === 'recording'}>
             <Icon name="music" /> Upload
@@ -230,17 +232,19 @@ export default function Converter({
               <Icon name="link" /> Paste Link
             </button>
           )}
-          <button type="button" role="tab" id="tab-record" aria-controls="panel-converter" aria-selected={mode === 'record'} className="mode-tab" onClick={() => setMode('record')}>
-            <Icon name="mic" /> Record
-          </button>
+          {showRecord && (
+            <button type="button" role="tab" id="tab-record" aria-controls="panel-converter" aria-selected={mode === 'record'} className="mode-tab" onClick={() => setMode('record')}>
+              <Icon name="mic" /> Record
+            </button>
+          )}
         </div>
       )}
 
       <div
         id="panel-converter"
-        role={showRecord ? 'tabpanel' : 'region'}
-        aria-labelledby={showRecord ? `tab-${mode}` : undefined}
-        aria-label={showRecord ? undefined : 'MP3 converter'}
+        role={hasTabs ? 'tabpanel' : 'region'}
+        aria-labelledby={hasTabs ? `tab-${mode}` : undefined}
+        aria-label={hasTabs ? undefined : 'MP3 converter'}
         className={`converter${dragover ? ' is-dragover' : ''}`}
         {...dropProps}
       >
@@ -292,9 +296,11 @@ export default function Converter({
 
         {mode === 'link' ? (
           <>
-            <h2>Paste a video link to download it or convert it to MP3.</h2>
-            <p className="converter__formats">Works with YouTube, Vimeo, Dailymotion, direct video links and many more sites</p>
-            <LinkDownloader />
+            <h2>{linkProps.heading || 'Paste a link to an audio or video file to convert it to MP3.'}</h2>
+            <p className="converter__formats">
+              {linkProps.subheading || 'Works with direct MP3, MP4, WAV and other media links, plus many free video and audio websites'}
+            </p>
+            <LinkDownloader formats={['mp3']} sites="other" {...linkProps} />
           </>
         ) : mode === 'upload' ? (
           <>
