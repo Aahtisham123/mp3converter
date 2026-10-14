@@ -292,6 +292,10 @@ function publicJob(job) {
     error: job.error || undefined,
     filename: job.filename || undefined,
     size: job.size || undefined,
+    title: (job.meta && job.meta.title) || undefined,
+    thumbnail: (job.meta && job.meta.thumbnail) || undefined,
+    duration: (job.meta && job.meta.duration) || undefined,
+    uploader: (job.meta && job.meta.uploader) || undefined,
   };
 }
 
@@ -312,6 +316,9 @@ async function startJob(job) {
     '--no-mtime',
     '--restrict-filenames',
     '--concurrent-fragments', String(CONFIG.fragments),
+    // Report title/thumbnail during the download, so the site needs only one request to YouTube.
+    '--print', 'before_dl:META {"title":%(title)j,"thumbnail":%(thumbnail)j,"duration":%(duration)j,"uploader":%(uploader)j}',
+    '--no-simulate',
     '-o', join(out, 'media.%(ext)s'),
   ];
   if (job.type === 'mp3') {
@@ -338,6 +345,15 @@ async function startJob(job) {
   const runOpts = {
     timeoutMs: CONFIG.jobTimeoutMs,
     onLine: (line) => {
+      if (line.startsWith('META ')) {
+        try {
+          const meta = JSON.parse(line.slice(5).replace(/:NA(?=[,}])/g, ':null'));
+          job.meta = meta;
+          if (meta.title && (!job.title || job.title === 'download')) job.title = String(meta.title).slice(0, 200);
+          if (job.status === 'queued') job.status = 'downloading';
+        } catch {}
+        return;
+      }
       const m = /^PROGRESS\s+([\d.]+)%/.exec(line.trim());
       if (m) {
         // Video and audio are often downloaded separately; show the second half for the audio part.
@@ -382,7 +398,7 @@ async function startJob(job) {
     try {
       await rename(job.path, cached);
       job.path = cached;
-      fileCache.set(job.cacheKey, { path: cached, size: job.size, at: Date.now() });
+      fileCache.set(job.cacheKey, { path: cached, size: job.size, at: Date.now(), meta: job.meta, title: job.title });
       pruneCache().catch(() => {});
     } catch (err) {
       log('cache store failed', err.message);
@@ -470,7 +486,7 @@ async function handleCreateJob(req, res, ip) {
   }
   if (rateLimited(ip, 'job', CONFIG.jobsPerHour)) return send(res, 429, { error: 'You have reached the hourly download limit. Please try again later.' });
   const cacheKey = `${mediaKey(target)}|${type}|${q}`;
-  const safeTitle = typeof title === 'string' ? title.slice(0, 200) : 'download'; // only used for the file name
+  const safeTitle = typeof title === 'string' && title.trim() ? title.slice(0, 200) : 'download'; // file name until the real title is known
 
   // Same video, format and quality already being prepared: share that job.
   const sharedId = inflight.get(cacheKey);
@@ -483,9 +499,9 @@ async function handleCreateJob(req, res, ip) {
       const size = (await stat(cached.path)).size;
       cached.at = Date.now();
       const job = {
-        id: randomUUID(), url: target, type, quality: q, title: safeTitle, cacheKey,
+        id: randomUUID(), url: target, type, quality: q, title: cached.title || safeTitle, cacheKey, meta: cached.meta,
         status: 'done', progress: 100, path: cached.path, size,
-        filename: safeFilename(safeTitle, type), createdAt: Date.now(), finishedAt: Date.now(),
+        filename: safeFilename(cached.title || safeTitle, type), createdAt: Date.now(), finishedAt: Date.now(),
       };
       jobs.set(job.id, job);
       log('cache hit', cacheKey);

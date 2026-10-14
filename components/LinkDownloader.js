@@ -2,12 +2,24 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
-import { ProgressBar } from './tool-ui';
 import { formatBytes, formatTime } from '@/lib/audio-engine';
 import { DOWNLOADER_URL } from '@/lib/site';
 
-const MP3_LABELS = { 128: '128 kbps', 192: '192 kbps', 256: '256 kbps', 320: '320 kbps (best)' };
-const MP4_LABELS = { 360: '360p', 480: '480p', 720: '720p HD', 1080: '1080p Full HD' };
+const QUALITIES = {
+  mp3: [
+    { value: 128, label: '128 kbps' },
+    { value: 192, label: '192 kbps' },
+    { value: 256, label: '256 kbps' },
+    { value: 320, label: '320 kbps (best)' },
+  ],
+  mp4: [
+    { value: 360, label: '360p' },
+    { value: 480, label: '480p' },
+    { value: 720, label: '720p HD' },
+    { value: 1080, label: '1080p Full HD' },
+  ],
+};
+const DEFAULT_QUALITY = { mp3: 192, mp4: 720 };
 
 async function api(path, options) {
   let res;
@@ -36,50 +48,57 @@ async function api(path, options) {
   return data;
 }
 
+const RADIUS = 66;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
+
+/** Circular progress: spins while waiting, fills up with the percentage in the middle. */
+function ProgressRing({ percent, spinning, label }) {
+  const pct = Math.max(0, Math.min(100, Math.round(percent)));
+  return (
+    <div className={`ring${spinning ? ' is-spinning' : ''}`} role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={pct} aria-label={label}>
+      <svg viewBox="0 0 160 160" aria-hidden="true">
+        <defs>
+          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor="#3b82f6" />
+            <stop offset="1" stopColor="#a855f7" />
+          </linearGradient>
+        </defs>
+        <circle className="ring__track" cx="80" cy="80" r={RADIUS} />
+        <circle
+          className="ring__bar"
+          cx="80"
+          cy="80"
+          r={RADIUS}
+          strokeDasharray={CIRCUMFERENCE}
+          strokeDashoffset={CIRCUMFERENCE * (1 - pct / 100)}
+        />
+        <circle className="ring__spin" cx="80" cy="80" r={RADIUS} strokeDasharray={`${CIRCUMFERENCE * 0.18} ${CIRCUMFERENCE}`} />
+      </svg>
+      <div className="ring__center">
+        <span className="ring__pct">{pct}<small>%</small></span>
+        <span className="ring__label">{label}</span>
+      </div>
+    </div>
+  );
+}
+
 export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Paste a video link, e.g. https://www.youtube.com/watch?v=…' }) {
   const [url, setUrl] = useState('');
-  const [info, setInfo] = useState(null);
   const [type, setType] = useState(defaultType);
-  const [quality, setQuality] = useState(defaultType === 'mp3' ? 192 : 720);
-  const [loading, setLoading] = useState(false);
+  const [quality, setQuality] = useState(DEFAULT_QUALITY[defaultType]);
   const [job, setJob] = useState(null);
   const [error, setError] = useState('');
   const pollRef = useRef(null);
+  const runRef = useRef(0);
 
   useEffect(() => () => clearTimeout(pollRef.current), []);
 
-  const options = info ? info.options[type] || [] : [];
+  const busy = Boolean(job && !['done', 'error'].includes(job.status));
+  const done = Boolean(job && job.status === 'done');
 
-  const pickType = (t, inf = info) => {
+  const pickType = (t) => {
     setType(t);
-    const list = inf ? inf.options[t] || [] : [];
-    const preferred = t === 'mp3' ? 192 : 720;
-    setQuality(list.includes(preferred) ? preferred : list[list.length - 1]);
-  };
-
-  const fetchInfo = async (e) => {
-    e && e.preventDefault();
-    const link = url.trim();
-    if (!link) return;
-    if (!DOWNLOADER_URL) {
-      // The download server (downloader/) is not connected: NEXT_PUBLIC_DOWNLOADER_URL is not set.
-      setError('Link downloads are temporarily unavailable. Please try again later, or download the file and use Upload.');
-      return;
-    }
-    clearTimeout(pollRef.current);
-    setError('');
-    setInfo(null);
-    setJob(null);
-    setLoading(true);
-    try {
-      const data = await api('/api/info', { method: 'POST', body: JSON.stringify({ url: link }) });
-      setInfo(data);
-      const t = data.options[type] && data.options[type].length ? type : data.options.mp3.length ? 'mp3' : 'mp4';
-      pickType(t, data);
-    } catch (err) {
-      setError(err.message);
-    }
-    setLoading(false);
+    setQuality(DEFAULT_QUALITY[t]);
   };
 
   const paste = async () => {
@@ -91,139 +110,179 @@ export default function LinkDownloader({ defaultType = 'mp3', placeholder = 'Pas
     }
   };
 
-  const poll = (id) => {
+  const poll = (id, run) => {
     pollRef.current = setTimeout(async () => {
+      if (run !== runRef.current) return;
       try {
         const data = await api(`/api/jobs/${id}`);
+        if (run !== runRef.current) return;
         setJob(data);
-        if (data.status === 'error') setError(data.error);
-        else if (data.status !== 'done') poll(id);
+        if (data.status === 'error') {
+          setError(data.error);
+          setJob(null);
+        } else if (data.status !== 'done') poll(id, run);
       } catch (err) {
+        if (run !== runRef.current) return;
         setError(err.message);
         setJob(null);
       }
     }, 1000);
   };
 
-  const start = async () => {
+  const convert = async (e) => {
+    e && e.preventDefault();
+    const link = url.trim();
+    if (!link || busy) return;
     setError('');
+    if (!/^https?:\/\//i.test(link)) {
+      setError('Please paste a full link that starts with http:// or https://');
+      return;
+    }
+    if (!DOWNLOADER_URL) {
+      // The download server (downloader/) is not connected: NEXT_PUBLIC_DOWNLOADER_URL is not set.
+      setError('Link downloads are temporarily unavailable. Please try again later, or download the file and use Upload.');
+      return;
+    }
+    clearTimeout(pollRef.current);
+    const run = ++runRef.current;
     setJob({ status: 'queued', progress: 0 });
     try {
-      const data = await api('/api/jobs', {
-        method: 'POST',
-        body: JSON.stringify({ url: info.url || url.trim(), type, quality, title: info.title }),
-      });
+      const data = await api('/api/jobs', { method: 'POST', body: JSON.stringify({ url: link, type, quality }) });
+      if (run !== runRef.current) return;
       setJob(data);
-      poll(data.id);
+      if (data.status !== 'done') poll(data.id, run);
     } catch (err) {
+      if (run !== runRef.current) return;
       setError(err.message);
       setJob(null);
     }
   };
 
   const reset = () => {
+    runRef.current++;
     clearTimeout(pollRef.current);
-    setUrl('');
-    setInfo(null);
     setJob(null);
     setError('');
   };
 
-  const busy = job && !['done', 'error'].includes(job.status);
-  const statusText = job
-    ? job.status === 'converting'
-      ? type === 'mp3' ? 'Converting to MP3…' : 'Preparing your MP4…'
-      : job.status === 'queued' ? 'Starting…' : `Downloading… ${job.progress || 0}%`
-    : '';
+  const startOver = () => {
+    reset();
+    setUrl('');
+  };
+
+  let ringLabel = 'Starting…';
+  let spinning = true;
+  if (job) {
+    if (job.status === 'converting') ringLabel = type === 'mp3' ? 'Converting…' : 'Finishing…';
+    else if (job.status === 'downloading' && job.progress > 0) {
+      ringLabel = 'Downloading';
+      spinning = false;
+    } else if (job.title) ringLabel = 'Fetching…';
+  }
+
+  const meta = job && (job.title || job.thumbnail) ? job : null;
 
   return (
     <div className="link-box">
-      <form className="link-form" onSubmit={fetchInfo}>
-        <label className="sr-only" htmlFor="video-link">Video link</label>
-        <div className="link-input">
-          <Icon name="link" />
-          <input
-            id="video-link"
-            type="url"
-            inputMode="url"
-            autoComplete="off"
-            spellCheck={false}
-            placeholder={placeholder}
-            value={url}
-            onChange={(e) => setUrl(e.target.value)}
-            disabled={loading || busy}
-            required
-          />
-          {!url && (
-            <button type="button" className="btn-link" onClick={paste}>
-              Paste
-            </button>
-          )}
-          {url && !loading && !busy && (
-            <button type="button" className="q-remove" onClick={reset} aria-label="Clear link">
-              <Icon name="x" />
-            </button>
-          )}
-        </div>
-        <button type="submit" className="btn-grad" disabled={loading || busy || !url.trim()}>
-          {loading ? <span className="spinner" aria-hidden="true" /> : <Icon name="download" />}
-          {loading ? 'Checking…' : 'Start'}
-        </button>
-      </form>
+      {!busy && !done && (
+        <form className="link-form-v2" onSubmit={convert}>
+          <label className="sr-only" htmlFor="video-link">Video link</label>
+          <div className="link-input">
+            <Icon name="link" />
+            <input
+              id="video-link"
+              type="url"
+              inputMode="url"
+              autoComplete="off"
+              spellCheck={false}
+              placeholder={placeholder}
+              value={url}
+              onChange={(e) => setUrl(e.target.value)}
+              required
+            />
+            {url ? (
+              <button type="button" className="q-remove" onClick={() => setUrl('')} aria-label="Clear link">
+                <Icon name="x" />
+              </button>
+            ) : (
+              <button type="button" className="btn-link" onClick={paste}>Paste</button>
+            )}
+          </div>
+
+          <div className="link-options">
+            <div className="seg-control" role="group" aria-label="Format">
+              <button type="button" aria-pressed={type === 'mp3'} onClick={() => pickType('mp3')}>
+                <Icon name="music" className="icon icon-sm" /> MP3 audio
+              </button>
+              <button type="button" aria-pressed={type === 'mp4'} onClick={() => pickType('mp4')}>
+                <Icon name="video" className="icon icon-sm" /> MP4 video
+              </button>
+            </div>
+            <span className="select-wrap">
+              <Icon name="sliders" />
+              <select value={quality} onChange={(e) => setQuality(Number(e.target.value))} aria-label="Quality">
+                {QUALITIES[type].map((q) => (
+                  <option key={q.value} value={q.value}>{q.label}</option>
+                ))}
+              </select>
+            </span>
+          </div>
+
+          <button type="submit" className="btn-grad link-convert" disabled={!url.trim()}>
+            <Icon name="zap" /> Convert to {type.toUpperCase()}
+          </button>
+        </form>
+      )}
 
       {error && <p className="q-meta is-error link-error" role="alert">{error}</p>}
 
-      {info && (
-        <div className="media-card">
-          {info.thumbnail ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img className="media-card__thumb" src={info.thumbnail} alt="" referrerPolicy="no-referrer" />
-          ) : (
-            <span className="media-card__thumb media-card__thumb--empty" aria-hidden="true"><Icon name="video" /></span>
+      {(busy || done) && (
+        <div className="link-stage" aria-live="polite">
+          {meta && (
+            <div className="media-mini">
+              {meta.thumbnail ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={meta.thumbnail} alt="" referrerPolicy="no-referrer" />
+              ) : (
+                <span className="media-mini__ph" aria-hidden="true"><Icon name={type === 'mp3' ? 'music' : 'video'} /></span>
+              )}
+              <div style={{ minWidth: 0 }}>
+                <div className="q-name" title={meta.title}>{meta.title || 'Your video'}</div>
+                <div className="q-meta">
+                  {[meta.uploader, meta.duration ? formatTime(meta.duration) : null, `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label || ''}`]
+                    .filter(Boolean)
+                    .join(' · ')}
+                </div>
+              </div>
+            </div>
           )}
-          <div className="media-card__body">
-            <div className="q-name" title={info.title}>{info.title}</div>
-            <div className="q-meta">
-              {[info.uploader, info.duration ? formatTime(info.duration) : null, info.site].filter(Boolean).join(' · ')}
-            </div>
 
-            <div className="media-card__choose">
-              <div className="seg-control" role="group" aria-label="Format">
-                <button type="button" aria-pressed={type === 'mp3'} onClick={() => pickType('mp3')} disabled={!info.options.mp3.length || busy}>
-                  MP3 audio
-                </button>
-                <button type="button" aria-pressed={type === 'mp4'} onClick={() => pickType('mp4')} disabled={!info.options.mp4.length || busy}>
-                  MP4 video
-                </button>
-              </div>
-              <span className="select-wrap">
-                <Icon name="sliders" />
-                <select value={quality} onChange={(e) => setQuality(Number(e.target.value))} disabled={busy} aria-label="Quality">
-                  {options.map((q) => (
-                    <option key={q} value={q}>{(type === 'mp3' ? MP3_LABELS : MP4_LABELS)[q]}</option>
-                  ))}
-                </select>
-              </span>
-            </div>
+          {busy && (
+            <>
+              <ProgressRing percent={job.progress || 0} spinning={spinning} label={ringLabel} />
+              <p className="ring-hint">Please keep this page open. Long videos can take a minute or two.</p>
+              <button type="button" className="btn-link" onClick={reset}>Cancel</button>
+            </>
+          )}
 
-            {job && job.status === 'done' ? (
-              <div className="media-card__done">
-                <a className="btn-grad btn-sm" href={`${DOWNLOADER_URL}/api/jobs/${job.id}/file`} download={job.filename}>
-                  <Icon name="download" /> Download {type.toUpperCase()} ({formatBytes(job.size)})
-                </a>
-                <button type="button" className="btn-link" onClick={() => setJob(null)}>Other format</button>
+          {done && (
+            <>
+              <a className="ring-download" href={`${DOWNLOADER_URL}/api/jobs/${job.id}/file`} download={job.filename}>
+                <span className="ring-download__inner">
+                  <Icon name="download" />
+                  <span>Download</span>
+                  <small>{type.toUpperCase()} · {formatBytes(job.size)}</small>
+                </span>
+              </a>
+              <p className="ring-file" title={job.filename}>{job.filename}</p>
+              <div className="ring-actions">
+                <button type="button" className="btn-outline btn-sm" onClick={reset}>
+                  <Icon name="sliders" className="icon icon-sm" /> Other format
+                </button>
+                <button type="button" className="btn-link" onClick={startOver}>Convert another link</button>
               </div>
-            ) : busy ? (
-              <div className="tool-status" aria-live="polite" style={{ margin: '12px 0 0', maxWidth: 'none' }}>
-                <p className="q-meta">{statusText}</p>
-                <ProgressBar value={job.progress || 3} label="Download progress" />
-              </div>
-            ) : (
-              <button type="button" className="btn-grad btn-sm" onClick={start} disabled={!options.length}>
-                <Icon name={type === 'mp3' ? 'music' : 'video'} /> Convert to {type.toUpperCase()}
-              </button>
-            )}
-          </div>
+            </>
+          )}
         </div>
       )}
 
