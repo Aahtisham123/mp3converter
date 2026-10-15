@@ -78,7 +78,7 @@ const FAQS = [
   },
   {
     q: 'Does the MP3 converter work on iPhone and Android?',
-    a: 'Yes. Open the site in Safari, Chrome or another up-to-date browser, tap Choose Files and pick a file from your phone. When it finishes, tap Download to save the MP3 to your Files app or downloads folder.',
+    a: 'Yes. It works as an MP3 converter on iPhone, iPad and Android with no app to install. Open the site in Safari, Chrome or another up-to-date browser, tap Choose Files and pick a file from your phone. When it finishes, tap Download to save the MP3 to your Files app or downloads folder.',
   },
   {
     q: 'Why did my file fail to convert?',
@@ -146,8 +146,9 @@ export default function HomePage() {
           MP3 Converter – Convert Audio &amp; Video to <span className="grad">MP3 Free Online</span>
         </h1>
         <p className="hero__lead">
-          Turn WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a few clicks. Upload a file,
-          paste a media link or record your voice. No sign-up, and files you upload never leave your device.
+          Our free MP3 Converter turns WAV, M4A, FLAC, MP4, MOV, MKV and many other files into clean MP3 audio in a
+          few clicks. Upload a file, paste a media link or record your voice. No sign-up, and files you upload never
+          leave your device.
         </p>
         <ul className="badges">
           <li><Icon name="shield" /> Private &amp; Secure</li>
@@ -187,7 +188,8 @@ export default function HomePage() {
           <span className="eyebrow">The basics</span>
           <h2 id="what-is">What is an MP3 converter?</h2>
           <p>
-            An <strong>MP3 converter</strong> is a tool that changes an audio or video file into the MP3 format.
+            An <strong>MP3 converter</strong>, sometimes called an MP3 audio converter, is a tool that changes an audio
+            or video file into the MP3 format.
             In other words, it takes a sound file that might be too big, too unusual or not supported by your device,
             and turns it into an MP3 that plays almost everywhere.
           </p>
@@ -207,9 +209,10 @@ export default function HomePage() {
             <figcaption>Audio and video files go in, small and widely supported MP3 files come out.</figcaption>
           </figure>
           <p>
-            Our <strong>free online MP3 converter</strong> works a little differently from most. Instead of sending
-            your file to a remote server, it does the whole job inside your web browser. As a result, the process is
-            quicker for most files and far more private, since your recordings never leave your device.
+            Our free online <Link href="/"><strong>MP3 Converter</strong></Link> works a little differently from
+            most. Instead of sending your file to a remote server, it does the whole job inside your web browser.
+            Because there is no upload and no waiting line, it is a genuinely fast MP3 converter for most files, and
+            it is far more private, since your recordings never leave your device.
           </p>
         </section>
 
@@ -218,7 +221,8 @@ export default function HomePage() {
           <span className="eyebrow">Step by step</span>
           <h2 id="how-to">How to convert a file to MP3</h2>
           <p>
-            You do not need any technical skills. Here is the full process, and it usually takes less than a minute.
+            You do not need any technical skills to use this MP3 converter. Here is the full process, and it usually
+            takes less than a minute.
           </p>
           <figure className="figure">
             <img
@@ -257,6 +261,31 @@ export default function HomePage() {
               microphone and press <em>Stop &amp; Convert</em>. You will get a ready-to-share MP3 voice recording.
             </p>
           </div>
+        </section>
+
+        {/* ---------- Devices ---------- */}
+        <section className="section" aria-labelledby="devices">
+          <span className="eyebrow">Any device</span>
+          <h2 id="devices">Using the MP3 converter on iPhone, Android and computer</h2>
+          <p>
+            Since everything runs in the browser, there is no app to install on any device. The steps differ only in
+            where your files are saved.
+          </p>
+          <ul className="checklist">
+            <li>
+              <strong>MP3 converter on iPhone and iPad.</strong> Open this page in Safari, tap Choose Files and pick
+              a file from Photos or the Files app. After converting, tap Download; the MP3 appears in Files under
+              Downloads, ready to share or add to a music app.
+            </li>
+            <li>
+              <strong>Android phones and tablets.</strong> Use Chrome or any up-to-date browser. Finished MP3s are
+              saved to the Downloads folder, where your music player and file manager can find them.
+            </li>
+            <li>
+              <strong>Windows, Mac, Linux and Chromebook.</strong> Drag a whole folder of files onto the converter,
+              then use Download all to save every MP3 in one go.
+            </li>
+          </ul>
         </section>
 
         {/* ---------- Why MP3 ---------- */}
@@ -410,8 +439,8 @@ export default function HomePage() {
           <span className="eyebrow">Features</span>
           <h2 id="features">Why people choose our free MP3 converter</h2>
           <p>
-            We built this audio converter to be simple for beginners, yet useful enough for people who work with
-            sound every day.
+            We built this MP3 Converter to be simple for beginners, yet useful enough for people who work with sound
+            every day.
           </p>
         </div>
         <div className="grid grid-3">
@@ -449,7 +478,22 @@ export default function HomePage() {
             <div className="card">
               <span className="card__icon"><Icon name="headphones" /></span>
               <h3>Build a music library</h3>
-              <p>Make portable MP3 copies of your own WAV or FLAC albums for your phone, car or older MP3 player.</p>
+              <p>Make portable MP3 copies of your own WAV or FLAC albums for your phone, laptop and car.</p>
+            </div>
+            <div className="card">
+              <span className="card__icon"><Icon name="music" /></span>
+              <h3>Fill your MP3 player</h3>
+              <p>
+                Use it as an MP3 player converter: turn WMA, FLAC, M4A or OGG files that an older MP3 player or car
+                stereo refuses to play into standard MP3s it can read.
+              </p>
+            </div>
+            <div className="card">
+              <span className="card__icon"><Icon name="scissors" /></span>
+              <h3>Make ringtones and clips</h3>
+              <p>
+                Convert a song to MP3, then keep just the chorus with our <Link href="/mp3-cutter">MP3 Cutter</Link>.
+              </p>
             </div>
           </div>
         </section>
@@ -459,7 +503,8 @@ export default function HomePage() {
           <span className="eyebrow">Safety &amp; privacy</span>
           <h2 id="privacy">Is this online MP3 converter safe?</h2>
           <p>
-            Yes, and here is how it works behind the scenes, so you do not have to take our word for it. When you add
+            Yes. This MP3 Converter was built to be private from the start, and here is how it works behind the
+            scenes, so you do not have to take our word for it. When you add
             a file, your browser uses its built-in Web Audio engine to read the sound. For formats the browser cannot
             open, such as MKV, AVI or WMA, the page loads FFmpeg, a trusted open-source media library, compiled to run
             inside your browser. Then the well-known LAME encoder compresses the sound into an MP3. Finally, your
