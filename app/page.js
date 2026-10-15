@@ -439,7 +439,7 @@ export default function HomePage() {
           <span className="eyebrow">Features</span>
           <h2 id="features">Why people choose our free MP3 converter</h2>
           <p>
-            We built this MP3 Converter to be simple for beginners, yet useful enough for people who work with sound
+            We built this <Link href="/">MP3 Converter</Link> to be simple for beginners, yet useful enough for people who work with sound
             every day.
           </p>
         </div>
@@ -503,7 +503,7 @@ export default function HomePage() {
           <span className="eyebrow">Safety &amp; privacy</span>
           <h2 id="privacy">Is this online MP3 converter safe?</h2>
           <p>
-            Yes. This MP3 Converter was built to be private from the start, and here is how it works behind the
+            Yes. This <Link href="/">MP3 Converter</Link> was built to be private from the start, and here is how it works behind the
             scenes, so you do not have to take our word for it. When you add
             a file, your browser uses its built-in Web Audio engine to read the sound. For formats the browser cannot
             open, such as MKV, AVI or WMA, the page loads FFmpeg, a trusted open-source media library, compiled to run
