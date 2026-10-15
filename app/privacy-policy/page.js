@@ -42,6 +42,15 @@ export default function Privacy() {
         </p>
       </section>
       <section className="section">
+        <h2>Reviews you submit</h2>
+        <p>
+          If you write a review, we store your name, email address, star rating, review text and, if you add one, a small
+          copy of your photo. We show your name, photo, rating and review on the website. We never publish or sell your
+          email address; we use it only to confirm your review, to stop duplicate or fake reviews and to contact you about
+          your review. To change or remove your review, email us and we will delete it.
+        </p>
+      </section>
+      <section className="section">
         <h2>Information stored in your browser</h2>
         <p>
           We save one small setting in your browser’s local storage: whether the sidebar is collapsed. Your browser may also

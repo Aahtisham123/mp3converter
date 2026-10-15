@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Converter from '@/components/Converter';
+import Testimonials from '@/components/Testimonials';
 import Icon from '@/components/Icon';
 import { SITE } from '@/lib/site';
 
@@ -536,6 +537,18 @@ export default function HomePage() {
               break copyright law in your country.
             </p>
           </div>
+        </section>
+
+        {/* ---------- Testimonials ---------- */}
+        <section className="section" aria-labelledby="testimonials" id="testimonials-section">
+          <span className="eyebrow">Reviews</span>
+          <h2 id="testimonials">Testimonials</h2>
+          <p>
+            Real feedback from people who use our MP3 Converter every day. Every review comes from a visitor, and a
+            Verified badge means the writer confirmed their email address. Have you converted a file with us? Share your
+            experience and rate the tool, so others know what to expect.
+          </p>
+          <Testimonials />
         </section>
 
         {/* ---------- FAQ ---------- */}
