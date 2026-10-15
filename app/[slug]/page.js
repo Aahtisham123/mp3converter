@@ -16,10 +16,10 @@ export async function generateMetadata({ params }) {
   const t = TOOL_MAP[slug];
   if (!t) return {};
   return {
-    title: { absolute: `${t.metaTitle} | MP3 Converter` },
+    title: { absolute: t.seoTitle || `${t.metaTitle} | MP3 Converter` },
     description: t.metaDescription,
     alternates: { canonical: `/${t.slug}` },
-    openGraph: { title: t.metaTitle, description: t.metaDescription, url: `${SITE.url}/${t.slug}` },
+    openGraph: { title: t.seoTitle || t.metaTitle, description: t.metaDescription, url: `${SITE.url}/${t.slug}` },
   };
 }
 
