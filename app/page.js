@@ -66,7 +66,7 @@ const FAQS = [
   },
   {
     q: 'Which bitrate should I choose?',
-    a: 'For speech, such as podcasts, lectures or voice memos, 128 kbps is plenty, and mono makes the file even smaller. For music, 192 kbps sounds good to most people, while 256 or 320 kbps is the better choice for songs you want to keep long term.',
+    a: 'For speech, such as podcasts, lectures or voice memos, 128 kbps is plenty, and mono keeps a single voice clear. For music, 192 kbps sounds good to most people, while 256 or 320 kbps is the better choice for songs you want to keep long term.',
   },
   {
     q: 'Will converting to MP3 lower the audio quality?',

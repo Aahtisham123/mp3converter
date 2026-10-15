@@ -213,7 +213,7 @@ export default function ReverseConverter({ target }) {
           {t.allowMono && (
             <>
               {t.options.length > 1 && <span className="opt-divider" aria-hidden="true" />}
-              <Toggle label="Mono (smaller file):" checked={mono} onChange={setMono} />
+              <Toggle label="Mono (best for speech):" checked={mono} onChange={setMono} />
             </>
           )}
           {t.note && <p className="reverse-note">{t.note}</p>}

@@ -357,7 +357,7 @@ export default function Converter({
             <div className="converter__options">
               <BitrateSelect value={bitrate} onChange={setBitrate} options={bitrates} />
               <span className="opt-divider" aria-hidden="true" />
-              <Toggle label="Mono (smaller file):" checked={mono} onChange={setMono} />
+              <Toggle label="Mono (best for speech):" checked={mono} onChange={setMono} />
             </div>
             <PrivacyNote />
           </>
