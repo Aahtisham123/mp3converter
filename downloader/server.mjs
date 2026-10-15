@@ -46,6 +46,10 @@ const CONFIG = {
 
 const MP3_QUALITIES = [64, 96, 128, 160, 192, 256, 320];
 const MP4_QUALITIES = [240, 360, 480, 720, 1080];
+const WAV_RATES = [44100, 48000]; // for WAV the "quality" is the sample rate
+const WAV_MAX_DURATION = Number(process.env.WAV_MAX_DURATION_SECONDS || 3600); // WAV is ~10 MB per minute
+const QUALITY_LISTS = { mp3: MP3_QUALITIES, mp4: MP4_QUALITIES, wav: WAV_RATES };
+const MIME = { mp3: 'audio/mpeg', mp4: 'video/mp4', wav: 'audio/wav' };
 
 // ---------------------------------------------------------------- helpers
 const log = (...a) => console.log(new Date().toISOString(), ...a);
@@ -173,7 +177,8 @@ function friendlyError(stderr = '') {
   if (s.includes('drm')) return 'This video is copy protected (DRM) and cannot be downloaded.';
   if (s.includes('unsupported url')) return 'We could not find a video on that page. Try the direct link to the video page.';
   if (s.includes('larger than max-filesize') || s.includes('file is larger')) return 'This video is too large to download here.';
-  if (s.includes('does not pass filter')) return `Live streams and videos longer than ${Math.round(CONFIG.maxDuration / 3600)} hours cannot be downloaded.`;
+  if (s.includes('does not pass filter'))
+    return `Live streams and very long videos cannot be converted (MP3 and MP4: up to ${Math.round(CONFIG.maxDuration / 3600)} hours, WAV: up to ${Math.round(WAV_MAX_DURATION / 60)} minutes).`;
   if (s.includes('video unavailable') || s.includes('not available') || s.includes('http error 404') || s.includes('http error 410'))
     return 'This video is unavailable or has been removed.';
   return 'Something went wrong while fetching this video. Please check the link and try again.';
@@ -318,7 +323,7 @@ async function startJob(job) {
     '--progress',
     '--progress-template', 'download:PROGRESS %(progress._percent_str)s',
     '--max-filesize', CONFIG.maxFilesize,
-    '--match-filter', `!is_live & duration <=? ${CONFIG.maxDuration}`,
+    '--match-filter', `!is_live & duration <=? ${job.type === 'wav' ? Math.min(CONFIG.maxDuration, WAV_MAX_DURATION) : CONFIG.maxDuration}`,
     '--no-mtime',
     '--restrict-filenames',
     '--concurrent-fragments', String(CONFIG.fragments),
@@ -333,6 +338,11 @@ async function startJob(job) {
       '-f', 'bestaudio/best', '-x', '--audio-format', 'mp3', '--audio-quality', `${job.quality}K`,
       // Faster LAME setting: about 20% less CPU, no audible difference at these bitrates.
       '--postprocessor-args', `ExtractAudio:-compression_level 7${job.mono ? ' -ac 1' : ''}`,
+    );
+  } else if (job.type === 'wav') {
+    args.push(
+      '-f', 'bestaudio/best', '-x', '--audio-format', 'wav',
+      '--postprocessor-args', `ExtractAudio:-ar ${job.quality}${job.mono ? ' -ac 1' : ''}`,
     );
   } else {
     args.push(
@@ -492,7 +502,7 @@ async function handleCreateJob(req, res, ip) {
   const { url, type, quality, title, start, end, mono } = await readJson(req);
   const target = await checkUrl(url);
   const q = Number(quality);
-  if (!['mp3', 'mp4'].includes(type) || !(type === 'mp3' ? MP3_QUALITIES : MP4_QUALITIES).includes(q)) {
+  if (!QUALITY_LISTS[type] || !QUALITY_LISTS[type].includes(q)) {
     return send(res, 400, { error: 'Please choose a valid format and quality.' });
   }
   // Optional trim (seconds) and mono (MP3 only).
@@ -505,7 +515,7 @@ async function handleCreateJob(req, res, ip) {
     }
     trim = [a, b];
   }
-  const toMono = type === 'mp3' && mono === true;
+  const toMono = (type === 'mp3' || type === 'wav') && mono === true;
   if (rateLimited(ip, 'job', CONFIG.jobsPerHour)) return send(res, 429, { error: 'You have reached the hourly download limit. Please try again later.' });
   const cacheKey = `${mediaKey(target)}|${type}|${q}${toMono ? '|mono' : ''}${trim ? `|${trim[0]}-${trim[1]}` : ''}`;
   const safeTitle = typeof title === 'string' && title.trim() ? title.slice(0, 200) : 'download'; // file name until the real title is known
@@ -565,7 +575,7 @@ function handleFile(req, res, job) {
   const name = job.filename;
   const ascii = name.replace(/[^\x20-\x7e]/g, '_').replace(/"/g, "'");
   res.writeHead(200, {
-    'Content-Type': job.type === 'mp3' ? 'audio/mpeg' : 'video/mp4',
+    'Content-Type': MIME[job.type] || 'application/octet-stream',
     'Content-Length': job.size,
     'Content-Disposition': `attachment; filename="${ascii}"; filename*=UTF-8''${encodeURIComponent(name)}`,
     'Cache-Control': 'no-store',

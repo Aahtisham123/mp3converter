@@ -23,7 +23,12 @@ const QUALITIES = {
     { value: 1080, label: '1080p Full HD' },
   ],
 };
-const DEFAULT_QUALITY = { mp3: 192, mp4: 720 };
+QUALITIES.wav = [
+  { value: 44100, label: '44.1 kHz (CD quality)' },
+  { value: 48000, label: '48 kHz (video standard)' },
+];
+const DEFAULT_QUALITY = { mp3: 192, mp4: 720, wav: 44100 };
+const hasAudioExtras = (t) => t === 'mp3' || t === 'wav';
 
 const YOUTUBE_HOSTS = ['youtube.com', 'youtu.be', 'youtube-nocookie.com'];
 const TIKTOK_HOSTS = ['tiktok.com'];
@@ -197,7 +202,7 @@ export default function LinkDownloader({
       return;
     }
     const extras = {};
-    if (advanced && type === 'mp3') {
+    if (advanced && hasAudioExtras(type)) {
       if (mono) extras.mono = true;
       if (trimOn) {
         const a = parseTime(trimStart) ?? 0;
@@ -302,7 +307,7 @@ export default function LinkDownloader({
             </span>
           </div>
 
-          {advanced && type === 'mp3' && (
+          {advanced && hasAudioExtras(type) && (
             <div className="link-advanced">
               <label className="opt">
                 Mono:
@@ -368,8 +373,8 @@ export default function LinkDownloader({
                     meta.uploader,
                     meta.duration ? formatTime(meta.duration) : null,
                     `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label.replace(/ \(.*\)/, '') || ''}`,
-                    advanced && type === 'mp3' && mono ? 'Mono' : null,
-                    advanced && type === 'mp3' && trimOn && trimEnd ? `${trimStart || '0:00'}–${trimEnd}` : null,
+                    advanced && hasAudioExtras(type) && mono ? 'Mono' : null,
+                    advanced && hasAudioExtras(type) && trimOn && trimEnd ? `${trimStart || '0:00'}–${trimEnd}` : null,
                   ]
                     .filter(Boolean)
                     .join(' · ')}
