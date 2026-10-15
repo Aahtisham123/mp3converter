@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="t d">
+  <title id="t">How to convert TikTok to MP3</title>
+  <desc id="d">Four steps: copy link (Share, then Copy link), paste (Into the box above), quality (Up to 320 kbps), download (Save the sound).</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".15"/></filter>
+  </defs>
+  <rect width="960" height="300" rx="28" fill="#f7f6ff"/>
+  <path d="M0 230c140-40 260 30 420 10s280-70 540-20v80H0z" fill="#ece8ff"/>
+  <g stroke="#c4b5fd" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"><path d="M250 145h30M480 145h30M710 145h30"/></g>
+  <g font-family="Inter, Arial, sans-serif">
+  <g filter="url(#s)"><rect x="40" y="50" width="200" height="190" rx="24" fill="#fff"/></g>
+    <circle cx="140" cy="118" r="38" fill="url(#g)"/>
+    <path d="M134 123a8 8 0 0 0 11 0l7-7a8 8 0 0 0-11-11l-2 2m6 6a8 8 0 0 0-11 0l-7 7a8 8 0 0 0 11 11l2-2" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="140" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">1. Copy link</text>
+    <text x="140" y="215" text-anchor="middle" font-size="14" fill="#6b7280">Share, then Copy link</text>
+<g filter="url(#s)"><rect x="270" y="50" width="200" height="190" rx="24" fill="#fff"/></g>
+    <circle cx="370" cy="118" r="38" fill="url(#g)"/>
+    <rect x="355" y="100" width="30" height="38" rx="5" fill="none" stroke="#fff" stroke-width="4"/><rect x="362" y="95" width="16" height="9" rx="3" fill="#fff"/><path d="M362 116h16M362 126h10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="370" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">2. Paste</text>
+    <text x="370" y="215" text-anchor="middle" font-size="14" fill="#6b7280">Into the box above</text>
+<g filter="url(#s)"><rect x="500" y="50" width="200" height="190" rx="24" fill="#fff"/></g>
+    <circle cx="600" cy="118" r="38" fill="url(#g)"/>
+    <rect x="574" y="105" width="52" height="26" rx="8" fill="#fff"/><text x="600" y="123" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#7c3aed">320k</text>
+    <text x="600" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">3. Quality</text>
+    <text x="600" y="215" text-anchor="middle" font-size="14" fill="#6b7280">Up to 320 kbps</text>
+<g filter="url(#s)"><rect x="730" y="50" width="200" height="190" rx="24" fill="#fff"/></g>
+    <circle cx="830" cy="118" r="38" fill="url(#g)"/>
+    <path d="M830 100v28m-11-11 11 11 11-11M816 138h28" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="830" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">4. Download</text>
+    <text x="830" y="215" text-anchor="middle" font-size="14" fill="#6b7280">Save the sound</text>
+  </g>
+</svg>

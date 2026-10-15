@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-labelledby="t d">
+  <title id="t">AC3 vs MP3 file size</title>
+  <desc id="d">Approximate size per minute of audio: AC3 5.1 (448 kbps) ≈ 3.4 MB, AC3 stereo (192 kbps) ≈ 1.4 MB, MP3 192 kbps ≈ 1.4 MB, MP3 128 kbps ≈ 1 MB.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".15"/></filter>
+  </defs>
+  <rect width="960" height="330" rx="28" fill="#f7f6ff"/>
+  <g filter="url(#s)"><rect x="40" y="30" width="880" height="272" rx="24" fill="#fff"/></g>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="80" y="74" font-size="19" font-weight="800" fill="#111827">Approximate size per minute of audio</text>
+    <text x="80" y="121" font-size="15" font-weight="600" fill="#111827">AC3 5.1 (448 kbps)</text>
+    <rect x="320" y="104" width="420" height="26" rx="13" fill="#f3f1fb"/>
+    <rect x="320" y="104" width="420.0" height="26" rx="13" fill="#c7d2fe"/>
+    <text x="752" y="122" font-size="15" font-weight="800" fill="#4b5563">≈ 3.4 MB</text>
+<text x="80" y="171" font-size="15" font-weight="600" fill="#111827">AC3 stereo (192 kbps)</text>
+    <rect x="320" y="154" width="420" height="26" rx="13" fill="#f3f1fb"/>
+    <rect x="320" y="154" width="180.0" height="26" rx="13" fill="#c7d2fe"/>
+    <text x="512" y="172" font-size="15" font-weight="800" fill="#4b5563">≈ 1.4 MB</text>
+<text x="80" y="221" font-size="15" font-weight="600" fill="#111827">MP3 192 kbps</text>
+    <rect x="320" y="204" width="420" height="26" rx="13" fill="#f3f1fb"/>
+    <rect x="320" y="204" width="180.0" height="26" rx="13" fill="url(#gh)"/>
+    <text x="512" y="222" font-size="15" font-weight="800" fill="#7c3aed">≈ 1.4 MB</text>
+<text x="80" y="271" font-size="15" font-weight="600" fill="#111827">MP3 128 kbps</text>
+    <rect x="320" y="254" width="420" height="26" rx="13" fill="#f3f1fb"/>
+    <rect x="320" y="254" width="120.0" height="26" rx="13" fill="url(#gh)"/>
+    <text x="452" y="272" font-size="15" font-weight="800" fill="#7c3aed">≈ 1 MB</text>
+  </g>
+  <path d="M862 58l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#a78bfa"/>
+</svg>
