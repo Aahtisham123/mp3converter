@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-labelledby="t d">
   <title id="t">How to convert a podcast to MP3</title>
-  <desc id="d">Four steps: add episode (WAV, M4A, video…), bitrate (96 to 128 kbps mono), convert (Right in your browser), download (Upload to your host).</desc>
+  <desc id="d">Four steps: add episode (WAV, M4A, video…), bitrate (128 kbps mono), convert (Right in your browser), download (Upload to your host).</desc>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
     <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
@@ -19,7 +19,7 @@
     <circle cx="370" cy="118" r="38" fill="url(#g)"/>
     <rect x="344" y="105" width="52" height="26" rx="8" fill="#fff"/><text x="370" y="123" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#7c3aed">128k</text>
     <text x="370" y="190" text-anchor="middle" font-size="20" font-weight="700" fill="#111827">2. Bitrate</text>
-    <text x="370" y="215" text-anchor="middle" font-size="14" fill="#6b7280">96 to 128 kbps mono</text>
+    <text x="370" y="215" text-anchor="middle" font-size="14" fill="#6b7280">128 kbps mono</text>
 <g filter="url(#s)"><rect x="500" y="50" width="200" height="190" rx="24" fill="#fff"/></g>
     <circle cx="600" cy="118" r="38" fill="url(#g)"/>
     <circle cx="600" cy="118" r="20" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="5"/><path d="M600 98a20 20 0 1 1-20 20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
