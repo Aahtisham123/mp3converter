@@ -445,6 +445,16 @@ export default function HomePage() {
             every day.
           </p>
         </div>
+        <figure className="figure figure--wide">
+          <img
+            src="/images/why-choose-mp3-converter.svg"
+            alt="Why people choose our free MP3 converter"
+            title="Why people choose our free MP3 converter"
+            width="1100"
+            height="520"
+            loading="lazy"
+          />
+        </figure>
         <div className="grid grid-3">
           {FEATURES.map((f) => (
             <div key={f.title} className="card">

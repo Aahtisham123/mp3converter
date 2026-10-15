@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 520" role="img" aria-labelledby="t d">
+  <title id="t">Why people choose our free MP3 converter</title>
+  <desc id="d">A central MP3 converter badge surrounded by six benefits: private by design, fast with no waiting line, choose the quality, convert many files at once, works on any device, and free with no account.</desc>
+  <defs>
+    <linearGradient id="wc-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8faff"/>
+      <stop offset="1" stop-color="#f3efff"/>
+    </linearGradient>
+    <linearGradient id="wc-brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="wc-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#93c5fd"/>
+    </linearGradient>
+    <filter id="wc-sh" x="-20%" y="-20%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".14"/>
+    </filter>
+    <filter id="wc-glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1100" height="520" rx="32" fill="url(#wc-bg)"/>
+  <path d="M0 0h300c-40 70-150 100-230 80C40 74 14 96 0 112z" fill="#ebe7ff"/>
+  <path d="M1100 520H800c50-60 180-90 300-70z" fill="#ebe7ff"/>
+  <g fill="#c7c9f5">
+    <circle cx="1010" cy="48" r="3"/><circle cx="1036" cy="48" r="3"/><circle cx="1062" cy="48" r="3"/>
+    <circle cx="1010" cy="74" r="3"/><circle cx="1036" cy="74" r="3"/><circle cx="1062" cy="74" r="3"/>
+    <circle cx="40" cy="448" r="3"/><circle cx="66" cy="448" r="3"/><circle cx="92" cy="448" r="3"/>
+    <circle cx="40" cy="474" r="3"/><circle cx="66" cy="474" r="3"/><circle cx="92" cy="474" r="3"/>
+  </g>
+
+  <!-- dashed connectors from the centre to each card -->
+  <g stroke="url(#wc-line)" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" fill="none">
+    <path d="M550 260 C430 260 400 140 308 130"/>
+    <path d="M550 260 C430 260 400 260 308 260"/>
+    <path d="M550 260 C430 260 400 380 308 390"/>
+    <path d="M550 260 C670 260 700 140 792 130"/>
+    <path d="M550 260 C670 260 700 260 792 260"/>
+    <path d="M550 260 C670 260 700 380 792 390"/>
+  </g>
+
+  <!-- centre badge -->
+  <circle cx="550" cy="260" r="110" fill="#a78bfa" opacity=".3" filter="url(#wc-glow)"/>
+  <circle cx="550" cy="260" r="96" fill="#ffffff" opacity=".85"/>
+  <circle cx="550" cy="260" r="78" fill="url(#wc-brand)"/>
+  <g fill="#ffffff">
+    <rect x="512" y="238" width="7" height="24" rx="3.5"/>
+    <rect x="525" y="226" width="7" height="48" rx="3.5"/>
+    <rect x="538" y="214" width="7" height="72" rx="3.5"/>
+    <path d="M556 226l38 24-38 24z"/>
+  </g>
+  <text x="550" y="314" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#ffffff" letter-spacing=".5">MP3</text>
+
+  <!-- benefit cards: left column -->
+  <g font-family="Inter, Arial, sans-serif">
+    <g filter="url(#wc-sh)">
+      <rect x="40" y="88" width="268" height="84" rx="20" fill="#ffffff"/>
+      <rect x="40" y="218" width="268" height="84" rx="20" fill="#ffffff"/>
+      <rect x="40" y="348" width="268" height="84" rx="20" fill="#ffffff"/>
+      <rect x="792" y="88" width="268" height="84" rx="20" fill="#ffffff"/>
+      <rect x="792" y="218" width="268" height="84" rx="20" fill="#ffffff"/>
+      <rect x="792" y="348" width="268" height="84" rx="20" fill="#ffffff"/>
+    </g>
+
+    <g transform="translate(-20 0)">
+    <!-- 1. Private: shield with lock -->
+    <rect x="78" y="106" width="48" height="48" rx="14" fill="#f3efff"/>
+    <path d="M102 116l14 5v10c0 9-6 15-14 18-8-3-14-9-14-18v-10z" fill="url(#wc-brand)"/>
+    <rect x="96.5" y="130" width="11" height="9" rx="2" fill="#ffffff"/>
+    <path d="M99 130v-3a3 3 0 0 1 6 0v3" stroke="#ffffff" stroke-width="2" fill="none"/>
+    <text x="140" y="126" font-size="17" font-weight="700" fill="#111827">Private</text>
+    <text x="140" y="148" font-size="13" fill="#6b7280">Files stay on your device</text>
+
+    <!-- 2. Fast: lightning -->
+    <rect x="78" y="236" width="48" height="48" rx="14" fill="#f3efff"/>
+    <path d="M106 244l-13 19h9l-3 14 13-19h-9z" fill="url(#wc-brand)"/>
+    <text x="140" y="256" font-size="17" font-weight="700" fill="#111827">Fast</text>
+    <text x="140" y="278" font-size="13" fill="#6b7280">No upload, no waiting line</text>
+
+    <!-- 3. Quality: sliders -->
+    <rect x="78" y="366" width="48" height="48" rx="14" fill="#f3efff"/>
+    <g stroke="url(#wc-brand)" stroke-width="3" stroke-linecap="round">
+      <path d="M89 380h26M89 390h26M89 400h26"/>
+    </g>
+    <circle cx="96" cy="380" r="4.5" fill="#7c3aed"/>
+    <circle cx="109" cy="390" r="4.5" fill="#7c3aed"/>
+    <circle cx="100" cy="400" r="4.5" fill="#7c3aed"/>
+    <text x="140" y="386" font-size="17" font-weight="700" fill="#111827">Your quality</text>
+    <text x="140" y="408" font-size="13" fill="#6b7280">128 to 320 kbps</text>
+
+    </g>
+    <g transform="translate(-8 0)">
+    <!-- 4. Batch: stacked files -->
+    <rect x="818" y="106" width="48" height="48" rx="14" fill="#f3efff"/>
+    <rect x="834" y="114" width="20" height="26" rx="4" fill="#c4b5fd"/>
+    <rect x="829" y="119" width="20" height="26" rx="4" fill="#a78bfa"/>
+    <rect x="824" y="124" width="20" height="26" rx="4" fill="url(#wc-brand)"/>
+    <text x="880" y="126" font-size="17" font-weight="700" fill="#111827">Batch</text>
+    <text x="880" y="148" font-size="13" fill="#6b7280">Convert many files at once</text>
+
+    <!-- 5. Any device: phone + laptop -->
+    <rect x="818" y="236" width="48" height="48" rx="14" fill="#f3efff"/>
+    <rect x="826" y="248" width="26" height="18" rx="3" fill="none" stroke="url(#wc-brand)" stroke-width="3"/>
+    <path d="M822 270h34" stroke="url(#wc-brand)" stroke-width="3" stroke-linecap="round"/>
+    <rect x="848" y="252" width="12" height="22" rx="3" fill="url(#wc-brand)"/>
+    <rect x="851" y="255" width="6" height="14" rx="1" fill="#ffffff"/>
+    <text x="880" y="256" font-size="17" font-weight="700" fill="#111827">Any device</text>
+    <text x="880" y="278" font-size="13" fill="#6b7280">Phone, tablet or computer</text>
+
+    <!-- 6. Free: price tag -->
+    <rect x="818" y="366" width="48" height="48" rx="14" fill="#f3efff"/>
+    <path d="M828 378v12l16 16 14-14-16-16h-12z" fill="url(#wc-brand)"/>
+    <circle cx="835" cy="383" r="3" fill="#ffffff"/>
+    <text x="880" y="386" font-size="17" font-weight="700" fill="#111827">Free</text>
+    <text x="880" y="408" font-size="13" fill="#6b7280">No account, no watermark</text>
+  </g>
+  </g>
+
+  <!-- sparkles -->
+  <path d="M676 150l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#a78bfa"/>
+  <path d="M430 382l2.5 6 6 2.5-6 2.5-2.5 6-2.5-6-6-2.5 6-2.5z" fill="#c4b5fd"/>
+</svg>
