@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
+  <title id="t">YouTube to MP4 in 1080p HD</title>
+  <desc id="d">Nested video frames compare 360p, 480p, 720p HD and 1080p Full HD resolutions.</desc>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="960" height="340" rx="28" fill="#f7f6ff"/>
+  <g filter="url(#s)"><rect x="40" y="30" width="880" height="280" rx="24" fill="#fff"/></g>
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- frames: 16:9, anchored bottom-left -->
+    <rect x="80" y="62" width="384" height="216" rx="12" fill="url(#b)"/>
+    <rect x="80" y="134" width="256" height="144" rx="10" fill="#8b9cf7"/>
+    <rect x="80" y="170" width="192" height="108" rx="8" fill="#b4bdfb"/>
+    <rect x="80" y="206" width="128" height="72" rx="6" fill="#dde1fe"/>
+    <text x="96" y="256" font-size="15" font-weight="800" fill="#4b5563">360p</text>
+    <text x="222" y="200" font-size="15" font-weight="800" fill="#374151">480p</text>
+    <text x="284" y="162" font-size="15" font-weight="800" fill="#fff">720p</text>
+    <text x="388" y="92" font-size="16" font-weight="800" fill="#fff">1080p</text>
+    <circle cx="400" cy="200" r="22" fill="#fff" opacity=".9"/>
+    <path d="M393 189v22l18-11z" fill="#7c3aed"/>
+
+    <text x="530" y="96" font-size="22" font-weight="800" fill="#111827">Pick your resolution</text>
+    <g font-size="15">
+      <rect x="530" y="118" width="12" height="12" rx="3" fill="#dde1fe"/><text x="552" y="129" fill="#374151"><tspan font-weight="700">360p</tspan> · small files, slow data</text>
+      <rect x="530" y="150" width="12" height="12" rx="3" fill="#b4bdfb"/><text x="552" y="161" fill="#374151"><tspan font-weight="700">480p</tspan> · clear on phones</text>
+      <rect x="530" y="182" width="12" height="12" rx="3" fill="#8b9cf7"/><text x="552" y="193" fill="#374151"><tspan font-weight="700">720p HD</tspan> · laptops and tablets</text>
+      <rect x="530" y="214" width="12" height="12" rx="3" fill="#7c3aed"/><text x="552" y="225" fill="#374151"><tspan font-weight="700">1080p Full HD</tspan> · TVs and editing</text>
+    </g>
+  </g>
+  <path d="M860 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#a78bfa"/>
+</svg>
