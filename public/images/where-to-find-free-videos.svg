@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-labelledby="t d">
+  <title id="t">Where to find free videos to download</title>
+  <desc id="d">Six sources of downloadable video: public-domain films, Creative Commons clips, space and science footage, open courses, creator downloads and direct file links.</desc>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#6d5dfc" flood-opacity=".13"/></filter>
+  </defs>
+  <rect width="960" height="330" rx="28" fill="#f7f6ff"/>
+  <g filter="url(#s)">
+    <rect x="40" y="40" width="276" height="112" rx="20" fill="#fff"/>
+    <rect x="342" y="40" width="276" height="112" rx="20" fill="#fff"/>
+    <rect x="644" y="40" width="276" height="112" rx="20" fill="#fff"/>
+    <rect x="40" y="178" width="276" height="112" rx="20" fill="#fff"/>
+    <rect x="342" y="178" width="276" height="112" rx="20" fill="#fff"/>
+    <rect x="644" y="178" width="276" height="112" rx="20" fill="#fff"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <!-- 1 film -->
+    <circle cx="94" cy="96" r="30" fill="url(#b)"/>
+    <rect x="80" y="84" width="28" height="24" rx="3" fill="none" stroke="#fff" stroke-width="3"/>
+    <path d="M86 84v24M102 84v24" stroke="#fff" stroke-width="2.5"/>
+    <text x="140" y="90" font-size="16" font-weight="700" fill="#111827">Public-domain films</text>
+    <text x="140" y="113" font-size="13" fill="#6b7280">Classic movies, old TV</text>
+    <!-- 2 cc -->
+    <circle cx="396" cy="96" r="30" fill="url(#b)"/>
+    <text x="396" y="103" text-anchor="middle" font-size="20" font-weight="800" fill="#fff">cc</text>
+    <text x="442" y="90" font-size="16" font-weight="700" fill="#111827">Creative Commons</text>
+    <text x="442" y="113" font-size="13" fill="#6b7280">Clips free to share</text>
+    <!-- 3 space -->
+    <circle cx="698" cy="96" r="30" fill="url(#b)"/>
+    <circle cx="698" cy="96" r="9" fill="#fff"/>
+    <ellipse cx="698" cy="96" rx="18" ry="6" fill="none" stroke="#fff" stroke-width="2.5" transform="rotate(-20 698 96)"/>
+    <text x="744" y="90" font-size="16" font-weight="700" fill="#111827">Space &amp; science</text>
+    <text x="744" y="113" font-size="13" fill="#6b7280">Agency footage</text>
+    <!-- 4 courses -->
+    <circle cx="94" cy="234" r="30" fill="url(#b)"/>
+    <path d="M78 230l16-8 16 8-16 8z" fill="#fff"/>
+    <path d="M85 234v8c6 4 12 4 18 0v-8" stroke="#fff" stroke-width="2.5" fill="none"/>
+    <text x="140" y="228" font-size="16" font-weight="700" fill="#111827">Open courses</text>
+    <text x="140" y="251" font-size="13" fill="#6b7280">Lectures and tutorials</text>
+    <!-- 5 creators -->
+    <circle cx="396" cy="234" r="30" fill="url(#b)"/>
+    <circle cx="396" cy="226" r="7" fill="#fff"/>
+    <path d="M382 246a14 12 0 0 1 28 0z" fill="#fff"/>
+    <text x="442" y="228" font-size="16" font-weight="700" fill="#111827">Creator downloads</text>
+    <text x="442" y="251" font-size="13" fill="#6b7280">Download button on</text>
+    <!-- 6 direct -->
+    <circle cx="698" cy="234" r="30" fill="url(#b)"/>
+    <path d="M690 242a6 6 0 0 0 8 0l6-6a6 6 0 0 0-8-8l-1 1m4 4a6 6 0 0 0-8 0l-6 6a6 6 0 0 0 8 8l1-1" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" transform="translate(3 -2)"/>
+    <text x="744" y="228" font-size="16" font-weight="700" fill="#111827">Direct file links</text>
+    <text x="744" y="251" font-size="13" fill="#6b7280">.mp4 .webm .mov .mkv</text>
+  </g>
+</svg>

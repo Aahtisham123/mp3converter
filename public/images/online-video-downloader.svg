@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
+  <title id="t">Online video downloader</title>
+  <desc id="d">Links from video websites, archives and direct file URLs flow into one downloader that saves an MP4 video.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".15"/></filter>
+  </defs>
+  <rect width="960" height="340" rx="28" fill="#f7f6ff"/>
+  <path d="M0 260c160-50 300 30 480 6s300-60 480-14v88H0z" fill="#ece8ff"/>
+  <g fill="#c7c9f5"><circle cx="880" cy="40" r="3"/><circle cx="904" cy="40" r="3"/><circle cx="880" cy="64" r="3"/><circle cx="904" cy="64" r="3"/></g>
+
+  <!-- source cards -->
+  <g filter="url(#s)">
+    <rect x="60" y="44" width="300" height="70" rx="18" fill="#fff"/>
+    <rect x="60" y="134" width="300" height="70" rx="18" fill="#fff"/>
+    <rect x="60" y="224" width="300" height="70" rx="18" fill="#fff"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="78" y="59" width="40" height="40" rx="12" fill="#f3efff"/>
+    <path d="M86 92h24M88 88V70M94 88V70M100 88V70M106 88V70M85 70l13-7 13 7z" stroke="#7c3aed" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="132" y="77" font-size="15" font-weight="700" fill="#111827">Video archives</text>
+    <text x="132" y="97" font-size="13" fill="#6b7280">Public-domain films</text>
+
+    <rect x="78" y="149" width="40" height="40" rx="12" fill="#f3efff"/>
+    <rect x="86" y="159" width="24" height="20" rx="5" fill="none" stroke="#7c3aed" stroke-width="2.6"/>
+    <path d="M95 164v10l8-5z" fill="#7c3aed"/>
+    <text x="132" y="167" font-size="15" font-weight="700" fill="#111827">Creator platforms</text>
+    <text x="132" y="187" font-size="13" fill="#6b7280">Downloads switched on</text>
+
+    <rect x="78" y="239" width="40" height="40" rx="12" fill="#f3efff"/>
+    <path d="M93 265a5 5 0 0 0 7 0l5-5a5 5 0 0 0-7-7l-1 1m3 3a5 5 0 0 0-7 0l-5 5a5 5 0 0 0 7 7l1-1" stroke="#7c3aed" stroke-width="2.4" fill="none" stroke-linecap="round" transform="translate(2 1)"/>
+    <text x="132" y="257" font-size="15" font-weight="700" fill="#111827">Direct links</text>
+    <text x="132" y="277" font-size="13" fill="#6b7280">…/video.mp4</text>
+  </g>
+
+  <!-- converge -->
+  <g stroke="#c4b5fd" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" fill="none">
+    <path d="M368 79C410 79 410 170 452 170"/><path d="M368 169h84"/><path d="M368 259C410 259 410 170 452 170"/><path d="M548 170h52"/>
+  </g>
+  <circle cx="500" cy="170" r="58" fill="#a78bfa" opacity=".25"/>
+  <circle cx="500" cy="170" r="44" fill="url(#g)"/>
+  <path d="M500 148v40m-15-15 15 15 15-15" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- mp4 card -->
+  <g filter="url(#s)"><rect x="610" y="56" width="290" height="228" rx="24" fill="#fff"/></g>
+  <rect x="632" y="78" width="246" height="138" rx="16" fill="#1f2937"/>
+  <rect x="632" y="78" width="246" height="138" rx="16" fill="url(#g)" opacity=".45"/>
+  <circle cx="755" cy="147" r="28" fill="#fff" opacity=".95"/>
+  <path d="M746 133v28l23-14z" fill="#7c3aed"/>
+  <rect x="804" y="90" width="62" height="24" rx="8" fill="url(#g)"/>
+  <text x="835" y="107" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#fff">MP4</text>
+  <text x="755" y="256" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="800" fill="#111827">Saved as MP4</text>
+  <path d="M600 110l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#a78bfa"/>
+</svg>
