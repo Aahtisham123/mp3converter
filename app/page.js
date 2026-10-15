@@ -201,7 +201,8 @@ export default function HomePage() {
           <figure className="figure">
             <img
               src="/images/mp3-converter-hero.svg"
-              alt="Illustration of an MP3 converter turning MP4, WAV, M4A and FLAC files into downloadable MP3 files"
+              alt="MP3 Converter"
+              title="MP3 Converter"
               width="1100"
               height="800"
               loading="lazy"
@@ -227,7 +228,8 @@ export default function HomePage() {
           <figure className="figure">
             <img
               src="/images/how-to-convert-to-mp3.svg"
-              alt="Three steps to convert to MP3: upload a file, choose the quality, and download the MP3"
+              alt="How to convert a file to MP3"
+              title="How to convert a file to MP3"
               width="960"
               height="300"
               loading="lazy"
