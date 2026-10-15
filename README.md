@@ -33,20 +33,6 @@ NEXT_PUBLIC_DOWNLOADER_URL=https://dl.mp3convert.tools
 ```
 Without it, the "Paste Link" tools show a friendly "not set up yet" message and everything else keeps working.
 
-## Testimonials (visitor reviews)
-The homepage "Testimonials" section lets visitors post a star rating, review and optional photo. Reviews are stored
-in Upstash Redis (`lib/reviews-store.js`, API in `app/api/reviews/`). Email addresses are never shown publicly.
-
-| Variable | Purpose |
-| --- | --- |
-| `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` (or `KV_REST_API_URL`, `KV_REST_API_TOKEN`) | Storage. Added automatically when you connect Upstash Redis in Vercel → Storage. |
-| `REVIEWS_ADMIN_KEY` | Password (12+ characters) for the moderation page at `/admin/reviews`. |
-| `RESEND_API_KEY`, `REVIEWS_FROM_EMAIL` | Optional. Sends a confirmation link; confirmed reviews get the **Verified** badge. |
-| `REVIEWS_AUTO_APPROVE=1` | Optional. Publish without manual approval (after email confirmation when enabled). |
-| `REVIEWS_SITE_URL` | Optional. Base URL used in confirmation links (defaults to the request's own URL). |
-
-Without the storage variables the section shows "Reviews open soon" and the rest of the site works normally.
-
 ## Development
 ```bash
 npm install     # also copies the FFmpeg core into public/ffmpeg (postinstall)
