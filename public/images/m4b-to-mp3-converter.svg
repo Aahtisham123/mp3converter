@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
   <title id="t">M4B to MP3 converter</title>
-  <desc id="d">M4B file converted to MP3 · up to 320 kbps, and back again.</desc>
+  <desc id="d">M4B file converted to MP3 · 32 to 160 kbps, and back again.</desc>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
     <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
@@ -26,6 +26,6 @@
   <path d="M746 166v-46l30-6v40" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="739" cy="168" r="9" fill="#fff"/><circle cx="769" cy="157" r="9" fill="#fff"/>
   <text x="760" y="206" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" fill="#fff">MP3</text>
-  <text x="760" y="262" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#111827">MP3 · up to 320 kbps</text>
+  <text x="760" y="262" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800" fill="#111827">MP3 · 32 to 160 kbps</text>
   <path d="M596 70l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#a78bfa"/>
 </svg>
