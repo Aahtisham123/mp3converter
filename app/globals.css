@@ -453,3 +453,9 @@ tr:last-child td { border-bottom: 0; }
 .direction-tabs .mode-tab { font-variant-numeric: tabular-nums; letter-spacing: .01em; }
 .reverse-note { flex-basis: 100%; margin: 0; font-size: .85rem; color: var(--text-3); text-align: center; }
 .figure--wide { margin: 0 0 22px; }
+
+/* Button that jumps back to the tool */
+#converter { scroll-margin-top: 24px; }
+.inline-cta { margin: 26px 0 0; text-align: center; }
+.inline-cta .btn-grad { display: inline-flex; align-items: center; gap: 8px; }
+.inline-cta .icon { width: 18px; height: 18px; }

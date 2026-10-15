@@ -63,6 +63,18 @@ function Rich({ text }) {
   });
 }
 
+/** Button that scrolls back up to the tool at the top of the page. */
+function ToolButton({ cta }) {
+  if (!cta) return null;
+  return (
+    <p className="inline-cta">
+      <a href="#converter" className="btn-grad">
+        <Icon name="arrowUp" /> {cta}
+      </a>
+    </p>
+  );
+}
+
 function Figure({ image }) {
   if (!image) return null;
   return (
@@ -133,6 +145,7 @@ export default async function ToolPage({ params }) {
               </li>
             ))}
           </ol>
+          <ToolButton cta={t.howCta} />
         </section>
 
         {t.sections.map((s, i) => (
@@ -142,11 +155,12 @@ export default async function ToolPage({ params }) {
             {s.list && (
               <ul className="checklist">
                 {s.list.map(([b, text]) => (
-                  <li key={b}><strong>{b}.</strong> {text}</li>
+                  <li key={b}><strong>{b}.</strong> <Rich text={text} /></li>
                 ))}
               </ul>
             )}
             <Figure image={s.image} />
+            <ToolButton cta={s.cta} />
           </section>
         ))}
 
