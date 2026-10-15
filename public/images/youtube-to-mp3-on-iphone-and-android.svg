@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
+  <title id="t">YouTube to MP3 on iPhone, Android and computer</title>
+  <desc id="d">An iPhone, a laptop and an Android phone, each showing a downloaded MP3 file.</desc>
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#6d5dfc" flood-opacity=".16"/></filter>
+    <g id="file">
+      <rect x="-50" y="-22" width="100" height="44" rx="12" fill="#f3efff"/>
+      <circle cx="-28" cy="0" r="13" fill="url(#b)"/>
+      <path d="M-30 5v-11l8-2v9" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="-32" cy="5" r="2.6" fill="#fff"/><circle cx="-24" cy="3" r="2.6" fill="#fff"/>
+      <rect x="-10" y="-8" width="44" height="6" rx="3" fill="#c4b5fd"/>
+      <rect x="-10" y="4" width="28" height="5" rx="2.5" fill="#ddd6fe"/>
+    </g>
+    <g id="ok"><circle r="16" fill="#10b981"/><path d="M-7 0l5 5 9-10" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </defs>
+  <rect width="960" height="340" rx="28" fill="#f7f6ff"/>
+  <path d="M0 262c160-40 300 26 480 4s300-56 480-10v84H0z" fill="#ece8ff"/>
+
+  <!-- iPhone -->
+  <g filter="url(#s)"><rect x="90" y="40" width="160" height="270" rx="30" fill="#111827"/></g>
+  <rect x="100" y="50" width="140" height="250" rx="22" fill="#fff"/>
+  <rect x="146" y="58" width="48" height="12" rx="6" fill="#111827"/>
+  <text x="170" y="104" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827">Files</text>
+  <use href="#file" x="170" y="150"/>
+  <use href="#file" x="170" y="206" opacity=".55"/>
+  <use href="#ok" x="236" y="54"/>
+
+  <!-- laptop -->
+  <g filter="url(#s)">
+    <rect x="330" y="70" width="300" height="190" rx="16" fill="#111827"/>
+    <path d="M300 262h360l-20 22H320z" fill="#d9dcea"/>
+  </g>
+  <rect x="342" y="82" width="276" height="166" rx="8" fill="#fff"/>
+  <rect x="342" y="82" width="276" height="26" rx="8" fill="#f3efff"/>
+  <g fill="#c4b5fd"><circle cx="358" cy="95" r="4"/><circle cx="372" cy="95" r="4"/><circle cx="386" cy="95" r="4"/></g>
+  <text x="480" y="136" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827">Downloads</text>
+  <use href="#file" x="420" y="186"/>
+  <use href="#file" x="540" y="186" opacity=".55"/>
+  <use href="#ok" x="626" y="74"/>
+
+  <!-- Android -->
+  <g filter="url(#s)"><rect x="710" y="40" width="160" height="270" rx="22" fill="#374151"/></g>
+  <rect x="720" y="50" width="140" height="250" rx="14" fill="#fff"/>
+  <circle cx="790" cy="62" r="5" fill="#374151"/>
+  <text x="790" y="104" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827">Music</text>
+  <use href="#file" x="790" y="150"/>
+  <use href="#file" x="790" y="206" opacity=".55"/>
+  <use href="#ok" x="856" y="54"/>
+</svg>

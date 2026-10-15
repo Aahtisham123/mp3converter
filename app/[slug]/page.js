@@ -54,6 +54,24 @@ function JsonLd({ t }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
 }
 
+/** Renders text with simple [anchor](/path) links as internal Links. */
+function Rich({ text }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const m = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
+    return m ? <Link key={i} href={m[2]}>{m[1]}</Link> : part;
+  });
+}
+
+function Figure({ image }) {
+  if (!image) return null;
+  return (
+    <figure className="figure">
+      <img src={image.src} alt={image.alt} title={image.title || image.alt} width={image.width} height={image.height} loading="lazy" />
+    </figure>
+  );
+}
+
 export default async function ToolPage({ params }) {
   const { slug } = await params;
   const t = TOOL_MAP[slug];
@@ -70,7 +88,7 @@ export default async function ToolPage({ params }) {
           </ol>
         </nav>
         <h1 id="page-title">{t.h1}</h1>
-        <p className="hero__lead">{t.lead}</p>
+        <p className="hero__lead"><Rich text={t.lead} /></p>
         {t.kind === 'soon' ? (
           <ul className="badges">
             <li><Icon name="sparkles" /> Coming Soon</li>
@@ -99,12 +117,14 @@ export default async function ToolPage({ params }) {
       <div className="container narrow">
         <section className="section" aria-labelledby="intro">
           <h2 id="intro">{t.intro.h2}</h2>
-          {t.intro.paras.map((p) => <p key={p.slice(0, 32)}>{p}</p>)}
+          {t.intro.paras.map((p) => <p key={p.slice(0, 32)}><Rich text={p} /></p>)}
+          <Figure image={t.intro.image} />
         </section>
 
         <section className="section" aria-labelledby="how">
           <span className="eyebrow">Step by step</span>
           <h2 id="how">How to use the {t.nav}</h2>
+          <Figure image={t.howImage} />
           <ol className="steps">
             {t.steps.map(([title, text]) => (
               <li key={title}>
@@ -118,7 +138,7 @@ export default async function ToolPage({ params }) {
         {t.sections.map((s, i) => (
           <section className="section" key={s.h2} aria-labelledby={`s${i}`}>
             <h2 id={`s${i}`}>{s.h2}</h2>
-            {(s.paras || []).map((p) => <p key={p.slice(0, 32)}>{p}</p>)}
+            {(s.paras || []).map((p) => <p key={p.slice(0, 32)}><Rich text={p} /></p>)}
             {s.list && (
               <ul className="checklist">
                 {s.list.map(([b, text]) => (
@@ -126,6 +146,7 @@ export default async function ToolPage({ params }) {
                 ))}
               </ul>
             )}
+            <Figure image={s.image} />
           </section>
         ))}
 
