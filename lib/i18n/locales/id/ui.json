@@ -1,1 +1,358 @@
-{}
+{
+ "site": {
+  "defaultTitle": "MP3 Converter – Ubah Audio & Video ke MP3 Gratis Online",
+  "titleSuffix": "MP3 Converter",
+  "tagline": "Konverter MP3 gratis dan aman yang berjalan di browser Anda. Ubah audio dan video ke MP3 tanpa menginstal software atau membuat akun."
+ },
+ "shell": {
+  "skip": "Langsung ke konten",
+  "navLabel": "Navigasi situs",
+  "home": "Beranda MP3 Converter",
+  "toggleNav": "Buka/tutup menu",
+  "convertFile": "Konversi file",
+  "soon": "Segera",
+  "language": "Bahasa",
+  "chooseLanguage": "Pilih bahasa"
+ },
+ "nav": {
+  "home": "Beranda",
+  "youtube-to-mp3": "YouTube ke MP3",
+  "youtube-to-mp4": "YouTube ke MP4",
+  "youtube-to-wav": "YouTube ke WAV",
+  "online-video-downloader": "Download Video Online",
+  "mp4-to-mp3": "Konverter MP4 ke MP3",
+  "tiktok-to-mp3": "TikTok ke MP3",
+  "video-to-mp3": "Konverter Video ke MP3",
+  "wav-to-mp3": "Konverter WAV ke MP3",
+  "m4a-to-mp3": "Konverter M4A ke MP3",
+  "voice-to-mp3": "Rekam Suara ke MP3",
+  "flac-to-mp3": "FLAC ke MP3",
+  "aac-to-mp3": "AAC ke MP3",
+  "ogg-to-mp3": "OGG ke MP3",
+  "opus-to-mp3": "OPUS ke MP3",
+  "webm-to-mp3": "WEBM ke MP3",
+  "mov-to-mp3": "MOV ke MP3",
+  "mkv-to-mp3": "MKV ke MP3",
+  "wma-to-mp3": "WMA ke MP3",
+  "amr-to-mp3": "AMR ke MP3",
+  "caf-to-mp3": "CAF ke MP3",
+  "ac3-to-mp3": "AC3 ke MP3",
+  "alac-to-mp3": "ALAC ke MP3",
+  "m4b-to-mp3": "M4B ke MP3",
+  "mp3-cutter": "Pemotong MP3",
+  "mp3-compressor": "Kompres MP3",
+  "audio-joiner": "Gabung Audio",
+  "podcast-to-mp3": "Podcast ke MP3",
+  "groupFormats": "Alat Konverter MP3",
+  "groupTools": "Alat MP3"
+ },
+ "footer": {
+  "follow": "Ikuti kami",
+  "socialLabel": "MP3 Converter di media sosial",
+  "socialItem": "MP3 Converter di {name}",
+  "converters": "Konverter",
+  "formatsTools": "Format & Alat",
+  "company": "Perusahaan",
+  "about": "Tentang Kami",
+  "contact": "Kontak",
+  "privacy": "Kebijakan Privasi",
+  "terms": "Ketentuan Penggunaan",
+  "copyright": "Hak Cipta & DMCA",
+  "rights": "© {year} mp3convert.tools. Hak cipta dilindungi undang-undang.",
+  "disclaimer": "Tidak berafiliasi dengan YouTube atau Google. Harap hanya download konten milik Anda atau yang boleh Anda gunakan."
+ },
+ "page": {
+  "breadcrumbHome": "Beranda",
+  "stepByStep": "Langkah demi langkah",
+  "howToUse": "Cara menggunakan {name}",
+  "faq": "FAQ",
+  "faqTitle": "Pertanyaan yang sering diajukan",
+  "related": "Alat terkait",
+  "byTeam": "Oleh tim MP3 Converter",
+  "teamText": "Kami membuat alat audio gratis yang mengutamakan privasi dan berjalan di browser Anda. Panduan ini sudah dicek sesuai cara kerja alat yang sebenarnya. [Tentang kami](/about)",
+  "lastUpdated": "Terakhir diperbarui: Oktober 2026",
+  "aboutPage": "Tentang halaman ini",
+  "notFoundTitle": "Halaman tidak ditemukan",
+  "notFoundText": "Halaman yang Anda cari tidak ada atau sudah dipindahkan.",
+  "notFoundButton": "Buka MP3 Converter",
+  "operatingSystem": "Apa saja (berjalan di browser web)"
+ },
+ "badges": {
+  "comingSoon": "Segera Hadir",
+  "free": "Gratis",
+  "mp3Up": "MP3 hingga 320 kbps",
+  "anyDevice": "Semua Perangkat",
+  "noSignup": "Tanpa Daftar",
+  "mp4Up": "MP4 hingga 1080p",
+  "private": "100% Privat",
+  "noLimits": "Tanpa Batas"
+ },
+ "converter": {
+  "chooseInput": "Pilih input",
+  "upload": "Unggah",
+  "pasteLink": "Tempel Link",
+  "record": "Rekam",
+  "regionLabel": "Konverter MP3",
+  "heading": "Unggah file audio atau video untuk diubah ke MP3.",
+  "chooseFiles": "Pilih File",
+  "supported": "Format yang didukung: **{formats}** dan lainnya, hingga 500 MB per file",
+  "dropHint": "atau seret dan lepas file di sini",
+  "linkHeading": "Tempel link file audio atau video untuk diubah ke MP3.",
+  "linkSub": "Bisa untuk link langsung MP3, MP4, WAV dan media lain, serta banyak situs video dan audio gratis",
+  "recordHeading": "Rekam suara Anda dan simpan sebagai MP3.",
+  "recordNote": "Menggunakan mikrofon Anda. Rekaman tidak pernah keluar dari perangkat Anda.",
+  "startRecording": "Mulai Merekam",
+  "stopConvert": "Stop & Konversi",
+  "recUnsupported": "Browser ini tidak mendukung perekaman. Silakan coba Chrome, Edge, Firefox atau Safari.",
+  "recNoMic": "Mikrofon tidak ditemukan. Pasang mikrofon lalu coba lagi.",
+  "recBlocked": "Akses mikrofon diblokir. Izinkan di pengaturan browser Anda lalu coba lagi.",
+  "recEmpty": "Tidak ada yang terekam. Silakan coba lagi.",
+  "recFailed": "Perekaman tidak bisa dimulai di browser ini.",
+  "tooBig": "File ini lebih dari 500 MB. Silakan potong atau pisahkan dulu.",
+  "failed": "Konversi gagal.",
+  "smaller": "{pct}% lebih kecil",
+  "converting": "Mengonversi {name}",
+  "download": "Download",
+  "remove": "Hapus {name}",
+  "cancel": "Batal",
+  "removeShort": "Hapus",
+  "downloadAll": "Download semua ({count})",
+  "clearList": "Kosongkan daftar",
+  "quality": "Kualitas MP3:",
+  "mono": "Mono (terbaik untuk suara):",
+  "monoShort": "Mono:",
+  "privacy": "File diproses di dalam browser Anda dan tidak pernah diunggah ke server."
+ },
+ "bitrates": {
+  "small": "{kbps} kbps (kecil)",
+  "standard": "{kbps} kbps (standar)",
+  "high": "{kbps} kbps (tinggi)",
+  "best": "{kbps} kbps (terbaik)",
+  "smallestVoice": "{kbps} kbps (terkecil, hanya suara)",
+  "voice": "{kbps} kbps (suara, podcast)",
+  "balance": "{kbps} kbps (seimbang)",
+  "musicSmall": "{kbps} kbps (musik, kecil)",
+  "musicBetter": "{kbps} kbps (musik, lebih baik)"
+ },
+ "stage": {
+  "queued": "Menunggu…",
+  "decoding": "Membaca audio…",
+  "ffmpegLoading": "Memuat dekoder lanjutan untuk format ini (hanya pertama kali)…",
+  "ffmpegDecoding": "Mengekstrak audio… {pct}%",
+  "encoding": "Mengenkode MP3… {pct}%",
+  "loadingConverter": "Memuat konverter (hanya pertama kali)…",
+  "convertingPct": "Mengonversi… {pct}%"
+ },
+ "errors": {
+  "tooBigSplit": "File ini lebih dari 500 MB. Silakan pisahkan dulu.",
+  "noSound": "Kami tidak menemukan suara apa pun di file ini. Mungkin videonya tanpa suara atau filenya rusak.",
+  "unreadable": "File ini tidak bisa dibaca. Mungkin rusak, dilindungi (DRM) atau memakai codec yang sangat langka.",
+  "reverseFailed": "File ini tidak bisa dikonversi. Mungkin rusak, dilindungi atau bukan file audio.",
+  "tooBigShort": "File ini lebih dari 500 MB."
+ },
+ "direction": {
+  "label": "Arah konversi",
+  "to": "ke"
+ },
+ "reverse": {
+  "region": "Konverter MP3 ke {format}",
+  "heading": "Unggah file MP3 untuk diubah ke {format}.",
+  "works": "Bisa untuk **MP3** dan file audio lain (WAV, M4A, FLAC, OGG…), hingga 500 MB per file",
+  "choose": "Pilih File MP3",
+  "quality": "Kualitas {format}:"
+ },
+ "link": {
+  "linkLabel": "Link video",
+  "placeholder": "Tempel link video atau audio…",
+  "clear": "Hapus link",
+  "paste": "Tempel",
+  "format": "Format",
+  "mp3Audio": "Audio MP3",
+  "mp4Video": "Video MP4",
+  "quality": "Kualitas",
+  "mono": "Mono:",
+  "cut": "Potong bagian:",
+  "from": "Dari",
+  "to": "Sampai",
+  "startTime": "Waktu mulai",
+  "endTime": "Waktu selesai",
+  "convertTo": "Ubah ke {format}",
+  "starting": "Memulai…",
+  "convertingRing": "Mengonversi…",
+  "finishing": "Menyelesaikan…",
+  "downloading": "Mengunduh",
+  "fetching": "Mengambil…",
+  "yourVideo": "Video Anda",
+  "keepOpen": "Harap biarkan halaman ini tetap terbuka. Video panjang bisa butuh satu atau dua menit.",
+  "cancel": "Batal",
+  "download": "Download",
+  "otherFormat": "Format lain",
+  "another": "Konversi link lain",
+  "legal": "Hanya download video milik Anda atau yang Anda punya izin untuk digunakan. File dihapus dari server kami setelah 30 menit. [Kebijakan hak cipta](/copyright)",
+  "clipboard": "Browser Anda memblokir akses clipboard. Silakan tempel dengan Ctrl+V atau tekan lama.",
+  "fullLink": "Silakan tempel link lengkap yang diawali http:// atau https://",
+  "badTimes": "Masukkan waktu mulai dan selesai seperti 1:20 dan 2:45 (waktu selesai harus setelah waktu mulai).",
+  "unavailable": "Download lewat link sedang tidak tersedia. Silakan coba lagi nanti, atau download filenya lalu gunakan Unggah.",
+  "notAllowed": "Download lewat link belum tersedia di alamat situs ini. Silakan coba lagi nanti.",
+  "unreachable": "Tidak bisa terhubung ke server download. Mungkin server sedang dinyalakan, jadi tunggu satu menit lalu coba lagi.",
+  "generic": "Terjadi kesalahan. Silakan coba lagi.",
+  "youtubeOnly": "Alat ini hanya untuk link YouTube. Untuk situs lain, gunakan Download Video Online kami.",
+  "youtubeOnlyCta": "Buka Download Video Online",
+  "useYoutubeTools": "Untuk link YouTube, silakan gunakan alat YouTube khusus kami.",
+  "useYoutubeToolsCta": "Buka YouTube ke MP3",
+  "tiktokSoon": "Dukungan TikTok segera hadir. Silakan cek lagi nanti.",
+  "tiktokSoonCta": "Tentang TikTok ke MP3",
+  "mp3Qualities": {
+   "64": "64 kbps (terkecil)",
+   "192": "192 kbps (disarankan)",
+   "320": "320 kbps (terbaik)"
+  },
+  "mp4Qualities": {
+   "240": "240p (terkecil)",
+   "720": "720p HD",
+   "1080": "1080p Full HD"
+  },
+  "wavQualities": {
+   "44100": "44.1 kHz (kualitas CD)",
+   "48000": "48 kHz (standar video)"
+  },
+  "regionLabel": "Konverter link video"
+ },
+ "serverErrors": {
+  "Our download server is having trouble connecting right now. Please try again in a few minutes.": "Server download kami sedang mengalami gangguan koneksi. Silakan coba lagi dalam beberapa menit.",
+  "This video is age-restricted and cannot be downloaded.": "Video ini dibatasi usia dan tidak bisa didownload.",
+  "The website is temporarily blocking downloads from our server. Please try again in a few minutes.": "Situs tersebut sedang memblokir download dari server kami untuk sementara. Silakan coba lagi dalam beberapa menit.",
+  "This video is private or for members only, so it cannot be downloaded.": "Video ini privat atau khusus member, jadi tidak bisa didownload.",
+  "That quality is not available for this video. Try another option.": "Kualitas tersebut tidak tersedia untuk video ini. Coba pilihan lain.",
+  "This video is copy protected (DRM) and cannot be downloaded.": "Video ini dilindungi hak cipta (DRM) dan tidak bisa didownload.",
+  "We could not find a video on that page. Try the direct link to the video page.": "Kami tidak menemukan video di halaman tersebut. Coba link langsung ke halaman videonya.",
+  "This video is too large to download here.": "Video ini terlalu besar untuk didownload di sini.",
+  "This video is unavailable or has been removed.": "Video ini tidak tersedia atau sudah dihapus.",
+  "Something went wrong while fetching this video. Please check the link and try again.": "Terjadi kesalahan saat mengambil video ini. Silakan periksa link lalu coba lagi.",
+  "Too many requests. Please wait a little and try again.": "Terlalu banyak permintaan. Silakan tunggu sebentar lalu coba lagi.",
+  "Playlists are not supported. Please paste the link to a single video.": "Playlist tidak didukung. Silakan tempel link satu video saja.",
+  "Live streams cannot be downloaded.": "Siaran langsung tidak bisa didownload.",
+  "Please choose a valid format and quality.": "Silakan pilih format dan kualitas yang valid.",
+  "Please choose a valid start and end time (the end must be after the start).": "Silakan pilih waktu mulai dan selesai yang valid (waktu selesai harus setelah waktu mulai).",
+  "You have reached the hourly download limit. Please try again later.": "Anda sudah mencapai batas download per jam. Silakan coba lagi nanti.",
+  "Our server is busy right now. Please try again in a minute.": "Server kami sedang sibuk. Silakan coba lagi dalam satu menit.",
+  "This download has expired. Please start again.": "Download ini sudah kedaluwarsa. Silakan mulai lagi.",
+  "Server error. Please try again.": "Kesalahan server. Silakan coba lagi."
+ },
+ "serverErrorPrefixes": {
+  "Live streams and very long videos": "Siaran langsung dan video yang sangat panjang tidak bisa dikonversi.",
+  "Videos longer than": "Video ini terlalu panjang untuk didownload di sini."
+ },
+ "soon": {
+  "region": "{name} (segera hadir)",
+  "badge": "Segera hadir",
+  "linkLabel": "Link (segera hadir)",
+  "button": "Ubah ke MP3 (segera hadir)",
+  "note": "Kami masih menguji alat ini. Sementara itu, jika Anda punya file video di perangkat, ubah dengan [MP4 ke MP3](/mp4-to-mp3)."
+ },
+ "cutter": {
+  "region": "Pemotong MP3",
+  "heading": "Unggah file audio atau video untuk dipotong.",
+  "works": "Bisa untuk **{formats}** dan lainnya, hingga 500 MB",
+  "chooseFile": "Pilih File",
+  "dropHint": "atau seret dan lepas file di sini",
+  "loadingAudio": "Memuat audio",
+  "length": "Durasi {time} · {size}",
+  "another": "Pilih file lain",
+  "startHandle": "Awal pilihan",
+  "endHandle": "Akhir pilihan",
+  "start": "Mulai",
+  "end": "Selesai",
+  "selectionGroup": "Apa yang dilakukan dengan bagian terpilih",
+  "keep": "Simpan bagian",
+  "removeSel": "Hapus bagian",
+  "fadeIn": "Fade in:",
+  "fadeOut": "Fade out:",
+  "stop": "Stop",
+  "preview": "Pratinjau",
+  "save": "Potong & Simpan MP3 ({time})",
+  "encoding": "Mengenkode MP3… {pct}%",
+  "encodingLabel": "Mengenkode MP3",
+  "tooShort": "Bagian yang dipilih terlalu pendek.",
+  "failed": "Gagal membuat MP3."
+ },
+ "joiner": {
+  "region": "Penggabung audio",
+  "loading": "Memuat {name}",
+  "up": "Pindahkan {name} ke atas",
+  "down": "Pindahkan {name} ke bawah",
+  "heading": "Tambahkan dua file atau lebih untuk digabung menjadi satu MP3.",
+  "mix": "Gabungkan **{formats}** dan lainnya, hingga 500 MB per file",
+  "addMore": "Tambah file lagi",
+  "join": "Gabung {count} file ({time})",
+  "joining": "Menggabungkan dan mengenkode MP3… {pct}%",
+  "joiningLabel": "Mengenkode MP3 gabungan",
+  "needTwo": "Tambahkan minimal dua file untuk digabung.",
+  "failed": "Penggabungan gagal. Coba dengan file yang lebih sedikit atau lebih pendek.",
+  "gap": "Jeda antar file:",
+  "gaps": {
+   "0": "Tanpa jeda",
+   "1": "1 detik",
+   "2": "2 detik",
+   "3": "3 detik",
+   "0.5": "0,5 detik"
+  },
+  "tooBig": "Lebih dari 500 MB."
+ },
+ "reverseFormats": {
+  "wma": {},
+  "amr": {
+   "note": "AMR adalah format untuk suara: hasilnya mono 8 kHz, seperti panggilan telepon.",
+   "options": {
+    "0": "4.75 kbps (terkecil)",
+    "2": "5.9 kbps",
+    "4": "7.4 kbps",
+    "5": "7.95 kbps",
+    "6": "10.2 kbps",
+    "7": "12.2 kbps (kualitas suara terbaik)"
+   }
+  },
+  "caf": {
+   "options": {
+    "alac": "Apple Lossless (ALAC)",
+    "pcm": "PCM tanpa kompresi (terbesar)"
+   }
+  },
+  "ac3": {},
+  "alac": {
+   "note": "Disimpan sebagai file .m4a dengan audio Apple Lossless, siap untuk Apple Music dan iTunes.",
+   "options": {
+    "alac": "Apple Lossless"
+   }
+  },
+  "m4b": {},
+  "flac": {
+   "note": "FLAC bersifat lossless, jadi MP3 tetap persis seperti aslinya. FLAC tidak bisa mengembalikan detail yang sudah dihapus oleh MP3.",
+   "options": {
+    "flac": "FLAC Lossless"
+   }
+  },
+  "aac": {},
+  "ogg": {},
+  "opus": {},
+  "webm": {
+   "note": "Membuat file WebM khusus audio dengan suara Opus, cocok untuk situs web dan aplikasi web."
+  },
+  "mov": {
+   "note": "Membuat video QuickTime dengan latar gelap polos, agar audio Anda bisa dipakai di aplikasi video dan situs upload."
+  },
+  "wav": {
+   "note": "WAV tidak dikompresi (sekitar 10 MB per menit dalam stereo). Suara MP3 tetap persis sama, tetapi detail yang sudah dihapus MP3 tidak bisa dikembalikan.",
+   "options": {
+    "44100": "44.1 kHz · 16-bit (kualitas CD)",
+    "48000": "48 kHz · 16-bit (untuk video)"
+   }
+  },
+  "mkv": {
+   "note": "Membuat video MKV dengan latar gelap polos dan suara MP3 asli Anda, tanpa mengenkode ulang audio.",
+   "options": {
+    "copy": "Pertahankan audio MP3 asli (tercepat)"
+   }
+  }
+ }
+}

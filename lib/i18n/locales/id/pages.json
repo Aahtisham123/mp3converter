@@ -1,1 +1,207 @@
-{}
+{
+ "about": {
+  "metaTitle": "Tentang Kami",
+  "metaDescription": "Kenali siapa yang membuat MP3 Converter, cara kerja alat ini, dan kenapa audio dikonversi secara privat di browser Anda.",
+  "title": "Tentang MP3 Converter",
+  "lead": "Alat audio sederhana dan privat yang bisa dipakai siapa saja.",
+  "sections": [
+   {
+    "h2": "Kenapa kami membuat ini",
+    "blocks": [
+     "Kebanyakan konverter online meminta Anda mengunggah file ke server, menunggu antrean, lalu mendownload hasilnya. Itu lambat, dan berarti menyerahkan rekaman pribadi Anda ke orang asing. Kami ingin sesuatu yang lebih baik: konverter yang cepat, gratis, dan menyimpan file Anda di perangkat Anda sendiri.",
+     "Karena itu kami membuat MP3 Converter sebagai alat yang sepenuhnya berjalan di browser web Anda. Tanpa upload, tanpa akun, dan tanpa batas jumlah file yang Anda konversi."
+    ]
+   },
+   {
+    "h2": "Cara kerja alat ini",
+    "blocks": [
+     {
+      "check": [
+       "**Dekode.** Mesin Web Audio di browser Anda membaca format umum. Untuk format lain, seperti MKV, AVI, atau WMA, kami memuat FFmpeg, pustaka media open-source yang banyak dipakai, yang dikompilasi ke WebAssembly.",
+       "**Enkode.** MP3 dibuat dengan LAME, encoder open-source yang sudah dipercaya lebih dari dua dekade, berjalan di worker latar belakang.",
+       "**Simpan.** MP3 yang sudah jadi langsung berpindah dari memori browser ke folder download Anda."
+      ]
+     }
+    ]
+   },
+   {
+    "h2": "Prinsip kami",
+    "blocks": [
+     {
+      "check": [
+       "File Anda tetap di perangkat Anda.",
+       "Penjelasan yang jelas dan jujur tanpa istilah teknis yang rumit.",
+       "Alat gratis tanpa watermark atau keharusan mendaftar.",
+       "Menghormati kreator: harap hanya konversi konten milik Anda atau yang boleh Anda gunakan."
+      ]
+     },
+     "Punya pertanyaan atau ide? [Hubungi kami](/contact)."
+    ]
+   }
+  ]
+ },
+ "contact": {
+  "metaTitle": "Kontak",
+  "metaDescription": "Hubungi tim MP3 Converter untuk pertanyaan, laporan bug, atau ide fitur.",
+  "title": "Hubungi Kami",
+  "lead": "Kami membaca setiap pesan dan membalas secepat mungkin.",
+  "sections": [
+   {
+    "h2": "Email",
+    "blocks": [
+     "Kirim email kepada kami di [{email}](mailto:{email}).",
+     {
+      "h3": "Saat melaporkan masalah, harap sertakan"
+     },
+     {
+      "ul": [
+       "Alat yang Anda gunakan (misalnya, MP4 ke MP3 atau Pemotong MP3).",
+       "Browser dan perangkat Anda (misalnya, Chrome di Windows atau Safari di iPhone).",
+       "Format file dan kira-kira durasi atau ukuran filenya.",
+       "Pesan error yang muncul, persis seperti yang tertulis."
+      ]
+     },
+     "Mohon jangan kirim file audionya kecuali kami minta. Karena alat ini berjalan di browser Anda, kami tidak pernah melihat file Anda."
+    ]
+   }
+  ]
+ },
+ "privacy-policy": {
+  "metaTitle": "Kebijakan Privasi",
+  "metaDescription": "Cara MP3 Converter menangani data Anda. File diproses di browser Anda dan tidak pernah diunggah ke server kami.",
+  "title": "Kebijakan Privasi",
+  "lead": "Terakhir diperbarui: Oktober 2026",
+  "sections": [
+   {
+    "h2": "Versi singkatnya",
+    "blocks": [
+     "File yang Anda unggah, rekam, potong, kompres, atau gabungkan di {domain} diproses di dalam browser Anda sendiri dan tidak pernah dikirim ke kami. Saat Anda menempelkan link, server download kami mengambil link tersebut untuk Anda dan menghapus hasilnya setelah 30 menit."
+    ]
+   },
+   {
+    "h2": "File dan rekaman di perangkat Anda",
+    "blocks": [
+     "Saat Anda memilih file atau merekam dengan mikrofon, audio dibaca dan dikonversi di memori browser Anda. MP3 hasilnya ditawarkan kepada Anda untuk didownload. Saat Anda menutup atau memuat ulang halaman, data ini dihapus."
+    ]
+   },
+   {
+    "h2": "Link yang Anda tempel",
+    "blocks": [
+     "Untuk mendownload dari link, kami mengirim link tersebut ke server download kami, yang mengambil video dari situsnya dan, jika Anda pilih, mengubahnya ke MP3. File yang sudah jadi hanya disimpan agar Anda bisa mendownloadnya dan otomatis dihapus setelah 30 menit. Kami menyimpan alamat IP setiap permintaan di memori hingga satu jam untuk menerapkan batas penggunaan wajar, dan log server kami mencatat error teknis tanpa isi file."
+    ]
+   },
+   {
+    "h2": "Mikrofon",
+    "blocks": [
+     "Perekam hanya mengakses mikrofon Anda setelah Anda menekan Mulai Merekam dan browser Anda meminta izin. Rekaman hanya dipakai untuk membuat MP3 Anda di halaman ini."
+    ]
+   },
+   {
+    "h2": "Informasi yang disimpan di browser Anda",
+    "blocks": [
+     "Kami menyimpan satu pengaturan kecil di local storage browser Anda: apakah sidebar diciutkan atau tidak. Browser Anda juga mungkin menyimpan cache file program konverter agar situs lebih cepat dimuat berikutnya."
+    ]
+   },
+   {
+    "h2": "Log server",
+    "blocks": [
+     "Seperti situs web lainnya, penyedia hosting kami mungkin menyimpan log teknis standar, seperti alamat IP, jenis browser, dan halaman yang diminta, untuk keamanan dan keandalan. Log ini tidak berisi file audio Anda."
+    ]
+   },
+   {
+    "h2": "Perubahan dan kontak",
+    "blocks": [
+     "Jika nanti kami menambahkan analitik atau iklan, kami akan memperbarui halaman ini terlebih dahulu. Untuk pertanyaan apa pun tentang privasi, kirim email ke [{email}](mailto:{email})."
+    ]
+   }
+  ]
+ },
+ "terms": {
+  "metaTitle": "Ketentuan Penggunaan",
+  "metaDescription": "Ketentuan penggunaan alat MP3 Converter yang gratis.",
+  "title": "Ketentuan Penggunaan",
+  "lead": "Terakhir diperbarui: Oktober 2026",
+  "sections": [
+   {
+    "h2": "Menggunakan alat",
+    "blocks": [
+     "MP3 Converter gratis digunakan untuk keperluan pribadi maupun komersial. Dengan menggunakan situs ini, Anda menyetujui ketentuan ini."
+    ]
+   },
+   {
+    "h2": "Konten Anda dan hak cipta",
+    "blocks": [
+     "Anda bertanggung jawab atas file dan link yang Anda proses. Hanya konversi, download, potong, kompres, atau gabungkan konten milik Anda, yang berlisensi terbuka, yang boleh Anda gunakan, atau yang secara hukum boleh Anda salin. Jangan gunakan alat ini untuk melanggar hak cipta, mengakali perlindungan salinan, atau melanggar ketentuan layanan situs lain. Lihat [Kebijakan Hak Cipta & DMCA](/copyright) kami."
+    ]
+   },
+   {
+    "h2": "Penggunaan wajar pengunduh link",
+    "blocks": [
+     "Agar layanan tetap tersedia untuk semua orang, kami membatasi jumlah download yang bisa dimulai setiap pengunjung per jam, durasi video, dan ukuran file. Penggunaan otomatis atau massal tidak diizinkan. Kami bisa memblokir akses jika terjadi penyalahgunaan."
+    ]
+   },
+   {
+    "h2": "Tanpa jaminan",
+    "blocks": [
+     "Alat ini disediakan “sebagaimana adanya”. Kami berusaha keras agar alat ini andal, tetapi kami tidak bisa menjamin setiap file akan berhasil dikonversi atau layanan akan selalu tersedia. Selalu simpan salinan file asli Anda."
+    ]
+   },
+   {
+    "h2": "Software open-source",
+    "blocks": [
+     "Situs ini memakai LAME (melalui lamejs, LGPL) untuk enkode MP3, FFmpeg (melalui ffmpeg.wasm dan di server kami) untuk dekode dan konversi, serta yt-dlp (Unlicense) untuk mengambil media dari link. Proyek-proyek ini tetap menjadi milik pembuatnya dan digunakan sesuai lisensinya."
+    ]
+   },
+   {
+    "h2": "Kontak",
+    "blocks": [
+     "Ada pertanyaan tentang ketentuan ini? Kirim email ke [{email}](mailto:{email})."
+    ]
+   }
+  ]
+ },
+ "copyright": {
+  "metaTitle": "Kebijakan Hak Cipta & DMCA",
+  "metaDescription": "Cara pemilik hak meminta MP3 Converter memblokir link ke konten mereka, dan aturan penggunaan yang bertanggung jawab.",
+  "title": "Kebijakan Hak Cipta & DMCA",
+  "lead": "Terakhir diperbarui: Oktober 2026",
+  "sections": [
+   {
+    "h2": "Kami menghormati kreator",
+    "blocks": [
+     "MP3 Converter menyediakan alat untuk mengonversi dan mendownload media. Pengguna hanya boleh memproses konten milik mereka, konten domain publik atau berlisensi terbuka, atau konten yang boleh mereka gunakan. Memakai alat kami untuk melanggar hak cipta tidak diizinkan dan melanggar [Ketentuan Penggunaan](/terms) kami.",
+     "Kami tidak menyimpan koleksi musik atau video. File yang dibuat dari link disimpan sementara agar orang yang memintanya bisa mendownloadnya, dan otomatis dihapus setelah 30 menit."
+    ]
+   },
+   {
+    "h2": "Cara meminta kami memblokir konten",
+    "blocks": [
+     "Jika Anda pemilik hak atas suatu konten dan ingin kami mencegah alat kami mendownloadnya, kirim email ke [{email}](mailto:{email}?subject=Copyright%20notice) dengan:",
+     {
+      "ol": [
+       "Nama Anda, perusahaan (jika ada), alamat pos, nomor telepon, dan alamat email.",
+       "Deskripsi karya yang dilindungi hak cipta.",
+       "Link (URL) persis atau channel/situs yang ingin Anda blokir.",
+       "Pernyataan bahwa Anda dengan itikad baik meyakini penggunaan tersebut tidak diizinkan oleh pemilik, perwakilannya, atau hukum.",
+       "Pernyataan, dengan ancaman sanksi atas sumpah palsu, bahwa informasi tersebut akurat dan bahwa Anda adalah pemilik atau berwenang bertindak atas nama pemilik.",
+       "Tanda tangan fisik atau elektronik Anda."
+      ]
+     },
+     "Kami berupaya meninjau pemberitahuan yang valid dalam dua hari kerja. Link yang disetujui ditambahkan ke daftar blokir kami, setelah itu layanan kami menolak memprosesnya."
+    ]
+   },
+   {
+    "h2": "Penyalahgunaan berulang",
+    "blocks": [
+     "Kami membatasi jumlah download yang bisa dimulai setiap pengunjung, dan kami bisa memblokir pengunjung yang berulang kali menyalahgunakan layanan."
+    ]
+   },
+   {
+    "h2": "Merek dagang",
+    "blocks": [
+     "YouTube adalah merek dagang Google LLC. Nama platform lain adalah merek dagang dari pemiliknya masing-masing. MP3 Converter adalah layanan independen dan tidak berafiliasi dengan, didukung oleh, atau disponsori oleh perusahaan mana pun di atas."
+    ]
+   }
+  ]
+ }
+}
