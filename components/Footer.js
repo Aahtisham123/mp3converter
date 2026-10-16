@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NAV_GROUPS, PRIMARY_NAV, SITE } from '@/lib/site';
+import SocialLinks from './SocialLinks';
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -15,6 +16,8 @@ export default function Footer() {
             A free, private MP3 converter that runs in your browser. Convert audio and video to MP3 without
             installing software or creating an account.
           </p>
+          <p className="footer__follow">Follow us</p>
+          <SocialLinks />
         </div>
         <nav aria-label="Converters">
           <h3>Converters</h3>
