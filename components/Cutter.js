@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import { BitrateSelect, PrivacyNote, ProgressBar, Toggle, overallProgress, stageText } from './tool-ui';
 import {
   ACCEPT,
@@ -20,6 +22,7 @@ import {
 const MIN_LEN = 0.1;
 
 export default function Cutter() {
+  const { t, err: tErr, lang } = useI18n();
   const [file, setFile] = useState(null);
   const [decoded, setDecoded] = useState(null);
   const [stage, setStage] = useState('idle'); // idle | loading | ready | encoding | error
@@ -66,7 +69,7 @@ export default function Cutter() {
       setEnd(d.duration);
       setStage('ready');
     } catch (err) {
-      setError(err.message);
+      setError(tErr(err.message));
       setStage('error');
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -206,7 +209,7 @@ export default function Cutter() {
         ? sliceSeconds(decoded, start, end)
         : concatClips([{ channels: sliceSeconds(decoded, 0, start) }, { channels: sliceSeconds(decoded, end, duration) }]);
       const secs = channels[0].length / decoded.sampleRate;
-      if (secs < MIN_LEN) throw new Error('The selected part is too short.');
+      if (secs < MIN_LEN) throw new Error(t('cutter.tooShort'));
       applyFades(channels, decoded.sampleRate, fadeIn ? Math.min(3, secs / 3) : 0, fadeOut ? Math.min(3, secs / 3) : 0);
       if (mono) channels = toMono(channels);
       const blob = await encodeMp3(channels, decoded.sampleRate, bitrate, (p) => setProgress({ stage: 'encoding', value: p, pct: p }));
@@ -216,7 +219,7 @@ export default function Cutter() {
       });
       setStage('ready');
     } catch (err) {
-      setError(err.message || 'Could not create the MP3.');
+      setError(tErr(err.message) || t('cutter.failed'));
       setStage('ready');
     }
   };
@@ -252,27 +255,27 @@ export default function Cutter() {
 
   return (
     <div className="converter-wrap" id="converter">
-      <div className={`converter${dragover ? ' is-dragover' : ''}`} role="region" aria-label="MP3 cutter" {...dropProps}>
+      <div className={`converter${dragover ? ' is-dragover' : ''}`} role="region" aria-label={t('cutter.region')} {...dropProps}>
         <input ref={inputRef} type="file" accept={ACCEPT} hidden onChange={(e) => { load(e.target.files[0]); e.target.value = ''; }} />
 
         {(stage === 'idle' || stage === 'error' || stage === 'loading') && !decoded && (
           <>
             <div className="converter__icon" aria-hidden="true"><span><Icon name="scissors" /></span></div>
-            <h2>Upload an audio or video file to cut.</h2>
-            <p className="converter__formats">Works with <strong>MP3, WAV, M4A, FLAC, OGG, MP4, MOV, WEBM</strong> and more, up to 500 MB</p>
+            <h2>{t('cutter.heading')}</h2>
+            <p className="converter__formats"><Rich text={t('cutter.works', { formats: 'MP3, WAV, M4A, FLAC, OGG, MP4, MOV, WEBM' })} lang={lang} /></p>
             {stage === 'loading' ? (
               <div className="tool-status" aria-live="polite">
-                <p className="q-meta">{file && file.name} — {stageText(progress.stage, progress.pct) || 'Reading audio…'}</p>
-                <ProgressBar value={Math.min(100, progress.value)} label="Loading audio" />
+                <p className="q-meta">{file && file.name} — {stageText(progress.stage, progress.pct, t) || t('stage.decoding')}</p>
+                <ProgressBar value={Math.min(100, progress.value)} label={t('cutter.loadingAudio')} />
               </div>
             ) : (
               <div className="converter__actions">
                 <button type="button" className="btn-grad" onClick={() => inputRef.current.click()}>
-                  <Icon name="upload" /> Choose File
+                  <Icon name="upload" /> {t('cutter.chooseFile')}
                 </button>
               </div>
             )}
-            {stage !== 'loading' && <p className="drop-hint">or drag and drop a file here</p>}
+            {stage !== 'loading' && <p className="drop-hint">{t('cutter.dropHint')}</p>}
             {error && <p className="q-meta is-error" role="alert">{error}</p>}
           </>
         )}
@@ -282,9 +285,9 @@ export default function Cutter() {
             <div className="editor__head">
               <div style={{ minWidth: 0 }}>
                 <div className="q-name" title={file.name}>{file.name}</div>
-                <div className="q-meta">Length {formatTime(duration, true)} · {formatBytes(file.size)}</div>
+                <div className="q-meta">{t('cutter.length', { time: formatTime(duration, true), size: formatBytes(file.size) })}</div>
               </div>
-              <button type="button" className="btn-link" onClick={reset}>Choose another file</button>
+              <button type="button" className="btn-link" onClick={reset}>{t('cutter.another')}</button>
             </div>
 
             <div
@@ -303,7 +306,7 @@ export default function Cutter() {
                 style={{ left: pct(start) }}
                 role="slider"
                 tabIndex={0}
-                aria-label="Start of selection"
+                aria-label={t('cutter.startHandle')}
                 aria-valuemin={0}
                 aria-valuemax={Number(duration.toFixed(1))}
                 aria-valuenow={Number(start.toFixed(1))}
@@ -316,7 +319,7 @@ export default function Cutter() {
                 style={{ left: pct(end) }}
                 role="slider"
                 tabIndex={0}
-                aria-label="End of selection"
+                aria-label={t('cutter.endHandle')}
                 aria-valuemin={0}
                 aria-valuemax={Number(duration.toFixed(1))}
                 aria-valuenow={Number(end.toFixed(1))}
@@ -328,44 +331,44 @@ export default function Cutter() {
 
             <div className="editor__times">
               <label className="time-field">
-                Start
+                {t('cutter.start')}
                 <input type="number" min={0} max={duration} step={0.1} value={Number(start.toFixed(1))} onChange={(e) => setStartSafe(Number(e.target.value) || 0)} />
                 <span>{formatTime(start, true)}</span>
               </label>
               <label className="time-field">
-                End
+                {t('cutter.end')}
                 <input type="number" min={0} max={duration} step={0.1} value={Number(end.toFixed(1))} onChange={(e) => setEndSafe(Number(e.target.value) || 0)} />
                 <span>{formatTime(end, true)}</span>
               </label>
-              <div className="seg-control" role="group" aria-label="What to do with the selection">
-                <button type="button" aria-pressed={keep} onClick={() => setKeep(true)}>Keep selection</button>
-                <button type="button" aria-pressed={!keep} onClick={() => setKeep(false)}>Remove selection</button>
+              <div className="seg-control" role="group" aria-label={t('cutter.selectionGroup')}>
+                <button type="button" aria-pressed={keep} onClick={() => setKeep(true)}>{t('cutter.keep')}</button>
+                <button type="button" aria-pressed={!keep} onClick={() => setKeep(false)}>{t('cutter.removeSel')}</button>
               </div>
             </div>
 
             <div className="converter__options">
-              <Toggle label="Fade in:" checked={fadeIn} onChange={setFadeIn} />
+              <Toggle label={t('cutter.fadeIn')} checked={fadeIn} onChange={setFadeIn} />
               <span className="opt-divider" aria-hidden="true" />
-              <Toggle label="Fade out:" checked={fadeOut} onChange={setFadeOut} />
+              <Toggle label={t('cutter.fadeOut')} checked={fadeOut} onChange={setFadeOut} />
               <span className="opt-divider" aria-hidden="true" />
               <BitrateSelect value={bitrate} onChange={setBitrate} />
               <span className="opt-divider" aria-hidden="true" />
-              <Toggle label="Mono:" checked={mono} onChange={setMono} />
+              <Toggle label={t('converter.monoShort')} checked={mono} onChange={setMono} />
             </div>
 
             <div className="converter__actions" style={{ marginTop: 18 }}>
               <button type="button" className="btn-outline" onClick={playing ? stopPlayback : play} disabled={stage === 'encoding'}>
-                <Icon name={playing ? 'stop' : 'play'} /> {playing ? 'Stop' : 'Preview'}
+                <Icon name={playing ? 'stop' : 'play'} /> {playing ? t('cutter.stop') : t('cutter.preview')}
               </button>
               <button type="button" className="btn-grad" onClick={exportMp3} disabled={stage === 'encoding'}>
-                <Icon name="scissors" /> Cut &amp; Save MP3 ({formatTime(outLen, true)})
+                <Icon name="scissors" /> {t('cutter.save', { time: formatTime(outLen, true) })}
               </button>
             </div>
 
             {stage === 'encoding' && (
               <div className="tool-status" aria-live="polite">
-                <p className="q-meta">Encoding MP3… {progress.pct}%</p>
-                <ProgressBar value={progress.value} label="Encoding MP3" />
+                <p className="q-meta">{t('cutter.encoding', { pct: progress.pct })}</p>
+                <ProgressBar value={progress.value} label={t('cutter.encodingLabel')} />
               </div>
             )}
             {error && stage !== 'encoding' && <p className="q-meta is-error" role="alert">{error}</p>}
@@ -379,7 +382,7 @@ export default function Cutter() {
                   <audio className="q-audio" controls src={result.url} />
                 </div>
                 <a className="q-dl" href={result.url} download={result.name}>
-                  <Icon name="download" className="icon icon-sm" /> Download
+                  <Icon name="download" className="icon icon-sm" /> {t('converter.download')}
                 </a>
               </div>
             )}

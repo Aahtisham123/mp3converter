@@ -4,32 +4,34 @@ import Converter from './Converter';
 import Cutter from './Cutter';
 import FormatConverter from './FormatConverter';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import Joiner from './Joiner';
 import LinkDownloader from './LinkDownloader';
 import { COMPRESS_BITRATES, STANDARD_BITRATES } from './tool-ui';
 
 function ComingSoon({ tool }) {
+  const { t, lang } = useI18n();
   return (
     <div className="converter-wrap" id="converter">
-      <div className="converter soon-card" role="region" aria-label={`${tool.name} (coming soon)`}>
+      <div className="converter soon-card" role="region" aria-label={t('soon.region', { name: tool.name })}>
         <div className="converter__icon" aria-hidden="true"><span><Icon name="music" /></span></div>
         <h2>
-          {tool.heading} <span className="soon-badge">Coming soon</span>
+          {tool.heading} <span className="soon-badge">{t('soon.badge')}</span>
         </h2>
         <p className="converter__formats">{tool.formats}</p>
         <div className="link-box">
           <div className="link-input" aria-disabled="true">
             <Icon name="link" />
-            <input type="url" placeholder={tool.placeholder} disabled aria-label="Link (coming soon)" />
+            <input type="url" placeholder={tool.placeholder} disabled aria-label={t('soon.linkLabel')} />
           </div>
           <div className="converter__actions" style={{ marginTop: 16 }}>
             <button type="button" className="btn-grad" disabled>
-              <Icon name="zap" /> Convert to MP3 (coming soon)
+              <Icon name="zap" /> {t('soon.button')}
             </button>
           </div>
           <p className="link-legal">
-            We are still testing this tool. Meanwhile, if you saved a video file on your device, convert it with{' '}
-            <a href="/mp4-to-mp3">MP4 to MP3</a>.
+            <Rich text={t('soon.note')} lang={lang} />
           </p>
         </div>
       </div>
@@ -38,13 +40,14 @@ function ComingSoon({ tool }) {
 }
 
 export default function ToolWidget({ kind, tool = {} }) {
+  const { t } = useI18n();
   if (kind === 'cut') return <Cutter />;
   if (kind === 'join') return <Joiner />;
   if (kind === 'soon') return <ComingSoon tool={tool} />;
   if (kind === 'link') {
     return (
       <div className="converter-wrap" id="converter">
-        <div className="converter" role="region" aria-label="Video link converter">
+        <div className="converter" role="region" aria-label={t('link.regionLabel')}>
           <div className="converter__icon" aria-hidden="true"><span><Icon name="link" /></span></div>
           <h2>{tool.heading}</h2>
           <p className="converter__formats">{tool.formats}</p>

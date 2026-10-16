@@ -21,7 +21,7 @@
   --shadow-sm: 0 2px 8px rgba(17, 24, 39, .05);
   --sidebar-w: 272px;
   --sidebar-rail: 68px;
-  --font: var(--font-inter), "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font: var(--font-inter), "Inter", var(--font-arabic), var(--font-devanagari), system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -495,3 +495,64 @@ tr:last-child td { border-bottom: 0; }
 .footer .social__link--instagram:hover, .footer .social__link--instagram:focus-visible { background: linear-gradient(45deg, #f9ce34, #ee2a7b 50%, #6228d7); }
 .footer .social__link--youtube { --brand-c: #ff0000; }
 .footer .social__link--tiktok { --brand-c: #010101; }
+
+/* ---------- Language switcher ---------- */
+.lang-switch { position: relative; flex: none; }
+.lang-switch__btn { width: auto; min-width: 38px; padding: 0 9px; gap: 5px; display: inline-flex; align-items: center; justify-content: center; }
+.lang-switch__btn .icon { width: 18px; height: 18px; }
+.lang-switch__code { font-size: .72rem; font-weight: 700; letter-spacing: .04em; }
+.lang-switch__menu {
+  position: absolute; bottom: calc(100% + 8px); inset-inline-end: 0; z-index: 60;
+  min-width: 210px; max-height: min(70vh, 460px); overflow-y: auto;
+  list-style: none; margin: 0; padding: 6px; border-radius: 14px;
+  background: #fff; border: 1px solid var(--border); box-shadow: 0 18px 40px -16px rgba(17, 24, 39, .35);
+}
+.lang-switch__menu a {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 9px 12px; border-radius: 9px; color: var(--text); font-size: .93rem;
+}
+.lang-switch__menu a:hover, .lang-switch__menu a:focus-visible { background: var(--brand-tint); text-decoration: none; }
+.lang-switch__menu a.is-active { color: var(--brand); font-weight: 600; background: var(--brand-soft); }
+/* In the collapsed icon rail the code label is hidden and the menu opens to the side. */
+.app.is-collapsed .lang-switch__code { display: none; }
+@media (min-width: 961px) {
+  .app.is-collapsed .lang-switch__menu { bottom: 0; inset-inline-end: auto; inset-inline-start: calc(100% + 10px); }
+}
+
+/* ---------- Right-to-left (Arabic) ---------- */
+[dir="rtl"] .sidebar { inset: 0 0 0 auto; border-right: 0; border-left: 1px solid var(--border); }
+[dir="rtl"] .main { margin-left: 0; margin-right: var(--sidebar-w); transition: margin-right .22s ease; }
+[dir="rtl"] .app.is-collapsed .main { margin-left: 0; margin-right: var(--sidebar-rail); }
+[dir="rtl"] .skip-link { left: auto; right: 12px; }
+[dir="rtl"] .nav-group__toggle { text-align: right; }
+[dir="rtl"] .nav-group__toggle .chev { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .nav-group__list { padding: 0 12px 0 0; }
+[dir="rtl"] .soon-badge { margin-left: 0; margin-right: 6px; }
+[dir="rtl"] .select-wrap .icon { left: auto; right: 10px; }
+[dir="rtl"] .select-wrap select { background-position: left 10px center; }
+[dir="rtl"] .switch span::after { left: auto; right: 3px; }
+[dir="rtl"] .switch input:checked + span::after { transform: translateX(-20px); }
+[dir="rtl"] .rec-dot { margin-right: 0; margin-left: 8px; }
+[dir="rtl"] .queue, [dir="rtl"] .tool-status, [dir="rtl"] .result-card, [dir="rtl"] .editor, [dir="rtl"] .link-box { text-align: right; }
+[dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+[dir="rtl"] .section ul, [dir="rtl"] .section ol { padding-left: 0; padding-right: 1.3em; }
+[dir="rtl"] .steps li { padding: 18px 72px 18px 20px; }
+[dir="rtl"] .steps li::before { left: auto; right: 20px; }
+[dir="rtl"] .checklist li { padding-left: 0; padding-right: 32px; }
+[dir="rtl"] .checklist li::before { left: auto; right: 0; }
+[dir="rtl"] .faq summary { padding: 18px 0 18px 28px; }
+[dir="rtl"] .faq summary::after { right: auto; left: 0; }
+[dir="rtl"] .breadcrumbs li + li::before { margin-right: 0; margin-left: 6px; }
+[dir="rtl"] .seg-control { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .link-options .seg-control, [dir="rtl"] .media-card__choose .seg-control { margin-right: 0; }
+[dir="rtl"] .ring__pct small { margin-left: 0; margin-right: 2px; }
+/* Waveforms, times, numbers and file names read left to right in every language. */
+[dir="rtl"] .wave, [dir="rtl"] .editor__times input, [dir="rtl"] .link-input input, [dir="rtl"] .ring__pct { direction: ltr; }
+[dir="rtl"] .inline-cta .icon, [dir="rtl"] .lang-switch__menu .icon { flex: none; }
+@media (max-width: 960px) {
+  [dir="rtl"] .sidebar { transform: translateX(100%); }
+  [dir="rtl"] .app.is-open .sidebar { transform: none; }
+  [dir="rtl"] .main, [dir="rtl"] .app.is-collapsed .main { margin-right: 0; }
+}
+/* Arrows such as "WAV → MP3" point the reading direction. */
+[dir="rtl"] .direction-tabs .mode-tab > span[aria-hidden="true"] { display: inline-block; transform: scaleX(-1); }

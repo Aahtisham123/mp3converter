@@ -1,54 +1,55 @@
 import Link from 'next/link';
-import { NAV_GROUPS, PRIMARY_NAV, SITE } from '@/lib/site';
 import SocialLinks from './SocialLinks';
+import { localePath } from '@/lib/i18n/config';
+import { NAV_GROUPS, PRIMARY_NAV, SITE } from '@/lib/site';
 
-export default function Footer() {
+export default function Footer({ lang, dict }) {
   const year = new Date().getFullYear();
+  const f = dict.footer;
+  const href = (p) => localePath(lang, p);
+  const label = (p) => dict.nav[p.slice(1)];
   return (
     <footer className="footer">
       <div className="container footer__inner">
         <div>
-          <Link href="/" className="topbar__brand" style={{ display: 'inline-flex' }}>
+          <Link href={href('/')} className="topbar__brand" style={{ display: 'inline-flex' }}>
             <img src="/images/logo.svg" alt="" width="32" height="32" />
             {SITE.name}
           </Link>
-          <p>
-            A free, private MP3 converter that runs in your browser. Convert audio and video to MP3 without
-            installing software or creating an account.
-          </p>
-          <p className="footer__follow">Follow us</p>
-          <SocialLinks />
+          <p>{dict.site.tagline}</p>
+          <p className="footer__follow">{f.follow}</p>
+          <SocialLinks label={f.socialLabel} itemLabel={f.socialItem} />
         </div>
-        <nav aria-label="Converters">
-          <h3>Converters</h3>
+        <nav aria-label={f.converters}>
+          <h3>{f.converters}</h3>
           <ul>
             {PRIMARY_NAV.slice(1).map((l) => (
-              <li key={l.href}><Link href={l.href}>{l.label}</Link></li>
+              <li key={l.href}><Link href={href(l.href)}>{label(l.href)}</Link></li>
             ))}
           </ul>
         </nav>
-        <nav aria-label="Formats and tools">
-          <h3>Formats &amp; Tools</h3>
+        <nav aria-label={f.formatsTools}>
+          <h3>{f.formatsTools}</h3>
           <ul>
             {NAV_GROUPS.flatMap((g) => g.items).slice(0, 7).map((l) => (
-              <li key={l.href}><Link href={l.href}>{l.label}</Link></li>
+              <li key={l.href}><Link href={href(l.href)}>{label(l.href)}</Link></li>
             ))}
           </ul>
         </nav>
-        <nav aria-label="Company">
-          <h3>Company</h3>
+        <nav aria-label={f.company}>
+          <h3>{f.company}</h3>
           <ul>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/contact">Contact</Link></li>
-            <li><Link href="/privacy-policy">Privacy Policy</Link></li>
-            <li><Link href="/terms">Terms of Use</Link></li>
-            <li><Link href="/copyright">Copyright &amp; DMCA</Link></li>
+            <li><Link href={href('/about')}>{f.about}</Link></li>
+            <li><Link href={href('/contact')}>{f.contact}</Link></li>
+            <li><Link href={href('/privacy-policy')}>{f.privacy}</Link></li>
+            <li><Link href={href('/terms')}>{f.terms}</Link></li>
+            <li><Link href={href('/copyright')}>{f.copyright}</Link></li>
           </ul>
         </nav>
       </div>
       <div className="footer__bottom">
-        <span>© {year} mp3convert.tools. All rights reserved.</span>
-        <span>Not affiliated with YouTube or Google. Please only download content you own or may use.</span>
+        <span>{f.rights.replace('{year}', year)}</span>
+        <span>{f.disclaimer}</span>
       </div>
     </footer>
   );

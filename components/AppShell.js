@@ -4,6 +4,9 @@ import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import LanguageSwitcher from './LanguageSwitcher';
+import { splitLocale } from '@/lib/i18n/config';
 import { NAV_GROUPS, PRIMARY_NAV } from '@/lib/site';
 
 const COLLAPSE_KEY = 'mp3c:sidebar-collapsed';
@@ -14,6 +17,8 @@ function isMobile() {
 
 export default function AppShell({ children }) {
   const pathname = usePathname();
+  const { t, path } = useI18n();
+  const currentPath = splitLocale(pathname || '/').path;
   const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -55,28 +60,30 @@ export default function AppShell({ children }) {
     });
   }, []);
 
+  const navLabel = (item) => t(`nav.${item.href === '/' ? 'home' : item.href.slice(1)}`);
   const navLink = (item) => (
     <Link
       key={item.href}
-      href={item.href}
-      className={`nav-link${pathname === item.href ? ' is-active' : ''}`}
-      aria-current={pathname === item.href ? 'page' : undefined}
-      title={item.label}
+      href={path(item.href)}
+      className={`nav-link${currentPath === item.href ? ' is-active' : ''}`}
+      aria-current={currentPath === item.href ? 'page' : undefined}
+      title={navLabel(item)}
     >
       <Icon name={item.icon} />
       <span className="label">
-        {item.label}
-        {item.soon && <span className="soon-badge">Soon</span>}
+        {navLabel(item)}
+        {item.soon && <span className="soon-badge">{t('shell.soon')}</span>}
       </span>
     </Link>
   );
+  const groupLabel = (group) => t(group.id === 'formats' ? 'nav.groupFormats' : 'nav.groupTools');
 
   return (
     <div className={`app${collapsed ? ' is-collapsed' : ''}${open ? ' is-open' : ''}`}>
-      <a href="#main" className="skip-link">Skip to content</a>
+      <a href="#main" className="skip-link">{t('shell.skip')}</a>
 
-      <aside className="sidebar" id="sidebar" aria-label="Site navigation">
-        <Link href="/" className="sidebar__brand" aria-label="MP3 Converter home">
+      <aside className="sidebar" id="sidebar" aria-label={t('shell.navLabel')}>
+        <Link href={path('/')} className="sidebar__brand" aria-label={t('shell.home')}>
           <img src="/images/logo.svg" alt="" width="34" height="34" />
           <span>MP3 Converter</span>
         </Link>
@@ -91,7 +98,7 @@ export default function AppShell({ children }) {
                 className="nav-group__toggle"
                 aria-expanded={groups[group.id]}
                 aria-controls={`group-${group.id}`}
-                title={group.label}
+                title={groupLabel(group)}
                 onClick={() => {
                   // In the icon rail, a group click expands the sidebar so its links become visible.
                   if (collapsed && !isMobile()) {
@@ -103,7 +110,7 @@ export default function AppShell({ children }) {
                 }}
               >
                 <Icon name={group.icon} />
-                <span className="label">{group.label}</span>
+                <span className="label">{groupLabel(group)}</span>
                 <Icon name="chevronUp" className="icon chev" />
               </button>
               <ul className="nav-group__list" id={`group-${group.id}`} hidden={!groups[group.id]}>
@@ -117,11 +124,9 @@ export default function AppShell({ children }) {
         <div className="sidebar__foot">
           <a href="#converter" className="btn-pill" onClick={() => setOpen(false)}>
             <Icon name="upload" />
-            <span className="label">Convert a file</span>
+            <span className="label">{t('shell.convertFile')}</span>
           </a>
-          <button type="button" className="icon-btn" aria-label="Language: English" title="English">
-            <Icon name="globe" />
-          </button>
+          <LanguageSwitcher />
         </div>
       </aside>
 
@@ -133,12 +138,12 @@ export default function AppShell({ children }) {
             type="button"
             className="icon-btn"
             onClick={toggleSidebar}
-            aria-label="Toggle navigation"
+            aria-label={t('shell.toggleNav')}
             aria-controls="sidebar"
           >
             <Icon name="panel" />
           </button>
-          <Link href="/" className="topbar__brand">
+          <Link href={path('/')} className="topbar__brand">
             <img src="/images/logo.svg" alt="" width="32" height="32" />
             MP3 Converter
           </Link>

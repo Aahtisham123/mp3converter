@@ -2,23 +2,25 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import { PrivacyNote, ProgressBar, Toggle } from './tool-ui';
 import { ACCEPT, MAX_BYTES, baseName, convertWithFfmpeg, encodeAmr, extOf, formatBytes, mediaDuration } from '@/lib/audio-engine';
 import { REVERSE_TARGETS } from '@/lib/reverse-formats';
 
-function stageText(it) {
+function stageText(it, t) {
   switch (it.stage) {
     case 'queued':
-      return 'Waiting…';
+      return t('stage.queued');
     case 'loading':
-      return 'Loading the converter (first time only)…';
+      return t('stage.loadingConverter');
     case 'decoding':
     case 'ffmpeg-loading':
     case 'ffmpeg-decoding':
-      return 'Reading audio…';
+      return t('stage.decoding');
     case 'converting':
     case 'encoding':
-      return `Converting… ${it.pct || 0}%`;
+      return t('stage.convertingPct', { pct: it.pct || 0 });
     default:
       return '';
   }
@@ -27,6 +29,9 @@ function stageText(it) {
 /** Converts MP3 (or other audio) files into the page's format, e.g. MP3 to WMA. */
 export default function ReverseConverter({ target }) {
   const t = REVERSE_TARGETS[target];
+  const { t: tr, lang, dict } = useI18n();
+  const words = (dict.reverseFormats && dict.reverseFormats[target]) || {};
+  const optionLabel = (o) => (words.options && words.options[o.value]) || o.label;
   const [option, setOption] = useState(t.defaultOption);
   const [mono, setMono] = useState(Boolean(t.defaultMono));
   const [items, setItems] = useState([]);
@@ -74,7 +79,7 @@ export default function ReverseConverter({ target }) {
         if (alive()) {
           patch(id, {
             stage: 'error',
-            error: 'This file could not be converted. It may be damaged, protected or not an audio file.',
+            error: tr('errors.reverseFailed'),
           });
         }
       }
@@ -99,7 +104,7 @@ export default function ReverseConverter({ target }) {
           stage: tooBig ? 'error' : 'queued',
           progress: 0,
           pct: 0,
-          error: tooBig ? 'This file is larger than 500 MB.' : '',
+          error: tooBig ? tr('errors.tooBigShort') : '',
         };
       });
       setItems((list) => [...next, ...list]);
@@ -127,7 +132,7 @@ export default function ReverseConverter({ target }) {
       <div
         className={`converter${dragover ? ' is-dragover' : ''}`}
         role="region"
-        aria-label={`MP3 to ${t.label} converter`}
+        aria-label={tr('reverse.region', { format: t.label })}
         onDragOver={(e) => {
           e.preventDefault();
           setDragover(true);
@@ -149,18 +154,18 @@ export default function ReverseConverter({ target }) {
                 <div style={{ minWidth: 0 }}>
                   <div className="q-name" title={it.name}>{it.stage === 'done' ? outName(it) : it.name}</div>
                   <div className={`q-meta${it.stage === 'error' ? ' is-error' : ''}`}>
-                    {it.stage === 'done' ? `${formatBytes(it.size)} → ${formatBytes(it.outSize)} ${t.label}` : it.stage === 'error' ? it.error : stageText(it)}
+                    {it.stage === 'done' ? `${formatBytes(it.size)} → ${formatBytes(it.outSize)} ${t.label}` : it.stage === 'error' ? it.error : stageText(it, tr)}
                   </div>
-                  {!['done', 'error'].includes(it.stage) && <ProgressBar value={it.progress} label={`Converting ${it.name}`} />}
+                  {!['done', 'error'].includes(it.stage) && <ProgressBar value={it.progress} label={tr('converter.converting', { name: it.name })} />}
                   {it.stage === 'done' && canPreview && <audio className="q-audio" controls preload="none" src={it.url} />}
                 </div>
                 <div className="q-actions">
                   {it.stage === 'done' && (
                     <a className="q-dl" href={it.url} download={outName(it)}>
-                      <Icon name="download" className="icon icon-sm" /> Download
+                      <Icon name="download" className="icon icon-sm" /> {tr('converter.download')}
                     </a>
                   )}
-                  <button type="button" className="q-remove" onClick={() => removeItem(it.id)} aria-label={`Remove ${it.name}`}>
+                  <button type="button" className="q-remove" onClick={() => removeItem(it.id)} aria-label={tr('converter.remove', { name: it.name })}>
                     <Icon name="x" />
                   </button>
                 </div>
@@ -174,13 +179,13 @@ export default function ReverseConverter({ target }) {
             <Icon name="upload" />
           </span>
         </div>
-        <h2>Upload MP3 files to convert to {t.label}.</h2>
+        <h2>{tr('reverse.heading', { format: t.label })}</h2>
         <p className="converter__formats">
-          Works with <strong>MP3</strong> and other audio files (WAV, M4A, FLAC, OGG…), up to 500 MB per file
+          <Rich text={tr('reverse.works')} lang={lang} />
         </p>
         <div className="converter__actions">
           <button type="button" className="btn-grad" onClick={() => inputRef.current && inputRef.current.click()}>
-            <Icon name="upload" /> Choose MP3 Files
+            <Icon name="upload" /> {tr('reverse.choose')}
           </button>
           <input
             ref={inputRef}
@@ -194,17 +199,17 @@ export default function ReverseConverter({ target }) {
             }}
           />
         </div>
-        <p className="drop-hint">or drag and drop files here</p>
+        <p className="drop-hint">{tr('converter.dropHint')}</p>
 
         <div className="converter__options">
           {t.options.length > 1 && (
             <label className="opt">
-              {t.label} quality:
+              {tr('reverse.quality', { format: t.label })}
               <span className="select-wrap">
                 <Icon name="sliders" />
                 <select value={option} onChange={(e) => setOption(e.target.value)}>
                   {t.options.map((o) => (
-                    <option key={o.value} value={o.value}>{o.label}</option>
+                    <option key={o.value} value={o.value}>{optionLabel(o)}</option>
                   ))}
                 </select>
               </span>
@@ -213,10 +218,10 @@ export default function ReverseConverter({ target }) {
           {t.allowMono && (
             <>
               {t.options.length > 1 && <span className="opt-divider" aria-hidden="true" />}
-              <Toggle label="Mono (best for speech):" checked={mono} onChange={setMono} />
+              <Toggle label={tr('converter.mono')} checked={mono} onChange={setMono} />
             </>
           )}
-          {t.note && <p className="reverse-note">{t.note}</p>}
+          {t.note && <p className="reverse-note">{words.note || t.note}</p>}
         </div>
         <PrivacyNote />
       </div>

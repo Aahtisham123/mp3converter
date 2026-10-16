@@ -20,15 +20,15 @@ const ICONS = {
 };
 
 /** Row of social media icon links (edit the URLs in lib/site.js). */
-export default function SocialLinks() {
+export default function SocialLinks({ label = `${SITE.name} on social media`, itemLabel = `${SITE.name} on {name}` }) {
   return (
-    <ul className="social" aria-label={`${SITE.name} on social media`}>
+    <ul className="social" aria-label={label}>
       {SOCIAL_LINKS.map((s) => (
         <li key={s.icon}>
           <a
             href={s.href}
             className={`social__link social__link--${s.icon}`}
-            aria-label={`${SITE.name} on ${s.name}`}
+            aria-label={itemLabel.replace('{name}', s.name)}
             title={s.name}
             target={s.href.startsWith('http') ? '_blank' : undefined}
             rel={s.href.startsWith('http') ? 'noopener noreferrer' : undefined}

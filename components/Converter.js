@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import LinkDownloader from './LinkDownloader';
 import { BitrateSelect, PrivacyNote, ProgressBar, STANDARD_BITRATES, Toggle, overallProgress, stageText } from './tool-ui';
 import { ACCEPT, MAX_BYTES, baseName, decodeFile, encodeMp3, extOf, formatBytes, formatTime, toMono } from '@/lib/audio-engine';
@@ -9,7 +11,7 @@ import { ACCEPT, MAX_BYTES, baseName, decodeFile, encodeMp3, extOf, formatBytes,
 const DEFAULT_FORMATS = 'WAV, M4A, AAC, FLAC, OGG, OPUS, WMA, MP4, MOV, WEBM, MKV, AVI';
 
 export default function Converter({
-  heading = 'Upload an audio or video file to convert to MP3.',
+  heading,
   formats = DEFAULT_FORMATS,
   defaultBitrate = 192,
   bitrates = STANDARD_BITRATES,
@@ -19,8 +21,9 @@ export default function Converter({
   showLink = false,
   linkProps = {},
   compress = false,
-  buttonLabel = 'Choose Files',
+  buttonLabel,
 }) {
+  const { t, err: tErr, lang } = useI18n();
   const [mode, setMode] = useState(initialMode);
   const [bitrate, setBitrate] = useState(defaultBitrate);
   const [mono, setMono] = useState(defaultMono);
@@ -60,10 +63,10 @@ export default function Converter({
         urlsRef.current.add(url);
         patch(id, { stage: 'done', progress: 100, url, outSize: blob.size });
       } catch (err) {
-        if (alive()) patch(id, { stage: 'error', error: (err && err.message) || 'Conversion failed.' });
+        if (alive()) patch(id, { stage: 'error', error: tErr(err && err.message) || t('converter.failed') });
       }
     },
-    [patch],
+    [patch, t, tErr],
   );
 
   const convert = useCallback(
@@ -91,12 +94,12 @@ export default function Converter({
           stage: tooBig ? 'error' : 'queued',
           progress: 0,
           pct: 0,
-          error: tooBig ? 'This file is larger than 500 MB. Please trim or split it first.' : '',
+          error: tooBig ? t('converter.tooBig') : '',
         };
       });
       setItems((list) => [...next, ...list]);
     },
-    [convert],
+    [convert, t],
   );
 
   const removeItem = (id) => {
@@ -142,7 +145,7 @@ export default function Converter({
   const startRecording = async () => {
     setRecError('');
     if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
-      setRecError('Recording is not supported in this browser. Please try Chrome, Edge, Firefox or Safari.');
+      setRecError(t('converter.recUnsupported'));
       return;
     }
     let stream;
@@ -151,8 +154,8 @@ export default function Converter({
     } catch (err) {
       setRecError(
         err && err.name === 'NotFoundError'
-          ? 'No microphone was found. Plug one in and try again.'
-          : 'Microphone access was blocked. Allow it in your browser settings and try again.',
+          ? t('converter.recNoMic')
+          : t('converter.recBlocked'),
       );
       return;
     }
@@ -165,7 +168,7 @@ export default function Converter({
         clearInterval(timerRef.current);
         setRecState('idle');
         if (!chunks.length) {
-          setRecError('Nothing was recorded. Please try again.');
+          setRecError(t('converter.recEmpty'));
           return;
         }
         const type = rec.mimeType || chunks[0].type || 'audio/webm';
@@ -181,7 +184,7 @@ export default function Converter({
       setRecState('recording');
     } catch {
       stream.getTracks().forEach((t) => t.stop());
-      setRecError('Recording could not start in this browser.');
+      setRecError(t('converter.recFailed'));
     }
   };
 
@@ -210,10 +213,10 @@ export default function Converter({
   const metaText = (it) => {
     if (it.stage === 'error') return it.error;
     if (it.stage === 'done') {
-      const saved = it.size > it.outSize ? ` · ${Math.round((1 - it.outSize / it.size) * 100)}% smaller` : '';
+      const saved = it.size > it.outSize ? ` · ${t('converter.smaller', { pct: Math.round((1 - it.outSize / it.size) * 100) })}` : '';
       return `${formatBytes(it.size)} → ${formatBytes(it.outSize)} · ${it.kbps} kbps · ${formatTime(it.duration)}${compress ? saved : ''}`;
     }
-    return stageText(it.stage, it.pct);
+    return stageText(it.stage, it.pct, t);
   };
 
   const hasTabs = showRecord || showLink;
@@ -223,18 +226,18 @@ export default function Converter({
   return (
     <div className="converter-wrap" id="converter">
       {hasTabs && (
-        <div className="mode-tabs" role="tablist" aria-label="Choose input">
+        <div className="mode-tabs" role="tablist" aria-label={t('converter.chooseInput')}>
           <button type="button" role="tab" id="tab-upload" aria-controls="panel-converter" aria-selected={mode === 'upload'} className="mode-tab" onClick={() => setMode('upload')} disabled={recState === 'recording'}>
-            <Icon name="music" /> Upload
+            <Icon name="music" /> {t('converter.upload')}
           </button>
           {showLink && (
             <button type="button" role="tab" id="tab-link" aria-controls="panel-converter" aria-selected={mode === 'link'} className="mode-tab" onClick={() => setMode('link')} disabled={recState === 'recording'}>
-              <Icon name="link" /> Paste Link
+              <Icon name="link" /> {t('converter.pasteLink')}
             </button>
           )}
           {showRecord && (
             <button type="button" role="tab" id="tab-record" aria-controls="panel-converter" aria-selected={mode === 'record'} className="mode-tab" onClick={() => setMode('record')}>
-              <Icon name="mic" /> Record
+              <Icon name="mic" /> {t('converter.record')}
             </button>
           )}
         </div>
@@ -244,7 +247,7 @@ export default function Converter({
         id="panel-converter"
         role={hasTabs ? 'tabpanel' : 'region'}
         aria-labelledby={hasTabs ? `tab-${mode}` : undefined}
-        aria-label={hasTabs ? undefined : 'MP3 converter'}
+        aria-label={hasTabs ? undefined : t('converter.regionLabel')}
         className={`converter${dragover ? ' is-dragover' : ''}`}
         {...dropProps}
       >
@@ -257,16 +260,16 @@ export default function Converter({
                   <div style={{ minWidth: 0 }}>
                     <div className="q-name" title={it.name}>{it.stage === 'done' ? `${baseName(it.name)}.mp3` : it.name}</div>
                     <div className={`q-meta${it.stage === 'error' ? ' is-error' : ''}`}>{metaText(it)}</div>
-                    {!['done', 'error'].includes(it.stage) && <ProgressBar value={it.progress} label={`Converting ${it.name}`} />}
+                    {!['done', 'error'].includes(it.stage) && <ProgressBar value={it.progress} label={t('converter.converting', { name: it.name })} />}
                     {it.stage === 'done' && <audio className="q-audio" controls preload="none" src={it.url} />}
                   </div>
                   <div className="q-actions">
                     {it.stage === 'done' && (
                       <a className="q-dl" href={it.url} download={`${baseName(it.name)}.mp3`}>
-                        <Icon name="download" className="icon icon-sm" /> Download
+                        <Icon name="download" className="icon icon-sm" /> {t('converter.download')}
                       </a>
                     )}
-                    <button type="button" className="q-remove" onClick={() => removeItem(it.id)} aria-label={`Remove ${it.name}`} title={busy && !['done', 'error'].includes(it.stage) ? 'Cancel' : 'Remove'}>
+                    <button type="button" className="q-remove" onClick={() => removeItem(it.id)} aria-label={t('converter.remove', { name: it.name })} title={busy && !['done', 'error'].includes(it.stage) ? t('converter.cancel') : t('converter.removeShort')}>
                       <Icon name="x" />
                     </button>
                   </div>
@@ -276,12 +279,12 @@ export default function Converter({
             <div className="queue-bar">
               {doneCount > 1 && (
                 <button type="button" className="btn-outline btn-sm" onClick={downloadAll}>
-                  <Icon name="download" className="icon icon-sm" /> Download all ({doneCount})
+                  <Icon name="download" className="icon icon-sm" /> {t('converter.downloadAll', { count: doneCount })}
                 </button>
               )}
               {!busy && (
                 <button type="button" className="btn-link" onClick={clearDone}>
-                  Clear list
+                  {t('converter.clearList')}
                 </button>
               )}
             </div>
@@ -296,21 +299,21 @@ export default function Converter({
 
         {mode === 'link' ? (
           <>
-            <h2>{linkProps.heading || 'Paste a link to an audio or video file to convert it to MP3.'}</h2>
+            <h2>{linkProps.heading || t('converter.linkHeading')}</h2>
             <p className="converter__formats">
-              {linkProps.subheading || 'Works with direct MP3, MP4, WAV and other media links, plus many free video and audio websites'}
+              {linkProps.subheading || t('converter.linkSub')}
             </p>
             <LinkDownloader formats={['mp3']} sites="other" {...linkProps} />
           </>
         ) : mode === 'upload' ? (
           <>
-            <h2>{heading}</h2>
+            <h2>{heading || t('converter.heading')}</h2>
             <p className="converter__formats">
-              Supported formats: <strong>{formats}</strong> and more, up to 500 MB per file
+              <Rich text={t('converter.supported', { formats })} lang={lang} />
             </p>
             <div className="converter__actions">
               <button type="button" className="btn-grad" onClick={() => inputRef.current && inputRef.current.click()}>
-                <Icon name="upload" /> {buttonLabel}
+                <Icon name="upload" /> {buttonLabel || t('converter.chooseFiles')}
               </button>
               <input
                 ref={inputRef}
@@ -324,27 +327,27 @@ export default function Converter({
                 }}
               />
             </div>
-            <p className="drop-hint">or drag and drop files here</p>
+            <p className="drop-hint">{t('converter.dropHint')}</p>
           </>
         ) : (
           <>
-            <h2>Record your voice and save it as an MP3.</h2>
+            <h2>{t('converter.recordHeading')}</h2>
             {recState === 'recording' ? (
               <p className="recorder__time">
                 <span className="rec-dot" aria-hidden="true" />
                 {formatTime(recSeconds)}
               </p>
             ) : (
-              <p className="converter__formats">Uses your microphone. The recording never leaves your device.</p>
+              <p className="converter__formats">{t('converter.recordNote')}</p>
             )}
             <div className="converter__actions">
               {recState === 'recording' ? (
                 <button type="button" className="btn-grad" onClick={stopRecording}>
-                  <Icon name="stop" /> Stop &amp; Convert
+                  <Icon name="stop" /> {t('converter.stopConvert')}
                 </button>
               ) : (
                 <button type="button" className="btn-grad" onClick={startRecording}>
-                  <Icon name="record" /> Start Recording
+                  <Icon name="record" /> {t('converter.startRecording')}
                 </button>
               )}
             </div>
@@ -357,7 +360,7 @@ export default function Converter({
             <div className="converter__options">
               <BitrateSelect value={bitrate} onChange={setBitrate} options={bitrates} />
               <span className="opt-divider" aria-hidden="true" />
-              <Toggle label="Mono (best for speech):" checked={mono} onChange={setMono} />
+              <Toggle label={t('converter.mono')} checked={mono} onChange={setMono} />
             </div>
             <PrivacyNote />
           </>

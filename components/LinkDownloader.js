@@ -2,31 +2,17 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import { formatBytes, formatTime } from '@/lib/audio-engine';
 import { DOWNLOADER_URL } from '@/lib/site';
 
+// Plain labels; some get a translated description from the dictionary (link.mp3Qualities etc.).
 const QUALITIES = {
-  mp3: [
-    { value: 64, label: '64 kbps (smallest)' },
-    { value: 96, label: '96 kbps' },
-    { value: 128, label: '128 kbps' },
-    { value: 160, label: '160 kbps' },
-    { value: 192, label: '192 kbps (recommended)' },
-    { value: 256, label: '256 kbps' },
-    { value: 320, label: '320 kbps (best)' },
-  ],
-  mp4: [
-    { value: 240, label: '240p (smallest)' },
-    { value: 360, label: '360p' },
-    { value: 480, label: '480p' },
-    { value: 720, label: '720p HD' },
-    { value: 1080, label: '1080p Full HD' },
-  ],
+  mp3: [64, 96, 128, 160, 192, 256, 320].map((value) => ({ value, label: `${value} kbps` })),
+  mp4: [240, 360, 480, 720, 1080].map((value) => ({ value, label: `${value}p` })),
+  wav: [44100, 48000].map((value) => ({ value, label: `${value / 1000} kHz` })),
 };
-QUALITIES.wav = [
-  { value: 44100, label: '44.1 kHz (CD quality)' },
-  { value: 48000, label: '48 kHz (video standard)' },
-];
 const DEFAULT_QUALITY = { mp3: 192, mp4: 720, wav: 44100 };
 const hasAudioExtras = (t) => t === 'mp3' || t === 'wav';
 
@@ -50,22 +36,23 @@ function parseTime(value) {
   return v.split(':').reduce((sum, part) => sum * 60 + Number(part), 0);
 }
 
-/** Checks a link against the page's rules. Returns null or { message, href, label }. */
+/** Checks a link against the page's rules. Returns null or { message, href, label } as dictionary keys. */
 function siteProblem(link, sites) {
   const host = hostOf(link);
   if (sites === 'youtube' && !matches(host, YOUTUBE_HOSTS)) {
-    return { message: 'This tool works with YouTube links only. For other websites, use our Online Video Downloader.', href: '/online-video-downloader', label: 'Open Online Video Downloader' };
+    return { message: 'link.youtubeOnly', href: '/online-video-downloader', label: 'link.youtubeOnlyCta' };
   }
   if (sites === 'other' && matches(host, YOUTUBE_HOSTS)) {
-    return { message: 'For YouTube links, please use our dedicated YouTube tools.', href: '/youtube-to-mp3', label: 'Open YouTube to MP3' };
+    return { message: 'link.useYoutubeTools', href: '/youtube-to-mp3', label: 'link.useYoutubeToolsCta' };
   }
   if (sites === 'other' && matches(host, TIKTOK_HOSTS)) {
-    return { message: 'TikTok support is coming soon. Please check back shortly.', href: '/tiktok-to-mp3', label: 'About TikTok to MP3' };
+    return { message: 'link.tiktokSoon', href: '/tiktok-to-mp3', label: 'link.tiktokSoonCta' };
   }
   return null;
 }
 
-async function api(path, options) {
+/** Calls the download server. Errors carry a translated message (`t` is from useI18n). */
+async function api(path, options, t) {
   let res;
   try {
     res = await fetch(`${DOWNLOADER_URL}${path}`, {
@@ -80,15 +67,15 @@ async function api(path, options) {
         `[MP3 Converter] The download server at ${DOWNLOADER_URL} is running but refused this website. ` +
           `Add "${window.location.origin}" to ALLOWED_ORIGINS on the download server.`,
       );
-      throw new Error('Link downloads are not available on this website address yet. Please try again later.');
+      throw Object.assign(new Error(t('link.notAllowed')), { local: true });
     } catch (err) {
-      if (err.message.startsWith('Link downloads')) throw err;
+      if (err.local) throw err;
       console.error(`[MP3 Converter] The download server at ${DOWNLOADER_URL} is not responding. Is it running?`);
     }
-    throw new Error('Could not reach the download server. It may be starting up, so please wait a minute and try again.');
+    throw new Error(t('link.unreachable'));
   }
   const data = await res.json().catch(() => ({}));
-  if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+  if (!res.ok) throw new Error(data.error || t('link.generic'));
   return data;
 }
 
@@ -131,8 +118,13 @@ export default function LinkDownloader({
   sites = 'any', // 'any' | 'youtube' | 'other'
   advanced = false, // MP3 extras: mono and trim
   defaultType,
-  placeholder = 'Paste a video or audio link…',
+  placeholder,
 }) {
+  const { t, err: tErr, path: lp, lang, dict } = useI18n();
+  const qualityLabel = (kind, q) => {
+    const extra = dict.link && dict.link[`${kind}Qualities`] && dict.link[`${kind}Qualities`][q.value];
+    return extra || q.label;
+  };
   const initialType = defaultType && formats.includes(defaultType) ? defaultType : formats[0];
   const [url, setUrl] = useState('');
   const [type, setType] = useState(initialType);
@@ -162,7 +154,7 @@ export default function LinkDownloader({
       const text = await navigator.clipboard.readText();
       if (text) setUrl(text.trim());
     } catch {
-      setError('Your browser blocked clipboard access. Please paste with Ctrl+V or a long press.');
+      setError(t('link.clipboard'));
     }
   };
 
@@ -170,16 +162,16 @@ export default function LinkDownloader({
     pollRef.current = setTimeout(async () => {
       if (run !== runRef.current) return;
       try {
-        const data = await api(`/api/jobs/${id}`);
+        const data = await api(`/api/jobs/${id}`, undefined, t);
         if (run !== runRef.current) return;
         setJob(data);
         if (data.status === 'error') {
-          setError(data.error);
+          setError(tErr(data.error));
           setJob(null);
         } else if (data.status !== 'done') poll(id, run);
       } catch (err) {
         if (run !== runRef.current) return;
-        setError(err.message);
+        setError(tErr(err.message));
         setJob(null);
       }
     }, 1000);
@@ -192,13 +184,13 @@ export default function LinkDownloader({
     setError('');
     setHint(null);
     if (!/^https?:\/\//i.test(link)) {
-      setError('Please paste a full link that starts with http:// or https://');
+      setError(t('link.fullLink'));
       return;
     }
     const problem = siteProblem(link, sites);
     if (problem) {
-      setError(problem.message);
-      setHint(problem);
+      setError(t(problem.message));
+      setHint({ href: problem.href, label: t(problem.label) });
       return;
     }
     const extras = {};
@@ -208,7 +200,7 @@ export default function LinkDownloader({
         const a = parseTime(trimStart) ?? 0;
         const b = parseTime(trimEnd);
         if (Number.isNaN(a) || b == null || Number.isNaN(b) || b <= a) {
-          setError('Please enter a start and end time like 1:20 and 2:45 (the end must be after the start).');
+          setError(t('link.badTimes'));
           return;
         }
         extras.start = a;
@@ -217,20 +209,20 @@ export default function LinkDownloader({
     }
     if (!DOWNLOADER_URL) {
       // The download server (downloader/) is not connected: NEXT_PUBLIC_DOWNLOADER_URL is not set.
-      setError('Link downloads are temporarily unavailable. Please try again later, or download the file and use Upload.');
+      setError(t('link.unavailable'));
       return;
     }
     clearTimeout(pollRef.current);
     const run = ++runRef.current;
     setJob({ status: 'queued', progress: 0 });
     try {
-      const data = await api('/api/jobs', { method: 'POST', body: JSON.stringify({ url: link, type, quality, ...extras }) });
+      const data = await api('/api/jobs', { method: 'POST', body: JSON.stringify({ url: link, type, quality, ...extras }) }, t);
       if (run !== runRef.current) return;
       setJob(data);
       if (data.status !== 'done') poll(data.id, run);
     } catch (err) {
       if (run !== runRef.current) return;
-      setError(err.message);
+      setError(tErr(err.message));
       setJob(null);
     }
   };
@@ -247,14 +239,14 @@ export default function LinkDownloader({
     setUrl('');
   };
 
-  let ringLabel = 'Starting…';
+  let ringLabel = t('link.starting');
   let spinning = true;
   if (job) {
-    if (job.status === 'converting') ringLabel = type === 'mp3' ? 'Converting…' : 'Finishing…';
+    if (job.status === 'converting') ringLabel = type === 'mp3' ? t('link.convertingRing') : t('link.finishing');
     else if (job.status === 'downloading' && job.progress > 0) {
-      ringLabel = 'Downloading';
+      ringLabel = t('link.downloading');
       spinning = false;
-    } else if (job.title) ringLabel = 'Fetching…';
+    } else if (job.title) ringLabel = t('link.fetching');
   }
 
   const meta = job && (job.title || job.thumbnail) ? job : null;
@@ -263,7 +255,7 @@ export default function LinkDownloader({
     <div className="link-box">
       {!busy && !done && (
         <form className="link-form-v2" onSubmit={convert}>
-          <label className="sr-only" htmlFor="video-link">Video link</label>
+          <label className="sr-only" htmlFor="video-link">{t('link.linkLabel')}</label>
           <div className="link-input">
             <Icon name="link" />
             <input
@@ -272,36 +264,36 @@ export default function LinkDownloader({
               inputMode="url"
               autoComplete="off"
               spellCheck={false}
-              placeholder={placeholder}
+              placeholder={placeholder || t('link.placeholder')}
               value={url}
               onChange={(e) => setUrl(e.target.value)}
               required
             />
             {url ? (
-              <button type="button" className="q-remove" onClick={() => setUrl('')} aria-label="Clear link">
+              <button type="button" className="q-remove" onClick={() => setUrl('')} aria-label={t('link.clear')}>
                 <Icon name="x" />
               </button>
             ) : (
-              <button type="button" className="btn-link" onClick={paste}>Paste</button>
+              <button type="button" className="btn-link" onClick={paste}>{t('link.paste')}</button>
             )}
           </div>
 
           <div className="link-options">
             {formats.length > 1 && (
-              <div className="seg-control" role="group" aria-label="Format">
+              <div className="seg-control" role="group" aria-label={t('link.format')}>
                 <button type="button" aria-pressed={type === 'mp3'} onClick={() => pickType('mp3')}>
-                  <Icon name="music" className="icon icon-sm" /> MP3 audio
+                  <Icon name="music" className="icon icon-sm" /> {t('link.mp3Audio')}
                 </button>
                 <button type="button" aria-pressed={type === 'mp4'} onClick={() => pickType('mp4')}>
-                  <Icon name="video" className="icon icon-sm" /> MP4 video
+                  <Icon name="video" className="icon icon-sm" /> {t('link.mp4Video')}
                 </button>
               </div>
             )}
             <span className="select-wrap">
               <Icon name="sliders" />
-              <select value={quality} onChange={(e) => setQuality(Number(e.target.value))} aria-label="Quality">
+              <select value={quality} onChange={(e) => setQuality(Number(e.target.value))} aria-label={t('link.quality')}>
                 {QUALITIES[type].map((q) => (
-                  <option key={q.value} value={q.value}>{q.label}</option>
+                  <option key={q.value} value={q.value}>{qualityLabel(type, q)}</option>
                 ))}
               </select>
             </span>
@@ -310,14 +302,14 @@ export default function LinkDownloader({
           {advanced && hasAudioExtras(type) && (
             <div className="link-advanced">
               <label className="opt">
-                Mono:
+                {t('link.mono')}
                 <span className="switch">
                   <input type="checkbox" role="switch" checked={mono} onChange={(e) => setMono(e.target.checked)} />
                   <span />
                 </span>
               </label>
               <label className="opt">
-                Cut a part:
+                {t('link.cut')}
                 <span className="switch">
                   <input type="checkbox" role="switch" checked={trimOn} onChange={(e) => setTrimOn(e.target.checked)} />
                   <span />
@@ -326,12 +318,12 @@ export default function LinkDownloader({
               {trimOn && (
                 <div className="link-trim">
                   <label className="time-field">
-                    From
-                    <input type="text" inputMode="numeric" placeholder="0:00" value={trimStart} onChange={(e) => setTrimStart(e.target.value)} aria-label="Start time" />
+                    {t('link.from')}
+                    <input type="text" inputMode="numeric" placeholder="0:00" value={trimStart} onChange={(e) => setTrimStart(e.target.value)} aria-label={t('link.startTime')} />
                   </label>
                   <label className="time-field">
-                    To
-                    <input type="text" inputMode="numeric" placeholder="2:30" value={trimEnd} onChange={(e) => setTrimEnd(e.target.value)} aria-label="End time" />
+                    {t('link.to')}
+                    <input type="text" inputMode="numeric" placeholder="2:30" value={trimEnd} onChange={(e) => setTrimEnd(e.target.value)} aria-label={t('link.endTime')} />
                   </label>
                 </div>
               )}
@@ -339,7 +331,7 @@ export default function LinkDownloader({
           )}
 
           <button type="submit" className="btn-grad link-convert" disabled={!url.trim()}>
-            <Icon name="zap" /> Convert to {type.toUpperCase()}
+            <Icon name="zap" /> {t('link.convertTo', { format: type.toUpperCase() })}
           </button>
         </form>
       )}
@@ -350,7 +342,7 @@ export default function LinkDownloader({
           {hint && hint.href && (
             <>
               {' '}
-              <a href={hint.href}>{hint.label} →</a>
+              <a href={lp(hint.href)}>{hint.label} →</a>
             </>
           )}
         </p>
@@ -367,13 +359,13 @@ export default function LinkDownloader({
                 <span className="media-mini__ph" aria-hidden="true"><Icon name={type === 'mp3' ? 'music' : 'video'} /></span>
               )}
               <div style={{ minWidth: 0 }}>
-                <div className="q-name" title={meta.title}>{meta.title || 'Your video'}</div>
+                <div className="q-name" title={meta.title}>{meta.title || t('link.yourVideo')}</div>
                 <div className="q-meta">
                   {[
                     meta.uploader,
                     meta.duration ? formatTime(meta.duration) : null,
-                    `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label.replace(/ \(.*\)/, '') || ''}`,
-                    advanced && hasAudioExtras(type) && mono ? 'Mono' : null,
+                    `${type.toUpperCase()} · ${QUALITIES[type].find((q) => q.value === quality)?.label || ''}`,
+                    advanced && hasAudioExtras(type) && mono ? t('link.mono').replace(/[:：]\s*$/, '') : null,
                     advanced && hasAudioExtras(type) && trimOn && trimEnd ? `${trimStart || '0:00'}–${trimEnd}` : null,
                   ]
                     .filter(Boolean)
@@ -386,8 +378,8 @@ export default function LinkDownloader({
           {busy && (
             <>
               <ProgressRing percent={job.progress || 0} spinning={spinning} label={ringLabel} />
-              <p className="ring-hint">Please keep this page open. Long videos can take a minute or two.</p>
-              <button type="button" className="btn-link" onClick={reset}>Cancel</button>
+              <p className="ring-hint">{t('link.keepOpen')}</p>
+              <button type="button" className="btn-link" onClick={reset}>{t('link.cancel')}</button>
             </>
           )}
 
@@ -396,16 +388,16 @@ export default function LinkDownloader({
               <a className="ring-download" href={`${DOWNLOADER_URL}/api/jobs/${job.id}/file`} download={job.filename}>
                 <span className="ring-download__inner">
                   <Icon name="download" />
-                  <span>Download</span>
+                  <span>{t('link.download')}</span>
                   <small>{type.toUpperCase()} · {formatBytes(job.size)}</small>
                 </span>
               </a>
               <p className="ring-file" title={job.filename}>{job.filename}</p>
               <div className="ring-actions">
                 <button type="button" className="btn-outline btn-sm" onClick={reset}>
-                  <Icon name="sliders" className="icon icon-sm" /> Other format
+                  <Icon name="sliders" className="icon icon-sm" /> {t('link.otherFormat')}
                 </button>
-                <button type="button" className="btn-link" onClick={startOver}>Convert another link</button>
+                <button type="button" className="btn-link" onClick={startOver}>{t('link.another')}</button>
               </div>
             </>
           )}
@@ -413,8 +405,7 @@ export default function LinkDownloader({
       )}
 
       <p className="link-legal">
-        Only download videos you own or have permission to use. Files are deleted from our server after 30 minutes.{' '}
-        <a href="/copyright">Copyright policy</a>
+        <Rich text={t('link.legal')} lang={lang} />
       </p>
     </div>
   );

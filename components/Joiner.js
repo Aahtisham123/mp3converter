@@ -2,18 +2,16 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
+import Rich from './Rich';
 import { BitrateSelect, PrivacyNote, ProgressBar, Toggle, overallProgress, stageText } from './tool-ui';
 import { ACCEPT, MAX_BYTES, TARGET_RATE, concatClips, decodeFile, encodeMp3, extOf, formatBytes, formatTime, toMono } from '@/lib/audio-engine';
 
-const GAPS = [
-  { value: 0, label: 'No gap' },
-  { value: 0.5, label: '0.5 second' },
-  { value: 1, label: '1 second' },
-  { value: 2, label: '2 seconds' },
-  { value: 3, label: '3 seconds' },
-];
+// Labels come from the dictionary (joiner.gaps).
+const GAPS = [0, 0.5, 1, 2, 3];
 
 export default function Joiner() {
+  const { t, err: tErr, lang, dict } = useI18n();
   const [clips, setClips] = useState([]); // {id, name, ext, size, stage, progress, pct, duration, error}
   const [gap, setGap] = useState(0);
   const [bitrate, setBitrate] = useState(192);
@@ -43,7 +41,7 @@ export default function Joiner() {
       stage: file.size > MAX_BYTES ? 'error' : 'queued',
       progress: 0,
       pct: 0,
-      error: file.size > MAX_BYTES ? 'Larger than 500 MB.' : '',
+      error: file.size > MAX_BYTES ? t('joiner.tooBig') : '',
     }));
     setClips((list) => [...list, ...added]);
     added
@@ -85,7 +83,7 @@ export default function Joiner() {
   const join = async () => {
     setError('');
     if (ready.length < 2) {
-      setError('Add at least two files to join.');
+      setError(t('joiner.needTwo'));
       return;
     }
     setJoining(0);
@@ -97,7 +95,7 @@ export default function Joiner() {
         return { url: URL.createObjectURL(blob), size: blob.size, secs: total, kbps: bitrate };
       });
     } catch (err) {
-      setError(err.message || 'Joining failed. Try fewer or shorter files.');
+      setError(tErr(err.message) || t('joiner.failed'));
     }
     setJoining(null);
   };
@@ -127,7 +125,7 @@ export default function Joiner() {
 
   return (
     <div className="converter-wrap" id="converter">
-      <div className={`converter${dragover ? ' is-dragover' : ''}`} role="region" aria-label="Audio joiner" {...dropProps}>
+      <div className={`converter${dragover ? ' is-dragover' : ''}`} role="region" aria-label={t('joiner.region')} {...dropProps}>
         <input ref={inputRef} type="file" accept={ACCEPT} multiple hidden onChange={(e) => { addFiles(e.target.files); e.target.value = ''; }} />
 
         {clips.length > 0 && (
@@ -138,14 +136,14 @@ export default function Joiner() {
                 <div style={{ minWidth: 0 }}>
                   <div className="q-name" title={c.name}>{c.name}</div>
                   <div className={`q-meta${c.stage === 'error' ? ' is-error' : ''}`}>
-                    {c.stage === 'ready' ? `${formatTime(c.duration)} · ${formatBytes(c.size)}` : c.stage === 'error' ? c.error : stageText(c.stage, c.pct)}
+                    {c.stage === 'ready' ? `${formatTime(c.duration)} · ${formatBytes(c.size)}` : c.stage === 'error' ? tErr(c.error) : stageText(c.stage, c.pct, t)}
                   </div>
-                  {!['ready', 'error'].includes(c.stage) && <ProgressBar value={c.progress} label={`Loading ${c.name}`} />}
+                  {!['ready', 'error'].includes(c.stage) && <ProgressBar value={c.progress} label={t('joiner.loading', { name: c.name })} />}
                 </div>
                 <div className="q-actions">
-                  <button type="button" className="q-remove" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Move ${c.name} up`}><Icon name="arrowUp" /></button>
-                  <button type="button" className="q-remove" onClick={() => move(i, 1)} disabled={i === clips.length - 1} aria-label={`Move ${c.name} down`}><Icon name="arrowDown" /></button>
-                  <button type="button" className="q-remove" onClick={() => remove(c.id)} aria-label={`Remove ${c.name}`}><Icon name="x" /></button>
+                  <button type="button" className="q-remove" onClick={() => move(i, -1)} disabled={i === 0} aria-label={t('joiner.up', { name: c.name })}><Icon name="arrowUp" /></button>
+                  <button type="button" className="q-remove" onClick={() => move(i, 1)} disabled={i === clips.length - 1} aria-label={t('joiner.down', { name: c.name })}><Icon name="arrowDown" /></button>
+                  <button type="button" className="q-remove" onClick={() => remove(c.id)} aria-label={t('converter.remove', { name: c.name })}><Icon name="x" /></button>
                 </div>
               </li>
             ))}
@@ -155,30 +153,30 @@ export default function Joiner() {
         {clips.length === 0 ? (
           <>
             <div className="converter__icon" aria-hidden="true"><span><Icon name="layers" /></span></div>
-            <h2>Add two or more files to join into one MP3.</h2>
-            <p className="converter__formats">Mix <strong>MP3, WAV, M4A, FLAC, OGG, MP4, MOV</strong> and more, up to 500 MB per file</p>
+            <h2>{t('joiner.heading')}</h2>
+            <p className="converter__formats"><Rich text={t('joiner.mix', { formats: 'MP3, WAV, M4A, FLAC, OGG, MP4, MOV' })} lang={lang} /></p>
             <div className="converter__actions">
               <button type="button" className="btn-grad" onClick={() => inputRef.current.click()}>
-                <Icon name="upload" /> Choose Files
+                <Icon name="upload" /> {t('converter.chooseFiles')}
               </button>
             </div>
-            <p className="drop-hint">or drag and drop files here</p>
+            <p className="drop-hint">{t('converter.dropHint')}</p>
           </>
         ) : (
           <div className="converter__actions">
             <button type="button" className="btn-outline" onClick={() => inputRef.current.click()}>
-              <Icon name="plus" /> Add more files
+              <Icon name="plus" /> {t('joiner.addMore')}
             </button>
             <button type="button" className="btn-grad" onClick={join} disabled={loading || ready.length < 2 || joining != null}>
-              <Icon name="layers" /> Join {ready.length} files ({formatTime(total)})
+              <Icon name="layers" /> {t('joiner.join', { count: ready.length, time: formatTime(total) })}
             </button>
           </div>
         )}
 
         {joining != null && (
           <div className="tool-status" aria-live="polite">
-            <p className="q-meta">Joining and encoding MP3… {joining}%</p>
-            <ProgressBar value={joining} label="Encoding joined MP3" />
+            <p className="q-meta">{t('joiner.joining', { pct: joining })}</p>
+            <ProgressBar value={joining} label={t('joiner.joiningLabel')} />
           </div>
         )}
         {error && <p className="q-meta is-error" role="alert">{error}</p>}
@@ -192,25 +190,25 @@ export default function Joiner() {
               <audio className="q-audio" controls src={result.url} />
             </div>
             <a className="q-dl" href={result.url} download="joined-audio.mp3">
-              <Icon name="download" className="icon icon-sm" /> Download
+              <Icon name="download" className="icon icon-sm" /> {t('converter.download')}
             </a>
           </div>
         )}
 
         <div className="converter__options">
           <label className="opt">
-            Gap between files:
+            {t('joiner.gap')}
             <span className="select-wrap">
               <Icon name="sliders" />
               <select value={gap} onChange={(e) => setGap(Number(e.target.value))}>
-                {GAPS.map((g) => <option key={g.value} value={g.value}>{g.label}</option>)}
+                {GAPS.map((g) => <option key={g} value={g}>{(dict.joiner && dict.joiner.gaps && dict.joiner.gaps[g]) || `${g} s`}</option>)}
               </select>
             </span>
           </label>
           <span className="opt-divider" aria-hidden="true" />
           <BitrateSelect value={bitrate} onChange={setBitrate} />
           <span className="opt-divider" aria-hidden="true" />
-          <Toggle label="Mono:" checked={mono} onChange={setMono} />
+          <Toggle label={t('converter.monoShort')} checked={mono} onChange={setMono} />
         </div>
         <PrivacyNote />
       </div>

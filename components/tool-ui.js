@@ -1,31 +1,34 @@
 'use client';
 
 import Icon from './Icon';
+import { useI18n } from './I18nProvider';
 
+// Labels come from the dictionary (bitrates.<key>).
 export const STANDARD_BITRATES = [
-  { value: 128, label: '128 kbps (small)' },
-  { value: 192, label: '192 kbps (standard)' },
-  { value: 256, label: '256 kbps (high)' },
-  { value: 320, label: '320 kbps (best)' },
+  { value: 128, key: 'small' },
+  { value: 192, key: 'standard' },
+  { value: 256, key: 'high' },
+  { value: 320, key: 'best' },
 ];
 
 export const COMPRESS_BITRATES = [
-  { value: 32, label: '32 kbps (smallest, voice only)' },
-  { value: 64, label: '64 kbps (voice, podcasts)' },
-  { value: 96, label: '96 kbps (good balance)' },
-  { value: 128, label: '128 kbps (music, small)' },
-  { value: 160, label: '160 kbps (music, better)' },
+  { value: 32, key: 'smallestVoice' },
+  { value: 64, key: 'voice' },
+  { value: 96, key: 'balance' },
+  { value: 128, key: 'musicSmall' },
+  { value: 160, key: 'musicBetter' },
 ];
 
-export function BitrateSelect({ value, onChange, options = STANDARD_BITRATES, label = 'MP3 Quality:' }) {
+export function BitrateSelect({ value, onChange, options = STANDARD_BITRATES, label }) {
+  const { t } = useI18n();
   return (
     <label className="opt">
-      {label}
+      {label || t('converter.quality')}
       <span className="select-wrap">
         <Icon name="sliders" />
         <select value={value} onChange={(e) => onChange(Number(e.target.value))}>
           {options.map((o) => (
-            <option key={o.value} value={o.value}>{o.label}</option>
+            <option key={o.value} value={o.value}>{t(`bitrates.${o.key}`, { kbps: o.value })}</option>
           ))}
         </select>
       </span>
@@ -46,9 +49,10 @@ export function Toggle({ label, checked, onChange }) {
 }
 
 export function PrivacyNote() {
+  const { t } = useI18n();
   return (
     <p className="privacy-note">
-      <Icon name="lock" /> Files are processed inside your browser and are never uploaded to a server.
+      <Icon name="lock" /> {t('converter.privacy')}
     </p>
   );
 }
@@ -61,18 +65,19 @@ export function ProgressBar({ value, label }) {
   );
 }
 
-export function stageText(stage, pct) {
+/** Progress text for a decode/encode stage; `t` is the translate function from useI18n(). */
+export function stageText(stage, pct, t) {
   switch (stage) {
     case 'queued':
-      return 'Waiting…';
+      return t('stage.queued');
     case 'decoding':
-      return 'Reading audio…';
+      return t('stage.decoding');
     case 'ffmpeg-loading':
-      return 'Loading the advanced decoder for this format (first time only)…';
+      return t('stage.ffmpegLoading');
     case 'ffmpeg-decoding':
-      return `Extracting audio… ${pct}%`;
+      return t('stage.ffmpegDecoding', { pct });
     case 'encoding':
-      return `Encoding MP3… ${pct}%`;
+      return t('stage.encoding', { pct });
     default:
       return '';
   }
