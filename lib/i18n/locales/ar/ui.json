@@ -1,1 +1,358 @@
-{}
+{
+ "site": {
+  "defaultTitle": "MP3 Converter – محول MP3 مجاني للصوت والفيديو أونلاين",
+  "titleSuffix": "MP3 Converter",
+  "tagline": "محول MP3 مجاني وخاص يعمل داخل متصفحك. حوّل الصوت والفيديو إلى MP3 دون تثبيت برامج أو إنشاء حساب."
+ },
+ "shell": {
+  "skip": "انتقل إلى المحتوى",
+  "navLabel": "التنقل في الموقع",
+  "home": "الصفحة الرئيسية لـ MP3 Converter",
+  "toggleNav": "إظهار القائمة أو إخفاؤها",
+  "convertFile": "حوّل ملفاً",
+  "soon": "قريباً",
+  "language": "اللغة",
+  "chooseLanguage": "اختر اللغة"
+ },
+ "nav": {
+  "home": "الرئيسية",
+  "youtube-to-mp3": "تحويل يوتيوب إلى MP3",
+  "youtube-to-mp4": "تحميل يوتيوب MP4",
+  "youtube-to-wav": "تحويل يوتيوب إلى WAV",
+  "online-video-downloader": "تحميل الفيديو أونلاين",
+  "mp4-to-mp3": "تحويل MP4 إلى MP3",
+  "tiktok-to-mp3": "تحويل TikTok إلى MP3",
+  "video-to-mp3": "تحويل الفيديو إلى MP3",
+  "wav-to-mp3": "تحويل WAV إلى MP3",
+  "m4a-to-mp3": "تحويل M4A إلى MP3",
+  "voice-to-mp3": "تسجيل الصوت إلى MP3",
+  "flac-to-mp3": "FLAC إلى MP3",
+  "aac-to-mp3": "AAC إلى MP3",
+  "ogg-to-mp3": "OGG إلى MP3",
+  "opus-to-mp3": "OPUS إلى MP3",
+  "webm-to-mp3": "WEBM إلى MP3",
+  "mov-to-mp3": "MOV إلى MP3",
+  "mkv-to-mp3": "MKV إلى MP3",
+  "wma-to-mp3": "WMA إلى MP3",
+  "amr-to-mp3": "AMR إلى MP3",
+  "caf-to-mp3": "CAF إلى MP3",
+  "ac3-to-mp3": "AC3 إلى MP3",
+  "alac-to-mp3": "ALAC إلى MP3",
+  "m4b-to-mp3": "M4B إلى MP3",
+  "mp3-cutter": "قص MP3",
+  "mp3-compressor": "ضغط MP3",
+  "audio-joiner": "دمج الملفات الصوتية",
+  "podcast-to-mp3": "البودكاست إلى MP3",
+  "groupFormats": "أدوات تحويل MP3",
+  "groupTools": "أدوات MP3"
+ },
+ "footer": {
+  "follow": "تابعنا",
+  "socialLabel": "MP3 Converter على وسائل التواصل الاجتماعي",
+  "socialItem": "MP3 Converter على {name}",
+  "converters": "المحولات",
+  "formatsTools": "الصيغ والأدوات",
+  "company": "الشركة",
+  "about": "من نحن",
+  "contact": "اتصل بنا",
+  "privacy": "سياسة الخصوصية",
+  "terms": "شروط الاستخدام",
+  "copyright": "حقوق النشر وDMCA",
+  "rights": "© {year} mp3convert.tools. جميع الحقوق محفوظة.",
+  "disclaimer": "لا نتبع YouTube أو Google. يُرجى تحميل المحتوى الذي تملكه أو يحق لك استخدامه فقط."
+ },
+ "page": {
+  "breadcrumbHome": "الرئيسية",
+  "stepByStep": "خطوة بخطوة",
+  "howToUse": "طريقة استخدام {name}",
+  "faq": "الأسئلة الشائعة",
+  "faqTitle": "الأسئلة الشائعة",
+  "related": "أدوات ذات صلة",
+  "byTeam": "بقلم فريق MP3 Converter",
+  "teamText": "نصنع أدوات صوت مجانية تحترم الخصوصية وتعمل داخل متصفحك. راجعنا هذا الدليل وفق طريقة عمل الأداة فعلياً. [من نحن](/about)",
+  "lastUpdated": "آخر تحديث: أكتوبر 2026",
+  "aboutPage": "عن هذه الصفحة",
+  "notFoundTitle": "الصفحة غير موجودة",
+  "notFoundText": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+  "notFoundButton": "انتقل إلى محول MP3",
+  "operatingSystem": "أي نظام (يعمل في متصفح الويب)"
+ },
+ "badges": {
+  "comingSoon": "قريباً",
+  "free": "مجاني",
+  "mp3Up": "MP3 حتى 320 kbps",
+  "anyDevice": "أي جهاز",
+  "noSignup": "بدون تسجيل",
+  "mp4Up": "MP4 حتى 1080p",
+  "private": "خصوصية 100%",
+  "noLimits": "بلا حدود"
+ },
+ "converter": {
+  "chooseInput": "اختر المصدر",
+  "upload": "رفع",
+  "pasteLink": "لصق رابط",
+  "record": "تسجيل",
+  "regionLabel": "محول MP3",
+  "heading": "ارفع ملف صوت أو فيديو لتحويله إلى MP3.",
+  "chooseFiles": "اختر الملفات",
+  "supported": "الصيغ المدعومة: **{formats}** وغيرها، حتى 500 MB لكل ملف",
+  "dropHint": "أو اسحب الملفات وأفلتها هنا",
+  "linkHeading": "الصق رابط ملف صوت أو فيديو لتحويله إلى MP3.",
+  "linkSub": "يعمل مع روابط MP3 وMP4 وWAV المباشرة وروابط الوسائط الأخرى، إضافة إلى كثير من مواقع الفيديو والصوت المجانية",
+  "recordHeading": "سجّل صوتك واحفظه بصيغة MP3.",
+  "recordNote": "يستخدم الميكروفون. لا يغادر التسجيل جهازك أبداً.",
+  "startRecording": "ابدأ التسجيل",
+  "stopConvert": "إيقاف وتحويل",
+  "recUnsupported": "التسجيل غير مدعوم في هذا المتصفح. جرّب Chrome أو Edge أو Firefox أو Safari.",
+  "recNoMic": "لم يتم العثور على ميكروفون. وصّل ميكروفوناً وحاول مجدداً.",
+  "recBlocked": "تم حظر الوصول إلى الميكروفون. اسمح به من إعدادات المتصفح وحاول مجدداً.",
+  "recEmpty": "لم يتم تسجيل أي شيء. يُرجى المحاولة مجدداً.",
+  "recFailed": "تعذّر بدء التسجيل في هذا المتصفح.",
+  "tooBig": "حجم هذا الملف أكبر من 500 MB. يُرجى قصه أو تقسيمه أولاً.",
+  "failed": "فشل التحويل.",
+  "smaller": "أصغر بنسبة {pct}%",
+  "converting": "جارٍ تحويل {name}",
+  "download": "تحميل",
+  "remove": "إزالة {name}",
+  "cancel": "إلغاء",
+  "removeShort": "إزالة",
+  "downloadAll": "تحميل الكل ({count})",
+  "clearList": "مسح القائمة",
+  "quality": "جودة MP3:",
+  "mono": "أحادي (الأفضل للكلام):",
+  "monoShort": "أحادي:",
+  "privacy": "تتم معالجة الملفات داخل متصفحك ولا تُرفع إلى أي خادم."
+ },
+ "bitrates": {
+  "small": "{kbps} kbps (صغير)",
+  "standard": "{kbps} kbps (قياسي)",
+  "high": "{kbps} kbps (عالٍ)",
+  "best": "{kbps} kbps (الأفضل)",
+  "smallestVoice": "{kbps} kbps (الأصغر، للصوت فقط)",
+  "voice": "{kbps} kbps (كلام، بودكاست)",
+  "balance": "{kbps} kbps (توازن جيد)",
+  "musicSmall": "{kbps} kbps (موسيقى، حجم صغير)",
+  "musicBetter": "{kbps} kbps (موسيقى، جودة أفضل)"
+ },
+ "stage": {
+  "queued": "في الانتظار…",
+  "decoding": "جارٍ قراءة الصوت…",
+  "ffmpegLoading": "جارٍ تحميل أداة فك الترميز المتقدمة لهذه الصيغة (أول مرة فقط)…",
+  "ffmpegDecoding": "جارٍ استخراج الصوت… {pct}%",
+  "encoding": "جارٍ ترميز MP3… {pct}%",
+  "loadingConverter": "جارٍ تحميل المحول (أول مرة فقط)…",
+  "convertingPct": "جارٍ التحويل… {pct}%"
+ },
+ "errors": {
+  "tooBigSplit": "حجم هذا الملف أكبر من 500 MB. يُرجى تقسيمه أولاً.",
+  "noSound": "لم نعثر على أي صوت في هذا الملف. قد يكون فيديو صامتاً أو ملفاً تالفاً.",
+  "unreadable": "تعذّرت قراءة هذا الملف. قد يكون تالفاً أو محمياً (DRM) أو يستخدم ترميزاً نادراً جداً.",
+  "reverseFailed": "تعذّر تحويل هذا الملف. قد يكون تالفاً أو محمياً أو ليس ملفاً صوتياً.",
+  "tooBigShort": "حجم هذا الملف أكبر من 500 MB."
+ },
+ "direction": {
+  "label": "اتجاه التحويل",
+  "to": "إلى"
+ },
+ "reverse": {
+  "region": "محول MP3 إلى {format}",
+  "heading": "ارفع ملفات MP3 لتحويلها إلى {format}.",
+  "works": "يعمل مع **MP3** وملفات الصوت الأخرى (WAV وM4A وFLAC وOGG…)، حتى 500 MB لكل ملف",
+  "choose": "اختر ملفات MP3",
+  "quality": "جودة {format}:"
+ },
+ "link": {
+  "linkLabel": "رابط الفيديو",
+  "placeholder": "الصق رابط فيديو أو صوت…",
+  "clear": "مسح الرابط",
+  "paste": "لصق",
+  "format": "الصيغة",
+  "mp3Audio": "صوت MP3",
+  "mp4Video": "فيديو MP4",
+  "quality": "الجودة",
+  "mono": "أحادي:",
+  "cut": "قص جزء:",
+  "from": "من",
+  "to": "إلى",
+  "startTime": "وقت البداية",
+  "endTime": "وقت النهاية",
+  "convertTo": "تحويل إلى {format}",
+  "starting": "جارٍ البدء…",
+  "convertingRing": "جارٍ التحويل…",
+  "finishing": "جارٍ الإنهاء…",
+  "downloading": "جارٍ التحميل",
+  "fetching": "جارٍ الجلب…",
+  "yourVideo": "الفيديو الخاص بك",
+  "keepOpen": "يُرجى إبقاء هذه الصفحة مفتوحة. قد تستغرق الفيديوهات الطويلة دقيقة أو دقيقتين.",
+  "cancel": "إلغاء",
+  "download": "تحميل",
+  "otherFormat": "صيغة أخرى",
+  "another": "حوّل رابطاً آخر",
+  "legal": "حمّل فقط الفيديوهات التي تملكها أو لديك إذن باستخدامها. تُحذف الملفات من خادمنا بعد 30 دقيقة. [سياسة حقوق النشر](/copyright)",
+  "clipboard": "منع متصفحك الوصول إلى الحافظة. يُرجى اللصق باستخدام Ctrl+V أو بالضغط المطوّل.",
+  "fullLink": "يُرجى لصق رابط كامل يبدأ بـ http:// أو https://",
+  "badTimes": "يُرجى إدخال وقت بداية ونهاية مثل 1:20 و2:45 (يجب أن تكون النهاية بعد البداية).",
+  "unavailable": "التحميل من الروابط غير متاح مؤقتاً. يُرجى المحاولة لاحقاً، أو حمّل الملف واستخدم خيار الرفع.",
+  "notAllowed": "التحميل من الروابط غير متاح على عنوان هذا الموقع بعد. يُرجى المحاولة لاحقاً.",
+  "unreachable": "تعذّر الوصول إلى خادم التحميل. ربما يكون قيد التشغيل، لذا انتظر دقيقة وحاول مجدداً.",
+  "generic": "حدث خطأ ما. يُرجى المحاولة مجدداً.",
+  "youtubeOnly": "تعمل هذه الأداة مع روابط YouTube فقط. للمواقع الأخرى، استخدم أداة تحميل الفيديو أونلاين.",
+  "youtubeOnlyCta": "افتح أداة تحميل الفيديو",
+  "useYoutubeTools": "لروابط YouTube، يُرجى استخدام أدوات YouTube المخصصة.",
+  "useYoutubeToolsCta": "افتح يوتيوب إلى MP3",
+  "tiktokSoon": "دعم TikTok قادم قريباً. يُرجى العودة بعد قليل.",
+  "tiktokSoonCta": "عن TikTok إلى MP3",
+  "mp3Qualities": {
+   "64": "64 kbps (الأصغر)",
+   "192": "192 kbps (موصى به)",
+   "320": "320 kbps (الأفضل)"
+  },
+  "mp4Qualities": {
+   "240": "240p (الأصغر)",
+   "720": "720p HD",
+   "1080": "1080p Full HD"
+  },
+  "wavQualities": {
+   "44100": "44.1 kHz (جودة CD)",
+   "48000": "48 kHz (معيار الفيديو)"
+  },
+  "regionLabel": "محول روابط الفيديو"
+ },
+ "serverErrors": {
+  "Our download server is having trouble connecting right now. Please try again in a few minutes.": "يواجه خادم التحميل مشكلة في الاتصال حالياً. يُرجى المحاولة بعد بضع دقائق.",
+  "This video is age-restricted and cannot be downloaded.": "هذا الفيديو مقيّد بالعمر ولا يمكن تحميله.",
+  "The website is temporarily blocking downloads from our server. Please try again in a few minutes.": "يحظر الموقع مؤقتاً التحميل من خادمنا. يُرجى المحاولة بعد بضع دقائق.",
+  "This video is private or for members only, so it cannot be downloaded.": "هذا الفيديو خاص أو للأعضاء فقط، لذا لا يمكن تحميله.",
+  "That quality is not available for this video. Try another option.": "هذه الجودة غير متاحة لهذا الفيديو. جرّب خياراً آخر.",
+  "This video is copy protected (DRM) and cannot be downloaded.": "هذا الفيديو محمي من النسخ (DRM) ولا يمكن تحميله.",
+  "We could not find a video on that page. Try the direct link to the video page.": "لم نعثر على فيديو في تلك الصفحة. جرّب الرابط المباشر لصفحة الفيديو.",
+  "This video is too large to download here.": "هذا الفيديو كبير جداً بحيث لا يمكن تحميله هنا.",
+  "This video is unavailable or has been removed.": "هذا الفيديو غير متاح أو تمت إزالته.",
+  "Something went wrong while fetching this video. Please check the link and try again.": "حدث خطأ أثناء جلب هذا الفيديو. يُرجى التحقق من الرابط والمحاولة مجدداً.",
+  "Too many requests. Please wait a little and try again.": "طلبات كثيرة جداً. يُرجى الانتظار قليلاً والمحاولة مجدداً.",
+  "Playlists are not supported. Please paste the link to a single video.": "قوائم التشغيل غير مدعومة. يُرجى لصق رابط فيديو واحد.",
+  "Live streams cannot be downloaded.": "لا يمكن تحميل البث المباشر.",
+  "Please choose a valid format and quality.": "يُرجى اختيار صيغة وجودة صالحتين.",
+  "Please choose a valid start and end time (the end must be after the start).": "يُرجى اختيار وقت بداية ونهاية صالحين (يجب أن تكون النهاية بعد البداية).",
+  "You have reached the hourly download limit. Please try again later.": "لقد بلغت حد التحميل في الساعة. يُرجى المحاولة لاحقاً.",
+  "Our server is busy right now. Please try again in a minute.": "خادمنا مشغول حالياً. يُرجى المحاولة بعد دقيقة.",
+  "This download has expired. Please start again.": "انتهت صلاحية هذا التحميل. يُرجى البدء من جديد.",
+  "Server error. Please try again.": "خطأ في الخادم. يُرجى المحاولة مجدداً."
+ },
+ "serverErrorPrefixes": {
+  "Live streams and very long videos": "لا يمكن تحويل البث المباشر والفيديوهات الطويلة جداً.",
+  "Videos longer than": "هذا الفيديو طويل جداً بحيث لا يمكن تحميله هنا."
+ },
+ "soon": {
+  "region": "{name} (قريباً)",
+  "badge": "قريباً",
+  "linkLabel": "رابط (قريباً)",
+  "button": "تحويل إلى MP3 (قريباً)",
+  "note": "ما زلنا نختبر هذه الأداة. في هذه الأثناء، إذا كان لديك ملف فيديو محفوظ على جهازك، فحوّله باستخدام [MP4 إلى MP3](/mp4-to-mp3)."
+ },
+ "cutter": {
+  "region": "قص MP3",
+  "heading": "ارفع ملف صوت أو فيديو لقصه.",
+  "works": "يعمل مع **{formats}** وغيرها، حتى 500 MB",
+  "chooseFile": "اختر ملفاً",
+  "dropHint": "أو اسحب ملفاً وأفلته هنا",
+  "loadingAudio": "جارٍ تحميل الصوت",
+  "length": "المدة {time} · {size}",
+  "another": "اختر ملفاً آخر",
+  "startHandle": "بداية التحديد",
+  "endHandle": "نهاية التحديد",
+  "start": "البداية",
+  "end": "النهاية",
+  "selectionGroup": "ماذا تفعل بالجزء المحدد",
+  "keep": "إبقاء التحديد",
+  "removeSel": "حذف التحديد",
+  "fadeIn": "تلاشٍ عند البداية:",
+  "fadeOut": "تلاشٍ عند النهاية:",
+  "stop": "إيقاف",
+  "preview": "معاينة",
+  "save": "قص وحفظ MP3 ({time})",
+  "encoding": "جارٍ ترميز MP3… {pct}%",
+  "encodingLabel": "جارٍ ترميز MP3",
+  "tooShort": "الجزء المحدد قصير جداً.",
+  "failed": "تعذّر إنشاء ملف MP3."
+ },
+ "joiner": {
+  "region": "دمج الملفات الصوتية",
+  "loading": "جارٍ تحميل {name}",
+  "up": "نقل {name} لأعلى",
+  "down": "نقل {name} لأسفل",
+  "heading": "أضف ملفين أو أكثر لدمجها في ملف MP3 واحد.",
+  "mix": "ادمج **{formats}** وغيرها، حتى 500 MB لكل ملف",
+  "addMore": "أضف ملفات أخرى",
+  "join": "دمج {count} ملفات ({time})",
+  "joining": "جارٍ الدمج وترميز MP3… {pct}%",
+  "joiningLabel": "جارٍ ترميز ملف MP3 المدمج",
+  "needTwo": "أضف ملفين على الأقل للدمج.",
+  "failed": "فشل الدمج. جرّب عدداً أقل من الملفات أو ملفات أقصر.",
+  "gap": "الفاصل بين الملفات:",
+  "gaps": {
+   "0": "بلا فاصل",
+   "1": "ثانية واحدة",
+   "2": "ثانيتان",
+   "3": "3 ثوانٍ",
+   "0.5": "نصف ثانية"
+  },
+  "tooBig": "أكبر من 500 MB."
+ },
+ "reverseFormats": {
+  "wma": {},
+  "amr": {
+   "note": "AMR صيغة مخصصة للكلام: الناتج أحادي بتردد 8 kHz، مثل المكالمة الهاتفية.",
+   "options": {
+    "0": "4.75 kbps (الأصغر)",
+    "2": "5.9 kbps",
+    "4": "7.4 kbps",
+    "5": "7.95 kbps",
+    "6": "10.2 kbps",
+    "7": "12.2 kbps (أفضل جودة للصوت)"
+   }
+  },
+  "caf": {
+   "options": {
+    "alac": "Apple Lossless (ALAC)",
+    "pcm": "PCM غير مضغوط (الأكبر)"
+   }
+  },
+  "ac3": {},
+  "alac": {
+   "note": "يُحفظ كملف ‎.m4a بصوت Apple Lossless، جاهز لـ Apple Music وiTunes.",
+   "options": {
+    "alac": "Apple Lossless"
+   }
+  },
+  "m4b": {},
+  "flac": {
+   "note": "FLAC صيغة بلا فقدان، لذا تحافظ على ملف MP3 كما هو تماماً. لكنها لا تستعيد التفاصيل التي حذفها MP3 مسبقاً.",
+   "options": {
+    "flac": "FLAC بلا فقدان"
+   }
+  },
+  "aac": {},
+  "ogg": {},
+  "opus": {},
+  "webm": {
+   "note": "ينشئ ملف WebM صوتياً فقط بصوت Opus، مثالي للمواقع وتطبيقات الويب."
+  },
+  "mov": {
+   "note": "ينشئ فيديو QuickTime بخلفية داكنة بسيطة، لتستخدم صوتك في تطبيقات الفيديو ومواقع الرفع."
+  },
+  "wav": {
+   "note": "WAV صيغة غير مضغوطة (نحو 10 MB لكل دقيقة بالستيريو). تحافظ على صوت MP3 تماماً لكنها لا تستعيد التفاصيل التي حذفها MP3.",
+   "options": {
+    "44100": "44.1 kHz · 16-bit (جودة CD)",
+    "48000": "48 kHz · 16-bit (للفيديو)"
+   }
+  },
+  "mkv": {
+   "note": "ينشئ فيديو MKV بخلفية داكنة بسيطة وصوت MP3 الأصلي، دون إعادة ترميز الصوت.",
+   "options": {
+    "copy": "الإبقاء على صوت MP3 الأصلي (الأسرع)"
+   }
+  }
+ }
+}
