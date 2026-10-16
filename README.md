@@ -45,3 +45,16 @@ npm run build && npm start
 ## Content
 - Tool page text, steps and FAQs: `lib/tools.js`
 - Site name, URL, contact email and sidebar navigation: `lib/site.js`
+
+## Languages
+The site is available in English (at the root, e.g. `/youtube-to-mp3`) and in Spanish, Portuguese, French, German,
+Russian, Turkish, Arabic (right-to-left), Hindi and Indonesian under a language prefix (`/es/youtube-to-mp3`).
+`proxy.js` serves English from the root; pages live in `app/[lang]`.
+
+- English text: tool pages in `lib/tools.js`, the homepage in `lib/content/home.js`, the About/Contact/legal pages in
+  `lib/content/pages.js`, and interface text (buttons, menus, messages) in `lib/i18n/ui-en.js`.
+- Translations: `lib/i18n/locales/<lang>/{ui,home,pages,tools}.json`, with the same structure as the English source.
+  Anything missing falls back to English. A language without translation files is hidden from the switcher, the
+  sitemap and hreflang tags, and is marked `noindex`.
+- When you change English text, update the matching entry in each language file too.
+- Language list and URL helpers: `lib/i18n/config.js` (keep `proxy.js` in sync when adding a language).

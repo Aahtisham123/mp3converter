@@ -1,1 +1,358 @@
-{}
+{
+ "site": {
+  "defaultTitle": "MP3 Converter – ऑडियो और वीडियो को मुफ़्त में MP3 में बदलें",
+  "titleSuffix": "MP3 Converter",
+  "tagline": "मुफ़्त और प्राइवेट MP3 कन्वर्टर, जो आपके ब्राउज़र में ही चलता है। बिना कोई सॉफ़्टवेयर इंस्टॉल किए और बिना अकाउंट बनाए ऑडियो और वीडियो को MP3 में बदलें।"
+ },
+ "shell": {
+  "skip": "सीधे कंटेंट पर जाएँ",
+  "navLabel": "साइट नेविगेशन",
+  "home": "MP3 Converter होम",
+  "toggleNav": "मेन्यू खोलें/बंद करें",
+  "convertFile": "फ़ाइल कन्वर्ट करें",
+  "soon": "जल्द",
+  "language": "भाषा",
+  "chooseLanguage": "भाषा चुनें"
+ },
+ "nav": {
+  "home": "होम",
+  "youtube-to-mp3": "YouTube से MP3",
+  "youtube-to-mp4": "YouTube से MP4",
+  "youtube-to-wav": "YouTube से WAV",
+  "online-video-downloader": "ऑनलाइन वीडियो डाउनलोडर",
+  "mp4-to-mp3": "MP4 से MP3 कन्वर्टर",
+  "tiktok-to-mp3": "TikTok से MP3",
+  "video-to-mp3": "वीडियो से MP3 कन्वर्टर",
+  "wav-to-mp3": "WAV से MP3 कन्वर्टर",
+  "m4a-to-mp3": "M4A से MP3 कन्वर्टर",
+  "voice-to-mp3": "वॉइस रिकॉर्डर से MP3",
+  "flac-to-mp3": "FLAC से MP3",
+  "aac-to-mp3": "AAC से MP3",
+  "ogg-to-mp3": "OGG से MP3",
+  "opus-to-mp3": "OPUS से MP3",
+  "webm-to-mp3": "WEBM से MP3",
+  "mov-to-mp3": "MOV से MP3",
+  "mkv-to-mp3": "MKV से MP3",
+  "wma-to-mp3": "WMA से MP3",
+  "amr-to-mp3": "AMR से MP3",
+  "caf-to-mp3": "CAF से MP3",
+  "ac3-to-mp3": "AC3 से MP3",
+  "alac-to-mp3": "ALAC से MP3",
+  "m4b-to-mp3": "M4B से MP3",
+  "mp3-cutter": "MP3 कटर",
+  "mp3-compressor": "MP3 कंप्रेसर",
+  "audio-joiner": "ऑडियो जॉइनर",
+  "podcast-to-mp3": "पॉडकास्ट से MP3",
+  "groupFormats": "MP3 कन्वर्टर टूल्स",
+  "groupTools": "MP3 टूल्स"
+ },
+ "footer": {
+  "follow": "हमें फ़ॉलो करें",
+  "socialLabel": "सोशल मीडिया पर MP3 Converter",
+  "socialItem": "{name} पर MP3 Converter",
+  "converters": "कन्वर्टर",
+  "formatsTools": "फ़ॉर्मैट और टूल्स",
+  "company": "कंपनी",
+  "about": "हमारे बारे में",
+  "contact": "संपर्क करें",
+  "privacy": "प्राइवेसी पॉलिसी",
+  "terms": "उपयोग की शर्तें",
+  "copyright": "कॉपीराइट और DMCA",
+  "rights": "© {year} mp3convert.tools. सर्वाधिकार सुरक्षित।",
+  "disclaimer": "हमारा YouTube या Google से कोई संबंध नहीं है। कृपया सिर्फ़ वही कंटेंट डाउनलोड करें जो आपका है या जिसे इस्तेमाल करने की आपको अनुमति है।"
+ },
+ "page": {
+  "breadcrumbHome": "होम",
+  "stepByStep": "स्टेप बाय स्टेप",
+  "howToUse": "{name} कैसे इस्तेमाल करें",
+  "faq": "FAQ",
+  "faqTitle": "अक्सर पूछे जाने वाले सवाल",
+  "related": "मिलते-जुलते टूल्स",
+  "byTeam": "MP3 Converter टीम द्वारा",
+  "teamText": "हम मुफ़्त, प्राइवेसी-फ़र्स्ट ऑडियो टूल्स बनाते हैं जो आपके ब्राउज़र में चलते हैं। यह गाइड टूल के असली काम करने के तरीके से जाँचकर लिखी गई है। [हमारे बारे में](/about)",
+  "lastUpdated": "आख़िरी अपडेट: अक्टूबर 2026",
+  "aboutPage": "इस पेज के बारे में",
+  "notFoundTitle": "पेज नहीं मिला",
+  "notFoundText": "आप जो पेज ढूँढ रहे हैं, वह मौजूद नहीं है या कहीं और चला गया है।",
+  "notFoundButton": "MP3 Converter पर जाएँ",
+  "operatingSystem": "कोई भी (वेब ब्राउज़र में चलता है)"
+ },
+ "badges": {
+  "comingSoon": "जल्द आ रहा है",
+  "free": "मुफ़्त",
+  "mp3Up": "320 kbps तक MP3",
+  "anyDevice": "हर डिवाइस पर",
+  "noSignup": "साइन-अप नहीं",
+  "mp4Up": "1080p तक MP4",
+  "private": "100% प्राइवेट",
+  "noLimits": "कोई लिमिट नहीं"
+ },
+ "converter": {
+  "chooseInput": "इनपुट चुनें",
+  "upload": "अपलोड",
+  "pasteLink": "लिंक पेस्ट करें",
+  "record": "रिकॉर्ड",
+  "regionLabel": "MP3 कन्वर्टर",
+  "heading": "MP3 में बदलने के लिए ऑडियो या वीडियो फ़ाइल अपलोड करें।",
+  "chooseFiles": "फ़ाइलें चुनें",
+  "supported": "सपोर्टेड फ़ॉर्मैट: **{formats}** और कई अन्य, हर फ़ाइल 500 MB तक",
+  "dropHint": "या फ़ाइलें यहाँ ड्रैग और ड्रॉप करें",
+  "linkHeading": "MP3 में बदलने के लिए किसी ऑडियो या वीडियो फ़ाइल का लिंक पेस्ट करें।",
+  "linkSub": "सीधे MP3, MP4, WAV और दूसरे मीडिया लिंक के साथ-साथ कई मुफ़्त वीडियो और ऑडियो वेबसाइटों पर काम करता है",
+  "recordHeading": "अपनी आवाज़ रिकॉर्ड करें और उसे MP3 के रूप में सेव करें।",
+  "recordNote": "आपके माइक्रोफ़ोन का इस्तेमाल होता है। रिकॉर्डिंग आपके डिवाइस से बाहर नहीं जाती।",
+  "startRecording": "रिकॉर्डिंग शुरू करें",
+  "stopConvert": "रोकें और कन्वर्ट करें",
+  "recUnsupported": "इस ब्राउज़र में रिकॉर्डिंग सपोर्ट नहीं है। कृपया Chrome, Edge, Firefox या Safari आज़माएँ।",
+  "recNoMic": "कोई माइक्रोफ़ोन नहीं मिला। माइक लगाएँ और फिर से कोशिश करें।",
+  "recBlocked": "माइक्रोफ़ोन की अनुमति ब्लॉक है। ब्राउज़र सेटिंग्स में अनुमति दें और फिर से कोशिश करें।",
+  "recEmpty": "कुछ भी रिकॉर्ड नहीं हुआ। कृपया फिर से कोशिश करें।",
+  "recFailed": "इस ब्राउज़र में रिकॉर्डिंग शुरू नहीं हो सकी।",
+  "tooBig": "यह फ़ाइल 500 MB से बड़ी है। कृपया पहले इसे ट्रिम करें या हिस्सों में बाँटें।",
+  "failed": "कन्वर्ज़न नहीं हो सका।",
+  "smaller": "{pct}% छोटी",
+  "converting": "{name} कन्वर्ट हो रही है",
+  "download": "डाउनलोड",
+  "remove": "{name} हटाएँ",
+  "cancel": "रद्द करें",
+  "removeShort": "हटाएँ",
+  "downloadAll": "सभी डाउनलोड करें ({count})",
+  "clearList": "लिस्ट साफ़ करें",
+  "quality": "MP3 क्वालिटी:",
+  "mono": "मोनो (बोलचाल के लिए सबसे अच्छा):",
+  "monoShort": "मोनो:",
+  "privacy": "फ़ाइलें आपके ब्राउज़र में ही प्रोसेस होती हैं और कभी किसी सर्वर पर अपलोड नहीं होतीं।"
+ },
+ "bitrates": {
+  "small": "{kbps} kbps (छोटी)",
+  "standard": "{kbps} kbps (स्टैंडर्ड)",
+  "high": "{kbps} kbps (हाई)",
+  "best": "{kbps} kbps (सबसे अच्छी)",
+  "smallestVoice": "{kbps} kbps (सबसे छोटी, सिर्फ़ आवाज़)",
+  "voice": "{kbps} kbps (आवाज़, पॉडकास्ट)",
+  "balance": "{kbps} kbps (अच्छा बैलेंस)",
+  "musicSmall": "{kbps} kbps (म्यूज़िक, छोटी)",
+  "musicBetter": "{kbps} kbps (म्यूज़िक, बेहतर)"
+ },
+ "stage": {
+  "queued": "इंतज़ार में…",
+  "decoding": "ऑडियो पढ़ा जा रहा है…",
+  "ffmpegLoading": "इस फ़ॉर्मैट के लिए एडवांस्ड डिकोडर लोड हो रहा है (सिर्फ़ पहली बार)…",
+  "ffmpegDecoding": "ऑडियो निकाला जा रहा है… {pct}%",
+  "encoding": "MP3 एनकोड हो रहा है… {pct}%",
+  "loadingConverter": "कन्वर्टर लोड हो रहा है (सिर्फ़ पहली बार)…",
+  "convertingPct": "कन्वर्ट हो रहा है… {pct}%"
+ },
+ "errors": {
+  "tooBigSplit": "यह फ़ाइल 500 MB से बड़ी है। कृपया पहले इसे हिस्सों में बाँटें।",
+  "noSound": "इस फ़ाइल में हमें कोई आवाज़ नहीं मिली। हो सकता है यह बिना आवाज़ वाला वीडियो हो या फ़ाइल खराब हो।",
+  "unreadable": "यह फ़ाइल पढ़ी नहीं जा सकी। हो सकता है यह खराब हो, सुरक्षित (DRM) हो या कोई बहुत दुर्लभ कोडेक इस्तेमाल करती हो।",
+  "reverseFailed": "यह फ़ाइल कन्वर्ट नहीं हो सकी। हो सकता है यह खराब हो, सुरक्षित हो या ऑडियो फ़ाइल न हो।",
+  "tooBigShort": "यह फ़ाइल 500 MB से बड़ी है।"
+ },
+ "direction": {
+  "label": "कन्वर्ज़न की दिशा",
+  "to": "से"
+ },
+ "reverse": {
+  "region": "MP3 से {format} कन्वर्टर",
+  "heading": "{format} में बदलने के लिए MP3 फ़ाइलें अपलोड करें।",
+  "works": "**MP3** और दूसरी ऑडियो फ़ाइलों (WAV, M4A, FLAC, OGG…) पर काम करता है, हर फ़ाइल 500 MB तक",
+  "choose": "MP3 फ़ाइलें चुनें",
+  "quality": "{format} क्वालिटी:"
+ },
+ "link": {
+  "linkLabel": "वीडियो लिंक",
+  "placeholder": "वीडियो या ऑडियो लिंक पेस्ट करें…",
+  "clear": "लिंक हटाएँ",
+  "paste": "पेस्ट",
+  "format": "फ़ॉर्मैट",
+  "mp3Audio": "MP3 ऑडियो",
+  "mp4Video": "MP4 वीडियो",
+  "quality": "क्वालिटी",
+  "mono": "मोनो:",
+  "cut": "एक हिस्सा काटें:",
+  "from": "से",
+  "to": "तक",
+  "startTime": "शुरुआती समय",
+  "endTime": "आख़िरी समय",
+  "convertTo": "{format} में बदलें",
+  "starting": "शुरू हो रहा है…",
+  "convertingRing": "कन्वर्ट हो रहा है…",
+  "finishing": "पूरा हो रहा है…",
+  "downloading": "डाउनलोड हो रहा है",
+  "fetching": "लाया जा रहा है…",
+  "yourVideo": "आपका वीडियो",
+  "keepOpen": "कृपया यह पेज खुला रखें। लंबे वीडियो में एक-दो मिनट लग सकते हैं।",
+  "cancel": "रद्द करें",
+  "download": "डाउनलोड",
+  "otherFormat": "दूसरा फ़ॉर्मैट",
+  "another": "दूसरा लिंक कन्वर्ट करें",
+  "legal": "सिर्फ़ वही वीडियो डाउनलोड करें जो आपके हैं या जिनकी आपको अनुमति है। फ़ाइलें 30 मिनट बाद हमारे सर्वर से हटा दी जाती हैं। [कॉपीराइट पॉलिसी](/copyright)",
+  "clipboard": "आपके ब्राउज़र ने क्लिपबोर्ड की अनुमति ब्लॉक कर दी। कृपया Ctrl+V दबाकर या देर तक दबाकर पेस्ट करें।",
+  "fullLink": "कृपया पूरा लिंक पेस्ट करें, जो http:// या https:// से शुरू होता हो",
+  "badTimes": "कृपया शुरुआती और आख़िरी समय 1:20 और 2:45 की तरह लिखें (आख़िरी समय शुरुआत के बाद होना चाहिए)।",
+  "unavailable": "लिंक से डाउनलोड अभी कुछ समय के लिए उपलब्ध नहीं है। कृपया बाद में कोशिश करें, या फ़ाइल डाउनलोड करके अपलोड का इस्तेमाल करें।",
+  "notAllowed": "इस वेबसाइट एड्रेस पर लिंक से डाउनलोड अभी उपलब्ध नहीं है। कृपया बाद में कोशिश करें।",
+  "unreachable": "डाउनलोड सर्वर से कनेक्ट नहीं हो सका। हो सकता है वह शुरू हो रहा हो, इसलिए एक मिनट रुककर फिर से कोशिश करें।",
+  "generic": "कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",
+  "youtubeOnly": "यह टूल सिर्फ़ YouTube लिंक के साथ काम करता है। दूसरी वेबसाइटों के लिए हमारा ऑनलाइन वीडियो डाउनलोडर इस्तेमाल करें।",
+  "youtubeOnlyCta": "ऑनलाइन वीडियो डाउनलोडर खोलें",
+  "useYoutubeTools": "YouTube लिंक के लिए कृपया हमारे खास YouTube टूल्स इस्तेमाल करें।",
+  "useYoutubeToolsCta": "YouTube से MP3 खोलें",
+  "tiktokSoon": "TikTok सपोर्ट जल्द आ रहा है। कृपया थोड़ी देर बाद फिर देखें।",
+  "tiktokSoonCta": "TikTok से MP3 के बारे में",
+  "mp3Qualities": {
+   "64": "64 kbps (सबसे छोटी)",
+   "192": "192 kbps (सुझाई गई)",
+   "320": "320 kbps (सबसे अच्छी)"
+  },
+  "mp4Qualities": {
+   "240": "240p (सबसे छोटी)",
+   "720": "720p HD",
+   "1080": "1080p Full HD"
+  },
+  "wavQualities": {
+   "44100": "44.1 kHz (CD क्वालिटी)",
+   "48000": "48 kHz (वीडियो स्टैंडर्ड)"
+  },
+  "regionLabel": "वीडियो लिंक कन्वर्टर"
+ },
+ "serverErrors": {
+  "Our download server is having trouble connecting right now. Please try again in a few minutes.": "हमारे डाउनलोड सर्वर को अभी कनेक्ट होने में दिक्कत हो रही है। कृपया कुछ मिनट बाद फिर से कोशिश करें।",
+  "This video is age-restricted and cannot be downloaded.": "इस वीडियो पर उम्र की पाबंदी है, इसलिए इसे डाउनलोड नहीं किया जा सकता।",
+  "The website is temporarily blocking downloads from our server. Please try again in a few minutes.": "वेबसाइट अभी कुछ समय के लिए हमारे सर्वर से डाउनलोड ब्लॉक कर रही है। कृपया कुछ मिनट बाद फिर से कोशिश करें।",
+  "This video is private or for members only, so it cannot be downloaded.": "यह वीडियो प्राइवेट है या सिर्फ़ मेंबर्स के लिए है, इसलिए इसे डाउनलोड नहीं किया जा सकता।",
+  "That quality is not available for this video. Try another option.": "इस वीडियो के लिए यह क्वालिटी उपलब्ध नहीं है। कोई दूसरा विकल्प आज़माएँ।",
+  "This video is copy protected (DRM) and cannot be downloaded.": "यह वीडियो कॉपी-प्रोटेक्टेड (DRM) है, इसलिए इसे डाउनलोड नहीं किया जा सकता।",
+  "We could not find a video on that page. Try the direct link to the video page.": "हमें उस पेज पर कोई वीडियो नहीं मिला। वीडियो वाले पेज का सीधा लिंक आज़माएँ।",
+  "This video is too large to download here.": "यह वीडियो यहाँ डाउनलोड करने के लिए बहुत बड़ा है।",
+  "This video is unavailable or has been removed.": "यह वीडियो उपलब्ध नहीं है या हटा दिया गया है।",
+  "Something went wrong while fetching this video. Please check the link and try again.": "यह वीडियो लाते समय कुछ गड़बड़ हो गई। कृपया लिंक जाँचें और फिर से कोशिश करें।",
+  "Too many requests. Please wait a little and try again.": "बहुत ज़्यादा रिक्वेस्ट हो गई हैं। कृपया थोड़ा रुककर फिर से कोशिश करें।",
+  "Playlists are not supported. Please paste the link to a single video.": "प्लेलिस्ट सपोर्ट नहीं हैं। कृपया किसी एक वीडियो का लिंक पेस्ट करें।",
+  "Live streams cannot be downloaded.": "लाइव स्ट्रीम डाउनलोड नहीं की जा सकतीं।",
+  "Please choose a valid format and quality.": "कृपया सही फ़ॉर्मैट और क्वालिटी चुनें।",
+  "Please choose a valid start and end time (the end must be after the start).": "कृपया सही शुरुआती और आख़िरी समय चुनें (आख़िरी समय शुरुआत के बाद होना चाहिए)।",
+  "You have reached the hourly download limit. Please try again later.": "आप एक घंटे की डाउनलोड लिमिट तक पहुँच गए हैं। कृपया बाद में कोशिश करें।",
+  "Our server is busy right now. Please try again in a minute.": "हमारा सर्वर अभी व्यस्त है। कृपया एक मिनट बाद फिर से कोशिश करें।",
+  "This download has expired. Please start again.": "इस डाउनलोड का समय खत्म हो गया है। कृपया फिर से शुरू करें।",
+  "Server error. Please try again.": "सर्वर में गड़बड़ी। कृपया फिर से कोशिश करें।"
+ },
+ "serverErrorPrefixes": {
+  "Live streams and very long videos": "लाइव स्ट्रीम और बहुत लंबे वीडियो कन्वर्ट नहीं किए जा सकते।",
+  "Videos longer than": "यह वीडियो यहाँ डाउनलोड करने के लिए बहुत लंबा है।"
+ },
+ "soon": {
+  "region": "{name} (जल्द आ रहा है)",
+  "badge": "जल्द आ रहा है",
+  "linkLabel": "लिंक (जल्द आ रहा है)",
+  "button": "MP3 में बदलें (जल्द आ रहा है)",
+  "note": "हम अभी इस टूल की टेस्टिंग कर रहे हैं। तब तक, अगर आपके डिवाइस पर वीडियो फ़ाइल सेव है, तो उसे [MP4 से MP3](/mp4-to-mp3) से कन्वर्ट करें।"
+ },
+ "cutter": {
+  "region": "MP3 कटर",
+  "heading": "काटने के लिए ऑडियो या वीडियो फ़ाइल अपलोड करें।",
+  "works": "**{formats}** और कई अन्य पर काम करता है, 500 MB तक",
+  "chooseFile": "फ़ाइल चुनें",
+  "dropHint": "या फ़ाइल यहाँ ड्रैग और ड्रॉप करें",
+  "loadingAudio": "ऑडियो लोड हो रहा है",
+  "length": "लंबाई {time} · {size}",
+  "another": "दूसरी फ़ाइल चुनें",
+  "startHandle": "चुने गए हिस्से की शुरुआत",
+  "endHandle": "चुने गए हिस्से का अंत",
+  "start": "शुरुआत",
+  "end": "अंत",
+  "selectionGroup": "चुने गए हिस्से का क्या करें",
+  "keep": "चुना हिस्सा रखें",
+  "removeSel": "चुना हिस्सा हटाएँ",
+  "fadeIn": "फ़ेड इन:",
+  "fadeOut": "फ़ेड आउट:",
+  "stop": "रोकें",
+  "preview": "प्रीव्यू",
+  "save": "काटें और MP3 सेव करें ({time})",
+  "encoding": "MP3 एनकोड हो रहा है… {pct}%",
+  "encodingLabel": "MP3 एनकोड हो रहा है",
+  "tooShort": "चुना गया हिस्सा बहुत छोटा है।",
+  "failed": "MP3 नहीं बन सकी।"
+ },
+ "joiner": {
+  "region": "ऑडियो जॉइनर",
+  "loading": "{name} लोड हो रही है",
+  "up": "{name} को ऊपर ले जाएँ",
+  "down": "{name} को नीचे ले जाएँ",
+  "heading": "एक MP3 में जोड़ने के लिए दो या ज़्यादा फ़ाइलें जोड़ें।",
+  "mix": "**{formats}** और कई अन्य फ़ॉर्मैट मिलाएँ, हर फ़ाइल 500 MB तक",
+  "addMore": "और फ़ाइलें जोड़ें",
+  "join": "{count} फ़ाइलें जोड़ें ({time})",
+  "joining": "जोड़कर MP3 एनकोड हो रहा है… {pct}%",
+  "joiningLabel": "जुड़ी हुई MP3 एनकोड हो रही है",
+  "needTwo": "जोड़ने के लिए कम से कम दो फ़ाइलें डालें।",
+  "failed": "फ़ाइलें नहीं जुड़ सकीं। कम या छोटी फ़ाइलें आज़माएँ।",
+  "gap": "फ़ाइलों के बीच गैप:",
+  "gaps": {
+   "0": "कोई गैप नहीं",
+   "1": "1 सेकंड",
+   "2": "2 सेकंड",
+   "3": "3 सेकंड",
+   "0.5": "0.5 सेकंड"
+  },
+  "tooBig": "500 MB से बड़ी।"
+ },
+ "reverseFormats": {
+  "wma": {},
+  "amr": {
+   "note": "AMR बोलचाल वाला फ़ॉर्मैट है: नतीजा 8 kHz पर मोनो होगा, फ़ोन कॉल जैसा।",
+   "options": {
+    "0": "4.75 kbps (सबसे छोटी)",
+    "2": "5.9 kbps",
+    "4": "7.4 kbps",
+    "5": "7.95 kbps",
+    "6": "10.2 kbps",
+    "7": "12.2 kbps (सबसे अच्छी आवाज़)"
+   }
+  },
+  "caf": {
+   "options": {
+    "alac": "Apple Lossless (ALAC)",
+    "pcm": "अनकंप्रेस्ड PCM (सबसे बड़ी)"
+   }
+  },
+  "ac3": {},
+  "alac": {
+   "note": "Apple Lossless ऑडियो के साथ .m4a फ़ाइल के रूप में सेव होती है, Apple Music और iTunes के लिए तैयार।",
+   "options": {
+    "alac": "Apple Lossless"
+   }
+  },
+  "m4b": {},
+  "flac": {
+   "note": "FLAC लॉसलेस है, इसलिए यह MP3 को बिल्कुल वैसा ही रखता है। MP3 में पहले से हटाई गई बारीकियाँ यह वापस नहीं ला सकता।",
+   "options": {
+    "flac": "लॉसलेस FLAC"
+   }
+  },
+  "aac": {},
+  "ogg": {},
+  "opus": {},
+  "webm": {
+   "note": "Opus साउंड के साथ सिर्फ़ ऑडियो वाली WebM फ़ाइल बनाता है, वेबसाइटों और वेब ऐप्स के लिए बढ़िया।"
+  },
+  "mov": {
+   "note": "सादे गहरे बैकग्राउंड के साथ QuickTime वीडियो बनाता है, ताकि आप अपना ऑडियो वीडियो ऐप्स और अपलोड साइटों पर इस्तेमाल कर सकें।"
+  },
+  "wav": {
+   "note": "WAV अनकंप्रेस्ड है (स्टीरियो में लगभग 10 MB प्रति मिनट)। यह MP3 की आवाज़ बिल्कुल वैसी ही रखता है, लेकिन MP3 में हटाई गई बारीकियाँ वापस नहीं ला सकता।",
+   "options": {
+    "44100": "44.1 kHz · 16-bit (CD क्वालिटी)",
+    "48000": "48 kHz · 16-bit (वीडियो के लिए)"
+   }
+  },
+  "mkv": {
+   "note": "सादे गहरे बैकग्राउंड और आपकी ओरिजिनल MP3 आवाज़ के साथ MKV वीडियो बनाता है, ऑडियो को दोबारा एनकोड किए बिना।",
+   "options": {
+    "copy": "ओरिजिनल MP3 ऑडियो रखें (सबसे तेज़)"
+   }
+  }
+ }
+}
