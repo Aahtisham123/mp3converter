@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" role="img" aria-labelledby="t d">
   <title id="t">WAV to MP3 converter</title>
-  <desc id="d">WAV file converted to MP3 · up to 320 kbps.</desc>
+  <desc id="d">WAV file converted to MP3 · up to 320 kbps, and back again.</desc>
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
     <linearGradient id="gh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3b82f6"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
@@ -19,7 +19,7 @@
   <g stroke="#c4b5fd" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" fill="none"><path d="M360 170h82"/><path d="M558 170h82"/></g>
   <circle cx="500" cy="170" r="58" fill="#a78bfa" opacity=".25"/>
   <circle cx="500" cy="170" r="44" fill="url(#g)"/>
-  <g stroke="#fff" stroke-width="5" stroke-linecap="round"><path d="M478 162v16M490 150v40M502 158v24M514 146v48M526 162v16"/></g>
+  <path d="M478 152h44m-12-12 12 12-12 12M522 186h-44m12-12-12 12 12 12" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
   <g filter="url(#s)"><rect x="610" y="50" width="300" height="240" rx="24" fill="#fff"/></g>
   <path d="M710 72h66l34 34v94a12 12 0 0 1-12 12h-88a12 12 0 0 1-12-12V84a12 12 0 0 1 12-12z" fill="url(#g)"/>
   <path d="M776 72v22a12 12 0 0 0 12 12h22z" fill="#fff" opacity=".35"/>
