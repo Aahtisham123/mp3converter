@@ -16,6 +16,7 @@ export default function AppShell({ children }) {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [groups, setGroups] = useState(() => Object.fromEntries(NAV_GROUPS.map((g) => [g.id, true])));
 
   useEffect(() => {
@@ -26,6 +27,12 @@ export default function AppShell({ children }) {
 
   // Close the mobile drawer on navigation and on Escape.
   useEffect(() => setOpen(false), [pathname]);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 4);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && setOpen(false);
     window.addEventListener('keydown', onKey);
@@ -121,7 +128,7 @@ export default function AppShell({ children }) {
       <div className="overlay" onClick={() => setOpen(false)} aria-hidden="true" />
 
       <div className="main">
-        <header className="topbar">
+        <header className={`topbar${scrolled ? ' is-scrolled' : ''}`}>
           <button
             type="button"
             className="icon-btn"
