@@ -92,14 +92,16 @@ button { font: inherit; cursor: pointer; }
 .main { flex: 1; min-width: 0; margin-left: var(--sidebar-w); transition: margin-left .22s ease; }
 .topbar {
   display: flex; align-items: center; gap: 12px; padding: 14px 20px;
-  /* Stays at the top while the page scrolls, so the menu toggle is always reachable. */
-  position: sticky; top: 0; z-index: 20;
-  background: rgba(255, 255, 255, .86); -webkit-backdrop-filter: saturate(160%) blur(10px); backdrop-filter: saturate(160%) blur(10px);
-  border-bottom: 1px solid transparent; transition: border-color .2s ease, box-shadow .2s ease;
+  /* Only the toggle button stays visible while scrolling; the bar itself is transparent. */
+  position: sticky; top: 0; z-index: 20; pointer-events: none;
 }
-.topbar.is-scrolled { border-bottom-color: var(--border); box-shadow: 0 6px 18px -14px rgba(17, 24, 39, .35); }
+.topbar > * { pointer-events: auto; }
+.topbar .icon-btn { transition: box-shadow .2s ease, background .2s ease; }
+.topbar.is-scrolled .icon-btn { box-shadow: 0 8px 20px -8px rgba(17, 24, 39, .3); }
+.topbar__brand { transition: opacity .2s ease, visibility .2s; }
+.topbar.is-scrolled .topbar__brand { opacity: 0; visibility: hidden; }
 /* Anchor links land below the sticky bar. */
-html { scroll-padding-top: 84px; }
+html { scroll-padding-top: 76px; }
 .topbar__brand { display: none; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 1.1rem; }
 .topbar__brand img { width: 32px; height: 32px; }
 .topbar__brand:hover { text-decoration: none; }
