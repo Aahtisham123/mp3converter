@@ -1,1 +1,358 @@
-{}
+{
+ "site": {
+  "defaultTitle": "MP3 Converter – Ses ve Videoyu Ücretsiz MP3'e Dönüştürün",
+  "titleSuffix": "MP3 Converter",
+  "tagline": "Tarayıcınızda çalışan ücretsiz ve gizli bir MP3 dönüştürücü. Program kurmadan, hesap açmadan ses ve videoları MP3'e dönüştürün."
+ },
+ "shell": {
+  "skip": "İçeriğe geç",
+  "navLabel": "Site menüsü",
+  "home": "MP3 Converter ana sayfa",
+  "toggleNav": "Menüyü aç/kapat",
+  "convertFile": "Dosya dönüştür",
+  "soon": "Yakında",
+  "language": "Dil",
+  "chooseLanguage": "Dil seçin"
+ },
+ "nav": {
+  "home": "Ana Sayfa",
+  "youtube-to-mp3": "YouTube MP3 Dönüştürücü",
+  "youtube-to-mp4": "YouTube MP4 İndir",
+  "youtube-to-wav": "YouTube WAV Dönüştürücü",
+  "online-video-downloader": "Online Video İndirici",
+  "mp4-to-mp3": "MP4'ten MP3'e Dönüştürücü",
+  "tiktok-to-mp3": "TikTok MP3 İndir",
+  "video-to-mp3": "Videoyu MP3'e Dönüştürücü",
+  "wav-to-mp3": "WAV'dan MP3'e Dönüştürücü",
+  "m4a-to-mp3": "M4A'dan MP3'e Dönüştürücü",
+  "voice-to-mp3": "Ses Kaydını MP3'e Çevir",
+  "flac-to-mp3": "FLAC'tan MP3'e",
+  "aac-to-mp3": "AAC'den MP3'e",
+  "ogg-to-mp3": "OGG'den MP3'e",
+  "opus-to-mp3": "OPUS'tan MP3'e",
+  "webm-to-mp3": "WEBM'den MP3'e",
+  "mov-to-mp3": "MOV'dan MP3'e",
+  "mkv-to-mp3": "MKV'den MP3'e",
+  "wma-to-mp3": "WMA'dan MP3'e",
+  "amr-to-mp3": "AMR'den MP3'e",
+  "caf-to-mp3": "CAF'tan MP3'e",
+  "ac3-to-mp3": "AC3'ten MP3'e",
+  "alac-to-mp3": "ALAC'tan MP3'e",
+  "m4b-to-mp3": "M4B'den MP3'e",
+  "mp3-cutter": "MP3 Kesici",
+  "mp3-compressor": "MP3 Sıkıştırıcı",
+  "audio-joiner": "Ses Birleştirici",
+  "podcast-to-mp3": "Podcast'i MP3'e",
+  "groupFormats": "MP3 Dönüştürme Araçları",
+  "groupTools": "MP3 Araçları"
+ },
+ "footer": {
+  "follow": "Bizi takip edin",
+  "socialLabel": "Sosyal medyada MP3 Converter",
+  "socialItem": "{name} üzerinde MP3 Converter",
+  "converters": "Dönüştürücüler",
+  "formatsTools": "Formatlar ve Araçlar",
+  "company": "Şirket",
+  "about": "Hakkımızda",
+  "contact": "İletişim",
+  "privacy": "Gizlilik Politikası",
+  "terms": "Kullanım Koşulları",
+  "copyright": "Telif Hakkı ve DMCA",
+  "rights": "© {year} mp3convert.tools. Tüm hakları saklıdır.",
+  "disclaimer": "YouTube veya Google ile bağlantılı değildir. Lütfen yalnızca size ait olan veya kullanma izniniz bulunan içerikleri indirin."
+ },
+ "page": {
+  "breadcrumbHome": "Ana Sayfa",
+  "stepByStep": "Adım adım",
+  "howToUse": "{name} nasıl kullanılır?",
+  "faq": "SSS",
+  "faqTitle": "Sıkça sorulan sorular",
+  "related": "İlgili araçlar",
+  "byTeam": "MP3 Converter ekibi tarafından",
+  "teamText": "Tarayıcınızda çalışan, gizliliğe öncelik veren ücretsiz ses araçları geliştiriyoruz. Bu rehber, aracın gerçekte nasıl çalıştığına göre kontrol edilmiştir. [Hakkımızda](/about)",
+  "lastUpdated": "Son güncelleme: Ekim 2026",
+  "aboutPage": "Bu sayfa hakkında",
+  "notFoundTitle": "Sayfa bulunamadı",
+  "notFoundText": "Aradığınız sayfa mevcut değil veya taşınmış.",
+  "notFoundButton": "MP3 Converter'a git",
+  "operatingSystem": "Tümü (web tarayıcısında çalışır)"
+ },
+ "badges": {
+  "comingSoon": "Yakında",
+  "free": "Ücretsiz",
+  "mp3Up": "320 kbps'ye kadar MP3",
+  "anyDevice": "Her Cihazda",
+  "noSignup": "Kayıt Yok",
+  "mp4Up": "1080p'ye kadar MP4",
+  "private": "%100 Gizli",
+  "noLimits": "Sınırsız"
+ },
+ "converter": {
+  "chooseInput": "Kaynak seçin",
+  "upload": "Yükle",
+  "pasteLink": "Bağlantı Yapıştır",
+  "record": "Kaydet",
+  "regionLabel": "MP3 dönüştürücü",
+  "heading": "MP3'e dönüştürmek için bir ses veya video dosyası yükleyin.",
+  "chooseFiles": "Dosya Seç",
+  "supported": "Desteklenen formatlar: **{formats}** ve daha fazlası, dosya başına 500 MB'a kadar",
+  "dropHint": "veya dosyaları buraya sürükleyip bırakın",
+  "linkHeading": "MP3'e dönüştürmek için bir ses veya video dosyasının bağlantısını yapıştırın.",
+  "linkSub": "Doğrudan MP3, MP4, WAV ve diğer medya bağlantılarıyla, ayrıca birçok ücretsiz video ve ses sitesiyle çalışır",
+  "recordHeading": "Sesinizi kaydedin ve MP3 olarak kaydedin.",
+  "recordNote": "Mikrofonunuzu kullanır. Kayıt cihazınızdan asla çıkmaz.",
+  "startRecording": "Kaydı Başlat",
+  "stopConvert": "Durdur ve Dönüştür",
+  "recUnsupported": "Bu tarayıcı ses kaydını desteklemiyor. Lütfen Chrome, Edge, Firefox veya Safari deneyin.",
+  "recNoMic": "Mikrofon bulunamadı. Bir mikrofon takıp tekrar deneyin.",
+  "recBlocked": "Mikrofon erişimi engellendi. Tarayıcı ayarlarınızdan izin verip tekrar deneyin.",
+  "recEmpty": "Hiçbir şey kaydedilmedi. Lütfen tekrar deneyin.",
+  "recFailed": "Bu tarayıcıda kayıt başlatılamadı.",
+  "tooBig": "Bu dosya 500 MB'tan büyük. Lütfen önce kırpın veya bölün.",
+  "failed": "Dönüştürme başarısız oldu.",
+  "smaller": "%{pct} daha küçük",
+  "converting": "{name} dönüştürülüyor",
+  "download": "İndir",
+  "remove": "{name} dosyasını kaldır",
+  "cancel": "İptal",
+  "removeShort": "Kaldır",
+  "downloadAll": "Tümünü indir ({count})",
+  "clearList": "Listeyi temizle",
+  "quality": "MP3 Kalitesi:",
+  "mono": "Mono (konuşma için en iyisi):",
+  "monoShort": "Mono:",
+  "privacy": "Dosyalar tarayıcınızda işlenir ve asla bir sunucuya yüklenmez."
+ },
+ "bitrates": {
+  "small": "{kbps} kbps (küçük)",
+  "standard": "{kbps} kbps (standart)",
+  "high": "{kbps} kbps (yüksek)",
+  "best": "{kbps} kbps (en iyi)",
+  "smallestVoice": "{kbps} kbps (en küçük, sadece konuşma)",
+  "voice": "{kbps} kbps (konuşma, podcast)",
+  "balance": "{kbps} kbps (dengeli)",
+  "musicSmall": "{kbps} kbps (müzik, küçük)",
+  "musicBetter": "{kbps} kbps (müzik, daha iyi)"
+ },
+ "stage": {
+  "queued": "Bekleniyor…",
+  "decoding": "Ses okunuyor…",
+  "ffmpegLoading": "Bu format için gelişmiş kod çözücü yükleniyor (yalnızca ilk seferde)…",
+  "ffmpegDecoding": "Ses çıkarılıyor… %{pct}",
+  "encoding": "MP3 kodlanıyor… %{pct}",
+  "loadingConverter": "Dönüştürücü yükleniyor (yalnızca ilk seferde)…",
+  "convertingPct": "Dönüştürülüyor… %{pct}"
+ },
+ "errors": {
+  "tooBigSplit": "Bu dosya 500 MB'tan büyük. Lütfen önce bölün.",
+  "noSound": "Bu dosyada hiç ses bulamadık. Sessiz bir video veya bozuk bir dosya olabilir.",
+  "unreadable": "Bu dosya okunamadı. Bozuk, korumalı (DRM) olabilir veya çok nadir bir codec kullanıyor olabilir.",
+  "reverseFailed": "Bu dosya dönüştürülemedi. Bozuk, korumalı olabilir veya bir ses dosyası olmayabilir.",
+  "tooBigShort": "Bu dosya 500 MB'tan büyük."
+ },
+ "direction": {
+  "label": "Dönüştürme yönü",
+  "to": "→"
+ },
+ "reverse": {
+  "region": "MP3'ten {format} formatına dönüştürücü",
+  "heading": "{format} formatına dönüştürmek için MP3 dosyalarını yükleyin.",
+  "works": "**MP3** ve diğer ses dosyalarıyla (WAV, M4A, FLAC, OGG…) çalışır, dosya başına 500 MB'a kadar",
+  "choose": "MP3 Dosyası Seç",
+  "quality": "{format} kalitesi:"
+ },
+ "link": {
+  "linkLabel": "Video bağlantısı",
+  "placeholder": "Video veya ses bağlantısını yapıştırın…",
+  "clear": "Bağlantıyı temizle",
+  "paste": "Yapıştır",
+  "format": "Format",
+  "mp3Audio": "MP3 ses",
+  "mp4Video": "MP4 video",
+  "quality": "Kalite",
+  "mono": "Mono:",
+  "cut": "Bir bölüm kes:",
+  "from": "Başlangıç",
+  "to": "Bitiş",
+  "startTime": "Başlangıç zamanı",
+  "endTime": "Bitiş zamanı",
+  "convertTo": "{format} formatına dönüştür",
+  "starting": "Başlatılıyor…",
+  "convertingRing": "Dönüştürülüyor…",
+  "finishing": "Tamamlanıyor…",
+  "downloading": "İndiriliyor",
+  "fetching": "Alınıyor…",
+  "yourVideo": "Videonuz",
+  "keepOpen": "Lütfen bu sayfayı açık tutun. Uzun videolar bir iki dakika sürebilir.",
+  "cancel": "İptal",
+  "download": "İndir",
+  "otherFormat": "Başka format",
+  "another": "Başka bir bağlantı dönüştür",
+  "legal": "Yalnızca size ait olan veya kullanma izniniz bulunan videoları indirin. Dosyalar 30 dakika sonra sunucumuzdan silinir. [Telif hakkı politikası](/copyright)",
+  "clipboard": "Tarayıcınız panoya erişimi engelledi. Lütfen Ctrl+V ile veya uzun basarak yapıştırın.",
+  "fullLink": "Lütfen http:// veya https:// ile başlayan tam bir bağlantı yapıştırın",
+  "badTimes": "Lütfen 1:20 ve 2:45 gibi bir başlangıç ve bitiş zamanı girin (bitiş, başlangıçtan sonra olmalı).",
+  "unavailable": "Bağlantıdan indirme geçici olarak kullanılamıyor. Lütfen daha sonra tekrar deneyin veya dosyayı indirip Yükle seçeneğini kullanın.",
+  "notAllowed": "Bağlantıdan indirme bu web adresinde henüz kullanılamıyor. Lütfen daha sonra tekrar deneyin.",
+  "unreachable": "İndirme sunucusuna ulaşılamadı. Sunucu açılıyor olabilir; lütfen bir dakika bekleyip tekrar deneyin.",
+  "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+  "youtubeOnly": "Bu araç yalnızca YouTube bağlantılarıyla çalışır. Diğer siteler için Online Video İndirici aracımızı kullanın.",
+  "youtubeOnlyCta": "Online Video İndirici'yi aç",
+  "useYoutubeTools": "YouTube bağlantıları için lütfen YouTube araçlarımızı kullanın.",
+  "useYoutubeToolsCta": "YouTube MP3 Dönüştürücü'yü aç",
+  "tiktokSoon": "TikTok desteği çok yakında geliyor. Lütfen kısa süre sonra tekrar bakın.",
+  "tiktokSoonCta": "TikTok MP3 hakkında",
+  "mp3Qualities": {
+   "64": "64 kbps (en küçük)",
+   "192": "192 kbps (önerilen)",
+   "320": "320 kbps (en iyi)"
+  },
+  "mp4Qualities": {
+   "240": "240p (en küçük)",
+   "720": "720p HD",
+   "1080": "1080p Full HD"
+  },
+  "wavQualities": {
+   "44100": "44.1 kHz (CD kalitesi)",
+   "48000": "48 kHz (video standardı)"
+  },
+  "regionLabel": "Video bağlantısı dönüştürücü"
+ },
+ "serverErrors": {
+  "Our download server is having trouble connecting right now. Please try again in a few minutes.": "İndirme sunucumuz şu anda bağlantı sorunu yaşıyor. Lütfen birkaç dakika sonra tekrar deneyin.",
+  "This video is age-restricted and cannot be downloaded.": "Bu video yaş sınırlamalı olduğu için indirilemiyor.",
+  "The website is temporarily blocking downloads from our server. Please try again in a few minutes.": "Web sitesi, sunucumuzdan yapılan indirmeleri geçici olarak engelliyor. Lütfen birkaç dakika sonra tekrar deneyin.",
+  "This video is private or for members only, so it cannot be downloaded.": "Bu video gizli veya yalnızca üyelere özel olduğu için indirilemiyor.",
+  "That quality is not available for this video. Try another option.": "Bu video için o kalite mevcut değil. Başka bir seçenek deneyin.",
+  "This video is copy protected (DRM) and cannot be downloaded.": "Bu video kopya korumalı (DRM) olduğu için indirilemiyor.",
+  "We could not find a video on that page. Try the direct link to the video page.": "O sayfada bir video bulamadık. Doğrudan video sayfasının bağlantısını deneyin.",
+  "This video is too large to download here.": "Bu video burada indirilemeyecek kadar büyük.",
+  "This video is unavailable or has been removed.": "Bu video kullanılamıyor veya kaldırılmış.",
+  "Something went wrong while fetching this video. Please check the link and try again.": "Video alınırken bir sorun oluştu. Lütfen bağlantıyı kontrol edip tekrar deneyin.",
+  "Too many requests. Please wait a little and try again.": "Çok fazla istek gönderildi. Lütfen biraz bekleyip tekrar deneyin.",
+  "Playlists are not supported. Please paste the link to a single video.": "Oynatma listeleri desteklenmiyor. Lütfen tek bir videonun bağlantısını yapıştırın.",
+  "Live streams cannot be downloaded.": "Canlı yayınlar indirilemez.",
+  "Please choose a valid format and quality.": "Lütfen geçerli bir format ve kalite seçin.",
+  "Please choose a valid start and end time (the end must be after the start).": "Lütfen geçerli bir başlangıç ve bitiş zamanı seçin (bitiş, başlangıçtan sonra olmalı).",
+  "You have reached the hourly download limit. Please try again later.": "Saatlik indirme sınırına ulaştınız. Lütfen daha sonra tekrar deneyin.",
+  "Our server is busy right now. Please try again in a minute.": "Sunucumuz şu anda meşgul. Lütfen bir dakika sonra tekrar deneyin.",
+  "This download has expired. Please start again.": "Bu indirmenin süresi doldu. Lütfen yeniden başlayın.",
+  "Server error. Please try again.": "Sunucu hatası. Lütfen tekrar deneyin."
+ },
+ "serverErrorPrefixes": {
+  "Live streams and very long videos": "Canlı yayınlar ve çok uzun videolar dönüştürülemez.",
+  "Videos longer than": "Bu video burada indirilemeyecek kadar uzun."
+ },
+ "soon": {
+  "region": "{name} (yakında)",
+  "badge": "Yakında",
+  "linkLabel": "Bağlantı (yakında)",
+  "button": "MP3'e dönüştür (yakında)",
+  "note": "Bu aracı hâlâ test ediyoruz. Bu arada cihazınıza kaydettiğiniz bir video dosyası varsa [MP4'ten MP3'e](/mp4-to-mp3) aracıyla dönüştürebilirsiniz."
+ },
+ "cutter": {
+  "region": "MP3 kesici",
+  "heading": "Kesmek için bir ses veya video dosyası yükleyin.",
+  "works": "**{formats}** ve daha fazlasıyla çalışır, 500 MB'a kadar",
+  "chooseFile": "Dosya Seç",
+  "dropHint": "veya dosyayı buraya sürükleyip bırakın",
+  "loadingAudio": "Ses yükleniyor",
+  "length": "Süre {time} · {size}",
+  "another": "Başka dosya seç",
+  "startHandle": "Seçimin başlangıcı",
+  "endHandle": "Seçimin sonu",
+  "start": "Başlangıç",
+  "end": "Bitiş",
+  "selectionGroup": "Seçimle ne yapılsın",
+  "keep": "Seçimi koru",
+  "removeSel": "Seçimi kaldır",
+  "fadeIn": "Giriş efekti (fade in):",
+  "fadeOut": "Çıkış efekti (fade out):",
+  "stop": "Durdur",
+  "preview": "Önizle",
+  "save": "Kes ve MP3 Kaydet ({time})",
+  "encoding": "MP3 kodlanıyor… %{pct}",
+  "encodingLabel": "MP3 kodlanıyor",
+  "tooShort": "Seçilen bölüm çok kısa.",
+  "failed": "MP3 oluşturulamadı."
+ },
+ "joiner": {
+  "region": "Ses birleştirici",
+  "loading": "{name} yükleniyor",
+  "up": "{name} dosyasını yukarı taşı",
+  "down": "{name} dosyasını aşağı taşı",
+  "heading": "Tek bir MP3'te birleştirmek için iki veya daha fazla dosya ekleyin.",
+  "mix": "**{formats}** ve diğer formatları karıştırın, dosya başına 500 MB'a kadar",
+  "addMore": "Daha fazla dosya ekle",
+  "join": "{count} dosyayı birleştir ({time})",
+  "joining": "Birleştiriliyor ve MP3 kodlanıyor… %{pct}",
+  "joiningLabel": "Birleştirilmiş MP3 kodlanıyor",
+  "needTwo": "Birleştirmek için en az iki dosya ekleyin.",
+  "failed": "Birleştirme başarısız oldu. Daha az veya daha kısa dosya deneyin.",
+  "gap": "Dosyalar arası boşluk:",
+  "gaps": {
+   "0": "Boşluk yok",
+   "1": "1 saniye",
+   "2": "2 saniye",
+   "3": "3 saniye",
+   "0.5": "0,5 saniye"
+  },
+  "tooBig": "500 MB'tan büyük."
+ },
+ "reverseFormats": {
+  "wma": {},
+  "amr": {
+   "note": "AMR bir konuşma formatıdır: sonuç, telefon görüşmesi gibi 8 kHz mono olur.",
+   "options": {
+    "0": "4.75 kbps (en küçük)",
+    "2": "5.9 kbps",
+    "4": "7.4 kbps",
+    "5": "7.95 kbps",
+    "6": "10.2 kbps",
+    "7": "12.2 kbps (en iyi konuşma kalitesi)"
+   }
+  },
+  "caf": {
+   "options": {
+    "alac": "Apple Lossless (ALAC)",
+    "pcm": "Sıkıştırılmamış PCM (en büyük)"
+   }
+  },
+  "ac3": {},
+  "alac": {
+   "note": "Apple Lossless sesli bir .m4a dosyası olarak kaydedilir; Apple Music ve iTunes'a hazırdır.",
+   "options": {
+    "alac": "Apple Lossless"
+   }
+  },
+  "m4b": {},
+  "flac": {
+   "note": "FLAC kayıpsızdır, bu yüzden MP3'ü olduğu gibi korur. MP3'ün zaten kaybettiği ayrıntıları geri getiremez.",
+   "options": {
+    "flac": "Kayıpsız FLAC"
+   }
+  },
+  "aac": {},
+  "ogg": {},
+  "opus": {},
+  "webm": {
+   "note": "Opus sesli, yalnızca ses içeren bir WebM dosyası oluşturur; web siteleri ve web uygulamaları için idealdir."
+  },
+  "mov": {
+   "note": "Düz koyu arka planlı bir QuickTime videosu oluşturur; böylece sesinizi video uygulamalarında ve yükleme sitelerinde kullanabilirsiniz."
+  },
+  "wav": {
+   "note": "WAV sıkıştırılmamıştır (stereo olarak dakikada yaklaşık 10 MB). MP3 sesini birebir korur ama MP3'ün kaybettiği ayrıntıları geri getiremez.",
+   "options": {
+    "44100": "44.1 kHz · 16-bit (CD kalitesi)",
+    "48000": "48 kHz · 16-bit (video için)"
+   }
+  },
+  "mkv": {
+   "note": "Düz koyu arka planlı ve orijinal MP3 sesinizi içeren bir MKV videosu oluşturur; ses yeniden kodlanmaz.",
+   "options": {
+    "copy": "Orijinal MP3 sesi koru (en hızlı)"
+   }
+  }
+ }
+}

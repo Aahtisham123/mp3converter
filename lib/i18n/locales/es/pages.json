@@ -1,1 +1,207 @@
-{}
+{
+ "about": {
+  "metaTitle": "Quiénes somos",
+  "metaDescription": "Descubre quién crea MP3 Converter, cómo funciona la herramienta y por qué convierte audio de forma privada en tu navegador.",
+  "title": "Sobre MP3 Converter",
+  "lead": "Herramientas de audio sencillas y privadas que cualquiera puede usar.",
+  "sections": [
+   {
+    "h2": "Por qué lo creamos",
+    "blocks": [
+     "La mayoría de los convertidores online te piden subir tus archivos a un servidor, esperar en una fila y luego descargar el resultado. Eso es lento y significa entregar tus grabaciones privadas a un desconocido. Queríamos algo mejor: un convertidor rápido, gratis y que deje tus archivos en tu propio dispositivo.",
+     "Por eso creamos MP3 Converter como una herramienta que funciona por completo en tu navegador. No hay subidas, no hay cuenta y no hay límite de archivos que puedas convertir."
+    ]
+   },
+   {
+    "h2": "Cómo funciona la herramienta",
+    "blocks": [
+     {
+      "check": [
+       "**Decodificación.** El motor Web Audio de tu navegador lee los formatos comunes. Para otros, como MKV, AVI o WMA, cargamos FFmpeg, una biblioteca multimedia de código abierto muy utilizada, compilada a WebAssembly.",
+       "**Codificación.** El MP3 se crea con LAME, el codificador de código abierto de confianza desde hace más de dos décadas, que se ejecuta en segundo plano.",
+       "**Guardado.** El MP3 terminado pasa directamente de la memoria de tu navegador a tu carpeta de descargas."
+      ]
+     }
+    ]
+   },
+   {
+    "h2": "Nuestros principios",
+    "blocks": [
+     {
+      "check": [
+       "Tus archivos se quedan en tu dispositivo.",
+       "Explicaciones claras y honestas, sin jerga técnica.",
+       "Herramientas gratis sin marcas de agua ni registros obligatorios.",
+       "Respeto por los creadores: convierte solo contenido que sea tuyo o que puedas usar."
+      ]
+     },
+     "¿Preguntas o ideas? [Escríbenos](/contact)."
+    ]
+   }
+  ]
+ },
+ "contact": {
+  "metaTitle": "Contacto",
+  "metaDescription": "Contacta al equipo de MP3 Converter con preguntas, reportes de errores o ideas de nuevas funciones.",
+  "title": "Contáctanos",
+  "lead": "Leemos todos los mensajes y respondemos lo antes posible.",
+  "sections": [
+   {
+    "h2": "Correo electrónico",
+    "blocks": [
+     "Escríbenos a [{email}](mailto:{email}).",
+     {
+      "h3": "Si reportas un problema, incluye"
+     },
+     {
+      "ul": [
+       "La herramienta que usaste (por ejemplo, MP4 a MP3 o Cortador de MP3).",
+       "Tu navegador y dispositivo (por ejemplo, Chrome en Windows o Safari en iPhone).",
+       "El formato del archivo y, más o menos, cuánto duraba o pesaba.",
+       "El mensaje de error exacto, si apareció alguno."
+      ]
+     },
+     "No nos envíes el archivo de audio a menos que te lo pidamos. Como la herramienta funciona en tu navegador, nunca vemos tus archivos."
+    ]
+   }
+  ]
+ },
+ "privacy-policy": {
+  "metaTitle": "Política de privacidad",
+  "metaDescription": "Cómo trata MP3 Converter tus datos. Los archivos se procesan en tu navegador y nunca se suben a nuestros servidores.",
+  "title": "Política de privacidad",
+  "lead": "Última actualización: octubre de 2026",
+  "sections": [
+   {
+    "h2": "En pocas palabras",
+    "blocks": [
+     "Los archivos que subes, grabas, cortas, comprimes o unes en {domain} se procesan dentro de tu propio navegador y nunca se nos envían. Cuando pegas un enlace, nuestro servidor de descargas obtiene ese enlace por ti y borra el resultado después de 30 minutos."
+    ]
+   },
+   {
+    "h2": "Archivos y grabaciones en tu dispositivo",
+    "blocks": [
+     "Cuando eliges un archivo o grabas con tu micrófono, el audio se lee y se convierte en la memoria de tu navegador. El MP3 resultante se te ofrece como descarga. Al cerrar o recargar la página, estos datos se borran."
+    ]
+   },
+   {
+    "h2": "Enlaces que pegas",
+    "blocks": [
+     "Para descargar desde un enlace, enviamos el enlace a nuestro servidor de descargas, que obtiene el video del sitio web y, si lo eliges, lo convierte a MP3. El archivo terminado se guarda solo para que puedas descargarlo y se borra automáticamente después de 30 minutos. Guardamos la dirección IP de cada solicitud en memoria hasta una hora para aplicar límites de uso justo, y los registros de nuestro servidor anotan errores técnicos sin el contenido de los archivos."
+    ]
+   },
+   {
+    "h2": "Micrófono",
+    "blocks": [
+     "La grabadora solo accede a tu micrófono después de que pulsas Empezar a grabar y tu navegador te pide permiso. La grabación se usa únicamente para crear tu MP3 en esta página."
+    ]
+   },
+   {
+    "h2": "Información guardada en tu navegador",
+    "blocks": [
+     "Guardamos un pequeño ajuste en el almacenamiento local de tu navegador: si la barra lateral está contraída. Tu navegador también puede guardar en caché los archivos del convertidor para que el sitio cargue más rápido la próxima vez."
+    ]
+   },
+   {
+    "h2": "Registros del servidor",
+    "blocks": [
+     "Como cualquier sitio web, nuestro proveedor de hosting puede guardar registros técnicos estándar, como la dirección IP, el tipo de navegador y las páginas solicitadas, por seguridad y fiabilidad. Estos registros no contienen tus archivos de audio."
+    ]
+   },
+   {
+    "h2": "Cambios y contacto",
+    "blocks": [
+     "Si en el futuro agregamos analítica o publicidad, primero actualizaremos esta página. Para cualquier duda sobre privacidad, escribe a [{email}](mailto:{email})."
+    ]
+   }
+  ]
+ },
+ "terms": {
+  "metaTitle": "Términos de uso",
+  "metaDescription": "Los términos para usar las herramientas gratuitas de MP3 Converter.",
+  "title": "Términos de uso",
+  "lead": "Última actualización: octubre de 2026",
+  "sections": [
+   {
+    "h2": "Uso de las herramientas",
+    "blocks": [
+     "MP3 Converter es gratis para uso personal y comercial. Al usar el sitio, aceptas estos términos."
+    ]
+   },
+   {
+    "h2": "Tu contenido y los derechos de autor",
+    "blocks": [
+     "Eres responsable de los archivos y enlaces que procesas. Convierte, descarga, corta, comprime o une solo contenido que sea tuyo, que tenga una licencia abierta, que tengas permiso para usar o que la ley te permita copiar. No uses las herramientas para infringir derechos de autor, para eludir protecciones contra copia ni incumpliendo los términos de servicio de otro sitio web. Consulta nuestra [Política de derechos de autor y DMCA](/copyright)."
+    ]
+   },
+   {
+    "h2": "Uso justo del descargador de enlaces",
+    "blocks": [
+     "Para que el servicio esté disponible para todos, limitamos cuántas descargas puede iniciar cada visitante por hora, la duración de los videos y el tamaño de los archivos. No se permite el uso automatizado ni masivo. Podemos bloquear el acceso en caso de abuso."
+    ]
+   },
+   {
+    "h2": "Sin garantía",
+    "blocks": [
+     "Las herramientas se ofrecen “tal cual”. Trabajamos mucho para que sean fiables, pero no podemos garantizar que todos los archivos se conviertan ni que el servicio esté siempre disponible. Guarda siempre una copia de tus archivos originales."
+    ]
+   },
+   {
+    "h2": "Software de código abierto",
+    "blocks": [
+     "El sitio usa LAME (mediante lamejs, LGPL) para codificar MP3, FFmpeg (mediante ffmpeg.wasm y en nuestro servidor) para decodificar y convertir, y yt-dlp (Unlicense) para obtener contenido desde enlaces. Estos proyectos siguen siendo propiedad de sus autores y se usan bajo sus licencias."
+    ]
+   },
+   {
+    "h2": "Contacto",
+    "blocks": [
+     "¿Preguntas sobre estos términos? Escribe a [{email}](mailto:{email})."
+    ]
+   }
+  ]
+ },
+ "copyright": {
+  "metaTitle": "Política de derechos de autor y DMCA",
+  "metaDescription": "Cómo pueden los titulares de derechos pedir a MP3 Converter que bloquee enlaces a su contenido, y nuestras reglas de uso responsable.",
+  "title": "Política de derechos de autor y DMCA",
+  "lead": "Última actualización: octubre de 2026",
+  "sections": [
+   {
+    "h2": "Respetamos a los creadores",
+    "blocks": [
+     "MP3 Converter ofrece herramientas para convertir y descargar contenido multimedia. Los usuarios solo deben procesar contenido que sea suyo, que sea de dominio público o tenga una licencia abierta, o que tengan permiso para usar. No está permitido usar nuestras herramientas para infringir derechos de autor, y hacerlo incumple nuestros [Términos de uso](/terms).",
+     "No alojamos ninguna biblioteca de música ni de videos. Los archivos creados desde un enlace se guardan temporalmente para que la persona que los solicitó pueda descargarlos, y se borran automáticamente después de 30 minutos."
+    ]
+   },
+   {
+    "h2": "Cómo pedirnos que bloqueemos contenido",
+    "blocks": [
+     "Si tienes los derechos de un contenido y quieres que nuestras herramientas no lo descarguen, escribe a [{email}](mailto:{email}?subject=Copyright%20notice) con:",
+     {
+      "ol": [
+       "Tu nombre, empresa (si la hay), dirección postal, número de teléfono y correo electrónico.",
+       "Una descripción de la obra protegida por derechos de autor.",
+       "Los enlaces exactos (URL) o el canal o sitio que quieres bloquear.",
+       "Una declaración de que crees de buena fe que el uso no está autorizado por el titular, su representante o la ley.",
+       "Una declaración, bajo pena de perjurio, de que la información es correcta y de que eres el titular o estás autorizado para actuar en su nombre.",
+       "Tu firma física o electrónica."
+      ]
+     },
+     "Intentamos revisar los avisos válidos en un plazo de dos días hábiles. Los enlaces aprobados se agregan a nuestra lista de bloqueo y, a partir de ese momento, nuestro servicio se niega a procesarlos."
+    ]
+   },
+   {
+    "h2": "Abuso reiterado",
+    "blocks": [
+     "Limitamos cuántas descargas puede iniciar cada visitante y podemos bloquear a quienes usen mal el servicio de forma reiterada."
+    ]
+   },
+   {
+    "h2": "Marcas comerciales",
+    "blocks": [
+     "YouTube es una marca comercial de Google LLC. Los nombres de otras plataformas son marcas comerciales de sus respectivos propietarios. MP3 Converter es independiente y no está afiliado, respaldado ni patrocinado por ninguna de estas empresas."
+    ]
+   }
+  ]
+ }
+}

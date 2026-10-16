@@ -1,1 +1,335 @@
-{}
+{
+ "metaTitle": "MP3 Converter – Audio & Video kostenlos in MP3 umwandeln",
+ "metaDescription": "Kostenloser MP3 Konverter online: WAV, M4A, FLAC, MP4, MOV und mehr in MP3 mit bis zu 320 kbps umwandeln. Ohne Anmeldung, ohne Upload, direkt im Browser.",
+ "ogDescription": "Wandle jede Audio- oder Videodatei in Sekunden in MP3 um. Kostenlos, privat und auf Handy oder Computer.",
+ "h1": "MP3 Converter – Audio & Video kostenlos online in",
+ "h1Highlight": "MP3 umwandeln",
+ "lead": "Unser kostenloser MP3 Konverter wandelt WAV, M4A, FLAC, MP4, MOV, MKV und viele andere Dateien mit wenigen Klicks in sauberes MP3-Audio um. Lade eine Datei hoch, füge einen Medienlink ein oder nimm deine Stimme auf. Ohne Anmeldung – und hochgeladene Dateien verlassen nie dein Gerät.",
+ "badges": [
+  "Privat & sicher",
+  "Unbegrenzt umwandeln",
+  "Kostenlos nutzbar",
+  "Bis 320 kbps"
+ ],
+ "popular": {
+  "eyebrow": "Beliebte Umwandlungen",
+  "h2": "Fast jedes Format in MP3 umwandeln",
+  "intro": "Ein Tool für Audio und Video. Wähle unten ein Format, um eine Seite mit Tipps für diesen Dateityp zu öffnen, oder zieh deine Datei einfach in den Konverter oben.",
+  "tags": {
+   "video": "Video",
+   "audio": "Audio",
+   "lossless": "Verlustfrei"
+  },
+  "names": {
+   "mp4-to-mp3": "MP4 in MP3",
+   "wav-to-mp3": "WAV in MP3",
+   "m4a-to-mp3": "M4A in MP3",
+   "flac-to-mp3": "FLAC in MP3",
+   "mov-to-mp3": "MOV in MP3",
+   "ogg-to-mp3": "OGG in MP3",
+   "webm-to-mp3": "WEBM in MP3",
+   "aac-to-mp3": "AAC in MP3"
+  }
+ },
+ "whatIs": {
+  "eyebrow": "Die Grundlagen",
+  "h2": "Was ist ein MP3 Konverter?",
+  "paras": [
+   "Ein **MP3 Konverter**, manchmal auch MP3 Audio Konverter genannt, ist ein Tool, das eine Audio- oder Videodatei ins MP3-Format umwandelt. Er nimmt also eine Sounddatei, die zu groß, zu ungewöhnlich oder von deinem Gerät nicht unterstützt ist, und macht daraus eine MP3, die fast überall läuft.",
+   "MP3 ist seit mehr als zwei Jahrzehnten das verbreitetste Audioformat. Dein Handy, dein Autoradio, dein Laptop, smarte Lautsprecher und fast jeder Musikplayer können es öffnen. Genau deshalb wandeln Leute ihre Dateien auch heute noch in MP3 um – trotz der vielen neueren Formate."
+  ],
+  "imageAlt": "MP3 Converter",
+  "caption": "Audio- und Videodateien rein, kleine und überall unterstützte MP3-Dateien raus.",
+  "after": "Unser kostenloser Online **[MP3 Converter](/)** arbeitet etwas anders als die meisten. Statt deine Datei an einen entfernten Server zu schicken, erledigt er alles direkt in deinem Webbrowser. Weil es keinen Upload und keine Warteschlange gibt, ist er für die meisten Dateien ein wirklich schneller MP3 Konverter – und viel privater, denn deine Aufnahmen verlassen nie dein Gerät."
+ },
+ "howTo": {
+  "eyebrow": "Schritt für Schritt",
+  "h2": "So wandelst du eine Datei in MP3 um",
+  "intro": "Für diesen MP3 Konverter brauchst du keine Technikkenntnisse. Hier ist der ganze Ablauf – meist dauert er weniger als eine Minute.",
+  "imageAlt": "So wandelst du eine Datei in MP3 um",
+  "steps": [
+   [
+    "Datei hinzufügen",
+    "Klick auf *Dateien wählen* oder zieh eine Datei auf den Konverter. Du kannst eine oder mehrere Dateien gleichzeitig hinzufügen, auch Audio und Video gemischt."
+   ],
+   [
+    "MP3-Qualität wählen",
+    "Lass 192 kbps für den Alltag eingestellt oder passe den Wert an. Schalte Mono ein, wenn die Datei hauptsächlich Sprache enthält."
+   ],
+   [
+    "Kurz warten",
+    "Der Fortschrittsbalken zeigt jeden Schritt. Zuerst liest das Tool das Audio, dann kodiert es die MP3."
+   ],
+   [
+    "MP3 herunterladen",
+    "Tippe neben der Datei auf *Herunterladen*. Die neue MP3 behält den Namen des Originals, sodass du sie später leicht findest."
+   ]
+  ],
+  "callout": "**Willst du zuerst etwas aufnehmen?** Wechsle zum Tab *Aufnehmen*, sprich in dein Mikrofon und drück auf *Stoppen & umwandeln*. Du bekommst eine fertige MP3-Sprachaufnahme zum Teilen."
+ },
+ "devices": {
+  "eyebrow": "Jedes Gerät",
+  "h2": "Den MP3 Konverter auf iPhone, Android und Computer nutzen",
+  "intro": "Da alles im Browser läuft, musst du auf keinem Gerät eine App installieren. Die Schritte unterscheiden sich nur darin, wo deine Dateien gespeichert werden.",
+  "list": [
+   [
+    "MP3 Konverter auf iPhone und iPad",
+    "Öffne diese Seite in Safari, tippe auf Dateien wählen und wähle eine Datei aus Fotos oder der Dateien-App. Tippe nach der Umwandlung auf Herunterladen; die MP3 landet in Dateien unter Downloads, bereit zum Teilen oder für deine Musik-App."
+   ],
+   [
+    "Android-Handys und -Tablets",
+    "Nutze Chrome oder einen anderen aktuellen Browser. Fertige MP3s werden im Ordner Downloads gespeichert, wo dein Musikplayer und Dateimanager sie finden."
+   ],
+   [
+    "Windows, Mac, Linux und Chromebook",
+    "Zieh einen ganzen Ordner voller Dateien auf den Konverter und speichere dann mit Alle herunterladen jede MP3 auf einmal."
+   ]
+  ]
+ },
+ "why": {
+  "eyebrow": "Warum es sich lohnt",
+  "h2": "Warum Audio und Video in MP3 umwandeln?",
+  "intro": "Es gibt viele gute Gründe, eine MP3-Kopie deiner Dateien zu haben. Hier sind die, die wir von Nutzern am häufigsten hören.",
+  "list": [
+   [
+    "Es läuft überall",
+    "Manche Formate wie FLAC, OPUS oder WMA lassen sich nicht auf jedem Handy oder Autoradio öffnen. MP3 dagegen wird fast überall unterstützt."
+   ],
+   [
+    "Es spart Speicherplatz",
+    "Ein dreiminütiger Song als WAV braucht etwa 30 MB. Derselbe Song als MP3 mit 192 kbps hat etwa 4,3 MB – rund siebenmal kleiner."
+   ],
+   [
+    "Es lässt sich leicht teilen",
+    "Kleinere Dateien verschickst du schneller per E-Mail, WhatsApp oder Cloud-Speicher, und sie laden schneller auf Websites hoch, die nur MP3 akzeptieren."
+   ],
+   [
+    "Du brauchst nur den Ton",
+    "Wenn du den Ton aus einem Vorlesungsvideo, einem Familienclip oder einer Bildschirmaufnahme willst, entfernt ein **Video in MP3 Konverter** das Bild und behält genau das, was du hören willst."
+   ]
+  ]
+ },
+ "bitrate": {
+  "eyebrow": "Qualitäts-Guide",
+  "h2": "Die richtige MP3-Bitrate wählen",
+  "intro": "Die Bitrate, gemessen in Kilobit pro Sekunde (kbps), bestimmt, wie viele Daten die MP3 pro Sekunde Ton nutzt. Eine höhere Bitrate bewahrt mehr Details, macht die Datei aber auch größer. Die Tabelle zeigt, was dich erwartet, damit du die richtige Balance findest.",
+  "head": [
+   "Bitrate",
+   "Größe pro Minute",
+   "Ideal für"
+  ],
+  "rows": [
+   [
+    "128 kbps",
+    "ca. 0,96 MB",
+    "Podcasts, Hörbücher, Vorlesungen, Sprachmemos"
+   ],
+   [
+    "192 kbps",
+    "ca. 1,44 MB",
+    "Musik im Alltag auf Handy und Earbuds"
+   ],
+   [
+    "256 kbps",
+    "ca. 1,92 MB",
+    "Musik über gute Kopfhörer oder Lautsprecher zu Hause"
+   ],
+   [
+    "320 kbps",
+    "ca. 2,40 MB",
+    "Musik archivieren, DJ-Sets, höchste MP3-Qualität"
+   ]
+  ],
+  "tipsTitle": "Praktische Tipps für bessere Ergebnisse",
+  "tips": [
+   [
+    "Nimm die beste Quelle, die du hast",
+    "Aus WAV oder FLAC entsteht eine sauberere MP3 als aus einer anderen komprimierten Datei."
+   ],
+   [
+    "Keine MP3 „hochrechnen“",
+    "Wenn du eine MP3 mit 128 kbps in 320 kbps umwandelst, wird die Datei größer, aber bereits entfernte Details kommen nicht zurück."
+   ],
+   [
+    "Mono für Sprache",
+    "Eine einzelne Stimme klingt in Mono genauso, und die ganze Bitrate geht an diesen einen Kanal."
+   ],
+   [
+    "Behalte deine Originale",
+    "MP3 ist ein verlustbehaftetes Format. Heb also die Quelldatei auf, falls du später eine andere Qualität brauchst."
+   ]
+  ]
+ },
+ "compare": {
+  "eyebrow": "Formatvergleich",
+  "h2": "MP3 vs. WAV vs. AAC vs. FLAC",
+  "intro": "Jedes Audioformat ist ein Kompromiss aus Größe, Qualität und Kompatibilität. Dieser kurze Vergleich hilft dir zu entscheiden, wann MP3 die richtige Wahl ist und wann ein anderes Format besser passt.",
+  "head": [
+   "Format",
+   "Typ",
+   "Dateigröße",
+   "Kompatibilität"
+  ],
+  "rows": [
+   [
+    "MP3",
+    "Verlustbehaftet",
+    "Klein",
+    "Läuft auf fast jedem Gerät und in fast jeder App"
+   ],
+   [
+    "WAV",
+    "Unkomprimiert",
+    "Sehr groß",
+    "Super zum Bearbeiten, zu groß für den Alltag"
+   ],
+   [
+    "AAC / M4A",
+    "Verlustbehaftet",
+    "Klein",
+    "Stark auf Apple-Geräten, schwächer auf älteren Playern"
+   ],
+   [
+    "FLAC",
+    "Verlustfrei",
+    "Groß",
+    "Beliebt bei Audiophilen, nicht überall unterstützt"
+   ]
+  ],
+  "outro": "Kurz gesagt: Nimm MP3, wenn du eine kleine Datei willst, die überall läuft. Behalte WAV oder FLAC, wenn du eine perfekte Masterkopie zum Bearbeiten oder Archivieren brauchst."
+ },
+ "features": {
+  "eyebrow": "Funktionen",
+  "h2": "Warum Leute unseren kostenlosen MP3 Konverter wählen",
+  "intro": "Wir haben diesen [MP3 Converter](/) so gebaut, dass er für Einsteiger einfach ist und trotzdem genug kann für Leute, die täglich mit Audio arbeiten.",
+  "imageAlt": "Warum Leute unseren kostenlosen MP3 Konverter wählen",
+  "items": [
+   [
+    "Privat von Grund auf",
+    "Die Umwandlung passiert auf deinem eigenen Gerät. Deine Songs, Vorlesungen und Sprachnotizen landen nie auf unseren Servern, also kann sie niemand sonst sehen."
+   ],
+   [
+    "Schnell und ohne Warteschlange",
+    "Weil es keinen Upload gibt, werden kurze Clips in wenigen Sekunden zu MP3. Bei längeren Dateien kommt es einfach auf die Geschwindigkeit deines Geräts an."
+   ],
+   [
+    "Du wählst die Qualität",
+    "Wähle 128, 192, 256 oder 320 kbps. Klein für Sprache und Podcasts, hoch für Musik, die du behalten willst."
+   ],
+   [
+    "Viele Dateien auf einmal umwandeln",
+    "Wähle einen ganzen Ordner voller Clips. Das Tool reiht sie auf und wandelt sie nacheinander um, sodass du weiterarbeiten kannst."
+   ],
+   [
+    "Läuft auf jedem Gerät",
+    "Nutze ihn unter Windows, Mac, Linux, Android, auf dem iPhone oder einem Chromebook. Du brauchst nur einen modernen Browser, keine App."
+   ],
+   [
+    "Kostenlos und ohne Konto",
+    "Keine Anmeldung, keine E-Mail, kein Wasserzeichen. Seite öffnen, Datei reinziehen, MP3 herunterladen."
+   ]
+  ]
+ },
+ "uses": {
+  "eyebrow": "Im Alltag",
+  "h2": "Was kannst du mit einem MP3 Konverter machen?",
+  "items": [
+   [
+    "Unterwegs lernen",
+    "Wandle aufgezeichnete Vorlesungen oder Videos aus Online-Kursen in MP3 um und hör sie auf dem Weg zur Arbeit oder beim Sport."
+   ],
+   [
+    "Podcasts veröffentlichen",
+    "Exportiere deine Folge als schlanke MP3, die Podcast-Hoster und Apps problemlos akzeptieren."
+   ],
+   [
+    "Sprachnotizen teilen",
+    "Wandle M4A-Memos vom iPhone oder OPUS-Sprachnachrichten aus WhatsApp in MP3 um, damit jeder sie öffnen kann."
+   ],
+   [
+    "Eine Musiksammlung aufbauen",
+    "Erstelle handliche MP3-Kopien deiner eigenen WAV- oder FLAC-Alben für Handy, Laptop und Auto."
+   ],
+   [
+    "Deinen MP3-Player füllen",
+    "Nutze ihn als MP3-Player-Konverter: Mach aus WMA-, FLAC-, M4A- oder OGG-Dateien, die ein älterer MP3-Player oder ein Autoradio nicht abspielt, normale MP3s, die er lesen kann."
+   ],
+   [
+    "Klingeltöne und Clips erstellen",
+    "Wandle einen Song in MP3 um und behalte mit unserem [MP3 Cutter](/mp3-cutter) nur den Refrain."
+   ]
+  ]
+ },
+ "privacy": {
+  "eyebrow": "Sicherheit & Datenschutz",
+  "h2": "Ist dieser Online MP3 Konverter sicher?",
+  "text": "Ja. Dieser [MP3 Converter](/) wurde von Anfang an privat gebaut. Hier siehst du, wie er hinter den Kulissen arbeitet – du musst uns also nicht einfach glauben. Wenn du eine Datei hinzufügst, liest dein Browser den Ton mit seiner eingebauten Web-Audio-Engine. Für Formate, die der Browser nicht öffnen kann, etwa MKV, AVI oder WMA, lädt die Seite FFmpeg, eine bewährte Open-Source-Medienbibliothek, die in deinem Browser läuft. Dann komprimiert der bekannte LAME-Encoder den Ton zu einer MP3. Zum Schluss gibt dein Browser dir die fertige Datei direkt zurück.",
+  "list": [
+   "Hochgeladene Dateien verlassen nie dein Gerät. Per Link abgerufene Videos werden nach 30 Minuten von unserem Server gelöscht.",
+   "Keine Software zum Installieren, also keine Gefahr durch mitgelieferte Adware.",
+   "Kein Konto, also keine persönlichen Daten, die geschützt werden müssen oder durchsickern können.",
+   "Schließ den Tab, und alle umgewandelten Dateien im Speicher sind gelöscht."
+  ],
+  "callout": "**Bitte wandle verantwortungsvoll um.** Nutze das Tool für deine eigenen Aufnahmen, gekaufte Dateien oder Dateien, die du verwenden darfst. Geschützte Musik oder Filme ohne Erlaubnis zu kopieren, kann in deinem Land gegen das Urheberrecht verstoßen."
+ },
+ "faqTitle": "Häufige Fragen",
+ "faqs": [
+  {
+   "q": "Ist dieser MP3 Konverter wirklich kostenlos?",
+   "a": "Ja. Du kannst so viele Dateien umwandeln, wie du willst – ohne zu zahlen, dich anzumelden oder eine E-Mail-Adresse anzugeben. Die Umwandlung läuft auf deinem eigenen Gerät, deshalb kostet es uns sehr wenig, das Tool kostenlos anzubieten."
+  },
+  {
+   "q": "Werden meine Dateien auf euren Server hochgeladen?",
+   "a": "Hochgeladene Dateien werden nie an uns geschickt. Dein Browser liest die Datei, dekodiert das Audio und erstellt die MP3 direkt auf deinem Gerät. Nur wenn du einen Link einfügst, ruft unser Server das Video für dich ab, und das Ergebnis wird nach 30 Minuten gelöscht."
+  },
+  {
+   "q": "Kann ich ein Video in MP3 umwandeln?",
+   "a": "Ja. Wähle eine MP4-, MOV-, WEBM- oder andere Videodatei, und der Konverter holt nur die Tonspur heraus und speichert sie als MP3. Das Bild fällt weg, deshalb ist die neue Datei viel kleiner als das Video."
+  },
+  {
+   "q": "Welche Bitrate soll ich wählen?",
+   "a": "Für Sprache wie Podcasts, Vorlesungen oder Sprachmemos reichen 128 kbps, und Mono hält eine einzelne Stimme klar. Für Musik klingen 192 kbps für die meisten gut, während 256 oder 320 kbps die bessere Wahl für Songs sind, die du lange behalten willst."
+  },
+  {
+   "q": "Verschlechtert die Umwandlung in MP3 die Tonqualität?",
+   "a": "MP3 ist ein verlustbehaftetes Format und entfernt einige Details, die die meisten Menschen nicht hören. Wenn du von einer verlustfreien Datei wie WAV oder FLAC ausgehst und 256 oder 320 kbps wählst, klingt das Ergebnis fast wie das Original. Eine vorhandene MP3 in eine höhere Bitrate umzuwandeln, bringt verlorene Qualität aber nicht zurück."
+  },
+  {
+   "q": "Gibt es eine Begrenzung der Dateigröße?",
+   "a": "Du kannst Dateien bis 500 MB umwandeln. Da die Arbeit auf deinem Gerät passiert, brauchen sehr lange Aufnahmen freien Arbeitsspeicher. Wenn eine große Datei auf dem Handy nicht klappt, probier es am Computer oder teile sie vorher in Stücke."
+  },
+  {
+   "q": "Funktioniert der MP3 Konverter auf iPhone und Android?",
+   "a": "Ja. Er funktioniert als MP3 Konverter auf iPhone, iPad und Android, ganz ohne App. Öffne die Seite in Safari, Chrome oder einem anderen aktuellen Browser, tippe auf Dateien wählen und wähle eine Datei von deinem Handy. Wenn er fertig ist, tippe auf Herunterladen, um die MP3 in der Dateien-App oder im Download-Ordner zu speichern."
+  },
+  {
+   "q": "Warum konnte meine Datei nicht umgewandelt werden?",
+   "a": "Der Konverter nutzt zuerst den Decoder deines Browsers. Kann der die Datei nicht lesen, lädt er einen eingebauten FFmpeg-Decoder, der fast jedes Format beherrscht. Eine Datei scheitert meist nur, wenn sie keine Tonspur hat (zum Beispiel eine stumme Bildschirmaufnahme), kopiergeschützt (DRM) oder beschädigt ist."
+  },
+  {
+   "q": "Ist es legal, Dateien in MP3 umzuwandeln?",
+   "a": "Dateien, die dir gehören oder die du nutzen darfst, für den privaten Gebrauch umzuwandeln, ist in der Regel in Ordnung. Bitte nutze das Tool nicht, um urheberrechtlich geschützte Musik, Filme oder andere Inhalte ohne Erlaubnis des Rechteinhabers zu kopieren."
+  }
+ ],
+ "author": {
+  "title": "Geschrieben vom MP3 Converter Team",
+  "text": "Wir entwickeln einfache Audio-Tools, die deine Privatsphäre schützen. Jeder Tipp auf dieser Seite ist darauf geprüft, wie sich der Konverter wirklich verhält, und wir aktualisieren diesen Guide, sobald sich das Tool ändert. [Mehr über uns](/about)."
+ },
+ "cta": {
+  "h2": "Bereit, deine Datei in MP3 umzuwandeln?",
+  "text": "Kostenlos, privat und in wenigen Sekunden erledigt. Scroll nach oben, zieh deine Datei rein und hol dir deine MP3.",
+  "button": "Jetzt in MP3 umwandeln"
+ },
+ "jsonLd": {
+  "appDescription": "Kostenloser Online MP3 Konverter, der Audio- und Videodateien direkt im Browser in MP3 umwandelt, mit Bitraten von 128 bis 320 kbps.",
+  "operatingSystem": "Alle (läuft im Webbrowser)",
+  "features": [
+   "WAV, M4A, AAC, FLAC, OGG und OPUS in MP3 umwandeln",
+   "MP3-Audio aus MP4-, MOV-, WEBM- und MKV-Videos extrahieren",
+   "Deine Stimme aufnehmen und als MP3 speichern",
+   "Ausgabe mit 128, 192, 256 und 320 kbps",
+   "Stapelumwandlung",
+   "Kein Upload: Dateien bleiben auf deinem Gerät"
+  ]
+ }
+}

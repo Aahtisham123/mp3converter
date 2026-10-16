@@ -556,3 +556,12 @@ tr:last-child td { border-bottom: 0; }
 }
 /* Arrows such as "WAV → MP3" point the reading direction. */
 [dir="rtl"] .direction-tabs .mode-tab > span[aria-hidden="true"] { display: inline-block; transform: scaleX(-1); }
+/* Longer tab labels in some languages: let the tabs wrap instead of overflowing small screens. */
+@media (max-width: 640px) {
+  .mode-tabs { flex-wrap: wrap; justify-content: center; border-radius: 22px; }
+  .mode-tab { padding: 9px 12px; }
+}
+/* Long option labels (e.g. translated bitrate descriptions) must not push the page wider than the screen. */
+.opt { flex-wrap: wrap; max-width: 100%; }
+.select-wrap { max-width: 100%; min-width: 0; }
+.select-wrap select { max-width: 100%; text-overflow: ellipsis; }

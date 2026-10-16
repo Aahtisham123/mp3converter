@@ -1,1 +1,358 @@
-{}
+{
+ "site": {
+  "defaultTitle": "MP3 Converter – Convertir audio y video a MP3 gratis",
+  "titleSuffix": "MP3 Converter",
+  "tagline": "Un convertidor de MP3 gratis y privado que funciona en tu navegador. Convierte audio y video a MP3 sin instalar programas ni crear una cuenta."
+ },
+ "shell": {
+  "skip": "Saltar al contenido",
+  "navLabel": "Navegación del sitio",
+  "home": "Inicio de MP3 Converter",
+  "toggleNav": "Mostrar u ocultar menú",
+  "convertFile": "Convertir un archivo",
+  "soon": "Pronto",
+  "language": "Idioma",
+  "chooseLanguage": "Elegir idioma"
+ },
+ "nav": {
+  "home": "Inicio",
+  "youtube-to-mp3": "YouTube a MP3",
+  "youtube-to-mp4": "YouTube a MP4",
+  "youtube-to-wav": "YouTube a WAV",
+  "online-video-downloader": "Descargar videos online",
+  "mp4-to-mp3": "Convertidor de MP4 a MP3",
+  "tiktok-to-mp3": "TikTok a MP3",
+  "video-to-mp3": "Convertidor de video a MP3",
+  "wav-to-mp3": "Convertidor de WAV a MP3",
+  "m4a-to-mp3": "Convertidor de M4A a MP3",
+  "voice-to-mp3": "Grabadora de voz a MP3",
+  "flac-to-mp3": "FLAC a MP3",
+  "aac-to-mp3": "AAC a MP3",
+  "ogg-to-mp3": "OGG a MP3",
+  "opus-to-mp3": "OPUS a MP3",
+  "webm-to-mp3": "WEBM a MP3",
+  "mov-to-mp3": "MOV a MP3",
+  "mkv-to-mp3": "MKV a MP3",
+  "wma-to-mp3": "WMA a MP3",
+  "amr-to-mp3": "AMR a MP3",
+  "caf-to-mp3": "CAF a MP3",
+  "ac3-to-mp3": "AC3 a MP3",
+  "alac-to-mp3": "ALAC a MP3",
+  "m4b-to-mp3": "M4B a MP3",
+  "mp3-cutter": "Cortador de MP3",
+  "mp3-compressor": "Compresor de MP3",
+  "audio-joiner": "Unir audios",
+  "podcast-to-mp3": "Podcast a MP3",
+  "groupFormats": "Convertidores a MP3",
+  "groupTools": "Herramientas MP3"
+ },
+ "footer": {
+  "follow": "Síguenos",
+  "socialLabel": "MP3 Converter en redes sociales",
+  "socialItem": "MP3 Converter en {name}",
+  "converters": "Convertidores",
+  "formatsTools": "Formatos y herramientas",
+  "company": "Empresa",
+  "about": "Quiénes somos",
+  "contact": "Contacto",
+  "privacy": "Política de privacidad",
+  "terms": "Términos de uso",
+  "copyright": "Derechos de autor y DMCA",
+  "rights": "© {year} mp3convert.tools. Todos los derechos reservados.",
+  "disclaimer": "No estamos afiliados a YouTube ni a Google. Descarga solo contenido que sea tuyo o que tengas permiso para usar."
+ },
+ "page": {
+  "breadcrumbHome": "Inicio",
+  "stepByStep": "Paso a paso",
+  "howToUse": "Cómo usar el {name}",
+  "faq": "Preguntas frecuentes",
+  "faqTitle": "Preguntas frecuentes",
+  "related": "Herramientas relacionadas",
+  "byTeam": "Por el equipo de MP3 Converter",
+  "teamText": "Creamos herramientas de audio gratis que funcionan en tu navegador y respetan tu privacidad. Esta guía se revisa según cómo funciona realmente la herramienta. [Quiénes somos](/about)",
+  "lastUpdated": "Última actualización: octubre de 2026",
+  "aboutPage": "Sobre esta página",
+  "notFoundTitle": "Página no encontrada",
+  "notFoundText": "La página que buscas no existe o se ha movido.",
+  "notFoundButton": "Ir a MP3 Converter",
+  "operatingSystem": "Cualquiera (funciona en un navegador web)"
+ },
+ "badges": {
+  "comingSoon": "Próximamente",
+  "free": "Gratis",
+  "mp3Up": "MP3 hasta 320 kbps",
+  "anyDevice": "Cualquier dispositivo",
+  "noSignup": "Sin registro",
+  "mp4Up": "MP4 hasta 1080p",
+  "private": "100 % privado",
+  "noLimits": "Sin límites"
+ },
+ "converter": {
+  "chooseInput": "Elige una entrada",
+  "upload": "Subir",
+  "pasteLink": "Pegar enlace",
+  "record": "Grabar",
+  "regionLabel": "Convertidor de MP3",
+  "heading": "Sube un archivo de audio o video para convertirlo a MP3.",
+  "chooseFiles": "Elegir archivos",
+  "supported": "Formatos compatibles: **{formats}** y más, hasta 500 MB por archivo",
+  "dropHint": "o arrastra y suelta los archivos aquí",
+  "linkHeading": "Pega un enlace a un archivo de audio o video para convertirlo a MP3.",
+  "linkSub": "Funciona con enlaces directos a MP3, MP4, WAV y otros archivos, además de muchos sitios gratuitos de video y audio",
+  "recordHeading": "Graba tu voz y guárdala como MP3.",
+  "recordNote": "Usa tu micrófono. La grabación nunca sale de tu dispositivo.",
+  "startRecording": "Empezar a grabar",
+  "stopConvert": "Detener y convertir",
+  "recUnsupported": "Este navegador no permite grabar. Prueba con Chrome, Edge, Firefox o Safari.",
+  "recNoMic": "No se encontró ningún micrófono. Conecta uno e inténtalo de nuevo.",
+  "recBlocked": "Se bloqueó el acceso al micrófono. Permítelo en la configuración del navegador e inténtalo de nuevo.",
+  "recEmpty": "No se grabó nada. Inténtalo de nuevo.",
+  "recFailed": "No se pudo iniciar la grabación en este navegador.",
+  "tooBig": "Este archivo pesa más de 500 MB. Recórtalo o divídelo primero.",
+  "failed": "La conversión falló.",
+  "smaller": "{pct} % más pequeño",
+  "converting": "Convirtiendo {name}",
+  "download": "Descargar",
+  "remove": "Quitar {name}",
+  "cancel": "Cancelar",
+  "removeShort": "Quitar",
+  "downloadAll": "Descargar todo ({count})",
+  "clearList": "Vaciar lista",
+  "quality": "Calidad del MP3:",
+  "mono": "Mono (ideal para voz):",
+  "monoShort": "Mono:",
+  "privacy": "Los archivos se procesan dentro de tu navegador y nunca se suben a un servidor."
+ },
+ "bitrates": {
+  "small": "{kbps} kbps (ligero)",
+  "standard": "{kbps} kbps (estándar)",
+  "high": "{kbps} kbps (alta)",
+  "best": "{kbps} kbps (máxima)",
+  "smallestVoice": "{kbps} kbps (mínimo, solo voz)",
+  "voice": "{kbps} kbps (voz, podcasts)",
+  "balance": "{kbps} kbps (buen equilibrio)",
+  "musicSmall": "{kbps} kbps (música, ligero)",
+  "musicBetter": "{kbps} kbps (música, mejor)"
+ },
+ "stage": {
+  "queued": "En espera…",
+  "decoding": "Leyendo el audio…",
+  "ffmpegLoading": "Cargando el decodificador avanzado para este formato (solo la primera vez)…",
+  "ffmpegDecoding": "Extrayendo el audio… {pct} %",
+  "encoding": "Codificando MP3… {pct} %",
+  "loadingConverter": "Cargando el convertidor (solo la primera vez)…",
+  "convertingPct": "Convirtiendo… {pct} %"
+ },
+ "errors": {
+  "tooBigSplit": "Este archivo pesa más de 500 MB. Divídelo primero.",
+  "noSound": "No encontramos sonido en este archivo. Puede ser un video sin audio o un archivo dañado.",
+  "unreadable": "No se pudo leer este archivo. Puede estar dañado, protegido (DRM) o usar un códec muy poco común.",
+  "reverseFailed": "No se pudo convertir este archivo. Puede estar dañado, protegido o no ser un archivo de audio.",
+  "tooBigShort": "Este archivo pesa más de 500 MB."
+ },
+ "direction": {
+  "label": "Dirección de la conversión",
+  "to": "a"
+ },
+ "reverse": {
+  "region": "Convertidor de MP3 a {format}",
+  "heading": "Sube archivos MP3 para convertirlos a {format}.",
+  "works": "Funciona con **MP3** y otros archivos de audio (WAV, M4A, FLAC, OGG…), hasta 500 MB por archivo",
+  "choose": "Elegir archivos MP3",
+  "quality": "Calidad de {format}:"
+ },
+ "link": {
+  "linkLabel": "Enlace del video",
+  "placeholder": "Pega un enlace de video o audio…",
+  "clear": "Borrar enlace",
+  "paste": "Pegar",
+  "format": "Formato",
+  "mp3Audio": "Audio MP3",
+  "mp4Video": "Video MP4",
+  "quality": "Calidad",
+  "mono": "Mono:",
+  "cut": "Recortar una parte:",
+  "from": "Desde",
+  "to": "Hasta",
+  "startTime": "Hora de inicio",
+  "endTime": "Hora de fin",
+  "convertTo": "Convertir a {format}",
+  "starting": "Iniciando…",
+  "convertingRing": "Convirtiendo…",
+  "finishing": "Terminando…",
+  "downloading": "Descargando",
+  "fetching": "Obteniendo…",
+  "yourVideo": "Tu video",
+  "keepOpen": "Mantén esta página abierta. Los videos largos pueden tardar uno o dos minutos.",
+  "cancel": "Cancelar",
+  "download": "Descargar",
+  "otherFormat": "Otro formato",
+  "another": "Convertir otro enlace",
+  "legal": "Descarga solo videos que sean tuyos o que tengas permiso para usar. Los archivos se borran de nuestro servidor después de 30 minutos. [Política de derechos de autor](/copyright)",
+  "clipboard": "Tu navegador bloqueó el acceso al portapapeles. Pega con Ctrl+V o con una pulsación larga.",
+  "fullLink": "Pega un enlace completo que empiece por http:// o https://",
+  "badTimes": "Escribe una hora de inicio y de fin como 1:20 y 2:45 (el fin debe ser posterior al inicio).",
+  "unavailable": "Las descargas por enlace no están disponibles por ahora. Inténtalo más tarde o descarga el archivo y usa Subir.",
+  "notAllowed": "Las descargas por enlace aún no están disponibles en esta dirección web. Inténtalo más tarde.",
+  "unreachable": "No se pudo conectar con el servidor de descargas. Puede que se esté iniciando: espera un minuto e inténtalo de nuevo.",
+  "generic": "Algo salió mal. Inténtalo de nuevo.",
+  "youtubeOnly": "Esta herramienta solo funciona con enlaces de YouTube. Para otros sitios, usa nuestro descargador de videos online.",
+  "youtubeOnlyCta": "Abrir el descargador de videos",
+  "useYoutubeTools": "Para enlaces de YouTube, usa nuestras herramientas especiales para YouTube.",
+  "useYoutubeToolsCta": "Abrir YouTube a MP3",
+  "tiktokSoon": "La compatibilidad con TikTok llegará pronto. Vuelve a visitarnos en breve.",
+  "tiktokSoonCta": "Sobre TikTok a MP3",
+  "mp3Qualities": {
+   "64": "64 kbps (mínimo)",
+   "192": "192 kbps (recomendado)",
+   "320": "320 kbps (máxima)"
+  },
+  "mp4Qualities": {
+   "240": "240p (mínimo)",
+   "720": "720p HD",
+   "1080": "1080p Full HD"
+  },
+  "wavQualities": {
+   "44100": "44.1 kHz (calidad de CD)",
+   "48000": "48 kHz (estándar de video)"
+  },
+  "regionLabel": "Convertidor de enlaces de video"
+ },
+ "serverErrors": {
+  "Our download server is having trouble connecting right now. Please try again in a few minutes.": "Nuestro servidor de descargas tiene problemas de conexión en este momento. Inténtalo de nuevo en unos minutos.",
+  "This video is age-restricted and cannot be downloaded.": "Este video tiene restricción de edad y no se puede descargar.",
+  "The website is temporarily blocking downloads from our server. Please try again in a few minutes.": "El sitio web está bloqueando temporalmente las descargas desde nuestro servidor. Inténtalo de nuevo en unos minutos.",
+  "This video is private or for members only, so it cannot be downloaded.": "Este video es privado o solo para miembros, así que no se puede descargar.",
+  "That quality is not available for this video. Try another option.": "Esa calidad no está disponible para este video. Prueba otra opción.",
+  "This video is copy protected (DRM) and cannot be downloaded.": "Este video está protegido contra copia (DRM) y no se puede descargar.",
+  "We could not find a video on that page. Try the direct link to the video page.": "No encontramos ningún video en esa página. Prueba con el enlace directo a la página del video.",
+  "This video is too large to download here.": "Este video es demasiado grande para descargarlo aquí.",
+  "This video is unavailable or has been removed.": "Este video no está disponible o fue eliminado.",
+  "Something went wrong while fetching this video. Please check the link and try again.": "Algo salió mal al obtener este video. Revisa el enlace e inténtalo de nuevo.",
+  "Too many requests. Please wait a little and try again.": "Demasiadas solicitudes. Espera un poco e inténtalo de nuevo.",
+  "Playlists are not supported. Please paste the link to a single video.": "Las listas de reproducción no son compatibles. Pega el enlace de un solo video.",
+  "Live streams cannot be downloaded.": "Las transmisiones en vivo no se pueden descargar.",
+  "Please choose a valid format and quality.": "Elige un formato y una calidad válidos.",
+  "Please choose a valid start and end time (the end must be after the start).": "Elige una hora de inicio y de fin válidas (el fin debe ser posterior al inicio).",
+  "You have reached the hourly download limit. Please try again later.": "Alcanzaste el límite de descargas por hora. Inténtalo más tarde.",
+  "Our server is busy right now. Please try again in a minute.": "Nuestro servidor está ocupado en este momento. Inténtalo de nuevo en un minuto.",
+  "This download has expired. Please start again.": "Esta descarga caducó. Empieza de nuevo.",
+  "Server error. Please try again.": "Error del servidor. Inténtalo de nuevo."
+ },
+ "serverErrorPrefixes": {
+  "Live streams and very long videos": "Las transmisiones en vivo y los videos muy largos no se pueden convertir.",
+  "Videos longer than": "Este video es demasiado largo para descargarlo aquí."
+ },
+ "soon": {
+  "region": "{name} (próximamente)",
+  "badge": "Próximamente",
+  "linkLabel": "Enlace (próximamente)",
+  "button": "Convertir a MP3 (próximamente)",
+  "note": "Todavía estamos probando esta herramienta. Mientras tanto, si guardaste un archivo de video en tu dispositivo, conviértelo con [MP4 a MP3](/mp4-to-mp3)."
+ },
+ "cutter": {
+  "region": "Cortador de MP3",
+  "heading": "Sube un archivo de audio o video para cortarlo.",
+  "works": "Funciona con **{formats}** y más, hasta 500 MB",
+  "chooseFile": "Elegir archivo",
+  "dropHint": "o arrastra y suelta un archivo aquí",
+  "loadingAudio": "Cargando el audio",
+  "length": "Duración {time} · {size}",
+  "another": "Elegir otro archivo",
+  "startHandle": "Inicio de la selección",
+  "endHandle": "Fin de la selección",
+  "start": "Inicio",
+  "end": "Fin",
+  "selectionGroup": "Qué hacer con la selección",
+  "keep": "Conservar selección",
+  "removeSel": "Quitar selección",
+  "fadeIn": "Fundido de entrada:",
+  "fadeOut": "Fundido de salida:",
+  "stop": "Detener",
+  "preview": "Escuchar",
+  "save": "Cortar y guardar MP3 ({time})",
+  "encoding": "Codificando MP3… {pct} %",
+  "encodingLabel": "Codificando MP3",
+  "tooShort": "La parte seleccionada es demasiado corta.",
+  "failed": "No se pudo crear el MP3."
+ },
+ "joiner": {
+  "region": "Unir audios",
+  "loading": "Cargando {name}",
+  "up": "Subir {name}",
+  "down": "Bajar {name}",
+  "heading": "Agrega dos o más archivos para unirlos en un solo MP3.",
+  "mix": "Combina **{formats}** y más, hasta 500 MB por archivo",
+  "addMore": "Agregar más archivos",
+  "join": "Unir {count} archivos ({time})",
+  "joining": "Uniendo y codificando el MP3… {pct} %",
+  "joiningLabel": "Codificando el MP3 unido",
+  "needTwo": "Agrega al menos dos archivos para unirlos.",
+  "failed": "No se pudieron unir. Prueba con menos archivos o más cortos.",
+  "gap": "Pausa entre archivos:",
+  "gaps": {
+   "0": "Sin pausa",
+   "1": "1 segundo",
+   "2": "2 segundos",
+   "3": "3 segundos",
+   "0.5": "0.5 segundos"
+  },
+  "tooBig": "Pesa más de 500 MB."
+ },
+ "reverseFormats": {
+  "wma": {},
+  "amr": {
+   "note": "AMR es un formato para voz: el resultado es mono a 8 kHz, como una llamada telefónica.",
+   "options": {
+    "0": "4.75 kbps (mínimo)",
+    "2": "5.9 kbps",
+    "4": "7.4 kbps",
+    "5": "7.95 kbps",
+    "6": "10.2 kbps",
+    "7": "12.2 kbps (mejor calidad de voz)"
+   }
+  },
+  "caf": {
+   "options": {
+    "alac": "Apple Lossless (ALAC)",
+    "pcm": "PCM sin comprimir (el más pesado)"
+   }
+  },
+  "ac3": {},
+  "alac": {
+   "note": "Se guarda como archivo .m4a con audio Apple Lossless, listo para Apple Music e iTunes.",
+   "options": {
+    "alac": "Apple Lossless"
+   }
+  },
+  "m4b": {},
+  "flac": {
+   "note": "FLAC es sin pérdida, así que conserva el MP3 tal cual. No puede recuperar los detalles que el MP3 ya eliminó.",
+   "options": {
+    "flac": "FLAC sin pérdida"
+   }
+  },
+  "aac": {},
+  "ogg": {},
+  "opus": {},
+  "webm": {
+   "note": "Crea un archivo WebM solo de audio con sonido Opus, ideal para sitios y aplicaciones web."
+  },
+  "mov": {
+   "note": "Crea un video QuickTime con un fondo oscuro liso, para que puedas usar tu audio en apps de video y plataformas de subida."
+  },
+  "wav": {
+   "note": "WAV no tiene compresión (unos 10 MB por minuto en estéreo). Conserva el sonido del MP3 tal cual, pero no puede recuperar los detalles que el MP3 eliminó.",
+   "options": {
+    "44100": "44.1 kHz · 16 bits (calidad de CD)",
+    "48000": "48 kHz · 16 bits (para video)"
+   }
+  },
+  "mkv": {
+   "note": "Crea un video MKV con un fondo oscuro liso y el sonido MP3 original, sin volver a codificar el audio.",
+   "options": {
+    "copy": "Mantener el audio MP3 original (más rápido)"
+   }
+  }
+ }
+}

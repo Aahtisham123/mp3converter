@@ -1,1 +1,207 @@
-{}
+{
+ "about": {
+  "metaTitle": "Hakkımızda",
+  "metaDescription": "MP3 Converter'ı kimin geliştirdiğini, aracın nasıl çalıştığını ve sesi neden tarayıcınızda gizlice dönüştürdüğünü öğrenin.",
+  "title": "MP3 Converter Hakkında",
+  "lead": "Herkesin kullanabileceği basit ve gizli ses araçları.",
+  "sections": [
+   {
+    "h2": "Bunu neden geliştirdik?",
+    "blocks": [
+     "Çoğu online dönüştürücü, dosyalarınızı bir sunucuya yüklemenizi, sırada beklemenizi ve sonra sonucu indirmenizi ister. Bu hem yavaştır hem de özel kayıtlarınızı bir yabancıya teslim etmeniz anlamına gelir. Daha iyisini istedik: hızlı, ücretsiz ve dosyalarınızı kendi cihazınızda tutan bir dönüştürücü.",
+     "Bu yüzden MP3 Converter'ı tamamen web tarayıcınızda çalışan bir araç olarak geliştirdik. Yükleme yok, hesap yok ve kaç dosya dönüştüreceğinize dair bir sınır yok."
+    ]
+   },
+   {
+    "h2": "Araç nasıl çalışır?",
+    "blocks": [
+     {
+      "check": [
+       "**Kod çözme.** Tarayıcınızın Web Audio motoru yaygın formatları okur. MKV, AVI veya WMA gibi diğer formatlar için WebAssembly'ye derlenmiş, yaygın olarak kullanılan açık kaynaklı medya kütüphanesi FFmpeg'i yükleriz.",
+       "**Kodlama.** MP3, yirmi yılı aşkın süredir güvenilen açık kaynaklı kodlayıcı LAME ile arka planda çalışan bir işlemde oluşturulur.",
+       "**Kaydetme.** Hazır MP3, tarayıcınızın belleğinden doğrudan indirilenler klasörünüze gider."
+      ]
+     }
+    ]
+   },
+   {
+    "h2": "İlkelerimiz",
+    "blocks": [
+     {
+      "check": [
+       "Dosyalarınız cihazınızda kalır.",
+       "Teknik jargon olmadan sade ve dürüst açıklamalar.",
+       "Filigran ve kayıt zorunluluğu olmayan ücretsiz araçlar.",
+       "İçerik üreticilerine saygı: lütfen yalnızca size ait olan veya kullanma izniniz bulunan içerikleri dönüştürün."
+      ]
+     },
+     "Sorunuz veya fikriniz mi var? [Bize ulaşın](/contact)."
+    ]
+   }
+  ]
+ },
+ "contact": {
+  "metaTitle": "İletişim",
+  "metaDescription": "Sorularınız, hata bildirimleriniz veya özellik fikirleriniz için MP3 Converter ekibiyle iletişime geçin.",
+  "title": "Bize Ulaşın",
+  "lead": "Her mesajı okuyor ve en kısa sürede yanıtlıyoruz.",
+  "sections": [
+   {
+    "h2": "E-posta",
+    "blocks": [
+     "Bize [{email}](mailto:{email}) adresinden e-posta gönderin.",
+     {
+      "h3": "Bir sorun bildirirken lütfen şunları ekleyin"
+     },
+     {
+      "ul": [
+       "Kullandığınız araç (örneğin MP4'ten MP3'e veya MP3 Kesici).",
+       "Tarayıcınız ve cihazınız (örneğin Windows'ta Chrome veya iPhone'da Safari).",
+       "Dosya formatı ve dosyanın yaklaşık süresi veya boyutu.",
+       "Görüntülendiyse tam hata mesajı."
+      ]
+     },
+     "Biz istemedikçe lütfen ses dosyasının kendisini göndermeyin. Araç tarayıcınızda çalıştığı için dosyalarınızı hiçbir zaman görmüyoruz."
+    ]
+   }
+  ]
+ },
+ "privacy-policy": {
+  "metaTitle": "Gizlilik Politikası",
+  "metaDescription": "MP3 Converter verilerinizi nasıl işler? Dosyalar tarayıcınızda işlenir ve sunucularımıza asla yüklenmez.",
+  "title": "Gizlilik Politikası",
+  "lead": "Son güncelleme: Ekim 2026",
+  "sections": [
+   {
+    "h2": "Kısaca",
+    "blocks": [
+     "{domain} üzerinde yüklediğiniz, kaydettiğiniz, kestiğiniz, sıkıştırdığınız veya birleştirdiğiniz dosyalar kendi tarayıcınızda işlenir ve bize asla gönderilmez. Bir bağlantı yapıştırdığınızda indirme sunucumuz o bağlantıyı sizin için alır ve sonucu 30 dakika sonra siler."
+    ]
+   },
+   {
+    "h2": "Cihazınızdaki dosyalar ve kayıtlar",
+    "blocks": [
+     "Bir dosya seçtiğinizde veya mikrofonunuzla kayıt yaptığınızda ses, tarayıcınızın belleğinde okunur ve dönüştürülür. Ortaya çıkan MP3 size indirme olarak sunulur. Sayfayı kapattığınızda veya yenilediğinizde bu veriler silinir."
+    ]
+   },
+   {
+    "h2": "Yapıştırdığınız bağlantılar",
+    "blocks": [
+     "Bir bağlantıdan indirmek için bağlantıyı indirme sunucumuza göndeririz; sunucu videoyu web sitesinden alır ve isterseniz MP3'e dönüştürür. Hazır dosya yalnızca indirebilmeniz için saklanır ve 30 dakika sonra otomatik olarak silinir. Adil kullanım sınırlarını uygulamak için her isteğin IP adresini en fazla bir saat bellekte tutarız; sunucu kayıtlarımız ise dosyaların içeriği olmadan teknik hataları kaydeder."
+    ]
+   },
+   {
+    "h2": "Mikrofon",
+    "blocks": [
+     "Kaydedici, mikrofonunuza yalnızca Kaydı Başlat'a bastıktan ve tarayıcınız izin istedikten sonra erişir. Kayıt yalnızca bu sayfada MP3'ünüzü oluşturmak için kullanılır."
+    ]
+   },
+   {
+    "h2": "Tarayıcınızda saklanan bilgiler",
+    "blocks": [
+     "Tarayıcınızın yerel depolamasına küçük bir ayar kaydederiz: kenar çubuğunun daraltılmış olup olmadığı. Tarayıcınız ayrıca site bir dahaki sefere daha hızlı açılsın diye dönüştürücünün program dosyalarını önbelleğe alabilir."
+    ]
+   },
+   {
+    "h2": "Sunucu kayıtları",
+    "blocks": [
+     "Her web sitesinde olduğu gibi barındırma sağlayıcımız, güvenlik ve güvenilirlik için IP adresi, tarayıcı türü ve istenen sayfalar gibi standart teknik kayıtlar tutabilir. Bu kayıtlar ses dosyalarınızı içermez."
+    ]
+   },
+   {
+    "h2": "Değişiklikler ve iletişim",
+    "blocks": [
+     "Gelecekte analiz veya reklam eklersek önce bu sayfayı güncelleyeceğiz. Gizlilikle ilgili her türlü soru için [{email}](mailto:{email}) adresine e-posta gönderin."
+    ]
+   }
+  ]
+ },
+ "terms": {
+  "metaTitle": "Kullanım Koşulları",
+  "metaDescription": "Ücretsiz MP3 Converter araçlarının kullanım koşulları.",
+  "title": "Kullanım Koşulları",
+  "lead": "Son güncelleme: Ekim 2026",
+  "sections": [
+   {
+    "h2": "Araçların kullanımı",
+    "blocks": [
+     "MP3 Converter kişisel ve ticari amaçlarla ücretsiz kullanılabilir. Siteyi kullanarak bu koşulları kabul etmiş olursunuz."
+    ]
+   },
+   {
+    "h2": "İçeriğiniz ve telif hakkı",
+    "blocks": [
+     "İşlediğiniz dosya ve bağlantılardan siz sorumlusunuz. Yalnızca size ait olan, açık lisanslı olan, kullanma izniniz bulunan veya yasanın kopyalamanıza izin verdiği içerikleri dönüştürün, indirin, kesin, sıkıştırın veya birleştirin. Araçları telif hakkını ihlal etmek, kopya korumasını aşmak veya başka bir web sitesinin hizmet koşullarını çiğnemek için kullanmayın. [Telif Hakkı ve DMCA Politikamıza](/copyright) göz atın."
+    ]
+   },
+   {
+    "h2": "Bağlantı indiricinin adil kullanımı",
+    "blocks": [
+     "Hizmetin herkes için erişilebilir kalması amacıyla her ziyaretçinin saatte başlatabileceği indirme sayısını, video süresini ve dosya boyutunu sınırlandırıyoruz. Otomatik veya toplu kullanıma izin verilmez. Kötüye kullanım durumunda erişimi engelleyebiliriz."
+    ]
+   },
+   {
+    "h2": "Garanti yoktur",
+    "blocks": [
+     "Araçlar “olduğu gibi” sunulur. Güvenilir olmaları için çok çalışıyoruz, ancak her dosyanın dönüştürüleceğini veya hizmetin her zaman erişilebilir olacağını garanti edemeyiz. Orijinal dosyalarınızın bir kopyasını her zaman saklayın."
+    ]
+   },
+   {
+    "h2": "Açık kaynaklı yazılımlar",
+    "blocks": [
+     "Site, MP3 kodlama için LAME'i (lamejs aracılığıyla, LGPL), kod çözme ve dönüştürme için FFmpeg'i (ffmpeg.wasm aracılığıyla ve sunucumuzda) ve bağlantılardan medya almak için yt-dlp'yi (Unlicense) kullanır. Bu projeler sahiplerinin mülkiyetinde kalır ve kendi lisansları kapsamında kullanılır."
+    ]
+   },
+   {
+    "h2": "İletişim",
+    "blocks": [
+     "Bu koşullarla ilgili sorularınız mı var? [{email}](mailto:{email}) adresine e-posta gönderin."
+    ]
+   }
+  ]
+ },
+ "copyright": {
+  "metaTitle": "Telif Hakkı ve DMCA Politikası",
+  "metaDescription": "Hak sahipleri, içeriklerine giden bağlantıların MP3 Converter'da engellenmesini nasıl talep edebilir; sorumlu kullanım kurallarımız.",
+  "title": "Telif Hakkı ve DMCA Politikası",
+  "lead": "Son güncelleme: Ekim 2026",
+  "sections": [
+   {
+    "h2": "İçerik üreticilerine saygı duyuyoruz",
+    "blocks": [
+     "MP3 Converter, medya dönüştürme ve indirme araçları sunar. Kullanıcılar yalnızca kendilerine ait olan, kamu malı veya açık lisanslı olan ya da kullanma izinleri bulunan içerikleri işlemelidir. Araçlarımızı telif hakkını ihlal etmek için kullanmak yasaktır ve [Kullanım Koşullarımızı](/terms) ihlal eder.",
+     "Bir müzik veya video kütüphanesi barındırmıyoruz. Bir bağlantıdan oluşturulan dosyalar, yalnızca talep eden kişi indirebilsin diye geçici olarak saklanır ve 30 dakika sonra otomatik olarak silinir."
+    ]
+   },
+   {
+    "h2": "İçerik engelleme talebi nasıl yapılır?",
+    "blocks": [
+     "Bir içeriğin haklarına sahipseniz ve araçlarımızın onu indirmesini engellememizi istiyorsanız, aşağıdakilerle birlikte [{email}](mailto:{email}?subject=Copyright%20notice) adresine e-posta gönderin:",
+     {
+      "ol": [
+       "Adınız, şirketiniz (varsa), posta adresiniz, telefon numaranız ve e-posta adresiniz.",
+       "Telif hakkıyla korunan eserin açıklaması.",
+       "Engellenmesini istediğiniz tam bağlantılar (URL'ler) veya kanal/site.",
+       "Kullanımın sahibi, temsilcisi veya yasa tarafından yetkilendirilmediğine iyi niyetle inandığınıza dair bir beyan.",
+       "Yalan beyan cezası kapsamında, bilgilerin doğru olduğuna ve sahibi olduğunuza veya sahibi adına hareket etmeye yetkili olduğunuza dair bir beyan.",
+       "Fiziksel veya elektronik imzanız."
+      ]
+     },
+     "Geçerli bildirimleri iki iş günü içinde incelemeyi hedefliyoruz. Onaylanan bağlantılar engelleme listemize eklenir ve ardından hizmetimiz bunları işlemeyi reddeder."
+    ]
+   },
+   {
+    "h2": "Tekrarlanan kötüye kullanım",
+    "blocks": [
+     "Her ziyaretçinin başlatabileceği indirme sayısını sınırlandırıyoruz ve hizmeti tekrar tekrar kötüye kullanan ziyaretçileri engelleyebiliriz."
+    ]
+   },
+   {
+    "h2": "Ticari markalar",
+    "blocks": [
+     "YouTube, Google LLC'nin ticari markasıdır. Diğer platform adları ilgili sahiplerinin ticari markalarıdır. MP3 Converter bağımsızdır; bu şirketlerin hiçbiriyle bağlantılı değildir, onlar tarafından onaylanmamış veya desteklenmemiştir."
+    ]
+   }
+  ]
+ }
+}

@@ -1,1 +1,335 @@
-{}
+{
+ "metaTitle": "MP3 Dönüştürücü – Ses ve Videoyu Ücretsiz MP3'e Çevirin",
+ "metaDescription": "Ücretsiz online MP3 dönüştürücü. WAV, M4A, FLAC, MP4, MOV ve diğer dosyaları 320 kbps'ye kadar MP3'e çevirin. Kayıt yok, yükleme yok, tarayıcıda çalışır.",
+ "ogDescription": "Her türlü ses veya video dosyasını saniyeler içinde MP3'e dönüştürün. Ücretsiz, gizli; telefonda ve bilgisayarda çalışır.",
+ "h1": "MP3 Dönüştürücü – Ses ve Videoyu Online",
+ "h1Highlight": "Ücretsiz MP3'e Çevirin",
+ "lead": "Ücretsiz MP3 dönüştürücümüz WAV, M4A, FLAC, MP4, MOV, MKV ve daha birçok dosyayı birkaç tıklamayla temiz MP3 sese çevirir. Bir dosya yükleyin, medya bağlantısı yapıştırın veya sesinizi kaydedin. Kayıt gerekmez ve yüklediğiniz dosyalar cihazınızdan asla çıkmaz.",
+ "badges": [
+  "Gizli ve Güvenli",
+  "Sınırsız Dönüştürme",
+  "Ücretsiz",
+  "320 kbps'ye Kadar"
+ ],
+ "popular": {
+  "eyebrow": "Popüler dönüştürmeler",
+  "h2": "Neredeyse her formatı MP3'e dönüştürün",
+  "intro": "Tek bir araç hem ses hem video dosyalarını kapsar. O dosya türüne özel ipuçlarının olduğu sayfa için aşağıdan bir format seçin ya da dosyanızı doğrudan yukarıdaki dönüştürücüye bırakın.",
+  "tags": {
+   "video": "Video",
+   "audio": "Ses",
+   "lossless": "Kayıpsız"
+  },
+  "names": {
+   "mp4-to-mp3": "MP4'ten MP3'e",
+   "wav-to-mp3": "WAV'dan MP3'e",
+   "m4a-to-mp3": "M4A'dan MP3'e",
+   "flac-to-mp3": "FLAC'tan MP3'e",
+   "mov-to-mp3": "MOV'dan MP3'e",
+   "ogg-to-mp3": "OGG'den MP3'e",
+   "webm-to-mp3": "WEBM'den MP3'e",
+   "aac-to-mp3": "AAC'den MP3'e"
+  }
+ },
+ "whatIs": {
+  "eyebrow": "Temel bilgiler",
+  "h2": "MP3 dönüştürücü nedir?",
+  "paras": [
+   "**MP3 dönüştürücü** (bazen MP3 ses dönüştürücü de denir), bir ses veya video dosyasını MP3 formatına çeviren bir araçtır. Yani çok büyük, alışılmadık veya cihazınızın desteklemediği bir ses dosyasını alır ve neredeyse her yerde çalan bir MP3'e dönüştürür.",
+   "MP3, yirmi yılı aşkın süredir en yaygın ses formatıdır. Telefonunuz, araba teybiniz, dizüstü bilgisayarınız, akıllı hoparlörler ve neredeyse her müzik çalar onu açabilir. Bu kadar yeni format varken insanların hâlâ dosyalarını MP3'e dönüştürmesinin nedeni de tam olarak budur."
+  ],
+  "imageAlt": "MP3 dönüştürücü",
+  "caption": "Ses ve video dosyaları girer; küçük ve her yerde desteklenen MP3 dosyaları çıkar.",
+  "after": "Ücretsiz online **[MP3 Converter](/)** aracımız çoğu araçtan biraz farklı çalışır. Dosyanızı uzak bir sunucuya göndermek yerine tüm işi web tarayıcınızın içinde yapar. Yükleme ve bekleme sırası olmadığı için çoğu dosyada gerçekten hızlı bir MP3 dönüştürücüdür; kayıtlarınız cihazınızdan hiç çıkmadığı için de çok daha gizlidir."
+ },
+ "howTo": {
+  "eyebrow": "Adım adım",
+  "h2": "Bir dosya MP3'e nasıl dönüştürülür?",
+  "intro": "Bu MP3 dönüştürücüyü kullanmak için teknik bilgiye ihtiyacınız yok. İşte tüm süreç; genellikle bir dakikadan kısa sürer.",
+  "imageAlt": "Bir dosya MP3'e nasıl dönüştürülür",
+  "steps": [
+   [
+    "Dosyanızı ekleyin",
+    "*Dosya Seç*'e tıklayın veya bir dosyayı dönüştürücünün üzerine sürükleyin. Ses ve video dahil, bir veya birden fazla dosyayı aynı anda ekleyebilirsiniz."
+   ],
+   [
+    "MP3 kalitesini seçin",
+    "Günlük dinleme için 192 kbps'de bırakın veya ihtiyacınıza göre değiştirin. Dosya çoğunlukla konuşmaysa Mono'yu açın."
+   ],
+   [
+    "Biraz bekleyin",
+    "İlerleme çubuğu her adımı gösterir. Araç önce sesi okur, ardından MP3'ü kodlar."
+   ],
+   [
+    "MP3'ünüzü indirin",
+    "Dosyanın yanındaki *İndir* düğmesine basın. Yeni MP3 orijinal dosyayla aynı adı taşır, böylece sonra kolayca bulursunuz."
+   ]
+  ],
+  "callout": "**Önce ses mi kaydetmeniz gerekiyor?** *Kaydet* sekmesine geçin, mikrofonunuza konuşun ve *Durdur ve Dönüştür*'e basın. Paylaşmaya hazır bir MP3 ses kaydı elde edersiniz."
+ },
+ "devices": {
+  "eyebrow": "Her cihazda",
+  "h2": "MP3 dönüştürücüyü iPhone, Android ve bilgisayarda kullanma",
+  "intro": "Her şey tarayıcıda çalıştığı için hiçbir cihaza uygulama kurmanız gerekmez. Adımlar yalnızca dosyalarınızın nereye kaydedildiğine göre değişir.",
+  "list": [
+   [
+    "iPhone ve iPad'de MP3 dönüştürücü",
+    "Bu sayfayı Safari'de açın, Dosya Seç'e dokunun ve Fotoğraflar'dan veya Dosyalar uygulamasından bir dosya seçin. Dönüştürmeden sonra İndir'e dokunun; MP3, Dosyalar uygulamasında İndirilenler altında görünür ve paylaşmaya ya da bir müzik uygulamasına eklemeye hazırdır."
+   ],
+   [
+    "Android telefon ve tabletler",
+    "Chrome veya güncel herhangi bir tarayıcı kullanın. Hazır MP3'ler İndirilenler klasörüne kaydedilir; müzik çalarınız ve dosya yöneticiniz onları orada bulabilir."
+   ],
+   [
+    "Windows, Mac, Linux ve Chromebook",
+    "Bütün bir dosya klasörünü dönüştürücüye sürükleyin, ardından tüm MP3'leri tek seferde kaydetmek için Tümünü indir'i kullanın."
+   ]
+  ]
+ },
+ "why": {
+  "eyebrow": "Neden önemli?",
+  "h2": "Ses ve video neden MP3'e dönüştürülür?",
+  "intro": "Dosyalarınızın MP3 kopyasını tutmak için pek çok iyi neden var. Aşağıda, aracı kullananlardan en sık duyduklarımızı bulabilirsiniz.",
+  "list": [
+   [
+    "Her yerde çalar",
+    "FLAC, OPUS veya WMA gibi bazı formatlar her telefonda ya da araba teybinde açılmaz. MP3 ise neredeyse her yerde desteklenir."
+   ],
+   [
+    "Depolama alanı kazandırır",
+    "Üç dakikalık bir WAV şarkı yaklaşık 30 MB yer kaplar. Aynı şarkı 192 kbps MP3 olarak yaklaşık 4.3 MB'tır, yani yedi kat kadar daha küçüktür."
+   ],
+   [
+    "Paylaşması kolaydır",
+    "Küçük dosyalar e-posta, WhatsApp veya bulut depolama ile daha hızlı gönderilir ve yalnızca MP3 kabul eden sitelere daha hızlı yüklenir."
+   ],
+   [
+    "Yalnızca sese ihtiyacınız vardır",
+    "Bir ders videosunun, aile videosunun veya ekran kaydının sesini istiyorsanız, **videoyu MP3'e dönüştürücü** görüntüyü atar ve yalnızca duymak istediğinizi bırakır."
+   ]
+  ]
+ },
+ "bitrate": {
+  "eyebrow": "Kalite rehberi",
+  "h2": "Doğru MP3 bit hızını seçmek",
+  "intro": "Saniyede kilobit (kbps) ile ölçülen bit hızı, MP3'ün her saniyelik ses için ne kadar veri kullanacağını belirler. Yüksek bit hızı daha fazla ayrıntı korur ama dosyayı da büyütür. Doğru dengeyi bulabilmeniz için aşağıdaki tablo neler bekleyeceğinizi gösteriyor.",
+  "head": [
+   "Bit hızı",
+   "Dakika başına boyut",
+   "En uygun kullanım"
+  ],
+  "rows": [
+   [
+    "128 kbps",
+    "yaklaşık 0.96 MB",
+    "Podcast, sesli kitap, ders, sesli not"
+   ],
+   [
+    "192 kbps",
+    "yaklaşık 1.44 MB",
+    "Telefon ve kulaklıkla günlük müzik dinleme"
+   ],
+   [
+    "256 kbps",
+    "yaklaşık 1.92 MB",
+    "İyi kulaklık veya ev hoparlörlerinde müzik"
+   ],
+   [
+    "320 kbps",
+    "yaklaşık 2.40 MB",
+    "Müzik arşivi, DJ setleri, en yüksek MP3 kalitesi"
+   ]
+  ],
+  "tipsTitle": "Daha iyi sonuçlar için pratik ipuçları",
+  "tips": [
+   [
+    "Elinizdeki en iyi kaynaktan başlayın",
+    "WAV veya FLAC'tan dönüştürmek, başka bir sıkıştırılmış dosyadan dönüştürmeye göre daha temiz bir MP3 verir."
+   ],
+   [
+    "MP3'ü “yükseltmeye” çalışmayın",
+    "128 kbps bir MP3'ü 320 kbps'ye çevirmek dosyayı büyütür ama zaten kaybolmuş ayrıntıları geri getiremez."
+   ],
+   [
+    "Konuşma için mono kullanın",
+    "Tek bir ses mono'da aynı duyulur ve tüm bit hızı o tek kanala ayrılır."
+   ],
+   [
+    "Orijinallerinizi saklayın",
+    "MP3 kayıplı bir formattır; ileride farklı bir kaliteye ihtiyaç duyarsanız diye kaynak dosyayı saklayın."
+   ]
+  ]
+ },
+ "compare": {
+  "eyebrow": "Format karşılaştırması",
+  "h2": "MP3, WAV, AAC ve FLAC karşılaştırması",
+  "intro": "Her ses formatı boyut, kalite ve uyumluluk arasında bir denge kurar. Bu kısa karşılaştırma, MP3'ün ne zaman doğru seçim olduğuna ve ne zaman başka bir formatın size daha uygun olabileceğine karar vermenize yardımcı olur.",
+  "head": [
+   "Format",
+   "Tür",
+   "Dosya boyutu",
+   "Uyumluluk"
+  ],
+  "rows": [
+   [
+    "MP3",
+    "Kayıplı",
+    "Küçük",
+    "Neredeyse her cihaz ve uygulamada çalar"
+   ],
+   [
+    "WAV",
+    "Sıkıştırılmamış",
+    "Çok büyük",
+    "Düzenleme için harika, günlük dinleme için çok büyük"
+   ],
+   [
+    "AAC / M4A",
+    "Kayıplı",
+    "Küçük",
+    "Apple cihazlarında güçlü, eski çalarlarda zayıf"
+   ],
+   [
+    "FLAC",
+    "Kayıpsız",
+    "Büyük",
+    "Ses tutkunlarının favorisi, her yerde desteklenmez"
+   ]
+  ],
+  "outro": "Kısacası küçük ve her yerde çalan bir dosya istiyorsanız MP3'ü seçin. Düzenleme veya arşiv için kusursuz bir ana kopyaya ihtiyacınız varsa WAV veya FLAC'ı saklayın."
+ },
+ "features": {
+  "eyebrow": "Özellikler",
+  "h2": "İnsanlar neden ücretsiz MP3 dönüştürücümüzü seçiyor?",
+  "intro": "Bu [MP3 Converter](/) aracını yeni başlayanlar için basit, her gün sesle çalışanlar için de yeterince kullanışlı olacak şekilde geliştirdik.",
+  "imageAlt": "İnsanlar neden ücretsiz MP3 dönüştürücümüzü seçiyor",
+  "items": [
+   [
+    "Tasarımı gereği gizli",
+    "Dönüştürme kendi cihazınızda gerçekleşir. Şarkılarınız, dersleriniz ve sesli notlarınız sunucularımıza hiç gitmez; böylece onları başka kimse göremez."
+   ],
+   [
+    "Hızlı, bekleme sırası yok",
+    "Yükleme adımı olmadığı için kısa klipler birkaç saniyede MP3'e dönüşür. Uzun dosyalar yalnızca cihazınızın hızına bağlıdır."
+   ],
+   [
+    "Kaliteyi siz seçersiniz",
+    "128, 192, 256 veya 320 kbps seçin. Konuşma ve podcast için küçük, saklamak istediğiniz müzikler için yüksek kalite tercih edin."
+   ],
+   [
+    "Birçok dosyayı aynı anda dönüştürün",
+    "Bütün bir klasör dolusu klip seçin. Araç onları sıraya koyar ve birbiri ardına dönüştürür; siz de çalışmaya devam edersiniz."
+   ],
+   [
+    "Her cihazda çalışır",
+    "Windows, Mac, Linux, Android, iPhone veya Chromebook'ta kullanın. Tek ihtiyacınız modern bir tarayıcı; kurulacak uygulama yok."
+   ],
+   [
+    "Ücretsiz, hesap gerekmez",
+    "Kayıt yok, e-posta yok, filigran yok. Sayfayı açın, dosyanızı bırakın ve MP3'ü indirin."
+   ]
+  ]
+ },
+ "uses": {
+  "eyebrow": "Gerçek hayatta kullanım",
+  "h2": "MP3 dönüştürücüyle neler yapabilirsiniz?",
+  "items": [
+   [
+    "Yolda ders çalışın",
+    "Kaydedilmiş dersleri veya online ders videolarını MP3'e çevirin, yolda ya da spor yaparken dinleyin."
+   ],
+   [
+    "Podcast yayınlayın",
+    "Bölümünüzü, podcast platformlarının ve dinleme uygulamalarının sorunsuz kabul ettiği hafif bir MP3 olarak dışa aktarın."
+   ],
+   [
+    "Sesli notları paylaşın",
+    "iPhone M4A notlarını veya WhatsApp OPUS mesajlarını herkesin açabilmesi için MP3'e dönüştürün."
+   ],
+   [
+    "Müzik arşivi oluşturun",
+    "Kendi WAV veya FLAC albümlerinizin telefon, dizüstü bilgisayar ve araba için taşınabilir MP3 kopyalarını oluşturun."
+   ],
+   [
+    "MP3 çalarınızı doldurun",
+    "Bir MP3 çalar dönüştürücüsü olarak kullanın: eski bir MP3 çaların veya araba teybinin çalmadığı WMA, FLAC, M4A veya OGG dosyalarını okuyabileceği standart MP3'lere çevirin."
+   ],
+   [
+    "Zil sesi ve klip yapın",
+    "Bir şarkıyı MP3'e dönüştürün, ardından [MP3 Kesici](/mp3-cutter) ile yalnızca nakarat kısmını bırakın."
+   ]
+  ]
+ },
+ "privacy": {
+  "eyebrow": "Güvenlik ve gizlilik",
+  "h2": "Bu online MP3 dönüştürücü güvenli mi?",
+  "text": "Evet. Bu [MP3 Converter](/) en baştan gizlilik odaklı tasarlandı. Sözümüze güvenmek zorunda kalmamanız için perde arkasında nasıl çalıştığını anlatalım. Bir dosya eklediğinizde tarayıcınız, sesi okumak için yerleşik Web Audio motorunu kullanır. MKV, AVI veya WMA gibi tarayıcının açamadığı formatlar için sayfa, tarayıcınızın içinde çalışacak şekilde derlenmiş güvenilir ve açık kaynaklı bir medya kütüphanesi olan FFmpeg'i yükler. Ardından tanınmış LAME kodlayıcı sesi MP3 olarak sıkıştırır. Son olarak tarayıcınız hazır dosyayı doğrudan size teslim eder.",
+  "list": [
+   "Yüklediğiniz dosyalar cihazınızdan asla çıkmaz. Bağlantıdan alınan videolar 30 dakika sonra sunucumuzdan silinir.",
+   "Kurulacak yazılım yok, dolayısıyla beraberinde reklam yazılımı gelme riski de yok.",
+   "Hesap yok; yani korunacak ya da sızacak kişisel veri de yok.",
+   "Sekmeyi kapattığınızda bellekteki tüm dönüştürülmüş dosyalar silinir."
+  ],
+  "callout": "**Lütfen sorumlu bir şekilde dönüştürün.** Aracı kendi kayıtlarınız, satın aldığınız dosyalar veya kullanma izniniz olan dosyalar için kullanın. Korumalı müzik veya filmleri izinsiz kopyalamak ülkenizdeki telif hakkı yasalarını ihlal edebilir."
+ },
+ "faqTitle": "Sıkça sorulan sorular",
+ "faqs": [
+  {
+   "q": "Bu MP3 dönüştürücü gerçekten ücretsiz mi?",
+   "a": "Evet. Ödeme yapmadan, kayıt olmadan veya e-posta adresi paylaşmadan istediğiniz kadar dosya dönüştürebilirsiniz. Dönüştürme kendi cihazınızda çalıştığı için aracı ücretsiz tutmak bize çok az maliyet getirir."
+  },
+  {
+   "q": "Dosyalarım sunucunuza yükleniyor mu?",
+   "a": "Yüklediğiniz dosyalar bize asla gönderilmez. Tarayıcınız dosyayı okur, sesi çözer ve MP3'ü doğrudan cihazınızda oluşturur. Sunucumuz yalnızca bir bağlantı yapıştırdığınızda o videoyu sizin için alır ve sonuç 30 dakika sonra silinir."
+  },
+  {
+   "q": "Bir videoyu MP3'e dönüştürebilir miyim?",
+   "a": "Evet. Bir MP4, MOV, WEBM veya başka bir video dosyası seçin; dönüştürücü yalnızca ses kanalını çıkarır ve MP3 olarak kaydeder. Görüntü atıldığı için yeni dosya videodan çok daha küçük olur."
+  },
+  {
+   "q": "Hangi bit hızını seçmeliyim?",
+   "a": "Podcast, ders veya sesli not gibi konuşmalar için 128 kbps fazlasıyla yeterlidir ve mono, tek bir sesi net tutar. Müzik için 192 kbps çoğu kişiye iyi gelir; uzun süre saklamak istediğiniz şarkılar için 256 veya 320 kbps daha iyi bir seçimdir."
+  },
+  {
+   "q": "MP3'e dönüştürmek ses kalitesini düşürür mü?",
+   "a": "MP3 kayıplı bir formattır; çoğu insanın duyamadığı bazı ayrıntıları atar. WAV veya FLAC gibi kayıpsız bir dosyadan başlayıp 256 veya 320 kbps seçerseniz sonuç neredeyse orijinal gibi duyulur. Ancak mevcut bir MP3'ü daha yüksek bit hızına çevirmek kaybolan kaliteyi geri getirmez."
+  },
+  {
+   "q": "Dosya boyutu sınırı var mı?",
+   "a": "500 MB'a kadar dosyaları dönüştürebilirsiniz. İşlem cihazınızda yapıldığı için çok uzun kayıtlar boş bellek gerektirir. Büyük bir dosya telefonda başarısız olursa bilgisayarda deneyin veya önce parçalara bölün."
+  },
+  {
+   "q": "MP3 dönüştürücü iPhone ve Android'de çalışır mı?",
+   "a": "Evet. iPhone, iPad ve Android'de uygulama kurmadan MP3 dönüştürücü olarak çalışır. Siteyi Safari, Chrome veya başka bir güncel tarayıcıda açın, Dosya Seç'e dokunun ve telefonunuzdan bir dosya seçin. İşlem bitince MP3'ü Dosyalar uygulamanıza veya indirilenler klasörünüze kaydetmek için İndir'e dokunun."
+  },
+  {
+   "q": "Dosyam neden dönüştürülemedi?",
+   "a": "Dönüştürücü önce tarayıcınızın kendi kod çözücüsünü kullanır. O dosyayı okuyamazsa, neredeyse her formatı işleyen yerleşik FFmpeg kod çözücüsünü yükler. Bir dosya genellikle yalnızca ses kanalı yoksa (örneğin sessiz bir ekran kaydı), kopya korumalıysa (DRM) veya bozuksa başarısız olur."
+  },
+  {
+   "q": "Dosyaları MP3'e dönüştürmek yasal mı?",
+   "a": "Size ait olan veya kullanma izniniz bulunan dosyaları kişisel kullanım için dönüştürmek genellikle sorun değildir. Lütfen aracı, telif hakkıyla korunan müzik, film veya diğer içerikleri sahibinin izni olmadan kopyalamak için kullanmayın."
+  }
+ ],
+ "author": {
+  "title": "MP3 Converter ekibi tarafından yazıldı",
+  "text": "Basit ve gizliliğe öncelik veren ses araçları geliştiriyoruz. Bu sayfadaki her ipucu, dönüştürücünün gerçekte nasıl çalıştığına göre kontrol edilir ve araç her değiştiğinde bu rehberi güncelleriz. [Hakkımızda daha fazla bilgi](/about)."
+ },
+ "cta": {
+  "h2": "Dosyanızı MP3'e dönüştürmeye hazır mısınız?",
+  "text": "Ücretsiz, gizli ve yalnızca birkaç saniye sürer. Yukarı kaydırın, dosyanızı bırakın ve MP3'ünüzü alın.",
+  "button": "Hemen MP3'e Dönüştür"
+ },
+ "jsonLd": {
+  "appDescription": "Ses ve video dosyalarını tarayıcınızın içinde 128 ile 320 kbps arası bit hızlarıyla MP3'e çeviren ücretsiz online MP3 dönüştürücü.",
+  "operatingSystem": "Tümü (web tarayıcısında çalışır)",
+  "features": [
+   "WAV, M4A, AAC, FLAC, OGG ve OPUS'u MP3'e dönüştürme",
+   "MP4, MOV, WEBM ve MKV videolardan MP3 ses çıkarma",
+   "Sesinizi kaydedip MP3 olarak kaydetme",
+   "128, 192, 256 ve 320 kbps çıktı",
+   "Toplu dönüştürme",
+   "Yükleme yok: dosyalar cihazınızda kalır"
+  ]
+ }
+}
