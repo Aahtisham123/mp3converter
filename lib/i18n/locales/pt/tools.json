@@ -1093,6 +1093,24 @@
   "metaDescription": "Tem um vídeo mas só precisa do som? Converta MP4, MOV, AVI, MKV e outros em MP3 em segundos: grátis, online e sem cadastro.",
   "h1": "Conversor de vídeo para MP3",
   "lead": "Nosso conversor de vídeo para MP3 grátis extrai o som de quase qualquer arquivo de vídeo e salva como MP3 de até 320 kbps. Solte arquivos MP4, MOV, MKV, WEBM, AVI ou WMV, até vários de uma vez, e baixe o áudio sem instalar nada.",
+  "hub": {
+   "h2": "Converta um formato de vídeo específico em MP3",
+   "intro": "Prefere uma página para o seu formato exato? Estes conversores funcionam do mesmo jeito e trazem dicas para cada tipo de arquivo.",
+   "items": [
+    {
+     "text": "Extraia o som de vídeos MP4 do celular, de câmeras e de downloads."
+    },
+    {
+     "text": "Tire o áudio em MP3 de vídeos MOV do iPhone e do Mac."
+    },
+    {
+     "text": "Converta em MP3 vídeos WEBM e gravações de tela da web."
+    },
+    {
+     "text": "Extraia a faixa de áudio de filmes e gravações MKV."
+    }
+   ]
+  },
   "intro": {
    "h2": "Extraia o áudio de qualquer vídeo, direto no navegador",
    "paras": [
@@ -5090,6 +5108,224 @@
    {
     "q": "O transcritor de áudio funciona no iPhone e no Android?",
     "a": "Sim, funciona nos navegadores modernos de celular. No celular, escolha Rápido ou Equilibrado e transcreva gravações mais curtas, porque o modelo Melhor precisa de mais memória."
+   }
+  ]
+ },
+ "audio-to-mp3": {
+  "nav": "Conversor de áudio para MP3",
+  "tool": {
+   "heading": "Envie arquivos de áudio para converter em MP3.",
+   "formats": "WAV, M4A, FLAC, AAC, OGG, OPUS, WMA, AMR",
+   "buttonLabel": "Escolher arquivos de áudio"
+  },
+  "seoTitle": "Conversor de Áudio para MP3 Grátis – Qualquer Formato",
+  "metaDescription": "Conversor de áudio para MP3 grátis: WAV, M4A, FLAC, AAC, OGG, WMA e mais. Converta áudio em MP3 no navegador, sem upload e sem cadastro.",
+  "h1": "Conversor de Áudio para MP3",
+  "lead": "Converta qualquer arquivo de áudio em MP3 em segundos. Solte aqui arquivos WAV, M4A, FLAC, AAC, OGG e outros, ou escolha seu formato abaixo para abrir um conversor dedicado, com as melhores configurações e dicas. Todos os arquivos ficam no seu dispositivo.",
+  "hub": {
+   "h2": "Escolha o formato do seu áudio",
+   "intro": "Cada conversor abaixo é ajustado para um formato, com as configurações de qualidade certas e respostas às dúvidas mais comuns sobre ele.",
+   "items": [
+    {
+     "text": "Reduza gravações WAV grandes a uma fração do tamanho, com até 320 kbps."
+    },
+    {
+     "text": "Converta gravações do app Gravador do iPhone e arquivos M4A do iTunes em MP3."
+    },
+    {
+     "text": "Transforme músicas FLAC sem perdas em MP3 que tocam em qualquer aparelho."
+    },
+    {
+     "text": "Converta em MP3 o áudio AAC de celulares, apps e gravadores."
+    },
+    {
+     "text": "Transforme em MP3 o áudio OGG Vorbis de jogos, apps e sites."
+    },
+    {
+     "text": "Converta mensagens de voz e gravações Opus em MP3."
+    },
+    {
+     "text": "Dê vida nova a arquivos antigos do Windows Media Audio (WMA) em MP3."
+    },
+    {
+     "text": "Transforme gravações de chamadas e notas de voz AMR do celular em MP3."
+    },
+    {
+     "text": "Converta músicas Apple Lossless (ALAC) em arquivos MP3 menores."
+    },
+    {
+     "text": "Converta o som Dolby Digital AC3 em MP3."
+    },
+    {
+     "text": "Converta arquivos Apple Core Audio (CAF) do Mac e do iPhone em MP3."
+    },
+    {
+     "text": "Transforme audiolivros M4B em MP3 para qualquer player ou som do carro."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Um só conversor de áudio para MP3 para todos os formatos",
+   "paras": [
+    "O MP3 continua sendo o formato que toca em todo lugar: no celular, no carro, em caixas de som inteligentes e em qualquer app de música. Só que muitas gravações chegam em WAV, M4A, FLAC ou outro formato que um aparelho ou site não aceita. Um **conversor de áudio para MP3** resolve isso em um passo e, quase sempre, ainda deixa o arquivo bem menor.",
+    "Esta página lê todos os formatos de áudio comuns, além de outros mais raros, como AMR, AC3 e CAF. Você pode adicionar vários arquivos de uma vez, escolher o bitrate e salvar cada um como um MP3 padrão. A conversão acontece no seu navegador, então até gravações particulares nunca saem do seu dispositivo. Se o som estiver dentro de um vídeo, use o nosso conversor de [Vídeo para MP3](/video-to-mp3)."
+   ]
+  },
+  "howCta": "Converta seu áudio em MP3",
+  "steps": [
+   [
+    "Adicione seus arquivos de áudio",
+    "Toque em Escolher arquivos de áudio ou arraste os arquivos para a caixa. Você pode misturar formatos e adicionar vários arquivos de uma vez, com até 500 MB cada."
+   ],
+   [
+    "Escolha a qualidade do MP3",
+    "Mantenha 192 kbps para um bom equilíbrio, escolha 320 kbps para a melhor qualidade em música ou ative Mono para voz."
+   ],
+   [
+    "Baixe seus arquivos MP3",
+    "Cada arquivo é convertido separadamente. Toque em Baixar ao lado dele, ou em Baixar tudo quando tudo estiver pronto."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Qual bitrate de MP3 escolher?",
+    "paras": [
+     "O bitrate define a qualidade e o tamanho. Em geral, 128 kbps basta para podcasts e voz, 192 kbps é uma escolha segura para a maioria das músicas, e 320 kbps preserva o máximo de detalhes de arquivos sem perdas, como WAV, FLAC e ALAC. Converter para um bitrate maior que o original nunca melhora a qualidade, então não vale a pena passar dele. Precisa de um arquivo ainda menor? Passe o resultado pelo nosso [Compressor de MP3](/mp3-compressor)."
+    ]
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Quais formatos de áudio posso converter em MP3?",
+    "a": "WAV, M4A, FLAC, AAC, OGG, OPUS, WMA, AMR, ALAC, AC3, CAF, M4B, AIFF e outros. Se o seu navegador não conseguir ler um arquivo, o conversor passa a usar o FFmpeg automaticamente."
+   },
+   {
+    "q": "Este conversor de áudio para MP3 é grátis?",
+    "a": "Sim. É grátis, sem cadastro, sem marca d'água e sem limite de arquivos. O único limite é de 500 MB por arquivo."
+   },
+   {
+    "q": "Meus arquivos de áudio são enviados para algum servidor?",
+    "a": "Não. Cada arquivo é convertido no seu navegador, então ele fica no seu celular ou computador."
+   },
+   {
+    "q": "Converter em MP3 reduz a qualidade?",
+    "a": "O MP3 é um formato comprimido, então alguns detalhes são removidos. Em 192 ou 320 kbps, a diferença é muito difícil de perceber para a maioria das pessoas."
+   }
+  ]
+ },
+ "link-to-mp3": {
+  "nav": "Link para MP3",
+  "seoTitle": "Link para MP3 – Baixar MP3, MP4 e WAV Online Grátis",
+  "metaDescription": "Cole um link e baixe em MP3, WAV ou MP4: YouTube para MP3, YouTube para MP4, YouTube para WAV e um downloader de vídeos online. Grátis, rápido e sem cadastro.",
+  "h1": "Link para MP3 – Baixar Online",
+  "lead": "Tem um link em vez de um arquivo? Estas ferramentas buscam o vídeo para você e salvam em MP3, WAV ou MP4. Escolha o downloader que combina com o seu link e o formato de que você precisa.",
+  "hub": {
+   "h2": "Escolha um downloader",
+   "intro": "Cada ferramenta foi feita para um tipo de link ou de arquivo final, então você tem as opções certas sem passos extras.",
+   "items": [
+    {
+     "text": "Cole um link do YouTube e salve o som em MP3, com até 320 kbps."
+    },
+    {
+     "text": "Salve o áudio do YouTube como um arquivo WAV sem compressão, pronto para edição."
+    },
+    {
+     "text": "Transforme gravações e episódios de podcast em arquivos MP3 leves, prontos para publicar."
+    },
+    {
+     "text": "Baixe vídeos do YouTube em MP4 na qualidade que você escolher."
+    },
+    {
+     "text": "Salve em MP4, com até 1080p, vídeos de sites que permitem download."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Como funciona o download por link",
+   "paras": [
+    "Os navegadores não conseguem buscar vídeos de outros sites sozinhos. Por isso, quando você cola um link, o nosso servidor de download busca o vídeo para você. Depois, ele converte o som em MP3 ou WAV, ou mantém o vídeo em MP4, e entrega o arquivo pronto. Não tem programa para instalar nem conta para criar.",
+    "Já tem o arquivo no seu dispositivo? Então você nem precisa de link. Nossos conversores de [Áudio para MP3](/audio-to-mp3) e de [Vídeo para MP3](/video-to-mp3) funcionam direto no navegador, sem nenhum upload."
+   ]
+  },
+  "howTitle": "Como baixar a partir de um link",
+  "steps": [
+   [
+    "Copie o link",
+    "Abra o vídeo no navegador ou no app, toque em Compartilhar e escolha Copiar link."
+   ],
+   [
+    "Cole na ferramenta certa",
+    "Escolha o downloader acima, cole o link e selecione MP3, WAV ou MP4 e a qualidade."
+   ],
+   [
+    "Baixe o arquivo",
+    "Quando o arquivo estiver pronto, toque em Baixar. Ele é salvo na sua pasta Downloads."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Baixe com responsabilidade",
+    "paras": [
+     "Baixe apenas vídeos e músicas que são seus, que têm licença livre ou que você tem permissão para usar. Muitas plataformas não permitem downloads nos termos de uso. Leia a nossa [Política de Direitos autorais e DMCA](/copyright) para saber mais."
+    ]
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Esses downloaders por link são grátis?",
+    "a": "Sim. Todos são grátis e não precisam de conta. Para manter o serviço justo para todos, o número de downloads por hora é limitado."
+   },
+   {
+    "q": "Qual downloader devo usar para um link do YouTube?",
+    "a": "Use YouTube para MP3 para o som, YouTube para WAV para um arquivo de áudio sem compressão e YouTube para MP4 para o próprio vídeo."
+   },
+   {
+    "q": "Posso baixar de outros sites além do YouTube?",
+    "a": "Sim. O Baixar vídeos online salva em MP4 vídeos de muitos sites que permitem download."
+   }
+  ]
+ },
+ "mp3-tools": {
+  "nav": "Ferramentas de MP3",
+  "seoTitle": "Ferramentas de MP3 – Cortar, Comprimir e Juntar Grátis",
+  "metaDescription": "Ferramentas de MP3 online e grátis: corte MP3, comprima para um tamanho menor e junte vários arquivos em um só. Tudo roda no navegador, sem upload.",
+  "h1": "Ferramentas de MP3 – Editar MP3 Online",
+  "lead": "Ferramentas simples para editar MP3 no dia a dia. Corte uma música, diminua um arquivo grande demais para enviar ou junte várias gravações em uma só, tudo no navegador e sem instalar nada.",
+  "hub": {
+   "h2": "Escolha uma ferramenta de MP3",
+   "intro": "Cada ferramenta abre o seu arquivo na própria página e salva um novo MP3, então o original fica intacto.",
+   "items": [
+    {
+     "text": "Corte músicas e gravações, crie toques de celular e adicione fade in ou fade out."
+    },
+    {
+     "text": "Deixe arquivos MP3 menores reduzindo o bitrate, até 32 kbps."
+    },
+    {
+     "text": "Junte vários arquivos de áudio em um só MP3, em qualquer ordem e com pausas opcionais."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Edite MP3 sem instalar programas",
+   "paras": [
+    "Editores de áudio completos são poderosos, mas levam tempo para instalar e aprender. Estas **ferramentas de MP3** fazem bem uma única tarefa cada e funcionam do mesmo jeito no celular ou no computador. Elas também leem arquivos WAV, M4A, FLAC e de vídeo, e sempre salvam um MP3 padrão.",
+    "Como a edição acontece no seu navegador, seus arquivos nunca são enviados. Quer gravar algo antes? Use o [Gravador de voz](/voice-to-mp3). Para transformar fala em texto escrito, experimente o transcritor de [Áudio para texto](/transcribe-audio-to-text)."
+   ]
+  },
+  "sections": [],
+  "faqs": [
+   {
+    "q": "Essas ferramentas de MP3 são grátis?",
+    "a": "Sim. Você pode cortar, comprimir e juntar quantos arquivos quiser, sem cadastro e sem marca d'água."
+   },
+   {
+    "q": "As ferramentas de MP3 enviam meus arquivos para algum servidor?",
+    "a": "Não. Todas as ferramentas funcionam no seu navegador, então seus arquivos ficam no seu dispositivo."
+   },
+   {
+    "q": "Posso usar as ferramentas de MP3 no celular?",
+    "a": "Sim. Elas funcionam em navegadores modernos no iPhone, Android, Windows, Mac e Chromebook."
    }
   ]
  }

@@ -1093,6 +1093,24 @@
   "metaDescription": "Bir videonuz var ama yalnızca sesi mi lazım? MP4, MOV, AVI, MKV ve daha fazlasını saniyeler içinde MP3'e dönüştürün; ücretsiz, online, kayıt gerekmez.",
   "h1": "Videoyu MP3'e Dönüştürücü",
   "lead": "Ücretsiz videoyu MP3'e dönüştürücümüz, neredeyse her video dosyasının sesini çıkarır ve 320 kbps'ye kadar MP3 olarak kaydeder. MP4, MOV, MKV, WEBM, AVI veya WMV dosyalarını, hatta birkaçını aynı anda bırakın ve hiçbir şey kurmadan sesi indirin.",
+  "hub": {
+   "h2": "Belirli bir video formatını MP3'e dönüştürün",
+   "intro": "Tam olarak sizin formatınıza özel bir sayfa mı tercih edersiniz? Bu dönüştürücüler aynı şekilde çalışır ve her dosya türü için ipuçları sunar.",
+   "items": [
+    {
+     "text": "Telefonlardan, kameralardan ve indirmelerden gelen MP4 videoların sesini çıkarın."
+    },
+    {
+     "text": "iPhone ve Mac MOV videolarından MP3 ses alın."
+    },
+    {
+     "text": "Web'den gelen WEBM videoları ve ekran kayıtlarını MP3'e dönüştürün."
+    },
+    {
+     "text": "MKV filmlerin ve kayıtların ses parçasını çıkarın."
+    }
+   ]
+  },
   "intro": {
    "h2": "Her videodan sesi doğrudan tarayıcınızda çıkarın",
    "paras": [
@@ -5090,6 +5108,224 @@
    {
     "q": "Ses deşifre aracı iPhone ve Android'de çalışıyor mu?",
     "a": "Evet, modern mobil tarayıcılarda çalışır. Telefonlarda Hızlı veya Dengeli'yi seçin ve daha kısa kayıtları yazıya dökün, çünkü En İyi modeli daha fazla bellek gerektirir."
+   }
+  ]
+ },
+ "audio-to-mp3": {
+  "nav": "Sesi MP3'e Dönüştürücü",
+  "tool": {
+   "heading": "MP3'e dönüştürmek için ses dosyalarını yükleyin.",
+   "formats": "WAV, M4A, FLAC, AAC, OGG, OPUS, WMA, AMR",
+   "buttonLabel": "Ses Dosyalarını Seç"
+  },
+  "seoTitle": "Sesi MP3'e Dönüştürücü – Her Ses Dosyası Ücretsiz MP3'e",
+  "metaDescription": "WAV, M4A, FLAC, AAC, OGG, WMA ve daha fazlası için ücretsiz MP3 dönüştürücü. Ses dosyalarını tarayıcınızda MP3'e çevirin; yükleme ve kayıt yok.",
+  "h1": "Sesi MP3'e Dönüştürücü",
+  "lead": "Her ses dosyasını saniyeler içinde MP3'e dönüştürün. WAV, M4A, FLAC, AAC, OGG ve diğer dosyaları buraya bırakın ya da en iyi ayarları ve ipuçlarını sunan özel bir dönüştürücü için aşağıdan formatınızı seçin. Tüm dosyalar cihazınızda kalır.",
+  "hub": {
+   "h2": "Ses formatınızı seçin",
+   "intro": "Aşağıdaki her dönüştürücü tek bir format için ayarlanmıştır; doğru kalite ayarlarını ve o formatla ilgili en sık sorulan soruların yanıtlarını sunar.",
+   "items": [
+    {
+     "text": "Büyük WAV kayıtlarını 320 kbps'ye kadar kaliteyle çok daha küçük boyuta indirin."
+    },
+    {
+     "text": "iPhone ses kayıtlarını ve iTunes M4A dosyalarını MP3'e dönüştürün."
+    },
+    {
+     "text": "Kayıpsız FLAC müziklerini her cihazda çalan MP3 dosyalarına çevirin."
+    },
+    {
+     "text": "Telefonlardan, uygulamalardan ve kayıt cihazlarından gelen AAC sesleri MP3'e dönüştürün."
+    },
+    {
+     "text": "Oyunlardan, uygulamalardan ve web sitelerinden gelen OGG Vorbis sesleri MP3'e çevirin."
+    },
+    {
+     "text": "Opus sesli mesajlarını ve kayıtlarını MP3'e dönüştürün."
+    },
+    {
+     "text": "Eski Windows Media Audio (WMA) dosyalarını MP3 olarak yeniden kullanılır hale getirin."
+    },
+    {
+     "text": "Telefonlardaki AMR arama kayıtlarını ve sesli notları MP3'e çevirin."
+    },
+    {
+     "text": "Apple Lossless (ALAC) müziklerini daha küçük MP3 dosyalarına dönüştürün."
+    },
+    {
+     "text": "Dolby Digital AC3 sesi MP3'e dönüştürün."
+    },
+    {
+     "text": "Mac ve iPhone'daki Apple Core Audio (CAF) dosyalarını MP3'e dönüştürün."
+    },
+    {
+     "text": "M4B sesli kitapları her oynatıcıda ve araç teybinde çalan MP3'lere çevirin."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Her format için tek bir sesi MP3'e dönüştürücü",
+   "paras": [
+    "MP3 hâlâ her yerde çalan formattır: telefonlarda, arabalarda, akıllı hoparlörlerde ve tüm müzik uygulamalarında. Ancak birçok kayıt WAV, M4A, FLAC veya bir cihazın ya da web sitesinin kabul etmediği başka bir formatta gelir. Bir **sesi MP3'e dönüştürücü** bunu tek adımda çözer ve genellikle dosyayı da epey küçültür.",
+    "Bu sayfa tüm yaygın ses formatlarını, ayrıca AMR, AC3 ve CAF gibi daha nadir olanları okur. Ses dosyasını MP3'e dönüştürme işlemi için birkaç dosyayı aynı anda ekleyebilir, bit hızını seçebilir ve her birini standart bir MP3 olarak kaydedebilirsiniz. Dönüştürme tarayıcınızın içinde yapılır, bu yüzden özel kayıtlarınız bile cihazınızdan çıkmaz. Sesiniz bir videonun içindeyse bunun yerine [Her Videoyu MP3'e](/video-to-mp3) dönüştürücümüzü kullanın."
+   ]
+  },
+  "howCta": "Sesinizi MP3'e dönüştürün",
+  "steps": [
+   [
+    "Ses dosyalarınızı ekleyin",
+    "Ses Dosyalarını Seç'e dokunun veya dosyaları kutuya sürükleyin. Farklı formatları karıştırabilir ve tek seferde birçok dosya ekleyebilirsiniz; dosya başına 500 MB'a kadar."
+   ],
+   [
+    "MP3 kalitesini seçin",
+    "İyi bir denge için 192 kbps'de bırakın, en iyi müzik kalitesi için 320 kbps'yi seçin ya da konuşma için Mono'yu açın."
+   ],
+   [
+    "MP3 dosyalarınızı indirin",
+    "Her dosya ayrı ayrı dönüştürülür. Yanındaki İndir'e dokunun ya da hepsi hazır olduğunda Tümünü indir'i kullanın."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Hangi MP3 bit hızını seçmelisiniz?",
+    "paras": [
+     "Bit hızı hem kaliteyi hem de boyutu belirler. Genel kural olarak podcast'ler ve konuşma için 128 kbps yeterlidir, çoğu müzik için 192 kbps güvenli bir seçimdir, 320 kbps ise WAV, FLAC ve ALAC gibi kayıpsız dosyalardaki ayrıntıyı en iyi şekilde korur. Orijinalden daha yüksek bir bit hızına dönüştürmek kaliteyi asla artırmaz, bu yüzden onun üstüne çıkmanıza gerek yoktur. Daha da küçük bir dosya mı lazım? Sonucu [MP3 Sıkıştırıcı](/mp3-compressor) aracımızdan geçirin."
+    ]
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Hangi ses formatlarını MP3'e dönüştürebilirim?",
+    "a": "WAV, M4A, FLAC, AAC, OGG, OPUS, WMA, AMR, ALAC, AC3, CAF, M4B, AIFF ve daha fazlası. Tarayıcınız bir dosyayı okuyamazsa dönüştürücü otomatik olarak FFmpeg'e geçer."
+   },
+   {
+    "q": "Bu sesi MP3'e dönüştürücü ücretsiz mi?",
+    "a": "Evet. Kayıt gerektirmez, filigran eklemez ve dosya sayısında sınır yoktur. Tek sınır dosya başına 500 MB'tır."
+   },
+   {
+    "q": "Ses dosyalarım yükleniyor mu?",
+    "a": "Hayır. Her dosya tarayıcınızın içinde dönüştürülür, bu yüzden telefonunuzda veya bilgisayarınızda kalır."
+   },
+   {
+    "q": "MP3'e dönüştürmek kaliteyi düşürür mü?",
+    "a": "MP3 sıkıştırılmış bir formattır, bu yüzden bazı ayrıntılar kaybolur. 192 veya 320 kbps'de çoğu kişi farkı duymakta çok zorlanır."
+   }
+  ]
+ },
+ "link-to-mp3": {
+  "nav": "Linkten MP3'e",
+  "seoTitle": "Linkten MP3 İndir – Ücretsiz MP3, MP4 ve WAV İndiriciler",
+  "metaDescription": "Bir link yapıştırın, MP3, WAV veya MP4 olarak kaydedin: YouTube MP3, YouTube MP4, YouTube WAV ve online video indirici. Ücretsiz, hızlı ve kayıtsız.",
+  "h1": "Linkten MP3'e – Online İndiriciler",
+  "lead": "Elinizde dosya yerine bir link mi var? Bu araçlarla linkten MP3 indirmek çok kolay: video sizin için alınır ve MP3, WAV veya MP4 olarak kaydedilir. Linkinize ve ihtiyacınız olan formata uyan indiriciyi seçin.",
+  "hub": {
+   "h2": "Bir indirici seçin",
+   "intro": "Her araç tek bir link türü veya çıktı için yapılmıştır; böylece fazladan adım olmadan doğru seçeneklere ulaşırsınız.",
+   "items": [
+    {
+     "text": "Bir YouTube linki yapıştırın ve sesi 320 kbps'ye kadar MP3 olarak kaydedin."
+    },
+    {
+     "text": "YouTube sesini düzenleme için sıkıştırılmamış bir WAV dosyası olarak kaydedin."
+    },
+    {
+     "text": "Podcast kayıtlarını ve bölümlerini küçük, yayına hazır MP3 dosyalarına dönüştürün."
+    },
+    {
+     "text": "YouTube videolarını seçtiğiniz kalitede MP4 olarak indirin."
+    },
+    {
+     "text": "İndirmeye izin veren sitelerdeki videoları 1080p'ye kadar MP4 olarak kaydedin."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Linkten indirme nasıl çalışır?",
+   "paras": [
+    "Tarayıcılar diğer web sitelerindeki videoları kendi başına alamaz; bu yüzden bir link yapıştırdığınızda videoyu indirme sunucumuz sizin için alır. Ardından sesi MP3'e veya WAV'a dönüştürür ya da videoyu MP4 olarak tutar ve bitmiş dosyayı size verir. Kurulacak bir program ya da açılacak bir hesap yoktur.",
+    "Dosya zaten cihazınızda mı? O zaman hiç link gerekmez. [Sesi MP3'e](/audio-to-mp3) ve [Her Videoyu MP3'e](/video-to-mp3) dönüştürücülerimiz hiçbir şey yüklemeden doğrudan tarayıcınızda çalışır."
+   ]
+  },
+  "howTitle": "Linkten nasıl indirilir?",
+  "steps": [
+   [
+    "Linki kopyalayın",
+    "Videoyu tarayıcınızda veya uygulamada açın, Paylaş'a dokunun ve Bağlantıyı kopyala'yı seçin."
+   ],
+   [
+    "Doğru araca yapıştırın",
+    "Yukarıdan indiriciyi seçin, linki yapıştırın, ardından MP3, WAV veya MP4 ile kaliteyi seçin."
+   ],
+   [
+    "Dosyayı indirin",
+    "Dosya hazır olduğunda İndir'e dokunun. Dosya İndirilenler klasörünüze kaydedilir."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Sorumlu bir şekilde indirin",
+    "paras": [
+     "Yalnızca size ait olan, açık lisanslı olan veya kullanma izniniz bulunan videoları ve müzikleri indirin. Birçok platform kullanım koşullarında indirmeye izin vermez. Daha fazla bilgi için [Telif Hakkı ve DMCA Politikamızı](/copyright) okuyun."
+    ]
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Bu link indiricileri ücretsiz mi?",
+    "a": "Evet. Hepsi ücretsizdir ve hesap gerektirmez. Hizmetin herkes için adil kalması amacıyla saat başına indirme sayısı sınırlıdır."
+   },
+   {
+    "q": "Bir YouTube linki için hangi indiriciyi kullanmalıyım?",
+    "a": "Ses için YouTube MP3 Dönüştürücü'yü, sıkıştırılmamış bir ses dosyası için YouTube WAV Dönüştürücü'yü, videonun kendisi için ise YouTube MP4 İndir'i kullanın."
+   },
+   {
+    "q": "YouTube dışındaki sitelerden indirebilir miyim?",
+    "a": "Evet. Online Video İndirici, indirmeye izin veren birçok siteden videoları MP4 dosyası olarak kaydeder."
+   }
+  ]
+ },
+ "mp3-tools": {
+  "nav": "MP3 Araçları",
+  "seoTitle": "MP3 Araçları – MP3 Kes, Sıkıştır ve Birleştir, Ücretsiz",
+  "metaDescription": "Ücretsiz online MP3 araçları: MP3 kesin ve kırpın, daha küçük boyuta sıkıştırın, birkaç dosyayı tek dosyada birleştirin. Hepsi tarayıcınızda, yükleme yok.",
+  "h1": "MP3 Araçları – Online MP3 Düzenleme",
+  "lead": "Günlük online MP3 düzenleme için basit araçlar. Bir şarkıyı kırpın, göndermek için fazla büyük bir dosyayı küçültün ya da birkaç kaydı tek dosyada birleştirin; hepsi tarayıcınızda, hiçbir şey kurmadan.",
+  "hub": {
+   "h2": "Bir MP3 aracı seçin",
+   "intro": "Her araç dosyanızı sayfada açar ve yeni bir MP3 kaydeder; orijinal dosyanız olduğu gibi kalır.",
+   "items": [
+    {
+     "text": "Şarkıları ve kayıtları kırpın, zil sesi yapın, giriş veya çıkışa fade ekleyin."
+    },
+    {
+     "text": "Bit hızını 32 kbps'ye kadar düşürerek MP3 dosyalarını küçültün."
+    },
+    {
+     "text": "Birkaç ses dosyasını istediğiniz sırayla ve isteğe bağlı aralıklarla tek bir MP3'te birleştirin."
+    }
+   ]
+  },
+  "intro": {
+   "h2": "Program olmadan MP3 dosyalarını düzenleyin",
+   "paras": [
+    "Tam kapsamlı ses düzenleyiciler güçlüdür, ancak kurmak ve öğrenmek zaman alır. Bu **MP3 araçları** her biri tek bir işi iyi yapar ve telefonda da bilgisayarda da aynı şekilde çalışır. Ayrıca WAV, M4A, FLAC ve video dosyalarını da okur ve her zaman standart bir MP3 kaydeder.",
+    "Düzenleme tarayıcınızın içinde yapıldığı için dosyalarınız asla yüklenmez. Önce bir kayıt mı oluşturmak istiyorsunuz? [Ses Kaydedici](/voice-to-mp3) aracını kullanın. Konuşmayı yazılı metne çevirmek için [Sesi Yazıya Çevir](/transcribe-audio-to-text) aracını deneyin."
+   ]
+  },
+  "sections": [],
+  "faqs": [
+   {
+    "q": "Bu MP3 araçları ücretsiz mi?",
+    "a": "Evet. Kayıt olmadan ve filigran olmadan istediğiniz kadar dosyayı kesebilir, sıkıştırabilir ve birleştirebilirsiniz."
+   },
+   {
+    "q": "MP3 araçları dosyalarımı yüklüyor mu?",
+    "a": "Hayır. Her araç tarayıcınızın içinde çalışır, bu yüzden dosyalarınız cihazınızda kalır."
+   },
+   {
+    "q": "MP3 araçlarını telefonumda kullanabilir miyim?",
+    "a": "Evet. iPhone, Android, Windows, Mac ve Chromebook'taki modern tarayıcılarda çalışırlar."
    }
   ]
  }
