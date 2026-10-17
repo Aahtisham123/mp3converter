@@ -13,6 +13,7 @@ files are never uploaded to a server.
 | `/mp3-cutter` | Waveform trimmer: keep/remove selection, fade in/out, preview |
 | `/mp3-compressor` | Re-encode at 32–160 kbps, shows size saved |
 | `/audio-joiner` | Merge files in any order with optional gaps |
+| `/video-to-mp3`, `/audio-to-mp3`, `/link-to-mp3`, `/mp3-tools` | Hub pages that link every tool of a sidebar group |
 | `/transcribe-audio-to-text` | Speech to text with Whisper in the browser: language detection, TXT/SRT/VTT export |
 | `/about`, `/contact`, `/privacy-policy`, `/terms`, `/copyright` | Info and legal pages |
 
@@ -53,7 +54,10 @@ npm run build && npm start
 
 ## Content
 - Tool page text, steps and FAQs: `lib/tools.js`
-- Site name, URL, contact email and sidebar navigation: `lib/site.js`
+- Site name, URL, contact email and sidebar navigation: `lib/site.js`. `POPULAR_NAV` is the always-open list and
+  `NAV_GROUPS` the groups. A group with a `hub` links its heading to that hub page, which shows a card for every tool
+  of the group (the `hub` field of the page in `lib/tools.js`), and its tools get a Home › Hub › Tool breadcrumb.
+  Sidebar labels are short (`nav` in `lib/i18n/ui-en.js`); the full keyword lives in each page's title and H1.
 
 ## Languages
 The site is available in English (at the root, e.g. `/youtube-to-mp3`) and in Spanish, Portuguese, French, German,

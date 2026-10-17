@@ -12,7 +12,10 @@
   "convertFile": "Конвертировать файл",
   "soon": "Скоро",
   "language": "Язык",
-  "chooseLanguage": "Выберите язык"
+  "chooseLanguage": "Выберите язык",
+  "search": "Поиск инструментов…",
+  "searchLabel": "Поиск инструментов",
+  "noResults": "Ничего не найдено"
  },
  "nav": {
   "home": "Главная",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "YouTube в MP4",
   "youtube-to-wav": "YouTube в WAV",
   "online-video-downloader": "Скачать видео онлайн",
-  "mp4-to-mp3": "Конвертер MP4 в MP3",
+  "mp4-to-mp3": "MP4 в MP3",
   "tiktok-to-mp3": "TikTok в MP3",
-  "video-to-mp3": "Конвертер видео в MP3",
-  "wav-to-mp3": "Конвертер WAV в MP3",
-  "m4a-to-mp3": "Конвертер M4A в MP3",
-  "voice-to-mp3": "Запись голоса в MP3",
+  "video-to-mp3": "Любое видео в MP3",
+  "wav-to-mp3": "WAV в MP3",
+  "m4a-to-mp3": "M4A в MP3",
+  "voice-to-mp3": "Диктофон",
   "flac-to-mp3": "FLAC в MP3",
   "aac-to-mp3": "AAC в MP3",
   "ogg-to-mp3": "OGG в MP3",
@@ -44,8 +47,16 @@
   "audio-joiner": "Склейка аудио",
   "podcast-to-mp3": "Подкаст в MP3",
   "transcribe-audio-to-text": "Аудио в текст",
-  "groupFormats": "Конвертеры MP3",
-  "groupTools": "Инструменты MP3"
+  "audio-to-mp3": "Аудио в MP3",
+  "link-to-mp3": "Ссылка в MP3",
+  "mp3-tools": "Инструменты MP3",
+  "groupPopular": "Популярное",
+  "groupVideo": "Видео в MP3",
+  "groupAudio": "Аудио в MP3",
+  "groupLink": "Ссылка в MP3",
+  "groupEdit": "Редактировать MP3",
+  "groupRecord": "Запись и расшифровка",
+  "toggleGroup": "Показать или скрыть: {name}"
  },
  "footer": {
   "follow": "Мы в соцсетях",

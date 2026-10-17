@@ -12,7 +12,10 @@
   "convertFile": "حوّل ملفاً",
   "soon": "قريباً",
   "language": "اللغة",
-  "chooseLanguage": "اختر اللغة"
+  "chooseLanguage": "اختر اللغة",
+  "search": "ابحث عن أداة…",
+  "searchLabel": "ابحث عن أداة",
+  "noResults": "لم يتم العثور على أدوات"
  },
  "nav": {
   "home": "الرئيسية",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "تحميل يوتيوب MP4",
   "youtube-to-wav": "تحويل يوتيوب إلى WAV",
   "online-video-downloader": "تحميل الفيديو أونلاين",
-  "mp4-to-mp3": "تحويل MP4 إلى MP3",
+  "mp4-to-mp3": "MP4 إلى MP3",
   "tiktok-to-mp3": "تحويل TikTok إلى MP3",
-  "video-to-mp3": "تحويل الفيديو إلى MP3",
-  "wav-to-mp3": "تحويل WAV إلى MP3",
-  "m4a-to-mp3": "تحويل M4A إلى MP3",
-  "voice-to-mp3": "تسجيل الصوت إلى MP3",
+  "video-to-mp3": "أي فيديو إلى MP3",
+  "wav-to-mp3": "WAV إلى MP3",
+  "m4a-to-mp3": "M4A إلى MP3",
+  "voice-to-mp3": "مسجل الصوت",
   "flac-to-mp3": "FLAC إلى MP3",
   "aac-to-mp3": "AAC إلى MP3",
   "ogg-to-mp3": "OGG إلى MP3",
@@ -44,8 +47,16 @@
   "audio-joiner": "دمج الملفات الصوتية",
   "podcast-to-mp3": "البودكاست إلى MP3",
   "transcribe-audio-to-text": "تحويل الصوت إلى نص",
-  "groupFormats": "أدوات تحويل MP3",
-  "groupTools": "أدوات MP3"
+  "audio-to-mp3": "الصوت إلى MP3",
+  "link-to-mp3": "رابط إلى MP3",
+  "mp3-tools": "أدوات MP3",
+  "groupPopular": "الأكثر استخداماً",
+  "groupVideo": "الفيديو إلى MP3",
+  "groupAudio": "الصوت إلى MP3",
+  "groupLink": "رابط إلى MP3",
+  "groupEdit": "تعديل MP3",
+  "groupRecord": "التسجيل والتفريغ",
+  "toggleGroup": "إظهار أو إخفاء {name}"
  },
  "footer": {
   "follow": "تابعنا",

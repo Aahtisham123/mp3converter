@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import SocialLinks from './SocialLinks';
 import { localePath } from '@/lib/i18n/config';
-import { NAV_GROUPS, PRIMARY_NAV, SITE } from '@/lib/site';
+import { NAV_GROUPS, POPULAR_NAV, SITE } from '@/lib/site';
+
+// Hub pages first, then the tools of groups without a hub (Voice Recorder, Audio to Text).
+const FOOTER_TOOLS = [
+  ...NAV_GROUPS.filter((g) => g.hub).map((g) => g.hub),
+  ...NAV_GROUPS.filter((g) => !g.hub).flatMap((g) => g.items.map((i) => i.href)),
+];
 
 export default function Footer({ lang, dict }) {
   const year = new Date().getFullYear();
@@ -23,7 +29,7 @@ export default function Footer({ lang, dict }) {
         <nav aria-label={f.converters}>
           <h3>{f.converters}</h3>
           <ul>
-            {PRIMARY_NAV.slice(1).map((l) => (
+            {POPULAR_NAV.map((l) => (
               <li key={l.href}><Link href={href(l.href)}>{label(l.href)}</Link></li>
             ))}
           </ul>
@@ -31,8 +37,8 @@ export default function Footer({ lang, dict }) {
         <nav aria-label={f.formatsTools}>
           <h3>{f.formatsTools}</h3>
           <ul>
-            {NAV_GROUPS.flatMap((g) => g.items).slice(0, 7).map((l) => (
-              <li key={l.href}><Link href={href(l.href)}>{label(l.href)}</Link></li>
+            {FOOTER_TOOLS.map((p) => (
+              <li key={p}><Link href={href(p)}>{label(p)}</Link></li>
             ))}
           </ul>
         </nav>

@@ -12,7 +12,10 @@
   "convertFile": "फ़ाइल कन्वर्ट करें",
   "soon": "जल्द",
   "language": "भाषा",
-  "chooseLanguage": "भाषा चुनें"
+  "chooseLanguage": "भाषा चुनें",
+  "search": "टूल खोजें…",
+  "searchLabel": "टूल खोजें",
+  "noResults": "कोई टूल नहीं मिला"
  },
  "nav": {
   "home": "होम",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "YouTube से MP4",
   "youtube-to-wav": "YouTube से WAV",
   "online-video-downloader": "ऑनलाइन वीडियो डाउनलोडर",
-  "mp4-to-mp3": "MP4 से MP3 कन्वर्टर",
+  "mp4-to-mp3": "MP4 से MP3",
   "tiktok-to-mp3": "TikTok से MP3",
-  "video-to-mp3": "वीडियो से MP3 कन्वर्टर",
-  "wav-to-mp3": "WAV से MP3 कन्वर्टर",
-  "m4a-to-mp3": "M4A से MP3 कन्वर्टर",
-  "voice-to-mp3": "वॉइस रिकॉर्डर से MP3",
+  "video-to-mp3": "कोई भी वीडियो से MP3",
+  "wav-to-mp3": "WAV से MP3",
+  "m4a-to-mp3": "M4A से MP3",
+  "voice-to-mp3": "वॉइस रिकॉर्डर",
   "flac-to-mp3": "FLAC से MP3",
   "aac-to-mp3": "AAC से MP3",
   "ogg-to-mp3": "OGG से MP3",
@@ -44,8 +47,16 @@
   "audio-joiner": "ऑडियो जॉइनर",
   "podcast-to-mp3": "पॉडकास्ट से MP3",
   "transcribe-audio-to-text": "ऑडियो से टेक्स्ट",
-  "groupFormats": "MP3 कन्वर्टर टूल्स",
-  "groupTools": "MP3 टूल्स"
+  "audio-to-mp3": "ऑडियो से MP3",
+  "link-to-mp3": "लिंक से MP3",
+  "mp3-tools": "MP3 टूल्स",
+  "groupPopular": "लोकप्रिय",
+  "groupVideo": "वीडियो से MP3",
+  "groupAudio": "ऑडियो से MP3",
+  "groupLink": "लिंक से MP3",
+  "groupEdit": "MP3 एडिट करें",
+  "groupRecord": "रिकॉर्ड और ट्रांसक्राइब",
+  "toggleGroup": "{name} दिखाएँ या छिपाएँ"
  },
  "footer": {
   "follow": "हमें फ़ॉलो करें",

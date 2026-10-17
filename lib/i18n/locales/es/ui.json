@@ -12,7 +12,10 @@
   "convertFile": "Convertir un archivo",
   "soon": "Pronto",
   "language": "Idioma",
-  "chooseLanguage": "Elegir idioma"
+  "chooseLanguage": "Elegir idioma",
+  "search": "Buscar herramientas…",
+  "searchLabel": "Buscar herramientas",
+  "noResults": "No se encontraron herramientas"
  },
  "nav": {
   "home": "Inicio",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "YouTube a MP4",
   "youtube-to-wav": "YouTube a WAV",
   "online-video-downloader": "Descargar videos online",
-  "mp4-to-mp3": "Convertidor de MP4 a MP3",
+  "mp4-to-mp3": "MP4 a MP3",
   "tiktok-to-mp3": "TikTok a MP3",
-  "video-to-mp3": "Convertidor de video a MP3",
-  "wav-to-mp3": "Convertidor de WAV a MP3",
-  "m4a-to-mp3": "Convertidor de M4A a MP3",
-  "voice-to-mp3": "Grabadora de voz a MP3",
+  "video-to-mp3": "Cualquier video a MP3",
+  "wav-to-mp3": "WAV a MP3",
+  "m4a-to-mp3": "M4A a MP3",
+  "voice-to-mp3": "Grabadora de voz",
   "flac-to-mp3": "FLAC a MP3",
   "aac-to-mp3": "AAC a MP3",
   "ogg-to-mp3": "OGG a MP3",
@@ -44,8 +47,16 @@
   "audio-joiner": "Unir audios",
   "podcast-to-mp3": "Podcast a MP3",
   "transcribe-audio-to-text": "Audio a texto",
-  "groupFormats": "Convertidores a MP3",
-  "groupTools": "Herramientas MP3"
+  "audio-to-mp3": "Audio a MP3",
+  "link-to-mp3": "Enlace a MP3",
+  "mp3-tools": "Herramientas MP3",
+  "groupPopular": "Populares",
+  "groupVideo": "Video a MP3",
+  "groupAudio": "Audio a MP3",
+  "groupLink": "Enlace a MP3",
+  "groupEdit": "Editar MP3",
+  "groupRecord": "Grabar y transcribir",
+  "toggleGroup": "Mostrar u ocultar {name}"
  },
  "footer": {
   "follow": "Síguenos",

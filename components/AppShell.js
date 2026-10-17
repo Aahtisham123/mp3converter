@@ -1,15 +1,20 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Icon from './Icon';
 import { useI18n } from './I18nProvider';
 import LanguageSwitcher from './LanguageSwitcher';
 import { splitLocale } from '@/lib/i18n/config';
-import { NAV_GROUPS, PRIMARY_NAV } from '@/lib/site';
+import { NAV_GROUPS, POPULAR_NAV } from '@/lib/site';
 
 const COLLAPSE_KEY = 'mp3c:sidebar-collapsed';
+
+/** Lower-case text without accents, so "Árabe" matches "arabe". */
+const fold = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+
+const groupOfPath = (p) => NAV_GROUPS.find((g) => g.hub === p || g.items.some((i) => i.href === p));
 
 function isMobile() {
   return typeof window !== 'undefined' && window.matchMedia('(max-width: 960px)').matches;
@@ -22,7 +27,18 @@ export default function AppShell({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [groups, setGroups] = useState(() => Object.fromEntries(NAV_GROUPS.map((g) => [g.id, true])));
+  // Groups start closed, except the one that holds the current page.
+  const [groups, setGroups] = useState(() => {
+    const active = groupOfPath(currentPath);
+    return Object.fromEntries(NAV_GROUPS.map((g) => [g.id, active === g]));
+  });
+  const [query, setQuery] = useState('');
+  const searchRef = useRef(null);
+
+  useEffect(() => {
+    const active = groupOfPath(currentPath);
+    if (active) setGroups((g) => (g[active.id] ? g : { ...g, [active.id]: true }));
+  }, [currentPath]);
 
   useEffect(() => {
     try {
@@ -61,9 +77,9 @@ export default function AppShell({ children }) {
   }, []);
 
   const navLabel = (item) => t(`nav.${item.href === '/' ? 'home' : item.href.slice(1)}`);
-  const navLink = (item) => (
+  const navLink = (item, key = item.href) => (
     <Link
-      key={item.href}
+      key={key}
       href={path(item.href)}
       className={`nav-link${currentPath === item.href ? ' is-active' : ''}`}
       aria-current={currentPath === item.href ? 'page' : undefined}
@@ -72,11 +88,40 @@ export default function AppShell({ children }) {
       <Icon name={item.icon} />
       <span className="label">
         {navLabel(item)}
-        {item.soon && <span className="soon-badge">{t('shell.soon')}</span>}
       </span>
     </Link>
   );
-  const groupLabel = (group) => t(group.id === 'formats' ? 'nav.groupFormats' : 'nav.groupTools');
+  const groupLabel = (group) => t(`nav.${group.label}`);
+
+  // Every tool and hub once, for the search box.
+  const searchable = useMemo(() => {
+    const seen = new Map();
+    for (const g of NAV_GROUPS) {
+      if (g.hub) seen.set(g.hub, { href: g.hub, icon: g.icon });
+      for (const i of g.items) if (!seen.has(i.href)) seen.set(i.href, i);
+    }
+    for (const i of POPULAR_NAV) if (!seen.has(i.href)) seen.set(i.href, i);
+    return [...seen.values()];
+  }, []);
+  const q = fold(query.trim());
+  const results = q
+    ? searchable.filter((i) => fold(`${navLabel(i)} ${i.href.slice(1).replace(/-/g, ' ')}`).includes(q))
+    : null;
+
+  const expandFromRail = () => {
+    if (collapsed && !isMobile()) {
+      toggleSidebar();
+      return true;
+    }
+    return false;
+  };
+  const toggleGroup = (group) => {
+    if (expandFromRail()) {
+      setGroups((g) => ({ ...g, [group.id]: true }));
+      return;
+    }
+    setGroups((g) => ({ ...g, [group.id]: !g[group.id] }));
+  };
 
   return (
     <div className={`app${collapsed ? ' is-collapsed' : ''}${open ? ' is-open' : ''}`}>
@@ -89,36 +134,85 @@ export default function AppShell({ children }) {
         </Link>
 
         <nav className="sidebar__nav">
-          {PRIMARY_NAV.map(navLink)}
-          <div className="nav-sep" role="separator" />
-          {NAV_GROUPS.map((group) => (
-            <div key={group.id} className="nav-group">
-              <button
-                type="button"
-                className="nav-group__toggle"
-                aria-expanded={groups[group.id]}
-                aria-controls={`group-${group.id}`}
-                title={groupLabel(group)}
-                onClick={() => {
-                  // In the icon rail, a group click expands the sidebar so its links become visible.
-                  if (collapsed && !isMobile()) {
-                    toggleSidebar();
-                    setGroups((g) => ({ ...g, [group.id]: true }));
-                    return;
-                  }
-                  setGroups((g) => ({ ...g, [group.id]: !g[group.id] }));
-                }}
-              >
-                <Icon name={group.icon} />
-                <span className="label">{groupLabel(group)}</span>
-                <Icon name="chevronUp" className="icon chev" />
-              </button>
-              <ul className="nav-group__list" id={`group-${group.id}`} hidden={!groups[group.id]}>
-                {group.items.map((item) => <li key={item.href}>{navLink(item)}</li>)}
-              </ul>
-              <div className="nav-sep" role="separator" />
+          {navLink({ href: '/', icon: 'home' })}
+
+          <div className="nav-search" role="search">
+            <button
+              type="button"
+              className="nav-search__icon"
+              tabIndex={-1}
+              aria-hidden="true"
+              onClick={() => {
+                expandFromRail();
+                setTimeout(() => searchRef.current && searchRef.current.focus(), 50);
+              }}
+            >
+              <Icon name="search" />
+            </button>
+            <input
+              ref={searchRef}
+              type="search"
+              className="label"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onKeyDown={(e) => e.key === 'Escape' && setQuery('')}
+              placeholder={t('shell.search')}
+              aria-label={t('shell.searchLabel')}
+            />
+          </div>
+
+          {results ? (
+            <div className="nav-results" aria-live="polite">
+              {results.length ? results.map((i) => navLink(i)) : <p className="nav-empty">{t('shell.noResults')}</p>}
             </div>
-          ))}
+          ) : (
+            <>
+              <div className="nav-section">
+                <p className="nav-heading label">{t('nav.groupPopular')}</p>
+                {POPULAR_NAV.map((i) => navLink(i, `popular${i.href}`))}
+              </div>
+              <div className="nav-sep" role="separator" />
+              {NAV_GROUPS.map((group) => {
+                const label = groupLabel(group);
+                const isHub = group.hub && currentPath === group.hub;
+                return (
+                  <div key={group.id} className="nav-group">
+                    <div className="nav-group__head">
+                      {group.hub ? (
+                        <Link
+                          href={path(group.hub)}
+                          className={`nav-group__link${isHub ? ' is-active' : ''}`}
+                          aria-current={isHub ? 'page' : undefined}
+                          title={label}
+                        >
+                          <Icon name={group.icon} />
+                          <span className="label">{label}</span>
+                        </Link>
+                      ) : (
+                        <button type="button" className="nav-group__link" onClick={() => toggleGroup(group)} aria-expanded={groups[group.id]} aria-controls={`group-${group.id}`} title={label}>
+                          <Icon name={group.icon} />
+                          <span className="label">{label}</span>
+                        </button>
+                      )}
+                      <button
+                        type="button"
+                        className="nav-group__chev"
+                        aria-expanded={groups[group.id]}
+                        aria-controls={`group-${group.id}`}
+                        aria-label={t('nav.toggleGroup', { name: label })}
+                        onClick={() => toggleGroup(group)}
+                      >
+                        <Icon name="chevronUp" className="icon chev" />
+                      </button>
+                    </div>
+                    <ul className="nav-group__list" id={`group-${group.id}`} hidden={!groups[group.id]}>
+                      {group.items.map((item) => <li key={item.href}>{navLink(item)}</li>)}
+                    </ul>
+                  </div>
+                );
+              })}
+            </>
+          )}
         </nav>
 
         <div className="sidebar__foot">

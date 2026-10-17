@@ -12,7 +12,10 @@
   "convertFile": "Dosya dönüştür",
   "soon": "Yakında",
   "language": "Dil",
-  "chooseLanguage": "Dil seçin"
+  "chooseLanguage": "Dil seçin",
+  "search": "Araç ara…",
+  "searchLabel": "Araç ara",
+  "noResults": "Araç bulunamadı"
  },
  "nav": {
   "home": "Ana Sayfa",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "YouTube MP4 İndir",
   "youtube-to-wav": "YouTube WAV Dönüştürücü",
   "online-video-downloader": "Online Video İndirici",
-  "mp4-to-mp3": "MP4'ten MP3'e Dönüştürücü",
+  "mp4-to-mp3": "MP4'ten MP3'e",
   "tiktok-to-mp3": "TikTok MP3 İndir",
-  "video-to-mp3": "Videoyu MP3'e Dönüştürücü",
-  "wav-to-mp3": "WAV'dan MP3'e Dönüştürücü",
-  "m4a-to-mp3": "M4A'dan MP3'e Dönüştürücü",
-  "voice-to-mp3": "Ses Kaydını MP3'e Çevir",
+  "video-to-mp3": "Her Videoyu MP3'e",
+  "wav-to-mp3": "WAV'dan MP3'e",
+  "m4a-to-mp3": "M4A'dan MP3'e",
+  "voice-to-mp3": "Ses Kaydedici",
   "flac-to-mp3": "FLAC'tan MP3'e",
   "aac-to-mp3": "AAC'den MP3'e",
   "ogg-to-mp3": "OGG'den MP3'e",
@@ -44,8 +47,16 @@
   "audio-joiner": "Ses Birleştirici",
   "podcast-to-mp3": "Podcast'i MP3'e",
   "transcribe-audio-to-text": "Sesi Yazıya Çevir",
-  "groupFormats": "MP3 Dönüştürme Araçları",
-  "groupTools": "MP3 Araçları"
+  "audio-to-mp3": "Sesi MP3'e",
+  "link-to-mp3": "Linkten MP3'e",
+  "mp3-tools": "MP3 Araçları",
+  "groupPopular": "Popüler",
+  "groupVideo": "Videodan MP3'e",
+  "groupAudio": "Sesten MP3'e",
+  "groupLink": "Linkten MP3'e",
+  "groupEdit": "MP3 Düzenle",
+  "groupRecord": "Kaydet ve Yazıya Çevir",
+  "toggleGroup": "{name} göster veya gizle"
  },
  "footer": {
   "follow": "Bizi takip edin",

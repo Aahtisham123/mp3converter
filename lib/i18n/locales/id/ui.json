@@ -12,7 +12,10 @@
   "convertFile": "Konversi file",
   "soon": "Segera",
   "language": "Bahasa",
-  "chooseLanguage": "Pilih bahasa"
+  "chooseLanguage": "Pilih bahasa",
+  "search": "Cari alat…",
+  "searchLabel": "Cari alat",
+  "noResults": "Alat tidak ditemukan"
  },
  "nav": {
   "home": "Beranda",
@@ -20,12 +23,12 @@
   "youtube-to-mp4": "YouTube ke MP4",
   "youtube-to-wav": "YouTube ke WAV",
   "online-video-downloader": "Download Video Online",
-  "mp4-to-mp3": "Konverter MP4 ke MP3",
+  "mp4-to-mp3": "MP4 ke MP3",
   "tiktok-to-mp3": "TikTok ke MP3",
-  "video-to-mp3": "Konverter Video ke MP3",
-  "wav-to-mp3": "Konverter WAV ke MP3",
-  "m4a-to-mp3": "Konverter M4A ke MP3",
-  "voice-to-mp3": "Rekam Suara ke MP3",
+  "video-to-mp3": "Video Apa Pun ke MP3",
+  "wav-to-mp3": "WAV ke MP3",
+  "m4a-to-mp3": "M4A ke MP3",
+  "voice-to-mp3": "Perekam Suara",
   "flac-to-mp3": "FLAC ke MP3",
   "aac-to-mp3": "AAC ke MP3",
   "ogg-to-mp3": "OGG ke MP3",
@@ -44,8 +47,16 @@
   "audio-joiner": "Gabung Audio",
   "podcast-to-mp3": "Podcast ke MP3",
   "transcribe-audio-to-text": "Audio ke Teks",
-  "groupFormats": "Alat Konverter MP3",
-  "groupTools": "Alat MP3"
+  "audio-to-mp3": "Audio ke MP3",
+  "link-to-mp3": "Link ke MP3",
+  "mp3-tools": "Alat MP3",
+  "groupPopular": "Populer",
+  "groupVideo": "Video ke MP3",
+  "groupAudio": "Audio ke MP3",
+  "groupLink": "Link ke MP3",
+  "groupEdit": "Edit MP3",
+  "groupRecord": "Rekam & Transkrip",
+  "toggleGroup": "Tampilkan atau sembunyikan {name}"
  },
  "footer": {
   "follow": "Ikuti kami",
