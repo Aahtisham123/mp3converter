@@ -58,7 +58,7 @@
           <tbody>
             <xsl:for-each select="s:sitemap">
               <tr>
-                <td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
+                <td><a><xsl:attribute name="href"><xsl:call-template name="path"><xsl:with-param name="url" select="s:loc"/></xsl:call-template></xsl:attribute><xsl:value-of select="s:loc"/></a></td>
                 <td class="muted"><xsl:value-of select="concat(substring(s:lastmod,1,10),' ',substring(s:lastmod,12,5))"/></td>
               </tr>
             </xsl:for-each>
@@ -85,7 +85,7 @@
           <tbody>
             <xsl:for-each select="s:url">
               <tr>
-                <td><a href="{s:loc}"><xsl:value-of select="s:loc"/></a></td>
+                <td><a><xsl:attribute name="href"><xsl:call-template name="path"><xsl:with-param name="url" select="s:loc"/></xsl:call-template></xsl:attribute><xsl:value-of select="s:loc"/></a></td>
                 <td class="muted num"><xsl:value-of select="count(xhtml:link[@hreflang != 'x-default'])"/></td>
                 <td class="muted num"><xsl:value-of select="s:priority"/></td>
                 <td class="muted"><xsl:value-of select="s:changefreq"/></td>
@@ -96,5 +96,10 @@
         </table>
       </div>
     </main>
+  </xsl:template>
+  <!-- Links in this view stay on the current host (handy on preview deployments); the XML keeps the full URLs. -->
+  <xsl:template name="path">
+    <xsl:param name="url"/>
+    <xsl:value-of select="concat('/', substring-after(substring-after($url, '://'), '/'))"/>
   </xsl:template>
 </xsl:stylesheet>
