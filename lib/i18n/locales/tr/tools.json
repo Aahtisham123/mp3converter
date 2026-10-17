@@ -5084,6 +5084,10 @@
     "a": "Henüz değil. Döküm metni, konuşmacı isimleri olmadan paragraflar hâlinde kesintisiz metin olarak yazılır. İndirmeden önce isimleri düzenleyicide kendiniz ekleyebilirsiniz."
    },
    {
+    "q": "Sesimi kaydedip yazıya çevirebilir miyim?",
+    "a": "Evet. Kaydet sekmesini açın, Kaydı Başlat düğmesine basın ve konuşun. Durdur ve Yazıya Çevir düğmesine bastığınızda kayıt hemen yazıya çevrilir ve cihazınızdan hiç çıkmaz."
+   },
+   {
     "q": "Ses deşifre aracı iPhone ve Android'de çalışıyor mu?",
     "a": "Evet, modern mobil tarayıcılarda çalışır. Telefonlarda Hızlı veya Dengeli'yi seçin ve daha kısa kayıtları yazıya dökün, çünkü En İyi modeli daha fazla bellek gerektirir."
    }

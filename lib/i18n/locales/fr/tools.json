@@ -5084,6 +5084,10 @@
     "a": "Pas encore. La transcription est rédigée en texte continu, par paragraphes, sans le nom des intervenants. Vous pouvez ajouter les noms vous-même dans l’éditeur avant de la télécharger."
    },
    {
+    "q": "Puis-je enregistrer ma voix et la transcrire en texte ?",
+    "a": "Oui. Ouvrez l’onglet « Enregistrer », appuyez sur « Démarrer l'enregistrement » et parlez. Quand vous appuyez sur « Arrêter et transcrire », l’enregistrement est transcrit aussitôt et ne quitte jamais votre appareil."
+   },
+   {
     "q": "L’outil de transcription audio fonctionne-t-il sur iPhone et Android ?",
     "a": "Oui, il fonctionne dans les navigateurs mobiles récents. Sur téléphone, choisissez Rapide ou Équilibrée et transcrivez des enregistrements plus courts, car le modèle Maximale demande plus de mémoire."
    }

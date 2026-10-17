@@ -5084,6 +5084,10 @@
     "a": "Ainda não. A transcrição é escrita como texto corrido em parágrafos, sem o nome de quem fala. Você mesmo pode adicionar os nomes no editor antes de baixar."
    },
    {
+    "q": "Posso gravar minha voz e transcrever para texto?",
+    "a": "Sim. Abra a aba Gravar, toque em Começar a gravar e fale. Ao tocar em Parar e transcrever, a gravação vira texto na hora e nunca sai do seu dispositivo."
+   },
+   {
     "q": "O transcritor de áudio funciona no iPhone e no Android?",
     "a": "Sim, funciona nos navegadores modernos de celular. No celular, escolha Rápido ou Equilibrado e transcreva gravações mais curtas, porque o modelo Melhor precisa de mais memória."
    }

@@ -5084,6 +5084,10 @@
     "a": "Noch nicht. Das Transkript wird als fortlaufender Text in Absätzen geschrieben, ohne Sprechernamen. Du kannst Namen vor dem Download selbst im Editor ergänzen."
    },
    {
+    "q": "Kann ich meine Stimme aufnehmen und in Text umwandeln?",
+    "a": "Ja. Öffne den Tab „Aufnehmen“, tippe auf „Aufnahme starten“ und sprich. Sobald du auf „Stoppen & umwandeln“ tippst, wird die Aufnahme sofort in Text umgewandelt und verlässt nie dein Gerät."
+   },
+   {
     "q": "Funktioniert die Audio-Transkription auf iPhone und Android?",
     "a": "Ja, sie funktioniert in modernen mobilen Browsern. Wähle auf dem Handy Schnell oder Ausgewogen und transkribiere kürzere Aufnahmen, denn das Modell Präzise braucht mehr Speicher."
    }

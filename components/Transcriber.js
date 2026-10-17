@@ -51,16 +51,29 @@ export default function Transcriber() {
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
   const [dragover, setDragover] = useState(false);
+  const [mode, setMode] = useState('upload'); // upload | record
+  const [recState, setRecState] = useState('idle');
+  const [recSeconds, setRecSeconds] = useState(0);
 
   const inputRef = useRef(null);
   const workerRef = useRef(null);
   const audioRef = useRef(null); // { key: File, data: Float32Array, duration }
   const runRef = useRef(0);
+  const recorderRef = useRef(null);
+  const timerRef = useRef(null);
 
   const names = useMemo(() => languageNames(lang), [lang]);
   const busy = ['reading', 'model', 'detecting', 'transcribing'].includes(stage);
 
-  useEffect(() => () => workerRef.current && workerRef.current.terminate(), []);
+  useEffect(
+    () => () => {
+      if (workerRef.current) workerRef.current.terminate();
+      clearInterval(timerRef.current);
+      const rec = recorderRef.current;
+      if (rec && rec.state !== 'inactive') rec.stop();
+    },
+    [],
+  );
 
   const getWorker = () => {
     if (!workerRef.current) workerRef.current = new Worker('/transcribe-worker.js', { type: 'module' });
@@ -77,8 +90,9 @@ export default function Transcriber() {
     setStage('idle');
   };
 
-  const transcribe = async () => {
-    if (!file || busy) return;
+  const transcribe = async (f = file) => {
+    if (!f || busy) return;
+    const file = f;
     const run = ++runRef.current;
     setError('');
     setResult(null);
@@ -135,6 +149,56 @@ export default function Transcriber() {
     }
   };
 
+  // ----- Recording: the take is transcribed as soon as it stops -----
+  const startRecording = async () => {
+    setError('');
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+      setError(t('converter.recUnsupported'));
+      return;
+    }
+    let stream;
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+    } catch (err) {
+      setError(err && err.name === 'NotFoundError' ? t('converter.recNoMic') : t('converter.recBlocked'));
+      return;
+    }
+    try {
+      const rec = new MediaRecorder(stream);
+      const chunks = [];
+      rec.ondataavailable = (e) => e.data && e.data.size && chunks.push(e.data);
+      rec.onstop = () => {
+        stream.getTracks().forEach((tr) => tr.stop());
+        clearInterval(timerRef.current);
+        setRecState('idle');
+        if (!chunks.length) {
+          setError(t('converter.recEmpty'));
+          return;
+        }
+        const type = rec.mimeType || chunks[0].type || 'audio/webm';
+        const stamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '-');
+        const ext = type.includes('mp4') ? 'm4a' : type.includes('ogg') ? 'ogg' : 'webm';
+        const take = new File(chunks, `recording-${stamp}.${ext}`, { type });
+        pick(take);
+        transcribe(take);
+      };
+      recorderRef.current = rec;
+      rec.start(1000);
+      const started = Date.now();
+      setRecSeconds(0);
+      timerRef.current = setInterval(() => setRecSeconds((Date.now() - started) / 1000), 250);
+      setRecState('recording');
+    } catch {
+      stream.getTracks().forEach((tr) => tr.stop());
+      setError(t('converter.recFailed'));
+    }
+  };
+
+  const stopRecording = () => {
+    const rec = recorderRef.current;
+    if (rec && rec.state !== 'inactive') rec.stop();
+  };
+
   const cancel = () => {
     runRef.current++;
     if (workerRef.current) {
@@ -189,7 +253,40 @@ export default function Transcriber() {
       <div className={`converter${dragover ? ' is-dragover' : ''}`} role="region" aria-label={t('transcriber.region')} {...dropProps}>
         <input ref={inputRef} type="file" accept={ACCEPT} hidden onChange={(e) => { pick(e.target.files[0]); e.target.value = ''; }} />
 
-        {!file ? (
+        <div className="mode-tabs" role="tablist" aria-label={t('converter.chooseInput')}>
+          <button type="button" role="tab" aria-selected={mode === 'upload'} className="mode-tab" onClick={() => setMode('upload')} disabled={busy || recState === 'recording'}>
+            <Icon name="upload" /> {t('converter.upload')}
+          </button>
+          <button type="button" role="tab" aria-selected={mode === 'record'} className="mode-tab" onClick={() => setMode('record')} disabled={busy}>
+            <Icon name="mic" /> {t('converter.record')}
+          </button>
+        </div>
+
+        {!file && mode === 'record' ? (
+          <>
+            <div className="converter__icon" aria-hidden="true"><span><Icon name="mic" /></span></div>
+            <h2>{t('transcriber.recordHeading')}</h2>
+            {recState === 'recording' ? (
+              <p className="recorder__time">
+                <span className="rec-dot" aria-hidden="true" />
+                {formatTime(recSeconds)}
+              </p>
+            ) : (
+              <p className="converter__formats">{t('converter.recordNote')}</p>
+            )}
+            <div className="converter__actions">
+              {recState === 'recording' ? (
+                <button type="button" className="btn-grad" onClick={stopRecording}>
+                  <Icon name="stop" /> {t('transcriber.stopTranscribe')}
+                </button>
+              ) : (
+                <button type="button" className="btn-grad" onClick={startRecording}>
+                  <Icon name="record" /> {t('converter.startRecording')}
+                </button>
+              )}
+            </div>
+          </>
+        ) : !file ? (
           <>
             <div className="converter__icon" aria-hidden="true"><span><Icon name="fileText" /></span></div>
             <h2>{t('transcriber.heading')}</h2>
@@ -209,7 +306,7 @@ export default function Transcriber() {
                 {audioRef.current ? t('transcriber.fileInfo', { time: formatTime(audioRef.current.duration), size: formatBytes(file.size) }) : formatBytes(file.size)}
               </div>
             </div>
-            <button type="button" className="btn-link" onClick={reset} disabled={busy}>{t('transcriber.another')}</button>
+            <button type="button" className="btn-link" onClick={reset} disabled={busy}>{mode === 'record' ? t('transcriber.newRecording') : t('transcriber.another')}</button>
           </div>
         )}
 
@@ -218,7 +315,7 @@ export default function Transcriber() {
             {t('transcriber.language')}
             <span className="select-wrap">
               <Icon name="globe" />
-              <select value={language} onChange={(e) => setLanguage(e.target.value)} disabled={busy}>
+              <select value={language} onChange={(e) => setLanguage(e.target.value)} disabled={busy || recState === 'recording'}>
                 <option value="auto">{t('transcriber.auto')}</option>
                 {names.list.map((l) => <option key={l.code} value={l.code}>{l.name}</option>)}
               </select>
@@ -229,7 +326,7 @@ export default function Transcriber() {
             {t('transcriber.model')}
             <span className="select-wrap">
               <Icon name="sliders" />
-              <select value={model} onChange={(e) => setModel(e.target.value)} disabled={busy}>
+              <select value={model} onChange={(e) => setModel(e.target.value)} disabled={busy || recState === 'recording'}>
                 {SPEECH_MODELS.map((m) => <option key={m.value} value={m.value}>{t(`transcriber.models.${m.value}`, { size: m.size })}</option>)}
               </select>
             </span>
@@ -244,7 +341,7 @@ export default function Transcriber() {
                 <Icon name="x" /> {t('transcriber.cancel')}
               </button>
             ) : (
-              <button type="button" className="btn-grad" onClick={transcribe}>
+              <button type="button" className="btn-grad" onClick={() => transcribe()}>
                 <Icon name="fileText" /> {result ? t('transcriber.again') : t('transcriber.start')}
               </button>
             )}

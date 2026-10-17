@@ -5084,6 +5084,10 @@
     "a": "Belum. Transkrip ditulis sebagai teks berkesinambungan dalam paragraf, tanpa nama pembicara. Anda bisa menambahkan nama sendiri di editor sebelum mendownloadnya."
    },
    {
+    "q": "Bisakah saya merekam suara dan mentranskripnya ke teks?",
+    "a": "Bisa. Buka tab Rekam, tekan Mulai Merekam lalu bicara. Saat Anda menekan Berhenti & Transkrip, rekaman langsung diubah menjadi teks dan tidak pernah keluar dari perangkat Anda."
+   },
+   {
     "q": "Apakah alat transkripsi audio ini bisa dipakai di iPhone dan Android?",
     "a": "Ya, alat ini berfungsi di browser ponsel modern. Di ponsel, pilih Cepat atau Seimbang dan transkrip rekaman yang lebih pendek, karena model Terbaik membutuhkan lebih banyak memori."
    }
