@@ -83,7 +83,7 @@ function Figure({ image }) {
   );
 }
 
-const RELATED_ICON = { cut: 'scissors', join: 'layers', link: 'link', soon: 'music' };
+const RELATED_ICON = { cut: 'scissors', join: 'layers', link: 'link', soon: 'music', transcribe: 'fileText' };
 
 export default async function ToolPage({ params }) {
   const { lang, slug } = await params;

@@ -4899,5 +4899,194 @@
     "a": "Nein. Die Umwandlung passiert in deinem Browser, deine Episoden bleiben also auf deinem Gerät, bis du sie bei deinem Hoster hochlädst."
    }
   ]
+ },
+ "transcribe-audio-to-text": {
+  "nav": "Audio in Text umwandeln",
+  "seoTitle": "Audio in Text umwandeln – kostenlos online transkribieren",
+  "metaDescription": "Audio kostenlos im Browser transkribieren: MP3, WAV, M4A oder Video in Text umwandeln, auf Deutsch, Englisch, Spanisch und 25+ Sprachen. Ohne Upload und Konto.",
+  "h1": "Audio in Text umwandeln – kostenlos online transkribieren",
+  "lead": "Mach aus Interviews, Sprachnotizen, Vorlesungen und Meetings in wenigen Minuten bearbeitbaren Text. Unser kostenloses Transkriptionstool lässt ein Spracherkennungsmodell direkt in deinem Browser laufen, erkennt die gesprochene Sprache und liefert dir ein sauberes Transkript mit Zeitstempeln. Deine Aufnahme verlässt nie dein Gerät.",
+  "intro": {
+   "h2": "Kostenlos Sprache in Text umwandeln – direkt auf deinem Gerät",
+   "paras": [
+    "Wenn du **Audio in Text umwandeln** willst, dauert das Abtippen von Hand etwa viermal so lange wie die Aufnahme selbst. Ein automatisches Transkriptionstool übernimmt das Zuhören für dich. Datei reinziehen, auf In Text umwandeln drücken – und schon erscheinen die Wörter als Transkript, das du bearbeiten, in ein Dokument kopieren oder als Untertitel speichern kannst.",
+    "Die meisten Transkriptionsdienste laden dein Audio auf ihre Server hoch und rechnen pro Minute ab. Hier läuft das anders. Das Tool nutzt Whisper, ein Open-Source-Spracherkennungsmodell von OpenAI, und führt es direkt in deinem Browser aus. Deshalb kannst du Audio kostenlos transkribieren, brauchst kein Konto, und ein vertrauliches Interview oder ein privates Sprachmemo bleibt auf deinem Computer oder Handy."
+   ],
+   "image": {
+    "alt": "Audio in Text umwandeln"
+   }
+  },
+  "howImage": {
+   "alt": "So wandelst du Audio in Text um"
+  },
+  "howCta": "Jetzt Audio transkribieren",
+  "steps": [
+   [
+    "Audio- oder Videodatei wählen",
+    "Tippe auf Datei wählen oder zieh eine Datei in das Feld. MP3, WAV, M4A, OGG, FLAC, AAC und der Ton von MP4-, MOV- oder WEBM-Videos funktionieren, bis 500 MB."
+   ],
+   [
+    "Gesprochene Sprache wählen",
+    "Lass Gesprochene Sprache auf Automatisch erkennen oder wähle sie selbst, zum Beispiel Spanisch oder Portugiesisch. Das hilft bei kurzen Clips und starken Akzenten."
+   ],
+   [
+    "Genauigkeit wählen",
+    "Ausgewogen passt zu klaren englischen Aufnahmen. Präzise liefert den genauesten Text für andere Sprachen und schwierigeres Audio, Schnell ist am Handy am flottesten."
+   ],
+   [
+    "Transkribieren, dann kopieren oder herunterladen",
+    "Drück auf In Text umwandeln und verfolge die Live-Vorschau. Wenn alles fertig ist, bearbeite den Text bei Bedarf und kopiere ihn oder lade eine TXT-, SRT- oder VTT-Datei herunter."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "So funktioniert die Transkription im Browser",
+    "paras": [
+     "Beim ersten Transkribieren lädt dein Browser das gewählte Sprachmodell herunter, zwischen 41 MB und 249 MB, und legt es im Cache ab. Danach lädt das Modell in Sekunden aus dem Cache. Deine Datei wird auf der Seite dekodiert, in den 16-kHz-Mono-Ton umgewandelt, den das Modell erwartet, und dann in 30-Sekunden-Abschnitten verarbeitet, die sich leicht überlappen – so gehen dazwischen keine Wörter verloren.",
+     "Aus jedem Abschnitt werden ein paar Textzeilen mit Start- und Endzeit. Das Tool fügt sie dann zu Absätzen zusammen und beginnt einen neuen, wenn der Sprecher eine Pause macht. Da alles auf deinem Gerät passiert, hängt das Tempo von deinem Computer oder Handy ab. Ein moderner Laptop ist am schnellsten, und lange Aufnahmen dauern einfach etwas länger."
+    ],
+    "list": [
+     [
+      "Schnell (41 MB)",
+      "Das kleinste Modell. Gut für klare englische Sprache und für Handys mit wenig Speicher."
+     ],
+     [
+      "Ausgewogen (77 MB)",
+      "Die Standardeinstellung. Genau bei sauberen Aufnahmen auf Englisch und in anderen weit verbreiteten Sprachen."
+     ],
+     [
+      "Präzise (249 MB)",
+      "Die genaueste Wahl für Spanisch, Portugiesisch, Französisch, Deutsch und andere Sprachen sowie für verrauschte oder schnelle Sprache."
+     ]
+    ]
+   },
+   {
+    "h2": "Spanisches Audio in Text umwandeln – und 25+ weitere Sprachen",
+    "paras": [
+     "Du kannst **spanisches Audio in Text umwandeln** – genauso einfach wie Englisch. Das Tool erkennt Englisch, Spanisch, Portugiesisch, Französisch, Deutsch, Italienisch, Russisch, Türkisch, Arabisch, Hindi, Indonesisch, Japanisch, Chinesisch, Koreanisch und viele mehr. Standardmäßig hört es die ersten 30 Sekunden an, erkennt die Sprache für dich und zeigt neben dem Transkript an, welche es gefunden hat.",
+     "Die besten Ergebnisse auf Spanisch oder Portugiesisch bekommst du, wenn du die Sprache selbst wählst und die Genauigkeit auf Präzise stellst. Das zählt vor allem bei kurzen Clips, gemischten Sprachen und regionalen Akzenten, etwa lateinamerikanischem und europäischem Spanisch oder brasilianischem und europäischem Portugiesisch. Der Text wird in der gesprochenen Sprache geschrieben – ein spanisches Interview ergibt also ein spanisches Transkript."
+    ],
+    "image": {
+     "alt": "Spanisches Audio in Text umwandeln"
+    },
+    "cta": "Jetzt spanisches Audio transkribieren"
+   },
+   {
+    "h2": "Transkription von Audiodateien für jede Art von Aufnahme",
+    "paras": [
+     "Die Transkription von Audiodateien ist längst nicht nur im Büro nützlich. Diese Aufnahmen machen Leute am häufigsten zu Text."
+    ],
+    "list": [
+     [
+      "Interviews und Recherche",
+      "Erhalte ein durchsuchbares Transkript eines journalistischen Interviews, einer Nutzerstudie oder eines Podcast-Gesprächs – fertig zum Zitieren."
+     ],
+     [
+      "Vorlesungen und Unterricht",
+      "Transkribiere eine aufgezeichnete Vorlesung zu Lernnotizen, die du durchsuchen, markieren und zusammenfassen kannst."
+     ],
+     [
+      "Meetings und Anrufe",
+      "Mach aus einer Zoom-, Teams- oder Telefonaufzeichnung ein Protokoll und halte Entscheidungen schriftlich fest."
+     ],
+     [
+      "Sprachmemos und Ideen",
+      "Sprich deine Notizen beim Spazierengehen ein und mach später Text daraus. Mit unserer [Sprachaufnahme](/voice-to-mp3) kannst du direkt im Browser aufnehmen."
+     ],
+     [
+      "Videos und Untertitel",
+      "Lade ein MP4-, MOV- oder WEBM-Video und speichere SRT- oder VTT-Untertitel, um auf YouTube oder in deinem Videoeditor Untertitel hinzuzufügen."
+     ],
+     [
+      "Podcasts",
+      "Veröffentliche Shownotes und ein vollständiges Transkript – so lässt sich jede Folge leichter über Suchmaschinen finden."
+     ]
+    ]
+   },
+   {
+    "h2": "Transkript als TXT, SRT oder VTT speichern",
+    "paras": [
+     "Wenn die Transkription fertig ist, erscheint der Text in einem Editor. Korrigiere einen Namen oder Fachbegriff und drück dann auf Text kopieren, um ihn in Google Docs, Word oder eine E-Mail einzufügen. Du kannst auch zur Ansicht Zeitstempel wechseln, um zu sehen, wann jeder Satz gesprochen wurde.",
+     "Als Datei wählst du TXT für reinen Text, SRT für Untertitel in YouTube, Premiere Pro, DaVinci Resolve oder VLC und VTT für Web-Videoplayer. Die Untertiteldateien nutzen die Zeitstempel des Modells, sodass jede Zeile genau dann im Bild erscheint, wenn sie gesagt wird."
+    ],
+    "image": {
+     "alt": "Transkription von Audiodateien als TXT, SRT und VTT"
+    }
+   },
+   {
+    "h2": "Tipps für eine genauere Transkription",
+    "paras": [
+     "Spracherkennung ist gut, aber nicht perfekt. Sie funktioniert am besten bei klarer Sprache – schon ein paar kleine Schritte machen einen echten Unterschied."
+    ],
+    "list": [
+     [
+      "Nah am Mikrofon aufnehmen",
+      "Ein Handy nah am Sprecher schlägt einen Laptop am anderen Ende des Raums. Weniger Hall und Hintergrundgeräusche bedeuten weniger Fehler."
+     ],
+     [
+      "Sprache und Genauigkeit Präzise wählen",
+      "Für alles außer klarem Englisch bringen diese zwei Einstellungen die größte Verbesserung."
+     ],
+     [
+      "Musik und Stille herausschneiden",
+      "Lange Intros, Musik oder Stille können das Modell verwirren. Schneide sie vorher mit dem [MP3 Cutter](/mp3-cutter) weg."
+     ],
+     [
+      "Namen und Zahlen prüfen",
+      "Eigennamen, Marken und Zahlen sind die häufigsten Fehler – lies sie also noch einmal durch, bevor du das Transkript teilst."
+     ],
+     [
+      "Sehr lange Aufnahmen teilen",
+      "Schneide Aufnahmen von mehreren Stunden in Teile. So bleibt der Speicherbedarf niedrig, vor allem auf Handys."
+     ]
+    ]
+   },
+   {
+    "h2": "Privat, kostenlos und ohne Limits",
+    "paras": [
+     "Keine Anmeldung, kein Wasserzeichen und kein Monatskontingent – du kannst Audio kostenlos in Text umwandeln, so oft du willst. Da das Sprachmodell lokal läuft, wird dein Audio nie an einen Server geschickt, und niemand sonst kann es anhören. Heruntergeladen wird nur das Modell selbst, und zwar von Hugging Face, einer öffentlichen Bibliothek für KI-Modelle.",
+     "Dieses Transkriptionstool gehört zu [MP3 Converter](/), einer Sammlung kostenloser Audio-Tools, die alle in deinem Browser laufen. Wenn deine Aufnahme ein Video ist, kannst du mit unserem [Video in MP3](/video-to-mp3) Konverter auch nur den Ton behalten."
+    ],
+    "cta": "Kostenlos transkribieren"
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Wie kann ich Audio kostenlos transkribieren?",
+    "a": "Öffne diese Seite, wähle deine Audio- oder Videodatei, lass die Sprache auf Automatisch erkennen und drück auf In Text umwandeln. Das Transkript erscheint auf der Seite, bereit zum Kopieren oder Herunterladen – kostenlos und ohne Konto."
+   },
+   {
+    "q": "Kann ich spanisches Audio in Text umwandeln?",
+    "a": "Ja. Spanisch wird vollständig unterstützt, ebenso Portugiesisch, Französisch, Deutsch und mehr als 20 weitere Sprachen. Für das beste Ergebnis stell Gesprochene Sprache auf Spanisch und Genauigkeit auf Präzise."
+   },
+   {
+    "q": "Wird mein Audio auf einen Server hochgeladen?",
+    "a": "Nein. Das Spracherkennungsmodell läuft in deinem Browser, deine Datei bleibt also auf deinem Gerät. Nur das Modell selbst wird einmalig von Hugging Face heruntergeladen."
+   },
+   {
+    "q": "Welche Dateiformate kann ich transkribieren?",
+    "a": "MP3-, WAV-, M4A-, AAC-, OGG-, OPUS-, FLAC-, WMA- und AMR-Audio sowie die Tonspur von MP4-, MOV-, WEBM- und MKV-Videos, bis 500 MB pro Datei."
+   },
+   {
+    "q": "Wie genau ist die Transkription?",
+    "a": "Bei klarer Sprache ist sie sehr genau, vor allem mit der Einstellung Präzise. Hintergrundgeräusche, Musik, Leute, die durcheinanderreden, und starke Akzente senken die Genauigkeit – prüf deshalb immer Namen und Zahlen."
+   },
+   {
+    "q": "Wie lange dauert es, eine Datei zu transkribieren?",
+    "a": "Das hängt von deinem Gerät und der gewählten Genauigkeit ab. Auf einem modernen Computer sind Schnell und Ausgewogen meist schneller als die Aufnahme selbst, Präzise dauert länger. Beim ersten Mal kommt noch der einmalige Download des Modells dazu."
+   },
+   {
+    "q": "Enthält das Transkript Zeitstempel?",
+    "a": "Ja. Wechsle zur Ansicht Zeitstempel, um zu sehen, wann jeder Satz beginnt, oder lade eine SRT- oder VTT-Datei mit Start- und Endzeit für jede Zeile herunter."
+   },
+   {
+    "q": "Kann das Tool verschiedene Sprecher unterscheiden?",
+    "a": "Noch nicht. Das Transkript wird als fortlaufender Text in Absätzen geschrieben, ohne Sprechernamen. Du kannst Namen vor dem Download selbst im Editor ergänzen."
+   },
+   {
+    "q": "Funktioniert die Audio-Transkription auf iPhone und Android?",
+    "a": "Ja, sie funktioniert in modernen mobilen Browsern. Wähle auf dem Handy Schnell oder Ausgewogen und transkribiere kürzere Aufnahmen, denn das Modell Präzise braucht mehr Speicher."
+   }
+  ]
  }
 }

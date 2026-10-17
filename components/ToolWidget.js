@@ -8,6 +8,7 @@ import { useI18n } from './I18nProvider';
 import Rich from './Rich';
 import Joiner from './Joiner';
 import LinkDownloader from './LinkDownloader';
+import Transcriber from './Transcriber';
 import { COMPRESS_BITRATES, STANDARD_BITRATES } from './tool-ui';
 
 function ComingSoon({ tool }) {
@@ -43,6 +44,7 @@ export default function ToolWidget({ kind, tool = {} }) {
   const { t } = useI18n();
   if (kind === 'cut') return <Cutter />;
   if (kind === 'join') return <Joiner />;
+  if (kind === 'transcribe') return <Transcriber />;
   if (kind === 'soon') return <ComingSoon tool={tool} />;
   if (kind === 'link') {
     return (

@@ -4899,5 +4899,194 @@
     "a": "Hayır. Dönüştürme tarayıcınızın içinde gerçekleşir, bu yüzden bölümleriniz siz barındırma hizmetinize yükleyene kadar cihazınızda kalır."
    }
   ]
+ },
+ "transcribe-audio-to-text": {
+  "nav": "Sesi Yazıya Çevirme",
+  "seoTitle": "Sesi Yazıya Çevirme Ücretsiz – Online Ses Deşifre Aracı",
+  "metaDescription": "Sesi ücretsiz olarak tarayıcınızda yazıya çevirin. MP3, WAV, M4A veya videoyu Türkçe, İngilizce, İspanyolca ve 25+ dilde metne dönüştürün. Yükleme, üyelik yok.",
+  "h1": "Sesi Yazıya Çevirme – Ücretsiz Online Transkripsiyon",
+  "lead": "Röportajları, sesli notları, dersleri ve toplantıları dakikalar içinde düzenlenebilir metne dönüştürün. Ücretsiz ses deşifre aracımız konuşma tanıma modelini tarayıcınızın içinde çalıştırır, konuşulan dili algılar ve size zaman damgalı, temiz bir döküm metni verir. Kaydınız cihazınızdan hiç çıkmaz.",
+  "intro": {
+   "h2": "Konuşmayı cihazınızda metne dönüştüren ücretsiz transkripsiyon aracı",
+   "paras": [
+    "**Sesi yazıya çevirme** işini elle yapmak, kaydın kendisinden yaklaşık dört kat daha uzun sürer. Otomatik bir transkripsiyon aracı sizin yerinize dinler. Ses dosyasını yazıya dökmek için dosyanızı bırakın, Yazıya Çevir'e basın; kelimeler düzenleyebileceğiniz, bir belgeye kopyalayabileceğiniz veya altyazı olarak kaydedebileceğiniz bir metin olarak görünür.",
+    "Çoğu transkripsiyon hizmeti sesinizi kendi sunucularına yükler ve dakika başına ücret alır. Bu araç farklı çalışır. OpenAI tarafından geliştirilen açık kaynaklı konuşma tanıma modeli Whisper'ı kullanır ve onu doğrudan tarayıcınızda çalıştırır. Bu sayede sesi metne dönüştürme ücretsizdir, hesap gerekmez; gizli bir röportaj ya da kişisel bir sesli not bilgisayarınızda veya telefonunuzda kalır."
+   ],
+   "image": {
+    "alt": "Sesi yazıya çevirme"
+   }
+  },
+  "howImage": {
+   "alt": "Ses dosyası nasıl yazıya dökülür"
+  },
+  "howCta": "Sesinizi şimdi yazıya çevirin",
+  "steps": [
+   [
+    "Ses veya video dosyanızı seçin",
+    "Dosya Seç'e dokunun veya bir dosyayı kutuya sürükleyin. MP3, WAV, M4A, OGG, FLAC, AAC ve MP4, MOV ya da WEBM videoların sesi 500 MB'a kadar desteklenir."
+   ],
+   [
+    "Konuşulan dili seçin",
+    "Konuşulan dil ayarını Otomatik algıla olarak bırakın veya dili kendiniz seçin, örneğin İspanyolca ya da Portekizce. Dili seçmek kısa kliplerde ve belirgin aksanlarda işe yarar."
+   ],
+   [
+    "Doğruluğu seçin",
+    "Dengeli, net İngilizce kayıtlar için uygundur. En İyi, diğer diller ve zor kayıtlar için en doğru metni verir; Hızlı ise telefonda en çabuk seçenektir."
+   ],
+   [
+    "Yazıya çevirin, ardından kopyalayın veya indirin",
+    "Yazıya Çevir'e basın ve canlı önizlemeyi izleyin. İşlem bitince gerekirse metni düzenleyin, ardından kopyalayın veya TXT, SRT ya da VTT dosyası olarak indirin."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Ses deşifre aracı nasıl çalışır?",
+    "paras": [
+     "İlk kez yazıya çevirdiğinizde tarayıcınız seçtiğiniz konuşma modelini (41 MB ile 249 MB arası) indirir ve önbelleğinde saklar. Sonrasında model önbellekten saniyeler içinde yüklenir. Dosyanız sayfada çözülür, modelin beklediği 16 kHz mono sese dönüştürülür ve ardından hafifçe üst üste binen 30 saniyelik pencerelerle işlenir; böylece aradaki hiçbir kelime kaybolmaz.",
+     "Her pencere, başlangıç ve bitiş zamanlarıyla birkaç satır metne dönüşür. Araç bunları paragraflarda birleştirir ve konuşmacı duraksadığında yeni bir paragraf başlatır. Her şey cihazınızda gerçekleştiği için hız, bilgisayarınıza veya telefonunuza bağlıdır. Modern bir dizüstü bilgisayar en hızlı seçenektir; uzun kayıtlar ise yalnızca biraz daha uzun sürer."
+    ],
+    "list": [
+     [
+      "Hızlı (41 MB)",
+      "En küçük model. Net İngilizce konuşmalar ve belleği az olan telefonlar için iyidir."
+     ],
+     [
+      "Dengeli (77 MB)",
+      "Varsayılan seçenek. İngilizce ve yaygın konuşulan diğer dillerdeki temiz kayıtlarda doğru sonuç verir."
+     ],
+     [
+      "En İyi (249 MB)",
+      "İspanyolca, Portekizce, Fransızca, Almanca ve diğer diller ile gürültülü veya hızlı konuşmalar için en doğru seçim."
+     ]
+    ]
+   },
+   {
+    "h2": "İspanyolca sesi yazıya çevirin, ayrıca 25+ dil daha",
+    "paras": [
+     "**İspanyolca sesi yazıya çevirmek** de İngilizce kadar kolaydır. Araç İngilizce, İspanyolca, Portekizce, Fransızca, Almanca, İtalyanca, Rusça, Türkçe, Arapça, Hintçe, Endonezce, Japonca, Çince, Korece ve daha birçok dili tanır. Varsayılan olarak ilk 30 saniyeyi dinler, dili sizin için algılar ve bulduğu dili döküm metninin yanında gösterir.",
+     "İspanyolca veya Portekizcede en iyi sonuç için dili kendiniz seçin ve Doğruluk ayarını En İyi yapın. Bu, özellikle kısa kliplerde, karışık dillerde ve Latin Amerika ile Avrupa İspanyolcası ya da Brezilya ile Avrupa Portekizcesi gibi bölgesel aksanlarda önemlidir. Metin konuşulan dilde yazılır; yani İspanyolca bir röportajdan İspanyolca bir döküm elde edersiniz."
+    ],
+    "image": {
+     "alt": "İspanyolca sesi yazıya çevirme"
+    },
+    "cta": "İspanyolca sesi şimdi yazıya çevirin"
+   },
+   {
+    "h2": "Her tür kayıt için ses dosyasını yazıya dökme",
+    "paras": [
+     "Ses dosyasını yazıya dökmek yalnızca ofiste değil, pek çok yerde işe yarar. İşte insanların en sık metne dönüştürdüğü kayıtlar."
+    ],
+    "list": [
+     [
+      "Röportajlar ve araştırmalar",
+      "Bir gazeteci röportajının, kullanıcı araştırmasının veya podcast konuğunun aranabilir, alıntıya hazır dökümünü alın."
+     ],
+     [
+      "Dersler ve eğitimler",
+      "Kaydedilmiş bir dersi arayabileceğiniz, işaretleyebileceğiniz ve özetleyebileceğiniz ders notlarına dönüştürün."
+     ],
+     [
+      "Toplantılar ve görüşmeler",
+      "Zoom, Teams veya telefon görüşmesi kaydını toplantı tutanağına dönüştürün ve kararların yazılı kaydını tutun."
+     ],
+     [
+      "Sesli notlar ve fikirler",
+      "Notlarınızı yürürken sesli kaydedin, sonra metne dönüştürün. [Ses Kaydedici](/voice-to-mp3) aracımızla doğrudan tarayıcınızdan kayıt yapabilirsiniz."
+     ],
+     [
+      "Videolar ve altyazılar",
+      "Bir MP4, MOV veya WEBM videosu yükleyin ve YouTube'da ya da video düzenleyicinizde altyazı eklemek için SRT veya VTT altyazı dosyası kaydedin."
+     ],
+     [
+      "Podcast'ler",
+      "Bölüm notları ve tam döküm metni yayınlayın; böylece her bölüm arama motorlarında daha kolay bulunur."
+     ]
+    ]
+   },
+   {
+    "h2": "Döküm metnini TXT, SRT veya VTT olarak kaydedin",
+    "paras": [
+     "Transkripsiyon bittiğinde metin bir düzenleyicide görünür. Bir ismi veya teknik bir terimi düzeltin, ardından Google Docs, Word veya bir e-postaya yapıştırmak için Metni Kopyala'ya basın. Her cümlenin ne zaman söylendiğini görmek için Zaman damgaları görünümüne de geçebilirsiniz.",
+     "Dosya olarak düz metin için TXT'yi, YouTube, Premiere Pro, DaVinci Resolve veya VLC'deki altyazılar için SRT'yi, web video oynatıcıları için VTT'yi seçin. Altyazı dosyaları modelin zaman damgalarını kullanır; böylece her satır, söylendiği anda ekranda görünür."
+    ],
+    "image": {
+     "alt": "Ses dosyasını TXT, SRT ve VTT olarak yazıya dökme"
+    }
+   },
+   {
+    "h2": "Daha doğru bir transkripsiyon için ipuçları",
+    "paras": [
+     "Konuşma tanıma iyidir ama kusursuz değildir. En iyi sonucu net konuşmada verir; bu yüzden birkaç küçük adım büyük fark yaratır."
+    ],
+    "list": [
+     [
+      "Mikrofona yakın kaydedin",
+      "Konuşmacıya yakın tutulan bir telefon, odanın öbür ucundaki dizüstü bilgisayardan daha iyidir. Daha az yankı ve arka plan gürültüsü, daha az hata demektir."
+     ],
+     [
+      "Dili ve En İyi doğruluğu seçin",
+      "Net İngilizce dışındaki her şey için bu iki ayar en büyük iyileşmeyi sağlar."
+     ],
+     [
+      "Müziği ve sessizliği kesin",
+      "Uzun girişler, müzik veya sessizlik modeli şaşırtabilir. Önce [MP3 Kesici](/mp3-cutter) ile bunları kırpın."
+     ],
+     [
+      "İsimleri ve sayıları kontrol edin",
+      "Özel isimler, markalar ve rakamlar en sık görülen hatalardır; döküm metnini paylaşmadan önce bunları gözden geçirin."
+     ],
+     [
+      "Çok uzun kayıtları bölün",
+      "Birkaç saatlik kayıtları parçalara ayırın. Bu, özellikle telefonlarda bellek kullanımını düşük tutar."
+     ]
+    ]
+   },
+   {
+    "h2": "Gizli, ücretsiz ve sınırsız ses deşifre",
+    "paras": [
+     "Üyelik, filigran veya aylık kota yoktur; sesi istediğiniz kadar ücretsiz yazıya çevirebilirsiniz. Konuşma modeli yerel olarak çalıştığı için sesiniz asla bir sunucuya gönderilmez ve onu başka kimse dinleyemez. İndirilen tek şey, yapay zekâ modellerinin herkese açık kütüphanesi Hugging Face'ten gelen modelin kendisidir.",
+     "Bu transkripsiyon aracı, hepsi tarayıcınızda çalışan ücretsiz ses araçlarından oluşan [MP3 Converter](/) setinin bir parçasıdır. Kaydınız bir videoysa, [Videoyu MP3'e Dönüştürücü](/video-to-mp3) aracımızla yalnızca sesini de alabilirsiniz."
+    ],
+    "cta": "Ücretsiz yazıya çevirmeye başlayın"
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Sesi ücretsiz olarak nasıl yazıya çevirebilirim?",
+    "a": "Bu sayfayı açın, ses veya video dosyanızı seçin, dili Otomatik algıla olarak bırakın ve Yazıya Çevir'e basın. Döküm metni sayfada görünür; kopyalamaya veya indirmeye hazırdır, ücretsizdir ve hesap gerektirmez."
+   },
+   {
+    "q": "İspanyolca sesi yazıya çevirebilir miyim?",
+    "a": "Evet. İspanyolca; Portekizce, Fransızca, Almanca ve 20'den fazla başka dille birlikte tam olarak desteklenir. En iyi sonuç için Konuşulan dil ayarını İspanyolca, Doğruluk ayarını En İyi yapın."
+   },
+   {
+    "q": "Sesim bir sunucuya yükleniyor mu?",
+    "a": "Hayır. Konuşma tanıma modeli tarayıcınızın içinde çalışır, bu yüzden dosyanız cihazınızda kalır. Yalnızca modelin kendisi Hugging Face'ten bir kez indirilir."
+   },
+   {
+    "q": "Hangi dosya formatlarını yazıya dökebilirim?",
+    "a": "MP3, WAV, M4A, AAC, OGG, OPUS, FLAC, WMA ve AMR ses dosyaları ile MP4, MOV, WEBM ve MKV videoların ses kanalı; dosya başına 500 MB'a kadar."
+   },
+   {
+    "q": "Transkripsiyon ne kadar doğru?",
+    "a": "Net konuşmada, özellikle En İyi ayarıyla çok doğrudur. Arka plan gürültüsü, müzik, aynı anda konuşan kişiler ve belirgin aksanlar doğruluğu düşürür; bu yüzden isimleri ve sayıları her zaman kontrol edin."
+   },
+   {
+    "q": "Bir dosyayı yazıya dökmek ne kadar sürer?",
+    "a": "Cihazınıza ve seçtiğiniz doğruluğa bağlıdır. Modern bir bilgisayarda Hızlı ve Dengeli genellikle kaydın kendisinden daha kısa sürer, En İyi ise daha uzun sürer. İlk kullanımda tek seferlik model indirme süresi de eklenir."
+   },
+   {
+    "q": "Döküm metninde zaman damgaları var mı?",
+    "a": "Evet. Her cümlenin ne zaman başladığını görmek için Zaman damgaları görünümüne geçin veya her satırın başlangıç ve bitiş zamanlarını içeren bir SRT ya da VTT dosyası indirin."
+   },
+   {
+    "q": "Farklı konuşmacıları ayırt edebiliyor mu?",
+    "a": "Henüz değil. Döküm metni, konuşmacı isimleri olmadan paragraflar hâlinde kesintisiz metin olarak yazılır. İndirmeden önce isimleri düzenleyicide kendiniz ekleyebilirsiniz."
+   },
+   {
+    "q": "Ses deşifre aracı iPhone ve Android'de çalışıyor mu?",
+    "a": "Evet, modern mobil tarayıcılarda çalışır. Telefonlarda Hızlı veya Dengeli'yi seçin ve daha kısa kayıtları yazıya dökün, çünkü En İyi modeli daha fazla bellek gerektirir."
+   }
+  ]
  }
 }

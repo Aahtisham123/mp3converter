@@ -4899,5 +4899,194 @@
     "a": "No. La conversión se hace dentro de tu navegador, así que tus episodios se quedan en tu dispositivo hasta que los subas a tu plataforma."
    }
   ]
+ },
+ "transcribe-audio-to-text": {
+  "nav": "Transcriptor de audio a texto",
+  "seoTitle": "Transcribir audio a texto gratis – Transcriptor online",
+  "metaDescription": "Transcribe audio a texto gratis en tu navegador. Pasa MP3, WAV, M4A o video a texto en español, inglés, portugués y 25+ idiomas. Sin subir archivos ni registro.",
+  "h1": "Transcribir audio a texto – Transcriptor online gratis",
+  "lead": "Convierte entrevistas, notas de voz, clases y reuniones en texto editable en minutos. Nuestro transcriptor de audio gratuito ejecuta un modelo de reconocimiento de voz dentro de tu navegador, detecta el idioma hablado y te da una transcripción limpia con marcas de tiempo. Tu grabación nunca sale de tu dispositivo.",
+  "intro": {
+   "h2": "Un transcriptor gratis que pasa audio a texto en tu dispositivo",
+   "paras": [
+    "Cuando necesitas **transcribir audio a texto**, escribirlo a mano lleva unas cuatro veces más que la propia grabación. Un transcriptor automático escucha por ti. Suelta un archivo, pulsa Transcribir a texto y las palabras aparecen como una transcripción que puedes editar, copiar en un documento o guardar como subtítulos.",
+    "La mayoría de los servicios de transcripción suben tu audio a sus servidores y cobran por minuto. Este funciona de otra forma. Usa Whisper, un modelo de reconocimiento de voz de código abierto creado por OpenAI, y lo ejecuta directamente en tu navegador. Así, la transcripción es gratis, no necesitas cuenta y una entrevista confidencial o una nota de voz personal se queda en tu computadora o tu teléfono."
+   ],
+   "image": {
+    "alt": "Transcribir audio a texto"
+   }
+  },
+  "howImage": {
+   "alt": "Cómo transcribir audio a texto"
+  },
+  "howCta": "Transcribe tu audio ahora",
+  "steps": [
+   [
+    "Elige tu archivo de audio o video",
+    "Toca Elegir archivo o arrastra un archivo al recuadro. Funcionan MP3, WAV, M4A, OGG, FLAC, AAC y el sonido de videos MP4, MOV o WEBM, hasta 500 MB."
+   ],
+   [
+    "Elige el idioma hablado",
+    "Deja Idioma hablado en Detectar automáticamente o elígelo tú, por ejemplo español o portugués. Elegirlo ayuda con clips cortos y acentos marcados."
+   ],
+   [
+    "Elige la precisión",
+    "Equilibrada va bien para grabaciones claras en inglés. Máxima da el texto más preciso en otros idiomas y con audio difícil, mientras que Rápida es la más veloz en un teléfono."
+   ],
+   [
+    "Transcribe y luego copia o descarga",
+    "Pulsa Transcribir a texto y mira la vista previa en vivo. Cuando termine, edita el texto si hace falta y luego cópialo o descarga un archivo TXT, SRT o VTT."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Cómo funciona el transcriptor de audio",
+    "paras": [
+     "La primera vez que transcribes, tu navegador descarga el modelo de voz que elegiste, de entre 41 MB y 249 MB, y lo guarda en su caché. Después, el modelo se carga desde la caché en segundos. Tu archivo se decodifica en la página, se convierte al sonido mono de 16 kHz que espera el modelo y luego se procesa en ventanas de 30 segundos que se superponen un poco, para que no se pierda ninguna palabra entre ellas.",
+     "Cada ventana se convierte en unas pocas líneas de texto con tiempos de inicio y fin. Luego la herramienta las une en párrafos y empieza uno nuevo cuando la persona que habla hace una pausa. Como todo ocurre en tu dispositivo, la velocidad depende de tu computadora o tu teléfono. Una laptop moderna es la opción más rápida, y las grabaciones largas simplemente tardan un poco más."
+    ],
+    "list": [
+     [
+      "Rápida (41 MB)",
+      "El modelo más pequeño. Bueno para voz clara en inglés y para teléfonos con poca memoria."
+     ],
+     [
+      "Equilibrada (77 MB)",
+      "La opción predeterminada. Precisa en grabaciones limpias en inglés y otros idiomas muy hablados."
+     ],
+     [
+      "Máxima (249 MB)",
+      "La opción más precisa para español, portugués, francés, alemán y otros idiomas, y para voz rápida o con ruido."
+     ]
+    ]
+   },
+   {
+    "h2": "Transcribir audio en español a texto, y en 25+ idiomas más",
+    "paras": [
+     "Puedes **transcribir audio en español a texto** con la misma facilidad que en inglés. El transcriptor reconoce español, inglés, portugués, francés, alemán, italiano, ruso, turco, árabe, hindi, indonesio, japonés, chino, coreano y muchos más. De forma predeterminada, escucha los primeros 30 segundos, detecta el idioma por ti y luego muestra cuál encontró junto a la transcripción.",
+     "Para obtener los mejores resultados en español o portugués, elige tú el idioma y pon Precisión en Máxima. Esto importa sobre todo en clips cortos, idiomas mezclados y acentos regionales, como el español de Latinoamérica y de España, o el portugués de Brasil y de Portugal. El texto se escribe en el idioma que se habla, así que una entrevista en español te da una transcripción en español."
+    ],
+    "image": {
+     "alt": "Transcribir audio en español a texto"
+    },
+    "cta": "Transcribe audio en español ahora"
+   },
+   {
+    "h2": "Transcripción de archivos de audio para todo tipo de grabaciones",
+    "paras": [
+     "La transcripción de archivos de audio es útil mucho más allá de la oficina. Estas son las grabaciones que la gente convierte a texto con más frecuencia."
+    ],
+    "list": [
+     [
+      "Entrevistas e investigación",
+      "Obtén una transcripción con búsqueda de una entrevista periodística, un estudio con usuarios o un invitado de pódcast, lista para citar."
+     ],
+     [
+      "Clases y conferencias",
+      "Transcribe una clase grabada en apuntes que puedes buscar, resaltar y resumir."
+     ],
+     [
+      "Reuniones y llamadas",
+      "Convierte la grabación de una llamada de Zoom, Teams o teléfono en un acta y guarda un registro escrito de las decisiones."
+     ],
+     [
+      "Notas de voz e ideas",
+      "Graba tus notas mientras caminas y pásalas a texto más tarde. Puedes grabar directamente desde tu navegador con nuestra [Grabadora de voz](/voice-to-mp3)."
+     ],
+     [
+      "Videos y subtítulos",
+      "Carga un video MP4, MOV o WEBM y guarda subtítulos SRT o VTT para añadirlos en YouTube o en tu editor de video."
+     ],
+     [
+      "Pódcasts",
+      "Publica las notas del episodio y una transcripción completa, lo que hace que cada episodio sea más fácil de encontrar en los buscadores."
+     ]
+    ]
+   },
+   {
+    "h2": "Guarda tu transcripción como TXT, SRT o VTT",
+    "paras": [
+     "Cuando termina la transcripción, el texto aparece en un editor. Corrige un nombre o un término técnico y pulsa Copiar texto para pegarlo en Google Docs, Word o un correo. También puedes cambiar a la vista Marcas de tiempo para ver cuándo se dijo cada frase.",
+     "Para archivos, elige TXT para texto simple, SRT para subtítulos en YouTube, Premiere Pro, DaVinci Resolve o VLC, y VTT para reproductores de video web. Los subtítulos usan las marcas de tiempo del modelo, así que cada línea aparece en pantalla mientras se dice."
+    ],
+    "image": {
+     "alt": "Transcripción de archivos de audio a TXT, SRT y VTT"
+    }
+   },
+   {
+    "h2": "Consejos para una transcripción de audio más precisa",
+    "paras": [
+     "El reconocimiento de voz es bueno, pero no perfecto. Funciona mejor con voz clara, así que unos pequeños pasos marcan una gran diferencia."
+    ],
+    "list": [
+     [
+      "Graba cerca del micrófono",
+      "Un teléfono cerca de quien habla supera a una laptop al otro lado de la sala. Menos eco y ruido de fondo significan menos errores."
+     ],
+     [
+      "Elige el idioma y la precisión Máxima",
+      "Para todo lo que no sea inglés claro, estos dos ajustes son los que más mejoran el resultado."
+     ],
+     [
+      "Quita la música y los silencios",
+      "Las introducciones largas, la música o los silencios pueden confundir al modelo. Recórtalos antes con el [Cortador de MP3](/mp3-cutter)."
+     ],
+     [
+      "Revisa nombres y números",
+      "Los nombres propios, las marcas y las cifras son los errores más comunes, así que revísalos antes de compartir la transcripción."
+     ],
+     [
+      "Divide las grabaciones muy largas",
+      "Si la grabación dura varias horas, córtala en partes. Así se usa menos memoria, sobre todo en teléfonos."
+     ]
+    ]
+   },
+   {
+    "h2": "Privado, gratis y sin límites",
+    "paras": [
+     "No hay registro, ni marca de agua, ni cuota mensual, así que puedes transcribir audio a texto gratis tantas veces como quieras. Como el modelo de voz se ejecuta en tu equipo, tu audio nunca se envía a un servidor y nadie más puede escucharlo. Lo único que se descarga es el propio modelo, que viene de Hugging Face, una biblioteca pública de modelos de IA.",
+     "Este transcriptor forma parte de [MP3 Converter](/), un conjunto de herramientas de audio gratis que funcionan en tu navegador. Si tu grabación es un video, también puedes quedarte solo con el sonido con nuestro [convertidor de video a MP3](/video-to-mp3)."
+    ],
+    "cta": "Empieza a transcribir gratis"
+   }
+  ],
+  "faqs": [
+   {
+    "q": "¿Cómo transcribir audio a texto gratis?",
+    "a": "Abre esta página, elige tu archivo de audio o video, deja el idioma en Detectar automáticamente y pulsa Transcribir a texto. La transcripción aparece en la página, lista para copiar o descargar, sin costo y sin cuenta."
+   },
+   {
+    "q": "¿Puedo transcribir audio en español a texto?",
+    "a": "Sí. El español es totalmente compatible, junto con portugués, francés, alemán y más de 20 idiomas más. Para el mejor resultado, pon Idioma hablado en español y Precisión en Máxima."
+   },
+   {
+    "q": "¿Mi audio se sube a un servidor?",
+    "a": "No. El modelo de reconocimiento de voz se ejecuta dentro de tu navegador, así que tu archivo se queda en tu dispositivo. Solo el modelo se descarga una vez desde Hugging Face."
+   },
+   {
+    "q": "¿Qué formatos de archivo puedo transcribir?",
+    "a": "Audio MP3, WAV, M4A, AAC, OGG, OPUS, FLAC, WMA y AMR, además de la pista de sonido de videos MP4, MOV, WEBM y MKV, hasta 500 MB por archivo."
+   },
+   {
+    "q": "¿Qué tan precisa es la transcripción de audio?",
+    "a": "Con voz clara es muy precisa, sobre todo con la opción Máxima. El ruido de fondo, la música, varias personas hablando a la vez y los acentos marcados reducen la precisión, así que revisa siempre nombres y números."
+   },
+   {
+    "q": "¿Cuánto tarda en transcribirse un archivo?",
+    "a": "Depende de tu dispositivo y de la precisión que elijas. En una computadora moderna, Rápida y Equilibrada suelen tardar menos que la propia grabación, mientras que Máxima tarda más. La primera vez también incluye la descarga única del modelo."
+   },
+   {
+    "q": "¿La transcripción incluye marcas de tiempo?",
+    "a": "Sí. Cambia a la vista Marcas de tiempo para ver cuándo empieza cada frase, o descarga un archivo SRT o VTT con tiempos de inicio y fin para cada línea."
+   },
+   {
+    "q": "¿Puede distinguir entre distintas personas que hablan?",
+    "a": "Todavía no. La transcripción se escribe como texto continuo en párrafos, sin nombres de quién habla. Puedes añadir los nombres tú mismo en el editor antes de descargarla."
+   },
+   {
+    "q": "¿El transcriptor de audio funciona en iPhone y Android?",
+    "a": "Sí, funciona en los navegadores móviles modernos. En teléfonos, elige Rápida o Equilibrada y transcribe grabaciones más cortas, porque el modelo Máxima necesita más memoria."
+   }
+  ]
  }
 }

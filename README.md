@@ -13,6 +13,7 @@ files are never uploaded to a server.
 | `/mp3-cutter` | Waveform trimmer: keep/remove selection, fade in/out, preview |
 | `/mp3-compressor` | Re-encode at 32–160 kbps, shows size saved |
 | `/audio-joiner` | Merge files in any order with optional gaps |
+| `/transcribe-audio-to-text` | Speech to text with Whisper in the browser: language detection, TXT/SRT/VTT export |
 | `/about`, `/contact`, `/privacy-policy`, `/terms`, `/copyright` | Info and legal pages |
 
 ## How it works (`lib/audio-engine.js`)
@@ -22,6 +23,14 @@ files are never uploaded to a server.
 3. **Encode** MP3 with LAME ([lamejs](https://github.com/zhuker/lamejs), LGPL-3.0) in a Web Worker (`public/mp3-worker.js`).
 
 Files are processed one at a time to keep memory use low; the limit is 500 MB per file.
+
+## Audio to text (`public/transcribe-worker.js`)
+The transcriber runs OpenAI's Whisper model (MIT) with [transformers.js](https://github.com/huggingface/transformers.js)
+(Apache-2.0, loaded from jsDelivr at a pinned version) in a module worker. Audio is decoded with the engine above,
+resampled to 16 kHz mono and never leaves the device. The browser downloads, on first use, the library and the ONNX runtime from
+jsDelivr and the chosen model (`Xenova/whisper-tiny`, `-base` or `-small`, 8-bit) from Hugging Face, and caches them.
+transformers.js has no language detection, so the worker scores Whisper's language tokens on the first 30 seconds.
+To update transformers.js, change the version in the worker's import URL.
 
 ## Link downloads (separate server)
 Browsers cannot fetch videos from other websites, so link downloads use a small service in

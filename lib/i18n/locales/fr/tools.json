@@ -4899,5 +4899,194 @@
     "a": "Non. La conversion se fait dans votre navigateur : vos épisodes restent sur votre appareil jusqu’à ce que vous les mettiez en ligne chez votre hébergeur."
    }
   ]
+ },
+ "transcribe-audio-to-text": {
+  "nav": "Transcription audio en texte",
+  "seoTitle": "Transcrire un audio en texte – Transcription audio gratuite",
+  "metaDescription": "Transcrivez un audio en texte gratuitement dans le navigateur : MP3, WAV, M4A ou vidéo, en anglais, espagnol, portugais et 25+ langues. Sans envoi ni compte.",
+  "h1": "Transcrire un audio en texte – Outil de transcription gratuit",
+  "lead": "Transformez interviews, notes vocales, cours et réunions en texte modifiable en quelques minutes. Notre outil de transcription audio gratuit fait tourner un modèle de reconnaissance vocale dans votre navigateur, détecte la langue parlée et vous donne une transcription propre, avec horodatage. Votre enregistrement ne quitte jamais votre appareil.",
+  "intro": {
+   "h2": "Un outil de transcription gratuit qui convertit la voix en texte sur votre appareil",
+   "paras": [
+    "Quand vous devez **transcrire un audio en texte**, tout taper à la main prend environ quatre fois la durée de l’enregistrement. Un outil de transcription automatique écoute à votre place. Déposez un fichier, cliquez sur Transcrire en texte, et les mots s’affichent sous forme de transcription que vous pouvez modifier, copier dans un document ou enregistrer en sous-titres.",
+    "La plupart des services de transcription envoient votre audio sur leurs serveurs et facturent à la minute. Ici, c’est différent. L’outil utilise Whisper, un modèle de reconnaissance vocale open source créé par OpenAI, et l’exécute directement dans votre navigateur. Résultat : la transcription audio est gratuite, aucun compte n’est nécessaire, et une interview confidentielle ou un mémo vocal personnel reste sur votre ordinateur ou votre téléphone."
+   ],
+   "image": {
+    "alt": "Transcrire un audio en texte"
+   }
+  },
+  "howImage": {
+   "alt": "Comment transcrire un audio en texte"
+  },
+  "howCta": "Transcrire votre audio maintenant",
+  "steps": [
+   [
+    "Choisissez votre fichier audio ou vidéo",
+    "Touchez Choisir un fichier ou faites glisser un fichier dans le cadre. MP3, WAV, M4A, OGG, FLAC, AAC et le son des vidéos MP4, MOV ou WEBM sont acceptés, jusqu’à 500 MB."
+   ],
+   [
+    "Indiquez la langue parlée",
+    "Laissez Langue parlée sur Détection automatique, ou choisissez-la vous-même, par exemple l’espagnol ou le portugais. La choisir aide pour les extraits courts et les accents prononcés."
+   ],
+   [
+    "Choisissez la précision",
+    "Équilibrée convient aux enregistrements clairs en anglais. Maximale donne le texte le plus précis pour les autres langues et les audios difficiles, tandis que Rapide est la plus véloce sur téléphone."
+   ],
+   [
+    "Transcrivez, puis copiez ou téléchargez",
+    "Cliquez sur Transcrire en texte et suivez l’aperçu en direct. Une fois terminé, corrigez le texte si besoin, puis copiez-le ou téléchargez un fichier TXT, SRT ou VTT."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Comment fonctionne l’outil de transcription audio",
+    "paras": [
+     "Lors de votre première transcription, votre navigateur télécharge le modèle vocal choisi, entre 41 MB et 249 MB, et le garde en cache. Ensuite, le modèle se charge depuis le cache en quelques secondes. Votre fichier est décodé sur la page, converti en son mono 16 kHz comme l’attend le modèle, puis traité par fenêtres de 30 secondes qui se chevauchent légèrement, pour qu’aucun mot ne se perde entre elles.",
+     "Chaque fenêtre donne quelques lignes de texte avec un temps de début et de fin. L’outil les regroupe ensuite en paragraphes et en commence un nouveau quand l’orateur marque une pause. Comme tout se passe sur votre appareil, la vitesse dépend de votre ordinateur ou de votre téléphone. Un ordinateur portable récent est l’option la plus rapide, et les longs enregistrements prennent simplement un peu plus de temps."
+    ],
+    "list": [
+     [
+      "Rapide (41 MB)",
+      "Le plus petit modèle. Idéal pour un anglais bien articulé et pour les téléphones avec peu de mémoire."
+     ],
+     [
+      "Équilibrée (77 MB)",
+      "L’option par défaut. Précise sur les enregistrements nets en anglais et dans les autres langues très parlées."
+     ],
+     [
+      "Maximale (249 MB)",
+      "Le choix le plus précis pour l’espagnol, le portugais, le français, l’allemand et les autres langues, ainsi que pour une parole bruitée ou rapide."
+     ]
+    ]
+   },
+   {
+    "h2": "Transcrire un audio espagnol en texte, et plus de 25 autres langues",
+    "paras": [
+     "Vous pouvez **transcrire un audio espagnol en texte** aussi facilement qu’un audio en anglais. L’outil reconnaît l’anglais, l’espagnol, le portugais, le français, l’allemand, l’italien, le russe, le turc, l’arabe, l’hindi, l’indonésien, le japonais, le chinois, le coréen et bien d’autres. Par défaut, il écoute les 30 premières secondes, détecte la langue pour vous, puis affiche celle qu’il a trouvée à côté de la transcription.",
+     "Pour de meilleurs résultats en espagnol ou en portugais, choisissez vous-même la langue et réglez Précision sur Maximale. C’est surtout utile pour les extraits courts, les langues mélangées et les accents régionaux, comme l’espagnol d’Amérique latine et d’Europe, ou le portugais du Brésil et du Portugal. Le texte est écrit dans la langue parlée : une interview en espagnol vous donne une transcription en espagnol."
+    ],
+    "image": {
+     "alt": "Transcrire un audio espagnol en texte"
+    },
+    "cta": "Transcrire un audio espagnol"
+   },
+   {
+    "h2": "Transcription de fichier audio pour tous types d’enregistrements",
+    "paras": [
+     "La transcription de fichier audio sert bien au-delà du bureau. Voici les enregistrements que l’on convertit le plus souvent en texte."
+    ],
+    "list": [
+     [
+      "Interviews et recherche",
+      "Obtenez une transcription consultable d’une interview journalistique, d’un test utilisateur ou d’un invité de podcast, prête à être citée."
+     ],
+     [
+      "Cours et conférences",
+      "Transcrivez un cours enregistré en notes de révision que vous pouvez rechercher, surligner et résumer."
+     ],
+     [
+      "Réunions et appels",
+      "Transformez l’enregistrement d’un appel Zoom, Teams ou téléphonique en compte rendu, et gardez une trace écrite des décisions."
+     ],
+     [
+      "Mémos vocaux et idées",
+      "Dictez vos notes en marchant et convertissez-les en texte plus tard. Vous pouvez enregistrer directement depuis votre navigateur avec notre [enregistreur vocal](/voice-to-mp3)."
+     ],
+     [
+      "Vidéos et sous-titres",
+      "Chargez une vidéo MP4, MOV ou WEBM et enregistrez des sous-titres SRT ou VTT pour ajouter des légendes sur YouTube ou dans votre logiciel de montage."
+     ],
+     [
+      "Podcasts",
+      "Publiez des notes d’épisode et une transcription complète : chaque épisode devient plus facile à trouver sur les moteurs de recherche."
+     ]
+    ]
+   },
+   {
+    "h2": "Enregistrez votre transcription en TXT, SRT ou VTT",
+    "paras": [
+     "Une fois la transcription terminée, le texte s’affiche dans un éditeur. Corrigez un nom ou un terme technique, puis cliquez sur Copier le texte pour le coller dans Google Docs, Word ou un e-mail. Vous pouvez aussi passer à la vue Horodatage pour voir à quel moment chaque phrase a été prononcée.",
+     "Pour les fichiers, choisissez TXT pour du texte brut, SRT pour des sous-titres dans YouTube, Premiere Pro, DaVinci Resolve ou VLC, et VTT pour les lecteurs vidéo web. Les fichiers de sous-titres reprennent l’horodatage du modèle : chaque ligne s’affiche à l’écran pendant qu’elle est prononcée."
+    ],
+    "image": {
+     "alt": "Transcription de fichier audio en TXT, SRT et VTT"
+    }
+   },
+   {
+    "h2": "Conseils pour une transcription plus précise",
+    "paras": [
+     "La reconnaissance vocale est performante, mais pas parfaite. Elle fonctionne mieux sur une parole claire, et quelques gestes simples font une vraie différence."
+    ],
+    "list": [
+     [
+      "Enregistrez près du micro",
+      "Un téléphone tenu près de la personne qui parle vaut mieux qu’un ordinateur portable à l’autre bout de la pièce. Moins d’écho et de bruit de fond, c’est moins d’erreurs."
+     ],
+     [
+      "Choisissez la langue et la précision Maximale",
+      "Pour tout ce qui n’est pas de l’anglais bien articulé, ces deux réglages apportent la plus grosse amélioration."
+     ],
+     [
+      "Coupez la musique et les silences",
+      "Les longues intros, la musique ou les silences peuvent perturber le modèle. Supprimez-les d’abord avec notre [outil pour couper un MP3](/mp3-cutter)."
+     ],
+     [
+      "Vérifiez les noms et les chiffres",
+      "Les noms propres, les marques et les nombres sont les erreurs les plus fréquentes : relisez-les avant de partager la transcription."
+     ],
+     [
+      "Découpez les très longs enregistrements",
+      "Pour les enregistrements de plusieurs heures, coupez-les en plusieurs parties. Cela limite l’utilisation de la mémoire, surtout sur téléphone."
+     ]
+    ]
+   },
+   {
+    "h2": "Privé, gratuit et sans limite",
+    "paras": [
+     "Pas d’inscription, pas de filigrane, pas de quota mensuel : vous pouvez convertir un audio en texte gratuitement aussi souvent que vous le souhaitez. Comme le modèle vocal tourne en local, votre audio n’est jamais envoyé à un serveur et personne d’autre ne peut l’écouter. Le seul téléchargement est le modèle lui-même, qui provient de Hugging Face, une bibliothèque publique de modèles d’IA.",
+     "Cet outil de transcription fait partie de [MP3 Converter](/), un ensemble d’outils audio gratuits qui fonctionnent tous dans votre navigateur. Si votre enregistrement est une vidéo, vous pouvez aussi n’en garder que le son avec notre convertisseur [Vidéo en MP3](/video-to-mp3)."
+    ],
+    "cta": "Commencer la transcription gratuite"
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Comment transcrire un audio en texte gratuitement ?",
+    "a": "Ouvrez cette page, choisissez votre fichier audio ou vidéo, laissez la langue sur Détection automatique et cliquez sur Transcrire en texte. La transcription s’affiche sur la page, prête à être copiée ou téléchargée, gratuitement et sans compte."
+   },
+   {
+    "q": "Puis-je transcrire un audio espagnol en texte ?",
+    "a": "Oui. L’espagnol est entièrement pris en charge, tout comme le portugais, le français, l’allemand et plus de 20 autres langues. Pour un résultat optimal, réglez Langue parlée sur l’espagnol et Précision sur Maximale."
+   },
+   {
+    "q": "Mon audio est-il envoyé sur un serveur ?",
+    "a": "Non. Le modèle de reconnaissance vocale tourne dans votre navigateur, donc votre fichier reste sur votre appareil. Seul le modèle lui-même est téléchargé une fois depuis Hugging Face."
+   },
+   {
+    "q": "Quels formats de fichier puis-je transcrire ?",
+    "a": "Les fichiers audio MP3, WAV, M4A, AAC, OGG, OPUS, FLAC, WMA et AMR, ainsi que la piste son des vidéos MP4, MOV, WEBM et MKV, jusqu’à 500 MB par fichier."
+   },
+   {
+    "q": "La transcription est-elle précise ?",
+    "a": "Sur une parole claire, elle est très précise, surtout avec le réglage Maximale. Le bruit de fond, la musique, les personnes qui parlent en même temps et les accents prononcés réduisent la précision : vérifiez toujours les noms et les chiffres."
+   },
+   {
+    "q": "Combien de temps faut-il pour transcrire un fichier ?",
+    "a": "Cela dépend de votre appareil et de la précision choisie. Sur un ordinateur récent, Rapide et Équilibrée vont généralement plus vite que la durée de l’enregistrement, tandis que Maximale prend plus de temps. La première utilisation inclut aussi le téléchargement unique du modèle."
+   },
+   {
+    "q": "La transcription inclut-elle l’horodatage ?",
+    "a": "Oui. Passez à la vue Horodatage pour voir quand commence chaque phrase, ou téléchargez un fichier SRT ou VTT avec les temps de début et de fin de chaque ligne."
+   },
+   {
+    "q": "L’outil distingue-t-il les différents intervenants ?",
+    "a": "Pas encore. La transcription est rédigée en texte continu, par paragraphes, sans le nom des intervenants. Vous pouvez ajouter les noms vous-même dans l’éditeur avant de la télécharger."
+   },
+   {
+    "q": "L’outil de transcription audio fonctionne-t-il sur iPhone et Android ?",
+    "a": "Oui, il fonctionne dans les navigateurs mobiles récents. Sur téléphone, choisissez Rapide ou Équilibrée et transcrivez des enregistrements plus courts, car le modèle Maximale demande plus de mémoire."
+   }
+  ]
  }
 }

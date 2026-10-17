@@ -4899,5 +4899,194 @@
     "a": "Tidak. Konversi berlangsung di dalam browser Anda, jadi episode tetap di perangkat Anda sampai Anda mengunggahnya ke layanan hosting."
    }
   ]
+ },
+ "transcribe-audio-to-text": {
+  "nav": "Transkrip Audio ke Teks",
+  "seoTitle": "Transkrip Audio ke Teks Gratis – Ubah Audio Jadi Teks",
+  "metaDescription": "Transkrip audio ke teks gratis di browser. Ubah MP3, WAV, M4A atau video jadi teks dalam bahasa Indonesia, Inggris, dan 25+ bahasa. Tanpa unggah, tanpa daftar.",
+  "h1": "Transkrip Audio ke Teks – Transkripsi Audio Gratis Online",
+  "lead": "Ubah wawancara, pesan suara, kuliah, dan rapat menjadi teks yang bisa diedit dalam hitungan menit. Alat transkripsi audio gratis kami menjalankan model pengenalan suara langsung di browser Anda, mendeteksi bahasa yang diucapkan, dan memberi Anda transkrip rapi lengkap dengan stempel waktu. Rekaman Anda tidak pernah keluar dari perangkat Anda.",
+  "intro": {
+   "h2": "Ubah audio jadi teks gratis, langsung di perangkat Anda",
+   "paras": [
+    "Saat Anda perlu **transkrip audio ke teks**, mengetiknya secara manual butuh waktu sekitar empat kali lebih lama dari durasi rekamannya. Alat transkripsi otomatis mendengarkan untuk Anda. Masukkan file, tekan Transkrip ke Teks, dan kata-katanya muncul sebagai transkrip yang bisa Anda edit, salin ke dokumen, atau simpan sebagai subtitle.",
+    "Sebagian besar layanan transkripsi mengunggah audio Anda ke server mereka dan menarik biaya per menit. Alat ini bekerja dengan cara berbeda. Alat ini memakai Whisper, model pengenalan suara open source buatan OpenAI, dan menjalankannya langsung di browser Anda. Hasilnya, mengubah suara menjadi teks di sini gratis, tanpa akun, dan wawancara rahasia atau memo suara pribadi tetap tersimpan di komputer atau ponsel Anda."
+   ],
+   "image": {
+    "alt": "Transkrip audio ke teks"
+   }
+  },
+  "howImage": {
+   "alt": "Cara transkrip audio ke teks"
+  },
+  "howCta": "Transkrip audio Anda sekarang",
+  "steps": [
+   [
+    "Pilih file audio atau video",
+    "Ketuk Pilih File atau seret file ke kotak. MP3, WAV, M4A, OGG, FLAC, AAC, serta suara dari video MP4, MOV, atau WEBM bisa dipakai, hingga 500 MB."
+   ],
+   [
+    "Pilih bahasa ucapan",
+    "Biarkan Bahasa ucapan pada Deteksi otomatis, atau pilih sendiri, misalnya bahasa Indonesia atau Spanyol. Memilih bahasa sendiri membantu untuk klip pendek dan aksen yang kental."
+   ],
+   [
+    "Pilih tingkat akurasi",
+    "Seimbang cocok untuk rekaman bahasa Inggris yang jelas. Terbaik memberi teks paling akurat untuk bahasa lain dan audio yang lebih sulit, sedangkan Cepat paling kencang di ponsel."
+   ],
+   [
+    "Transkrip, lalu salin atau download",
+    "Tekan Transkrip ke Teks dan lihat pratinjau langsungnya. Setelah selesai, edit teksnya bila perlu, lalu salin atau download file TXT, SRT, atau VTT."
+   ]
+  ],
+  "sections": [
+   {
+    "h2": "Cara kerja alat transkripsi audio ini",
+    "paras": [
+     "Saat pertama kali mentranskrip, browser Anda mendownload model suara yang Anda pilih, antara 41 MB dan 249 MB, lalu menyimpannya di cache. Setelah itu, model dimuat dari cache dalam hitungan detik. File Anda didekode di halaman, diubah menjadi suara mono 16 kHz yang dibutuhkan model, lalu diproses dalam jendela 30 detik yang sedikit tumpang tindih, sehingga tidak ada kata yang hilang di antaranya.",
+     "Setiap jendela menghasilkan beberapa baris teks dengan waktu mulai dan selesai. Alat ini lalu menggabungkannya menjadi paragraf, dan memulai paragraf baru saat pembicara berhenti sejenak. Karena semuanya berjalan di perangkat Anda, kecepatannya bergantung pada komputer atau ponsel Anda. Laptop modern adalah pilihan tercepat, dan rekaman panjang hanya butuh waktu sedikit lebih lama."
+    ],
+    "list": [
+     [
+      "Cepat (41 MB)",
+      "Model terkecil. Cocok untuk ucapan bahasa Inggris yang jelas dan ponsel dengan memori terbatas."
+     ],
+     [
+      "Seimbang (77 MB)",
+      "Pilihan default. Akurat untuk rekaman yang jernih dalam bahasa Inggris dan bahasa lain yang banyak digunakan."
+     ],
+     [
+      "Terbaik (249 MB)",
+      "Pilihan paling akurat untuk bahasa Spanyol, Portugis, Prancis, Jerman, dan bahasa lain, serta untuk ucapan yang bising atau cepat."
+     ]
+    ]
+   },
+   {
+    "h2": "Transkrip audio bahasa Spanyol ke teks, dan 25+ bahasa lainnya",
+    "paras": [
+     "Anda bisa **transkrip audio bahasa Spanyol ke teks** semudah bahasa Inggris. Alat ini mengenali bahasa Inggris, Spanyol, Portugis, Prancis, Jerman, Italia, Rusia, Turki, Arab, Hindi, Indonesia, Jepang, Mandarin, Korea, dan masih banyak lagi. Secara default, alat ini mendengarkan 30 detik pertama dan mendeteksi bahasanya untuk Anda, lalu menampilkan bahasa yang ditemukan di samping transkrip.",
+     "Untuk hasil terbaik dalam bahasa Spanyol atau Portugis, pilih bahasanya sendiri dan atur Akurasi ke Terbaik. Hal ini paling penting untuk klip pendek, campuran bahasa, dan aksen daerah, seperti bahasa Spanyol Amerika Latin dan Eropa, atau bahasa Portugis Brasil dan Eropa. Teks ditulis dalam bahasa yang diucapkan, jadi wawancara berbahasa Spanyol menghasilkan transkrip berbahasa Spanyol, dan rekaman berbahasa Indonesia menghasilkan teks berbahasa Indonesia."
+    ],
+    "image": {
+     "alt": "Transkrip audio bahasa Spanyol ke teks"
+    },
+    "cta": "Transkrip audio bahasa Spanyol sekarang"
+   },
+   {
+    "h2": "Transkripsi file audio untuk semua jenis rekaman",
+    "paras": [
+     "Transkripsi file audio berguna jauh di luar urusan kantor. Berikut rekaman yang paling sering diubah menjadi teks."
+    ],
+    "list": [
+     [
+      "Wawancara dan riset",
+      "Dapatkan transkrip yang bisa dicari dari wawancara jurnalis, studi pengguna, atau tamu podcast, siap untuk dikutip."
+     ],
+     [
+      "Kuliah dan kelas",
+      "Transkrip rekaman kuliah menjadi catatan belajar yang bisa Anda cari, tandai, dan ringkas."
+     ],
+     [
+      "Rapat dan panggilan",
+      "Ubah rekaman Zoom, Teams, atau panggilan telepon menjadi notulen, dan simpan catatan tertulis tentang keputusan yang diambil."
+     ],
+     [
+      "Memo suara dan ide",
+      "Ucapkan catatan Anda sambil berjalan dan ubah menjadi teks nanti. Anda bisa merekam langsung dari browser dengan [Perekam Suara](/voice-to-mp3) kami."
+     ],
+     [
+      "Video dan subtitle",
+      "Muat video MP4, MOV, atau WEBM lalu simpan subtitle SRT atau VTT untuk menambahkan teks di YouTube atau di editor video Anda."
+     ],
+     [
+      "Podcast",
+      "Terbitkan catatan acara dan transkrip lengkap, sehingga setiap episode lebih mudah ditemukan di mesin pencari."
+     ]
+    ]
+   },
+   {
+    "h2": "Simpan transkrip sebagai TXT, SRT, atau VTT",
+    "paras": [
+     "Setelah transkripsi selesai, teks muncul di editor. Perbaiki nama atau istilah teknis, lalu tekan Salin Teks untuk menempelkannya ke Google Docs, Word, atau email. Anda juga bisa beralih ke tampilan Stempel waktu untuk melihat kapan setiap kalimat diucapkan.",
+     "Untuk file, pilih TXT untuk teks biasa, SRT untuk subtitle di YouTube, Premiere Pro, DaVinci Resolve, atau VLC, dan VTT untuk pemutar video web. File subtitle memakai stempel waktu dari model, sehingga setiap baris muncul di layar saat sedang diucapkan."
+    ],
+    "image": {
+     "alt": "Transkripsi file audio ke TXT, SRT, dan VTT"
+    }
+   },
+   {
+    "h2": "Tips agar transkripsi lebih akurat",
+    "paras": [
+     "Pengenalan suara sudah bagus, tetapi belum sempurna. Hasilnya paling baik untuk ucapan yang jelas, jadi beberapa langkah kecil bisa membuat perbedaan besar."
+    ],
+    "list": [
+     [
+      "Rekam dekat dengan mikrofon",
+      "Ponsel yang dipegang dekat pembicara lebih baik daripada laptop di seberang ruangan. Gema dan suara latar yang lebih sedikit berarti lebih sedikit kesalahan."
+     ],
+     [
+      "Pilih bahasa dan akurasi Terbaik",
+      "Untuk apa pun selain bahasa Inggris yang jelas, dua pengaturan ini memberi peningkatan terbesar."
+     ],
+     [
+      "Potong musik dan bagian hening",
+      "Intro panjang, musik, atau bagian hening bisa membingungkan model. Potong dulu dengan [Pemotong MP3](/mp3-cutter)."
+     ],
+     [
+      "Periksa nama dan angka",
+      "Nama orang, merek, dan angka adalah kesalahan yang paling umum, jadi baca ulang sebelum Anda membagikan transkrip."
+     ],
+     [
+      "Bagi rekaman yang sangat panjang",
+      "Untuk rekaman berdurasi beberapa jam, potong menjadi beberapa bagian. Ini menjaga pemakaian memori tetap rendah, terutama di ponsel."
+     ]
+    ]
+   },
+   {
+    "h2": "Privat, gratis, dan tanpa batas",
+    "paras": [
+     "Tidak perlu daftar, tanpa watermark, dan tanpa kuota bulanan, jadi Anda bisa transkrip audio ke teks gratis sesering yang Anda mau. Karena model suara berjalan secara lokal, audio Anda tidak pernah dikirim ke server, dan tidak ada orang lain yang bisa mendengarkannya. Satu-satunya yang didownload adalah model itu sendiri, yang berasal dari Hugging Face, sebuah pustaka publik model AI.",
+     "Alat transkripsi ini adalah bagian dari [MP3 Converter](/), kumpulan alat audio gratis yang semuanya bekerja di browser Anda. Jika rekaman Anda berupa video, Anda juga bisa mengambil suaranya saja dengan konverter [Video ke MP3](/video-to-mp3) kami."
+    ],
+    "cta": "Mulai transkripsi gratis"
+   }
+  ],
+  "faqs": [
+   {
+    "q": "Bagaimana cara transkrip audio ke teks secara gratis?",
+    "a": "Buka halaman ini, pilih file audio atau video Anda, biarkan bahasa pada Deteksi otomatis, lalu tekan Transkrip ke Teks. Transkrip muncul di halaman, siap disalin atau didownload, tanpa biaya dan tanpa akun."
+   },
+   {
+    "q": "Bisakah saya transkrip audio bahasa Spanyol ke teks?",
+    "a": "Bisa. Bahasa Spanyol didukung penuh, begitu juga Portugis, Prancis, Jerman, dan lebih dari 20 bahasa lain. Untuk hasil terbaik, atur Bahasa ucapan ke Spanyol dan Akurasi ke Terbaik."
+   },
+   {
+    "q": "Apakah audio saya diunggah ke server?",
+    "a": "Tidak. Model pengenalan suara berjalan di dalam browser Anda, jadi file Anda tetap di perangkat Anda. Hanya modelnya saja yang didownload sekali dari Hugging Face."
+   },
+   {
+    "q": "Format file apa saja yang bisa ditranskrip?",
+    "a": "Audio MP3, WAV, M4A, AAC, OGG, OPUS, FLAC, WMA, dan AMR, serta trek suara dari video MP4, MOV, WEBM, dan MKV, hingga 500 MB per file."
+   },
+   {
+    "q": "Seberapa akurat hasil transkripsinya?",
+    "a": "Untuk ucapan yang jelas, hasilnya sangat akurat, terutama dengan pengaturan Terbaik. Suara latar, musik, orang yang berbicara bersamaan, dan aksen yang kental menurunkan akurasi, jadi selalu periksa nama dan angka."
+   },
+   {
+    "q": "Berapa lama waktu untuk mentranskrip sebuah file?",
+    "a": "Tergantung perangkat Anda dan akurasi yang dipilih. Di komputer modern, Cepat dan Seimbang biasanya lebih cepat dari durasi rekamannya, sedangkan Terbaik butuh waktu lebih lama. Proses pertama juga mencakup download model yang hanya sekali."
+   },
+   {
+    "q": "Apakah transkrip dilengkapi stempel waktu?",
+    "a": "Ya. Beralihlah ke tampilan Stempel waktu untuk melihat kapan setiap kalimat dimulai, atau download file SRT atau VTT dengan waktu mulai dan selesai untuk setiap baris."
+   },
+   {
+    "q": "Bisakah alat ini membedakan pembicara?",
+    "a": "Belum. Transkrip ditulis sebagai teks berkesinambungan dalam paragraf, tanpa nama pembicara. Anda bisa menambahkan nama sendiri di editor sebelum mendownloadnya."
+   },
+   {
+    "q": "Apakah alat transkripsi audio ini bisa dipakai di iPhone dan Android?",
+    "a": "Ya, alat ini berfungsi di browser ponsel modern. Di ponsel, pilih Cepat atau Seimbang dan transkrip rekaman yang lebih pendek, karena model Terbaik membutuhkan lebih banyak memori."
+   }
+  ]
  }
 }
