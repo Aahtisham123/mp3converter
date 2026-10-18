@@ -44,6 +44,7 @@ async function load(size, cpuOnly) {
     } catch (err) {
       console.warn('[transcriber] WebGPU unavailable, using the processor instead:', err);
       gpuUsable = false;
+      self.postMessage({ type: 'gpu-failed' });
     }
   }
   const asr = await pipeline('automatic-speech-recognition', MODELS[size].wasm, { device: 'wasm', dtype: 'q8', progress_callback });
@@ -140,6 +141,8 @@ async function transcribe(asr, audio, language, candidates, post) {
 }
 
 self.onmessage = async (e) => {
+  // The page remembers a GPU failure, so later visits go straight to the processor without retrying.
+  if (e.data.cpuOnly) gpuUsable = false;
   // Started as soon as a file is chosen or a recording begins, so the download overlaps with the visitor's next steps.
   if (e.data.type === 'preload') {
     getPipeline(e.data.size).catch(() => {});
@@ -158,6 +161,7 @@ self.onmessage = async (e) => {
       // The GPU loaded the model but could not run it: retry once on the processor.
       console.warn('[transcriber] WebGPU run failed, retrying on the processor:', err);
       gpuUsable = false;
+      self.postMessage({ type: 'gpu-failed' });
       ({ asr, device } = await getPipeline(size, true));
       post({ type: 'engine', device });
       result = await transcribe(asr, audio, language, candidates, post);

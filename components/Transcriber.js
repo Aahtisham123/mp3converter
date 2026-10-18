@@ -20,6 +20,16 @@ import {
   toVtt,
 } from '@/lib/transcript';
 
+// Set when this browser's graphics card could not load or run the model, so it is not tried again.
+const GPU_FAILED_KEY = 'mp3c:transcribe-gpu-failed';
+function gpuFailedBefore() {
+  try {
+    return localStorage.getItem(GPU_FAILED_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
 function friendlyError(message, t) {
   if (/fetch|network|load model|Could not locate|404|Failed to/i.test(message)) return t('transcriber.modelFailed');
   if (/memory|allocation|RangeError|out of bounds/i.test(message)) return t('transcriber.memory');
@@ -77,12 +87,20 @@ export default function Transcriber() {
   );
 
   const getWorker = () => {
-    if (!workerRef.current) workerRef.current = new Worker('/transcribe-worker.js', { type: 'module' });
+    if (!workerRef.current) {
+      workerRef.current = new Worker('/transcribe-worker.js', { type: 'module' });
+      workerRef.current.addEventListener('message', (e) => {
+        if (e.data.type !== 'gpu-failed') return;
+        try {
+          localStorage.setItem(GPU_FAILED_KEY, '1');
+        } catch {}
+      });
+    }
     return workerRef.current;
   };
 
   // Start downloading the speech model while the visitor is still choosing options; the transcription reuses it.
-  const preload = (size = model) => getWorker().postMessage({ type: 'preload', size });
+  const preload = (size = model) => getWorker().postMessage({ type: 'preload', size, cpuOnly: gpuFailedBefore() });
 
   const pick = (f) => {
     if (!f || busy) return;
@@ -134,7 +152,7 @@ export default function Transcriber() {
           else if (m.type === 'done') resolve(m);
           else if (m.type === 'error') reject(new Error(m.message));
         };
-        worker.postMessage({ id: run, audio, size: model, language, candidates: SPEECH_LANGUAGES }, [audio.buffer]);
+        worker.postMessage({ id: run, audio, size: model, language, candidates: SPEECH_LANGUAGES, cpuOnly: gpuFailedBefore() }, [audio.buffer]);
       });
       if (run !== runRef.current) return;
       const segments = cleanSegments(message.chunks, duration);
