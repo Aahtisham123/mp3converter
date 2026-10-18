@@ -8,7 +8,7 @@ import { createReadStream } from 'node:fs';
 import { chmod, copyFile, mkdir, readdir, rename, rm, stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { lookup } from 'node:dns/promises';
-import { isIP } from 'node:net';
+import { BlockList, isIP } from 'node:net';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 
@@ -32,13 +32,16 @@ const CONFIG = {
   infoPerHour: Number(env.INFO_PER_IP_PER_HOUR || 60),
   jobTimeoutMs: Number(env.JOB_TIMEOUT_MINUTES || 30) * 60_000,
   fileTtlMs: Number(env.FILE_TTL_MINUTES || 30) * 60_000,
-  trustProxy: env.TRUST_PROXY === '1',
+  // Behind a proxy (Render sets RENDER automatically) the visitor's address comes from the proxy headers.
+  trustProxy: env.TRUST_PROXY ? env.TRUST_PROXY === '1' : Boolean(env.RENDER),
+  clientIpHeader: (env.CLIENT_IP_HEADER || '').toLowerCase(),
   allowPrivate: env.ALLOW_PRIVATE_URLS === '1', // testing only
   blocklist: (env.BLOCKLIST || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean),
   // Extra attempts when a site blocks us. With a rotating proxy every attempt gets a new IP.
   blockRetries: Number(env.BLOCK_RETRIES ?? 2),
   // Reuse finished files for the same video/format/quality. 0 disables the cache.
-  cacheTtlMs: Number(env.CACHE_TTL_MINUTES ?? 360) * 60_000,
+  // Matches the privacy policy: finished files are deleted after 30 minutes.
+  cacheTtlMs: Number(env.CACHE_TTL_MINUTES ?? 30) * 60_000,
   cacheMaxBytes: Number(env.CACHE_MAX_MB ?? 1000) * 1024 * 1024,
   infoCacheTtlMs: Number(env.INFO_CACHE_MINUTES ?? 30) * 60_000,
   fragments: Number(env.CONCURRENT_FRAGMENTS || 4), // parallel pieces per download
@@ -62,8 +65,13 @@ function send(res, status, body, headers = {}) {
 
 function clientIp(req) {
   if (CONFIG.trustProxy) {
-    const fwd = req.headers['x-forwarded-for'];
-    if (fwd) return String(fwd).split(',')[0].trim();
+    // Cloudflare (in front of Render) overwrites cf-connecting-ip and true-client-ip, so visitors cannot fake them.
+    for (const h of [CONFIG.clientIpHeader, 'cf-connecting-ip', 'true-client-ip']) {
+      const v = h && req.headers[h];
+      if (v && isIP(String(v).trim())) return String(v).trim();
+    }
+    const fwd = String(req.headers['x-forwarded-for'] || '').split(',').map((s) => s.trim()).filter(Boolean);
+    if (fwd.length) return fwd[0];
   }
   return req.socket.remoteAddress || 'unknown';
 }
@@ -98,15 +106,47 @@ function rateLimited(ip, bucket, perHour) {
   return false;
 }
 
-function isPrivateAddress(addr) {
-  if (isIP(addr) === 4) {
-    const [a, b] = addr.split('.').map(Number);
-    return a === 10 || a === 127 || a === 0 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) ||
-      (a === 192 && b === 168) || (a === 100 && b >= 64 && b <= 127) || a >= 224;
+// Addresses a link must never resolve to: private networks, loopback, link-local (cloud metadata), carrier NAT,
+// multicast and reserved ranges, plus IPv6 ranges that can tunnel to IPv4 (NAT64, 6to4, Teredo).
+const BLOCKED = new BlockList();
+for (const [net, bits] of [['0.0.0.0', 8], ['10.0.0.0', 8], ['100.64.0.0', 10], ['127.0.0.0', 8], ['169.254.0.0', 16],
+  ['172.16.0.0', 12], ['192.0.0.0', 24], ['192.0.2.0', 24], ['192.168.0.0', 16], ['198.18.0.0', 15], ['198.51.100.0', 24],
+  ['203.0.113.0', 24], ['224.0.0.0', 3]]) BLOCKED.addSubnet(net, bits, 'ipv4');
+for (const [net, bits] of [['::', 127], ['fc00::', 7], ['fe80::', 10], ['fec0::', 10], ['ff00::', 8], ['64:ff9b::', 96],
+  ['64:ff9b:1::', 48], ['2002::', 16], ['2001::', 32], ['2001:db8::', 32], ['100::', 64]]) BLOCKED.addSubnet(net, bits, 'ipv6');
+
+/** The 16 bytes of an IPv6 address, or null. */
+function ipv6Bytes(v) {
+  let s = v.split('%')[0];
+  const dotted = /(\d+\.\d+\.\d+\.\d+)$/.exec(s);
+  if (dotted) {
+    const p = dotted[1].split('.').map(Number);
+    s = s.slice(0, -dotted[1].length) + `${((p[0] << 8) | p[1]).toString(16)}:${((p[2] << 8) | p[3]).toString(16)}`;
   }
+  const [head, tail] = s.split('::');
+  const h = head ? head.split(':') : [];
+  const t = tail !== undefined && tail ? tail.split(':') : [];
+  const groups = tail !== undefined ? [...h, ...Array(8 - h.length - t.length).fill('0'), ...t] : h;
+  if (groups.length !== 8) return null;
+  return groups.flatMap((g) => {
+    const n = parseInt(g, 16);
+    return [n >> 8, n & 255];
+  });
+}
+
+function isPrivateAddress(addr) {
+  const type = isIP(addr);
+  if (type === 4) return BLOCKED.check(addr, 'ipv4');
+  if (type !== 6) return true;
   const v = addr.toLowerCase();
-  if (v.startsWith('::ffff:')) return isPrivateAddress(v.slice(7));
-  return v === '::1' || v === '::' || v.startsWith('fc') || v.startsWith('fd') || v.startsWith('fe80');
+  const b = ipv6Bytes(v);
+  if (!b) return true;
+  // IPv4-mapped (::ffff:a.b.c.d, also written ::ffff:7f00:1) and IPv4-compatible (::a.b.c.d) addresses reach IPv4.
+  const zeros10 = b.slice(0, 10).every((x) => x === 0);
+  if (zeros10 && ((b[10] === 255 && b[11] === 255) || (b[10] === 0 && b[11] === 0))) {
+    return BLOCKED.check(b.slice(12).join('.'), 'ipv4');
+  }
+  return BLOCKED.check(v, 'ipv6');
 }
 
 /** Validates a user-supplied link. Returns a normalised URL string or throws a friendly error. */
@@ -581,7 +621,13 @@ function handleFile(req, res, job) {
     'Cache-Control': 'no-store',
     'X-Content-Type-Options': 'nosniff',
   });
-  createReadStream(job.path).pipe(res);
+  // The file can be pruned from the cache while a download starts; end this response instead of crashing.
+  const stream = createReadStream(job.path);
+  stream.on('error', (err) => {
+    log('file stream error', err.message);
+    res.destroy();
+  });
+  stream.pipe(res);
 }
 
 const server = createServer(async (req, res) => {
