@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 import { LOCALE_MAP, localePath } from '@/lib/i18n/config';
 import { getDictionary, getHome, getReadyLocales } from '@/lib/i18n/server';
 import { pageMeta } from '@/lib/seo/meta';
-import { SITE } from '@/lib/site';
+import { SITE, SOCIAL_LINKS } from '@/lib/site';
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
@@ -34,7 +34,16 @@ function JsonLd({ lang, home }) {
   const data = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: lang },
+      {
+        '@type': 'Organization',
+        '@id': `${SITE.url}/#organization`,
+        name: SITE.name,
+        url: `${SITE.url}/`,
+        logo: `${SITE.url}/icons/icon-512.png`,
+        email: SITE.email,
+        sameAs: SOCIAL_LINKS.map((s) => s.href),
+      },
+      { '@type': 'WebSite', '@id': `${SITE.url}/#website`, url: `${SITE.url}/`, name: SITE.name, inLanguage: lang, publisher: { '@id': `${SITE.url}/#organization` } },
       {
         '@type': 'WebApplication',
         '@id': `${url}#app`,

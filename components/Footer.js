@@ -5,8 +5,8 @@ import { NAV_GROUPS, POPULAR_NAV, SITE } from '@/lib/site';
 
 // Hub pages first, then the tools of groups without a hub (Voice Recorder, Audio to Text).
 const FOOTER_TOOLS = [
-  ...NAV_GROUPS.filter((g) => g.hub).map((g) => g.hub),
-  ...NAV_GROUPS.filter((g) => !g.hub).flatMap((g) => g.items.map((i) => i.href)),
+  ...NAV_GROUPS.filter((g) => g.hub).map((g) => ({ href: g.hub, labelKey: g.label })),
+  ...NAV_GROUPS.filter((g) => !g.hub).flatMap((g) => g.items.map((i) => ({ href: i.href }))),
 ];
 
 export default function Footer({ lang, dict }) {
@@ -37,8 +37,8 @@ export default function Footer({ lang, dict }) {
         <nav aria-label={f.formatsTools}>
           <h3>{f.formatsTools}</h3>
           <ul>
-            {FOOTER_TOOLS.map((p) => (
-              <li key={p}><Link href={href(p)}>{label(p)}</Link></li>
+            {FOOTER_TOOLS.map((l) => (
+              <li key={l.href}><Link href={href(l.href)}>{l.labelKey ? dict.nav[l.labelKey] : label(l.href)}</Link></li>
             ))}
           </ul>
         </nav>
