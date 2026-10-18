@@ -3,8 +3,9 @@ import { notFound } from 'next/navigation';
 import Icon from '@/components/Icon';
 import Rich from '@/components/Rich';
 import ToolWidget from '@/components/ToolWidget';
-import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
+import { LOCALE_MAP, localePath } from '@/lib/i18n/config';
 import { getDictionary, getReadyLocales, getTool, getTools } from '@/lib/i18n/server';
+import { pageMeta } from '@/lib/seo/meta';
 import { NAV_GROUPS, SITE, hubGroupOf } from '@/lib/site';
 import { TOOLS } from '@/lib/tools';
 
@@ -20,12 +21,7 @@ export async function generateMetadata({ params }) {
   const [t, dict, ready] = await Promise.all([getTool(lang, slug), getDictionary(lang), getReadyLocales()]);
   if (!t) return {};
   const title = t.seoTitle || `${t.metaTitle} | ${dict.site.titleSuffix}`;
-  return {
-    title: { absolute: title },
-    description: t.metaDescription,
-    alternates: alternatesFor(lang, `/${t.slug}`, ready),
-    openGraph: { title, description: t.metaDescription, url: `${SITE.url}${localePath(lang, `/${t.slug}`)}` },
-  };
+  return pageMeta({ lang, path: `/${t.slug}`, title, description: t.metaDescription, ready });
 }
 
 const plain = (s) => s.replace(/\*\*|\*|\[([^\]]+)\]\([^)]+\)/g, '$1');

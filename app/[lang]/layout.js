@@ -31,7 +31,11 @@ export async function generateMetadata({ params }) {
     description: home.metaDescription,
     applicationName: SITE.name,
     alternates: alternatesFor(lang, '/', ready),
-    icons: { icon: '/images/logo.svg' },
+    icons: {
+      icon: [{ url: '/favicon.ico', sizes: '48x48' }, { url: '/images/logo.svg', type: 'image/svg+xml' }],
+      apple: '/apple-touch-icon.png',
+    },
+    manifest: '/manifest.webmanifest',
     openGraph: {
       type: 'website',
       siteName: SITE.name,

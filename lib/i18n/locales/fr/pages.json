@@ -41,7 +41,7 @@
   ]
  },
  "contact": {
-  "metaTitle": "Contact",
+  "metaTitle": "Nous contacter",
   "metaDescription": "Contactez l'équipe MP3 Converter pour vos questions, signalements de bugs ou idées de fonctionnalités.",
   "title": "Nous contacter",
   "lead": "Nous lisons chaque message et répondons dès que possible.",
@@ -118,7 +118,7 @@
  },
  "terms": {
   "metaTitle": "Conditions d'utilisation",
-  "metaDescription": "Les conditions d'utilisation des outils gratuits de MP3 Converter.",
+  "metaDescription": "Les conditions d’utilisation de MP3 Converter : usage personnel et commercial gratuit, votre responsabilité sur les contenus et droits d’auteur, limites.",
   "title": "Conditions d'utilisation",
   "lead": "Dernière mise à jour : octobre 2026",
   "sections": [

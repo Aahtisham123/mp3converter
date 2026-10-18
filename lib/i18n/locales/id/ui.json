@@ -87,6 +87,9 @@
   "notFoundTitle": "Halaman tidak ditemukan",
   "notFoundText": "Halaman yang Anda cari tidak ada atau sudah dipindahkan.",
   "notFoundButton": "Buka MP3 Converter",
+  "errorTitle": "Terjadi kesalahan",
+  "errorText": "Kesalahan tak terduga menghentikan halaman ini. Silakan coba lagi. File Anda tidak diunggah ke mana pun.",
+  "errorRetry": "Coba lagi",
   "operatingSystem": "Apa saja (berjalan di browser web)"
  },
  "badges": {

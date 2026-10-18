@@ -87,6 +87,9 @@
   "notFoundTitle": "Seite nicht gefunden",
   "notFoundText": "Die gesuchte Seite gibt es nicht oder sie wurde verschoben.",
   "notFoundButton": "Zum MP3 Converter",
+  "errorTitle": "Etwas ist schiefgelaufen",
+  "errorText": "Ein unerwarteter Fehler hat diese Seite gestoppt. Bitte versuche es erneut. Deine Dateien wurden nirgendwo hochgeladen.",
+  "errorRetry": "Erneut versuchen",
   "operatingSystem": "Alle (läuft im Webbrowser)"
  },
  "badges": {

@@ -87,6 +87,9 @@
   "notFoundTitle": "Sayfa bulunamadı",
   "notFoundText": "Aradığınız sayfa mevcut değil veya taşınmış.",
   "notFoundButton": "MP3 Converter'a git",
+  "errorTitle": "Bir şeyler ters gitti",
+  "errorText": "Beklenmeyen bir hata bu sayfayı durdurdu. Lütfen tekrar deneyin. Dosyalarınız hiçbir yere yüklenmedi.",
+  "errorRetry": "Tekrar dene",
   "operatingSystem": "Tümü (web tarayıcısında çalışır)"
  },
  "badges": {

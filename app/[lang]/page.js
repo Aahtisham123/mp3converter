@@ -3,19 +3,15 @@ import Converter from '@/components/Converter';
 import Icon from '@/components/Icon';
 import Rich from '@/components/Rich';
 import { notFound } from 'next/navigation';
-import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
+import { LOCALE_MAP, localePath } from '@/lib/i18n/config';
 import { getDictionary, getHome, getReadyLocales } from '@/lib/i18n/server';
+import { pageMeta } from '@/lib/seo/meta';
 import { SITE } from '@/lib/site';
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
   const [home, ready] = await Promise.all([getHome(lang), getReadyLocales()]);
-  return {
-    title: { absolute: home.metaTitle },
-    description: home.metaDescription,
-    alternates: alternatesFor(lang, '/', ready),
-    openGraph: { title: home.metaTitle, description: home.ogDescription, url: `${SITE.url}${localePath(lang, '/')}` },
-  };
+  return pageMeta({ lang, path: '/', title: home.metaTitle, description: home.metaDescription, shareDescription: home.ogDescription, ready });
 }
 
 const FORMATS = [

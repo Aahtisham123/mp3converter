@@ -1,16 +1,18 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Rich from './Rich';
-import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
+import { LOCALE_MAP, localePath } from '@/lib/i18n/config';
 import { getDictionary, getPage, getReadyLocales } from '@/lib/i18n/server';
+import { pageMeta } from '@/lib/seo/meta';
 import { SITE } from '@/lib/site';
 
 const VARS = { email: SITE.email, domain: SITE.url.replace('https://', '') };
 
 export async function staticPageMetadata(params, slug) {
   const { lang } = await params;
-  const [page, ready] = await Promise.all([getPage(lang, slug), getReadyLocales()]);
-  return { title: page.metaTitle, description: page.metaDescription, alternates: alternatesFor(lang, `/${slug}`, ready) };
+  const [page, dict, ready] = await Promise.all([getPage(lang, slug), getDictionary(lang), getReadyLocales()]);
+  const title = `${page.metaTitle} | ${dict.site.titleSuffix}`;
+  return pageMeta({ lang, path: `/${slug}`, title, description: page.metaDescription, ready });
 }
 
 function Block({ block, lang }) {

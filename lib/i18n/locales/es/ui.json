@@ -87,6 +87,9 @@
   "notFoundTitle": "Página no encontrada",
   "notFoundText": "La página que buscas no existe o se ha movido.",
   "notFoundButton": "Ir a MP3 Converter",
+  "errorTitle": "Algo salió mal",
+  "errorText": "Un error inesperado detuvo esta página. Inténtalo de nuevo. Tus archivos no se subieron a ningún sitio.",
+  "errorRetry": "Intentar de nuevo",
   "operatingSystem": "Cualquiera (funciona en un navegador web)"
  },
  "badges": {
