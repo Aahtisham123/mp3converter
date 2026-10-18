@@ -587,6 +587,8 @@ tr:last-child td { border-bottom: 0; }
 
 /* ---------- Audio to text ---------- */
 .transcript-hint { margin: 10px 0 0; font-size: .85rem; color: var(--text-3); }
+.transcript-gpu { display: flex; align-items: center; gap: 6px; color: var(--brand); font-weight: 600; }
+.transcript-gpu .icon { width: 15px; height: 15px; }
 .transcript-live { margin-top: 14px; padding: 12px 14px; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); background: var(--brand-tint); }
 .transcript-live .eyebrow { margin-bottom: 4px; }
 .transcript-live p { margin: 0; color: var(--text-2); font-size: .92rem; }

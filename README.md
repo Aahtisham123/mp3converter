@@ -31,6 +31,9 @@ The transcriber runs OpenAI's Whisper model (MIT) with [transformers.js](https:/
 resampled to 16 kHz mono and never leaves the device. The browser downloads, on first use, the library and the ONNX runtime from
 jsDelivr and the chosen model (`Xenova/whisper-tiny`, `-base` or `-small`, 8-bit) from Hugging Face, and caches them.
 transformers.js has no language detection, so the worker scores Whisper's language tokens on the first 30 seconds.
+With WebGPU (desktop Chrome/Edge, recent Safari) it runs on the graphics card using the `onnx-community/whisper-*`
+models (fp32 encoder, 4-bit decoder); otherwise, or if the GPU fails to load or run, it falls back to the 8-bit
+WebAssembly models. The model starts downloading as soon as a file is chosen or a recording starts.
 To update transformers.js, change the version in the worker's import URL.
 
 ## Link downloads (separate server)

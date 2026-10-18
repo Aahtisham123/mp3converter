@@ -318,6 +318,7 @@
   "loadingModel": "Konuşma modeli yükleniyor…",
   "downloading": "Konuşma modeli indiriliyor… {size} boyutunun %{pct} kadarı",
   "firstTime": "Model yalnızca bir kez indirilir. Sonrasında tarayıcınızdan saniyeler içinde yüklenir.",
+  "gpu": "Daha hızlı sonuç için ekran kartınızda çalışıyor",
   "detecting": "Dil algılanıyor…",
   "transcribing": "Yazıya dökülüyor… bölüm {done} / {total}",
   "progressLabel": "Transkripsiyon ilerlemesi",

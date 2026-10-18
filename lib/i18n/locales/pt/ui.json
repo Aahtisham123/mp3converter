@@ -318,6 +318,7 @@
   "loadingModel": "Carregando o modelo de fala…",
   "downloading": "Baixando o modelo de fala… {pct}% de {size}",
   "firstTime": "O modelo é baixado só uma vez. Depois disso, ele carrega do seu navegador em segundos.",
+  "gpu": "Rodando na sua placa de vídeo para mais velocidade",
   "detecting": "Detectando o idioma…",
   "transcribing": "Transcrevendo… parte {done} de {total}",
   "progressLabel": "Progresso da transcrição",

@@ -318,6 +318,7 @@
   "loadingModel": "Sprachmodell wird geladen…",
   "downloading": "Sprachmodell wird heruntergeladen… {pct} % von {size}",
   "firstTime": "Das Modell wird nur einmal heruntergeladen. Danach lädt es in Sekunden aus deinem Browser.",
+  "gpu": "Läuft auf deiner Grafikkarte für schnellere Ergebnisse",
   "detecting": "Sprache wird erkannt…",
   "transcribing": "Transkribiere… Teil {done} von {total}",
   "progressLabel": "Fortschritt der Transkription",

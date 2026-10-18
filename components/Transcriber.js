@@ -52,6 +52,7 @@ export default function Transcriber() {
   const [copied, setCopied] = useState(false);
   const [dragover, setDragover] = useState(false);
   const [mode, setMode] = useState('upload'); // upload | record
+  const [device, setDevice] = useState(null); // 'webgpu' | 'wasm', reported by the worker
   const [recState, setRecState] = useState('idle');
   const [recSeconds, setRecSeconds] = useState(0);
 
@@ -80,8 +81,12 @@ export default function Transcriber() {
     return workerRef.current;
   };
 
+  // Start downloading the speech model while the visitor is still choosing options; the transcription reuses it.
+  const preload = (size = model) => getWorker().postMessage({ type: 'preload', size });
+
   const pick = (f) => {
     if (!f || busy) return;
+    preload();
     setFile(f);
     audioRef.current = null;
     setResult(null);
@@ -117,8 +122,10 @@ export default function Transcriber() {
         worker.onerror = (e) => reject(new Error(e.message || 'worker error'));
         worker.onmessage = (e) => {
           const m = e.data;
-          if (m.id !== run) return;
-          if (m.type === 'loading') setProgress((x) => ({ ...x, value: 10 + Math.round(m.progress * 0.25), pct: Math.round(m.progress) }));
+          // Download progress has no id: it may come from a preload that this run is now waiting for.
+          if (m.type !== 'loading' && m.id !== run) return;
+          if (m.type === 'loading') setProgress((x) => ({ ...x, value: 10 + Math.round(m.progress * 0.25), pct: Math.round(m.progress), bytes: m.total || x.bytes }));
+          else if (m.type === 'engine') setDevice(m.device);
           else if (m.type === 'detecting') setStage('detecting');
           else if (m.type === 'progress') {
             setStage('transcribing');
@@ -184,6 +191,7 @@ export default function Transcriber() {
       };
       recorderRef.current = rec;
       rec.start(1000);
+      preload();
       const started = Date.now();
       setRecSeconds(0);
       timerRef.current = setInterval(() => setRecSeconds((Date.now() - started) / 1000), 250);
@@ -244,7 +252,7 @@ export default function Transcriber() {
 
   let status = '';
   if (stage === 'reading') status = stageText(progress.decode, progress.pct, t) || t('transcriber.reading');
-  if (stage === 'model') status = progress.pct ? t('transcriber.downloading', { pct: progress.pct, size: SPEECH_MODELS.find((m) => m.value === model).size }) : t('transcriber.loadingModel');
+  if (stage === 'model') status = progress.pct ? t('transcriber.downloading', { pct: progress.pct, size: progress.bytes ? formatBytes(progress.bytes) : SPEECH_MODELS.find((m) => m.value === model).size }) : t('transcriber.loadingModel');
   if (stage === 'detecting') status = t('transcriber.detecting');
   if (stage === 'transcribing') status = t('transcriber.transcribing', { done: Math.min(progress.done + 1, progress.total), total: progress.total });
 
@@ -326,7 +334,14 @@ export default function Transcriber() {
             {t('transcriber.model')}
             <span className="select-wrap">
               <Icon name="sliders" />
-              <select value={model} onChange={(e) => setModel(e.target.value)} disabled={busy || recState === 'recording'}>
+              <select
+                value={model}
+                onChange={(e) => {
+                  setModel(e.target.value);
+                  if (file) preload(e.target.value);
+                }}
+                disabled={busy || recState === 'recording'}
+              >
                 {SPEECH_MODELS.map((m) => <option key={m.value} value={m.value}>{t(`transcriber.models.${m.value}`, { size: m.size })}</option>)}
               </select>
             </span>
@@ -353,6 +368,7 @@ export default function Transcriber() {
             <p className="q-meta">{status}</p>
             <ProgressBar value={Math.min(100, progress.value)} label={t('transcriber.progressLabel')} />
             {stage === 'model' && <p className="transcript-hint">{t('transcriber.firstTime')}</p>}
+            {device === 'webgpu' && stage !== 'model' && <p className="transcript-hint transcript-gpu"><Icon name="zap" /> {t('transcriber.gpu')}</p>}
             {live && (
               <div className="transcript-live">
                 <span className="eyebrow">{t('transcriber.livePreview')}</span>

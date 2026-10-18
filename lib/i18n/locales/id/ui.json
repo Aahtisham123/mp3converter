@@ -318,6 +318,7 @@
   "loadingModel": "Memuat model suara…",
   "downloading": "Mendownload model suara… {pct}% dari {size}",
   "firstTime": "Model hanya didownload sekali. Setelah itu, model dimuat dari browser Anda dalam hitungan detik.",
+  "gpu": "Berjalan di kartu grafis Anda agar lebih cepat",
   "detecting": "Mendeteksi bahasa…",
   "transcribing": "Mentranskrip… bagian {done} dari {total}",
   "progressLabel": "Progres transkripsi",
