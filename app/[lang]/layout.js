@@ -64,7 +64,7 @@ export default async function RootLayout({ children, params }) {
   const lang = LOCALE_MAP[segment] ? segment : 'en';
   const [dict, ready] = await Promise.all([getDictionary(lang), getReadyLocales()]);
   return (
-    <html lang={lang} dir={LOCALE_MAP[lang].dir} className={`${inter.variable} ${arabic.variable} ${devanagari.variable}`}>
+    <html lang={lang} dir={LOCALE_MAP[lang].dir} data-scroll-behavior="smooth" className={`${inter.variable} ${arabic.variable} ${devanagari.variable}`}>
       <body>
         <I18nProvider lang={lang} dict={dict} ready={ready}>
           <AppShell>
