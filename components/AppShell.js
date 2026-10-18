@@ -27,6 +27,7 @@ export default function AppShell({ children }) {
   const [collapsed, setCollapsed] = useState(false);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showTop, setShowTop] = useState(false);
   // Groups start closed, except the one that holds the current page.
   const [groups, setGroups] = useState(() => {
     const active = groupOfPath(currentPath);
@@ -49,7 +50,10 @@ export default function AppShell({ children }) {
   // Close the mobile drawer on navigation and on Escape.
   useEffect(() => setOpen(false), [pathname]);
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 4);
+    const onScroll = () => {
+      setScrolled(window.scrollY > 4);
+      setShowTop(window.scrollY > 600);
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
@@ -244,6 +248,16 @@ export default function AppShell({ children }) {
           </Link>
         </header>
         <main id="main">{children}</main>
+        <button
+          type="button"
+          className={`to-top${showTop ? ' is-visible' : ''}`}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label={t('shell.toTop')}
+          title={t('shell.toTop')}
+          tabIndex={showTop ? 0 : -1}
+        >
+          <Icon name="arrowUp" />
+        </button>
       </div>
     </div>
   );

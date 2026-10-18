@@ -28,6 +28,34 @@ function Block({ block, lang }) {
   );
 }
 
+const PAGE_TYPE = { about: 'AboutPage', contact: 'ContactPage' };
+
+function JsonLd({ lang, slug, page, dict }) {
+  const url = `${SITE.url}${localePath(lang, `/${slug}`)}`;
+  const data = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': PAGE_TYPE[slug] || 'WebPage',
+        name: page.title,
+        description: page.metaDescription,
+        url,
+        inLanguage: lang,
+        isPartOf: { '@id': `${SITE.url}/#website` },
+        ...(slug === 'about' || slug === 'contact' ? { about: { '@id': `${SITE.url}/#organization` } } : {}),
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: dict.page.breadcrumbHome, item: `${SITE.url}${localePath(lang, '/')}` },
+          { '@type': 'ListItem', position: 2, name: page.title, item: url },
+        ],
+      },
+    ],
+  };
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />;
+}
+
 /** About, Contact, Privacy, Terms and Copyright pages, rendered from lib/content/pages.js (or a translation). */
 export default async function StaticPage({ params, slug }) {
   const { lang } = await params;
@@ -35,6 +63,7 @@ export default async function StaticPage({ params, slug }) {
   const [page, dict] = await Promise.all([getPage(lang, slug), getDictionary(lang)]);
   return (
     <>
+      <JsonLd lang={lang} slug={slug} page={page} dict={dict} />
       <section className="page-hero container">
         <nav className="breadcrumbs" aria-label="Breadcrumb">
           <ol>
