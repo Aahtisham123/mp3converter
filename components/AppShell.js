@@ -88,6 +88,7 @@ export default function AppShell({ children }) {
       <Icon name={item.icon} />
       <span className="label">
         {navLabel(item)}
+        {item.soon && <span className="soon-badge">{t('shell.soon')}</span>}
       </span>
     </Link>
   );
