@@ -1,5 +1,4 @@
 import { Inter, Noto_Sans_Arabic, Noto_Sans_Devanagari } from 'next/font/google';
-import { notFound } from 'next/navigation';
 import AppShell from '@/components/AppShell';
 import Footer from '@/components/Footer';
 import { I18nProvider } from '@/components/I18nProvider';
@@ -13,7 +12,9 @@ const inter = Inter({ subsets: ['latin', 'latin-ext', 'cyrillic'], display: 'swa
 const arabic = Noto_Sans_Arabic({ subsets: ['arabic'], display: 'swap', variable: '--font-arabic', preload: false });
 const devanagari = Noto_Sans_Devanagari({ subsets: ['devanagari'], display: 'swap', variable: '--font-devanagari', preload: false });
 
-export const dynamicParams = false;
+// Unknown paths below a language must reach the pages, so they can show the localized 404. Pages also call
+// notFound() for an unknown language.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return LOCALE_CODES.map((lang) => ({ lang }));
@@ -21,6 +22,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { lang } = await params;
+  if (!LOCALE_MAP[lang]) return {};
   const [dict, home, ready] = await Promise.all([getDictionary(lang), getHome(lang), getReadyLocales()]);
   const loc = LOCALE_MAP[lang];
   return {
@@ -52,8 +54,10 @@ export const viewport = {
 };
 
 export default async function RootLayout({ children, params }) {
-  const { lang } = await params;
-  if (!LOCALE_MAP[lang]) notFound();
+  const { lang: segment } = await params;
+  // An unknown first segment (e.g. /old-page.php) renders in English; its page then calls notFound(), so the
+  // visitor gets the site's own 404 screen with the sidebar instead of the bare default page.
+  const lang = LOCALE_MAP[segment] ? segment : 'en';
   const [dict, ready] = await Promise.all([getDictionary(lang), getReadyLocales()]);
   return (
     <html lang={lang} dir={LOCALE_MAP[lang].dir} className={`${inter.variable} ${arabic.variable} ${devanagari.variable}`}>

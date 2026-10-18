@@ -3,12 +3,13 @@ import { notFound } from 'next/navigation';
 import Icon from '@/components/Icon';
 import Rich from '@/components/Rich';
 import ToolWidget from '@/components/ToolWidget';
-import { alternatesFor, localePath } from '@/lib/i18n/config';
+import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
 import { getDictionary, getReadyLocales, getTool, getTools } from '@/lib/i18n/server';
 import { NAV_GROUPS, SITE, hubGroupOf } from '@/lib/site';
 import { TOOLS } from '@/lib/tools';
 
-export const dynamicParams = false;
+// Unknown slugs still reach the page, which calls notFound() so visitors get the site's own 404 screen.
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return TOOLS.map((t) => ({ slug: t.slug }));
@@ -130,7 +131,7 @@ function HubGrid({ hub, lang, dict }) {
 export default async function ToolPage({ params }) {
   const { lang, slug } = await params;
   const [t, dict, tools] = await Promise.all([getTool(lang, slug), getDictionary(lang), getTools(lang)]);
-  if (!t) notFound();
+  if (!t || !LOCALE_MAP[lang]) notFound();
   const R = ({ text }) => <Rich text={text} lang={lang} />;
   const b = dict.badges;
 

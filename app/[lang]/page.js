@@ -2,7 +2,8 @@ import Link from 'next/link';
 import Converter from '@/components/Converter';
 import Icon from '@/components/Icon';
 import Rich from '@/components/Rich';
-import { alternatesFor, localePath } from '@/lib/i18n/config';
+import { notFound } from 'next/navigation';
+import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
 import { getDictionary, getHome, getReadyLocales } from '@/lib/i18n/server';
 import { SITE } from '@/lib/site';
 
@@ -95,6 +96,7 @@ function Table({ head, rows, lang }) {
 
 export default async function HomePage({ params }) {
   const { lang } = await params;
+  if (!LOCALE_MAP[lang]) notFound();
   const [home, dict] = await Promise.all([getHome(lang), getDictionary(lang)]);
   const R = ({ text }) => <Rich text={text} lang={lang} />;
   const { whatIs, howTo, devices, why, bitrate, compare, features, uses, privacy, author, cta } = home;

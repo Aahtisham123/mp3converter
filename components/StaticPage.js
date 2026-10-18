@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import Rich from './Rich';
-import { alternatesFor, localePath } from '@/lib/i18n/config';
+import { LOCALE_MAP, alternatesFor, localePath } from '@/lib/i18n/config';
 import { getDictionary, getPage, getReadyLocales } from '@/lib/i18n/server';
 import { SITE } from '@/lib/site';
 
@@ -28,6 +29,7 @@ function Block({ block, lang }) {
 /** About, Contact, Privacy, Terms and Copyright pages, rendered from lib/content/pages.js (or a translation). */
 export default async function StaticPage({ params, slug }) {
   const { lang } = await params;
+  if (!LOCALE_MAP[lang]) notFound();
   const [page, dict] = await Promise.all([getPage(lang, slug), getDictionary(lang)]);
   return (
     <>
