@@ -649,3 +649,6 @@ tr:last-child td { border-bottom: 0; }
 @media (max-width: 640px) { .to-top { right: 14px; bottom: 14px; width: 42px; height: 42px; } }
 [dir="rtl"] .to-top { right: auto; left: 22px; }
 @media (max-width: 640px) { [dir="rtl"] .to-top { left: 14px; } }
+
+/* Inline code in guides, e.g. an FFmpeg command */
+.section code, .faq code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .88em; padding: 2px 6px; border-radius: 6px; background: var(--brand-soft); color: #5b21b6; overflow-wrap: anywhere; }

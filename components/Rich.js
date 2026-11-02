@@ -2,10 +2,10 @@ import Link from 'next/link';
 import { localePath } from '@/lib/i18n/config';
 import { interpolate } from '@/lib/i18n/format';
 
-const TOKEN = /(\*\*.+?\*\*|\[[^\]]+\]\([^)\s]+\)|\*[^*\s][^*]*\*)/g;
+const TOKEN = /(`[^`]+`|\*\*.+?\*\*|\[[^\]]+\]\([^)\s]+\)|\*[^*\s][^*]*\*)/g;
 
 /**
- * Renders text with light markup: **bold**, *italic* and [text](/path). Internal paths get the page's language
+ * Renders text with light markup: **bold**, *italic*, `code` and [text](/path). Internal paths get the page's language
  * prefix; mailto: and external links become plain anchors. {placeholders} are filled from `vars`.
  */
 export default function Rich({ text, lang, vars }) {
@@ -13,6 +13,7 @@ export default function Rich({ text, lang, vars }) {
   const parts = interpolate(text, vars).split(TOKEN);
   return parts.map((part, i) => {
     if (!part) return null;
+    if (part.length > 2 && part.startsWith('`') && part.endsWith('`')) return <code key={i}>{part.slice(1, -1)}</code>;
     if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
       return <strong key={i}><Rich text={part.slice(2, -2)} lang={lang} /></strong>;
     }
