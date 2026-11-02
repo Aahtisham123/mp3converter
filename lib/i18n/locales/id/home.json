@@ -1,20 +1,20 @@
 {
- "metaTitle": "MP3 Converter – Ubah Audio & Video ke MP3 Gratis Online",
- "metaDescription": "Konverter MP3 online gratis. Ubah WAV, M4A, FLAC, MP4, MOV dan file audio atau video lain ke MP3 hingga 320 kbps. Tanpa daftar, tanpa upload, langsung di browser.",
+ "metaTitle": "Konverter MP3 – Ubah Audio & Video ke MP3 Gratis Online",
+ "metaDescription": "Konverter MP3 online gratis. Ubah WAV, M4A, FLAC, MP4, MOV, dan audio atau video lain ke MP3 hingga 320 kbps. Tanpa daftar, tanpa upload, di browser.",
  "ogDescription": "Ubah file audio atau video apa pun ke MP3 dalam hitungan detik. Gratis, privat, dan bisa di HP maupun komputer.",
- "h1": "MP3 Converter – Ubah Audio & Video ke",
+ "h1": "Konverter MP3 – Ubah Audio & Video ke",
  "h1Highlight": "MP3 Gratis Online",
- "lead": "MP3 Converter gratis kami mengubah WAV, M4A, FLAC, MP4, MOV, MKV dan banyak file lain menjadi audio MP3 yang jernih hanya dengan beberapa klik. Unggah file, tempel link media, atau rekam suara Anda. Tanpa daftar, dan file yang Anda unggah tidak pernah keluar dari perangkat Anda.",
+ "lead": "Masukkan lagu, memo suara, atau video, dan dapatkan MP3 dalam hitungan detik. Konverter MP3 ini bekerja di dalam browser Anda, jadi file tetap berada di perangkat Anda. Gratis, tanpa akun, dan mendukung 30+ format, dari WAV dan M4A hingga MP4 dan MKV.",
  "badges": [
-  "Privat & Aman",
-  "Konversi File Tanpa Batas",
-  "Gratis Digunakan",
+  "File tetap di perangkat Anda",
+  "Konversi tanpa batas",
+  "Gratis, tanpa daftar",
   "Hingga 320 kbps"
  ],
  "popular": {
   "eyebrow": "Konversi populer",
-  "h2": "Ubah hampir semua format ke MP3",
-  "intro": "Satu alat untuk audio dan video sekaligus. Pilih format di bawah untuk membuka halaman berisi tips untuk jenis file tersebut, atau langsung masukkan file Anda ke konverter di atas.",
+  "h2": "Pilih format Anda",
+  "intro": "Konverter di atas menerima semua format ini. Setiap halaman format berisi tips khusus untuk jenis file tersebut, misalnya bitrate terbaik dan masalah yang sering muncul.",
   "tags": {
    "video": "Video",
    "audio": "Audio",
@@ -32,87 +32,87 @@
   }
  },
  "whatIs": {
-  "eyebrow": "Dasar-dasar",
-  "h2": "Apa itu konverter MP3?",
+  "eyebrow": "Cara kerjanya",
+  "h2": "Apa yang dilakukan konverter MP3 ini",
   "paras": [
-   "**Konverter MP3**, kadang disebut konverter audio MP3, adalah alat yang mengubah file audio atau video ke format MP3. Dengan kata lain, alat ini mengambil file suara yang mungkin terlalu besar, kurang umum, atau tidak didukung perangkat Anda, lalu mengubahnya menjadi MP3 yang bisa diputar hampir di mana saja.",
-   "MP3 sudah menjadi format audio paling umum selama lebih dari dua dekade. HP, audio mobil, laptop, speaker pintar, dan hampir semua pemutar musik bisa membukanya. Itulah sebabnya orang masih mengubah file ke MP3 sampai sekarang, meskipun sudah banyak format yang lebih baru."
+   "Alat ini mengambil file yang tidak bisa diputar di HP, mobil, atau situs web Anda, misalnya rekaman WAV, memo M4A dari iPhone, atau suara dari video MP4, lalu menyimpannya sebagai MP3. Sampai sekarang MP3 tetap format yang bisa diputar hampir di mana saja: HP, head unit mobil, smart speaker, MP3 player lama, dan semua aplikasi musik.",
+   "Kebanyakan situs konverter mengunggah file Anda ke server dan membuat Anda menunggu antrean. Di sini, browser Anda sendiri yang bekerja. Browser mendekode audio dengan mesin bawaannya, memakai FFmpeg untuk format yang tidak biasa, lalu mengenkode MP3 dengan LAME, encoder open-source yang juga dipakai banyak program desktop."
   ],
-  "imageAlt": "MP3 Converter",
-  "caption": "File audio dan video masuk, file MP3 yang kecil dan didukung luas keluar.",
-  "after": "**[MP3 Converter](/)** online gratis kami bekerja sedikit berbeda dari kebanyakan alat lain. Alih-alih mengirim file Anda ke server jauh, seluruh proses dilakukan di dalam browser Anda. Karena tidak ada upload dan tidak ada antrean, konverter MP3 ini benar-benar cepat untuk sebagian besar file, dan jauh lebih privat, karena rekaman Anda tidak pernah keluar dari perangkat Anda."
+  "imageAlt": "File audio dan video diubah ke MP3",
+  "caption": "File audio dan video masuk, file MP3 yang kecil dan didukung di mana-mana keluar.",
+  "after": "Seberapa cepat? Dalam pengujian kami di Chrome pada komputer biasa dengan 4 core, lagu WAV 4 menit (40 MB) menjadi MP3 320 kbps (9,2 MB) dalam sekitar 20 detik, dan video MP4 720p berdurasi 10 menit (189 MB) menjadi MP3 14 MB dalam sekitar 45 detik. Laptop dan HP yang lebih baru biasanya lebih cepat. Karena tidak ada yang diunggah, internet yang lambat tidak memperlambat proses."
  },
  "howTo": {
   "eyebrow": "Langkah demi langkah",
   "h2": "Cara mengubah file ke MP3",
-  "intro": "Anda tidak perlu keahlian teknis untuk memakai konverter MP3 ini. Berikut seluruh prosesnya, dan biasanya selesai dalam kurang dari satu menit.",
+  "intro": "Hanya empat langkah, dan biasanya selesai kurang dari satu menit.",
   "imageAlt": "Cara mengubah file ke MP3",
   "steps": [
    [
-    "Tambahkan file Anda",
-    "Klik *Pilih File* atau seret file ke konverter. Anda bisa menambahkan satu file atau beberapa sekaligus, termasuk audio dan video."
+    "Pilih kualitas lebih dulu",
+    "Biarkan 192 kbps untuk mendengarkan sehari-hari, pilih 320 kbps untuk musik yang ingin Anda simpan, atau 128 kbps dengan Mono untuk suara bicara. Pengaturan berlaku untuk file yang ditambahkan setelah Anda mengubahnya."
    ],
    [
-    "Pilih kualitas MP3",
-    "Biarkan di 192 kbps untuk mendengarkan sehari-hari, atau ubah sesuai kebutuhan. Aktifkan Mono jika file sebagian besar berisi ucapan."
+    "Tambahkan satu file atau lebih",
+    "Klik *Pilih File* atau seret file ke kotak. Anda bisa mencampur audio dan video, hingga 500 MB per file."
    ],
    [
-    "Tunggu sebentar",
-    "Bilah progres menampilkan setiap langkah. Pertama alat membaca audio, lalu mengenkode MP3."
+    "Pantau progresnya",
+    "Setiap file punya progress bar sendiri. File dikonversi satu per satu, jadi perangkat Anda tetap lancar."
    ],
    [
     "Download MP3 Anda",
-    "Tekan *Download* di samping file. MP3 baru memakai nama yang sama dengan file aslinya, jadi mudah dicari nanti."
+    "Tekan *Download* di samping file, atau *Download semua* jika beberapa file sudah siap. Setiap MP3 memakai nama file aslinya."
    ]
   ],
-  "callout": "**Perlu merekam audio dulu?** Pindah ke tab *Rekam*, bicaralah ke mikrofon, lalu tekan *Stop & Konversi*. Anda akan mendapat rekaman suara MP3 yang siap dibagikan."
+  "callout": "**Ingin merekam saja?** Buka tab *Rekam*, izinkan mikrofon, lalu tekan *Stop & Konversi* setelah selesai. Anda langsung mendapat MP3 berisi suara Anda."
  },
  "devices": {
   "eyebrow": "Semua perangkat",
-  "h2": "Memakai konverter MP3 di iPhone, Android, dan komputer",
-  "intro": "Karena semuanya berjalan di browser, tidak ada aplikasi yang perlu diinstal di perangkat apa pun. Bedanya hanya di lokasi penyimpanan file Anda.",
+  "h2": "Lokasi penyimpanan MP3 di setiap perangkat",
+  "intro": "Tidak ada aplikasi yang perlu diinstal. Satu-satunya perbedaan antarperangkat adalah tempat file hasilnya disimpan.",
   "list": [
    [
-    "Konverter MP3 di iPhone dan iPad",
-    "Buka halaman ini di Safari, ketuk Pilih File dan pilih file dari Foto atau aplikasi File. Setelah selesai, ketuk Download; MP3 akan muncul di File pada folder Unduhan, siap dibagikan atau ditambahkan ke aplikasi musik."
+    "iPhone dan iPad",
+    "Di Safari, ketuk Pilih File lalu pilih dari Foto atau aplikasi File. Setelah Anda mengetuk Download, MP3 ada di aplikasi File di folder Unduhan, siap dibagikan atau dibuka di aplikasi musik seperti VLC."
    ],
    [
-    "HP dan tablet Android",
-    "Gunakan Chrome atau browser lain yang sudah diperbarui. MP3 yang selesai disimpan ke folder Download, tempat pemutar musik dan pengelola file Anda bisa menemukannya."
+    "Android",
+    "Di Chrome atau browser terbaru lainnya, MP3 yang sudah jadi masuk ke folder Download, tempat aplikasi pengelola file dan aplikasi musik bisa menemukannya."
    ],
    [
     "Windows, Mac, Linux, dan Chromebook",
-    "Seret satu folder penuh file ke konverter, lalu gunakan Download semua untuk menyimpan semua MP3 sekaligus."
+    "Seret banyak file sekaligus dari folder Anda ke kotak, lalu gunakan Download semua. File tersimpan di folder Downloads seperti biasa."
    ]
   ]
  },
  "why": {
-  "eyebrow": "Kenapa ini penting",
-  "h2": "Kenapa mengubah audio dan video ke MP3?",
-  "intro": "Ada banyak alasan bagus untuk menyimpan salinan MP3 dari file Anda. Berikut alasan yang paling sering kami dengar dari pengguna alat ini.",
+  "eyebrow": "Kenapa MP3",
+  "h2": "Kapan sebaiknya mengubah ke MP3",
+  "intro": "MP3 memang bukan format terbaru, tetapi format ini menyelesaikan empat masalah sehari-hari.",
   "list": [
    [
-    "Bisa diputar di mana saja",
-    "Beberapa format, seperti FLAC, OPUS, atau WMA, tidak bisa dibuka di semua HP atau audio mobil. Sebaliknya, MP3 didukung hampir di semua tempat."
+    "Perangkat tidak bisa memutar file Anda",
+    "Head unit mobil, MP3 player lama, dan sebagian smart speaker menolak FLAC, OPUS, WMA, atau M4A. Semuanya bisa membaca MP3."
    ],
    [
-    "Menghemat ruang penyimpanan",
-    "Lagu WAV berdurasi tiga menit memakan sekitar 30 MB. Lagu yang sama dalam MP3 192 kbps hanya sekitar 4.3 MB, kira-kira tujuh kali lebih kecil."
+    "Ukuran file terlalu besar",
+    "WAV tiga menit memakan sekitar 30 MB. Lagu yang sama sebagai MP3 192 kbps hanya sekitar 4,3 MB, kira-kira tujuh kali lebih kecil."
    ],
    [
-    "Mudah dibagikan",
-    "File yang lebih kecil lebih cepat dikirim lewat email, WhatsApp, atau cloud drive, dan lebih cepat diunggah ke situs yang hanya menerima MP3."
+    "Anda perlu mengirim atau mengunggahnya",
+    "File yang lebih kecil muat dalam batas lampiran email, lebih cepat terkirim di WhatsApp, dan diterima situs yang hanya menerima MP3."
    ],
    [
     "Anda hanya butuh suaranya",
-    "Jika Anda ingin audio dari video kuliah, klip keluarga, atau rekaman layar, **konverter video ke MP3** akan membuang gambarnya dan menyimpan hanya suara yang ingin Anda dengar."
+    "Untuk kuliah, video keluarga, atau rekaman layar, gambarnya sering hanya menambah beban. Alat [video ke MP3](/video-to-mp3) kami hanya menyimpan audionya."
    ]
   ]
  },
  "bitrate": {
   "eyebrow": "Panduan kualitas",
-  "h2": "Memilih bitrate MP3 yang tepat",
-  "intro": "Bitrate, diukur dalam kilobit per detik (kbps), menentukan berapa banyak data yang dipakai MP3 untuk setiap detik suara. Bitrate yang lebih tinggi menyimpan lebih banyak detail, tetapi juga membuat file lebih besar. Tabel di bawah menunjukkan gambarannya agar Anda bisa menemukan keseimbangan yang pas.",
+  "h2": "Bitrate MP3 mana yang sebaiknya dipilih?",
+  "intro": "Bitrate (kbps) menentukan seberapa banyak data yang boleh dipakai untuk setiap detik suara. Makin tinggi, makin detail dan makin besar filenya. Ukuran ini tepat untuk MP3 stereo dengan bitrate konstan:",
   "head": [
    "Bitrate",
    "Ukuran per menit",
@@ -121,49 +121,49 @@
   "rows": [
    [
     "128 kbps",
-    "sekitar 0.96 MB",
+    "sekitar 0,96 MB",
     "Podcast, audiobook, kuliah, memo suara"
    ],
    [
     "192 kbps",
-    "sekitar 1.44 MB",
-    "Mendengarkan musik sehari-hari di HP dan earbud"
+    "sekitar 1,44 MB",
+    "Musik sehari-hari di HP dan earbud"
    ],
    [
     "256 kbps",
-    "sekitar 1.92 MB",
+    "sekitar 1,92 MB",
     "Musik di headphone bagus atau speaker rumah"
    ],
    [
     "320 kbps",
-    "sekitar 2.40 MB",
-    "Arsip musik, set DJ, kualitas MP3 tertinggi"
+    "sekitar 2,40 MB",
+    "Musik yang ingin disimpan, DJ set, kualitas MP3 tertinggi"
    ]
   ],
-  "tipsTitle": "Tips praktis untuk hasil lebih baik",
+  "tipsTitle": "Empat aturan yang lebih penting daripada angkanya",
   "tips": [
    [
-    "Mulai dari sumber terbaik yang Anda punya",
-    "Mengonversi dari WAV atau FLAC menghasilkan MP3 yang lebih bersih daripada dari file terkompresi lain."
+    "Mulai dari sumber terbaik",
+    "MP3 yang dibuat dari WAV atau FLAC terdengar lebih bersih daripada MP3 dari file lain yang sudah dikompresi."
    ],
    [
-    "Jangan “menaikkan” kualitas MP3",
-    "Mengubah MP3 128 kbps menjadi 320 kbps hanya membuat file lebih besar, tetapi tidak bisa mengembalikan detail yang sudah hilang."
+    "Jangan pernah “menaikkan” bitrate",
+    "Mengubah file 128 kbps menjadi 320 kbps hanya membuatnya lebih besar. Detail yang sudah hilang tidak akan kembali."
    ],
    [
-    "Gunakan mono untuk ucapan",
-    "Satu suara terdengar sama dalam mono, dan seluruh bitrate dipakai untuk satu saluran itu."
+    "Gunakan Mono untuk satu suara",
+    "Suara bicara terdengar sama dalam mono, dan seluruh bitrate dipakai untuk satu kanal."
    ],
    [
-    "Simpan file asli Anda",
-    "MP3 adalah format lossy, jadi simpan file sumbernya kalau-kalau nanti Anda butuh kualitas yang berbeda."
+    "Simpan file aslinya",
+    "MP3 bersifat lossy. Simpan file sumbernya, siapa tahu nanti Anda butuh kualitas lain."
    ]
   ]
  },
  "compare": {
   "eyebrow": "Perbandingan format",
   "h2": "MP3 vs WAV vs AAC vs FLAC",
-  "intro": "Setiap format audio punya kompromi antara ukuran, kualitas, dan kompatibilitas. Perbandingan singkat ini membantu Anda memutuskan kapan MP3 adalah pilihan tepat dan kapan format lain mungkin lebih cocok.",
+  "intro": "Setiap format punya kompromi antara ukuran, kualitas, dan kompatibilitas. Begini perbandingan empat format yang paling umum.",
   "head": [
    "Format",
    "Jenis",
@@ -180,144 +180,144 @@
    [
     "WAV",
     "Tanpa kompresi",
-    "Sangat besar",
-    "Bagus untuk editing, terlalu besar untuk didengar sehari-hari"
+    "Sangat besar (sekitar 10 MB per menit)",
+    "Terbaik untuk merekam dan mengedit"
    ],
    [
     "AAC / M4A",
     "Lossy",
     "Kecil",
-    "Andal di perangkat Apple, kurang di pemutar lama"
+    "Sangat baik di perangkat Apple, kurang konsisten di pemutar lama"
    ],
    [
     "FLAC",
     "Lossless",
-    "Besar",
-    "Disukai audiophile, tidak didukung di semua tempat"
+    "Besar (sekitar setengah WAV)",
+    "Disukai audiophile, tetapi tidak didukung di semua perangkat"
    ]
   ],
-  "outro": "Singkatnya, pilih MP3 jika Anda ingin file yang kecil dan bisa diputar di mana saja. Simpan WAV atau FLAC jika Anda butuh salinan master sempurna untuk editing atau arsip."
+  "outro": "Patokan mudahnya: pakai MP3 untuk didengarkan dan dibagikan, dan simpan WAV atau FLAC sebagai master untuk mengedit dan arsip."
  },
  "features": {
   "eyebrow": "Fitur",
-  "h2": "Kenapa orang memilih konverter MP3 gratis kami",
-  "intro": "Kami membuat [MP3 Converter](/) ini agar mudah bagi pemula, tetapi tetap berguna bagi orang yang bekerja dengan suara setiap hari.",
-  "imageAlt": "Kenapa orang memilih konverter MP3 gratis kami",
+  "h2": "Yang Anda dapatkan",
+  "intro": "Cukup mudah untuk pengguna pemula, dengan pengaturan yang memang dibutuhkan orang yang bekerja dengan audio.",
+  "imageAlt": "Fitur konverter MP3",
   "items": [
    [
-    "Privat sejak awal",
-    "Konversi terjadi di perangkat Anda sendiri. Lagu, kuliah, dan catatan suara Anda tidak pernah dikirim ke server kami, jadi tidak ada orang lain yang bisa melihatnya."
+    "File Anda tetap di tangan Anda",
+    "File yang Anda unggah dikonversi di perangkat Anda sendiri dan tidak pernah sampai ke server kami. Hanya link yang Anda tempel yang diambil oleh server kami, dan file tersebut dihapus dalam 30 menit."
    ],
    [
-    "Cepat, tanpa antrean",
-    "Karena tidak ada tahap upload, klip pendek berubah menjadi MP3 dalam beberapa detik. File yang lebih panjang hanya bergantung pada kecepatan perangkat Anda."
+    "Tanpa upload, tanpa antre",
+    "Konversi dimulai begitu Anda menambahkan file. Kecepatannya bergantung pada perangkat Anda, bukan koneksi internet."
    ],
    [
-    "Anda yang memilih kualitas",
-    "Pilih 128, 192, 256, atau 320 kbps. Pilih yang kecil untuk suara dan podcast, atau yang tinggi untuk musik yang ingin Anda simpan."
+    "Empat tingkat kualitas",
+    "Pilih 128, 192, 256, atau 320 kbps, ditambah Mono untuk suara bicara. Halaman format menjelaskan pilihan terbaik untuk setiap jenis file."
    ],
    [
-    "Konversi banyak file sekaligus",
-    "Pilih satu folder penuh klip. Alat ini mengantrekannya dan mengonversinya satu per satu, jadi Anda bisa tetap bekerja."
+    "Konversi banyak file",
+    "Tambahkan satu folder penuh. File dikonversi satu per satu, dan Download semua menyimpan semuanya sekaligus."
    ],
    [
-    "Bisa di semua perangkat",
-    "Gunakan di Windows, Mac, Linux, Android, iPhone, atau Chromebook. Cukup browser modern, tanpa aplikasi yang perlu diinstal."
+    "30+ format",
+    "Audio seperti WAV, M4A, FLAC, OGG, OPUS, WMA, dan AMR, serta video seperti MP4, MOV, MKV, WEBM, dan AVI."
    ],
    [
     "Gratis, tanpa akun",
-    "Tidak perlu daftar, tidak perlu email, dan tanpa watermark. Buka halaman, masukkan file Anda, lalu download MP3-nya."
+    "Tanpa daftar, tanpa email, tanpa watermark, dan tanpa batas harian."
    ]
   ]
  },
  "uses": {
-  "eyebrow": "Penggunaan sehari-hari",
-  "h2": "Apa saja yang bisa dilakukan dengan konverter MP3?",
+  "eyebrow": "Contoh penggunaan",
+  "h2": "Untuk apa orang memakainya",
   "items": [
    [
-    "Belajar di mana saja",
-    "Ubah rekaman kuliah atau video kelas online ke MP3 dan dengarkan saat perjalanan atau berolahraga."
+    "Belajar di perjalanan",
+    "Ubah rekaman kuliah atau kelas online menjadi MP3 untuk didengarkan saat berangkat, dan pakai 128 kbps mono agar hemat ruang."
    ],
    [
-    "Terbitkan podcast",
-    "Ekspor episode Anda sebagai MP3 ringan yang diterima tanpa masalah oleh layanan hosting podcast dan aplikasi pendengar."
+    "Menerbitkan podcast",
+    "Ekspor episode final sebagai MP3, format yang diterima semua hosting dan aplikasi podcast."
    ],
    [
-    "Bagikan catatan suara",
-    "Ubah memo M4A dari iPhone atau pesan suara OPUS dari WhatsApp ke MP3 agar siapa saja bisa membukanya."
+    "Berbagi pesan suara",
+    "Ubah memo M4A dari iPhone atau voice note OPUS dari WhatsApp agar bisa dibuka siapa saja. Atau [ubah rekamannya menjadi teks](/transcribe-audio-to-text)."
    ],
    [
-    "Bangun koleksi musik",
-    "Buat salinan MP3 praktis dari album WAV atau FLAC milik Anda untuk HP, laptop, dan mobil."
+    "Membangun koleksi musik",
+    "Buat salinan MP3 yang praktis dari album WAV atau FLAC milik Anda untuk HP dan mobil."
    ],
    [
-    "Isi pemutar MP3 Anda",
-    "Gunakan sebagai konverter untuk pemutar MP3: ubah file WMA, FLAC, M4A, atau OGG yang tidak mau diputar oleh pemutar MP3 lama atau audio mobil menjadi MP3 standar yang bisa dibacanya."
+    "Menghidupkan lagi MP3 player lama",
+    "Ubah file WMA, FLAC, M4A, atau OGG yang ditolak pemutar lama atau head unit mobil menjadi MP3 standar."
    ],
    [
-    "Buat nada dering dan klip",
-    "Ubah lagu ke MP3, lalu ambil bagian reff-nya saja dengan [Pemotong MP3](/mp3-cutter) kami."
+    "Membuat nada dering dan klip",
+    "Ubah lagunya, lalu simpan bagian reff saja dengan [Pemotong MP3](/mp3-cutter)."
    ]
   ]
  },
  "privacy": {
   "eyebrow": "Keamanan & privasi",
-  "h2": "Apakah konverter MP3 online ini aman?",
-  "text": "Ya. [MP3 Converter](/) ini dibuat privat sejak awal, dan berikut cara kerjanya di balik layar, jadi Anda tidak perlu sekadar percaya kata-kata kami. Saat Anda menambahkan file, browser Anda memakai mesin Web Audio bawaannya untuk membaca suara. Untuk format yang tidak bisa dibuka browser, seperti MKV, AVI, atau WMA, halaman ini memuat FFmpeg, pustaka media open-source tepercaya, yang dikompilasi agar bisa berjalan di dalam browser Anda. Lalu encoder LAME yang terkenal mengompres suara menjadi MP3. Terakhir, browser Anda langsung menyerahkan file yang sudah jadi kepada Anda.",
+  "h2": "Apakah konverter MP3 ini aman?",
+  "text": "Ya, dan Anda bisa mengeceknya sendiri. Saat Anda menambahkan file, browser membacanya ke memori, mendekode suaranya, dan mengenkode MP3 secara lokal. Buka alat jaringan (network tools) di browser saat konversi berjalan, dan Anda akan melihat file tidak pernah dikirim ke mana pun. Mesin FFmpeg (sekitar 32 MB) hanya didownload sekali, dan hanya untuk format yang tidak bisa dibaca browser sendiri.",
   "list": [
-   "File yang Anda unggah tidak pernah keluar dari perangkat Anda. Video yang diambil dari link dihapus dari server kami setelah 30 menit.",
-   "Tidak ada software yang perlu diinstal, jadi tidak ada risiko adware tersembunyi.",
-   "Tanpa akun, artinya tidak ada data pribadi yang perlu dilindungi atau bisa bocor.",
-   "Tutup tab, dan semua file hasil konversi di memori langsung dihapus."
+   "File yang diunggah tidak pernah keluar dari perangkat Anda. File dari link yang ditempel dihapus dari server kami dalam 30 menit.",
+   "Tidak ada software atau ekstensi yang perlu diinstal, jadi tidak ada adware tersembunyi.",
+   "Tidak ada akun, jadi tidak ada data pribadi yang bisa bocor.",
+   "Menutup tab akan menghapus semua file hasil konversi dari memori."
   ],
-  "callout": "**Harap gunakan dengan bijak.** Gunakan alat ini untuk rekaman Anda sendiri, file yang Anda beli, atau file yang boleh Anda gunakan. Menyalin musik atau film yang dilindungi tanpa izin bisa melanggar hukum hak cipta di negara Anda."
+  "callout": "**Gunakan dengan bertanggung jawab.** Pakai alat ini untuk rekaman Anda sendiri, file yang Anda beli, atau file yang boleh Anda gunakan. Menyalin musik atau film yang dilindungi tanpa izin bisa melanggar hukum hak cipta."
  },
  "faqTitle": "Pertanyaan yang sering diajukan",
  "faqs": [
   {
    "q": "Apakah konverter MP3 ini benar-benar gratis?",
-   "a": "Ya. Anda bisa mengonversi file sebanyak yang Anda mau tanpa membayar, mendaftar, atau memberikan alamat email. Konversi berjalan di perangkat Anda sendiri, jadi biaya kami untuk menjaga alat ini tetap gratis sangat kecil."
+   "a": "Ya. Tidak ada biaya, tidak perlu daftar, dan tidak ada batas jumlah file. Karena perangkat Anda sendiri yang bekerja, kami tidak punya biaya server untuk upload yang harus dibebankan kepada Anda."
   },
   {
    "q": "Apakah file saya diunggah ke server Anda?",
-   "a": "File yang Anda unggah tidak pernah dikirim ke kami. Browser Anda membaca file, mendekode audio, dan membuat MP3 langsung di perangkat Anda. Server kami hanya mengambil video untuk Anda saat Anda menempelkan link, dan hasilnya dihapus setelah 30 menit."
+   "a": "Tidak. File yang Anda unggah dikonversi di dalam browser. Hanya saat Anda menempel link, server kami mengambil file tersebut untuk Anda, dan hasilnya dihapus dalam 30 menit."
+  },
+  {
+   "q": "Berapa lama proses konversinya?",
+   "a": "Biasanya hanya beberapa detik. Dalam pengujian kami, lagu WAV 4 menit butuh sekitar 20 detik dan video 720p berdurasi 10 menit sekitar 45 detik di komputer biasa. File pertama dengan format langka bisa lebih lama karena mesin FFmpeg perlu dimuat sekali."
   },
   {
    "q": "Bisakah saya mengubah video ke MP3?",
-   "a": "Bisa. Pilih file MP4, MOV, WEBM, atau video lain, dan konverter hanya akan mengambil trek suaranya lalu menyimpannya sebagai MP3. Gambarnya dibuang, jadi file baru jauh lebih kecil daripada videonya."
+   "a": "Bisa. Tambahkan MP4, MOV, MKV, WEBM, atau video lain, dan hanya trek suaranya yang disimpan sebagai MP3. Dalam pengujian kami, video 10 menit berukuran 189 MB menjadi MP3 14 MB."
   },
   {
    "q": "Bitrate mana yang sebaiknya saya pilih?",
-   "a": "Untuk ucapan, seperti podcast, kuliah, atau memo suara, 128 kbps sudah cukup, dan mono menjaga satu suara tetap jelas. Untuk musik, 192 kbps sudah terdengar bagus bagi kebanyakan orang, sedangkan 256 atau 320 kbps lebih cocok untuk lagu yang ingin Anda simpan lama."
+   "a": "128 kbps dengan Mono untuk suara bicara, 192 kbps untuk musik sehari-hari, dan 320 kbps untuk musik yang ingin Anda simpan. Jangan pilih bitrate lebih tinggi dari sumbernya untuk “memperbaiki” kualitas; itu hanya membuat file lebih besar."
   },
   {
-   "q": "Apakah mengubah ke MP3 menurunkan kualitas audio?",
-   "a": "MP3 adalah format lossy, jadi menghapus sebagian detail yang tidak bisa didengar kebanyakan orang. Jika Anda mulai dari file lossless seperti WAV atau FLAC dan memilih 256 atau 320 kbps, hasilnya terdengar hampir sama dengan aslinya. Namun, mengubah MP3 yang sudah ada ke bitrate lebih tinggi tidak akan mengembalikan kualitas yang hilang."
+   "q": "Apakah mengubah ke MP3 menurunkan kualitas?",
+   "a": "Sedikit, karena MP3 bersifat lossy. Dari sumber WAV atau FLAC pada 256 atau 320 kbps, kebanyakan orang tidak bisa mendengar perbedaannya di speaker atau earbud biasa."
   },
   {
    "q": "Apakah ada batas ukuran file?",
-   "a": "Anda bisa mengonversi file hingga 500 MB. Karena prosesnya di perangkat Anda, rekaman yang sangat panjang butuh memori kosong. Jika file besar gagal di HP, coba di komputer atau pisahkan dulu menjadi beberapa bagian."
-  },
-  {
-   "q": "Apakah konverter MP3 ini bisa di iPhone dan Android?",
-   "a": "Bisa. Alat ini berfungsi sebagai konverter MP3 di iPhone, iPad, dan Android tanpa aplikasi yang perlu diinstal. Buka situs ini di Safari, Chrome, atau browser lain yang sudah diperbarui, ketuk Pilih File dan pilih file dari HP Anda. Setelah selesai, ketuk Download untuk menyimpan MP3 ke aplikasi File atau folder download."
+   "a": "Setiap file bisa sampai 500 MB. File yang sangat panjang butuh memori kosong, jadi jika gagal di HP, coba di komputer."
   },
   {
    "q": "Kenapa file saya gagal dikonversi?",
-   "a": "Konverter pertama-tama memakai dekoder bawaan browser Anda. Jika dekoder itu tidak bisa membaca file, alat ini memuat dekoder FFmpeg bawaan yang bisa menangani hampir semua format. File biasanya hanya gagal jika tidak punya trek suara (misalnya rekaman layar tanpa suara), dilindungi hak cipta (DRM), atau rusak."
+   "a": "Biasanya filenya rusak, tidak punya trek suara, atau dilindungi hak cipta (DRM), seperti film yang dibeli atau download dari Apple Music. Pastikan dulu file bisa diputar di aplikasi lain."
   },
   {
    "q": "Apakah legal mengubah file ke MP3?",
-   "a": "Mengonversi file milik Anda, atau file yang boleh Anda gunakan, umumnya tidak masalah untuk penggunaan pribadi. Jangan gunakan alat ini untuk menyalin musik, film, atau konten lain yang dilindungi hak cipta tanpa izin pemiliknya."
+   "a": "Mengonversi file milik Anda sendiri, atau file yang boleh Anda gunakan, umumnya tidak masalah untuk penggunaan pribadi. Jangan gunakan alat ini untuk menyalin musik, film, atau konten lain yang bukan hak Anda."
   }
  ],
  "author": {
   "title": "Ditulis oleh tim MP3 Converter",
-  "text": "Kami membuat alat audio sederhana yang mengutamakan privasi. Setiap tips di halaman ini sudah dicek sesuai cara kerja konverter yang sebenarnya, dan kami memperbarui panduan ini setiap kali alatnya berubah. [Pelajari lebih lanjut tentang kami](/about)."
+  "text": "Kami membuat alat audio sederhana yang mengutamakan privasi. Kecepatan dan ukuran file di halaman ini berasal dari pengujian kami sendiri, dan kami memperbarui panduan ini setiap kali konverter berubah. [Kenali kami lebih jauh](/about)."
  },
  "cta": {
-  "h2": "Siap mengubah file Anda ke MP3?",
-  "text": "Gratis, privat, dan hanya butuh beberapa detik. Gulir kembali ke atas, masukkan file Anda, dan dapatkan MP3-nya.",
+  "h2": "Siap mengonversi?",
+  "text": "Gratis, privat, dan selesai dalam hitungan detik. Gulir ke atas, masukkan file Anda, lalu download MP3-nya.",
   "button": "Ubah ke MP3 Sekarang"
  },
  "jsonLd": {
@@ -327,8 +327,8 @@
    "Ubah WAV, M4A, AAC, FLAC, OGG, dan OPUS ke MP3",
    "Ambil audio MP3 dari video MP4, MOV, WEBM, dan MKV",
    "Rekam suara Anda dan simpan sebagai MP3",
-   "Output 128, 192, 256, dan 320 kbps",
-   "Konversi massal",
+   "Hasil 128, 192, 256, dan 320 kbps",
+   "Konversi banyak file sekaligus",
    "Tanpa upload: file tetap di perangkat Anda"
   ]
  }

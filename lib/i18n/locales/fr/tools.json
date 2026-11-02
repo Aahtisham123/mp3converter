@@ -3,18 +3,18 @@
   "nav": "Convertisseur YouTube en MP3",
   "tool": {
    "heading": "Collez un lien YouTube pour le convertir en MP3.",
-   "formats": "Vidéos, Shorts et liens YouTube Music · 64 à 320 kbps · mono ou stéréo · coupez n'importe quel passage",
+   "formats": "Vidéos, Shorts et liens YouTube Music · 64 à 320 kbps · mono ou stéréo · coupez n’importe quel passage",
    "placeholder": "Collez un lien YouTube, ex. https://www.youtube.com/watch?v=…"
   },
-  "seoTitle": "YouTube en MP3 – Convertisseur YouTube MP3 gratuit",
-  "metaDescription": "Convertissez YouTube en MP3 gratuitement. Collez un lien YT pour télécharger vidéos, Shorts et YouTube Music en MP3 jusqu'à 320 kbps. Sans appli ni inscription.",
+  "seoTitle": "YouTube en MP3 – Convertisseur YT en MP3 gratuit et rapide",
+  "metaDescription": "Convertissez YouTube en MP3, vite et gratuitement. Collez un lien YT et téléchargez vidéos, Shorts et YouTube Music en MP3 jusqu’à 320 kbps. Sans appli ni compte.",
   "h1": "Convertisseur YouTube en MP3",
-  "lead": "Notre convertisseur YouTube en MP3 gratuit vous permet de coller un lien et de télécharger n'importe quelle vidéo en audio MP3 en quelques gestes. Il fonctionne en ligne sur iPhone, Android et ordinateur, avec une qualité jusqu'à 320 kbps, le mono pour la voix et la possibilité de ne garder que le passage qui vous intéresse.",
+  "lead": "Collez un lien YouTube, choisissez une qualité et enregistrez le son en MP3. Vous pouvez ne garder que le passage utile, passer la voix en mono et télécharger sur iPhone, Android ou ordinateur sans rien installer.",
   "intro": {
-   "h2": "Un convertisseur YouTube MP3 gratuit en ligne, avec de vraies options",
+   "h2": "Enregistrer l’audio d’une vidéo YouTube en MP3",
    "paras": [
-    "Un convertisseur YouTube en MP3 récupère le son d'une vidéo et l'enregistre dans un fichier audio MP3 lisible presque partout. On s'en sert pour écouter des cours dans le bus, garder une playlist de sport sur un vieux lecteur MP3 ou emporter un épisode de podcast dans l'avion sans Wi-Fi. Mais la plupart des sites YT en MP3 se limitent à un seul bouton et une seule qualité. Résultat : vous obtenez souvent un fichier plus lourd que nécessaire, ou un live de deux heures alors que vous ne vouliez que dix minutes.",
-    "Cet outil se concentre uniquement sur l'audio : il peut donc proposer les réglages qui comptent vraiment pour le son. Vous choisissez parmi sept débits, jusqu'à 320 kbps, passez la voix en mono et coupez un passage en saisissant une heure de début et de fin. Et surtout, il reste gratuit : pas de compte, pas d'appli à installer et pas de filigrane sur votre fichier."
+    "On convertit des vidéos YouTube en MP3 pour écouter un cours dans le bus, garder une conférence pour un vol sans Wi-Fi ou remplir un vieux baladeur MP3 ou un autoradio. La plupart des sites proposent un seul bouton et une seule qualité. Cet outil vous donne les trois réglages qui changent vraiment le résultat : le débit, le mono ou la stéréo, et le passage exact de la vidéo que vous voulez.",
+    "Voici ce qui se passe en coulisses. Les navigateurs n’ont pas le droit de récupérer directement les vidéos de YouTube : notre serveur télécharge donc le flux audio, le convertit en MP3 avec FFmpeg et vous remet le fichier. Le MP3 terminé est supprimé du serveur sous 30 minutes. Ni compte, ni appli, ni filigrane."
    ],
    "image": {
     "alt": "Convertisseur YouTube en MP3"
@@ -26,61 +26,76 @@
   "howCta": "Convertir YouTube en MP3 maintenant",
   "steps": [
    [
-    "Copiez le lien YouTube",
-    "Touchez Partager sous la vidéo et choisissez Copier le lien, ou copiez l'adresse dans la barre du navigateur. Les vidéos classiques, les liens youtu.be, les YouTube Shorts et les titres YouTube Music fonctionnent tous."
+    "Copiez le lien de la vidéo",
+    "Touchez Partager sous la vidéo et choisissez Copier le lien, ou copiez la barre d’adresse. Les vidéos classiques, les liens youtu.be, les Shorts et les liens music.youtube.com fonctionnent tous."
    ],
    [
     "Collez-le et choisissez la qualité",
-    "Collez le lien dans le champ ci-dessus. 192 kbps convient à la plupart des vidéos, 320 kbps est idéal pour la musique, et 64 à 96 kbps garde les longues conférences légères."
+    "Collez le lien ci-dessus. 128 kbps suffit largement pour une conférence, 192 kbps pour la plupart des vidéos et 320 kbps pour la musique à conserver."
    ],
    [
-    "Ajoutez des options si besoin",
-    "Activez Mono pour la voix. Activez Couper un extrait et saisissez des temps comme 1:20 à 4:05 pour ne garder que ce passage."
+    "En option : Mono ou Couper un extrait",
+    "Activez Mono pour une seule voix. Activez Couper un extrait et saisissez des temps comme 1:20 et 4:05 pour n’enregistrer que ce passage."
    ],
    [
-    "Convertissez et téléchargez le MP3",
-    "Touchez Convertir en MP3 et regardez le cercle se remplir. Quand il atteint 100 %, touchez le bouton rond Télécharger pour enregistrer le fichier."
+    "Convertissez et téléchargez",
+    "Touchez Convertir en MP3. Quand le cercle atteint 100 %, touchez le bouton rond Télécharger."
    ]
   ],
   "sections": [
    {
-    "h2": "YouTube en MP3 320 kbps : quelle qualité choisir ?",
+    "h2": "Quelle qualité choisir ?",
     "paras": [
-     "Le débit détermine la quantité de détails conservés dans votre MP3 et la taille du fichier. Utilisez ce petit guide pour adapter le réglage à ce que vous enregistrez."
+     "YouTube diffuse généralement l’audio entre 128 et 160 kbps environ (Opus ou AAC). Un MP3 ne peut pas ajouter de détails absents du flux : 192 kbps conserve donc déjà tout. Le 320 kbps est une marge de sécurité pour la musique, pas un gain de qualité. Choisissez selon ce que vous enregistrez :"
     ],
     "list": [
      [
-      "Musique et sessions live",
-      "256 ou 320 kbps en stéréo garde chaque instrument bien net. Choisissez 320 kbps pour les morceaux que vous voulez garder."
+      "Chansons et sessions live",
+      "256 ou 320 kbps, en stéréo. Environ 2,4 MB par minute à 320 kbps."
      ],
      [
       "Podcasts, interviews et cours",
-      "96 ou 128 kbps en mono sonne tout aussi clair et prend beaucoup moins de place que 320 kbps."
+      "96 ou 128 kbps avec Mono. Une heure à 128 kbps pèse environ 58 MB."
      ],
      [
-      "Cours de langue et livres audio",
-      "64 kbps en mono rend les très longs enregistrements assez légers pour en garder des dizaines sur votre téléphone."
+      "Livres audio et cours de langue",
+      "64 kbps en Mono, environ 0,5 MB par minute : des dizaines tiennent sur un téléphone."
      ],
      [
       "Sonneries et extraits courts",
-      "Utilisez Couper un extrait pour garder 20 à 30 secondes, puis peaufinez si besoin avec notre [outil pour couper un MP3](/mp3-cutter)."
+      "Utilisez Couper un extrait pour garder 20 à 30 secondes, puis peaufinez avec l’outil [Couper un MP3](/mp3-cutter)."
      ]
     ],
     "image": {
-     "alt": "Qualité YouTube en MP3 320 kbps"
+     "alt": "YouTube en MP3 en qualité 320 kbps"
     }
    },
    {
-    "h2": "Un MP3 en 320 kbps sonne-t-il mieux que YouTube ?",
-    "paras": [
-     "YouTube diffuse généralement l'audio à environ 128 à 160 kbps, au format Opus ou AAC. Une conversion à 192 kbps conserve donc tout ce que contient le flux d'origine. Choisir 320 kbps ajoute une marge de sécurité pour la musique, c'est pourquoi beaucoup d'auditeurs le préfèrent pour leurs morceaux favoris. Cela dit, aucun convertisseur ne peut ajouter des détails que YouTube n'a jamais envoyés : inutile de monter aussi haut pour de la voix. Si vous comptez retravailler le son dans une appli de musique ou de montage vidéo, notre convertisseur [YouTube en WAV](/youtube-to-wav) vous donne plutôt un fichier non compressé."
+    "h2": "Ce qui fonctionne et ce qui ne fonctionne pas",
+    "list": [
+     [
+      "Fonctionne",
+      "Les vidéos publiques, les Shorts, les titres YouTube Music et les vidéos non répertoriées dont vous avez le lien, jusqu’à 3 heures."
+     ],
+     [
+      "Une vidéo à la fois",
+      "Les playlists ne sont pas converties d’un seul coup. Un lien vers une vidéo d’une playlist convertit uniquement cette vidéo."
+     ],
+     [
+      "Ne fonctionne pas",
+      "Les diffusions en direct, les vidéos privées ou réservées aux membres, et les vidéos soumises à une limite d’âge. Elles exigent un compte YouTube connecté, ce que nous ne demandons jamais."
+     ],
+     [
+      "Besoin de l’image aussi ?",
+      "Utilisez [YouTube en MP4](/youtube-to-mp4) pour la vidéo, ou [YouTube en WAV](/youtube-to-wav) pour un fichier non compressé à monter."
+     ]
     ]
    },
    {
-    "h2": "Enregistrer l'audio de YouTube sur iPhone, Android ou ordinateur",
+    "h2": "Télécharger l’audio YouTube sur iPhone, Android ou ordinateur",
     "paras": [
-     "Que vous disiez YouTube en MP3 ou simplement YT MP3, les étapes sont les mêmes sur tous les appareils, car le convertisseur fonctionne en ligne dans votre navigateur. Sur ordinateur, copiez le lien dans la barre d'adresse et collez-le ici. Sur Android, touchez Partager sous la vidéo, choisissez Copier le lien, puis collez-le sur cette page dans Chrome. Le MP3 terminé arrive dans votre dossier Téléchargements.",
-     "Sur iPhone ou iPad, ouvrez cette page dans Safari et convertissez comme d'habitude. Quand vous touchez Télécharger, Safari enregistre le MP3 dans l'app Fichiers, dans le dossier Téléchargements. De là, vous pouvez l'écouter, le partager ou l'ouvrir dans une app de musique comme VLC. Comme il n'y a rien à installer, l'outil fonctionne de la même façon dans Safari, Chrome, Edge et Firefox."
+     "Sur **ordinateur**, copiez le lien dans la barre d’adresse et collez-le ici. Le MP3 arrive dans votre dossier Téléchargements. Sur **Android**, touchez Partager sous la vidéo, choisissez Copier le lien et collez-le sur cette page dans Chrome ; le MP3 arrive dans Téléchargements.",
+     "Sur **iPhone ou iPad**, copiez le lien dans l’appli YouTube, ouvrez cette page dans Safari et lancez la conversion. Quand vous touchez Télécharger, Safari enregistre le MP3 dans l’app Fichiers, sous Téléchargements. De là, vous pouvez l’écouter, le partager ou l’ouvrir dans une appli comme VLC."
     ],
     "image": {
      "alt": "YouTube en MP3 sur iPhone et Android"
@@ -88,111 +103,121 @@
     "cta": "Essayer le convertisseur YouTube en MP3"
    },
    {
-    "h2": "YouTube Shorts, YouTube Music et playlists",
-    "paras": [
-     "Le convertisseur ne se limite pas aux vidéos classiques. Collez un lien YouTube Shorts pour récupérer la musique ou la voix off d'une vidéo courte, pratique quand un son à la mode vous reste en tête. Les liens YouTube Music (music.youtube.com) fonctionnent aussi : vous pouvez transformer un titre YT Music en MP3 pour l'écouter hors ligne. Et si vous voulez l'image en plus du son, passez à notre outil [YouTube en MP4](/youtube-to-mp4).",
-     "Les playlists fonctionnent un peu différemment. Pour que le service reste rapide pour tout le monde, l'outil convertit une vidéo à la fois. Pour enregistrer une playlist YouTube en MP3, ouvrez-la, copiez le lien de chaque vidéo souhaitée et convertissez-les une par une. Si vous collez le lien d'une vidéo lue dans une playlist, vous obtenez uniquement cette vidéo en MP3."
-    ]
-   },
-   {
-    "h2": "Remplissez votre lecteur MP3, votre autoradio ou votre téléphone",
-    "paras": [
-     "Le MP3 est le format audio que presque tous les appareils comprennent. Ce convertisseur YouTube en MP3 est donc un moyen simple de remplir un ancien lecteur MP3, un autoradio qui lit les clés USB, une montre connectée ou le lecteur audio d'un enfant. Convertissez les vidéos, copiez les fichiers MP3 dans le dossier musique de l'appareil, et ils se lisent comme n'importe quel autre morceau. Manque de place ? Passez les gros fichiers dans notre [compresseur MP3](/mp3-compressor) pour faire tenir plus de chansons."
+    "h2": "Si une conversion échoue",
+    "list": [
+     [
+      "« Le site bloque temporairement les téléchargements depuis notre serveur »",
+      "YouTube limite de temps en temps les requêtes venant de notre serveur. Patientez quelques minutes et réessayez."
+     ],
+     [
+      "« Vous avez atteint la limite de téléchargements par heure »",
+      "Chaque visiteur peut lancer un nombre limité de conversions par heure, pour que le service reste rapide pour tout le monde. Réessayez plus tard."
+     ],
+     [
+      "« Les diffusions en direct et les vidéos très longues ne peuvent pas être converties »",
+      "Attendez la fin du direct, ou utilisez Couper un extrait sur les vidéos très longues."
+     ],
+     [
+      "La première conversion est lente",
+      "Si le serveur était inactif, il peut mettre jusqu’à une minute à se réveiller. Les conversions suivantes sont plus rapides."
+     ]
     ]
    },
    {
     "h2": "Ce convertisseur YouTube en MP3 est-il sûr ?",
     "paras": [
-     "C'est une question légitime, car beaucoup de sites de téléchargement sont remplis de pop-ups publicitaires, de faux boutons de téléchargement et d'installateurs qui ajoutent des logiciels indésirables. Nous avons conçu ce convertisseur pour éviter tout cela."
+     "Beaucoup de sites de téléchargement sont truffés de pop-ups, de faux boutons et d’installateurs qui embarquent des logiciels indésirables. Rien de tout cela sur cette page."
     ],
     "list": [
      [
       "Rien à installer",
-      "Tout se passe sur cette page : aucune appli ni extension de navigateur qui pourrait contenir un logiciel publicitaire."
+      "Ni appli, ni extension de navigateur : aucun logiciel publicitaire ne peut s’y cacher."
      ],
      [
-      "Ni compte ni e-mail",
-      "Vous ne donnez jamais d'informations personnelles pour convertir une vidéo."
+      "Ni compte, ni e-mail",
+      "Vous ne communiquez jamais d’informations personnelles."
      ],
      [
-      "Pas de faux boutons",
-      "Il y a un seul bouton Convertir et un seul bouton Télécharger, et ils font exactement ce qu'ils annoncent."
+      "Un seul bouton Convertir et un seul bouton Télécharger",
+      "Pas de faux boutons, pas de redirections vers d’autres sites."
      ],
      [
-      "Fichiers supprimés automatiquement",
-      "Votre MP3 est préparé sur notre serveur et supprimé dans les 30 minutes. Notre politique de confidentialité donne tous les détails."
+      "Les fichiers sont supprimés",
+      "Le MP3 est effacé de notre serveur sous 30 minutes. Consultez notre [politique de confidentialité](/privacy-policy)."
      ]
     ]
    },
    {
-    "h2": "Comment convertir YouTube en MP3 légalement",
+    "h2": "Est-il légal de convertir YouTube en MP3 ?",
     "paras": [
-     "Convertir une vidéo est légal dans de nombreux cas, mais cela dépend du propriétaire du contenu et des lois de votre pays. Les conditions de YouTube n'autorisent le téléchargement que lorsque YouTube propose lui-même une option de téléchargement, et une grande partie de sa musique est protégée par le droit d'auteur. [MP3 Converter](/) est un outil indépendant, ni affilié, ni approuvé, ni sponsorisé par YouTube ou Google. En général, ces usages ne posent pas de problème :"
+     "Cela dépend de la vidéo et du pays où vous vivez. Les conditions d’utilisation de YouTube n’autorisent le téléchargement que lorsque YouTube propose une option de téléchargement, et la plupart des musiques sur YouTube sont protégées par le droit d’auteur. Ne convertissez que des vidéos que vous avez le droit d’enregistrer, par exemple :"
     ],
     "list": [
      [
       "Vos propres vidéos",
-      "Les vidéos que vous avez créées et publiées vous-même, comme une conférence filmée ou une répétition de votre groupe."
+      "Les créateurs peuvent aussi télécharger leurs propres vidéos dans YouTube Studio, rubrique Contenu."
      ],
      [
-      "Vidéos Creative Commons",
-      "Dans la recherche YouTube, ouvrez Filtres et choisissez Creative Commons, puis respectez les conditions de la licence, comme citer l'auteur."
+      "Les vidéos Creative Commons",
+      "Dans la recherche YouTube, ouvrez Filtres et choisissez Creative Commons, puis respectez la licence, par exemple en citant l’auteur."
      ],
      [
-      "Contenus du domaine public",
-      "Discours anciens, enregistrements classiques et autres œuvres libres de droits."
+      "Les contenus du domaine public",
+      "Discours anciens, enregistrements historiques et autres œuvres libres de droits."
      ],
      [
-      "Contenus autorisés",
-      "Les vidéos dont le créateur autorise clairement le téléchargement, par exemple des beats gratuits ou de la musique libre de droits."
+      "Les contenus autorisés",
+      "Les vidéos dont le créateur autorise clairement le téléchargement, comme des beats gratuits ou de la musique libre de droits."
      ]
+    ]
+   },
+   {
+    "h2": "Les alternatives légales pour la musique",
+    "paras": [
+     "Pour les chansons protégées, la voie officielle reste la meilleure. YouTube Premium et YouTube Music Premium permettent d’enregistrer vidéos et chansons pour les écouter hors connexion dans l’appli. Beaucoup d’artistes vendent ou proposent aussi leurs morceaux en téléchargement sur Bandcamp ou sur leur propre site. Lisez notre [politique de droits d’auteur et DMCA](/copyright) pour savoir comment nous traitons les demandes des ayants droit."
     ]
    }
   ],
   "faqs": [
    {
-    "q": "Ce convertisseur YouTube en MP3 est-il vraiment gratuit ?",
-    "a": "Oui. Vous pouvez convertir et télécharger des vidéos YouTube en MP3 gratuitement, sans inscription, sans logiciel et sans filigrane sur vos fichiers."
+    "q": "Ce convertisseur YouTube en MP3 est-il gratuit ?",
+    "a": "Oui. Vous pouvez convertir des vidéos en MP3 gratuitement, sans inscription, sans logiciel et sans filigrane. Une limite raisonnable de conversions par heure garantit un service rapide pour tous."
    },
    {
-    "q": "Puis-je télécharger YouTube en MP3 à 320 kbps ?",
-    "a": "Oui. Choisissez 320 kbps avant de toucher Convertir. C'est la qualité MP3 la plus élevée et un excellent choix pour la musique, même si 192 kbps conserve déjà tout ce que YouTube diffuse."
-   },
-   {
-    "q": "Est-ce sûr d'utiliser un convertisseur YouTube en MP3 ?",
-    "a": "Celui-ci, oui. Rien à installer, aucun compte à créer, aucune pop-up publicitaire, et les fichiers convertis sont supprimés de notre serveur dans les 30 minutes. De manière générale, évitez tout convertisseur qui vous demande d'installer un logiciel ou d'autoriser les notifications."
+    "q": "Puis-je télécharger l’audio YouTube en 320 kbps ?",
+    "a": "Oui. Choisissez 320 kbps avant de toucher Convertir. Comme YouTube diffuse l’audio à environ 128–160 kbps, 192 kbps conserve déjà tout ; le 320 kbps est une marge de sécurité pour la musique."
    },
    {
     "q": "Comment convertir YouTube en MP3 sur iPhone ?",
-    "a": "Ouvrez cette page dans Safari, collez le lien de la vidéo et touchez Convertir en MP3. Touchez ensuite Télécharger : Safari enregistre le MP3 dans l'app Fichiers, dans votre dossier Téléchargements."
+    "a": "Copiez le lien dans l’appli YouTube, ouvrez cette page dans Safari, collez-le et touchez Convertir en MP3. Touchez Télécharger : le MP3 est enregistré dans l’app Fichiers, sous Téléchargements."
    },
    {
-    "q": "Puis-je convertir une playlist YouTube en MP3 ?",
-    "a": "Pas en une seule fois. Convertissez les vidéos une par une en collant le lien de chacune. Le lien d'une vidéo dans une playlist convertit uniquement cette vidéo."
+    "q": "Puis-je convertir seulement une partie d’une vidéo ?",
+    "a": "Oui. Activez Couper un extrait, saisissez un début comme 2:10 et une fin comme 5:45, puis lancez la conversion. Seul ce passage devient votre MP3."
    },
    {
-    "q": "Est-ce que ça marche avec YouTube Shorts et YouTube Music ?",
-    "a": "Oui. Collez un lien Shorts, un lien court youtu.be ou un lien music.youtube.com tel que vous l'avez copié."
+    "q": "Est-ce que ça marche avec les Shorts et YouTube Music ?",
+    "a": "Oui. Collez un lien Shorts, youtu.be ou music.youtube.com tel que vous l’avez copié."
    },
    {
-    "q": "Puis-je convertir seulement une partie d'une vidéo YouTube en MP3 ?",
-    "a": "Oui. Activez Couper un extrait, saisissez un début comme 2:10 et une fin comme 5:45, puis convertissez. Seul ce passage devient votre MP3, ce qui fait gagner du temps et des données."
+    "q": "Puis-je convertir une playlist entière ?",
+    "a": "Non, une vidéo à la fois. Un lien vers une vidéo d’une playlist convertit uniquement cette vidéo."
    },
    {
-    "q": "YT MP3, c'est la même chose que YouTube en MP3 ?",
-    "a": "Oui. « YT » est simplement l'abréviation de YouTube : YT en MP3, convertisseur YT MP3 et YouTube en MP3 désignent la même chose, transformer un lien YouTube en fichier audio MP3, exactement ce que fait cette page."
+    "q": "Pourquoi certaines vidéos ne se convertissent-elles pas ?",
+    "a": "Les diffusions en direct, les vidéos privées, réservées aux membres ou soumises à une limite d’âge ne peuvent pas être converties, et les vidéos de plus de 3 heures ne sont pas prises en charge."
+   },
+   {
+    "q": "Est-ce sûr ?",
+    "a": "Oui. Rien à installer, pas de compte ni de pop-ups, et les fichiers sont supprimés de notre serveur sous 30 minutes. Méfiez-vous de tout convertisseur qui vous demande d’installer un logiciel."
    },
    {
     "q": "Est-il légal de convertir des vidéos YouTube en MP3 ?",
-    "a": "Cela dépend de la vidéo et de votre pays. Convertir vos propres vidéos, des vidéos Creative Commons ou du domaine public, ou des contenus que vous avez le droit d'enregistrer ne pose généralement pas de problème. Télécharger de la musique protégée sans autorisation peut enfreindre la loi et les conditions de YouTube."
+    "a": "Cela dépend de la vidéo et de votre pays. Convertir vos propres vidéos, des vidéos Creative Commons ou du domaine public, ou des contenus que vous avez le droit d’enregistrer ne pose en général pas de problème. Télécharger de la musique protégée sans autorisation, si."
    },
    {
-    "q": "Pourquoi le message « bloque temporairement les téléchargements » s'affiche-t-il ?",
-    "a": "YouTube limite parfois les requêtes pendant un court moment. Patientez une minute ou deux et réessayez."
-   },
-   {
-    "q": "Ai-je plutôt besoin de YouTube en MP4 ?",
-    "a": "Si vous voulez l'image en plus du son, utilisez notre outil YouTube en MP4. Cette page produit toujours des fichiers MP3 audio uniquement."
+    "q": "YT en MP3, c’est la même chose que YouTube en MP3 ?",
+    "a": "Oui. « YT » est l’abréviation de YouTube : YT en MP3 et YouTube en MP3 désignent la même chose, à savoir enregistrer le son d’une vidéo YouTube dans un fichier MP3."
    }
   ]
  },
@@ -692,20 +717,20 @@
    "formats": "MP4, M4V, MOV",
    "buttonLabel": "Choisir des fichiers MP4",
    "linkProps": {
-    "heading": "Collez le lien d'une vidéo MP4 pour la convertir en MP3.",
+    "heading": "Collez le lien d’une vidéo MP4 pour la convertir en MP3.",
     "subheading": "Liens .mp4 directs et sites de vidéos gratuits comme Internet Archive ou Vimeo (téléchargement activé)",
     "placeholder": "Collez un lien MP4, ex. https://example.com/video.mp4"
    }
   },
-  "seoTitle": "Convertir MP4 en MP3 gratuit | Extraire l'audio d'une vidéo",
-  "metaDescription": "Convertissez n'importe quel MP4 en MP3 propre en un clic. Rapide et gratuit : importez, convertissez et téléchargez, sans compte.",
+  "seoTitle": "Convertir MP4 en MP3 | Extraire l’audio d’une vidéo gratuit",
+  "metaDescription": "Transformez n’importe quel MP4 en un fichier MP3 propre en un clic. Rapide et gratuit : importez, convertissez et téléchargez, sans créer de compte.",
   "h1": "Convertisseur MP4 en MP3",
-  "lead": "Notre convertisseur MP4 en MP3 gratuit vous permet de transformer n'importe quelle vidéo MP4 en audio MP3 en ligne, en quelques secondes. Importez un fichier depuis votre téléphone ou votre ordinateur, ou collez le lien d'un MP4 en ligne, puis choisissez une qualité jusqu'à 320 kbps et téléchargez un fichier audio propre, lisible partout.",
+  "lead": "Récupérez le son de n’importe quelle vidéo MP4 et enregistrez-le en MP3 : un cours, un appel Zoom, un extrait de concert ou une voix off. La vidéo est convertie sur votre propre appareil, rien n’est envoyé, et une vidéo de 10 minutes passe d’environ 190 MB à 14 MB.",
   "intro": {
-   "h2": "Un convertisseur vidéo en audio gratuit en ligne pour vos fichiers MP4",
+   "h2": "Extraire l’audio d’un MP4 en quelques secondes",
    "paras": [
-    "Le MP4 est le format vidéo par défaut des téléphones, des enregistreurs d'écran, des enregistrements Zoom et Teams et de la plupart des applis de montage. Pourtant, bien souvent, seul le son vous intéresse : l'intervention d'un webinaire, la bande son d'une vidéo de vacances ou la narration d'un tutoriel. Un MP3 est bien plus léger que la vidéo : il tient dans un e-mail, se lit dans n'importe quelle appli de musique et continue de jouer écran éteint. Bref, transformer une vidéo en fichier audio fait gagner de la place et permet d'emporter le son partout.",
-    "Cette page vous propose deux options. Avec Importer, la conversion se fait entièrement dans votre navigateur : vos vidéos privées ne quittent jamais votre appareil. Avec Coller un lien, notre serveur récupère un MP4 déjà en ligne, par exemple une adresse .mp4 directe ou une vidéo sur Internet Archive, et vous remet le MP3. Dans les deux cas, vous pouvez convertir un MP4 en MP3 gratuitement, sans compte et sans filigrane."
+    "Le MP4 est le format par défaut des téléphones, des logiciels d’enregistrement d’écran, de Zoom et de Teams. Mais bien souvent, l’image n’est qu’un poids en trop : vous voulez réécouter un webinaire en marchant, envoyer une idée de chanson à un ami ou mettre une conférence sur un vieux baladeur MP3. Convertir un MP4 en MP3 ne garde que ce que vous entendez et supprime la piste vidéo.",
+    "Ici, vous pouvez **convertir un MP4 en MP3** de deux façons. *Importer* lit le fichier dans votre navigateur : vos enregistrements privés ne quittent jamais votre téléphone ou votre ordinateur. *Coller un lien* sert pour un MP4 déjà en ligne, comme une adresse .mp4 directe ou une vidéo sur Internet Archive ; notre serveur le récupère pour vous et supprime le résultat sous 30 minutes."
    ],
    "image": {
     "alt": "Convertisseur MP4 en MP3"
@@ -717,77 +742,121 @@
   "howCta": "Convertir un MP4 en MP3 maintenant",
   "steps": [
    [
-    "Choisissez Importer ou Coller un lien",
-    "Importer est sélectionné par défaut et fonctionne avec les vidéos enregistrées sur votre appareil. Touchez plutôt Coller un lien si le MP4 est en ligne."
+    "Choisissez la qualité",
+    "Sélectionnez un débit avant d’ajouter le fichier : 128 kbps avec Mono pour les conférences, 192 kbps pour la plupart des vidéos, 320 kbps pour la musique. Le réglage s’applique aux fichiers ajoutés ensuite."
    ],
    [
-    "Réglez la qualité MP3",
-    "Pour un import, choisissez entre 128 et 320 kbps et activez Mono pour la voix avant d'ajouter le fichier, car les réglages sont figés à ce moment-là. L'onglet Coller un lien propose 64 à 320 kbps, avec 192 kbps présélectionné."
+    "Ajoutez votre MP4",
+    "Touchez Choisir des fichiers MP4 ou glissez une ou plusieurs vidéos dans la zone, jusqu’à 500 MB chacune. La conversion démarre toute seule. Pour une vidéo en ligne, utilisez plutôt l’onglet Coller un lien."
    ],
    [
-    "Ajoutez le MP4 ou collez le lien",
-    "Touchez Choisir des fichiers MP4 ou glissez plusieurs vidéos dans la zone : la conversion démarre toute seule. Pour un lien, collez l'adresse et touchez Convertir en MP3."
+    "Attendez la barre de progression",
+    "La piste audio est décodée puis encodée sur votre appareil. Lors de notre test, un extrait 1080p d’une minute a pris environ 6 secondes, et une vidéo de 10 minutes environ 45 secondes."
    ],
    [
-    "Téléchargez votre MP3",
-    "Écoutez le résultat sur la page, puis touchez Télécharger. Vous avez converti plusieurs fichiers ? Utilisez Tout télécharger pour les enregistrer d'un coup."
+    "Écoutez et téléchargez",
+    "Écoutez le résultat sur la page, puis touchez Télécharger. Avec plusieurs fichiers, Tout télécharger enregistre tous les MP3 d’un coup."
    ]
   ],
   "sections": [
    {
-    "h2": "MP4 ou MP3 : taille des fichiers et meilleur débit",
+    "h2": "Quelle sera la taille du MP3 ?",
     "paras": [
-     "Une minute de vidéo MP4 en 720p pèse environ 20 MB, surtout à cause de l'image. Le MP3 ne garde que le son : la même minute tombe à environ 1 MB en 128 kbps et 2,4 MB en 320 kbps. Autrement dit, un enregistrement d'une heure passe de plus d'un gigaoctet à environ 58 MB en 128 kbps.",
-     "La plupart des fichiers MP4 stockent leur son en AAC, à environ 128 à 256 kbps. 192 kbps conserve donc presque tout dans les vidéos du quotidien, alors que monter bien au-dessus de la source ne fait qu'alourdir le fichier. Voici un petit guide :"
+     "Presque tout le poids d’un MP4 vient de l’image. Une fois l’image retirée, le fichier fond littéralement. Voici des résultats réels tirés de nos propres tests :"
     ],
     "list": [
      [
-      "Clips musicaux et concerts",
-      "256 ou 320 kbps en stéréo garde les instruments et les voix bien nets."
+      "Enregistrement d’écran 720p de 10 minutes",
+      "MP4 de 189 MB → MP3 de 14 MB à 192 kbps, en 45 secondes environ dans Chrome."
      ],
      [
-      "Cours, webinaires et réunions",
-      "128 kbps avec Mono activé donne une voix claire dans un fichier léger."
+      "Vidéo de téléphone 1080p d’une minute (MOV)",
+      "58 MB → 1,4 MB à 192 kbps, en 6 secondes environ."
      ],
      [
-      "Vidéos de téléphone et vlogs",
-      "192 kbps est un bon compromis pour de la voix mêlée à une musique de fond."
+      "Cours d’une heure",
+      "Environ 58 MB à 128 kbps. Activez Mono et tout le débit va à la seule voix."
      ],
      [
-      "Longues conférences via un lien",
-      "L'onglet Coller un lien propose aussi 64 et 96 kbps, quand la taille compte plus que les détails."
+      "Règle générale",
+      "Chaque minute de MP3 pèse environ 0,96 MB à 128 kbps, 1,44 MB à 192 kbps et 2,4 MB à 320 kbps, quelle que soit la résolution de la vidéo."
      ]
     ],
     "image": {
-     "alt": "Taille d'un fichier MP4 et d'un MP3"
+     "alt": "Taille d’un fichier MP4 comparée à un MP3"
     }
    },
    {
-    "h2": "Importer ou Coller un lien : quelle option choisir ?",
+    "h2": "Quel débit choisir ?",
+    "paras": [
+     "Dans la plupart des fichiers MP4, le son est en AAC entre 128 et 256 kbps. Un MP3 ne peut conserver que ce qui existe déjà : choisir un débit bien supérieur à la source alourdit le fichier sans améliorer le son."
+    ],
     "list": [
      [
-      "Importer, l'option la plus privée",
-      "Les vidéos de téléphone, captures d'écran et exports de réunions sont lus et encodés sur votre propre appareil. Chaque fichier peut peser jusqu'à 500 MB."
+      "Cours, réunions, webinaires",
+      "128 kbps avec Mono activé. La voix reste claire et une heure tient dans environ 58 MB."
      ],
      [
-      "Coller un lien, pour les vidéos déjà en ligne",
-      "Inutile de télécharger d'abord un énorme MP4. Les liens .mp4 directs et les sites de vidéos gratuits comme Internet Archive ou Vimeo (quand le téléchargement est activé) fonctionnent. Les diffusions en direct et les vidéos de plus de trois heures environ ne sont pas prises en charge."
+      "Vlogs et vidéos de téléphone",
+      "192 kbps, un choix sûr pour des voix mêlées à une musique de fond."
      ],
      [
-      "Conversion par lots",
-      "Sélectionnez plusieurs fichiers MP4 à la fois. Ils sont convertis l'un après l'autre, pour que votre téléphone ou ordinateur reste réactif."
+      "Clips musicaux et concerts",
+      "256 ou 320 kbps en stéréo, pour garder des voix et des instruments nets."
      ],
      [
-      "Liens YouTube et TikTok",
-      "Ils ont leurs propres pages. Utilisez le convertisseur [YouTube en MP3](/youtube-to-mp3) pour YouTube ; la prise en charge de TikTok arrive bientôt."
+      "Très longs enregistrements depuis un lien",
+      "L’onglet Coller un lien propose aussi 64 et 96 kbps quand la taille compte avant tout."
+     ]
+    ]
+   },
+   {
+    "h2": "Importer ou Coller un lien : que choisir ?",
+    "list": [
+     [
+      "Importer (le plus privé)",
+      "Pour les vidéos présentes sur votre appareil : vidéos de téléphone, captures d’écran, exports Zoom ou Teams. Le fichier est lu et converti en local."
+     ],
+     [
+      "Coller un lien (sans téléchargement préalable)",
+      "Pour un MP4 déjà en ligne. Les liens .mp4 directs et les sites qui autorisent le téléchargement, comme Internet Archive ou Vimeo avec téléchargement activé, fonctionnent. Les diffusions en direct ne sont pas prises en charge, et les vidéos par lien peuvent durer jusqu’à trois heures environ."
+     ],
+     [
+      "Liens YouTube",
+      "Utilisez la page dédiée [YouTube en MP3](/youtube-to-mp3), qui propose des options propres à YouTube, comme couper un extrait."
+     ],
+     [
+      "Autres formats vidéo",
+      "Du MOV, du MKV, du WEBM ou de l’AVI ? Le convertisseur [vidéo en MP3](/video-to-mp3) les prend tous en charge."
+     ]
+    ]
+   },
+   {
+    "h2": "Votre MP4 n’a pas de son ou ne se convertit pas ? Essayez ceci",
+    "list": [
+     [
+      "« Aucun son n’a été trouvé dans ce fichier »",
+      "La vidéo n’a pas de piste audio, ce qui arrive souvent avec les enregistrements d’écran faits sans micro ni son système. Lisez-la dans une autre appli pour vérifier."
+     ],
+     [
+      "« Impossible de lire ce fichier »",
+      "Le fichier est endommagé, incomplet ou protégé contre la copie (DRM). Les films achetés et certains téléchargements de plateformes de streaming ne peuvent être convertis par aucun outil."
+     ],
+     [
+      "Une vidéo d’iPhone ne s’ouvre pas",
+      "Dans Safari, choisissez l’extrait dans la Photothèque. Si cela échoue encore, enregistrez-le d’abord dans l’app Fichiers et sélectionnez-le à partir de là."
+     ],
+     [
+      "Un gros fichier échoue sur téléphone",
+      "Les téléphones disposent de moins de mémoire libre. Essayez le même fichier sur un ordinateur, ou coupez-le d’abord en plusieurs parties."
      ]
     ]
    },
    {
     "h2": "Convertir un MP4 en MP3 sur iPhone, Android, Mac et Windows",
     "paras": [
-     "Comme le convertisseur fonctionne dans le navigateur, il n'y a aucune appli à installer. Sur iPhone ou iPad, ouvrez cette page dans Safari et touchez Choisir des fichiers MP4. iOS vous propose alors Photothèque ou Choisir un fichier : les vidéos de Photos comme celles de l'app Fichiers fonctionnent. Après avoir touché Télécharger, le MP3 apparaît dans Fichiers, dans le dossier Téléchargements.",
-     "Sur Android, Chrome ouvre votre galerie ou votre gestionnaire de fichiers, et les fichiers terminés arrivent dans Téléchargements. Sur Mac ou PC Windows, il suffit de glisser les fichiers MP4 depuis le Finder ou l'Explorateur de fichiers dans la zone. Safari, Chrome, Edge et Firefox fonctionnent tous. Pour les très grosses vidéos, un ordinateur est généralement plus rapide, car il a plus de mémoire qu'un téléphone."
+     "Tout se passe dans le navigateur, les étapes sont donc les mêmes partout. Sur **iPhone ou iPad**, ouvrez cette page dans Safari, touchez Choisir des fichiers MP4 et choisissez dans la Photothèque ou dans Fichiers. Le MP3 est enregistré dans l’app Fichiers, sous Téléchargements. iOS ne propose aucun moyen intégré d’enregistrer un MP4 en MP3 : l’app Raccourcis ne sait extraire l’audio qu’en M4A.",
+     "Sur **Android**, Chrome ouvre votre galerie ou votre gestionnaire de fichiers, et les MP3 sont enregistrés dans Téléchargements. Sur **Mac ou PC Windows**, glissez les MP4 depuis le Finder ou l’Explorateur de fichiers dans la zone. Safari, Chrome, Edge et Firefox fonctionnent tous."
     ],
     "image": {
      "alt": "MP4 en MP3 sur iPhone et Android"
@@ -795,115 +864,62 @@
     "cta": "Essayer le convertisseur MP4 en MP3"
    },
    {
-    "h2": "Ce convertisseur MP4 en MP3 est-il sûr et privé ?",
+    "h2": "Vous préférez un logiciel ? Deux alternatives gratuites",
     "paras": [
-     "Vos vidéos sont personnelles, la confidentialité compte donc ici. Quand vous importez un fichier, [MP3 Converter](/) lit le MP4 dans votre navigateur avec Web Audio, FFmpeg compilé en WebAssembly et l'encodeur MP3 LAME. Résultat : le fichier n'est jamais envoyé sur un serveur."
-    ],
-    "list": [
-     [
-      "Aucun envoi sur un serveur",
-      "Les vidéos importées restent sur votre appareil du début à la fin."
-     ],
-     [
-      "Les liens sont nettoyés",
-      "Les fichiers de Coller un lien sont traités sur notre serveur et supprimés dans les 30 minutes."
-     ],
-     [
-      "Rien à installer",
-      "Aucune appli, extension ou gestionnaire de téléchargement qui pourrait contenir un logiciel publicitaire."
-     ],
-     [
-      "Ni compte ni filigrane",
-      "Vous ne donnez jamais d'adresse e-mail, et le MP3 ne contient que votre audio."
-     ]
+     "Si vous convertissez des vidéos tous les jours, un outil de bureau peut être pratique. Dans **VLC**, ouvrez Média → Convertir / Enregistrer, ajoutez le MP4, choisissez le profil *Audio – MP3* et indiquez un fichier de destination. Avec **FFmpeg** en ligne de commande, lancez `ffmpeg -i video.mp4 -vn -b:a 192k audio.mp3`, où `-vn` supprime la vidéo et `-b:a` fixe le débit.",
+     "Cette page repose sur les mêmes briques, FFmpeg et l’encodeur MP3 LAME, sans rien à installer. C’est la solution la plus rapide pour quelques fichiers, sur un téléphone ou sur un ordinateur où vous ne pouvez pas installer de logiciel."
     ]
    },
    {
-    "h2": "Le passage de MP4 en MP3 fait-il perdre de la qualité ? Réponses rapides",
+    "h2": "Convertir un MP4 en MP3 fait-il perdre en qualité ?",
     "paras": [
-     "Le MP3 est un format avec perte : la conversion n'est donc pas sans perte. Cependant, le son de la plupart des fichiers MP4 est déjà de l'AAC compressé. En convertissant à 192 kbps ou plus, la différence reste très difficile à entendre. Votre vidéo d'origine n'est jamais modifiée : vous obtenez simplement un nouveau fichier MP3 à côté.",
-     "On nous demande aussi si le MP3 garde l'image. Non, car le MP3 est un format uniquement audio. Si une vidéo a un son surround 5.1, l'outil mixe tous les canaux en stéréo, pour conserver les dialogues de l'enceinte centrale. Et si un fichier n'a aucune piste son, comme un enregistrement d'écran muet, vous voyez un message clair plutôt qu'un MP3 vide."
+     "Le MP3 est un format avec perte : la conversion n’est donc pas identique au bit près. En pratique, le son de la plupart des MP4 est déjà compressé en AAC, et à partir de 192 kbps la différence est très difficile à entendre. Votre vidéo d’origine n’est jamais modifiée.",
+     "Le son surround (5.1) est réduit en stéréo, ce qui conserve les dialogues du canal central. Chaque MP3 est enregistré en 44,1 kHz, la fréquence standard de l’audio MP3."
     ]
    },
    {
-    "h2": "Pourquoi transformer une vidéo en MP3 ?",
-    "list": [
-     [
-      "Enregistrements de réunions et de cours",
-      "Transformez un MP4 Zoom ou Teams en MP3 à réécouter en marchant ou dans les transports."
-     ],
-     [
-      "Idées de chansons et répétitions",
-      "Enregistrez en MP3 une répétition filmée au téléphone pour la partager avec le groupe."
-     ],
-     [
-      "Sonneries et extraits courts",
-      "Convertissez d'abord, puis gardez les 30 meilleures secondes avec notre [outil pour couper un MP3](/mp3-cutter)."
-     ],
-     [
-      "Autres formats vidéo",
-      "Vous avez aussi des fichiers MOV, MKV ou AVI ? Le convertisseur [vidéo en MP3](/video-to-mp3) les gère tous."
-     ]
-    ]
-   },
-   {
-    "h2": "Pourquoi utiliser un convertisseur MP4 en MP3 en ligne ?",
+    "h2": "Utilisez les vidéos en ligne de manière responsable",
     "paras": [
-     "Des logiciels comme VLC ou Audacity peuvent enregistrer le son d'une vidéo, mais il faut d'abord les installer et fouiller dans les menus d'export. Un convertisseur en ligne, lui, s'ouvre dans un onglet et fonctionne tout de suite. C'est le moyen le plus rapide de passer un MP4 en MP3 sur un ordinateur professionnel, un poste à l'école ou un téléphone presque plein.",
-     "Mais tous les sites de conversion gratuits ne se valent pas. Beaucoup envoient toute votre vidéo sur leurs serveurs, limitent la taille des fichiers ou exigent une inscription avant le téléchargement. Celui-ci lit les fichiers MP4 importés sur votre propre appareil, accepte des fichiers jusqu'à 500 MB et vous laisse télécharger sans compte. Il gère aussi plusieurs vidéos d'un coup : transformer un dossier entier d'extraits en MP3 ne prend que quelques gestes."
-    ]
-   },
-   {
-    "h2": "Convertir des vidéos en lien de façon responsable",
-    "paras": [
-     "Ne convertissez que les vidéos que vous avez créées, celles du domaine public ou sous licence Creative Commons, ou les contenus que vous avez le droit d'utiliser. Beaucoup de films, clips et émissions sont protégés par le droit d'auteur, et certains sites interdisent le téléchargement dans leurs conditions. Les vidéos protégées contre la copie (DRM) des services de streaming ne peuvent pas du tout être lues par cet outil."
+     "Ne convertissez que des vidéos que vous avez réalisées vous-même, des vidéos du domaine public ou sous licence Creative Commons, ou des contenus que vous avez le droit d’utiliser. Beaucoup de films, de clips musicaux et d’émissions sont protégés par le droit d’auteur. Consultez notre [politique de droits d’auteur et DMCA](/copyright) pour en savoir plus."
     ]
    }
   ],
   "faqs": [
    {
     "q": "Comment convertir un MP4 en MP3 gratuitement ?",
-    "a": "Ouvrez cette page, choisissez une qualité, touchez Choisir des fichiers MP4 et sélectionnez votre vidéo. Le MP3 est prêt en quelques secondes et c'est gratuit, sans inscription ni filigrane."
+    "a": "Choisissez une qualité, touchez Choisir des fichiers MP4 et sélectionnez la vidéo. Le MP3 est prêt en quelques secondes, gratuitement, sans inscription et sans filigrane."
+   },
+   {
+    "q": "Combien de temps cela prend-il ?",
+    "a": "Lors de nos tests dans Chrome, un extrait 1080p d’une minute a pris environ 6 secondes et une vidéo 720p de 10 minutes environ 45 secondes. La vitesse dépend de votre appareil, pas de votre connexion Internet."
+   },
+   {
+    "q": "Mes vidéos sont-elles envoyées sur votre serveur ?",
+    "a": "Non. Les vidéos importées sont converties dans votre navigateur et ne quittent jamais votre appareil. Seule l’option Coller un lien utilise notre serveur, et ces fichiers sont supprimés sous 30 minutes."
    },
    {
     "q": "Puis-je convertir un lien MP4 en MP3 ?",
-    "a": "Oui. Passez à l'onglet Coller un lien, collez une adresse .mp4 directe ou la page qui héberge la vidéo, choisissez un débit et touchez Convertir en MP3. Pour les liens YouTube, utilisez plutôt notre outil YouTube en MP3."
+    "a": "Oui. Ouvrez l’onglet Coller un lien, collez une adresse .mp4 directe ou une page d’un site qui autorise le téléchargement, choisissez un débit et touchez Convertir en MP3. Les liens YouTube se convertissent avec l’outil YouTube en MP3."
    },
    {
-    "q": "Puis-je convertir un MP4 en MP3 à 320 kbps ?",
-    "a": "Oui. Choisissez 320 kbps avant d'ajouter le fichier. C'est la meilleure qualité MP3, même si 192 kbps correspond déjà au son de la plupart des vidéos MP4."
+    "q": "Quel est le meilleur débit pour convertir un MP4 en MP3 ?",
+    "a": "192 kbps pour la plupart des vidéos, 128 kbps avec Mono pour la voix et 320 kbps pour la musique. Viser bien au-dessus du son AAC contenu dans le MP4 ne fait qu’alourdir le fichier."
+   },
+   {
+    "q": "Pourquoi mon MP4 n’a-t-il pas de son après la conversion ?",
+    "a": "La vidéo n’a probablement pas de piste audio, comme un enregistrement d’écran fait sans le son. Lisez-la dans une autre appli pour vérifier. Les vidéos protégées contre la copie (DRM) ne peuvent pas être converties du tout."
    },
    {
     "q": "Comment convertir un MP4 en MP3 sur iPhone ?",
-    "a": "Ouvrez cette page dans Safari, touchez Choisir des fichiers MP4 et sélectionnez la vidéo dans Photothèque ou Fichiers. Une fois terminé, touchez Télécharger et retrouvez le MP3 dans l'app Fichiers, sous Téléchargements."
-   },
-   {
-    "q": "Mes vidéos importées sont-elles envoyées sur votre serveur ?",
-    "a": "Non. Les fichiers importés sont convertis dans votre navigateur et ne quittent jamais votre appareil. Seule l'option Coller un lien utilise notre serveur, et ces fichiers sont supprimés dans les 30 minutes."
+    "a": "Ouvrez cette page dans Safari, touchez Choisir des fichiers MP4 et sélectionnez la vidéo dans la Photothèque ou dans Fichiers. Après la conversion, touchez Télécharger : le MP3 se trouve dans l’app Fichiers, sous Téléchargements."
    },
    {
     "q": "Puis-je convertir plusieurs fichiers MP4 à la fois ?",
-    "a": "Oui. Sélectionnez ou glissez plusieurs vidéos ensemble. Elles sont converties une par une, et un bouton Tout télécharger apparaît dès que deux fichiers ou plus sont prêts."
+    "a": "Oui. Sélectionnez ou glissez plusieurs vidéos. Elles sont converties l’une après l’autre, et Tout télécharger apparaît dès que deux fichiers ou plus sont prêts."
    },
    {
-    "q": "Y a-t-il une limite de taille de fichier ?",
-    "a": "Chaque fichier importé peut peser jusqu'à 500 MB. Les vidéos en lien peuvent durer jusqu'à environ trois heures, et les diffusions en direct ne sont pas prises en charge."
-   },
-   {
-    "q": "Pourquoi mon MP4 n'a-t-il pas été converti ?",
-    "a": "En général, la vidéo n'a pas de piste son, elle est endommagée ou protégée contre la copie (DRM). Essayez d'abord de la lire dans une autre appli pour vérifier qu'elle a du son."
-   },
-   {
-    "q": "Puis-je convertir d'autres vidéos en MP3 ici ?",
-    "a": "Oui, pour la plupart des formats courants. L'outil d'import est optimisé pour MP4, M4V et MOV, et il sait généralement ouvrir aussi MKV, WEBM et AVI. Pour la compatibilité la plus large, utilisez notre convertisseur vidéo en MP3."
-   },
-   {
-    "q": "Un convertisseur vidéo en audio en ligne vaut-il un logiciel ?",
-    "a": "Pour extraire l'audio, oui. Cette page utilise FFmpeg et l'encodeur LAME, les mêmes outils open source que beaucoup de logiciels, et elle fonctionne sur votre propre appareil sans rien installer."
-   },
-   {
-    "q": "Puis-je coller un lien TikTok ici ?",
-    "a": "Pas encore. TikTok en MP3 arrive bientôt. En attendant, si vous avez enregistré une vidéo TikTok sur votre appareil, vous pouvez importer ce fichier ici."
+    "q": "Y a-t-il une limite de taille ?",
+    "a": "Jusqu’à 500 MB par fichier importé. Les vidéos par lien peuvent durer jusqu’à trois heures environ ; les diffusions en direct ne sont pas prises en charge."
    }
   ]
  },
@@ -1315,15 +1331,15 @@
    "formats": "WAV, WAVE, AIFF",
    "buttonLabel": "Choisir des fichiers WAV"
   },
-  "seoTitle": "Convertir WAV en MP3 – Gratuit, rapide et de qualité",
+  "seoTitle": "Convertir WAV en MP3 – Gratuit, rapide et haute qualité",
   "metaDescription": "Convertissez vos fichiers WAV en MP3 en ligne en quelques secondes. Un excellent son pour une fraction de la taille : gratuit, sans inscription ni logiciel.",
   "h1": "Convertisseur WAV en MP3 et MP3 en WAV",
-  "lead": "Notre convertisseur WAV en MP3 gratuit transforme vos gros enregistrements WAV en petits fichiers MP3 qui sonnent toujours très bien. Il démarre à 320 kbps, traite des lots entiers d’un coup et fonctionne directement dans votre navigateur : votre audio ne quitte jamais votre ordinateur ou votre téléphone. Besoin de l’inverse ? Passez sur MP3 → WAV pour transformer des MP3 en WAV non compressé, pour le montage, les CD ou les logiciels de DJ.",
+  "lead": "Réduisez vos gros enregistrements WAV en MP3 qui sonnent toujours très bien. Une chanson de 4 minutes passe de 40 MB à environ 9 MB en 320 kbps. Convertissez des lots entiers d’un coup, directement dans votre navigateur : vos morceaux inédits et vos interviews privées ne quittent jamais votre ordinateur. Besoin de l’inverse ? Passez sur MP3 → WAV.",
   "intro": {
-   "h2": "Pourquoi convertir un WAV en MP3, ou un MP3 en WAV ?",
+   "h2": "Pourquoi convertir un WAV en MP3 ?",
    "paras": [
-    "Le WAV stocke le son sans aucune compression. Un WAV de qualité CD (16 bits, 44,1 kHz, stéréo) tourne à environ 1 411 kbps, soit à peu près 10 MB par minute. C’est idéal pour enregistrer et monter. En revanche, c’est beaucoup trop lourd pour un e-mail, une messagerie ou un téléphone qui manque de place.",
-    "Un MP3 à 320 kbps occupe environ 2,4 MB par minute, et seulement 1,4 MB à 192 kbps. Convertir un WAV en MP3 réduit donc généralement la taille de 75 à 90 %, alors que la plupart des gens n’entendent aucune différence sur des enceintes ou un casque ordinaires. L’outil accepte aussi l’AIFF, le format non compressé utilisé par de nombreuses applications Mac. Et la même page sert de convertisseur MP3 en WAV dès qu’une application ou un appareil exige des fichiers WAV."
+    "Le WAV n’est pas compressé. Un WAV en qualité CD (16 bits, 44,1 kHz, stéréo) utilise 1 411 kbps, soit environ 10 MB par minute. C’est parfait pendant l’enregistrement et le montage, mais trop lourd pour l’envoyer par e-mail, le mettre en ligne sur la plupart des sites ou en garder des centaines sur un téléphone.",
+    "Un MP3 à 320 kbps n’occupe qu’environ 2,4 MB par minute, et 1,4 MB seulement à 192 kbps. Lors de notre test, une chanson WAV de 4 minutes (40 MB) est devenue un MP3 de 9,2 MB à 320 kbps en 20 secondes environ, ou de 5,5 MB à 192 kbps. La plupart des auditeurs n’entendent aucune différence sur des enceintes et des écouteurs ordinaires."
    ],
    "image": {
     "alt": "Convertisseur WAV en MP3"
@@ -1332,31 +1348,31 @@
   "howImage": {
    "alt": "Comment convertir un WAV en MP3"
   },
-  "howCta": "Convertir un WAV en MP3",
+  "howCta": "Convertir un WAV en MP3 maintenant",
   "steps": [
    [
-    "Choisissez le sens et la qualité",
-    "Laissez WAV → MP3 sélectionné pour alléger vos fichiers, ou appuyez sur MP3 → WAV pour faire l’inverse. Pour le MP3, la page démarre à 320 kbps ; modifiez ce réglage avant d’ajouter vos fichiers si vous voulez plus léger."
+    "Laissez WAV → MP3 sélectionné",
+    "La page démarre à 320 kbps, la meilleure qualité MP3. Baissez-la avant d’ajouter vos fichiers si vous voulez plus léger, ou touchez MP3 → WAV pour faire l’inverse."
    ],
    [
-    "Ajoutez vos fichiers",
-    "Appuyez sur le bouton ou glissez un lot de fichiers dans la zone. Tout fichier .wav fonctionne, qu’il vienne d’Audacity, de GarageBand, de Logic Pro ou d’un enregistreur de terrain."
+    "Ajoutez vos fichiers WAV",
+    "Touchez Choisir des fichiers WAV ou glissez un lot dans la zone, jusqu’à 500 MB par fichier. Les exports d’Audacity, GarageBand, Logic Pro, Ableton ou d’un enregistreur de terrain fonctionnent tous."
    ],
    [
-    "Laissez convertir",
-    "Les fichiers sont encodés l’un après l’autre dans votre navigateur, chacun avec sa barre de progression."
+    "Laissez la conversion se faire",
+    "Les fichiers sont encodés l’un après l’autre dans votre navigateur, chacun avec sa propre barre de progression."
    ],
    [
     "Téléchargez les MP3",
-    "Chaque MP3 garde le nom du fichier d’origine. Appuyez sur Télécharger, ou sur Tout télécharger si vous en avez converti plusieurs."
+    "Chaque MP3 garde le nom d’origine. Touchez Télécharger, ou Tout télécharger pour un lot."
    ]
   ],
   "sections": [
    {
     "h2": "Convertir un MP3 en WAV",
     "paras": [
-     "Parfois, il faut faire l’inverse. Les éditeurs audio, logiciels de DJ, applications de gravure de CD et certains formulaires d’envoi demandent des fichiers WAV, et quelques vieux programmes n’ouvrent rien d’autre. Passez le convertisseur sur MP3 → WAV, choisissez 44,1 kHz pour la musique et les CD ou 48 kHz pour les projets vidéo, puis ajoutez vos MP3. Chacun devient un fichier .wav PCM 16 bits standard.",
-     "Gardez en tête ce que cette conversion peut faire ou non. Le WAV reproduit exactement le son du MP3 : le modifier puis l’enregistrer à nouveau n’ajoute donc aucune perte. En revanche, il ne peut pas restaurer les détails que le MP3 a déjà supprimés, et le fichier grimpe à environ 10 MB par minute. Pour la voix, activer Mono divise cette taille par deux, car le WAV stocke chaque canal en entier."
+     "Il faut parfois faire l’inverse. Les éditeurs audio, les logiciels de DJ, les applis de gravure de CD et certains formulaires d’envoi demandent du WAV, et quelques vieux programmes n’ouvrent rien d’autre. Passez le convertisseur sur MP3 → WAV, choisissez 44,1 kHz pour la musique et les CD ou 48 kHz pour les projets vidéo, puis ajoutez vos fichiers MP3. Chacun devient un fichier .wav PCM 16 bits standard.",
+     "Gardez en tête ce que cette conversion peut faire, et ce qu’elle ne peut pas faire. Le WAV conserve exactement le son du MP3 : le modifier et l’enregistrer à nouveau n’ajoute aucune perte. En revanche, il ne peut pas restaurer les détails déjà supprimés par le MP3, et le fichier grossit jusqu’à environ 10 MB par minute. Pour la voix, activer Mono divise cette taille par deux, car le WAV stocke chaque canal en entier."
     ],
     "list": [
      [
@@ -1365,22 +1381,39 @@
      ],
      [
       "Graver un CD audio",
-      "Beaucoup d’applications de gravure attendent du WAV 16 bits à 44,1 kHz, exactement ce que crée l’option 44,1 kHz."
+      "Beaucoup d’applis de gravure attendent du WAV 44,1 kHz en 16 bits, exactement ce que crée l’option 44,1 kHz."
      ],
      [
       "Matériel de DJ et samplers",
-      "Certains lecteurs et samplers ne lisent que le WAV depuis une clé USB ou une carte SD."
+      "Certains lecteurs et samplers matériels ne lisent que le WAV depuis une clé USB ou une carte SD."
      ]
     ]
    },
    {
-    "h2": "Taille WAV vs MP3 en un coup d’œil",
+    "h2": "Taille WAV ou MP3 : exemples réels",
     "paras": [
-     "Voici la place qu’occupe une minute d’audio stéréo dans chaque format. Comme vous le voyez, même le meilleur réglage MP3 est environ quatre fois plus léger que le WAV.",
-     "Concrètement, une chanson de 4 minutes passe d’environ 40 MB à moins de 10 MB à 320 kbps. De même, une interview de 30 minutes enregistrée en WAV passe d’environ 300 MB à 29 MB environ à 128 kbps."
+     "Une minute d’audio stéréo pèse environ 10 MB en WAV qualité CD et 2,4 MB en MP3 à 320 kbps. Même au réglage MP3 le plus élevé, le fichier est environ quatre fois plus léger."
+    ],
+    "list": [
+     [
+      "Chanson de 4 minutes",
+      "WAV de 40 MB → 9,2 MB à 320 kbps ou 5,5 MB à 192 kbps (notre test)."
+     ],
+     [
+      "Interview de 30 minutes",
+      "Environ 300 MB en WAV → environ 29 MB à 128 kbps. Activez Mono pour que tout le débit aille à la voix."
+     ],
+     [
+      "Épisode de podcast d’une heure",
+      "Environ 600 MB en WAV → environ 58 MB à 128 kbps, assez léger pour n’importe quel hébergeur de podcast."
+     ],
+     [
+      "WAV de studio 24 bits, 48 kHz",
+      "Environ 17 MB par minute. Le MP3 a la même taille que s’il venait d’un WAV qualité CD, car la taille d’un MP3 ne dépend que du débit et de la durée."
+     ]
     ],
     "image": {
-     "alt": "Taille de fichier WAV vs MP3"
+     "alt": "Taille d’un fichier WAV comparée à un MP3"
     }
    },
    {
@@ -1388,41 +1421,40 @@
     "list": [
      [
       "320 kbps",
-      "Morceaux finis, mixes et masters à partager dans la meilleure qualité MP3."
+      "Morceaux finis, mixages et masters que vous partagez ou vendez en MP3."
      ],
      [
       "256 kbps",
-      "Un son quasi identique dans un fichier un peu plus léger, parfait pour les playlists."
+      "Un son quasi identique dans un fichier 20 % plus léger, idéal pour les playlists."
      ],
      [
       "192 kbps",
-      "Démos et premiers mixages à envoyer à votre groupe ou à vos clients."
+      "Démos et premiers mixages pour les membres du groupe ou les clients."
      ],
      [
       "128 kbps avec Mono",
-      "Enregistrements vocaux, interviews et dictées réalisés avec un enregistreur comme le Zoom H1n."
+      "Enregistrements de voix, interviews et dictées faites avec un enregistreur de terrain comme le Zoom H1n."
      ]
     ]
    },
    {
-    "h2": "La conversion WAV en MP3 est-elle sans perte ?",
+    "h2": "Convertir un WAV en MP3 est-il sans perte ?",
     "paras": [
-     "Non. Le WAV est sans perte, alors que le MP3 est un format avec perte qui supprime des sons que la plupart des gens n’entendent pas. À 256 ou 320 kbps, la différence est très difficile à percevoir sur la plupart des enceintes. Malgré tout, chaque conversion en MP3 retire un peu de détail : c’est un aller simple.",
-     "C’est pourquoi il vaut mieux considérer le WAV comme votre master et le MP3 comme la copie à partager. Pour monter, remasteriser ou créer un autre format plus tard, repartez du WAV. Et si vous conservez aussi des fichiers FLAC sans perte, notre convertisseur [FLAC en MP3](/flac-to-mp3) fonctionne exactement de la même façon."
+     "Non. Le WAV est sans perte, le MP3 avec perte : l’encodeur supprime des sons que l’on entend rarement. À 256 ou 320 kbps, la différence est très difficile à percevoir. Mais chaque conversion en MP3 retire un peu de détail, et reconvertir un MP3 en WAV ne le fait pas revenir.",
+     "Considérez donc le WAV comme votre master et le MP3 comme la copie à partager. Faites vos montages, remasterisations et autres formats à partir du WAV. S’il vous faut un fichier sans perte plus léger que le WAV, le FLAC divise la taille par deux sans aucune perte ; notre page [FLAC en MP3](/flac-to-mp3) explique quand l’utiliser."
     ]
    },
    {
-    "h2": "Convertir des WAV 24 bits, 32 bits et 48 kHz",
+    "h2": "Fichiers 24 bits, 32 bits flottants et 48 kHz",
     "paras": [
-     "Les enregistrements issus d’une STAN (DAW) ou d’une caméra sont souvent en 24 bits ou en 32 bits flottants, à 48 kHz ou plus. Le convertisseur les lit aussi : votre navigateur décode la plupart d’entre eux, et FFmpeg en WebAssembly prend le relais pour les autres. Chaque MP3 est ensuite créé à 44,1 kHz, la fréquence standard pour la musique en MP3.",
-     "Les WAV multicanaux, comme les mixages 5.1 de films, sont réduits en stéréo : aucun canal n’est simplement supprimé. Une limite de 500 MB par fichier s’applique, soit environ 50 minutes de WAV stéréo en qualité CD."
+     "Les enregistrements issus d’un logiciel de MAO ou d’une caméra sont souvent en 24 bits ou en 32 bits flottants, à 48 kHz ou plus. Le convertisseur les lit : votre navigateur décode la plupart des fichiers, et FFmpeg prend le relais pour les autres. Chaque MP3 est écrit en 44,1 kHz, la fréquence standard de la musique en MP3, à débit constant.",
+     "Les WAV multicanaux, comme les mixages de film en 5.1, sont réduits en stéréo : aucun canal n’est perdu. La limite de 500 MB par fichier correspond à environ 50 minutes de stéréo qualité CD ou 30 minutes d’audio 24 bits, 48 kHz."
     ]
    },
    {
-    "h2": "WAV en MP3 sur Mac, Windows, iPhone et Android",
+    "h2": "Convertir un WAV en MP3 sur Mac, Windows, iPhone et Android",
     "paras": [
-     "Sur Mac ou PC Windows, glissez vos fichiers WAV depuis le Finder ou l’Explorateur de fichiers dans la zone, et les MP3 arrivent dans votre dossier Téléchargements. C’est la méthode la plus rapide pour les exports de GarageBand, Logic Pro, Audacity ou tout autre éditeur audio.",
-     "Sur iPhone, ouvrez cette page dans Safari, appuyez sur Choisir des fichiers WAV et sélectionnez vos enregistrements dans l’app Fichiers ; la plupart des applis d’enregistrement permettent d’abord de partager un WAV vers Fichiers. Sur Android, Chrome ouvre votre gestionnaire de fichiers et les fichiers terminés vont dans Téléchargements. Dans les deux cas, rien à installer."
+     "Sur **Mac ou PC Windows**, glissez les fichiers WAV depuis le Finder ou l’Explorateur de fichiers dans la zone ; les MP3 arrivent dans Téléchargements. Sur **iPhone**, ouvrez cette page dans Safari, touchez Choisir des fichiers WAV et sélectionnez l’enregistrement dans l’app Fichiers. La plupart des applis d’enregistrement peuvent d’abord partager un WAV vers Fichiers. Sur **Android**, Chrome ouvre votre gestionnaire de fichiers et les MP3 sont enregistrés dans Téléchargements."
     ],
     "image": {
      "alt": "WAV en MP3 sur iPhone et Android"
@@ -1430,18 +1462,25 @@
     "cta": "Essayer le convertisseur WAV en MP3"
    },
    {
-    "h2": "Une conversion WAV sûre et privée",
+    "h2": "Autres façons de convertir un WAV en MP3",
     "paras": [
-     "Les chansons inédites et les interviews privées méritent qu’on en prenne soin. C’est pourquoi [MP3 Converter](/) encode vos fichiers WAV dans le navigateur avec l’encodeur MP3 LAME, sans rien envoyer à un serveur. Bonus : la conversion est rapide même pour les gros fichiers, puisqu’il n’y a aucun envoi à attendre."
+     "Si vous travaillez déjà avec un logiciel audio, ces options gratuites font le même travail. Dans **Audacity**, ouvrez le WAV et choisissez File → Export Audio, puis MP3. Dans l’app **Apple Music** sur Mac, réglez Settings → Files → Import Settings sur MP3 Encoder, sélectionnez le morceau et choisissez File → Convert → Create MP3 Version. Avec **FFmpeg**, lancez `ffmpeg -i song.wav -b:a 320k song.mp3`.",
+     "Cette page est la solution la plus rapide pour un lot de fichiers, sur un téléphone ou sur un ordinateur où vous ne pouvez rien installer. Elle utilise l’encodeur LAME, le même qu’Audacity pour le MP3."
+    ]
+   },
+   {
+    "h2": "Privé par conception",
+    "paras": [
+     "Les morceaux inédits et les interviews privées méritent qu’on en prenne soin. [MP3 Converter](/) encode vos fichiers WAV dans le navigateur avec l’encodeur MP3 LAME, et rien n’est envoyé. C’est aussi ce qui le rend rapide : la vitesse dépend de votre ordinateur, pas de votre débit d’envoi."
     ],
     "list": [
      [
       "Rien ne quitte votre appareil",
-      "Vos enregistrements sont lus et encodés en local."
+      "Les enregistrements sont lus et encodés en local."
      ],
      [
       "Gratuit, sans piège",
-      "Pas d’inscription, pas de filigrane, pas de limite quotidienne."
+      "Ni inscription, ni filigrane, ni limite quotidienne."
      ],
      [
       "Aucun logiciel",
@@ -1450,23 +1489,23 @@
     ]
    },
    {
-    "h2": "Quand musiciens et podcasteurs convertissent leurs WAV en MP3",
+    "h2": "Pourquoi musiciens et podcasteurs convertissent leurs WAV",
     "list": [
      [
       "Partager des démos",
-      "Envoyez un mix à votre groupe par e-mail ou messagerie sans dépasser la taille maximale des pièces jointes."
+      "Envoyez un mixage par e-mail ou par messagerie sans dépasser la limite des pièces jointes."
      ],
      [
-      "Épisodes de podcast",
-      "Le MP3 se lit dans toutes les applis de podcast : convertissez l’export WAV final avant de publier."
+      "Publier des podcasts",
+      "Le MP3 se lit dans toutes les applis de podcast. Exportez le WAV final, convertissez-le et mettez-le en ligne."
      ],
      [
-      "Aperçus de samples",
-      "Créez des versions d’écoute légères de vos samples et boucles WAV."
+      "Aperçus d’échantillons",
+      "Créez des versions d’aperçu légères de vos samples et boucles WAV."
      ],
      [
       "Assembler des prises",
-      "Réunissez plusieurs MP3 en une seule piste avec notre [outil de fusion audio](/audio-joiner)."
+      "Réunissez plusieurs MP3 en une seule piste avec l’outil [Fusionner des audios](/audio-joiner), ou raccourcissez-les avec [Couper un MP3](/mp3-cutter)."
      ]
     ]
    }
@@ -1474,43 +1513,43 @@
   "faqs": [
    {
     "q": "Convertir un WAV en MP3 fait-il perdre en qualité ?",
-    "a": "Oui, un peu, car le MP3 est un format avec perte. À 256 ou 320 kbps, la différence est très difficile à entendre pour la plupart des gens, sur la plupart des enceintes."
+    "a": "Un peu, car le MP3 est un format avec perte. À 256 ou 320 kbps, la plupart des gens n’entendent aucune différence sur des enceintes ou des écouteurs ordinaires. Gardez le WAV comme copie maîtresse."
    },
    {
     "q": "Quel est le meilleur débit pour convertir un WAV en MP3 ?",
-    "a": "320 kbps pour la musique, d’où le réglage par défaut de la page. Pour la voix, 128 kbps avec Mono activé suffit largement."
+    "a": "320 kbps pour la musique, c’est pourquoi la page démarre à ce réglage. Pour la voix, 128 kbps avec Mono suffit largement."
    },
    {
     "q": "Un MP3 est-il beaucoup plus léger qu’un WAV ?",
-    "a": "Environ 4 fois plus léger à 320 kbps et environ 10 fois plus léger à 128 kbps. Une minute de WAV en qualité CD pèse environ 10 MB."
+    "a": "Environ 4 fois plus léger à 320 kbps et environ 10 fois plus léger à 128 kbps. Lors de notre test, un WAV de 4 minutes et 40 MB est devenu un MP3 de 9,2 MB à 320 kbps."
+   },
+   {
+    "q": "Combien de temps dure une conversion ?",
+    "a": "De quelques secondes à une minute. Lors de notre test, une chanson de 4 minutes a pris environ 20 secondes à 320 kbps. Les lots sont convertis un fichier après l’autre."
    },
    {
     "q": "Puis-je convertir des WAV 24 bits ou 32 bits ?",
-    "a": "Oui. Les WAV haute résolution sont pris en charge. Le MP3 est créé à 44,1 kHz, la fréquence standard pour la musique en MP3."
-   },
-   {
-    "q": "Combien de fichiers WAV puis-je convertir à la fois ?",
-    "a": "Il n’y a pas de limite fixe. Les fichiers sont traités l’un après l’autre pour que votre appareil reste réactif."
+    "a": "Oui. Les WAV haute résolution et en 32 bits flottants fonctionnent. Le MP3 est écrit en 44,1 kHz, la fréquence standard de la musique en MP3."
    },
    {
     "q": "Y a-t-il une limite de taille ?",
-    "a": "Chaque fichier peut peser jusqu’à 500 MB, soit environ 50 minutes de WAV stéréo en qualité CD."
+    "a": "Chaque fichier peut peser jusqu’à 500 MB, soit environ 50 minutes de WAV stéréo qualité CD. Le nombre de fichiers n’est pas limité."
    },
    {
-    "q": "Mes fichiers WAV sont-ils envoyés sur un serveur ?",
+    "q": "Mes fichiers WAV sont-ils envoyés en ligne ?",
     "a": "Non. Tout se passe dans votre navigateur : vos enregistrements ne quittent jamais votre appareil."
    },
    {
-    "q": "Puis-je convertir un MP3 en WAV sur cette page ?",
-    "a": "Oui. Appuyez sur l’onglet MP3 → WAV au-dessus du convertisseur, choisissez 44,1 ou 48 kHz et ajoutez vos MP3. Chacun est enregistré en fichier WAV PCM 16 bits."
+    "q": "Puis-je aussi convertir un MP3 en WAV ici ?",
+    "a": "Oui. Touchez MP3 → WAV au-dessus du convertisseur, choisissez 44,1 ou 48 kHz et ajoutez vos fichiers MP3. Chacun devient un WAV PCM 16 bits. Les détails supprimés par le MP3 ne seront pas restaurés."
    },
    {
-    "q": "Puis-je aussi convertir des fichiers AIFF ici ?",
-    "a": "Oui. L’AIFF fonctionne comme le WAV, puisque les deux sont des formats non compressés."
+    "q": "Puis-je convertir des fichiers AIFF ?",
+    "a": "Oui. L’AIFF n’est pas compressé, comme le WAV, et se convertit de la même façon."
    },
    {
-    "q": "Puis-je convertir un WAV en MP3 sur iPhone ?",
-    "a": "Oui. Enregistrez le WAV dans l’app Fichiers, ouvrez cette page dans Safari, appuyez sur Choisir des fichiers WAV et sélectionnez-le. Le MP3 est enregistré dans Fichiers, dans le dossier Téléchargements."
+    "q": "Comment convertir un WAV en MP3 sur iPhone ?",
+    "a": "Enregistrez le WAV dans l’app Fichiers, ouvrez cette page dans Safari, touchez Choisir des fichiers WAV et sélectionnez-le. Le MP3 est enregistré dans Fichiers, dans le dossier Téléchargements."
    },
    {
     "q": "Convertir un MP3 en WAV améliore-t-il la qualité ?",
@@ -1522,7 +1561,7 @@
    },
    {
     "q": "Quelle fréquence d’échantillonnage choisir pour convertir un MP3 en WAV ?",
-    "a": "Choisissez 44,1 kHz pour la musique et les CD audio, et 48 kHz si le WAV doit aller dans un logiciel de montage vidéo."
+    "a": "Choisissez 44,1 kHz pour la musique et les CD audio, et 48 kHz si le WAV est destiné à un logiciel de montage vidéo."
    }
   ]
  },

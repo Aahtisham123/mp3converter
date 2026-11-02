@@ -7,14 +7,14 @@
    "placeholder": "Tempel link YouTube, mis. https://www.youtube.com/watch?v=…"
   },
   "seoTitle": "YouTube ke MP3 – Konverter YT ke MP3 Gratis & Cepat",
-  "metaDescription": "Ubah YouTube ke MP3 gratis dan cepat. Tempel link YT untuk download video, Shorts, dan YouTube Music sebagai MP3 hingga 320 kbps. Aman, tanpa aplikasi dan daftar.",
+  "metaDescription": "Ubah YouTube ke MP3 gratis & cepat. Tempel link YT untuk download video, Shorts, dan YouTube Music sebagai MP3 hingga 320 kbps. Aman, tanpa aplikasi/daftar.",
   "h1": "Konverter YouTube ke MP3",
-  "lead": "Konverter YouTube ke MP3 gratis kami memungkinkan Anda menempelkan link dan download video apa pun sebagai audio MP3 hanya dengan beberapa ketukan. Bisa online di iPhone, Android, dan komputer, dengan kualitas hingga 320 kbps, mode mono untuk ucapan, dan opsi untuk menyimpan hanya bagian yang Anda butuhkan.",
+  "lead": "Tempel link YouTube, pilih kualitas, lalu simpan suaranya sebagai MP3. Konverter YouTube ke MP3 ini bisa menyimpan bagian yang Anda butuhkan saja, mengubah suara bicara ke mono, dan bisa dipakai untuk download di iPhone, Android, atau komputer tanpa menginstal apa pun.",
   "intro": {
-   "h2": "Konverter YouTube ke MP3 online gratis dengan pilihan lengkap",
+   "h2": "Simpan audio video YouTube sebagai MP3",
    "paras": [
-    "Konverter YouTube ke MP3 mengambil suara dari video dan menyimpannya sebagai file audio MP3 yang bisa diputar hampir di mana saja. Orang memakainya untuk mendengarkan kuliah di bus, menyimpan musik olahraga di pemutar MP3 lama, atau menyimpan episode podcast untuk penerbangan tanpa Wi-Fi. Namun, kebanyakan situs YT ke MP3 hanya punya satu tombol dan satu kualitas. Akibatnya, Anda sering mendapat file yang lebih besar dari yang dibutuhkan, atau siaran langsung dua jam padahal Anda hanya ingin sepuluh menitnya.",
-    "Alat ini fokus pada audio saja, jadi bisa menawarkan pengaturan yang benar-benar penting untuk suara. Anda bisa memilih dari tujuh bitrate, hingga 320 kbps, mengubah ucapan ke mono, dan memotong bagian dengan mengetik waktu mulai dan selesai. Yang terbaik, semuanya tetap gratis: tanpa akun, tanpa aplikasi yang perlu diinstal, dan tanpa watermark di file Anda."
+    "Orang mengubah video YouTube ke MP3 untuk mendengarkan kuliah di bus, menyimpan ceramah untuk penerbangan tanpa Wi-Fi, atau mengisi MP3 player lama dan head unit mobil. Kebanyakan situs hanya memberi satu tombol dan satu pilihan kualitas. Alat ini memberi tiga pengaturan yang benar-benar memengaruhi hasilnya: bitrate, mono atau stereo, dan bagian video yang Anda inginkan.",
+    "Begini cara kerjanya di balik layar. Browser tidak diizinkan mengambil video langsung dari YouTube, jadi server kami mendownload stream audionya, mengubahnya ke MP3 dengan FFmpeg, lalu memberikan filenya kepada Anda. MP3 hasil konversi dihapus dari server dalam 30 menit. Tanpa akun, tanpa aplikasi, dan tanpa watermark."
    ],
    "image": {
     "alt": "Konverter YouTube ke MP3"
@@ -26,44 +26,44 @@
   "howCta": "Ubah YouTube ke MP3 sekarang",
   "steps": [
    [
-    "Salin link YouTube",
-    "Ketuk Bagikan di bawah video lalu pilih Salin link, atau salin alamat dari bilah browser. Video biasa, link youtu.be, YouTube Shorts, dan lagu YouTube Music semuanya bisa."
+    "Salin link video",
+    "Ketuk Bagikan di bawah video lalu pilih Salin link, atau salin alamat di address bar. Video biasa, link youtu.be, Shorts, dan link music.youtube.com semuanya bisa dipakai."
    ],
    [
     "Tempel dan pilih kualitas",
-    "Tempel link di kotak di atas. 192 kbps cocok untuk kebanyakan video, 320 kbps terbaik untuk musik, dan 64 hingga 96 kbps membuat ceramah panjang tetap kecil."
+    "Tempel link di atas. 128 kbps sudah cukup untuk ceramah, 192 kbps untuk sebagian besar video, dan 320 kbps untuk musik yang ingin Anda simpan."
    ],
    [
-    "Tambahkan opsi jika perlu",
-    "Aktifkan Mono untuk ucapan. Aktifkan Potong bagian dan masukkan waktu seperti 1:20 sampai 4:05 untuk menyimpan bagian itu saja."
+    "Opsional: Mono atau Potong bagian",
+    "Aktifkan Mono untuk satu suara. Aktifkan Potong bagian dan masukkan waktu seperti 1:20 dan 4:05 untuk menyimpan bagian itu saja."
    ],
    [
-    "Konversi dan download MP3",
-    "Ketuk Ubah ke MP3 dan lihat lingkaran terisi. Setelah mencapai 100%, ketuk tombol Download bulat untuk menyimpan file."
+    "Konversi dan download",
+    "Ketuk Ubah ke MP3. Setelah lingkaran mencapai 100%, ketuk tombol Download yang bulat."
    ]
   ],
   "sections": [
    {
-    "h2": "YouTube ke MP3 320 kbps: kualitas mana yang sebaiknya dipilih?",
+    "h2": "Kualitas mana yang sebaiknya dipilih?",
     "paras": [
-     "Bitrate menentukan seberapa banyak detail yang disimpan MP3 Anda dan seberapa besar ukuran filenya. Gunakan panduan singkat ini untuk menyesuaikan pengaturan dengan apa yang Anda simpan."
+     "YouTube biasanya men-stream audio sekitar 128 hingga 160 kbps (Opus atau AAC). MP3 tidak bisa menambah detail yang tidak ada di stream, jadi 192 kbps sudah menyimpan semuanya. 320 kbps adalah cadangan aman untuk musik, bukan peningkatan kualitas. Pilih sesuai yang Anda simpan:"
     ],
     "list": [
      [
-      "Musik dan sesi live",
-      "256 atau 320 kbps dalam stereo menjaga setiap instrumen tetap jelas. Pilih 320 kbps untuk lagu yang ingin Anda simpan."
+      "Lagu dan sesi live",
+      "256 atau 320 kbps, stereo. Sekitar 2,4 MB per menit pada 320 kbps."
      ],
      [
       "Podcast, wawancara, dan kuliah",
-      "96 atau 128 kbps dalam mono terdengar sama jelasnya dan memakan ruang jauh lebih sedikit daripada 320 kbps."
+      "96 atau 128 kbps dengan Mono. Satu jam pada 128 kbps sekitar 58 MB."
      ],
      [
-      "Pelajaran bahasa dan audiobook",
-      "64 kbps mono membuat rekaman yang sangat panjang cukup kecil sehingga Anda bisa membawa puluhan di HP."
+      "Audiobook dan pelajaran bahasa",
+      "64 kbps Mono, sekitar 0,5 MB per menit, jadi puluhan file muat di HP."
      ],
      [
       "Nada dering dan klip pendek",
-      "Gunakan Potong bagian untuk menyimpan 20 hingga 30 detik, lalu rapikan dengan [Pemotong MP3](/mp3-cutter) kami jika perlu."
+      "Gunakan Potong bagian untuk menyimpan 20–30 detik, lalu rapikan dengan [Pemotong MP3](/mp3-cutter)."
      ]
     ],
     "image": {
@@ -71,16 +71,31 @@
     }
    },
    {
-    "h2": "Apakah MP3 320 kbps terdengar lebih bagus dari YouTube?",
-    "paras": [
-     "YouTube biasanya memutar audio sekitar 128 hingga 160 kbps dalam format Opus atau AAC. Jadi, konversi di 192 kbps sudah menyimpan semua yang ada di stream aslinya. Memilih 320 kbps memberi ruang aman untuk musik, karena itulah banyak pendengar memilihnya untuk lagu favorit. Tetap saja, tidak ada konverter yang bisa menambah detail yang memang tidak dikirim YouTube, jadi untuk ucapan tidak perlu setinggi itu. Jika Anda ingin mengedit suaranya di aplikasi musik atau video, konverter [YouTube ke WAV](/youtube-to-wav) kami memberi Anda file tanpa kompresi."
+    "h2": "Apa yang bisa dan tidak bisa",
+    "list": [
+     [
+      "Bisa",
+      "Video publik, Shorts, lagu YouTube Music, dan video tidak publik (unlisted) yang link-nya Anda punya, hingga durasi 3 jam."
+     ],
+     [
+      "Satu video setiap kali",
+      "Playlist tidak dikonversi sekaligus. Link video di dalam playlist hanya mengonversi video itu saja."
+     ],
+     [
+      "Tidak bisa",
+      "Siaran langsung, video privat dan khusus member, serta video yang dibatasi usia. Semua itu butuh akun YouTube yang sedang login, dan kami tidak pernah memintanya."
+     ],
+     [
+      "Butuh gambarnya juga?",
+      "Gunakan [YouTube ke MP4](/youtube-to-mp4) untuk video, atau [YouTube ke WAV](/youtube-to-wav) untuk file tanpa kompresi yang siap diedit."
+     ]
     ]
    },
    {
-    "h2": "Simpan audio YouTube di iPhone, Android, atau komputer",
+    "h2": "Download audio YouTube di iPhone, Android, atau komputer",
     "paras": [
-     "Mau disebut YouTube ke MP3 atau sekadar YT ke MP3, langkahnya sama di semua perangkat, karena konverter ini berjalan online di browser Anda. Di komputer, salin link dari bilah alamat lalu tempel di sini. Di Android, ketuk Bagikan di bawah video, pilih Salin link, lalu tempel di halaman ini di Chrome. MP3 yang sudah jadi akan masuk ke folder Download.",
-     "Di iPhone atau iPad, buka halaman ini di Safari dan konversi seperti biasa. Saat Anda mengetuk Download, Safari menyimpan MP3 ke aplikasi File, di dalam folder Unduhan. Dari sana, Anda bisa memutarnya, membagikannya, atau membukanya di aplikasi musik seperti VLC. Karena tidak ada yang perlu diinstal, alat ini bekerja sama baiknya di Safari, Chrome, Edge, dan Firefox."
+     "Di **komputer**, salin link dari address bar lalu tempel di sini. MP3 masuk ke folder Downloads. Di **Android**, ketuk Bagikan di bawah video, pilih Salin link, lalu tempel di halaman ini di Chrome; MP3 tersimpan di folder Download.",
+     "Di **iPhone atau iPad**, salin link di aplikasi YouTube, buka halaman ini di Safari, lalu konversi. Saat Anda mengetuk Download, Safari menyimpan MP3 ke aplikasi File di folder Unduhan. Dari sana Anda bisa memutarnya, membagikannya, atau membukanya di aplikasi seperti VLC."
     ],
     "image": {
      "alt": "YouTube ke MP3 di iPhone dan Android"
@@ -88,111 +103,121 @@
     "cta": "Coba konverter YouTube ke MP3"
    },
    {
-    "h2": "YouTube Shorts, YouTube Music, dan playlist",
-    "paras": [
-     "Konverter ini bisa menangani lebih dari video biasa. Tempel link YouTube Shorts untuk mengambil lagu atau sulih suara dari klip pendek, praktis saat sebuah sound viral terus terngiang di kepala. Link YouTube Music (music.youtube.com) juga bisa, jadi Anda bisa mengubah lagu YT Music menjadi MP3 untuk didengarkan offline. Dan jika Anda ingin gambar sekaligus suaranya, beralihlah ke pengunduh [YouTube ke MP4](/youtube-to-mp4) kami.",
-     "Playlist bekerja sedikit berbeda. Agar layanan tetap cepat untuk semua orang, alat ini mengonversi satu video setiap kali. Jadi, untuk menyimpan playlist YouTube sebagai file MP3, buka playlist, salin link setiap video yang Anda inginkan, lalu konversi satu per satu. Jika Anda menempelkan link video yang sedang diputar di dalam playlist, Anda akan mendapat video itu saja sebagai MP3."
-    ]
-   },
-   {
-    "h2": "Isi pemutar MP3, audio mobil, atau HP Anda",
-    "paras": [
-     "MP3 adalah satu-satunya format audio yang dipahami hampir semua perangkat. Karena itu konverter YouTube ke MP3 ini jadi cara mudah untuk mengisi pemutar MP3 lama, audio mobil yang bisa membaca flashdisk, smartwatch, atau pemutar audio anak. Cukup konversi videonya, salin file MP3 ke folder musik perangkat, dan file akan diputar seperti lagu lainnya. Ruang penyimpanan terbatas? Kecilkan file besar dengan [Kompres MP3](/mp3-compressor) kami agar muat lebih banyak lagu."
+    "h2": "Jika konversi gagal",
+    "list": [
+     [
+      "“Situs tersebut sedang memblokir download dari server kami untuk sementara”",
+      "Sesekali YouTube membatasi permintaan dari server kami. Tunggu beberapa menit lalu coba lagi."
+     ],
+     [
+      "“Anda sudah mencapai batas download per jam”",
+      "Setiap pengunjung hanya bisa memulai sejumlah konversi per jam agar layanan tetap cepat untuk semua orang. Coba lagi nanti."
+     ],
+     [
+      "“Siaran langsung dan video yang sangat panjang tidak bisa dikonversi”",
+      "Tunggu sampai siaran selesai, atau gunakan Potong bagian untuk video yang sangat panjang."
+     ],
+     [
+      "Konversi pertama lambat",
+      "Jika server sedang tidak aktif, butuh waktu hingga satu menit untuk menyala. Konversi berikutnya lebih cepat."
+     ]
     ]
    },
    {
     "h2": "Apakah konverter YouTube ke MP3 ini aman?",
     "paras": [
-     "Wajar jika Anda bertanya soal keamanan, karena banyak situs download penuh iklan pop-up, tombol download palsu, dan installer yang menyertakan software yang tidak diinginkan. Kami membuat konverter ini untuk menghindari semua itu."
+     "Banyak situs download penuh dengan pop-up, tombol palsu, dan installer yang menyisipkan software tidak diinginkan. Halaman ini bebas dari semua itu."
     ],
     "list": [
      [
       "Tidak ada yang perlu diinstal",
-      "Semuanya terjadi di halaman ini, jadi tidak ada aplikasi atau ekstensi browser yang bisa membawa adware."
+      "Tanpa aplikasi atau ekstensi browser, jadi tidak ada yang bisa membawa adware."
      ],
      [
       "Tanpa akun atau email",
-      "Anda tidak pernah perlu memberikan data pribadi untuk mengonversi video."
+      "Anda tidak pernah membagikan data pribadi."
      ],
      [
-      "Tanpa tombol palsu",
-      "Hanya ada satu tombol Konversi dan satu tombol Download, dan keduanya berfungsi persis seperti namanya."
+      "Satu tombol Ubah ke MP3 dan satu tombol Download",
+      "Tanpa tombol palsu dan tanpa pengalihan ke situs lain."
      ],
      [
-      "File dihapus otomatis",
-      "MP3 Anda disiapkan di server kami dan dihapus dalam 30 menit. Kebijakan privasi kami menjelaskan detailnya."
+      "File dihapus",
+      "MP3 dihapus dari server kami dalam 30 menit. Lihat [Kebijakan Privasi](/privacy-policy) kami."
      ]
     ]
    },
    {
-    "h2": "Cara mengubah YouTube ke MP3 secara legal",
+    "h2": "Apakah legal mengubah YouTube ke MP3?",
     "paras": [
-     "Mengonversi video legal dalam banyak situasi, tetapi tergantung siapa pemilik kontennya dan hukum di tempat Anda tinggal. Ketentuan YouTube hanya mengizinkan download jika YouTube sendiri menyediakan opsi download, dan banyak musiknya dilindungi hak cipta. [MP3 Converter](/) adalah alat independen dan tidak berafiliasi dengan, didukung oleh, atau disponsori oleh YouTube maupun Google. Umumnya, penggunaan berikut aman:"
+     "Tergantung videonya dan tempat Anda tinggal. Ketentuan YouTube hanya mengizinkan download jika YouTube menyediakan opsi download, dan sebagian besar musik di YouTube dilindungi hak cipta. Hanya konversi video yang berhak Anda simpan, misalnya:"
     ],
     "list": [
      [
-      "Unggahan Anda sendiri",
-      "Video yang Anda buat dan terbitkan sendiri, seperti rekaman presentasi atau latihan band."
+      "Video unggahan Anda sendiri",
+      "Kreator juga bisa mendownload video mereka sendiri di YouTube Studio, di menu Konten."
      ],
      [
       "Video Creative Commons",
-      "Di pencarian YouTube, buka Filter dan pilih Creative Commons, lalu ikuti ketentuan lisensinya, misalnya mencantumkan kredit."
+      "Di pencarian YouTube, buka Filter lalu pilih Creative Commons, kemudian ikuti lisensinya, misalnya mencantumkan kredit."
      ],
      [
       "Konten domain publik",
-      "Pidato lama, rekaman musik klasik, dan karya lain yang bebas hak cipta."
+      "Pidato lama, rekaman bersejarah, dan karya lain yang bebas hak cipta."
      ],
      [
       "Konten dengan izin",
-      "Video yang kreatornya jelas mengizinkan download, misalnya beat gratis atau musik bebas royalti."
+      "Video yang kreatornya jelas mengizinkan download, seperti beat gratis atau musik bebas royalti."
      ]
+    ]
+   },
+   {
+    "h2": "Alternatif legal untuk musik",
+    "paras": [
+     "Untuk lagu berhak cipta, jalur resmi adalah pilihan terbaik. YouTube Premium dan YouTube Music Premium memungkinkan Anda menyimpan video dan lagu untuk didengarkan offline di dalam aplikasi. Banyak musisi juga menjual atau membagikan download di Bandcamp atau situs web mereka sendiri. Baca [Kebijakan Hak Cipta & DMCA](/copyright) kami untuk mengetahui cara kami menangani permintaan dari pemegang hak."
     ]
    }
   ],
   "faqs": [
    {
-    "q": "Apakah konverter YouTube ke MP3 ini benar-benar gratis?",
-    "a": "Ya. Anda bisa mengonversi dan download video YouTube ke MP3 secara gratis, tanpa daftar, tanpa software, dan tanpa watermark di file Anda."
+    "q": "Apakah konverter YouTube ke MP3 ini gratis?",
+    "a": "Ya. Anda bisa mengubah video ke MP3 secara gratis, tanpa daftar, tanpa software, dan tanpa watermark. Batas wajar jumlah konversi per jam menjaga layanan tetap cepat untuk semua orang."
    },
    {
-    "q": "Bisakah saya download YouTube ke MP3 dengan 320 kbps?",
-    "a": "Bisa. Pilih 320 kbps sebelum mengetuk Konversi. Itu kualitas MP3 tertinggi dan pilihan bagus untuk musik, meskipun 192 kbps sudah menyimpan semua yang di-stream YouTube."
-   },
-   {
-    "q": "Apakah aman memakai konverter YouTube ke MP3?",
-    "a": "Yang ini aman. Tidak ada yang perlu diinstal, tidak perlu membuat akun, tanpa iklan pop-up, dan file hasil konversi dihapus dari server kami dalam 30 menit. Secara umum, hindari konverter yang meminta Anda menginstal software atau mengizinkan notifikasi."
+    "q": "Bisakah saya download audio YouTube 320 kbps?",
+    "a": "Bisa. Pilih 320 kbps sebelum mengetuk Ubah ke MP3. Karena YouTube men-stream audio sekitar 128–160 kbps, 192 kbps sudah menyimpan semuanya; 320 kbps adalah cadangan aman untuk musik."
    },
    {
     "q": "Bagaimana cara mengubah YouTube ke MP3 di iPhone?",
-    "a": "Buka halaman ini di Safari, tempel link video, lalu ketuk Ubah ke MP3. Kemudian ketuk Download, dan Safari akan menyimpan MP3 ke aplikasi File di folder Unduhan."
+    "a": "Salin link di aplikasi YouTube, buka halaman ini di Safari, tempel link-nya, lalu ketuk Ubah ke MP3. Ketuk Download, dan MP3 tersimpan di aplikasi File di folder Unduhan."
    },
    {
-    "q": "Bisakah saya mengubah playlist YouTube ke MP3?",
-    "a": "Tidak dalam satu langkah. Konversi videonya satu per satu dengan menempelkan link setiap video. Link video di dalam playlist hanya akan mengonversi video itu saja."
+    "q": "Bisakah saya mengonversi sebagian video saja?",
+    "a": "Bisa. Aktifkan Potong bagian, masukkan waktu mulai seperti 2:10 dan waktu selesai seperti 5:45, lalu konversi. Hanya bagian itu yang menjadi MP3 Anda."
    },
    {
-    "q": "Apakah bisa untuk YouTube Shorts dan YouTube Music?",
-    "a": "Bisa. Tempel link Shorts, link pendek youtu.be, atau link music.youtube.com persis seperti yang Anda salin."
+    "q": "Apakah bisa untuk Shorts dan YouTube Music?",
+    "a": "Bisa. Tempel link Shorts, link youtu.be, atau link music.youtube.com persis seperti yang Anda salin."
    },
    {
-    "q": "Bisakah saya mengubah hanya sebagian video YouTube ke MP3?",
-    "a": "Bisa. Aktifkan Potong bagian, masukkan waktu mulai seperti 2:10 dan waktu selesai seperti 5:45, lalu konversi. Hanya bagian itu yang menjadi MP3, jadi menghemat waktu dan kuota."
+    "q": "Bisakah saya mengonversi satu playlist penuh?",
+    "a": "Tidak, hanya satu video setiap kali. Link video di dalam playlist hanya mengonversi video itu saja."
    },
    {
-    "q": "Apakah YT ke MP3 sama dengan YouTube ke MP3?",
-    "a": "Ya. “YT” hanyalah singkatan dari YouTube, jadi YT ke MP3, konverter YT MP3, dan YouTube ke MP3 semuanya berarti hal yang sama: mengubah link YouTube menjadi file audio MP3, persis seperti yang dilakukan halaman ini."
+    "q": "Kenapa beberapa video tidak bisa dikonversi?",
+    "a": "Siaran langsung, video privat, khusus member, dan yang dibatasi usia tidak bisa dikonversi, dan video yang lebih dari 3 jam tidak didukung."
+   },
+   {
+    "q": "Apakah aman?",
+    "a": "Ya. Tidak ada yang perlu diinstal, tanpa akun, dan tanpa pop-up, serta file dihapus dari server kami dalam 30 menit. Hindari konverter apa pun yang meminta Anda menginstal software."
    },
    {
     "q": "Apakah legal mengubah video YouTube ke MP3?",
-    "a": "Tergantung videonya dan negara Anda. Mengonversi unggahan Anda sendiri, video Creative Commons atau domain publik, atau konten yang boleh Anda simpan umumnya tidak masalah. Download musik berhak cipta tanpa izin bisa melanggar hukum dan ketentuan YouTube."
+    "a": "Tergantung videonya dan negara Anda. Mengonversi video unggahan Anda sendiri, video Creative Commons atau domain publik, atau konten yang boleh Anda simpan umumnya tidak masalah. Mendownload musik berhak cipta tanpa izin tidak diperbolehkan."
    },
    {
-    "q": "Kenapa muncul pesan “memblokir download untuk sementara”?",
-    "a": "YouTube kadang membatasi permintaan untuk sementara waktu. Tunggu satu atau dua menit lalu coba lagi."
-   },
-   {
-    "q": "Apakah saya justru butuh YouTube ke MP4?",
-    "a": "Jika Anda ingin gambar sekaligus suaranya, gunakan alat YouTube ke MP4 kami. Halaman ini selalu menghasilkan file MP3 audio saja."
+    "q": "Apakah YT ke MP3 sama dengan YouTube ke MP3?",
+    "a": "Ya. “YT” adalah singkatan dari YouTube, jadi YT ke MP3 dan YouTube ke MP3 artinya sama: menyimpan suara video YouTube sebagai file MP3."
    }
   ]
  },
@@ -697,15 +722,15 @@
     "placeholder": "Tempel link MP4, mis. https://example.com/video.mp4"
    }
   },
-  "seoTitle": "Konverter MP4 ke MP3 | Ambil Audio dari Video Gratis",
-  "metaDescription": "Ubah MP4 apa pun menjadi file MP3 yang bersih dengan sekali klik. Cepat dan gratis — unggah, konversi, dan download tanpa perlu akun.",
+  "seoTitle": "Ubah MP4 ke MP3 – Ambil Audio dari Video Gratis",
+  "metaDescription": "Ubah MP4 ke MP3 dengan sekali klik. Konverter gratis dan cepat: unggah, konversi, lalu download MP3 yang bersih tanpa perlu akun.",
   "h1": "Konverter MP4 ke MP3",
-  "lead": "Konverter MP4 ke MP3 gratis kami mengubah video MP4 apa pun menjadi audio MP3 secara online dalam beberapa detik. Unggah file dari HP atau komputer, atau tempel link MP4 yang ada di internet, lalu pilih kualitas hingga 320 kbps dan download file audio bersih yang bisa diputar di mana saja.",
+  "lead": "Ambil suara dari video MP4 apa pun dan simpan sebagai MP3: kuliah, rapat Zoom, cuplikan konser, atau voice-over. Video Anda diubah dari MP4 ke MP3 di perangkat Anda sendiri, tidak ada yang diunggah, dan video 10 menit menyusut dari sekitar 190 MB menjadi 14 MB.",
   "intro": {
-   "h2": "Konverter video ke audio online gratis untuk file MP4",
+   "h2": "Ambil audio dari MP4 dalam hitungan detik",
    "paras": [
-    "MP4 adalah format video default untuk HP, perekam layar, rekaman Zoom dan Teams, serta kebanyakan aplikasi editing. Namun, sering kali Anda hanya butuh suaranya: pembicaraan dari webinar, soundtrack klip liburan, atau narasi tutorial. MP3 jauh lebih kecil dari videonya, jadi muat di email, bisa diputar di aplikasi musik apa pun, dan tetap berbunyi saat layar HP mati. Singkatnya, mengubah video menjadi file audio menghemat ruang dan membuat suaranya mudah dibawa ke mana saja.",
-    "Halaman ini menyediakan dua cara. Dengan Unggah, konversi sepenuhnya terjadi di dalam browser Anda, jadi video pribadi tidak pernah keluar dari perangkat Anda. Dengan Tempel Link, server kami mengambil MP4 yang sudah ada di internet, misalnya alamat .mp4 langsung atau video di Internet Archive, lalu memberi Anda MP3-nya. Dengan cara mana pun, Anda bisa mengubah MP4 ke MP3 gratis, tanpa akun dan tanpa watermark."
+    "MP4 adalah format bawaan HP, perekam layar, Zoom, dan Teams. Tetapi sering kali gambarnya hanya menambah beban: Anda ingin memutar ulang webinar sambil jalan kaki, mengirim ide lagu ke teman, atau memasukkan rekaman ceramah ke MP3 player lama. Dengan mengubah MP4 ke MP3, hanya bagian yang Anda dengar yang disimpan, sedangkan trek videonya dibuang.",
+    "Di sini ada dua cara untuk **mengubah MP4 ke MP3**. *Unggah* membaca file di dalam browser Anda, jadi rekaman pribadi tidak pernah keluar dari HP atau komputer. *Tempel Link* untuk MP4 yang sudah ada di internet, misalnya alamat .mp4 langsung atau video di Internet Archive; server kami mengambilnya untuk Anda dan menghapus hasilnya dalam 30 menit."
    ],
    "image": {
     "alt": "Konverter MP4 ke MP3"
@@ -717,77 +742,121 @@
   "howCta": "Ubah MP4 ke MP3 sekarang",
   "steps": [
    [
-    "Pilih Unggah atau Tempel Link",
-    "Unggah dipilih secara default dan bekerja dengan video yang tersimpan di perangkat Anda. Ketuk Tempel Link jika MP4 ada di internet."
+    "Pilih kualitas",
+    "Pilih bitrate sebelum menambahkan file: 128 kbps dengan Mono untuk ceramah, 192 kbps untuk sebagian besar video, 320 kbps untuk musik. Pengaturan ini berlaku untuk file yang ditambahkan sesudahnya."
    ],
    [
-    "Atur kualitas MP3",
-    "Untuk unggahan, pilih 128 hingga 320 kbps dan aktifkan Mono untuk ucapan sebelum menambahkan file, karena pengaturan terkunci saat itu. Tab Tempel Link menyediakan 64 hingga 320 kbps, dengan 192 kbps terpilih secara default."
+    "Tambahkan MP4 Anda",
+    "Ketuk Pilih File MP4 atau seret satu video atau lebih ke kotak, hingga 500 MB per file. Konversi langsung dimulai. Untuk video yang ada di internet, gunakan tab Tempel Link."
    ],
    [
-    "Tambahkan MP4 atau tempel link",
-    "Ketuk Pilih File MP4 atau seret beberapa video ke kotak, dan konversi langsung dimulai. Untuk link, tempel alamatnya lalu ketuk Ubah ke MP3."
+    "Tunggu progress bar",
+    "Trek suara didekode dan dienkode di perangkat Anda. Dalam pengujian kami, klip 1080p berdurasi 1 menit butuh sekitar 6 detik; video 10 menit sekitar 45 detik."
    ],
    [
-    "Download MP3 Anda",
-    "Putar hasilnya di halaman, lalu ketuk Download. Mengonversi beberapa file? Gunakan Download semua untuk menyimpan semuanya sekaligus."
+    "Putar dan download",
+    "Dengarkan hasilnya langsung di halaman, lalu ketuk Download. Jika ada beberapa file, Download semua menyimpan semua MP3 sekaligus."
    ]
   ],
   "sections": [
    {
-    "h2": "MP4 vs MP3: ukuran file dan bitrate terbaik",
+    "h2": "Seberapa besar ukuran MP3-nya?",
     "paras": [
-     "Satu menit video MP4 720p memakan sekitar 20 MB, sebagian besar karena gambarnya. MP3 hanya menyimpan suara, jadi menit yang sama menyusut menjadi sekitar 1 MB di 128 kbps dan 2.4 MB di 320 kbps. Dengan kata lain, rekaman satu jam turun dari lebih dari satu gigabyte menjadi sekitar 58 MB di 128 kbps.",
-     "Kebanyakan file MP4 menyimpan suaranya sebagai AAC sekitar 128 hingga 256 kbps. Jadi 192 kbps sudah menyimpan hampir semuanya untuk video sehari-hari, sedangkan bitrate yang jauh di atas sumbernya hanya membuat file lebih besar. Gunakan panduan singkat ini:"
+     "Hampir seluruh ukuran MP4 berasal dari gambarnya. Begitu gambar dibuang, ukuran file turun drastis. Berikut hasil nyata dari pengujian kami sendiri:"
     ],
     "list": [
      [
-      "Video musik dan konser",
-      "256 atau 320 kbps dalam stereo menjaga instrumen dan vokal tetap jernih."
+      "Rekaman layar 720p berdurasi 10 menit",
+      "MP4 189 MB → MP3 14 MB pada 192 kbps, sekitar 45 detik di Chrome."
      ],
      [
-      "Kuliah, webinar, dan rapat",
-      "128 kbps dengan Mono aktif menghasilkan ucapan yang jelas dalam file kecil."
+      "Klip HP 1080p berdurasi 1 menit (MOV)",
+      "58 MB → 1,4 MB pada 192 kbps, sekitar 6 detik."
      ],
      [
-      "Klip HP dan vlog",
-      "192 kbps adalah pilihan tengah yang aman untuk ucapan bercampur musik latar."
+      "Kuliah 1 jam",
+      "Sekitar 58 MB pada 128 kbps. Aktifkan Mono agar seluruh bitrate dipakai untuk satu suara."
      ],
      [
-      "Ceramah panjang dari link",
-      "Tab Tempel Link juga menyediakan 64 dan 96 kbps jika ukuran lebih penting daripada detail."
+      "Patokan mudah",
+      "Setiap menit MP3 memakan sekitar 0,96 MB pada 128 kbps, 1,44 MB pada 192 kbps, dan 2,4 MB pada 320 kbps, berapa pun resolusi videonya."
      ]
     ],
     "image": {
-     "alt": "Ukuran file MP4 vs MP3"
+     "alt": "Perbandingan ukuran file MP4 dan MP3"
     }
    },
    {
-    "h2": "Unggah atau Tempel Link: mana yang cocok?",
+    "h2": "Bitrate mana yang sebaiknya dipilih?",
+    "paras": [
+     "Suara di dalam kebanyakan file MP4 adalah AAC dengan 128 hingga 256 kbps. MP3 hanya bisa menyimpan apa yang sudah ada, jadi memilih bitrate yang jauh di atas sumbernya hanya membuat file lebih besar tanpa membuat suaranya lebih bagus."
+    ],
     "list": [
      [
-      "Unggah, pilihan paling privat",
-      "Rekaman HP, tangkapan layar, dan ekspor rapat dibaca dan dienkode di perangkat Anda sendiri. Setiap file bisa hingga 500 MB."
+      "Kuliah, rapat, webinar",
+      "128 kbps dengan Mono aktif. Suara bicara tetap jelas, dan satu jam hanya sekitar 58 MB."
      ],
      [
-      "Tempel Link, untuk video yang sudah online",
-      "Tidak perlu download MP4 berukuran besar terlebih dahulu. Link .mp4 langsung dan situs video gratis seperti Internet Archive atau Vimeo (jika download diaktifkan) bisa dipakai. Siaran langsung dan video lebih dari sekitar tiga jam tidak didukung."
+      "Vlog dan video HP",
+      "192 kbps, pilihan aman untuk suara orang yang bercampur musik latar."
      ],
      [
-      "Konversi massal",
-      "Pilih beberapa file MP4 sekaligus. File dikonversi satu per satu, jadi HP atau laptop Anda tetap lancar."
+      "Video musik dan konser",
+      "256 atau 320 kbps dalam stereo agar vokal dan instrumen tetap jernih."
      ],
      [
-      "Link YouTube dan TikTok",
-      "Keduanya punya halaman sendiri. Gunakan konverter [YouTube ke MP3](/youtube-to-mp3) untuk YouTube, sedangkan dukungan TikTok segera hadir."
+      "Rekaman sangat panjang dari link",
+      "Tab Tempel Link juga menyediakan 64 dan 96 kbps jika ukuran file paling penting."
+     ]
+    ]
+   },
+   {
+    "h2": "Unggah atau Tempel Link: mana yang dipakai",
+    "list": [
+     [
+      "Unggah (paling privat)",
+      "Untuk video di perangkat Anda: rekaman HP, rekaman layar, hasil ekspor Zoom atau Teams. File dibaca dan dikonversi secara lokal."
+     ],
+     [
+      "Tempel Link (tanpa download dulu)",
+      "Untuk MP4 yang sudah ada di internet. Link .mp4 langsung dan situs yang mengizinkan download, seperti Internet Archive atau Vimeo dengan download diaktifkan, bisa dipakai. Siaran langsung tidak didukung, dan video dari link bisa berdurasi hingga sekitar tiga jam."
+     ],
+     [
+      "Link YouTube",
+      "Gunakan halaman khusus [YouTube ke MP3](/youtube-to-mp3), yang punya opsi khusus YouTube seperti memotong bagian video."
+     ],
+     [
+      "Format video lain",
+      "MOV, MKV, WEBM, atau AVI? Konverter [video ke MP3](/video-to-mp3) bisa menangani semuanya."
+     ]
+    ]
+   },
+   {
+    "h2": "MP4 tidak ada suaranya atau gagal dikonversi? Coba ini",
+    "list": [
+     [
+      "“Kami tidak menemukan suara apa pun”",
+      "Video tidak punya trek audio. Ini sering terjadi pada rekaman layar yang dibuat tanpa mikrofon atau audio sistem. Putar video di aplikasi lain untuk memastikannya."
+     ],
+     [
+      "“File ini tidak bisa dibaca”",
+      "File rusak, tidak lengkap, atau dilindungi hak cipta (DRM). Film yang dibeli dan sebagian file download dari layanan streaming tidak bisa dikonversi dengan alat apa pun."
+     ],
+     [
+      "Video iPhone tidak bisa dibuka",
+      "Di Safari, pilih klip dari Perpustakaan Foto. Jika masih gagal, simpan dulu ke aplikasi File lalu pilih dari sana."
+     ],
+     [
+      "File besar gagal di HP",
+      "Memori kosong di HP lebih sedikit. Coba file yang sama di komputer, atau potong dulu menjadi beberapa bagian."
      ]
     ]
    },
    {
     "h2": "Ubah MP4 ke MP3 di iPhone, Android, Mac, dan Windows",
     "paras": [
-     "Karena konverter berjalan di browser, tidak ada aplikasi yang perlu diinstal di perangkat apa pun. Di iPhone atau iPad, buka halaman ini di Safari dan ketuk Pilih File MP4. iOS lalu memberi pilihan Perpustakaan Foto atau Pilih File, jadi video di Foto maupun di aplikasi File bisa dipakai. Setelah Anda mengetuk Download, MP3 muncul di File, di dalam folder Unduhan.",
-     "Di Android, Chrome membuka galeri atau pengelola file Anda, dan file yang selesai masuk ke Download. Sementara itu, di Mac atau PC Windows, Anda cukup menyeret file MP4 dari Finder atau File Explorer ke kotak. Safari, Chrome, Edge, dan Firefox semuanya bisa. Untuk video yang sangat besar, komputer biasanya lebih cepat karena memorinya lebih besar dari HP."
+     "Semuanya berjalan di browser, jadi langkahnya sama di mana saja. Di **iPhone atau iPad**, buka halaman ini di Safari, ketuk Pilih File MP4, lalu pilih dari Perpustakaan Foto atau File. MP3 disimpan di aplikasi File di folder Unduhan. iOS tidak punya cara bawaan untuk menyimpan MP4 sebagai MP3; aplikasi Pintasan (Shortcuts) hanya bisa mengambil audio sebagai M4A.",
+     "Di **Android**, Chrome membuka galeri atau pengelola file Anda, dan MP3 disimpan di folder Download. Di **Mac atau PC Windows**, seret file MP4 dari Finder atau File Explorer ke kotak. Safari, Chrome, Edge, dan Firefox semuanya bisa dipakai."
     ],
     "image": {
      "alt": "MP4 ke MP3 di iPhone dan Android"
@@ -795,115 +864,62 @@
     "cta": "Coba konverter MP4 ke MP3"
    },
    {
-    "h2": "Apakah konverter MP4 ke MP3 ini aman dan privat?",
+    "h2": "Lebih suka software desktop? Dua alternatif gratis",
     "paras": [
-     "Video Anda bersifat pribadi, jadi privasi penting di sini. Saat Anda mengunggah, [MP3 Converter](/) membaca MP4 di dalam browser Anda dengan Web Audio, FFmpeg yang dikompilasi ke WebAssembly, dan encoder MP3 LAME. Hasilnya, file sama sekali tidak pernah dikirim ke server."
-    ],
-    "list": [
-     [
-      "Tanpa upload ke server",
-      "Video yang diunggah tetap di perangkat Anda dari awal sampai akhir."
-     ],
-     [
-      "Link dibersihkan",
-      "File dari Tempel Link diproses di server kami dan dihapus dalam 30 menit."
-     ],
-     [
-      "Tidak ada yang perlu diinstal",
-      "Tidak ada aplikasi, ekstensi, atau download manager yang bisa membawa adware."
-     ],
-     [
-      "Tanpa akun dan tanpa watermark",
-      "Anda tidak pernah perlu memberikan alamat email, dan MP3 hanya berisi audio Anda."
-     ]
+     "Jika Anda mengonversi video setiap hari, alat desktop bisa praktis. Di **VLC**, buka Media → Convert/Save, tambahkan MP4, pilih profil *Audio – MP3*, lalu tentukan file tujuan. Dengan **FFmpeg** di command line, jalankan `ffmpeg -i video.mp4 -vn -b:a 192k audio.mp3`, dengan `-vn` untuk membuang video dan `-b:a` untuk mengatur bitrate.",
+     "Halaman ini memakai komponen yang sama, yaitu FFmpeg dan encoder MP3 LAME, tanpa perlu instalasi. Ini pilihan yang lebih cepat untuk beberapa file, di HP, atau di komputer yang tidak mengizinkan Anda menginstal software."
     ]
    },
    {
-    "h2": "Apakah MP4 ke MP3 menurunkan kualitas? Jawaban singkat",
+    "h2": "Apakah mengubah MP4 ke MP3 menurunkan kualitas?",
     "paras": [
-     "MP3 adalah format lossy, jadi konversinya tidak lossless. Namun, suara di dalam kebanyakan file MP4 sudah berupa AAC yang terkompresi. Karena itu, konversi di 192 kbps atau lebih membuat perbedaannya sangat sulit didengar. Video asli Anda tidak pernah diubah; Anda hanya mendapat file MP3 baru di sampingnya.",
-     "Orang juga bertanya apakah MP3 menyimpan gambarnya. Tidak, karena MP3 hanya audio. Jika video punya suara surround 5.1, alat ini menggabungkan semua saluran menjadi stereo, jadi dialog dari speaker tengah tetap ada. Dan jika file sama sekali tidak punya trek suara, seperti rekaman layar tanpa suara, Anda akan melihat pesan yang jelas, bukan MP3 kosong."
+     "MP3 adalah format lossy, jadi hasil konversinya tidak identik bit per bit. Dalam praktiknya, suara di kebanyakan MP4 sudah berupa AAC yang terkompresi, dan pada 192 kbps atau lebih, perbedaannya sangat sulit didengar. Video asli Anda tidak pernah diubah.",
+     "Suara surround (5.1) di-mixdown menjadi stereo, jadi dialog dari kanal tengah tetap ada. Setiap MP3 disimpan pada 44.1 kHz, sample rate standar untuk audio MP3."
     ]
    },
    {
-    "h2": "Alasan populer mengubah video menjadi MP3",
-    "list": [
-     [
-      "Rekaman rapat dan kelas",
-      "Ubah MP4 dari Zoom atau Teams menjadi MP3 yang bisa diputar ulang saat jalan kaki atau di perjalanan."
-     ],
-     [
-      "Ide lagu dan latihan",
-      "Simpan rekaman latihan band dari HP sebagai MP3 untuk dibagikan ke grup."
-     ],
-     [
-      "Nada dering dan klip pendek",
-      "Konversi dulu, lalu ambil 30 detik terbaik dengan [Pemotong MP3](/mp3-cutter) kami."
-     ],
-     [
-      "Format video lain",
-      "Punya file MOV, MKV, atau AVI juga? Konverter [video ke MP3](/video-to-mp3) bisa menangani semuanya."
-     ]
-    ]
-   },
-   {
-    "h2": "Kenapa memakai konverter MP4 ke MP3 online?",
+    "h2": "Gunakan video dari link dengan bertanggung jawab",
     "paras": [
-     "Program desktop seperti VLC atau Audacity bisa menyimpan suara dari video, tetapi Anda harus menginstalnya dulu dan mencari-cari di menu ekspor. Sebaliknya, konverter online langsung terbuka di tab browser dan siap dipakai. Itu menjadikannya cara tercepat untuk mengubah MP4 ke MP3 di laptop kantor, komputer sekolah, atau HP dengan sedikit ruang kosong.",
-     "Namun, tidak semua situs konversi gratis bekerja dengan cara yang sama. Banyak yang mengunggah seluruh video Anda ke server mereka, membatasi ukuran file, atau meminta Anda mendaftar sebelum bisa download. Alat ini membaca file MP4 yang diunggah di perangkat Anda sendiri, menerima file hingga 500 MB, dan membolehkan download tanpa akun. Selain itu, alat ini bisa menangani beberapa video sekaligus, jadi mengubah satu folder klip menjadi file MP3 hanya butuh beberapa ketukan."
-    ]
-   },
-   {
-    "h2": "Mengonversi video dari link dengan bertanggung jawab",
-    "paras": [
-     "Hanya konversi video yang Anda buat sendiri, video domain publik atau berlisensi Creative Commons, atau konten yang boleh Anda gunakan. Banyak film, video musik, dan acara dilindungi hak cipta, dan beberapa situs melarang download dalam ketentuan mereka. Video yang dilindungi salinan (DRM) dari layanan streaming sama sekali tidak bisa dibaca oleh alat ini."
+     "Hanya konversi video buatan Anda sendiri, video domain publik atau berlisensi Creative Commons, atau konten yang boleh Anda gunakan. Banyak film, video musik, dan acara dilindungi hak cipta. Baca [Kebijakan Hak Cipta & DMCA](/copyright) kami untuk detailnya."
     ]
    }
   ],
   "faqs": [
    {
     "q": "Bagaimana cara mengubah MP4 ke MP3 secara gratis?",
-    "a": "Buka halaman ini, pilih kualitas, ketuk Pilih File MP4, lalu pilih video Anda. MP3 siap dalam hitungan detik tanpa biaya, tanpa daftar, dan tanpa watermark."
+    "a": "Pilih kualitas, ketuk Pilih File MP4, lalu pilih videonya. MP3 siap dalam hitungan detik, gratis, tanpa daftar, dan tanpa watermark."
+   },
+   {
+    "q": "Berapa lama prosesnya?",
+    "a": "Dalam pengujian kami di Chrome, klip 1080p berdurasi 1 menit butuh sekitar 6 detik dan video 720p berdurasi 10 menit sekitar 45 detik. Kecepatannya bergantung pada perangkat Anda, bukan koneksi internet."
+   },
+   {
+    "q": "Apakah video saya diunggah ke server Anda?",
+    "a": "Tidak. Video yang Anda unggah dikonversi di dalam browser dan tidak pernah keluar dari perangkat Anda. Hanya opsi Tempel Link yang memakai server kami, dan file tersebut dihapus dalam 30 menit."
    },
    {
     "q": "Bisakah saya mengubah link MP4 ke MP3?",
-    "a": "Bisa. Pindah ke tab Tempel Link, tempel alamat .mp4 langsung atau halaman tempat video berada, pilih bitrate, lalu ketuk Ubah ke MP3. Untuk link YouTube, gunakan alat YouTube ke MP3 kami."
+    "a": "Bisa. Buka tab Tempel Link, tempel alamat .mp4 langsung atau halaman dari situs yang mengizinkan download, pilih bitrate, lalu ketuk Ubah ke MP3. Untuk link YouTube, gunakan alat YouTube ke MP3."
    },
    {
-    "q": "Bisakah saya mengubah MP4 ke MP3 dengan 320 kbps?",
-    "a": "Bisa. Pilih 320 kbps sebelum menambahkan file. Itu kualitas MP3 terbaik, meskipun 192 kbps sudah setara dengan suara di kebanyakan video MP4."
+    "q": "Bitrate mana yang terbaik untuk MP4 ke MP3?",
+    "a": "192 kbps untuk sebagian besar video, 128 kbps dengan Mono untuk suara bicara, dan 320 kbps untuk musik. Memilih bitrate jauh di atas suara AAC di dalam MP4 hanya membuat file lebih besar."
+   },
+   {
+    "q": "Kenapa MP4 saya tidak ada suaranya setelah dikonversi?",
+    "a": "Kemungkinan videonya tidak punya trek audio, misalnya rekaman layar yang dibuat tanpa suara. Putar di aplikasi lain untuk memastikannya. Video yang dilindungi hak cipta (DRM) sama sekali tidak bisa dikonversi."
    },
    {
     "q": "Bagaimana cara mengubah MP4 ke MP3 di iPhone?",
-    "a": "Buka halaman ini di Safari, ketuk Pilih File MP4, lalu pilih video dari Perpustakaan Foto atau File. Setelah selesai, ketuk Download dan temukan MP3 di aplikasi File pada folder Unduhan."
+    "a": "Buka halaman ini di Safari, ketuk Pilih File MP4, lalu pilih video dari Perpustakaan Foto atau File. Setelah dikonversi, ketuk Download dan temukan MP3 di aplikasi File, di folder Unduhan."
    },
    {
-    "q": "Apakah video yang saya unggah dikirim ke server Anda?",
-    "a": "Tidak. File yang diunggah dikonversi di dalam browser Anda dan tidak pernah keluar dari perangkat Anda. Hanya opsi Tempel Link yang memakai server kami, dan file tersebut dihapus dalam 30 menit."
-   },
-   {
-    "q": "Bisakah saya mengonversi beberapa file MP4 sekaligus?",
-    "a": "Bisa. Pilih atau seret beberapa video sekaligus. File dikonversi satu per satu, dan tombol Download semua muncul saat dua file atau lebih sudah siap."
+    "q": "Bisakah saya mengubah beberapa file MP4 sekaligus?",
+    "a": "Bisa. Pilih atau seret beberapa video sekaligus. Video dikonversi satu per satu, dan tombol Download semua muncul begitu dua file atau lebih sudah siap."
    },
    {
     "q": "Apakah ada batas ukuran file?",
-    "a": "Setiap file yang diunggah bisa hingga 500 MB. Video dari link bisa berdurasi hingga sekitar tiga jam, dan siaran langsung tidak didukung."
-   },
-   {
-    "q": "Kenapa MP4 saya gagal dikonversi?",
-    "a": "Biasanya video tidak punya trek suara, rusak, atau dilindungi salinan (DRM). Coba putar dulu di aplikasi lain untuk memastikan ada suaranya."
-   },
-   {
-    "q": "Bisakah saya mengubah video lain ke MP3 di sini?",
-    "a": "Bisa, untuk kebanyakan format umum. Pengunggah ini dioptimalkan untuk MP4, M4V, dan MOV, dan biasanya juga bisa membuka MKV, WEBM, dan AVI. Untuk dukungan format terluas, gunakan konverter Video ke MP3 kami."
-   },
-   {
-    "q": "Apakah konverter video ke audio online sebagus software desktop?",
-    "a": "Untuk mengambil audio, ya. Halaman ini memakai FFmpeg dan encoder LAME, alat open-source yang sama dengan yang diandalkan banyak aplikasi desktop, dan berjalan di perangkat Anda sendiri tanpa perlu menginstal apa pun."
-   },
-   {
-    "q": "Bisakah saya menempelkan link TikTok di sini?",
-    "a": "Belum. TikTok ke MP3 segera hadir. Sementara itu, jika Anda sudah menyimpan video TikTok di perangkat, Anda bisa mengunggah file itu di sini."
+    "a": "Hingga 500 MB per file yang diunggah. Video dari link bisa berdurasi hingga sekitar tiga jam; siaran langsung tidak didukung."
    }
   ]
  },
@@ -1315,15 +1331,15 @@
    "formats": "WAV, WAVE, AIFF",
    "buttonLabel": "Pilih File WAV"
   },
-  "seoTitle": "Konverter WAV ke MP3 – Gratis, Cepat & Berkualitas",
-  "metaDescription": "Ubah WAV ke MP3 online dalam hitungan detik. Suara tetap jernih dengan ukuran jauh lebih kecil — gratis, tanpa daftar, tanpa software.",
+  "seoTitle": "Ubah WAV ke MP3 – Konverter Gratis, Cepat & Berkualitas",
+  "metaDescription": "Ubah WAV ke MP3 online dalam hitungan detik. Kualitas suara tetap bagus dengan ukuran jauh lebih kecil. Gratis, tanpa daftar, tanpa software.",
   "h1": "Konverter WAV ke MP3 & MP3 ke WAV",
-  "lead": "Konverter WAV ke MP3 gratis kami mengecilkan rekaman WAV yang besar menjadi file MP3 kecil yang tetap terdengar bagus. Kualitas awalnya 320 kbps, bisa memproses banyak file sekaligus, dan berjalan langsung di browser Anda, sehingga audio Anda tidak pernah keluar dari komputer atau ponsel. Butuh sebaliknya? Pilih MP3 → WAV untuk mengubah file MP3 menjadi WAV tanpa kompresi untuk editing, CD, atau software DJ.",
+  "lead": "Ubah WAV ke MP3 dan kecilkan rekaman WAV yang besar menjadi MP3 yang tetap terdengar bagus. Lagu 4 menit menyusut dari 40 MB menjadi sekitar 9 MB pada 320 kbps. Konversi banyak file sekaligus langsung di browser, jadi lagu yang belum dirilis dan wawancara pribadi tidak pernah keluar dari komputer Anda. Butuh sebaliknya? Pilih MP3 → WAV.",
   "intro": {
-   "h2": "Mengapa mengubah WAV ke MP3, atau MP3 ke WAV?",
+   "h2": "Kenapa mengubah WAV menjadi MP3?",
    "paras": [
-    "WAV menyimpan suara tanpa kompresi sama sekali. WAV berkualitas CD (16-bit, 44.1 kHz stereo) berjalan di sekitar 1411 kbps, atau kira-kira 10 MB untuk setiap menit. Itu ideal untuk merekam dan mengedit. Namun, ukurannya terlalu berat untuk email, aplikasi chat, atau ponsel yang memorinya hampir penuh.",
-    "MP3 320 kbps hanya butuh sekitar 2,4 MB per menit, dan pada 192 kbps hanya 1,4 MB. Jadi, mengubah WAV ke MP3 biasanya memangkas ukuran 75 hingga 90 persen, sementara kebanyakan pendengar tidak merasakan perbedaan di speaker dan headphone biasa. Alat ini juga menerima AIFF, format tanpa kompresi yang dipakai banyak aplikasi Mac. Selain itu, halaman yang sama juga berfungsi sebagai konverter MP3 ke WAV kapan pun aplikasi atau perangkat hanya mau menerima file WAV."
+    "WAV tidak dikompresi. WAV berkualitas CD (16-bit, 44.1 kHz, stereo) memakai 1.411 kbps, sekitar 10 MB untuk setiap menit. Itu ideal saat merekam dan mengedit, tetapi terlalu berat untuk dikirim lewat email, diunggah ke kebanyakan situs, atau disimpan ratusan file di HP.",
+    "MP3 320 kbps hanya butuh sekitar 2,4 MB per menit, dan pada 192 kbps hanya 1,4 MB. Dalam pengujian kami, lagu WAV 4 menit (40 MB) menjadi MP3 9,2 MB pada 320 kbps dalam sekitar 20 detik, atau 5,5 MB pada 192 kbps. Kebanyakan pendengar tidak mendengar perbedaannya di speaker dan earbud sehari-hari."
    ],
    "image": {
     "alt": "Konverter WAV ke MP3"
@@ -1335,28 +1351,28 @@
   "howCta": "Ubah WAV ke MP3 sekarang",
   "steps": [
    [
-    "Pilih arah dan kualitas",
-    "Biarkan WAV → MP3 terpilih untuk mengecilkan file, atau ketuk MP3 → WAV untuk arah sebaliknya. Untuk hasil MP3, halaman dimulai di 320 kbps; ubah sebelum menambahkan file jika Anda ingin ukuran lebih kecil."
+    "Biarkan WAV → MP3 terpilih",
+    "Halaman dimulai pada 320 kbps, kualitas MP3 terbaik. Turunkan sebelum menambahkan file jika ingin hasil lebih kecil, atau ketuk MP3 → WAV untuk arah sebaliknya."
    ],
    [
-    "Tambahkan file Anda",
-    "Ketuk tombol atau seret beberapa file sekaligus ke kotak. File .wav apa pun bisa, baik dari Audacity, GarageBand, Logic Pro, maupun perekam lapangan."
+    "Tambahkan file WAV Anda",
+    "Ketuk Pilih File WAV atau seret banyak file ke kotak, hingga 500 MB per file. Hasil ekspor dari Audacity, GarageBand, Logic Pro, Ableton, atau field recorder semuanya bisa."
    ],
    [
-    "Biarkan proses berjalan",
-    "File dienkode satu per satu di dalam browser Anda, masing-masing dengan bilah progresnya sendiri."
+    "Biarkan dikonversi",
+    "File dienkode satu per satu di dalam browser Anda, masing-masing dengan progress bar sendiri."
    ],
    [
-    "Unduh MP3-nya",
-    "Setiap MP3 tetap memakai nama file aslinya. Ketuk Download, atau Download semua jika Anda mengonversi beberapa file."
+    "Download MP3-nya",
+    "Setiap MP3 memakai nama file aslinya. Ketuk Download, atau Download semua untuk banyak file."
    ]
   ],
   "sections": [
    {
     "h2": "Mengubah MP3 ke WAV",
     "paras": [
-     "Terkadang Anda butuh arah sebaliknya. Editor audio, software DJ, aplikasi burning CD, dan sebagian formulir unggahan meminta file WAV, dan beberapa program lama tidak bisa membuka format lain. Ubah konverter ke MP3 → WAV, pilih 44.1 kHz untuk musik dan CD atau 48 kHz untuk proyek video, lalu tambahkan file MP3 Anda. Setiap file menjadi file .wav PCM 16-bit standar.",
-     "Pahami apa yang bisa dan tidak bisa dilakukan konversi ini. WAV menyimpan suara MP3 persis seperti aslinya, jadi mengedit dan menyimpannya lagi tidak menambah penurunan kualitas. Namun, detail yang sudah dibuang oleh MP3 tidak bisa kembali, dan ukuran file naik menjadi sekitar 10 MB per menit. Untuk rekaman suara, aktifkan Mono agar ukurannya turun setengah, karena WAV menyimpan setiap kanal secara utuh."
+     "Kadang Anda butuh arah sebaliknya. Editor audio, software DJ, aplikasi burning CD, dan sebagian formulir upload meminta file WAV, dan beberapa program lama tidak bisa membuka format lain. Ubah konverter ke MP3 → WAV, pilih 44.1 kHz untuk musik dan CD atau 48 kHz untuk proyek video, lalu tambahkan file MP3 Anda. Setiap file menjadi file .wav PCM 16-bit standar.",
+     "Perlu diingat apa yang bisa dan tidak bisa dilakukan konversi ini. WAV menyimpan suara MP3 persis sama, jadi mengedit dan menyimpannya lagi tidak menambah penurunan kualitas. Namun, WAV tidak bisa mengembalikan detail yang sudah dibuang MP3, dan ukuran file membengkak menjadi sekitar 10 MB per menit. Untuk suara bicara, aktifkan Mono agar ukurannya jadi separuh, karena WAV menyimpan setiap kanal secara utuh."
     ],
     "list": [
      [
@@ -1364,23 +1380,40 @@
       "Impor WAV ke Audacity, GarageBand, FL Studio, atau Premiere Pro tanpa jeda decoding."
      ],
      [
-      "Membuat CD audio",
-      "Banyak aplikasi CD meminta WAV 44.1 kHz, 16-bit, persis seperti yang dihasilkan opsi 44.1 kHz."
+      "Burning CD audio",
+      "Banyak aplikasi CD membutuhkan WAV 44.1 kHz, 16-bit, persis seperti yang dibuat oleh opsi 44.1 kHz."
      ],
      [
       "Perangkat DJ dan sampler",
-      "Beberapa player dan sampler hardware hanya bisa membaca WAV dari flashdisk USB atau kartu SD."
+      "Sebagian media player hardware dan sampler hanya bisa membaca WAV dari flashdisk USB atau kartu SD."
      ]
     ]
    },
    {
-    "h2": "Perbandingan ukuran file WAV vs MP3",
+    "h2": "Ukuran WAV vs MP3: contoh nyata",
     "paras": [
-     "Berikut ukuran satu menit audio stereo di tiap format. Terlihat bahwa pengaturan MP3 terbaik pun sekitar empat kali lebih kecil daripada WAV.",
-     "Dalam praktiknya, lagu 4 menit turun dari sekitar 40 MB menjadi kurang dari 10 MB pada 320 kbps. Begitu juga, wawancara 30 menit yang direkam dalam WAV menyusut dari kira-kira 300 MB menjadi sekitar 29 MB pada 128 kbps."
+     "Satu menit audio stereo memakan sekitar 10 MB sebagai WAV berkualitas CD dan 2,4 MB sebagai MP3 320 kbps. Bahkan pengaturan MP3 terbaik pun sekitar empat kali lebih kecil."
+    ],
+    "list": [
+     [
+      "Lagu 4 menit",
+      "WAV 40 MB → 9,2 MB pada 320 kbps atau 5,5 MB pada 192 kbps (pengujian kami)."
+     ],
+     [
+      "Wawancara 30 menit",
+      "Sekitar 300 MB WAV → sekitar 29 MB pada 128 kbps. Aktifkan Mono agar seluruh bitrate dipakai untuk suara."
+     ],
+     [
+      "Episode podcast 1 jam",
+      "Sekitar 600 MB WAV → sekitar 58 MB pada 128 kbps, cukup kecil untuk hosting podcast mana pun."
+     ],
+     [
+      "WAV studio 24-bit, 48 kHz",
+      "Sekitar 17 MB per menit. Ukuran MP3-nya sama dengan dari WAV berkualitas CD, karena ukuran MP3 hanya bergantung pada bitrate dan durasi."
+     ]
     ],
     "image": {
-     "alt": "Ukuran file WAV vs MP3"
+     "alt": "Perbandingan ukuran file WAV dan MP3"
     }
    },
    {
@@ -1388,41 +1421,40 @@
     "list": [
      [
       "320 kbps",
-      "Lagu jadi, mix, dan master yang ingin Anda bagikan dengan kualitas MP3 terbaik."
+      "Lagu jadi, mix, dan master yang Anda bagikan atau jual dalam format MP3."
      ],
      [
       "256 kbps",
-      "Suara hampir sama dengan file sedikit lebih kecil, cocok untuk playlist."
+      "Suara yang praktis sama dengan file 20% lebih kecil, bagus untuk playlist."
      ],
      [
       "192 kbps",
-      "Demo dan rough mix yang Anda kirim ke rekan band atau klien."
+      "Demo dan rough mix untuk rekan band atau klien."
      ],
      [
       "128 kbps dengan Mono",
-      "Rekaman suara, wawancara, dan dikte dari perekam lapangan seperti Zoom H1n."
+      "Rekaman suara, wawancara, dan dikte dari field recorder seperti Zoom H1n."
      ]
     ]
    },
    {
     "h2": "Apakah WAV ke MP3 lossless?",
     "paras": [
-     "Tidak. WAV bersifat lossless, sedangkan MP3 adalah format lossy yang membuang suara yang tidak terdengar oleh kebanyakan orang. Pada 256 atau 320 kbps, perbedaannya sangat sulit dikenali di sebagian besar speaker. Meski begitu, setiap konversi ke MP3 membuang sedikit detail, jadi prosesnya satu arah.",
-     "Karena itu, jadikan WAV sebagai master dan MP3 sebagai salinan untuk dibagikan. Jika nanti Anda perlu mengedit, me-remaster, atau membuat format lain, mulailah lagi dari WAV. Dan jika Anda juga menyimpan file FLAC lossless, konverter [FLAC ke MP3](/flac-to-mp3) kami bekerja dengan cara yang sama persis."
+     "Tidak. WAV bersifat lossless dan MP3 bersifat lossy: encoder membuang suara yang jarang didengar orang. Pada 256 atau 320 kbps, perbedaannya sangat sulit diperhatikan. Meski begitu, setiap konversi MP3 membuang sedikit detail, dan mengubah MP3 kembali ke WAV tidak mengembalikannya.",
+     "Jadi anggap WAV sebagai master dan MP3 sebagai salinan untuk dibagikan. Edit, remaster, atau buat format lain dari WAV. Jika Anda butuh file lossless yang lebih kecil dari WAV, FLAC memangkas ukurannya hingga separuh tanpa kehilangan apa pun; halaman [FLAC ke MP3](/flac-to-mp3) kami menjelaskan kapan sebaiknya memakainya."
     ]
    },
    {
-    "h2": "Mengubah file WAV 24-bit, 32-bit, dan 48 kHz",
+    "h2": "File 24-bit, 32-bit float, dan 48 kHz",
     "paras": [
-     "Rekaman dari DAW atau kamera video sering kali berformat 24-bit atau 32-bit float pada 48 kHz atau lebih tinggi. Konverter ini juga bisa membacanya: browser Anda men-decode sebagian besar file, dan FFmpeg dalam WebAssembly menangani sisanya. Setiap MP3 kemudian dibuat pada 44.1 kHz, sample rate standar untuk musik MP3.",
-     "File WAV multikanal, seperti mix film 5.1, di-downmix menjadi stereo, jadi tidak ada kanal yang dibuang begitu saja. Selain itu, berlaku batas 500 MB per file, setara kira-kira 50 menit WAV stereo berkualitas CD."
+     "Rekaman dari DAW atau kamera sering kali 24-bit atau 32-bit float pada 48 kHz atau lebih. Konverter bisa membacanya: browser Anda mendekode sebagian besar file, dan FFmpeg menangani sisanya. Setiap MP3 ditulis pada 44.1 kHz, sample rate standar untuk musik MP3, dengan bitrate konstan.",
+     "WAV multikanal, seperti mix film 5.1, di-mixdown menjadi stereo, jadi tidak ada kanal yang hilang. Batas 500 MB per file setara dengan sekitar 50 menit stereo berkualitas CD atau 30 menit audio 24-bit, 48 kHz."
     ]
    },
    {
-    "h2": "WAV ke MP3 di Mac, Windows, iPhone, dan Android",
+    "h2": "Ubah WAV ke MP3 di Mac, Windows, iPhone, dan Android",
     "paras": [
-     "Di Mac atau PC Windows, seret file WAV dari Finder atau File Explorer ke kotak, dan file MP3 akan masuk ke folder Downloads. Ini cara tercepat untuk hasil ekspor dari GarageBand, Logic Pro, Audacity, atau editor audio lainnya.",
-     "Di iPhone, buka halaman ini di Safari, ketuk Pilih File WAV, lalu pilih rekaman dari aplikasi Files; kebanyakan aplikasi perekam bisa membagikan WAV ke Files terlebih dahulu. Di Android, Chrome membuka pengelola file Anda, dan file yang selesai masuk ke Downloads. Di kedua perangkat, tidak ada yang perlu dipasang."
+     "Di **Mac atau PC Windows**, seret file WAV dari Finder atau File Explorer ke kotak; MP3 tersimpan di folder Downloads. Di **iPhone**, buka halaman ini di Safari, ketuk Pilih File WAV, lalu pilih rekaman dari aplikasi File. Kebanyakan aplikasi perekam bisa membagikan WAV ke File terlebih dahulu. Di **Android**, Chrome membuka pengelola file Anda dan MP3 disimpan di folder Download."
     ],
     "image": {
      "alt": "WAV ke MP3 di iPhone dan Android"
@@ -1430,17 +1462,24 @@
     "cta": "Coba konverter WAV ke MP3"
    },
    {
-    "h2": "Konversi WAV yang aman dan privat",
+    "h2": "Cara lain mengubah WAV ke MP3",
     "paras": [
-     "Lagu yang belum dirilis dan wawancara pribadi perlu dijaga. Itulah sebabnya [MP3 Converter](/) mengenkode file WAV Anda di dalam browser dengan encoder MP3 LAME, dan tidak ada yang diunggah ke server. Bonusnya, konversi tetap cepat bahkan untuk file besar, karena tidak perlu menunggu unggahan."
+     "Jika Anda sudah biasa memakai software audio, opsi gratis berikut melakukan hal yang sama. Di **Audacity**, buka WAV lalu pilih File → Export Audio, kemudian pilih MP3. Di aplikasi **Apple Music** di Mac, atur Settings → Files → Import Settings ke MP3 Encoder, pilih lagunya, lalu pilih File → Convert → Create MP3 Version. Dengan **FFmpeg**, jalankan `ffmpeg -i song.wav -b:a 320k song.mp3`.",
+     "Halaman ini adalah cara yang lebih cepat untuk banyak file sekaligus, di HP, atau di komputer yang tidak mengizinkan Anda menginstal apa pun. Halaman ini memakai encoder LAME, sama seperti yang dipakai Audacity untuk MP3."
+    ]
+   },
+   {
+    "h2": "Privat sejak awal",
+    "paras": [
+     "Lagu yang belum dirilis dan wawancara pribadi perlu dijaga. [MP3 Converter](/) mengenkode file WAV Anda di dalam browser dengan encoder MP3 LAME, dan tidak ada yang diunggah. Itu juga membuatnya cepat: kecepatannya bergantung pada komputer Anda, bukan kecepatan upload."
     ],
     "list": [
      [
-      "Tidak ada yang keluar dari perangkat",
-      "Rekaman Anda dibaca dan dienkode secara lokal."
+      "Tidak ada yang keluar dari perangkat Anda",
+      "Rekaman dibaca dan dienkode secara lokal."
      ],
      [
-      "Gratis tanpa syarat",
+      "Gratis tanpa syarat tersembunyi",
       "Tanpa daftar, tanpa watermark, dan tanpa batas harian."
      ],
      [
@@ -1450,15 +1489,15 @@
     ]
    },
    {
-    "h2": "Kapan musisi dan podcaster mengubah WAV ke MP3",
+    "h2": "Alasan umum musisi dan podcaster mengubah WAV",
     "list": [
      [
       "Berbagi demo",
-      "Kirim mix ke rekan band lewat email atau chat tanpa terbentur batas lampiran."
+      "Kirim mix lewat email atau chat tanpa terbentur batas lampiran."
      ],
      [
-      "Episode podcast",
-      "MP3 bisa diputar di semua aplikasi podcast, jadi ubah ekspor WAV final sebelum Anda publikasikan."
+      "Menerbitkan podcast",
+      "MP3 bisa diputar di semua aplikasi podcast. Ekspor WAV final, konversi, lalu unggah."
      ],
      [
       "Pratinjau sampel",
@@ -1466,7 +1505,7 @@
      ],
      [
       "Menggabungkan take",
-      "Gabungkan beberapa file MP3 menjadi satu track dengan [Gabung Audio](/audio-joiner) kami."
+      "Gabungkan beberapa MP3 menjadi satu trek dengan [Gabung Audio](/audio-joiner), atau pangkas dengan [Pemotong MP3](/mp3-cutter)."
      ]
     ]
    }
@@ -1474,51 +1513,51 @@
   "faqs": [
    {
     "q": "Apakah mengubah WAV ke MP3 menurunkan kualitas?",
-    "a": "Ya, sedikit, karena MP3 bersifat lossy. Pada 256 atau 320 kbps, perbedaannya sangat sulit didengar oleh kebanyakan orang di sebagian besar speaker."
+    "a": "Sedikit, karena MP3 bersifat lossy. Pada 256 atau 320 kbps, kebanyakan orang tidak bisa mendengar perbedaannya di speaker atau earbud biasa. Simpan WAV sebagai master Anda."
    },
    {
-    "q": "Berapa bitrate terbaik untuk WAV ke MP3?",
-    "a": "320 kbps untuk musik, itulah sebabnya halaman dimulai di sana. Untuk rekaman suara, 128 kbps dengan Mono aktif sudah lebih dari cukup."
+    "q": "Bitrate apa yang terbaik untuk WAV ke MP3?",
+    "a": "320 kbps untuk musik, itu sebabnya halaman ini dimulai dari sana. Untuk suara bicara, 128 kbps dengan Mono sudah cukup."
    },
    {
-    "q": "Seberapa kecil MP3 dibandingkan WAV?",
-    "a": "Sekitar 4 kali lebih kecil pada 320 kbps dan sekitar 10 kali lebih kecil pada 128 kbps. Satu menit WAV berkualitas CD kira-kira 10 MB."
+    "q": "Seberapa kecil MP3 dibanding WAV?",
+    "a": "Sekitar 4 kali lebih kecil pada 320 kbps dan sekitar 10 kali lebih kecil pada 128 kbps. Dalam pengujian kami, WAV 4 menit berukuran 40 MB menjadi MP3 9,2 MB pada 320 kbps."
+   },
+   {
+    "q": "Berapa lama proses konversinya?",
+    "a": "Beberapa detik hingga satu menit. Dalam pengujian kami, lagu 4 menit butuh sekitar 20 detik pada 320 kbps. Banyak file dikonversi satu per satu."
    },
    {
     "q": "Bisakah saya mengubah file WAV 24-bit atau 32-bit?",
-    "a": "Bisa. File WAV resolusi tinggi didukung. MP3 dibuat pada 44.1 kHz, sample rate standar untuk musik MP3."
-   },
-   {
-    "q": "Berapa banyak file WAV yang bisa diubah sekaligus?",
-    "a": "Tidak ada batas tetap. File diproses satu per satu agar perangkat Anda tetap responsif."
+    "a": "Bisa. WAV resolusi tinggi dan 32-bit float bisa dipakai. MP3 ditulis pada 44.1 kHz, sample rate standar untuk musik MP3."
    },
    {
     "q": "Apakah ada batas ukuran?",
-    "a": "Setiap file bisa sampai 500 MB, kira-kira 50 menit WAV stereo berkualitas CD."
+    "a": "Setiap file bisa sampai 500 MB, sekitar 50 menit WAV stereo berkualitas CD. Tidak ada batas jumlah file."
    },
    {
     "q": "Apakah file WAV saya diunggah?",
     "a": "Tidak. Semuanya terjadi di dalam browser Anda, jadi rekaman Anda tidak pernah keluar dari perangkat."
    },
    {
-    "q": "Bisakah saya mengubah MP3 ke WAV di halaman ini?",
-    "a": "Bisa. Ketuk tab MP3 → WAV di atas konverter, pilih 44.1 atau 48 kHz, lalu tambahkan file MP3 Anda. Setiap file disimpan sebagai file WAV PCM 16-bit."
+    "q": "Bisakah saya mengubah MP3 ke WAV di sini juga?",
+    "a": "Bisa. Ketuk MP3 → WAV di atas konverter, pilih 44.1 atau 48 kHz, lalu tambahkan file MP3 Anda. Setiap file menjadi WAV PCM 16-bit. Detail yang sudah dibuang MP3 tidak akan kembali."
    },
    {
-    "q": "Bisakah saya mengubah file AIFF juga di sini?",
-    "a": "Bisa. AIFF diproses sama seperti WAV, karena keduanya format tanpa kompresi."
+    "q": "Bisakah saya mengubah file AIFF?",
+    "a": "Bisa. AIFF tidak dikompresi seperti WAV dan dikonversi dengan cara yang sama."
    },
    {
-    "q": "Bisakah saya mengubah WAV ke MP3 di iPhone?",
-    "a": "Bisa. Simpan WAV ke aplikasi Files, buka halaman ini di Safari, ketuk Pilih File WAV, lalu pilih filenya. MP3 akan tersimpan di Files, di folder Downloads."
+    "q": "Bagaimana cara mengubah WAV ke MP3 di iPhone?",
+    "a": "Simpan WAV ke aplikasi File, buka halaman ini di Safari, ketuk Pilih File WAV, lalu pilih filenya. MP3 disimpan di aplikasi File, di folder Unduhan."
    },
    {
     "q": "Apakah mengubah MP3 ke WAV meningkatkan kualitas?",
-    "a": "Tidak. WAV menyimpan suara MP3 persis seperti aslinya, tetapi tidak bisa mengembalikan detail yang sudah dibuang MP3. Ubah MP3 ke WAV demi kompatibilitas dan editing, bukan untuk suara yang lebih baik."
+    "a": "Tidak. WAV menyimpan suara MP3 persis sama, tetapi tidak bisa mengembalikan detail yang sudah dibuang MP3. Ubah MP3 ke WAV demi kompatibilitas dan editing, bukan agar suaranya lebih bagus."
    },
    {
-    "q": "Mengapa WAV saya jauh lebih besar daripada MP3?",
-    "a": "WAV tidak dikompresi, jadi setiap sampel disimpan utuh: sekitar 10 MB per menit untuk stereo 44.1 kHz, dibandingkan kira-kira 1 hingga 2,4 MB untuk MP3."
+    "q": "Kenapa WAV saya jauh lebih besar dari MP3?",
+    "a": "WAV tidak dikompresi, jadi setiap sampel disimpan utuh: sekitar 10 MB per menit dalam stereo pada 44.1 kHz, dibandingkan dengan sekitar 1 hingga 2,4 MB untuk MP3."
    },
    {
     "q": "Sample rate mana yang sebaiknya dipilih untuk MP3 ke WAV?",

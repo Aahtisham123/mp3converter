@@ -7,63 +7,63 @@
    "placeholder": "YouTube bağlantısı yapıştırın, ör. https://www.youtube.com/watch?v=…"
   },
   "seoTitle": "YouTube MP3 Dönüştürücü – Ücretsiz ve Hızlı MP3 İndir",
-  "metaDescription": "YouTube videolarını ücretsiz ve hızlıca MP3'e dönüştürün. Video, Shorts ve YouTube Music'i 320 kbps'ye kadar MP3 indirin. Güvenli, uygulama ve kayıt yok.",
+  "metaDescription": "YouTube'u ücretsiz ve hızlıca MP3'e dönüştürün. Herhangi bir YT bağlantısını yapıştırın; video, Shorts ve YouTube Music'i 320 kbps'ye kadar MP3 indirin.",
   "h1": "YouTube MP3 Dönüştürücü",
-  "lead": "Ücretsiz YouTube MP3 dönüştürücümüzle bir bağlantı yapıştırıp herhangi bir videoyu birkaç dokunuşla MP3 olarak indirebilirsiniz. iPhone, Android ve bilgisayarda online çalışır; 320 kbps'ye kadar kalite, konuşma için mono ve yalnızca ihtiyacınız olan bölümü alma seçeneği sunar.",
+  "lead": "Bir YouTube bağlantısı yapıştırın, kaliteyi seçin ve sesi MP3 olarak kaydedin. Bu YouTube MP3 dönüştürücüyle yalnızca ihtiyacınız olan bölümü alabilir, konuşmayı mono yapabilir ve hiçbir şey kurmadan iPhone, Android veya bilgisayarda indirebilirsiniz.",
   "intro": {
-   "h2": "Gerçek seçenekler sunan ücretsiz online YouTube MP3 dönüştürücü",
+   "h2": "Bir YouTube videosunun sesini MP3 olarak kaydedin",
    "paras": [
-    "YouTube MP3 dönüştürücü, bir videonun sesini alır ve neredeyse her yerde çalan bir MP3 ses dosyası olarak kaydeder. İnsanlar bunu otobüste ders dinlemek, eski bir MP3 çalarda spor listesi tutmak veya Wi-Fi olmayan bir uçuş için podcast bölümü saklamak için kullanır. Ancak çoğu YT MP3 sitesi tek bir düğme ve tek bir kalitede kalır. Sonuçta çoğu zaman ihtiyacınızdan büyük bir dosya ya da yalnızca on dakikasını istediğiniz iki saatlik bir canlı yayın elde edersiniz.",
-    "Bu araç yalnızca sese odaklanır; böylece ses için gerçekten önemli olan ayarları sunabilir. 320 kbps'ye kadar yedi bit hızı arasından seçim yapar, konuşmayı mono'ya geçirir ve başlangıç ile bitiş zamanını yazarak bir bölüm kesersiniz. En güzeli de ücretsiz kalması: hesap yok, kurulacak uygulama yok ve dosyanızda filigran yok."
+    "İnsanlar YouTube videolarını MP3'e çevirerek bir dersi otobüste dinliyor, bir konuşmayı Wi-Fi olmayan bir uçuş için saklıyor ya da eski bir MP3 çalara veya araç teybine atıyor. Çoğu site tek bir düğme ve tek bir kalite sunar. Bu araç ise sonucu gerçekten değiştiren üç ayarı verir: bit hızı, mono veya stereo ve videonun tam olarak istediğiniz bölümü.",
+    "Arka planda olan şu: Tarayıcıların videoları doğrudan YouTube'dan almasına izin verilmez. Bu yüzden ses akışını sunucumuz indirir, FFmpeg ile MP3'e dönüştürür ve dosyayı size verir. Hazır MP3, 30 dakika içinde sunucudan silinir. Hesap yok, uygulama yok, filigran yok."
    ],
    "image": {
     "alt": "YouTube MP3 dönüştürücü"
    }
   },
   "howImage": {
-   "alt": "YouTube videosu MP3'e nasıl dönüştürülür"
+   "alt": "YouTube videosunu MP3'e dönüştürme adımları"
   },
-  "howCta": "YouTube'u hemen MP3'e dönüştür",
+  "howCta": "YouTube'u şimdi MP3'e dönüştürün",
   "steps": [
    [
-    "YouTube bağlantısını kopyalayın",
-    "Videonun altındaki Paylaş'a dokunup Bağlantıyı kopyala'yı seçin veya adresi tarayıcı çubuğundan kopyalayın. Normal videolar, youtu.be bağlantıları, YouTube Shorts ve YouTube Music parçalarının hepsi çalışır."
+    "Video bağlantısını kopyalayın",
+    "Videonun altındaki Paylaş'a dokunup Bağlantıyı kopyala'yı seçin veya adres çubuğundan kopyalayın. Normal videolar, youtu.be bağlantıları, Shorts ve music.youtube.com bağlantılarının hepsi çalışır."
    ],
    [
     "Yapıştırın ve kaliteyi seçin",
-    "Bağlantıyı yukarıdaki kutuya yapıştırın. Çoğu video için 192 kbps uygundur, müzik için en iyisi 320 kbps'dir; 64 ile 96 kbps ise uzun konuşmaları küçük tutar."
+    "Bağlantıyı yukarıya yapıştırın. Konuşmalar için 128 kbps fazlasıyla yeterli, çoğu video için 192 kbps, saklamak istediğiniz müzik için 320 kbps."
    ],
    [
-    "İsterseniz ekstraları ekleyin",
-    "Konuşma için Mono'yu açın. Yalnızca belirli bir bölümü almak için Bir bölüm kes'i açıp 1:20 ile 4:05 gibi zamanlar girin."
+    "İsteğe bağlı: Mono veya Bir bölüm kes",
+    "Tek bir ses için Mono'yu açın. Yalnızca bir bölümü kaydetmek için Bir bölüm kes'i açıp 1:20 ve 4:05 gibi zamanlar girin."
    ],
    [
-    "Dönüştürün ve MP3'ü indirin",
-    "MP3'e dönüştür'e dokunun ve dairenin dolmasını izleyin. %100'e ulaştığında dosyayı kaydetmek için yuvarlak İndir düğmesine dokunun."
+    "Dönüştürün ve indirin",
+    "MP3 formatına dönüştür'e dokunun. Daire %100'e ulaşınca yuvarlak İndir düğmesine dokunun."
    ]
   ],
   "sections": [
    {
-    "h2": "320 kbps YouTube MP3: hangi kaliteyi seçmelisiniz?",
+    "h2": "Hangi kaliteyi seçmelisiniz?",
     "paras": [
-     "Bit hızı, MP3'ünüzün ne kadar ayrıntı koruyacağını ve dosyanın ne kadar büyük olacağını belirler. Ayarı kaydettiğiniz içeriğe göre seçmek için bu kısa rehberi kullanın."
+     "YouTube sesi genellikle kabaca 128 ile 160 kbps arasında (Opus veya AAC) yayınlar. Bir MP3, akışta olmayan ayrıntıyı ekleyemez; bu yüzden 192 kbps zaten her şeyi korur. 320 kbps müzik için bir güvenlik payıdır, kalite yükseltmesi değil. Kaydettiğiniz içeriğe göre seçin:"
     ],
     "list": [
      [
-      "Müzik ve canlı performanslar",
-      "Stereo 256 veya 320 kbps her enstrümanı net tutar. Saklamayı düşündüğünüz şarkılar için 320 kbps seçin."
+      "Şarkılar ve canlı performanslar",
+      "256 veya 320 kbps, stereo. 320 kbps'de dakikada yaklaşık 2.4 MB."
      ],
      [
-      "Podcast, röportaj ve dersler",
-      "Mono 96 veya 128 kbps aynı netlikte duyulur ve 320 kbps'ye göre çok daha az yer kaplar."
+      "Podcast'ler, röportajlar ve dersler",
+      "Mono ile 96 veya 128 kbps. 128 kbps'de bir saat yaklaşık 58 MB."
      ],
      [
-      "Dil dersleri ve sesli kitaplar",
-      "64 kbps mono, çok uzun kayıtları telefonunuzda düzinelercesini taşıyabileceğiniz kadar küçültür."
+      "Sesli kitaplar ve dil dersleri",
+      "64 kbps Mono, dakikada yaklaşık 0.5 MB; telefona onlarcası sığar."
      ],
      [
       "Zil sesleri ve kısa klipler",
-      "20 ila 30 saniyeyi almak için Bir bölüm kes'i kullanın, gerekirse [MP3 Kesici](/mp3-cutter) ile ince ayar yapın."
+      "Bir bölüm kes ile 20–30 saniyeyi alın, ardından [MP3 Kesici](/mp3-cutter) ile ince ayar yapın."
      ]
     ],
     "image": {
@@ -71,16 +71,31 @@
     }
    },
    {
-    "h2": "320 kbps MP3, YouTube'dan daha iyi mi duyulur?",
-    "paras": [
-     "YouTube sesi genellikle Opus veya AAC formatında yaklaşık 128 ile 160 kbps arasında yayınlar. Bu yüzden 192 kbps ile dönüştürmek, orijinal yayındaki her şeyi korur. 320 kbps seçmek müzik için bir güvenlik payı ekler; birçok dinleyicinin en sevdiği şarkılar için bunu tercih etmesinin nedeni de budur. Yine de hiçbir dönüştürücü YouTube'un hiç göndermediği ayrıntıyı ekleyemez, dolayısıyla konuşma için bu kadar yükseğe çıkmaya gerek yoktur. Sesi bir müzik veya video uygulamasında düzenlemeyi planlıyorsanız [YouTube WAV dönüştürücümüz](/youtube-to-wav) size bunun yerine sıkıştırılmamış bir dosya verir."
+    "h2": "Neler çalışır, neler çalışmaz?",
+    "list": [
+     [
+      "Çalışır",
+      "Herkese açık videolar, Shorts, YouTube Music parçaları ve bağlantısına sahip olduğunuz liste dışı videolar; 3 saate kadar."
+     ],
+     [
+      "Tek seferde bir video",
+      "Oynatma listeleri tek seferde dönüştürülmez. Bir oynatma listesindeki videonun bağlantısı yalnızca o videoyu dönüştürür."
+     ],
+     [
+      "Çalışmaz",
+      "Canlı yayınlar, gizli ve yalnızca üyelere özel videolar ve yaş sınırlamalı videolar. Bunlar oturum açılmış bir YouTube hesabı gerektirir ve biz asla hesap bilgisi istemeyiz."
+     ],
+     [
+      "Görüntü de mi lazım?",
+      "Video için [YouTube MP4](/youtube-to-mp4), düzenlemek üzere sıkıştırılmamış bir dosya için [YouTube WAV](/youtube-to-wav) aracını kullanın."
+     ]
     ]
    },
    {
-    "h2": "iPhone, Android veya bilgisayarda YouTube sesini kaydedin",
+    "h2": "iPhone, Android veya bilgisayarda YouTube sesi indirin",
     "paras": [
-     "Adına ister YouTube MP3 indir ister kısaca YT MP3 deyin, dönüştürücü tarayıcınızda online çalıştığı için adımlar her cihazda aynıdır. Bilgisayarda bağlantıyı adres çubuğundan kopyalayıp buraya yapıştırın. Android'de videonun altındaki Paylaş'a dokunun, Bağlantıyı kopyala'yı seçin ve Chrome'da bu sayfaya yapıştırın. Hazır MP3 İndirilenler klasörünüze düşer.",
-     "iPhone veya iPad'de bu sayfayı Safari'de açın ve her zamanki gibi dönüştürün. İndir'e dokunduğunuzda Safari MP3'ü Dosyalar uygulamasında İndirilenler klasörüne kaydeder. Oradan dosyayı çalabilir, paylaşabilir veya VLC gibi bir müzik uygulamasında açabilirsiniz. Kurulacak bir şey olmadığı için araç Safari, Chrome, Edge ve Firefox'ta aynı şekilde çalışır."
+     "**Bilgisayarda** bağlantıyı adres çubuğundan kopyalayıp buraya yapıştırın. MP3, İndirilenler klasörünüze gider. **Android**'de videonun altındaki Paylaş'a dokunun, Bağlantıyı kopyala'yı seçin ve Chrome'da bu sayfaya yapıştırın; MP3 İndirilenler'e kaydedilir.",
+     "**iPhone veya iPad**'de bağlantıyı YouTube uygulamasında kopyalayın, bu sayfayı Safari'de açın ve dönüştürün. İndir'e dokunduğunuzda Safari MP3'ü Dosyalar uygulamasında İndirilenler altına kaydeder. Oradan dinleyebilir, paylaşabilir veya VLC gibi bir uygulamada açabilirsiniz."
     ],
     "image": {
      "alt": "iPhone ve Android'de YouTube MP3"
@@ -88,111 +103,121 @@
     "cta": "YouTube MP3 dönüştürücüyü deneyin"
    },
    {
-    "h2": "YouTube Shorts, YouTube Music ve oynatma listeleri",
-    "paras": [
-     "Dönüştürücü standart videolardan fazlasını işler. Kısa bir klipteki şarkıyı veya seslendirmeyi almak için bir YouTube Shorts bağlantısı yapıştırın; popüler bir ses aklınıza takıldığında çok işe yarar. YouTube Music bağlantıları (music.youtube.com) da çalışır; böylece bir YT Music parçasını çevrimdışı dinlemek için MP3'e çevirebilirsiniz. Sesin yanında görüntüyü de istiyorsanız [YouTube MP4 indirici](/youtube-to-mp4) aracımıza geçin.",
-     "Oynatma listeleri biraz farklı çalışır. Hizmetin herkes için hızlı kalması amacıyla araç her seferinde tek bir video dönüştürür. Bir YouTube oynatma listesini MP3 dosyaları olarak kaydetmek için listeyi açın, istediğiniz her videonun bağlantısını kopyalayın ve tek tek dönüştürün. Oynatma listesi içinde oynayan bir videonun bağlantısını yapıştırırsanız yalnızca o videoyu MP3 olarak alırsınız."
-    ]
-   },
-   {
-    "h2": "MP3 çalarınızı, araba teybinizi veya telefonunuzu doldurun",
-    "paras": [
-     "MP3, neredeyse her cihazın anladığı tek ses formatıdır. Bu da YouTube MP3 dönüştürücüyü eski bir MP3 çaları, USB bellek okuyan bir araba teybini, akıllı saati veya bir çocuğun müzik çalarını doldurmanın kolay bir yolu yapar. Videoları dönüştürün, MP3 dosyalarını cihazın müzik klasörüne kopyalayın; diğer parçalar gibi çalarlar. Yeriniz mi az? Cihaza daha fazla şarkı sığdırmak için büyük dosyaları [MP3 Sıkıştırıcı](/mp3-compressor) aracımızdan geçirin."
+    "h2": "Dönüştürme başarısız olursa",
+    "list": [
+     [
+      "“Web sitesi, sunucumuzdan yapılan indirmeleri geçici olarak engelliyor”",
+      "YouTube zaman zaman sunucumuzdan gelen istekleri sınırlar. Birkaç dakika bekleyip tekrar deneyin."
+     ],
+     [
+      "“Saatlik indirme sınırına ulaştınız”",
+      "Hizmetin herkes için hızlı kalması amacıyla her ziyaretçi saatte sınırlı sayıda dönüştürme başlatabilir. Daha sonra tekrar deneyin."
+     ],
+     [
+      "“Canlı yayınlar indirilemez” veya “Bu video burada indirilemeyecek kadar büyük”",
+      "Yayının bitmesini bekleyin; çok uzun videolarda ise Bir bölüm kes'i kullanın."
+     ],
+     [
+      "İlk dönüştürme yavaş",
+      "Sunucu bir süre boşta kaldıysa uyanması bir dakikayı bulabilir. Sonraki dönüştürmeler daha hızlıdır."
+     ]
     ]
    },
    {
     "h2": "Bu YouTube MP3 dönüştürücü güvenli mi?",
     "paras": [
-     "Güvenlik yerinde bir sorudur, çünkü birçok indirme sitesi açılır reklamlar, sahte indirme düğmeleri ve istenmeyen yazılımlar yükleyen kurulum dosyalarıyla doludur. Bu dönüştürücüyü bunların hepsinden uzak duracak şekilde geliştirdik."
+     "Birçok indirme sitesi açılır pencereler, sahte düğmeler ve istenmeyen yazılımlar yükleyen kurulum dosyalarıyla doludur. Bu sayfada bunların hiçbiri yok."
     ],
     "list": [
      [
       "Kurulacak bir şey yok",
-      "Her şey bu sayfada gerçekleşir; reklam yazılımı taşıyabilecek bir uygulama veya tarayıcı eklentisi yoktur."
+      "Uygulama veya tarayıcı eklentisi yok, dolayısıyla reklam yazılımı taşıyabilecek bir şey de yok."
      ],
      [
       "Hesap veya e-posta yok",
-      "Bir videoyu dönüştürmek için hiçbir kişisel bilginizi paylaşmazsınız."
+      "Hiçbir kişisel bilginizi paylaşmazsınız."
      ],
      [
-      "Sahte düğme yok",
-      "Tek bir Dönüştür ve tek bir İndir düğmesi var; ikisi de tam olarak söylediğini yapar."
+      "Bir Dönüştür ve bir İndir düğmesi",
+      "Sahte düğme yok, başka sitelere yönlendirme yok."
      ],
      [
-      "Dosyalar otomatik olarak silinir",
-      "MP3'ünüz sunucumuzda hazırlanır ve 30 dakika içinde kaldırılır. Ayrıntıları gizlilik politikamızda bulabilirsiniz."
+      "Dosyalar silinir",
+      "MP3, 30 dakika içinde sunucumuzdan kaldırılır. [Gizlilik Politikamıza](/privacy-policy) göz atın."
      ]
     ]
    },
    {
-    "h2": "YouTube videoları yasal olarak MP3'e nasıl dönüştürülür?",
+    "h2": "YouTube'u MP3'e dönüştürmek yasal mı?",
     "paras": [
-     "Bir videoyu dönüştürmek birçok durumda yasaldır, ancak bu, içeriğin kime ait olduğuna ve yaşadığınız yerin yasalarına bağlıdır. YouTube'un koşulları yalnızca YouTube'un kendisinin indirme seçeneği sunduğu durumlarda indirmeye izin verir ve oradaki müziklerin çoğu telif hakkıyla korunur. [MP3 Converter](/) bağımsız bir araçtır; YouTube veya Google ile bağlantılı değildir, onlar tarafından onaylanmamış veya desteklenmemiştir. Genel olarak şu kullanımlar güvenlidir:"
+     "Bu, videoya ve yaşadığınız yere bağlıdır. YouTube'un koşulları yalnızca YouTube'un indirme seçeneği sunduğu durumlarda indirmeye izin verir ve YouTube'daki müziklerin çoğu telif hakkıyla korunur. Yalnızca kaydetme hakkınız olan videoları dönüştürün, örneğin:"
     ],
     "list": [
      [
       "Kendi yüklemeleriniz",
-      "Kaydedilmiş bir konuşma veya grup provası gibi kendi çekip yayınladığınız videolar."
+      "İçerik üreticileri kendi videolarını YouTube Studio'da İçerik bölümünden de indirebilir."
      ],
      [
       "Creative Commons videolar",
-      "YouTube aramasında Filtreler'i açıp Creative Commons'ı seçin, ardından kaynak göstermek gibi lisans koşullarına uyun."
+      "YouTube aramasında Filtreler'i açıp Creative Commons'ı seçin, ardından lisansa uyun (örneğin kaynak gösterin)."
      ],
      [
       "Kamu malı içerikler",
-      "Eski konuşmalar, klasik kayıtlar ve telif hakkı bulunmayan diğer eserler."
+      "Eski konuşmalar, tarihî kayıtlar ve telif hakkı olmayan diğer eserler."
      ],
      [
       "İzinli içerikler",
       "Ücretsiz beat'ler veya telifsiz müzikler gibi, üreticisinin indirmeye açıkça izin verdiği videolar."
      ]
     ]
+   },
+   {
+    "h2": "Müzik için yasal alternatifler",
+    "paras": [
+     "Telifli şarkılar için en iyisi resmî yoldur. YouTube Premium ve YouTube Music Premium, videoları ve şarkıları uygulama içinde çevrimdışı dinlemek üzere kaydetmenizi sağlar. Birçok sanatçı ayrıca Bandcamp'te veya kendi web sitesinde indirme satar ya da sunar. Hak sahiplerinin taleplerini nasıl ele aldığımızı öğrenmek için [Telif Hakkı ve DMCA Politikamızı](/copyright) okuyun."
+    ]
    }
   ],
   "faqs": [
    {
-    "q": "Bu YouTube MP3 dönüştürücü gerçekten ücretsiz mi?",
-    "a": "Evet. YouTube videolarını kayıt olmadan, yazılım kurmadan ve dosyalarınızda filigran olmadan ücretsiz olarak MP3'e dönüştürüp indirebilirsiniz."
+    "q": "Bu YouTube MP3 dönüştürücü ücretsiz mi?",
+    "a": "Evet. Videoları kayıt olmadan, yazılım kurmadan ve filigransız olarak ücretsiz MP3'e dönüştürebilirsiniz. Saatlik dönüştürme sayısındaki adil kullanım sınırı hizmeti herkes için hızlı tutar."
    },
    {
-    "q": "YouTube'dan 320 kbps MP3 indirebilir miyim?",
-    "a": "Evet. Dönüştür'e dokunmadan önce 320 kbps'yi seçin. Bu en yüksek MP3 kalitesidir ve müzik için harika bir seçimdir; ancak 192 kbps zaten YouTube'un yayınladığı her şeyi korur."
+    "q": "YouTube sesini 320 kbps indirebilir miyim?",
+    "a": "Evet. Dönüştür'e dokunmadan önce 320 kbps'yi seçin. YouTube sesi yaklaşık 128–160 kbps ile yayınladığı için 192 kbps zaten her şeyi korur; 320 kbps müzik için bir güvenlik payıdır."
    },
    {
-    "q": "YouTube MP3 dönüştürücü kullanmak güvenli mi?",
-    "a": "Bu dönüştürücü güvenli. Kurulacak bir şey, açılacak bir hesap ve açılır reklam yok; dönüştürülen dosyalar 30 dakika içinde sunucumuzdan silinir. Genel olarak, yazılım kurmanızı veya bildirimlere izin vermenizi isteyen dönüştürücülerden uzak durun."
+    "q": "iPhone'da YouTube'u MP3'e nasıl dönüştürürüm?",
+    "a": "Bağlantıyı YouTube uygulamasında kopyalayın, bu sayfayı Safari'de açın, yapıştırın ve MP3 formatına dönüştür'e dokunun. İndir'e dokunduğunuzda MP3 Dosyalar uygulamasında İndirilenler'e kaydedilir."
    },
    {
-    "q": "iPhone'da YouTube nasıl MP3'e dönüştürülür?",
-    "a": "Bu sayfayı Safari'de açın, video bağlantısını yapıştırın ve MP3'e dönüştür'e dokunun. Ardından İndir'e dokunun; Safari MP3'ü Dosyalar uygulamasında İndirilenler klasörüne kaydeder."
+    "q": "Videonun yalnızca bir bölümünü dönüştürebilir miyim?",
+    "a": "Evet. Bir bölüm kes'i açın, 2:10 gibi bir başlangıç ve 5:45 gibi bir bitiş zamanı girin, sonra dönüştürün. MP3'ünüz yalnızca o bölümden oluşur."
    },
    {
-    "q": "Bir YouTube oynatma listesini MP3'e dönüştürebilir miyim?",
-    "a": "Tek adımda olmaz. Her videonun bağlantısını yapıştırarak videoları tek tek dönüştürün. Oynatma listesindeki bir videonun bağlantısı yalnızca o videoyu dönüştürür."
+    "q": "Shorts ve YouTube Music ile çalışır mı?",
+    "a": "Evet. Shorts bağlantısını, youtu.be bağlantısını veya music.youtube.com bağlantısını kopyaladığınız gibi yapıştırın."
    },
    {
-    "q": "YouTube Shorts ve YouTube Music ile çalışır mı?",
-    "a": "Evet. Shorts bağlantısını, kısa youtu.be bağlantısını veya music.youtube.com bağlantısını kopyaladığınız gibi yapıştırın."
+    "q": "Bütün bir oynatma listesini dönüştürebilir miyim?",
+    "a": "Hayır, tek seferde bir video. Bir oynatma listesindeki videonun bağlantısı yalnızca o videoyu dönüştürür."
    },
    {
-    "q": "Bir YouTube videosunun yalnızca bir kısmını MP3'e dönüştürebilir miyim?",
-    "a": "Evet. Bir bölüm kes'i açın, 2:10 gibi bir başlangıç ve 5:45 gibi bir bitiş zamanı girin, sonra dönüştürün. Yalnızca o bölüm MP3'ünüz olur; bu da zaman ve veri tasarrufu sağlar."
+    "q": "Bazı videoları neden dönüştüremiyorum?",
+    "a": "Canlı yayınlar, gizli, yalnızca üyelere özel ve yaş sınırlamalı videolar dönüştürülemez; 3 saatten uzun videolar da desteklenmez."
    },
    {
-    "q": "YT MP3 ile YouTube MP3 aynı şey mi?",
-    "a": "Evet. “YT”, YouTube'un kısaltmasıdır; yani YT MP3, YT MP3 dönüştürücü ve YouTube MP3 aynı şeyi anlatır: bir YouTube bağlantısını MP3 ses dosyasına çevirmek. Bu sayfa da tam olarak bunu yapar."
+    "q": "Güvenli mi?",
+    "a": "Evet. Kurulacak bir şey, hesap ve açılır pencere yok; dosyalar 30 dakika içinde sunucumuzdan silinir. Yazılım kurmanızı isteyen dönüştürücülerden uzak durun."
    },
    {
     "q": "YouTube videolarını MP3'e dönüştürmek yasal mı?",
-    "a": "Videoya ve ülkenize bağlıdır. Kendi yüklemelerinizi, Creative Commons veya kamu malı videoları ya da kaydetme izniniz olan içerikleri dönüştürmek genellikle sorun değildir. Telif hakkıyla korunan müzikleri izinsiz indirmek yasaları ve YouTube'un koşullarını ihlal edebilir."
+    "a": "Videoya ve ülkenize bağlıdır. Kendi yüklemelerinizi, Creative Commons veya kamu malı videoları ya da kaydetme izniniz olan içerikleri dönüştürmek genellikle sorun değildir. Telifli müzikleri izinsiz indirmek ise yasal değildir."
    },
    {
-    "q": "Neden “indirmeleri geçici olarak engelliyor” uyarısını görüyorum?",
-    "a": "YouTube bazen istekleri kısa bir süreliğine sınırlar. Bir iki dakika bekleyip tekrar deneyin."
-   },
-   {
-    "q": "Bunun yerine YouTube MP4 mü kullanmalıyım?",
-    "a": "Sesin yanında görüntüyü de istiyorsanız YouTube MP4 aracımızı kullanın. Bu sayfa her zaman yalnızca ses içeren MP3 dosyaları oluşturur."
+    "q": "YT MP3 ile YouTube MP3 aynı şey mi?",
+    "a": "Evet. “YT”, YouTube'un kısaltmasıdır; yani YT MP3 ile YouTube MP3 aynı anlama gelir: bir YouTube videosunun sesini MP3 dosyası olarak kaydetmek."
    }
   ]
  },
@@ -697,97 +722,141 @@
     "placeholder": "MP4 bağlantısı yapıştırın, ör. https://example.com/video.mp4"
    }
   },
-  "seoTitle": "MP4'ten MP3'e Dönüştürücü | Videodan Ücretsiz Ses Çıkarın",
-  "metaDescription": "Her MP4'ü tek tıkla temiz bir MP3 dosyasına çevirin. Hızlı ve ücretsiz: yükleyin, dönüştürün ve hesap gerekmeden indirin.",
+  "seoTitle": "MP4'ü MP3'e Dönüştürme | Videodan Ücretsiz Ses Çıkarın",
+  "metaDescription": "Her MP4'ü tek tıkla temiz bir MP3 dosyasına çevirin. Hızlı ve ücretsiz: yükleyin, dönüştürün ve indirin, hesap gerekmez.",
   "h1": "MP4'ten MP3'e Dönüştürücü",
-  "lead": "Ücretsiz MP4'ten MP3'e dönüştürücümüzle herhangi bir MP4 videoyu birkaç saniyede online olarak MP3 sese çevirebilirsiniz. Telefonunuzdan veya bilgisayarınızdan bir dosya yükleyin ya da internetteki bir MP4'ün bağlantısını yapıştırın, ardından 320 kbps'ye kadar bir kalite seçin ve her yerde çalan temiz bir ses dosyası indirin.",
+  "lead": "Herhangi bir MP4 videonun sesini alıp MP3 olarak kaydedin: bir ders, bir Zoom görüşmesi, bir konser klibi ya da bir seslendirme. MP4'ü MP3'e dönüştürme işi kendi cihazınızda yapılır, hiçbir şey yüklenmez ve 10 dakikalık bir video yaklaşık 190 MB'tan 14 MB'a iner.",
   "intro": {
-   "h2": "MP4 dosyaları için ücretsiz online videoyu sese dönüştürücü",
+   "h2": "MP4'ten saniyeler içinde ses çıkarın",
    "paras": [
-    "MP4; telefonlar, ekran kaydediciler, Zoom ve Teams kayıtları ve çoğu düzenleme uygulaması için varsayılan video formatıdır. Ancak çoğu zaman yalnızca duyduğunuz kısma ihtiyacınız vardır: bir web seminerindeki konuşma, bir tatil klibinin müziği veya bir eğitim videosunun anlatımı. MP3 videodan çok daha küçüktür; e-postaya sığar, her müzik uygulamasında çalar ve telefon ekranınız kapalıyken de çalmaya devam eder. Kısacası bir videoyu ses dosyasına çevirmek yer kazandırır ve sesi her yere taşımayı kolaylaştırır.",
-    "Bu sayfa size iki yol sunar. Yükle seçeneğinde dönüştürme tamamen tarayıcınızda gerçekleşir; böylece özel videolarınız cihazınızdan hiç çıkmaz. Bağlantı Yapıştır seçeneğinde ise sunucumuz zaten internette olan bir MP4'ü (örneğin doğrudan bir .mp4 adresi veya Internet Archive'daki bir video) alır ve size MP3'ü verir. Her iki yolda da MP4'ü hesap ve filigran olmadan ücretsiz olarak MP3'e dönüştürebilirsiniz."
+    "Telefonlar, ekran kaydediciler, Zoom ve Teams varsayılan olarak MP4 kaydeder. Ama çoğu zaman görüntü sadece fazladan yüktür: bir webinarı yürürken tekrar dinlemek, bir arkadaşınıza şarkı fikri göndermek ya da bir konuşmayı eski bir MP3 çalara atmak istersiniz. MP4'ü MP3'e dönüştürmek yalnızca duyduğunuzu saklar ve video kanalını atar.",
+    "Burada **MP4'ü MP3'e iki yolla dönüştürebilirsiniz**. *Yükle* dosyayı tarayıcınızın içinde okur, böylece özel kayıtlar telefonunuzdan veya bilgisayarınızdan hiç çıkmaz. *Bağlantı Yapıştır* ise zaten internette olan bir MP4 içindir; örneğin doğrudan bir .mp4 adresi veya Internet Archive'daki bir video. Sunucumuz dosyayı sizin için alır ve sonucu 30 dakika içinde siler."
    ],
    "image": {
     "alt": "MP4'ten MP3'e dönüştürücü"
    }
   },
   "howImage": {
-   "alt": "MP4 nasıl MP3'e dönüştürülür"
+   "alt": "MP4'ü MP3'e dönüştürme adımları"
   },
-  "howCta": "MP4'ü hemen MP3'e dönüştür",
+  "howCta": "MP4'ü şimdi MP3'e dönüştürün",
   "steps": [
    [
-    "Yükle veya Bağlantı Yapıştır'ı seçin",
-    "Yükle varsayılan olarak seçilidir ve cihazınızda kayıtlı videolarla çalışır. MP4 internetteyse bunun yerine Bağlantı Yapıştır'a dokunun."
+    "Kaliteyi seçin",
+    "Dosyayı eklemeden önce bir bit hızı seçin: konuşmalar için Mono ile 128 kbps, çoğu video için 192 kbps, müzik için 320 kbps. Ayar, sonradan eklediğiniz dosyalara uygulanır."
    ],
    [
-    "MP3 kalitesini ayarlayın",
-    "Yüklemelerde dosyayı eklemeden önce 128 ile 320 kbps arasında seçim yapın ve konuşma için Mono'yu açın, çünkü ayarlar o anda sabitlenir. Bağlantı Yapıştır sekmesi 192 kbps önceden seçili olarak 64 ile 320 kbps arası seçenekler sunar."
+    "MP4'ünüzü ekleyin",
+    "MP4 Dosyası Seç'e dokunun veya bir ya da birkaç videoyu kutuya sürükleyin; her biri 500 MB'a kadar olabilir. Dönüştürme kendiliğinden başlar. İnternetteki bir video için bunun yerine Bağlantı Yapıştır sekmesini kullanın."
    ],
    [
-    "MP4'ü ekleyin veya bağlantıyı yapıştırın",
-    "MP4 Dosyası Seç'e dokunun veya birkaç videoyu kutuya sürükleyin; dönüştürme kendiliğinden başlar. Bağlantı için adresi yapıştırıp MP3'e dönüştür'e dokunun."
+    "İlerleme çubuğunu bekleyin",
+    "Ses kanalı cihazınızda çözülür ve kodlanır. Testimizde 1 dakikalık 1080p bir klip yaklaşık 6 saniye, 10 dakikalık bir video yaklaşık 45 saniye sürdü."
    ],
    [
-    "MP3'ünüzü indirin",
-    "Sonucu sayfada dinleyin, ardından İndir'e dokunun. Birkaç dosya mı dönüştürdünüz? Hepsini tek seferde kaydetmek için Tümünü indir'i kullanın."
+    "Dinleyin ve indirin",
+    "Sonucu sayfada dinleyin, ardından İndir'e dokunun. Birden fazla dosya varsa Tümünü indir her MP3'ü tek seferde kaydeder."
    ]
   ],
   "sections": [
    {
-    "h2": "MP4 ve MP3: dosya boyutu ve en iyi bit hızı",
+    "h2": "MP3 ne kadar büyük olacak?",
     "paras": [
-     "Bir dakikalık 720p MP4 video, çoğunlukla görüntü nedeniyle yaklaşık 20 MB yer kaplar. MP3 yalnızca sesi tutar; böylece aynı dakika 128 kbps'de yaklaşık 1 MB'a, 320 kbps'de 2.4 MB'a düşer. Başka bir deyişle, bir saatlik bir kayıt bir gigabaytın üzerinden 128 kbps'de yaklaşık 58 MB'a iner.",
-     "Çoğu MP4 dosyası sesini yaklaşık 128 ile 256 kbps arası AAC olarak saklar. Bu yüzden 192 kbps günlük videolardaki neredeyse her şeyi korur; kaynağın çok üzerine çıkmak ise yalnızca dosyayı büyütür. Bu kısa rehberi kullanın:"
+     "Bir MP4'ün boyutunun neredeyse tamamı görüntüdür. Görüntü gidince dosya ciddi şekilde küçülür. Bunlar kendi testlerimizden gerçek sonuçlar:"
     ],
     "list": [
      [
-      "Müzik videoları ve konserler",
-      "Stereo 256 veya 320 kbps enstrümanları ve vokalleri net tutar."
+      "10 dakikalık 720p ekran kaydı",
+      "189 MB MP4 → 192 kbps ile 14 MB MP3, Chrome'da yaklaşık 45 saniye."
      ],
      [
-      "Dersler, web seminerleri ve toplantılar",
-      "Mono açıkken 128 kbps küçük bir dosyada net konuşma sağlar."
+      "1 dakikalık 1080p telefon klibi (MOV)",
+      "58 MB → 192 kbps ile 1.4 MB, yaklaşık 6 saniye."
      ],
      [
-      "Telefon klipleri ve vloglar",
-      "Arka plan müziğiyle karışık konuşma için 192 kbps güvenli bir orta yoldur."
+      "1 saatlik ders",
+      "128 kbps ile yaklaşık 58 MB. Mono'yu açarsanız bit hızının tamamı tek sese gider."
      ],
      [
-      "Bağlantıdan uzun konuşmalar",
-      "Boyut ayrıntıdan daha önemliyse Bağlantı Yapıştır sekmesi 64 ve 96 kbps seçenekleri de sunar."
+      "Pratik kural",
+      "Videonun çözünürlüğü ne olursa olsun, MP3'ün her dakikası 128 kbps'de yaklaşık 0.96 MB, 192 kbps'de 1.44 MB ve 320 kbps'de 2.4 MB tutar."
      ]
     ],
     "image": {
-     "alt": "MP4 ve MP3 dosya boyutu"
+     "alt": "MP4 ve MP3 dosya boyutu karşılaştırması"
     }
    },
    {
-    "h2": "Yükle mi, Bağlantı Yapıştır mı: hangisi size uygun?",
+    "h2": "Hangi bit hızını seçmelisiniz?",
+    "paras": [
+     "Çoğu MP4 dosyasının içindeki ses 128 ile 256 kbps arasında AAC'dir. Bir MP3 yalnızca zaten var olanı saklayabilir; kaynağın çok üzerinde bir bit hızı seçmek dosyayı daha iyi duyulmasını sağlamadan büyütür."
+    ],
     "list": [
      [
-      "Yükle: en gizli seçenek",
-      "Telefon kayıtları, ekran kayıtları ve toplantı dışa aktarımları kendi cihazınızda okunur ve kodlanır. Her dosya 500 MB'a kadar olabilir."
+      "Dersler, toplantılar, webinarlar",
+      "Mono açıkken 128 kbps. Konuşma net kalır ve bir saat yaklaşık 58 MB'a sığar."
      ],
      [
-      "Bağlantı Yapıştır: zaten internette olan videolar için",
-      "Önce dev bir MP4 indirmekle uğraşmayın. Doğrudan .mp4 bağlantıları ve Internet Archive ya da Vimeo (indirmenin açık olduğu yerlerde) gibi ücretsiz video siteleri çalışır. Canlı yayınlar ve yaklaşık üç saatten uzun videolar desteklenmez."
+      "Vlog'lar ve telefon videoları",
+      "192 kbps; arka plan müziğiyle karışık sesler için güvenli bir seçim."
      ],
      [
-      "Toplu dönüştürme",
-      "Birkaç MP4 dosyasını aynı anda seçin. Birbiri ardına dönüştürülürler; böylece telefonunuz veya dizüstü bilgisayarınız yavaşlamaz."
+      "Müzik videoları ve konserler",
+      "Vokallerin ve enstrümanların net kalması için stereo 256 veya 320 kbps."
      ],
      [
-      "YouTube ve TikTok bağlantıları",
-      "Bunların kendi sayfaları var. YouTube için [YouTube MP3 dönüştürücüyü](/youtube-to-mp3) kullanın; TikTok desteği ise çok yakında geliyor."
+      "Bağlantıdan gelen çok uzun kayıtlar",
+      "Boyutun en önemli olduğu durumlar için Bağlantı Yapıştır sekmesi 64 ve 96 kbps seçeneklerini de sunar."
      ]
     ]
    },
    {
-    "h2": "iPhone, Android, Mac ve Windows'ta MP4'ü MP3'e dönüştürün",
+    "h2": "Yükle mi, Bağlantı Yapıştır mı: hangisini kullanmalı?",
+    "list": [
+     [
+      "Yükle (en gizli)",
+      "Cihazınızdaki videolar için: telefon kayıtları, ekran görüntüleri, Zoom veya Teams dışa aktarımları. Dosya yerel olarak okunur ve dönüştürülür."
+     ],
+     [
+      "Bağlantı Yapıştır (önce indirmeye gerek yok)",
+      "Zaten internette olan bir MP4 için. Doğrudan .mp4 bağlantıları ve indirmeye izin veren siteler (Internet Archive veya indirmesi açık Vimeo gibi) çalışır. Canlı yayınlar desteklenmez; bağlantıyla eklenen videolar yaklaşık üç saate kadar uzun olabilir."
+     ],
+     [
+      "YouTube bağlantıları",
+      "Bölüm kesme gibi YouTube'a özel seçenekleri olan [YouTube MP3](/youtube-to-mp3) sayfasını kullanın."
+     ],
+     [
+      "Diğer video formatları",
+      "MOV, MKV, WEBM veya AVI mi? [Videodan MP3'e](/video-to-mp3) dönüştürücü hepsini destekler."
+     ]
+    ]
+   },
+   {
+    "h2": "MP4'te ses yok veya dönüşmüyor mu? Bunları deneyin",
+    "list": [
+     [
+      "“Bu dosyada hiç ses bulamadık”",
+      "Videoda ses kanalı yok. Bu durum, mikrofon veya sistem sesi olmadan yapılan ekran kayıtlarında sık görülür. Kontrol etmek için videoyu başka bir uygulamada oynatın."
+     ],
+     [
+      "“Bu dosya okunamadı”",
+      "Dosya bozuk, eksik ya da kopya korumalı (DRM). Satın alınan filmler ve bazı yayın hizmeti indirmeleri hiçbir araçla dönüştürülemez."
+     ],
+     [
+      "iPhone videosu açılmıyor",
+      "Safari'de klibi Fotoğraf Arşivi'nden seçin. Yine olmazsa önce Dosyalar uygulamasına kaydedin ve oradan seçin."
+     ],
+     [
+      "Büyük dosya telefonda başarısız oluyor",
+      "Telefonlarda boş bellek daha azdır. Aynı dosyayı bilgisayarda deneyin veya önce parçalara bölün."
+     ]
+    ]
+   },
+   {
+    "h2": "iPhone, Android, Mac ve Windows'ta MP4'ü MP3'e dönüştürme",
     "paras": [
-     "Dönüştürücü tarayıcıda çalıştığı için hiçbir cihaza uygulama kurmanız gerekmez. iPhone veya iPad'de bu sayfayı Safari'de açın ve MP4 Dosyası Seç'e dokunun. iOS size Fotoğraf Arşivi veya Dosya Seç seçeneklerini sunar; böylece hem Fotoğraflar'daki hem de Dosyalar uygulamasındaki videolar çalışır. İndir'e dokunduktan sonra MP3, Dosyalar'da İndirilenler klasöründe görünür.",
-     "Android'de Chrome galerinizi veya dosya yöneticinizi açar ve hazır dosyalar İndirilenler'e düşer. Mac veya Windows bilgisayarda ise MP4 dosyalarını Finder'dan veya Dosya Gezgini'nden kutuya sürüklemeniz yeterlidir. Safari, Chrome, Edge ve Firefox'un hepsi çalışır. Çok büyük videolar için bilgisayar genellikle daha hızlıdır, çünkü telefondan daha fazla belleğe sahiptir."
+     "Her şey tarayıcıda çalıştığı için adımlar her yerde aynıdır. **iPhone veya iPad**'de bu sayfayı Safari'de açın, MP4 Dosyası Seç'e dokunun ve Fotoğraf Arşivi'nden ya da Dosyalar'dan seçin. MP3, Dosyalar uygulamasında İndirilenler klasörüne kaydedilir. iOS'ta bir MP4'ü MP3 olarak kaydetmenin yerleşik bir yolu yoktur; Kestirmeler uygulaması sesi yalnızca M4A olarak çıkarabilir.",
+     "**Android**'de Chrome galerinizi veya dosya yöneticinizi açar ve MP3'ler İndirilenler'e kaydedilir. **Mac veya Windows bilgisayarda** MP4'leri Finder'dan ya da Dosya Gezgini'nden kutuya sürükleyin. Safari, Chrome, Edge ve Firefox'un hepsi çalışır."
     ],
     "image": {
      "alt": "iPhone ve Android'de MP4'ten MP3'e"
@@ -795,115 +864,62 @@
     "cta": "MP4'ten MP3'e dönüştürücüyü deneyin"
    },
    {
-    "h2": "Bu MP4'ten MP3'e dönüştürücü güvenli ve gizli mi?",
+    "h2": "Masaüstü yazılımı mı tercih edersiniz? İki ücretsiz alternatif",
     "paras": [
-     "Videolarınız kişiseldir, bu yüzden burada gizlilik önemlidir. Yükleme yaptığınızda [MP3 Converter](/), MP4'ü tarayıcınızın içinde Web Audio, WebAssembly'ye derlenmiş FFmpeg ve LAME MP3 kodlayıcıyla okur. Sonuç olarak dosya hiçbir zaman bir sunucuya gönderilmez."
-    ],
-    "list": [
-     [
-      "Sunucuya yükleme yok",
-      "Yüklenen videolar baştan sona cihazınızda kalır."
-     ],
-     [
-      "Bağlantılar temizlenir",
-      "Bağlantı Yapıştır dosyaları sunucumuzda işlenir ve 30 dakika içinde silinir."
-     ],
-     [
-      "Kurulacak bir şey yok",
-      "Reklam yazılımı taşıyabilecek bir uygulama, eklenti veya indirme yöneticisi yok."
-     ],
-     [
-      "Hesap ve filigran yok",
-      "Hiçbir zaman e-posta adresi paylaşmazsınız ve MP3 yalnızca sizin sesinizi içerir."
-     ]
+     "Her gün video dönüştürüyorsanız bir masaüstü aracı işinize yarayabilir. **VLC**'de Media → Convert/Save menüsünü açın, MP4'ü ekleyin, *Audio – MP3* profilini seçin ve bir hedef dosya belirleyin. Komut satırında **FFmpeg** ile `ffmpeg -i video.mp4 -vn -b:a 192k audio.mp3` komutunu çalıştırın; burada `-vn` videoyu atar, `-b:a` ise bit hızını ayarlar.",
+     "Bu sayfa da aynı yapı taşlarını, yani FFmpeg'i ve LAME MP3 kodlayıcıyı, hiçbir kurulum gerektirmeden kullanır. Birkaç dosya için, telefonda veya yazılım kuramadığınız bir bilgisayarda daha hızlı bir seçenektir."
     ]
    },
    {
-    "h2": "MP4'ten MP3'e dönüştürmek kalite kaybettirir mi? Kısa yanıtlar",
+    "h2": "MP4'ü MP3'e dönüştürmek kalite kaybına yol açar mı?",
     "paras": [
-     "MP3 kayıplı bir formattır, dolayısıyla dönüştürme kayıpsız değildir. Ancak çoğu MP4 dosyasındaki ses zaten sıkıştırılmış AAC'dir. Bu yüzden 192 kbps veya üzerinde dönüştürmek, farkı duymayı çok zorlaştırır. Orijinal videonuz asla değişmez; yanında yeni bir MP3 dosyası elde edersiniz.",
-     "İnsanlar MP3'ün görüntüyü koruyup korumadığını da sorar. Korumaz, çünkü MP3 yalnızca sestir. Bir videoda 5.1 surround ses varsa araç tüm kanalları stereoya indirger; böylece merkez hoparlördeki diyaloglar korunur. Bir dosyada hiç ses kanalı yoksa (örneğin sessiz bir ekran kaydı), boş bir MP3 yerine açık bir mesaj görürsünüz."
+     "MP3 kayıplı bir format olduğundan dönüştürme bire bir kopya değildir. Pratikte çoğu MP4'teki ses zaten sıkıştırılmış AAC'dir ve 192 kbps ya da üzerinde fark duymak çok zordur. Orijinal videonuz hiçbir zaman değiştirilmez.",
+     "Çevresel ses (5.1) stereoya indirgenir, böylece orta kanaldaki diyaloglar korunur. Her MP3, MP3 ses için standart olan 44.1 kHz'de kaydedilir."
     ]
    },
    {
-    "h2": "Bir videoyu MP3'e çevirmenin popüler nedenleri",
-    "list": [
-     [
-      "Toplantı ve ders kayıtları",
-      "Bir Zoom veya Teams MP4'ünü yürüyüşte ya da yolda tekrar dinleyebileceğiniz bir MP3'e çevirin."
-     ],
-     [
-      "Şarkı fikirleri ve provalar",
-      "Telefonla çekilmiş bir grup provasını grupla paylaşmak için MP3 olarak kaydedin."
-     ],
-     [
-      "Zil sesleri ve kısa klipler",
-      "Önce dönüştürün, ardından [MP3 Kesici](/mp3-cutter) ile en iyi 30 saniyeyi alın."
-     ],
-     [
-      "Diğer video formatları",
-      "MOV, MKV veya AVI dosyalarınız da mı var? [Videoyu MP3'e](/video-to-mp3) dönüştürücü hepsini işler."
-     ]
-    ]
-   },
-   {
-    "h2": "Neden online MP4'ten MP3'e dönüştürücü kullanmalı?",
+    "h2": "Bağlantıyla eklenen videoları sorumlu kullanın",
     "paras": [
-     "VLC veya Audacity gibi masaüstü programlar bir videonun sesini kaydedebilir, ancak önce onları kurmanız ve dışa aktarma menülerini karıştırmanız gerekir. Online bir dönüştürücü ise bir tarayıcı sekmesinde açılır ve hemen hazırdır. Bu da onu iş bilgisayarında, okul bilgisayarında veya boş alanı az olan bir telefonda MP4'ü MP3'e çevirmenin en hızlı yolu yapar.",
-     "Yine de her ücretsiz dönüştürme sitesi aynı şekilde çalışmaz. Birçoğu videonuzun tamamını sunucularına yükler, dosya boyutunu sınırlar veya indirmeden önce kayıt olmanızı ister. Bu araç yüklenen MP4 dosyalarını kendi cihazınızda okur, 500 MB'a kadar dosyaları kabul eder ve hesap olmadan indirmenize izin verir. Ayrıca birkaç videoyu tek seferde işler; böylece bir klasör dolusu klibi MP3'e çevirmek yalnızca birkaç dokunuş alır."
-    ]
-   },
-   {
-    "h2": "Bağlantılı videoları sorumlu bir şekilde dönüştürün",
-    "paras": [
-     "Yalnızca kendi çektiğiniz videoları, kamu malı veya Creative Commons lisanslı videoları ya da kullanma izniniz olan içerikleri dönüştürün. Birçok film, müzik videosu ve dizi telif hakkıyla korunur ve bazı web siteleri koşullarında indirmeyi yasaklar. Yayın hizmetlerinden gelen kopya korumalı (DRM) videolar bu araç tarafından hiç okunamaz."
+     "Yalnızca kendi çektiğiniz videoları, kamu malı veya Creative Commons lisanslı videoları ya da kullanma izniniz olan içerikleri dönüştürün. Birçok film, müzik videosu ve dizi telif hakkıyla korunur. Ayrıntılar için [Telif Hakkı ve DMCA Politikamızı](/copyright) okuyun."
     ]
    }
   ],
   "faqs": [
    {
-    "q": "MP4 ücretsiz olarak nasıl MP3'e dönüştürülür?",
-    "a": "Bu sayfayı açın, bir kalite seçin, MP4 Dosyası Seç'e dokunun ve videonuzu seçin. MP3 saniyeler içinde hazır olur; ücret, kayıt ve filigran yoktur."
+    "q": "MP4'ü MP3'e ücretsiz nasıl dönüştürebilirim?",
+    "a": "Bir kalite seçin, MP4 Dosyası Seç'e dokunun ve videoyu seçin. MP3 saniyeler içinde hazır olur; ücretsiz, kayıt gerektirmeden ve filigransız."
+   },
+   {
+    "q": "Ne kadar sürer?",
+    "a": "Testlerimizde Chrome'da 1 dakikalık 1080p bir klip yaklaşık 6 saniye, 10 dakikalık 720p bir video yaklaşık 45 saniye sürdü. Hız internet bağlantınıza değil, cihazınıza bağlıdır."
+   },
+   {
+    "q": "Videolarım sunucunuza yükleniyor mu?",
+    "a": "Hayır. Yüklenen videolar tarayıcınızın içinde dönüştürülür ve cihazınızdan hiç çıkmaz. Sunucumuzu yalnızca Bağlantı Yapıştır seçeneği kullanır ve o dosyalar 30 dakika içinde silinir."
    },
    {
     "q": "Bir MP4 bağlantısını MP3'e dönüştürebilir miyim?",
-    "a": "Evet. Bağlantı Yapıştır sekmesine geçin, doğrudan bir .mp4 adresini veya videonun bulunduğu sayfayı yapıştırın, bir bit hızı seçin ve MP3'e dönüştür'e dokunun. YouTube bağlantıları için ise YouTube MP3 aracımızı kullanın."
+    "a": "Evet. Bağlantı Yapıştır sekmesini açın, doğrudan bir .mp4 adresi veya indirmeye izin veren bir sitedeki sayfayı yapıştırın, bir bit hızı seçin ve MP3 formatına dönüştür'e dokunun. YouTube bağlantıları için YouTube MP3 aracını kullanın."
    },
    {
-    "q": "MP4'ü 320 kbps MP3'e dönüştürebilir miyim?",
-    "a": "Evet. Dosyayı eklemeden önce 320 kbps'yi seçin. Bu en iyi MP3 kalitesidir; ancak 192 kbps zaten çoğu MP4 videodaki sesle eşleşir."
+    "q": "MP4'ten MP3'e en iyi bit hızı hangisi?",
+    "a": "Çoğu video için 192 kbps, konuşma için Mono ile 128 kbps, müzik için 320 kbps. MP4'ün içindeki AAC sesin çok üzerine çıkmak yalnızca dosyayı büyütür."
    },
    {
-    "q": "iPhone'da MP4 nasıl MP3'e dönüştürülür?",
-    "a": "Bu sayfayı Safari'de açın, MP4 Dosyası Seç'e dokunun ve videoyu Fotoğraf Arşivi'nden veya Dosyalar'dan seçin. İşlem bitince İndir'e dokunun ve MP3'ü Dosyalar uygulamasında İndirilenler altında bulun."
+    "q": "Dönüştürdükten sonra MP4'ümde neden ses yok?",
+    "a": "Videoda büyük olasılıkla ses kanalı yoktur; örneğin sessiz yapılmış bir ekran kaydı. Kontrol etmek için başka bir uygulamada oynatın. Kopya korumalı (DRM) videolar hiç dönüştürülemez."
    },
    {
-    "q": "Yüklediğim videolar sunucunuza gönderiliyor mu?",
-    "a": "Hayır. Yüklenen dosyalar tarayıcınızın içinde dönüştürülür ve cihazınızdan asla çıkmaz. Yalnızca Bağlantı Yapıştır seçeneği sunucumuzu kullanır ve bu dosyalar 30 dakika içinde silinir."
+    "q": "iPhone'da MP4'ü MP3'e nasıl dönüştürürüm?",
+    "a": "Bu sayfayı Safari'de açın, MP4 Dosyası Seç'e dokunun ve videoyu Fotoğraf Arşivi'nden veya Dosyalar'dan seçin. Dönüştürme bitince İndir'e dokunun; MP3'ü Dosyalar uygulamasında İndirilenler altında bulursunuz."
    },
    {
-    "q": "Birkaç MP4 dosyasını aynı anda dönüştürebilir miyim?",
-    "a": "Evet. Birkaç videoyu birlikte seçin veya sürükleyin. Tek tek dönüştürülürler ve iki veya daha fazlası hazır olduğunda Tümünü indir düğmesi görünür."
+    "q": "Birden fazla MP4 dosyasını aynı anda dönüştürebilir miyim?",
+    "a": "Evet. Birkaç videoyu seçin veya sürükleyin. Sırayla dönüştürülürler ve en az iki dosya hazır olduğunda Tümünü indir görünür."
    },
    {
     "q": "Dosya boyutu sınırı var mı?",
-    "a": "Yüklenen her dosya 500 MB'a kadar olabilir. Bağlantılı videolar yaklaşık üç saate kadar olabilir; canlı yayınlar desteklenmez."
-   },
-   {
-    "q": "MP4'üm neden dönüştürülemedi?",
-    "a": "Genellikle videonun ses kanalı yoktur, video bozuktur veya kopya korumalıdır (DRM). Ses olup olmadığını kontrol etmek için önce başka bir uygulamada oynatmayı deneyin."
-   },
-   {
-    "q": "Burada başka videoları da MP3'e çevirebilir miyim?",
-    "a": "Evet, çoğu yaygın format için. Yükleyici MP4, M4V ve MOV için ayarlanmıştır ve genellikle MKV, WEBM ve AVI dosyalarını da açabilir. En geniş format desteği için Videoyu MP3'e dönüştürücümüzü kullanın."
-   },
-   {
-    "q": "Online videoyu sese dönüştürücü, masaüstü yazılımı kadar iyi mi?",
-    "a": "Ses çıkarmak için evet. Bu sayfa, birçok masaüstü uygulamanın da kullandığı açık kaynaklı FFmpeg ve LAME kodlayıcıyı kullanır ve hiçbir şey kurmadan kendi cihazınızda çalışır."
-   },
-   {
-    "q": "Buraya TikTok bağlantısı yapıştırabilir miyim?",
-    "a": "Henüz değil. TikTok MP3 çok yakında geliyor. Bu arada cihazınıza bir TikTok videosu kaydettiyseniz o dosyayı buraya yükleyebilirsiniz."
+    "a": "Yüklenen dosya başına 500 MB'a kadar. Bağlantıyla eklenen videolar yaklaşık üç saate kadar uzun olabilir; canlı yayınlar desteklenmez."
    }
   ]
  },
@@ -1315,53 +1331,53 @@
    "formats": "WAV, WAVE, AIFF",
    "buttonLabel": "WAV Dosyası Seçin"
   },
-  "seoTitle": "WAV MP3 Dönüştürücü – Ücretsiz, Hızlı ve Kaliteli",
-  "metaDescription": "WAV dosyalarını saniyeler içinde online olarak MP3'e dönüştürün. Ses kalitesini koruyun, boyutu küçültün. Ücretsiz, üyelik ve program gerektirmez.",
+  "seoTitle": "WAV'ı MP3'e Dönüştürme – Ücretsiz, Hızlı ve Kaliteli",
+  "metaDescription": "WAV dosyalarını saniyeler içinde online MP3'e dönüştürün. Ses kalitesi yüksek kalır, boyut çok küçülür. Ücretsiz, kayıt yok, yazılım yok.",
   "h1": "WAV MP3 ve MP3 WAV Dönüştürücü",
-  "lead": "Ücretsiz WAV MP3 dönüştürücümüz büyük WAV kayıtlarını, hâlâ harika ses veren küçük MP3 dosyalarına çevirir. 320 kbps ile başlar, birden fazla dosyayı aynı anda işler ve doğrudan tarayıcınızda çalışır. Böylece sesleriniz bilgisayarınızdan veya telefonunuzdan hiç çıkmaz. Tersini mi istiyorsunuz? MP3 dosyalarını düzenleme, CD veya DJ yazılımları için sıkıştırılmamış WAV'a çevirmek üzere MP3 → WAV'a geçin.",
+  "lead": "Büyük WAV kayıtlarını hâlâ harika duyulan MP3'lere küçültün. 4 dakikalık bir şarkı 320 kbps ile 40 MB'tan yaklaşık 9 MB'a iner. WAV'ı MP3'e dönüştürme işini toplu olarak, doğrudan tarayıcınızda yapın; yayımlanmamış şarkılar ve özel röportajlar bilgisayarınızdan hiç çıkmaz. Tersi mi lazım? MP3 → WAV'a geçin.",
   "intro": {
-   "h2": "WAV'ı MP3'e veya MP3'ü WAV'a neden dönüştürmeli?",
+   "h2": "WAV neden MP3'e dönüştürülür?",
    "paras": [
-    "WAV, sesi hiç sıkıştırmadan saklar. CD kalitesinde WAV (16 bit, 44.1 kHz stereo) yaklaşık 1.411 kbps'tir; bu da dakika başına kabaca 10 MB demektir. Kayıt ve düzenleme için idealdir. Ancak e-posta, mesajlaşma uygulamaları veya depolama alanı az olan bir telefon için fazlasıyla ağırdır.",
-    "320 kbps bir MP3 dakikada yaklaşık 2,4 MB, 192 kbps ise yalnızca 1,4 MB yer kaplar. Yani WAV'ı MP3'e dönüştürmek boyutu genellikle yüzde 75 ila 90 oranında küçültür ve çoğu dinleyici günlük hoparlör ve kulaklıklarda bir fark duymaz. Araç, birçok Mac uygulamasının kullandığı sıkıştırılmamış AIFF formatını da kabul eder. Ayrıca bir uygulama veya cihaz WAV dosyası istediğinde aynı sayfa MP3'ten WAV'a dönüştürücü olarak da çalışır."
+    "WAV sıkıştırılmamış bir formattır. CD kalitesinde bir WAV (16 bit, 44.1 kHz, stereo) 1411 kbps kullanır; bu, her dakika için yaklaşık 10 MB demektir. Kayıt ve düzenleme sırasında ideal olsa da e-postayla göndermek, çoğu siteye yüklemek ya da telefonda yüzlercesini saklamak için fazla ağırdır.",
+    "320 kbps bir MP3 dakikada yaklaşık 2.4 MB, 192 kbps bir MP3 ise yalnızca 1.4 MB tutar. Testimizde 4 dakikalık bir WAV şarkı (40 MB) yaklaşık 20 saniyede 320 kbps ile 9.2 MB'lık bir MP3 oldu; 192 kbps ile 5.5 MB. Çoğu dinleyici günlük hoparlörlerde ve kulaklıklarda hiçbir fark duymaz."
    ],
    "image": {
-    "alt": "WAV MP3 dönüştürücü"
+    "alt": "WAV'dan MP3'e dönüştürücü"
    }
   },
   "howImage": {
-   "alt": "WAV MP3'e nasıl dönüştürülür"
+   "alt": "WAV'ı MP3'e dönüştürme adımları"
   },
   "howCta": "WAV'ı şimdi MP3'e dönüştürün",
   "steps": [
    [
-    "Yönü ve kaliteyi seçin",
-    "Dosyaları küçültmek için WAV → MP3 seçili kalsın veya ters yön için MP3 → WAV'a dokunun. MP3 çıktısı için sayfa 320 kbps ile başlar; daha küçük bir dosya istiyorsanız dosya eklemeden önce bunu değiştirin."
+    "WAV → MP3 seçili kalsın",
+    "Sayfa en iyi MP3 kalitesi olan 320 kbps ile açılır. Daha küçük dosya istiyorsanız dosya eklemeden önce düşürün; ters yön için MP3 → WAV'a dokunun."
    ],
    [
-    "Dosyalarınızı ekleyin",
-    "Düğmeye dokunun veya birden fazla dosyayı kutuya sürükleyin. Audacity, GarageBand, Logic Pro veya bir ses kayıt cihazından gelen her .wav dosyası çalışır."
+    "WAV dosyalarınızı ekleyin",
+    "WAV Dosyası Seçin'e dokunun veya birkaç dosyayı birden kutuya sürükleyin; her biri 500 MB'a kadar olabilir. Audacity, GarageBand, Logic Pro, Ableton veya bir saha kayıt cihazından alınan dışa aktarımların hepsi çalışır."
    ],
    [
-    "Dönüştürmenin bitmesini bekleyin",
-    "Dosyalar tarayıcınızın içinde sırayla dönüştürülür ve her birinin kendi ilerleme çubuğu vardır."
+    "Dönüştürülmelerini bekleyin",
+    "Dosyalar tarayıcınızın içinde sırayla kodlanır ve her birinin kendi ilerleme çubuğu vardır."
    ],
    [
     "MP3'leri indirin",
-    "Her MP3 orijinal dosya adını korur. İndir'e veya birden fazla dosya dönüştürdüyseniz Tümünü indir'e dokunun."
+    "Her MP3 orijinal adını korur. İndir'e, birden fazla dosya için de Tümünü indir'e dokunun."
    ]
   ],
   "sections": [
    {
     "h2": "MP3'ü WAV'a dönüştürme",
     "paras": [
-     "Bazen ters yöne ihtiyacınız olur. Ses düzenleyiciler, DJ yazılımları, CD yazma uygulamaları ve bazı yükleme formları WAV dosyası ister; bazı eski programlar başka bir şey açmaz. Dönüştürücüyü MP3 → WAV'a alın, müzik ve CD'ler için 44.1 kHz veya video projeleri için 48 kHz seçin, ardından MP3 dosyalarınızı ekleyin. Her biri standart 16 bit PCM .wav dosyasına dönüşür.",
-     "Bu dönüştürmenin neyi yapıp neyi yapamayacağını unutmayın. WAV, MP3 sesini birebir korur; bu yüzden düzenleyip yeniden kaydetmek yeni bir kayıp eklemez. Ancak MP3'ün zaten sildiği ayrıntıları geri getiremez ve dosya dakikada yaklaşık 10 MB'a çıkar. Konuşma kayıtlarında Mono'yu açmak bu boyutu yarıya indirir, çünkü WAV her kanalı eksiksiz saklar."
+     "Bazen tam tersine ihtiyaç duyarsınız. Ses düzenleyiciler, DJ yazılımları, CD yazma uygulamaları ve bazı yükleme formları WAV dosyası ister; birkaç eski program da başka bir şey açmaz. Dönüştürücüyü MP3 → WAV'a alın, müzik ve CD'ler için 44.1 kHz'i, video projeleri için 48 kHz'i seçin, ardından MP3 dosyalarınızı ekleyin. Her biri standart 16 bit PCM .wav dosyasına dönüşür.",
+     "Bu dönüştürmenin neyi yapıp neyi yapamayacağını bilin. WAV, MP3'ün sesini birebir saklar; yani onu düzenleyip yeniden kaydetmek yeni bir kayıp eklemez. Ancak MP3'ün zaten attığı ayrıntıyı geri getiremez ve dosya dakikada yaklaşık 10 MB'a büyür. Konuşma için Mono'yu açmak bu boyutu yarıya indirir, çünkü WAV her kanalı eksiksiz saklar."
     ],
     "list": [
      [
       "Düzenleme ve miksaj",
-      "WAV dosyasını kod çözme gecikmesi olmadan Audacity, GarageBand, FL Studio veya Premiere Pro'ya aktarın."
+      "Bir WAV'ı Audacity, GarageBand, FL Studio veya Premiere Pro'ya kod çözme gecikmesi olmadan aktarın."
      ],
      [
       "Ses CD'si yazma",
@@ -1369,15 +1385,32 @@
      ],
      [
       "DJ ve sampler cihazları",
-      "Bazı donanım oynatıcılar ve sampler'lar USB bellek veya SD karttan yalnızca WAV okur."
+      "Bazı donanım çalarlar ve sampler'lar USB bellekten veya SD karttan yalnızca WAV okur."
      ]
     ]
    },
    {
-    "h2": "Bir bakışta WAV ve MP3 dosya boyutu",
+    "h2": "WAV ve MP3 boyutu: gerçek örnekler",
     "paras": [
-     "Bir dakikalık stereo sesin her formatta kapladığı alan aşağıda. Gördüğünüz gibi en iyi MP3 ayarı bile WAV'dan yaklaşık dört kat daha küçüktür.",
-     "Pratikte 4 dakikalık bir şarkı 320 kbps'te yaklaşık 40 MB'tan 10 MB'ın altına iner. Benzer şekilde, WAV olarak kaydedilmiş 30 dakikalık bir röportaj 128 kbps'te kabaca 300 MB'tan yaklaşık 29 MB'a düşer."
+     "Bir dakikalık stereo ses, CD kalitesinde WAV olarak yaklaşık 10 MB, 320 kbps MP3 olarak 2.4 MB tutar. En iyi MP3 ayarı bile yaklaşık dört kat daha küçüktür."
+    ],
+    "list": [
+     [
+      "4 dakikalık şarkı",
+      "40 MB WAV → 320 kbps ile 9.2 MB veya 192 kbps ile 5.5 MB (kendi testimiz)."
+     ],
+     [
+      "30 dakikalık röportaj",
+      "Yaklaşık 300 MB WAV → 128 kbps ile yaklaşık 29 MB. Bit hızının tamamı sese gitsin diye Mono'yu açın."
+     ],
+     [
+      "1 saatlik podcast bölümü",
+      "Yaklaşık 600 MB WAV → 128 kbps ile yaklaşık 58 MB; her podcast barındırma hizmeti için yeterince küçük."
+     ],
+     [
+      "24 bit, 48 kHz stüdyo WAV'ı",
+      "Dakikada yaklaşık 17 MB. MP3 boyutu yalnızca bit hızına ve süreye bağlı olduğu için MP3, CD kalitesindeki bir WAV'dan yapılanla aynı boyutta olur."
+     ]
     ],
     "image": {
      "alt": "WAV ve MP3 dosya boyutu karşılaştırması"
@@ -1388,141 +1421,147 @@
     "list": [
      [
       "320 kbps",
-      "En iyi MP3 kalitesinde paylaşmak istediğiniz bitmiş şarkılar, miksler ve masterlar."
+      "MP3 olarak paylaştığınız veya sattığınız bitmiş şarkılar, miksler ve masterlar."
      ],
      [
       "256 kbps",
-      "Biraz daha küçük bir dosyada neredeyse aynı ses; çalma listeleri için ideal."
+      "%20 daha küçük bir dosyada pratikte aynı ses; çalma listeleri için ideal."
      ],
      [
       "192 kbps",
-      "Grup arkadaşlarınıza veya müşterilerinize gönderdiğiniz demolar ve kaba miksler."
+      "Grup arkadaşlarına veya müşterilere gönderilen demolar ve kaba miksler."
      ],
      [
-      "128 kbps ve Mono",
-      "Zoom H1n gibi bir ses kayıt cihazından gelen ses kayıtları, röportajlar ve dikte."
+      "Mono ile 128 kbps",
+      "Zoom H1n gibi bir saha kayıt cihazından ses kayıtları, röportajlar ve dikteler."
      ]
     ]
    },
    {
     "h2": "WAV'dan MP3'e dönüştürme kayıpsız mı?",
     "paras": [
-     "Hayır. WAV kayıpsızdır; MP3 ise çoğu insanın duyamadığı sesleri kaldıran kayıplı bir formattır. 256 veya 320 kbps'te fark çoğu hoparlörde çok zor fark edilir. Yine de her MP3 dönüştürmesi biraz ayrıntıyı atar, bu yüzden geri dönüşü yoktur.",
-     "Bu nedenle WAV'ı ana kopyanız, MP3'ü ise paylaştığınız kopya olarak görün. Daha sonra düzenlemeniz, yeniden master yapmanız veya başka bir format oluşturmanız gerekirse yine WAV'dan başlayın. Kayıpsız FLAC dosyalarınız da varsa [FLAC MP3 dönüştürücümüz](/flac-to-mp3) tamamen aynı şekilde çalışır."
+     "Hayır. WAV kayıpsız, MP3 ise kayıplıdır: kodlayıcı insanların nadiren duyduğu sesleri atar. 256 veya 320 kbps'de farkı fark etmek çok zordur. Yine de her MP3 dönüştürmesi biraz ayrıntı kaybettirir ve bir MP3'ü tekrar WAV'a çevirmek bunu geri getirmez.",
+     "Bu yüzden WAV'ı ana kopyanız, MP3'ü de paylaştığınız kopya olarak görün. Düzenlemeyi, yeniden masterlamayı ve diğer formatları WAV'dan yapın. WAV'dan küçük ama kayıpsız bir dosya istiyorsanız FLAC, hiçbir kayıp olmadan boyutu yarıya indirir; [FLAC'tan MP3'e](/flac-to-mp3) sayfamız ne zaman kullanılacağını açıklıyor."
     ]
    },
    {
-    "h2": "24 bit, 32 bit ve 48 kHz WAV dosyalarını dönüştürme",
+    "h2": "24 bit, 32 bit float ve 48 kHz dosyalar",
     "paras": [
-     "Bir DAW'dan veya video kameradan gelen kayıtlar genellikle 48 kHz veya daha yüksek hızda 24 bit ya da 32 bit float'tır. Dönüştürücü bunları da okur: çoğunu tarayıcınız çözer, geri kalanında WebAssembly'deki FFmpeg devreye girer. Her MP3 daha sonra MP3 müzik için standart hız olan 44.1 kHz'de oluşturulur.",
-     "5.1 film miksleri gibi çok kanallı WAV dosyaları stereoya indirgenir, böylece hiçbir kanal öylece atılmaz. Dosya başına 500 MB sınırı vardır; bu da kabaca 50 dakikalık CD kalitesinde stereo WAV'a eşittir."
+     "Bir DAW'dan veya kameradan gelen kayıtlar genellikle 48 kHz ya da daha yüksek örnekleme hızında 24 bit veya 32 bit float'tır. Dönüştürücü bunları okur: çoğu dosyayı tarayıcınız çözer, geri kalanı için FFmpeg devreye girer. Her MP3, MP3 müzik için standart olan 44.1 kHz'de ve sabit bit hızında yazılır.",
+     "5.1 film miksleri gibi çok kanallı WAV'lar stereoya indirgenir, böylece hiçbir kanal atılmaz. Dosya başına 500 MB sınırı, kabaca 50 dakikalık CD kalitesinde stereoya veya 30 dakikalık 24 bit, 48 kHz sese denk gelir."
     ]
    },
    {
-    "h2": "Mac, Windows, iPhone ve Android'de WAV'dan MP3'e",
+    "h2": "Mac, Windows, iPhone ve Android'de WAV'ı MP3'e dönüştürme",
     "paras": [
-     "Mac veya Windows PC'de WAV dosyalarını Finder ya da Dosya Gezgini'nden kutuya sürükleyin; MP3 dosyaları İndirilenler klasörünüze kaydedilir. GarageBand, Logic Pro, Audacity veya başka bir ses düzenleyiciden alınan dışa aktarımlar için en hızlı yol budur.",
-     "iPhone'da bu sayfayı Safari'de açın, WAV Dosyası Seçin'e dokunun ve Dosyalar uygulamasından kayıtları seçin; çoğu kayıt uygulaması WAV'ı önce Dosyalar'a paylaşabilir. Android'de Chrome dosya yöneticinizi açar ve bitmiş dosyalar İndirilenler'e gider. Her iki durumda da hiçbir şey yüklemeniz gerekmez."
+     "**Mac veya Windows bilgisayarda** WAV dosyalarını Finder'dan ya da Dosya Gezgini'nden kutuya sürükleyin; MP3'ler İndirilenler'e kaydedilir. **iPhone**'da bu sayfayı Safari'de açın, WAV Dosyası Seçin'e dokunun ve kaydı Dosyalar uygulamasından seçin. Çoğu ses kayıt uygulaması bir WAV'ı önce Dosyalar'a paylaşabilir. **Android**'de Chrome dosya yöneticinizi açar ve MP3'ler İndirilenler'e kaydedilir."
     ],
     "image": {
      "alt": "iPhone ve Android'de WAV'dan MP3'e"
     },
-    "cta": "WAV MP3 dönüştürücüyü deneyin"
+    "cta": "WAV'dan MP3'e dönüştürücüyü deneyin"
    },
    {
-    "h2": "Güvenli ve gizli WAV dönüştürme",
+    "h2": "WAV'ı MP3'e dönüştürmenin diğer yolları",
     "paras": [
-     "Yayınlanmamış şarkılar ve özel röportajlar özen ister. Bu yüzden [MP3 Converter](/) WAV dosyalarınızı LAME MP3 kodlayıcısıyla tarayıcının içinde dönüştürür ve hiçbir şey sunucuya yüklenmez. Üstelik yükleme beklemesi olmadığı için büyük dosyalarda bile dönüştürme hızlıdır."
+     "Zaten bir ses yazılımıyla çalışıyorsanız bu ücretsiz seçenekler de aynı işi görür. **Audacity**'de WAV'ı açın, File → Export Audio'yu seçin ve MP3'ü belirleyin. Mac'teki **Apple Music** uygulamasında Settings → Files → Import Settings ayarını MP3 Encoder yapın, şarkıyı seçin ve File → Convert → Create MP3 Version'ı seçin. **FFmpeg** ile `ffmpeg -i song.wav -b:a 320k song.mp3` komutunu çalıştırın.",
+     "Toplu dosyalar için, telefonda veya hiçbir şey kuramadığınız bir bilgisayarda bu sayfa daha hızlı bir yoldur. Audacity'nin MP3 için kullandığı LAME kodlayıcıyı kullanır."
+    ]
+   },
+   {
+    "h2": "Tasarımı gereği gizli",
+    "paras": [
+     "Yayımlanmamış şarkılar ve özel röportajlar özen ister. [MP3 Converter](/), WAV dosyalarınızı tarayıcının içinde LAME MP3 kodlayıcıyla kodlar ve hiçbir şey yüklenmez. Bu aynı zamanda hızlı olmasını sağlar: hız, yükleme hızınıza değil bilgisayarınıza bağlıdır."
     ],
     "list": [
      [
       "Hiçbir şey cihazınızdan çıkmaz",
-      "Kayıtlarınız yerel olarak okunur ve dönüştürülür."
+      "Kayıtlar yerel olarak okunur ve kodlanır."
      ],
      [
       "Gerçekten ücretsiz",
-      "Üyelik, filigran veya günlük sınır yoktur."
+      "Kayıt yok, filigran yok, günlük sınır yok."
      ],
      [
-      "Program gerekmez",
+      "Yazılım yok",
       "Safari, Chrome, Edge ve Firefox'ta çalışır."
      ]
     ]
    },
    {
-    "h2": "Müzisyenler ve podcast yapımcıları WAV'ı ne zaman MP3'e dönüştürür?",
+    "h2": "Müzisyenlerin ve podcast yapımcılarının WAV dönüştürme nedenleri",
     "list": [
      [
-      "Demo paylaşma",
-      "Ek boyutu sınırlarına takılmadan bir miksi grup arkadaşlarınıza e-postayla veya sohbetten gönderin."
+      "Demo paylaşmak",
+      "Bir miksi ek boyutu sınırlarına takılmadan e-postayla veya sohbette gönderin."
      ],
      [
-      "Podcast bölümleri",
-      "MP3 her podcast uygulamasında çalar; bu yüzden yayınlamadan önce son WAV çıktısını dönüştürün."
+      "Podcast yayınlamak",
+      "MP3 her podcast uygulamasında çalar. Son WAV'ı dışa aktarın, dönüştürün ve yükleyin."
      ],
      [
       "Sample önizlemeleri",
-      "WAV sample'ları ve loop'ları için hafif önizleme sürümleri oluşturun."
+      "WAV sample'larının ve loop'larının hafif önizleme sürümlerini hazırlayın."
      ],
      [
-      "Kayıtları birleştirme",
-      "[Ses Birleştirici](/audio-joiner) aracımızla birkaç MP3 dosyasını tek parçada birleştirin."
+      "Kayıtları birleştirmek",
+      "[Ses Birleştirici](/audio-joiner) ile birkaç MP3'ü tek bir parçada birleştirin veya [MP3 Kesici](/mp3-cutter) ile kırpın."
      ]
     ]
    }
   ],
   "faqs": [
    {
-    "q": "WAV'ı MP3'e dönüştürmek kaliteyi düşürür mü?",
-    "a": "Evet, biraz düşürür, çünkü MP3 kayıplı bir formattır. 256 veya 320 kbps'te çoğu insan çoğu hoparlörde farkı çok zor duyar."
+    "q": "WAV'ı MP3'e dönüştürmek kalite kaybına yol açar mı?",
+    "a": "Biraz, çünkü MP3 kayıplıdır. 256 veya 320 kbps'de çoğu kişi normal hoparlörlerde veya kulaklıklarda fark duymaz. WAV'ı ana kopyanız olarak saklayın."
    },
    {
     "q": "WAV'dan MP3'e en iyi bit hızı hangisi?",
-    "a": "Müzik için 320 kbps; sayfanın bu değerle başlamasının nedeni de bu. Konuşma için Mono açıkken 128 kbps fazlasıyla yeterlidir."
+    "a": "Müzik için 320 kbps; sayfanın bu değerle açılmasının nedeni de bu. Konuşma için Mono ile 128 kbps fazlasıyla yeterlidir."
    },
    {
     "q": "MP3, WAV'dan ne kadar küçüktür?",
-    "a": "320 kbps'te yaklaşık 4 kat, 128 kbps'te yaklaşık 10 kat daha küçüktür. Bir dakikalık CD kalitesinde WAV kabaca 10 MB'tır."
+    "a": "320 kbps'de yaklaşık 4 kat, 128 kbps'de yaklaşık 10 kat daha küçüktür. Testimizde 40 MB'lık, 4 dakikalık bir WAV, 320 kbps ile 9.2 MB'lık bir MP3 oldu."
+   },
+   {
+    "q": "Bir dönüştürme ne kadar sürer?",
+    "a": "Birkaç saniyeden bir dakikaya kadar. Testimizde 4 dakikalık bir şarkı 320 kbps ile yaklaşık 20 saniye sürdü. Toplu dosyalar sırayla dönüştürülür."
    },
    {
     "q": "24 bit veya 32 bit WAV dosyalarını dönüştürebilir miyim?",
-    "a": "Evet. Yüksek çözünürlüklü WAV dosyaları desteklenir. MP3, MP3 müzik için standart hız olan 44.1 kHz'de oluşturulur."
-   },
-   {
-    "q": "Aynı anda kaç WAV dosyası dönüştürebilirim?",
-    "a": "Sabit bir sınır yoktur. Cihazınızın hızlı yanıt vermeye devam etmesi için dosyalar sırayla işlenir."
+    "a": "Evet. Yüksek çözünürlüklü ve 32 bit float WAV'lar çalışır. MP3, MP3 müzik için standart olan 44.1 kHz'de yazılır."
    },
    {
     "q": "Boyut sınırı var mı?",
-    "a": "Her dosya en fazla 500 MB olabilir; bu kabaca 50 dakikalık CD kalitesinde stereo WAV demektir."
+    "a": "Her dosya 500 MB'a kadar olabilir; bu, yaklaşık 50 dakikalık CD kalitesinde stereo WAV demektir. Dosya sayısında sınır yoktur."
    },
    {
-    "q": "WAV dosyalarım sunucuya yükleniyor mu?",
-    "a": "Hayır. Her şey tarayıcınızın içinde gerçekleşir, bu yüzden kayıtlarınız cihazınızdan hiç çıkmaz."
+    "q": "WAV dosyalarım yükleniyor mu?",
+    "a": "Hayır. Her şey tarayıcınızın içinde gerçekleşir, kayıtlarınız cihazınızdan hiç çıkmaz."
    },
    {
-    "q": "Bu sayfada MP3'ü WAV'a dönüştürebilir miyim?",
-    "a": "Evet. Dönüştürücünün üstündeki MP3 → WAV sekmesine dokunun, 44.1 veya 48 kHz seçin ve MP3 dosyalarınızı ekleyin. Her biri 16 bit PCM WAV dosyası olarak kaydedilir."
+    "q": "Burada MP3'ü WAV'a da dönüştürebilir miyim?",
+    "a": "Evet. Dönüştürücünün üstündeki MP3 → WAV'a dokunun, 44.1 veya 48 kHz'i seçin ve MP3 dosyalarınızı ekleyin. Her biri 16 bit PCM WAV'a dönüşür. MP3'ün attığı ayrıntıyı geri getirmez."
    },
    {
-    "q": "AIFF dosyalarını da burada dönüştürebilir miyim?",
-    "a": "Evet. İkisi de sıkıştırılmamış format olduğu için AIFF, WAV ile aynı şekilde çalışır."
+    "q": "AIFF dosyalarını dönüştürebilir miyim?",
+    "a": "Evet. AIFF de WAV gibi sıkıştırılmamıştır ve aynı şekilde dönüştürülür."
    },
    {
-    "q": "iPhone'da WAV'ı MP3'e dönüştürebilir miyim?",
-    "a": "Evet. WAV'ı Dosyalar uygulamasına kaydedin, bu sayfayı Safari'de açın, WAV Dosyası Seçin'e dokunun ve dosyayı seçin. MP3, Dosyalar'daki İndirilenler klasörüne kaydedilir."
+    "q": "iPhone'da WAV'ı MP3'e nasıl dönüştürürüm?",
+    "a": "WAV'ı Dosyalar uygulamasına kaydedin, bu sayfayı Safari'de açın, WAV Dosyası Seçin'e dokunun ve dosyayı seçin. MP3, Dosyalar'da İndirilenler klasörüne kaydedilir."
    },
    {
     "q": "MP3'ü WAV'a dönüştürmek kaliteyi artırır mı?",
-    "a": "Hayır. WAV, MP3 sesini birebir korur ama MP3'ün kaldırdığı ayrıntıları geri ekleyemez. MP3'ü WAV'a daha iyi ses için değil, uyumluluk ve düzenleme için dönüştürün."
+    "a": "Hayır. WAV, MP3'ün sesini birebir korur ama MP3'ün attığı ayrıntıyı geri ekleyemez. MP3'ü WAV'a daha iyi ses için değil, uyumluluk ve düzenleme için dönüştürün."
    },
    {
     "q": "WAV dosyam neden MP3'ten çok daha büyük?",
-    "a": "WAV sıkıştırılmamıştır, yani her örneği eksiksiz saklar: 44.1 kHz stereoda dakikada yaklaşık 10 MB. MP3 ise kabaca 1 ila 2,4 MB tutar."
+    "a": "WAV sıkıştırılmamıştır, yani her örneği eksiksiz saklar: 44.1 kHz stereoda dakikada yaklaşık 10 MB; MP3'te ise kabaca 1 ile 2.4 MB."
    },
    {
-    "q": "MP3'ten WAV'a dönüştürmede hangi örnekleme hızını seçmeliyim?",
-    "a": "Müzik ve ses CD'leri için 44.1 kHz, WAV bir video düzenleyiciye gidecekse 48 kHz seçin."
+    "q": "MP3'ten WAV'a dönüştürürken hangi örnekleme hızını seçmeliyim?",
+    "a": "Müzik ve ses CD'leri için 44.1 kHz'i, WAV bir video düzenleyiciye gidecekse 48 kHz'i seçin."
    }
   ]
  },
